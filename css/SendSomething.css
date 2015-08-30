@@ -1,0 +1,15 @@
+form{
+    background-color: #f9f9f9;
+    /*border-radius: 20px;*/
+    border: solid;
+    border-width: 20px;
+    border-color:gray;
+    padding-bottom: 20px;
+}
+#tambr-img{
+    position: relative;
+    left: -200px;
+}
+#find-passengers-id{
+    border-radius: 10px;
+}

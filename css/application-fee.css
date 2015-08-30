@@ -1,0 +1,49 @@
+.logo{
+    height: 30px;
+    width: 30px;
+}
+ul{
+    list-style: none;
+}
+#ticket-verified li{
+    margin-top: 10px;
+}
+#ticket-verified{
+    margin-top: 60px;
+}
+.title{
+    display: inline-block;
+    /*margin-right: 10px;*/
+    color: #00b5a4;
+}
+.text{
+    margin-right: 20px;
+}
+#map{
+    width: 100%;
+    /*height: 100%;*/
+}
+.buttons{
+    float: right;
+}
+/*#left-box{*/
+    /*border: solid;*/
+    /*border-width: thin;*/
+/*}*/
+#right-box{
+    background-color: #ffffff;
+}
+.container-box{
+    border: solid;
+    border-width: thin;
+    border-radius: 10px;
+}
+#user-image{
+    position: relative;
+    margin-top: 10px;
+    left: -70px;
+    z-index: 1;
+}
+#name-div{
+    margin: 20px;
+}

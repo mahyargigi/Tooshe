@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/order.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+
+    <!--<link href="css/material.min.css" rel="stylesheet">-->
+    <title></title>
+</head>
+<body>
+
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="col-md-11">
+                    <input type="text" class="form-control" id="usr" placeholder="What do you want to order?">
+                </div>
+                <div class="col-md-1">
+                    <button type="button" class="btn btn-success" id="search-button"><span class="glyphicon glyphicon-arrow-right"></span></button>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row" id="suggestions-div">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div  id="suggestions" class="owl-carousel">
+                  <div class="item">
+                      <a href="#">
+                        <img class="lazyOwl" data-src="img/iphone6.jpg" >
+                        <div class="description" style="text-align: center">apple iphone6</div>
+                      </a>
+                  </div>
+                  <div class="item">
+                      <a href="#">
+                        <img class="lazyOwl" data-src="img/iphone.jpg" alt="Lazy Owl Image">
+                        <div class="description" style="text-align: center">apple iphone6</div>
+                      </a>
+                  </div>
+                  <div class="item">
+                      <a href="#">
+                        <img class="lazyOwl" data-src="img/iphone6.jpg" alt="Lazy Owl Image">
+                        <div class="description" style="text-align: center">apple iphone6</div>
+                      </a>
+                  </div>
+                  <div class="item">
+                      <a href="#">
+                        <img class="lazyOwl" data-src="img/iphone6.jpg" alt="Lazy Owl Image">
+                        <div class="description" style="text-align: center">apple iphone6</div>
+                      </a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                    <h3 id="or-noResult">OR</h3>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <button class="btn btn-success">Create your own request !</button>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div id="optimized-suggestions-container">
+            <div class="row" style="margin: 10px">
+                <h6 style="text-align: center">VERY OPTIMIZED DEALS!</h6>
+            </div>
+            <div class="row optimized-suggestions" >
+                <!--<div class="col-md-"></div>-->
+                    <!--<div class="col-md-10">-->
+                        <div class="row title" style="margin: 10px">
+                                <h6 style="text-align: center">Smartphones</h6>
+                        </div>
+                        <div class="row" id="optimizedDeals1">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-9">
+                                    <div  class="owl-carousel" id="deal1">
+                                      <div class="item">
+                                          <a href="#">
+                                            <img class="lazyOwl" data-src="img/iphone6.jpg" >
+                                            <div class="description" style="text-align: center">apple iphone6</div>
+                                          </a>
+                                      </div>
+                                      <div class="item">
+                                          <a href="#">
+                                            <img class="lazyOwl" data-src="img/iphone.jpg" alt="Lazy Owl Image">
+                                            <div class="description" style="text-align: center">apple iphone6</div>
+                                          </a>
+                                      </div>
+                                      <div class="item">
+                                          <a href="#">
+                                            <img class="lazyOwl" data-src="img/s5.jpg" alt="Lazy Owl Image">
+                                            <div class="description" style="text-align: center">apple iphone6</div>
+                                          </a>
+                                      </div>
+                                      <div class="item">
+                                          <a href="#">
+                                            <img class="lazyOwl" data-src="img/Nexus-5.jpg" alt="Lazy Owl Image">
+                                            <div class="description" style="text-align: center">apple iphone6</div>
+                                          </a>
+                                      </div>
+                                      <div class="item">
+                                          <a href="#">
+                                            <img class="lazyOwl" data-src="img/note3.jpg" alt="Lazy Owl Image">
+                                            <div class="description" style="text-align: center">apple iphone6</div>
+                                          </a>
+                                      </div>
+                                      <div class="item">
+                                          <a href="#">
+                                            <img class="lazyOwl" data-src="img/note3.jpg" alt="Lazy Owl Image">
+                                            <div class="description" style="text-align: center">apple iphone6</div>
+                                          </a>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </div>
+                    <!--</div>-->
+                <!--<div class="col-md-1"></div>-->
+            </div>
+            <div class="row optimized-suggestions">
+                <!--<div class="col-md-"></div>-->
+                    <!--<div class="col-md-10">-->
+                        <div class="row title">
+                                <h6 style="text-align: center">Gadgets</h6>
+                        </div>
+                        <div class="row" id="optimizedDeals2">
+                            <div class="row" >
+                                <div class="col-md-1"></div>
+                                <div class="col-md-9">
+                                    <div  class="owl-carousel" id="deal2">
+                                      <div class="item">
+                                          <a href="#">
+                                            <img class="lazyOwl" data-src="img/mouse.jpg" >
+                                            <div class="description" style="text-align: center">apple iphone6</div>
+                                          </a>
+                                      </div>
+                                      <div class="item">
+                                          <a href="#">
+                                            <img class="lazyOwl" data-src="img/iphone.jpg" alt="Lazy Owl Image">
+                                            <div class="description" style="text-align: center">apple iphone6</div>
+                                          </a>
+                                      </div>
+                                      <div class="item">
+                                          <a href="#">
+                                            <img class="lazyOwl" data-src="img/s5.jpg" alt="Lazy Owl Image">
+                                            <div class="description" style="text-align: center">apple iphone6</div>
+                                          </a>
+                                      </div>
+                                      <div class="item">
+                                          <a href="#">
+                                            <img class="lazyOwl" data-src="img/Nexus-5.jpg" alt="Lazy Owl Image">
+                                            <div class="description" style="text-align: center">apple iphone6</div>
+                                          </a>
+                                      </div>
+                                      <div class="item">
+                                          <a href="#">
+                                            <img class="lazyOwl" data-src="img/note3.jpg" alt="Lazy Owl Image">
+                                            <div class="description" style="text-align: center">apple iphone6</div>
+                                          </a>
+                                      </div>
+                                      <div class="item">
+                                          <a href="#">
+                                            <img class="lazyOwl" data-src="img/note3.jpg" alt="Lazy Owl Image">
+                                            <div class="description" style="text-align: center">apple iphone6</div>
+                                          </a>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </div>
+                    <!--</div>-->
+                <!--<div class="col-md-1"></div>-->
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-2"></div>
+    <!--site ends here-->
+
+
+    <script src="js/jquery-1.11.2.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <!--<script src="js/material.min.js"></script>-->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/order.js"></script>
+</body>
+</html>

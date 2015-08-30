@@ -1,0 +1,55 @@
+.link{
+    float: right;
+    color: #888888;
+    margin-right: 30px;
+}
+.green{
+    float: right;
+    color: limegreen;
+    margin-right: 30px;
+}
+.red{
+    float: right;
+    color: orangered;
+    /*margin-right: 10px;*/
+}
+.black{
+    color: #000000;
+}
+.gray{
+    color: #888888;
+}
+
+.nav-tabs{
+    background-color: #d4d4d4;
+    width: 300px;
+}
+.badge{
+    margin-left: 4px;
+    margin-right: 4px;
+    background-color: red;
+}
+.tab-content{
+    background-color: white;
+}
+.single-notification{
+    display: inline-block ;
+    margin-right: 10px;
+}
+.row-picture{
+    position: relative;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    /*margin-right: 20px;*/
+}
+.row-picture .top{
+    position: absolute;
+    top: 20px;
+    left: -30px;
+    z-index: 100;
+
+}
+ul{
+    list-style: none;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head lang="eng">
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/roboto.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/nouislider.min.css" rel="stylesheet">
+    <link href="css/bootstrap-material-datepicker.css" rel="stylesheet">
+    <link href="css/SendSomething.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">-->
+    <!-- Material Design icon font -->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+    <title>Send-something</title>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-6">
+            <form action="" class="form-horizontal">
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="img/send-something-icon.png" id="tambr-img" >
+                    </div>
+                    <div class="col-md-10">
+                        <h2>Send something</h2><br>
+                        <div class="col-md-2"><h4>What?</h4></div>
+                        <div class="col-md-5">
+                            <!--<input type="text" name="what!">-->
+                            <div class="form-group">
+                                <input class="form-control floating-label" id="focusedInput" type="text" placeholder="What do you want to send?">
+                            </div>
+                        </div>
+                        <div class="col-md-5"></div><br>
+
+                    </div>
+                </div>
+                <!--<div class="row">-->
+                    <!--<div class="col-md-2"></div>-->
+                    <!--<div class="col-md-10">-->
+                        <!--<div class="col-md-1">What?</div>-->
+                        <!--<div class="col-md-5"><input type="text" name="what!"></div>-->
+                        <!--<div class="col-md-6"></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-10">
+                        <!--<div class="col-md-4"></div>-->
+                        <div class="col-md-3" style="margin-right: 20px">
+                            TO </br>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="dest-input">
+                            </div>
+                        </div>
+                        <!--<div class="col-md-1"></div>-->
+                        <div class="col-md-3" >
+                            From </br>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="source-input">
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            </br>
+                                    <input type="text" class="form-control" id="fromDate" placeholder="FromDate">
+                        </div>
+                        <div class="col-md-2">
+                            </br>
+                                    <input type="text" class="form-control" id="toDate" placeholder="ToDate">
+                        </div>
+                        <div class="col-md-1"></div>
+                        <!--<div class="col-md-1"></div>-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6">
+                        How much</br>
+                        is ok?</br>
+                            <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0" id="slider"/>
+                        <div id="slider-value"></div>
+                    </div>
+                    <div class="col-md-5">
+                        <a href="javascript:void(0)" class="btn btn-info btn-lg" id="find-passengers-id">Find Passengers!</a></br>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Let my request be searchable for everyone
+                                (Your name is still private)
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+    <script src="js/jquery-1.11.2.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+    <script src="js/jquery.geocomplete.js"></script>
+    <script src="js/ripples.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/typeahead.js"></script>
+    <script src="js/typeahead.bundle.js"></script>
+    <script src="js/bloodhound.js"></script>
+    <script src="js/typeahead.jquery.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/bootstrap-mterial-datepicker.js"></script>
+    <!--<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>-->
+    <script src="js/SendSomething.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.material.init();
+        });
+    </script>
+</body>
+
+</html>

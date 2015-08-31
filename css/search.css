@@ -1,0 +1,53 @@
+#search-tab{
+    background-color: #d4d4d4;
+}
+#search-box{
+    background-color: #e0e0e0;
+}
+#picks-tab{
+    float: left;
+}
+#packs-tab{
+    float: right;
+}
+#picks-image{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+#packs-image{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+#picks-li{
+    display: inline-block;
+}
+#packs-li{
+    display: inline-block;
+}
+.form-input{
+    width: 100%;
+    margin-top: 5px;
+}
+.form-horizontal{
+    margin-top: 20px;
+}
+#amount1{
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+#amount2{
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+.request-btn{
+    float: right;
+}
+.verification-msg{
+    margin-left: 30px;
+}
+.verification-image{
+    height: 20px;
+    width: 20px;
+}

@@ -1,0 +1,47 @@
+
+body{
+    background-image:url('../images/bg.jpg'); 
+    background-size:100% 100%;
+}
+#content{
+    margin-left:83px;
+    text-align:center;
+    width:1200px;
+    position:relative;
+    height:700px;
+}
+#wrapper{
+    width:1200px;
+    height: 700px;	
+    overflow:hidden;
+}
+#steps{
+    /*width:1200pxpx;*/
+	/*height:320px;*/
+    overflow:hidden;
+}
+.step{
+    float:left;
+    width:1200px;
+	/*height:320px;*/
+}
+
+#navigation ul{
+    list-style:none;
+    float:center;
+    position: absolute;
+    bottom:100px;
+    margin-left:500px;
+}
+#navigation ul li{
+	float:left;
+	margin:0px 2px;
+}
+#navigation ul li a{
+    display:block;
+    height:45px;
+    outline:none;
+
+}
+
+

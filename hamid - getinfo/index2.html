@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>second</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Fancy Sliding Form with jQuery" />
+        <meta name="keywords" content="jquery, form, sliding, usability, css3, validation, javascript"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+		
+    </head>
+    <style>
+        span.reference{
+            position:fixed;
+            left:5px;
+            top:5px;
+            font-size:10px;
+            text-shadow:1px 1px 1px #fff;
+        }
+        span.reference a{
+            color:#555;
+            text-decoration:none;
+			text-transform:uppercase;
+        }
+        span.reference a:hover{
+            color:#000;
+            
+        }
+        h1{
+            color:#ccc;
+            font-size:36px;
+            text-shadow:1px 1px 1px #fff;
+            padding:20px;
+        }
+    </style>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <style type="text/css">
+  	.container2 { width: 800px; margin: 0 auto; }
+  	.autocomplete-suggestions { border: 1px solid #999; background: #FFF; cursor: default; overflow: auto; -webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); 
+	-moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); }
+	.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+	.autocomplete-no-suggestion { padding: 2px 5px;}
+	.autocomplete-selected { background: #F0F0F0; }
+	.autocomplete-suggestions strong { font-weight: bold; color: #000; }
+	.autocomplete-group { padding: 2px 5px; }
+	.autocomplete-group strong { font-weight: bold; font-size: 16px; color: #000; display: block; border-bottom: 1px solid #000; }
+  </style>
+  
+  <style type="text/css">
+    @font-face{
+    font-family: express;
+    src: url(fonts/expresswayrg.ttf);}
+  p{
+    font-family: express;
+    font-size: 20px;
+  }
+
+</style>
+
+<style type="text/css">
+
+
+  .btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: green;
+    cursor: inherit;
+    display: block;
+}
+
+
+
+}
+
+</style>
+
+    <body>
+       
+        <div id="content">
+            <div id="wrapper">
+                <div id="navigation" style="display:none;">
+                    <ul>
+                        <li class="selected">
+                            <a href="#" onclick="first();"><img src="images/brown.gif" id="one" class="img-circle" style="border:4px solid #5F5E1B;"></a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="second();"><img src="images/yellow.gif" id="two" class="img-circle" style="border:4px solid #5F5E1B;"></a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="third();"><img src="images/yellow.gif" id="three" class="img-circle" style="border:4px solid #5F5E1B;"></a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="fourth();"><img src="images/yellow.gif" id="four" class="img-circle" style="border:4px solid #5F5E1B;"></a>
+                        </li>
+						
+                    </ul>
+                </div>
+
+                <div id="steps">
+                    <form id="formElem" name="formElem" action="" method="post">
+                        <fieldset class="step" id='1'>
+                        	<p style="margin-top:300px;  float:left; font-size:28px; color:#7C3A39;"><b style="margin-left:-380px;">Hi Reza !</b><br> <b style="margin-left:-60px;"> Adding a profile photo would help</b> <br> <b> people to know you and trust you more</b></p>
+
+                            <center><img src="images/face.gif" class="img-circle" alt="your image" width="150" height="150" id="blah" style="margin-left:-535px; margin-top:85px; border:4px solid #5F5E1B;"></center>
+
+                            <p style="margin-top:-5px; float:left; margin-left:10px; font-size:28px; color:#7C3A39;"><b>Reza Aslan</b></p>
+    						
+    						<!-- <center><input type="file" style="margin-left:-500px;"></center> -->
+    						<!-- <center><img src="circles.gif" style="margin-left:-25px;"></center> -->
+   							<center><span class="btn btn-default btn-file" style="background-color:#0F620F; width:150px; height:60px;  color:white; font-size:20px; padding:10px; margin-top:120px; margin-left:-685px;"><img src="images/upload.gif" style="margin-left:-40px; margin-top:7px;">
+      						Upload <input type="file" id="imgInp"/>
+    						</span></center>
+    						<!-- <input type="file" style="margin-left:450px;" id="imgInp"/> -->
+  						  	<center><button class="btn btn-default" id="next1" style="background-color:transparent; border-width:2px; border-color:#5F5E1B; color:#7C3A39; height:50px; width:150px; margin-top:200px; margin-left:-550px;" type="button" onclick="goToHome();"><p style="font-size:15px; color:black; padding:5px;">Skip these levels</p></button></center>
+  						  	<center><p style="font-size:15px; color:#7C3A39; margin-top:10px; margin-left:0px;"><i>and i promise to fill it later ! :)</i></p></center>
+
+                        </fieldset>
+
+                        <fieldset class="step" id='2'>
+                        	<p id="slide2" style="margin-top:360px; float:left; font-size:28px; color:#7C3A39;"><b>What is your occupation ?</b></p>
+
+                            <center><img src="images/face.gif" class="img-circle" alt="your image" width="150" height="150" id="blah2" style="margin-left:-370px; margin-top:85px; border:4px solid #5F5E1B;"></center>
+
+    						<p style="float:left; margin-top:-10px; margin-left:190px; font-size:28px; color:#7C3A39;"><b>Reza Aslan</b></p>
+
+    						<center><input type="text" class="form-control" id="occupation" style="height:70px; width:400px; float:left; margin-top:120px; margin-left:-285px; background-color:#DDEEBD; border-radius:10px; border:3px solid #5F5E1B; font-size:30px;"/></center>
+
+    						<center><button class="btn btn-default" id="next2" style="background-color:transparent; border-width:2px; border-color:#5F5E1B; color:#7C3A39; height:50px; width:150px; margin-top:380px; margin-left:-820px;" type="button" onclick="goToHome();"><p style="font-size:15px; color:black; padding:5px;">Skip these levels</p></button></center>
+    						<center><p style="font-size:15px; color:#7C3A39;"><i>and i promise to fill it later ! :)</i></p></center>
+                        </fieldset>
+
+                        <fieldset class="step" id='3'>
+
+                        		<p style="margin-top:360px; float:left; font-size:28px; color:#7C3A39;"><b>Then Where Do you live ?</b></p>
+								<div class="container2">
+
+                                <center><img src="images/face.gif" class="img-circle" alt="your image" width="150" height="150" id="blah4" style="margin-left:-175px; margin-top:85px; border:4px solid #5F5E1B;"></center>
+
+    							<p style="float:left; margin-top:-10px; margin-left:175px; font-size:28px; color:#7C3A39;"><b>Reza Aslan</b></p><br>
+
+    							<p style="float:left; margin-top:10px; margin-left:-140px; font-size:20px; color:#7C3A39;"><i id="occ">your occupation</i></p>
+							
+    							<center><input type="text" id="autocomplete-ajax" class="form-control" style="height:70px; width:400px; float:left; margin-top:50px; margin-left:55px;  background-color:#DDEEBD; border-radius:10px; border:3px solid #5F5E1B; font-size:30px;" /></center>
+   	 							<div id="selction-ajax"></div>
+    							</div>
+
+    							<center><a href="#" id="geo" style="margin-top:200px; margin-left:-25px; color:#7C3A39; visibility:hidden;">Geolocate me !</a></center>
+    							<center><button class="btn btn-default" style="background-color:transparent; border-width:2px; border-color:#5F5E1B; color:#7C3A39; height:50px; width:150px; margin-left:-825px; margin-top:340px;" type="button" onclick="goToHome();"><p style="font-size:15px; color:black; padding:5px;">Skip these levels</p></button></center>
+    							<center><p style="font-size:15px; color:#7C3A39;"><i>and i promise to fill it later ! :)</i></p></center>
+
+                        </fieldset>
+
+                        <fieldset class="step" id='4'>
+
+                        		<p style="margin-top:365px; float:left; font-size:28px; color:#7C3A39;"><b>Your Phone Number</b></p>
+
+                                <center><img src="images/face.gif" class="img-circle" alt="your image" width="150" height="150" id="blah3" style="margin-left:-295px; margin-top:85px; border:4px solid #5F5E1B;"></center>
+
+                                <center><input type="text" class="form-control" id="phonenumber" style="height:70px; width:400px; float:left; margin-top:115px; margin-left:120px; background-color:#DDEEBD; border-radius:10px; border:3px solid #5F5E1B; font-size:30px;"/></center>
+
+    							<p style="float:left; margin-top:-10px; margin-left:-270px; font-size:28px; color:#7C3A39;"><b>Reza Aslan</b></p><br>
+
+    							<p style="float:left; margin-top:10px; margin-left:-270px; font-size:20px; color:#7C3A39;"><i id="occ2">your occupation</i></p>
+
+    							<p style="float:left; margin-top:40px; margin-left:-270px; font-size:20px; color:#7C3A39;" id="count"></p>
+    							
+    							
+
+  								<center><button class="btn btn-default" id="next2" style="background-color:transparent; border-width:2px; border-color:#5F5E1B; color:#7C3A39; height:50px; width:150px; margin-left:-815px; margin-top:360px;" type="submit" onkeydown="press(event);"><p style="font-size:15px; color:black; padding:5px;">Submit</p></button></center>				
+    						
+                        </fieldset>
+
+
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+  <script src="js/bootstrap3.3.5jsbootstrap.min.js"></script>
+  <script src="js/ajaxlibsjquery1.11.3jquery.min.js"></script>  
+  <script src="js/jqury.filestyle.js"></script>
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mockjax.js"></script>
+  <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+  <script type="text/javascript" src="js/countries.js"></script>
+  <script type="text/javascript" src="js/demo.js"></script>
+  <script type="text/javascript" src="js/sliding.form.js"></script>  
+
+  <script type="text/javascript">
+
+  $(document).ready(function(){
+	$("#occupation").on('keypress', function(e){
+    if(e.keyCode==13){
+      e.preventDefault();
+      $("#2").fadeOut();
+      $("#3").fadeIn();
+      third();
+  }
+});
+});
+
+  $(document).ready(function(){
+	$("#autocomplete-ajax").on('keypress', function(e){
+    if(e.keyCode==13){
+      e.preventDefault();
+      $("#3").fadeOut();
+      $("#4").fadeIn();
+      fourth();
+  }
+});
+});	
+
+  function first(){
+      document.getElementById('one').src="images/brown.gif";
+      document.getElementById('two').src="images/yellow.gif";
+      document.getElementById('three').src="images/yellow.gif";
+      document.getElementById('four').src="images/yellow.gif";
+  }
+
+  function second(){
+      document.getElementById('one').src="images/yellow.gif";
+      document.getElementById('two').src="images/brown.gif";
+      document.getElementById('three').src="images/yellow.gif";
+      document.getElementById('four').src="images/yellow.gif";
+  }
+
+  function third(){
+      document.getElementById('one').src="images/yellow.gif";
+      document.getElementById('two').src="images/yellow.gif";
+      document.getElementById('three').src="images/brown.gif";
+      document.getElementById('four').src="images/yellow.gif";
+  }
+
+  function fourth(){
+      document.getElementById('one').src="images/yellow.gif";
+      document.getElementById('two').src="images/yellow.gif";
+      document.getElementById('three').src="images/yellow.gif";
+      document.getElementById('four').src="images/brown.gif";
+  }
+
+
+  $("#autocomplete-ajax").keyup(function(event){
+  	$("#count").html($(this).val());
+  });
+
+  $("#occupation").keyup(function(event){
+  	$("#occ").html($(this).val());
+  });
+
+  $("#occupation").keyup(function(event){
+  	$("#occ2").html($(this).val());
+  });
+
+  // $("#two").click(function(){
+  // 	return $("#slide2").css('visibility', 'visible')
+  // })
+
+  //   $("#one").click(function(){
+  // 	return $("#slide2").css('visibility', 'hidden')
+  // })
+
+  //   $("#three").click(function(){
+  // 	return $("#slide2").css('visibility', 'hidden')
+  // })
+  
+  //   $("#four").click(function(){
+  // 	return $("#slide2").css('visibility', 'hidden')
+  // })  
+
+  function goToHome(){
+  	header:{};
+  }
+
+    var new_address;
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#blah').attr('src', e.target.result);
+                $('#blah2').attr('src', e.target.result);
+                $('#blah3').attr('src', e.target.result);
+                $('#blah4').attr('src', e.target.result);
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+
+        }
+
+    }
+    
+    $("#imgInp").change(function(){
+        readURL(this);
+            });
+
+
+  </script>
+  <script type="application/javascript">
+  //var x = document.getElementById("demo");
+    function getgeoip(json){
+      document.getElementById("autocomplete-ajax").value = json.country;
+      document.getElementById("count").innerHTML = json.country;
+    }	
+</script>
+<script type="application/javascript" src="http://www.telize.com/geoip?callback=getgeoip"></script>
+
+
+    </body>
+</html>

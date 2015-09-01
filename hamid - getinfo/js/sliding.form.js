@@ -38,7 +38,6 @@ $(function() {
 	*/
     $('#navigation a').bind('click',function(e){
 		var $this	= $(this);
-		console.log($this);
 		var prev	= current;
 		$this.closest('ul').find('li').removeClass('selected');
         $this.parent().addClass('selected');
@@ -77,10 +76,11 @@ $(function() {
 	clicking on the tab (on the last input of each fieldset), makes the form
 	slide to the next step
 	*/
+	var history = [];
 	$('#formElem > fieldset').each(function(){
 		var $fieldset = $(this);
 		$fieldset.children().find('#occupation , #autocomplete-ajax').keydown(function(e){
-			if (e.which == 13){
+			if (e.which == 13 || e.which == 9){
 				$('#navigation li:nth-child(' + (parseInt(current)+1) + ') a').click();
 				/* force the blur for validation */
 				$(this).blur();
@@ -88,13 +88,40 @@ $(function() {
 				}
 				})
 		
+		
 		$("#arrow").click(function(){
-			$('#navigation li:nth-child(' + (parseInt(current)+1) + ') a').click();
-			console.log('hello');
-				/* force the blur for validation */
-					$(this).blur();
-				});
+			if(parseInt(current)==2)
+			{
+				history.push('avval');
+			}
 
+			if(parseInt(current)==3)
+			{
+				history.push('dovvam');
+			}
+
+			
+
+			var arrayLength = history.length;
+			for (var i = 0; i < arrayLength; i++) {
+				if(history[i]=='avval'){
+					$('#navigation li:nth-child(3) a').click();
+				 	//force the blur for validation 
+					$(this).blur();
+					//console.log("first");
+					history[i]='';
+					return final;
+				}
+				else{
+				$('#navigation li:nth-child(4) a').click();
+				 //force the blur for validation 
+				$(this).blur();
+				//console.log("second");
+				}
+			}
+			//console.log(history);
+			
+});
 		
 			
 	});

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/bootstrap-material-datepicker.css" rel="stylesheet">
+    <link href="css/flightSubmit.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="col-md-3"></div>
+    <div class="col-md-7">
+        <form id="flight-form">
+            <div class="row" id="title">
+                <h3>Fill your travel itinerary</h3>
+            </div>
+            <div class="row form-horizontal">
+                <!--<div class="col-md-1"></div>-->
+                <div class="col-md-5">
+                    <label>City of departure</label>
+                    <input id="departure-city">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <label>City of arrival</label>
+                    <input id="arrival-city">
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row form-horizontal">
+                <div class="col-md-4">
+                    <div class="col-md-6">
+                        <label>Date of travel</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input class="form-input" id="date1">
+                        <!--style="background: url(img/smiley.png) left no-repeat;padding-left: 2px;-->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-md-6">
+                        <label>The travel</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input class="form-input" id="date2">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-md-6">
+                        <input class="form-input" id="date3">
+                    </div>
+                    <div class="col-md-6"></div>
+                </div>
+            </div>
+            <hr>
+            <div class="row form-horizontal">
+                <div class="col-md-2"></div>
+                <div class="col-md-6">
+                    <div class="col-md-7">
+                        <label>Maximum weight I can carry</label>
+                    </div>
+                    <div class="col-md-3" >
+                        <input type="number" min='1' max='40' id="max-weight-input" onchange="console.log(this.value)">
+                    </div>
+                    <div class="col-md-2">
+                        <h5>Kg</h5>
+                    </div>
+                    <!--<div class="col-md-1">-->
+                    <!--</div>-->
+                </div>
+                <div class="col-md-4" id="warning-div">
+                    <!--<label>You cannot carry more than 40kg!</label>-->
+                </div>
+            </div>
+            <hr>
+            <div class="row form-horizontal" style="margin-top: 0px">
+                <div class="col-md-7">
+                    <div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-11">
+                            You do request
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-11">
+                            <div class="radio radio-primary col-md-12">
+                                <label class="input-label">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                    For free
+                                </label>
+                                <span><img src="img/smiley.png" id="for-free-image"></span>
+                                <div id="for-free-description">(this will bring you more reputation and you can get more requests further)</div>
+                            </div>
+                            <div class="radio radio-primary col-md-12">
+                                <!--<div class="col-md-6" style="display: inline">-->
+                                    <label class="input-label col-md-6">
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                        I do request more than
+                                    </label>
+                                <!--</div>-->
+                                <!--<div class="col-md-6" style="display: inline">-->
+                                    <span>
+                                        <div class="col-md-10">
+                                            <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0" id="slider"/>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label id="money-input"></label>
+                                        </div>
+                                    </span>
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="row" style="margin-top: 0px ;">
+                        <h6 style="width: 50%">Anything else people should know  before requesting you on this travel</h6>
+                    </div>
+                    <textarea class="form-control" rows="4" id="textArea" ></textarea>
+                    <div class="btn btn-info" id='submit-button'>Save this travel</div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-4"></div>
+    <!--site edns here-->
+    <script src="js/jquery-1.11.2.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+    <script src="js/jquery.geocomplete.js"></script>
+    <script src="js/material.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/bootstrap-mterial-datepicker.js"></script>
+    <script src="js/flightSubmit.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.material.init();
+        });
+    </script>
+</body>
+</html>

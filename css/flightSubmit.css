@@ -1,0 +1,75 @@
+#title{
+    text-align: center;
+}
+#for-free-image{
+    height: 40px;
+    width: 40px;
+}
+#flight-form{
+    background-color: lightgray;
+}
+.form-input{
+    width: 100% ;
+}
+.row{
+    margin-top: 30px;
+}
+#max-weight-input{
+    width: 100%;
+    color: red;
+    text-align: center;
+    font-size: 20px;
+}
+.input-label{
+    margin-right: 5px;
+}
+#for-free-description{
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
+    width: 50%;
+    display: inline-block;
+}
+#money-input{
+    font-size: 25px;
+    position: relative;
+    top: -10px;
+    left: -20px;
+}
+#textArea{
+    background-color: white;
+}
+#submit-button{
+    float: right;
+    margin-right: 10px;
+}
+/*input[type=range]{*/
+    /*-webkit-appearance: none;*/
+/*}*/
+
+/*input[type=range]::-webkit-slider-runnable-track {*/
+    /*width: 300px;*/
+    /*height: 5px;*/
+    /*background: #ddd;*/
+    /*border: none;*/
+    /*border-radius: 3px;*/
+/*}*/
+
+/*input[type=range]::-webkit-slider-thumb {*/
+    /*-webkit-appearance: none;*/
+    /*border: none;*/
+    /*height: 85px;*/
+    /*width: 85px;*/
+    /*border-radius: 50%;*/
+    /*background: url(../img/2014-Warren-G.-Harding-Presidential-1-Coin.jpg) no-repeat center;*/
+    /*margin-top: -4px;*/
+    /**/
+/*}*/
+
+/*input[type=range]:focus {*/
+    /*outline: none;*/
+/*}*/
+
+/*input[type=range]:focus::-webkit-slider-runnable-track {*/
+    /*background: #ccc;*/
+/*}*/

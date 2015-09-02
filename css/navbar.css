@@ -1,0 +1,31 @@
+.navbar-right{
+    margin-right: 50px;
+}
+.list-item{
+    text-align: center;
+}
+#note-number{
+    margin-left: 20px;
+    background-color: red;
+}
+#navigation-bar{
+    background-color: #000000;
+}
+#message-badge{
+    background-color: cornflowerblue;
+}
+#note-badge{
+    background-color: red;
+}
+.note-li{
+    padding-top: 20px;
+    background-color: lightblue;
+}
+.all-note-li{
+    background-color: #e0e0e0;
+    text-align: center;
+}
+.nav-li{
+    /*margin-left: 20px;*/
+    margin-right: 60px;
+}

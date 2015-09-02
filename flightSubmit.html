@@ -86,7 +86,7 @@
                     <div>
                         <div class="col-md-1"></div>
                         <div class="col-md-11">
-                            <div class="radio radio-primary col-md-12">
+                            <div class="radio radio-primary col-md-12" id="first-radio">
                                 <label class="input-label">
                                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
                                     For free
@@ -94,17 +94,17 @@
                                 <span><img src="img/smiley.png" id="for-free-image"></span>
                                 <div id="for-free-description">(this will bring you more reputation and you can get more requests further)</div>
                             </div>
-                            <div class="radio radio-primary col-md-12">
+                            <div class="radio radio-primary col-md-12" id="second-radio">
                                 <!--<div class="col-md-6" style="display: inline">-->
                                     <label class="input-label col-md-6">
-                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" >
                                         I do request more than
                                     </label>
                                 <!--</div>-->
                                 <!--<div class="col-md-6" style="display: inline">-->
                                     <span>
                                         <div class="col-md-10">
-                                            <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0" id="slider"/>
+                                            <input class="mdl-slider mdl-js-slider" disabled type="range" min="0" max="100" value="25" tabindex="0" id="slider"/>
                                         </div>
                                         <div class="col-md-2">
                                             <label id="money-input"></label>
@@ -129,7 +129,7 @@
     <!--site edns here-->
     <script src="js/jquery-1.11.2.js" ></script>
     <script src="js/bootstrap.min.js" ></script>
-    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+    <!--<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>-->
     <script src="js/jquery.geocomplete.js"></script>
     <script src="js/material.min.js"></script>
     <script src="js/moment.min.js"></script>

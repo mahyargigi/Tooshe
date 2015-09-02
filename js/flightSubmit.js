@@ -26,4 +26,31 @@ $(document).ready(function(){
     $('#date1').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
     $('#date2').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
     $('#date3').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
+    $('#first-radio').on('click',function(){
+        if($('#optionsRadios1').is(':checked')) {
+//            alert("first is checked!");
+            $('#slider').prop('disabled',true);
+        }
+    });
+    $('#second-radio').on('click',function(){
+        if($('#optionsRadios2').is(':checked')) {
+//            alert("second is checked!");
+            $('#slider').removeAttr("disabled");
+        }
+//        console.log("second radio clicked");
+    });
+//    console.log("is: "+$('#optionsRadios1').checked);
+
+
 });
+
+
+
+
+
+
+
+
+
+
+

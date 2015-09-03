@@ -329,3 +329,34 @@ Waypoints
 .green{
     color: green;
 }
+#how-it-works{
+    font-size: 60px;
+}
+#it-is-simple{
+    font-size: 25px;
+}
+#line-breaker{
+    margin-top: 20px;
+}
+#logo-img{
+    width: 100%;
+}
+.footer-list li{
+    color: white;
+    list-style: none;
+}
+#language-dropdown{
+    margin-bottom: 30px;
+}
+.dropdown-menu {
+  width: 100%;
+}
+
+.btn{
+ width: 100%;
+}
+#join-us{
+    text-align: center;
+    color: white;
+
+}

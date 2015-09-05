@@ -1,0 +1,7 @@
+@font-face {
+    font-family: estre;
+    src: url(../fonts/estre.ttf);
+}
+body{
+    font-family: estre;
+}

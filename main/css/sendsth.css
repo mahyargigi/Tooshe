@@ -1,0 +1,152 @@
+﻿#sendsthbody
+{
+    background-color:#F8F8F8 ;
+}
+#sendsthmenu
+{
+    background-color:White;
+     border-bottom:2px solid #7FFFD4;
+
+}
+#sendsthmenu-iwant
+{
+    margin-top:20px;
+}
+#sendsthmenu-logo
+{
+    width=128px;
+     height:64px;
+}
+#sendsthmenu-nav
+{
+    float:right
+}
+
+#sendsthimg-bar
+{
+    background-color:White;
+     padding:0px 80px 0px 80px;
+}
+#
+{
+    
+}
+.sthimgd
+{
+    width=48px;
+     height:48px;
+    }
+    .sthimg
+{
+    width=64px;
+     height:64px;
+    }
+    
+    
+#sendsth-waht
+{
+    background-color:#DEB887;
+     height:100px;
+}
+#sendsth-waht-h
+{
+    height:40px;
+}
+#sendsth-form
+{
+    background-color:#F8F8F8 ;
+}
+#sendsth-margin
+{
+  margin:90px 40px 90px 40px;  
+}
+#sendsth-where
+{
+     float:left; 
+     margin-left:20px;
+}
+
+#sendsth-to
+{
+    float:left;
+    margin-left:10px;
+    }
+    #sendsth-tocity
+{
+    width:150px; 
+     border-radius : 20px;
+      height:30px;
+    }
+    #sendsth-from
+{
+    float:left;
+    margin-left:10px;
+    }
+    #sendsth-fromcity
+{
+    width:150px;
+      border-radius : 20px;
+       height:30px;
+    
+    }
+    #sendsth-when
+{
+    float:left;
+     margin-left:40px;
+    }
+#calender1
+{
+    width:150px; 
+     border-radius:20px;
+      height:30px;
+    }
+    #calender2
+{
+    width:150px; 
+     border-radius:20px;
+      height:30px;
+    }
+    #sendsth-sidebar
+{
+    margin-top:20px;
+    }
+    #single-slider
+{
+    color:Red;
+     background-color:Gray;
+            }
+  #sendsth-find
+{
+    margin:50px 40px 50px 40px;
+    }
+       #sendsth-findbut
+{
+    background-color:#00CCCC; 
+    height:40px;
+    border-radius:20px;
+     color:White;
+    }
+       #find passenger
+{
+    margin:10px 0 0  0;
+    
+    }
+    #search-box
+    {
+        background-color:#F8F8F8;
+         width:135px;
+         height:35px;
+        }
+        #search-drop-box
+               {
+                   
+        background-color:#F8F8F8;
+                    width:120px;
+                   height:35px;
+                   
+                   }
+                   div.margin-send
+                   {
+                       margin-bottom:30px;
+                       margin-top:40px;
+                       }

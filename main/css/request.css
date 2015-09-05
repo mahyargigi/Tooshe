@@ -1,0 +1,93 @@
+﻿div.request-main
+{ 
+    
+      margin-top:100px;
+      width:250px;
+      height:280px;
+       border : 0px solid gray;
+       padding:0px 0px 0px 0px;
+       border-radius : 20px;
+       
+               
+
+    }
+    #sendsth-form
+    {
+        
+    
+        
+        }
+    #request-head
+    {
+        background-color:#B3B3B3;
+        padding:5px 5px 5px 5px;
+       
+        
+       
+        }
+       p.float-left
+       {
+           float:left;
+           }
+                 p.float-right
+       {
+           float:right;
+           }
+           #request-body
+           {
+                border-radius : 20px;
+               background-color:White;
+               }
+               a.float-a-r
+               {
+                     float:right;                   
+                   }
+               select.float-s-r
+               {
+                     float:right;
+                     margin-top:2px;                   
+                   }    
+                   #w-kg
+                   {
+                       width:40px;
+                       height:20px;
+                       padding:0 0 0 0;
+                       
+                       
+                       float:right;
+                       }
+                       #whigt-div
+                       {
+                           margin-bottom:5px;
+                       border-bottom:1px solid gray;
+                           }
+                           input.rquest-input
+                           {
+                              
+                               width:120px;
+                               height:25px;
+                               }
+                               #from-div
+                               {
+                                   border-bottom:1px solid gray;
+                                   margin-bottom:10px;
+                                   }
+                                   #to
+                                   {
+                                       margin-left:33px;
+                                       }
+                                       #request-date
+                                       {
+                                           margin-left:48px;
+                                           }
+                                           #request-range
+                                       {
+                                           margin-left:45px;
+                                           }
+                                           #request-tail
+                                           {
+                                               
+                                               
+                                               background-color:#B3B3B3;
+                                             
+                                               }

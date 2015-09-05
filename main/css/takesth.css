@@ -1,0 +1,245 @@
+﻿#takesth-nav
+{
+        background-image:url("../image/back1.jpg");
+     height:120px;
+}
+#takesth-basic
+{ 
+
+    height:80px;
+}
+.takesth-location
+{
+     width:140px;
+     height:60px;
+      background-color: White;
+        border-radius : 20px;
+    }
+    #takesth-basic-info
+    { 
+        background-color:#e8ffe5;
+        
+        }
+ .takesth-h4
+ {
+      margin:20px 0 0  0;
+      
+     }
+     div.takesth-date
+     {
+         margin:60px 0px 20px -40px;
+         }
+  .takesth-box
+  {
+      background-color:White;
+      border:1px solid gray;
+      padding:10px 0px 10px 10px;
+      }
+      .takesth-select
+      {
+          margin:17px 0 0px 0 ;
+          height:25px;
+          width:140px;
+         padding:0 0 0  0;
+           float:right;
+          
+          }
+          
+              .takesth-calenderinput
+              {
+                  float:left;
+                   width:20px;
+                    padding:0 0 0 0;
+                  
+                  }
+                .take-clanderglyf
+                {
+                    float:right;
+                  margin:20px 0 0 0;
+                 
+                    
+                    }
+                  #takecalender2
+                  {
+                       float:left;
+                   width:75px;
+                   height:30px;
+                    padding:0 0 0 0;
+                    margin:20px 0 0 0;
+                      }
+                           #takecalender1
+                  {
+                       float:left;
+                   width:75px;
+                   height:30px;
+                    padding:0 0 0 0;
+                    margin:20px 0 0 0;
+                      }
+                      input.take-inputhour
+                      {
+                           margin:15px 0 0 0; 
+                           padding:0 0 0 0 ;
+                           width:50px;
+                           height:30px;
+                          }
+                          #takesth-stay
+                          {
+                              float:right;
+                              }
+              #takesth-w
+              {
+                  margin-top:20px;
+                  }
+                  div.margin-weight-bar
+                  {
+                      margin:20px 0 0 0 ;
+                      }
+                      .takesth-check-box
+                      {
+                          float:right;
+                          margin:10px 0 0 0 ;
+                          }
+                   #special-stuffe
+                      {
+                         
+                         margin:12px 0 0 -18px;
+                          }
+
+           #all-allowed
+                      {
+                          float:right;
+                         margin:12px 0 0 -18px;
+                          }
+                input[type=checkbox].takesth-disabled-check
+                {
+                    margin-top:10px;
+                    }
+              input[type=checkbox].takesth-difine
+                {
+                    margin:10px 0 0 0;
+                    float:left;
+                    }         
+              
+              h6.takesth-difine-h
+              {
+                  float:right;
+                  }
+                  #your-address
+                  {
+                      height:80px;
+                      }
+              
+             img.map-takesth
+             { 
+                 margin-bottom:10px;
+                 margin-top:20px;
+                 border:3px solid #F5DEB3;
+                 padding:10px 10px 10px 10px;
+                 }
+                 img.img-map-takesth
+                 {
+                     float: left;
+                     width:200px;
+                     height: 200px;
+                     
+                     }
+                     div.takesth-float-left
+                     {
+                         float:left;
+                         margin-left:40px;
+                         }
+              
+          img.img-card-takesth
+          {
+              width:200px;
+               height: 75px;
+              }
+              img.img-card-final
+          {
+              width:300px;
+               height: 100px;
+              }
+              div.wite-fee
+             { 
+                         border-radius : 20px;
+                 margin-bottom:10px;
+                 margin-top:40px;
+                 border:3px solid #F5DEB3;
+                 padding:10px 10px 10px 10px;
+                 }
+              
+              div.wite-fee-marg
+              {
+                    margin-top:10px;
+                  
+                  }
+                  #your-trip
+                  {
+                      width:695px;
+                      height:100px;
+                       margin-bottom:10px;
+                    margin-right:0px;
+                           border-radius : 20px;
+                      }
+                      #next-batun
+                      {
+                           width:150px;
+                           height:50px;
+                          }
+                          div.margin-box-basic
+                          {
+                              margin-bottom:18px;
+                              margin-top:18px;
+                              }
+                             #all-stuff-margin
+                             {
+                                 margin-left:-33px;
+                                 }
+                             #food-margin
+                             {
+                                 margin-left:-48px;
+                                 }
+                               #ship-good
+                               {
+                                   margin:10px 0px 10px 25px;
+                                   }
+                                   #corry-ship
+                                   {
+                                       margin:10px 0 0 5px;
+                                       }
+                                      #free-ship
+                                      {
+                                          margin:0 0 0 -250px;
+                                          }
+                                          #deliver-stuff-ship
+                                          {
+                                              margin:0 0 0 1px;
+                                              }
+                                              #airname-ship
+                                              {
+                                                     margin:0 0 0 -145px; 
+                                                  }
+                                                  #air-top
+                                                  {
+                                                      margin-top:20px;
+                                                      }
+                                                      #your-exact-addres
+                                                      {
+                                                           margin:10px 45px 0 0;
+                                                          }
+                                                          #input-add-ship
+                                                          {
+                                                              margin-left:15px;
+                                                              }
+                                                              #post-stuff-ship
+                                                              {
+                                                                  margin-left:5px;
+                                                                  }
+                                                                 #you-margin-final
+                                                                 {
+                                                                      margin:10px 0 10px 0;
+                                                                     }
+                                     #fee-margin-final
+                                     {
+                                         margin-left:-50px;
+                                         }

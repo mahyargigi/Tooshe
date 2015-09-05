@@ -1,0 +1,154 @@
+﻿
+    #logo
+    {
+        width:75px; 
+        height:75px;
+        }
+
+
+    div.menu
+{ direction: rtl;
+    /*width:500px;margin:0 auto;*//*Uncomment this line to make the menu center-aligned.*/
+    text-align: right;
+    font-size:0;
+    height: 25px;    
+    position:relative;*top:1px;/*Hacks for IE6 & IE7 */    
+    	
+}
+
+div.menu a
+{
+    display: inline-block;
+    padding: 5px 10px;
+   /* margin-right:2px;  It specifies the distance between each tab */
+     /*background:#F7F7F7;*/
+     	margin: 1% 10px ;
+    color: White ;
+    text-decoration:none;
+    font: normal 25px good,Arial,sans-serif;
+    line-height: 24px;
+    overflow: hidden;
+	height: 25px;
+    border:1px solid none;  
+    border-radius : 5px;
+     /*border-bottom:0;*/
+   color:White;
+    vertical-align:baseline;/*ChangeSet#2*/
+    text-decoration:none;
+}
+div.menu a:hover/*, div.menu a.current*/
+{ 
+    /*background:#484037;*/
+    border:1px solid #E65C00 ;
+    color:#E65C00;
+        padding: 4px 9px;
+}
+div.menu img
+{ margin: 1% 0px 0px 10% ;
+    float:left;
+    position:relative;
+    
+}
+div.body 
+{
+    /*float:  right;*/
+    position:relative;
+  /*  left:100px;
+    top:60%;*/
+   margin-left:10%;
+    margin-top:15%;
+    /* padding: 10px 20px;*/
+
+
+    
+}
+
+h1
+{       
+    color: white;
+    font: bold 88px good,Arial,sans-serif ;
+     line-height: 48px;
+     /*margin: 3% 3px ;*/
+    
+}
+
+h2
+{    
+     font: normal 12px IRANSans-web,Arial,sans-serif ;
+     line-height: 36px;
+     /*margin: 3% 3px ;*/
+     width: 400px;
+     color:white;
+}
+div.body a
+{      text-align: right;
+     display: inline-block;
+    padding: 10px 20px;
+   /* margin-right:2px;  It specifies the distance between each tab */
+     /*background:#F7F7F7;*/
+     	margin: 3% 3px ;
+    color: White ;
+    text-decoration:none;
+    font: normal 27px good,Arial,sans-serif;
+    line-height: 24px;
+    border:1px solid #E65C00;
+    border-radius : 5px;
+     /*border-bottom:0;
+   color:White;*/
+    vertical-align:baseline;/*ChangeSet#2*/
+    text-decoration:none;
+}
+div.body a:hover/*, div.menu a.current*/
+{ 
+    /*background:#484037;*/
+  /*  border:1px solid #F80000 ;
+    color:#F80000;<image src="image/back1.jpg" alt="بك گراند" style="width:100%; height:100% ; position:relative;" >*/
+    background-color:#E65C00;
+    color:black;
+}
+div.body a.normal
+{
+     line-height: normal;
+    display:  inline;
+   margin: 0px 0px;
+   text-decoration: underline;
+    padding:0px 0px;
+     border:0px ;
+     font: bold 12px IRANSans-web,Arial,sans-serif ;
+     border-radius :none;
+}
+
+div.body a.normal:hover
+{
+    background-color: inherit;
+    color: Yellow;
+}
+div.menu a.signin
+{
+    
+    display: inline-block;
+   /* margin-right:2px;  It specifies the distance between each tab */
+     /*background:#F7F7F7;*/
+     margin-right:40px;
+    color: Green ;
+    text-decoration:none;
+    font: normal 14px IRANSans-web,Arial,sans-serif;
+     /*border-bottom:0;*/
+    vertical-align:baseline;/*ChangeSet#2*/
+    text-decoration:none;
+}
+#signuplink
+{
+    color: black;
+    background-color:#E65C00;
+    width: 110px;
+    text-align: center;
+}
+div.menu a.signin:hover/*, div.menu a.current*/
+{ 
+    /*background:#484037;*/
+  /*  border:1px solid #F80000 ;
+    color:#F80000;<image src="image/back1.jpg" alt="بك گراند" style="width:100%; height:100% ; position:relative;" >*/
+    background-color:#E65C00;
+    color:Green;
+}

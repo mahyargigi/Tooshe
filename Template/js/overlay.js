@@ -3,7 +3,7 @@ $(document).ready(function() {
     // show the close overlay button
     $(".close-overlay").removeClass("hidden");
     // handle the adding of hover class when clicked
-    $(".effects .img").click(function(e) {
+    $(".effects .image").click(function(e) {
       e.preventDefault();
       e.stopPropagation();
       if (!$(this).hasClass("hover")) {
@@ -20,7 +20,7 @@ $(document).ready(function() {
     });
   } else {
     // handle the mouseenter functionality
-    $(".effects .img").mouseenter(function() {
+    $(".effects .image").mouseenter(function() {
       $(this).addClass("hover");
     })
     // handle the mouseleave functionality

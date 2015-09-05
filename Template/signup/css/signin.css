@@ -1,0 +1,221 @@
+#bg {
+  /*background-color: #1f304e;*/
+  /*background-image: url('../image/pic1.jpg');*/
+  /*background-repeat: no-repeat;*/
+  /*background-attachment:fixed;*/
+  /*background-position: center 0px;*/
+  /*position: fixed;*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*z-index: -1;*/
+}
+
+
+
+
+
+body {   
+      background-size:   cover;                      
+      background-repeat: no-repeat;
+     background-position: center center;
+     background-attachment: fixed;
+
+      box-sizing: border-box;
+      direction: ltr;
+      color:  Black ;
+        font: normal 12px IRANSans-web,Arial,sans-serif;
+        width:100%;
+        height:100%;
+     
+    }
+
+div.signin
+{ 
+background-color:#F0F8FF;
+     width:400px;
+     height:400px;
+      position:relative;
+         border:2px solid  Black; 
+         margin: 75px 2px ;
+         padding: 2px 2px;
+        
+        border-radius :8px;
+    }
+ div.signinform
+ {
+     width:250px;
+     }
+     
+     div.signin h1
+     {
+         font-family:b nazanin;
+         font-size:24px
+     }
+     div.signin h2
+     {
+         font-family:b nazanin;
+         font-size:24px
+     }
+     
+     div.signin input[type=text]
+     {
+         width:95%;
+         line-height: 25px;
+        
+         position:relative;
+         border:1px solid white; 
+         margin: 0px 0px ;
+         padding: 2px 2px;
+        
+        border-radius : 2px;
+     }
+     div.signin input[type=password]
+     {
+         width:95%;
+         line-height: 25px;
+        
+         position:relative;
+         border:1px solid white; 
+         margin: 4px 0px ;
+         padding: 2px 2px;
+        
+        border-radius : 2px;
+     }
+     div.signin input[type=radio]
+     {
+         width:0px;
+      /*   line-height: 25px;*/
+        
+         position:relative;
+         border:0px solid white; 
+         margin: 0px ;
+         padding: 0px ;
+        
+        border-radius : 0px;
+     }
+      #gender1
+        {
+            margin:0px 0px 0px 0px ;
+            }
+            #gender2
+        {
+            float:left;
+            }
+              #genderbox
+        {
+            float: right;
+            }
+               #gendermale
+        {
+            float: left;
+             margin:0px 40px ;
+            }
+                 #genderfemale
+        {
+            float: right;
+            }
+              #lablebirthday
+        {
+            float:left;
+            }
+       #hrsignin1
+       {
+           width:45%;
+           float:left;
+           }
+           #hrsignin2
+       {
+           width:45%;
+           float: right;
+           }
+           
+      div.signin label
+      {
+          width:10px;
+      /*   line-height: 25px;*/
+        
+         position:relative;
+         border:0px solid white; 
+         margin: 0px ;
+         padding: 0px ;
+        
+        border-radius : 0px;
+      }
+     
+     .icon
+     {
+        
+         
+               color: #888888 ;
+               margin-top:10px;
+               margin-bottom:10px;
+         }
+         #email
+         {
+             background-image:url(" ../image/Email-Name-icon.png");
+              background-size:20px 20px;
+          background-position:  right;
+              background-repeat: no-repeat;
+             
+                   margin:0px 0 0px 0;
+             float:left;
+               border-top:0px;
+             }
+              #pass
+         {
+             background-image:url(" ../image/pass-icon.png");
+              background-size:20px 20px;
+          background-position:  right;
+              background-repeat: no-repeat;
+                margin:5px 0 0px 0;
+             float:left;
+               border-top:0px;
+             }
+   div.signin select
+   {
+       
+         height:30px;
+         position:relative;
+         border:1px solid white; 
+         margin: 2px 0px 0px 20px; 
+         padding: 2px 2px;
+        
+        border-radius : 2px;
+ 
+
+      
+       
+     
+       }
+     .submit
+     {
+             width:100%;
+             height:40px;
+         background-color:#004151;
+           border-radius : 5px;
+         color:White;
+           
+         margin: 5px 0px ;
+     
+
+     }
+     
+     #remmeber-check
+     {
+         float:left;
+          margin-top:10px;
+          margin-bottom:5px;
+          
+         }
+         #remmeber
+         {
+             float:right;
+             margin-top:10px;
+                margin-bottom:5px;
+             }
+             #account
+             {
+                 margin-top:5px;
+                 }
+             
+     

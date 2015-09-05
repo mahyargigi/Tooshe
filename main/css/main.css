@@ -1,0 +1,90 @@
+﻿ .logo-menu
+      {
+          width:48px;
+          height:48px;
+          }
+       .contact-menu-img
+       {
+             width:72px;
+          height:72px;
+           }
+           .menu-nav-img
+           {
+                 width=48px;
+                 height:48px;
+               
+               }
+               .menu-nav-img-disable
+           {
+               margin-top:5px;
+               position:relative;
+                 width=32px;
+                 height:32px;
+               
+               }
+               #take-p-menu
+               {
+                   position:absolute;
+                   margin:-25px 0px 0px 60px;
+                   }
+               
+               input[type=text].search-menu
+               {
+                   border-radius : 0px;
+                   height:35px;
+                   
+                   }
+                    select.search-drop
+               {
+                   margin-top:1px;
+                    border-radius : 0px;
+                   height:35px;
+                   
+                   }
+               .body-main-color
+               {
+                    background-color:#F8F8F8 ;
+                   }
+                   select.body-main-color
+               {
+                    background-color:#F8F8F8 ;
+                   }
+                    input[type=text].body-main-color
+               {
+                    background-color:#F8F8F8 ;
+                   }
+              .menu-color
+              {
+                   background-color: White ;
+                   
+                  }
+               .menu-pos
+               {
+                   margin:15px 0px 0px 0px;
+                   
+                   }
+      .menu
+      {
+             
+          }
+          div.nopad-nomarg
+          {
+              margin:0 0 0 0; 
+              padding: 0 0 0 0;
+              }
+                span.nopad-nomarg
+          {
+              margin:0 0 0 0; 
+              padding: 0 0 0 0;
+               
+              }
+              div.main-next
+              {
+                   background-color:#00b7b9;
+                   color:White;
+                   width:100px;
+                   height:40px;
+                       border-radius : 10px;
+                      
+                  }
+                  

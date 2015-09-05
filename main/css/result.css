@@ -1,0 +1,138 @@
+﻿div.result-search-box
+{
+     width:80px;
+     height:40px;
+    }
+    div.laptop
+    {
+        margin:0 0 0 0;
+        padding:0 0 0 0;
+          width:10px;
+     height:10px;
+       
+        }
+        div.result-row-margin
+        {
+            margin:20px 10px 20px 10px;
+            }
+            #nav-search-result
+            {
+                border-bottom:3px solid black;
+                }
+            div.result-passenger
+            {
+                margin:10px 0 10px 0;
+                }
+                a.send-to-all
+                {
+                     color:Black;
+                     margin:0 0 0 -20px;
+                     
+                   
+                    }
+                    div.sort-by
+                    {
+                         margin-left:80px;
+                         margin-top:10px;
+                   
+                        }
+                       div.price-drop
+                        {
+                            width:40px;
+                            height:20px;
+                            float:right;
+                            padding:0 0 0  0;
+                            margin: 0 0 0 0 ;
+                            
+                            }
+                      div.search-result-box
+                           { 
+                               border:1px solid gray;
+                                       }
+                                    img.image-profile
+                                     {
+                                    
+                                     width:147px;
+                                     height:145px;
+                                      overflow:hidden; 
+                                    
+                                      
+                                         }
+                                      span.search-result-price
+                                         {
+                                             float:right;
+                                           
+                                             }
+                                            img.img-price
+                                            {
+                                                 position:relative;
+                                                 margin:-10px -14px 0  0;
+                                                }
+                                                p.p-price
+                                                {
+                                                     margin:-40px 0px 0px 40px;
+                                                       
+                                                    position: absolute;
+                                                    }
+                  div.nopadd
+                  {
+                       padding-left:0px;
+                      padding-right:0px;
+                               }
+          p.calendr-result
+          {
+              float:left;
+               margin-right:10px;
+               margin-left:20px;
+              }
+           .request-margin
+           {
+               margin: 20px 0 0 152px;
+        
+               }
+              p.calendr-result-text
+              {
+                  float:left;
+                  }
+              .facebook-result
+                  {
+                      float:left;
+                      
+                      }
+                      img.facebook-result
+                  {
+                      float:left;
+                      
+                      }
+                 button.request-button
+                 {
+                            border-radius : 40px;
+                            float:right;
+                            
+                           margin-right:-25px;
+                     }
+                     div.margin-row-result
+                     {
+                         margin-bottom:20px;
+                         }
+ #select-search-item
+ {
+     float:right;
+     width:65px;
+     }
+    img.img-request
+    {
+        position:relative;
+        margin:0 0 -16px 16px;
+        }
+         p.p-request
+    { 
+        color:White;
+        position: absolute;
+        margin:-25px 0 0 50px;
+        }
+        p.p-request:hover
+    { 
+        color: Blue;
+       
+        }

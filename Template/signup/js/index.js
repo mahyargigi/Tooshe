@@ -3,7 +3,7 @@ $(document).ready(function() {
       console.log("clicked!");
       $('#modal').reveal({ // The item which will be opened with reveal
         animation: 'fade',                   // fade, fadeAndPop, none
-      animationspeed: 500,                       // how fast animtions are
+      animationspeed: 250,                       // how fast animtions are
       closeonbackgroundclick: true,              // if you click background will modal close?
       dismissmodalclass: 'close'    // the class of a button or element that will close an open modal
     });
@@ -16,7 +16,7 @@ $(document).ready(function() {
       $('#modal2').fadeOut();
       $('#modal').reveal({ // The item which will be opened with reveal
         animation: 'fade',                   // fade, fadeAndPop, none
-      animationspeed: 500,                       // how fast animtions are
+      animationspeed: 250,                       // how fast animtions are
       closeonbackgroundclick: true,              // if you click background will modal close?
       dismissmodalclass: 'close'    // the class of a button or element that will close an open modal
 
@@ -29,7 +29,7 @@ $(document).ready(function() {
   $('#loginlink').click(function(e) { // Button which will activate our modal
       $('#modal2').reveal({ // The item which will be opened with reveal
         animation: 'fade',                   // fade, fadeAndPop, none
-      animationspeed: 500,                       // how fast animtions are
+      animationspeed: 250,                       // how fast animtions are
       closeonbackgroundclick: true,              // if you click background will modal close?
       dismissmodalclass: 'close'    // the class of a button or element that will close an open modal
     });
@@ -42,7 +42,7 @@ $(document).ready(function() {
       $('#modal').fadeOut();
       $('#modal2').reveal({ // The item which will be opened with reveal
         animation: 'fade',                   // fade, fadeAndPop, none
-      animationspeed: 500,                       // how fast animtions are
+      animationspeed: 250,                       // how fast animtions are
       closeonbackgroundclick: true,              // if you click background will modal close?
       dismissmodalclass: 'close'    // the class of a button or element that will close an open modal
     });

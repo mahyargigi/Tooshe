@@ -1,9 +1,10 @@
 ﻿
-    #logo
-    {
-        width:75px; 
-        height:75px;
-        }
+#logo{
+    /*width:200px;*/
+    /*height:10px;*/
+    position: relative;
+    top: -20px;
+}
 
 
     div.menu
@@ -51,7 +52,13 @@ div.menu #loginlink:hover/*, div.menu a.current*/
     color:#ffff00;
     padding: 4px 9px;
 }
-
+div.menu #loginlink{
+    /*background:#484037;*/
+    border:1px solid green ;
+    color:#ffff00;
+    padding: 6px;
+    z-index: 100;
+}
 
 div.menu img
 { margin: 1% 0px 0px 10% ;
@@ -82,8 +89,9 @@ h1
     
 }
 
-h2
-{    
+/*it was h2 before editing*/
+#slider-description
+{
      font: normal 12px IRANSans-web,Arial,sans-serif ;
      line-height: 36px;
      /*margin: 3% 3px ;*/

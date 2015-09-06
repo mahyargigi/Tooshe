@@ -10,7 +10,8 @@ $(document).ready(function(){
         console.log((this).value);
         $('#amount2').html((this).value+"$");
     });
-    $('#user-rate').rating('update', 3.6);
+    $('#user-rate1').rating('update', 3.6);
+    $('#user-rate2').rating('update', 4.6);
 
     var input1 = document.getElementById('dest-input1');
     input1.onkeypress = function(){

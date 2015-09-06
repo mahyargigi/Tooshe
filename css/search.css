@@ -51,3 +51,30 @@
     height: 20px;
     width: 20px;
 }
+.img-container {
+    position: relative;
+}
+
+.img-container .top-image {
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+}
+.search-image{
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+.image-div{
+    margin-top: 20px;
+}
+.profile-picture-image{
+    width: 100px;
+    height: 100px;
+}
+li{
+    list-style: none;
+}

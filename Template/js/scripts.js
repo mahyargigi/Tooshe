@@ -141,3 +141,10 @@ $(window).load(function() {
 	});
 
 });
+$(document).ready(function(){
+    $('#contact-menu').on('click',function(){
+        console.log("before");
+        $("html,body").animate({ scrollTop: $('#contact').offset().top }, 2000);
+        console.log("after");
+    });
+});

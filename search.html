@@ -8,9 +8,102 @@
     <link href="css/material.min.css" rel="stylesheet">
     <link href="css/bootstrap-material-datepicker.css" rel="stylesheet">
     <link href="css/search.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
     <link href="css/font.css" rel="stylesheet">
 </head>
 <body>
+
+    <div class="row container" style="margin-bottom: 70px">
+        <div class="col-md-12">
+            <nav class="navbar navbar-default navbar-fixed-top" id="navigation-bar">
+                <div class="container-fluid">
+                    <!--<div class="navbar-header">-->
+                        <!--<a class="navbar-brand" href="#"><image src="image/logo.jpg" style="height: 60px; width: 60px"></a>-->
+                    <!--</div>-->
+                    <!--<div>-->
+                        <!--<ul class="nav navbar-nav">-->
+                            <!--&lt;!&ndash;<li class="active"><a href="#"></a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="#"><span class="glyphicon glyphicon-off"></span> Log out</a></li>&ndash;&gt;-->
+                        <!--</ul>-->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-li"><a href="#">Order sth</a></li>
+                            <li class="nav-li"><a href="#">Send sth</a></li>
+                            <li class="nav-li"><a href="#">Take sth</a>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-bell"></span><span class="badge" id="note-badge">4</span>
+                                <ul class="dropdown-menu">
+                                    <li class="list-item">
+                                        <h6 style="display: inline">Notifications</h6><span class="badge" id='note-number'>4</span>
+                                    </li>
+                                    <!--<hr>-->
+                                    <li class="note-li">
+                                        <a href="#"><img class="circle" src="img/mahyar.jpg" alt="icon"
+                                                     style="height: 50px ; width: 50px">Edro klain posted a photo on your wall</a>
+                                        <!--<hr>-->
+                                    </li>
+                                    <li class="note-li">
+                                        <a href="#"><img class="circle" src="img/mahyar.jpg" alt="icon"
+                                                     style="height: 50px ; width: 50px">Alsad Kozar commented on your last video</a>
+                                        <!--<hr>-->
+                                    </li>
+                                    <li class="note-li">
+                                        <a href="#"><img class="circle" src="img/mahyar.jpg" alt="icon"
+                                                     style="height: 50px ; width: 50px">Edro klain posted a photo on your wall</a>
+                                        <!--<hr>-->
+                                    </li>
+                                    <li class="all-note-li">
+                                        <a href="#"><h6>View all notifications</h6></a>
+                                        <!--<hr>-->
+                                    </li>
+                                </ul>
+                            </a>
+                            </li>
+                            <li><a href="#"><span class="glyphicon glyphicon-envelope"></span><span class="badge" id="message-badge">4</span></a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span>
+                                    <img src="img/smiley.png" style="width: 30px ;height: 30px">
+                                </span>
+                                    <!--<span class="badge">4</span>-->
+                                    </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+
+                                        <a href="#">My profile</a>
+                                        <hr>
+                                    </li>
+                                    <li>
+                                        <a href="#">My Credit</a>
+                                        <hr>
+                                    </li>
+                                    <li>
+                                        <a href="#">Help</a>
+                                        <hr>
+                                    </li>
+                                    <li>
+                                        <a href="#">Setting</a>
+                                        <hr>
+                                    </li>
+                                    <li>
+                                        <a href="#">Log out</a>
+                                        <hr>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav ">
+                            <!--<form class="navbar-form " role="search">-->
+                                <!--<div id="search" class="input-group">-->
+                                    <!--<input type="text" class="typeahead form-control" hint="Search"/>-->
+
+                                <!--</div>-->
+                            <!--</form>-->
+                        </ul>
+                    <!--</div>-->
+                </div>
+            </nav>
+        </div>
+    </div>
 
     <div class="col-md-1"></div>
     <div class="col-md-2">
@@ -48,7 +141,7 @@
               </li>
             </ul>
             <div class="tab-content">
-                <div id="picks" class="tab-pane fade in active">
+                <div id="picks" class="tab-pane fade in active" style="width: 100%">
                     <form>
                         <div class="form-horizontal row">
                             <div class="col-md-2">
@@ -120,7 +213,7 @@
                         </div>
                     </form>
                 </div>
-                <div id="packs" class="tab-pane fade in ">
+                <div id="packs" class="tab-pane fade in " style="width: 100%">
                     <form>
                         <div class="form-horizontal row">
                             <div class="col-md-2">
@@ -156,11 +249,11 @@
                                     <div class="col-md-10">
                                         <div class="form-inline">
                                         <label>TO</label>
-                                        <input class="form-input" id="dest-input2">
+                                        <input class="form-input" id="dest-input2" placeholder="Enter a location">
                                     </div>
                                     <div class="form-inline">
                                         <label>From</label>
-                                        <input class="form-input" id="source-input2">
+                                        <input class="form-input" id="source-input2" placeholder="Enter a location">
                                     </div>
                                     </div>
                                     <div class="col-md-2"></div>
@@ -174,10 +267,10 @@
                                 <div class="col-md-10">
                                     <div class="col-md-10">
                                         <div class="form-inline">
-                                            <input class="form-input">
+                                            <input class="form-input" id="from-date2" placeholder="Enter a date">
                                         </div>
                                         <div class="form-inline">
-                                            <input class="form-input">
+                                            <input class="form-input" id="to-date2" placeholder="Enter a date">
                                         </div>
                                     </div>
                                     <div class="col-md-2"></div>
@@ -192,7 +285,7 @@
                         </div>
                     </form>
                 </div>
-                <div id="goods" class="tab-pane fade in">
+                <div id="goods" class="tab-pane fade in" style="width: 100%">
                     <form class="form-horizontal">
                         <h4>Select Category</h4>
                         <div class="form-group">

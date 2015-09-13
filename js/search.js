@@ -48,6 +48,9 @@ $(document).ready(function(){
 
     $('#to-date1').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
     $('#from-date1').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
+    $('#to-date2').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
+    $('#from-date2').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
+
     $('#goods-date').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
 
     $('#picks-li').on('click',function(){

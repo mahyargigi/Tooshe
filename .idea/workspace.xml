@@ -35,7 +35,7 @@
       <file leaf-file-name="search.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="393" column="22" selection-start="21760" selection-end="21760" vertical-scroll-proportion="-4.3333335" vertical-offset="6460" max-vertical-offset="14008">
+            <state line="392" column="30" selection-start="21757" selection-end="21767" vertical-scroll-proportion="-2.0980392" vertical-offset="6557" max-vertical-offset="13991">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h6#0;n#li#0;n#ul#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -65,7 +65,16 @@
       <file leaf-file-name="search.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/search.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="209" column="1" selection-start="3409" selection-end="3409" vertical-scroll-proportion="0.8521739" vertical-offset="2965" max-vertical-offset="3655">
+            <state line="214" column="1" selection-start="3485" selection-end="3485" vertical-scroll-proportion="0.90144926" vertical-offset="3016" max-vertical-offset="3791">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flightSubmit.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flightSubmit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="133" column="4" selection-start="6237" selection-end="6279" vertical-scroll-proportion="-16.384615" vertical-offset="1835" max-vertical-offset="2550">
               <folding />
             </state>
           </provider>
@@ -607,16 +616,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/img/iphone_6.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/lop.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/note3.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -635,13 +634,6 @@
     <entry file="file://$PROJECT_DIR$/img/iphone6.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flightSubmit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="4" selection-start="6237" selection-end="6279" vertical-scroll-proportion="-16.384615" vertical-offset="1835" max-vertical-offset="2550">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Template/signup/js/index.js">
@@ -681,9 +673,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="14" selection-start="3130" selection-end="3130" vertical-scroll-proportion="0.0" vertical-offset="781" max-vertical-offset="1615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/slider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="1" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flightSubmit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="4" selection-start="6237" selection-end="6279" vertical-scroll-proportion="-16.384615" vertical-offset="1835" max-vertical-offset="2550">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application-fee.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="393" column="22" selection-start="21760" selection-end="21760" vertical-scroll-proportion="-4.3333335" vertical-offset="6460" max-vertical-offset="14008">
+        <state line="392" column="30" selection-start="21757" selection-end="21767" vertical-scroll-proportion="-2.0980392" vertical-offset="6557" max-vertical-offset="13991">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h6#0;n#li#0;n#ul#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -709,23 +736,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="14" selection-start="3130" selection-end="3130" vertical-scroll-proportion="0.0" vertical-offset="781" max-vertical-offset="1615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/slider.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="1" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/search.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="209" column="1" selection-start="3409" selection-end="3409" vertical-scroll-proportion="0.8521739" vertical-offset="2965" max-vertical-offset="3655">
+        <state line="214" column="1" selection-start="3485" selection-end="3485" vertical-scroll-proportion="0.90144926" vertical-offset="3016" max-vertical-offset="3791">
           <folding />
         </state>
       </provider>

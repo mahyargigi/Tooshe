@@ -35,7 +35,7 @@
       <file leaf-file-name="search.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="49" selection-start="451" selection-end="451" vertical-scroll-proportion="251.23529" vertical-offset="12983" max-vertical-offset="13634">
+            <state line="334" column="47" selection-start="18505" selection-end="18505" vertical-scroll-proportion="-45.615383" vertical-offset="4492" max-vertical-offset="14076">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h6#0;n#li#0;n#ul#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -62,19 +62,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/navbar.html">
+      <file leaf-file-name="search.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/search.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="4" selection-start="220" selection-end="265" vertical-scroll-proportion="-1.8463901" vertical-offset="1304" max-vertical-offset="1955">
+            <state line="62" column="4" selection-start="1155" selection-end="1158" vertical-scroll-proportion="0.33333334" vertical-offset="824" max-vertical-offset="3451">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/search.css">
+      <file leaf-file-name="slider.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/slider.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="5" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3451">
+            <state line="20" column="0" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
               <folding />
             </state>
           </provider>
@@ -90,7 +90,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Template/js/jquery.min.js" />
         <option value="$PROJECT_DIR$/Template/signup/css/signup.css" />
         <option value="$PROJECT_DIR$/Template/signup/css/styles.css" />
         <option value="$PROJECT_DIR$/Template/signup/css/signin.css" />
@@ -105,6 +104,7 @@
         <option value="$PROJECT_DIR$/css/search.css" />
         <option value="$PROJECT_DIR$/js/search.js" />
         <option value="$PROJECT_DIR$/navbar.html" />
+        <option value="$PROJECT_DIR$/css/slider.css" />
         <option value="$PROJECT_DIR$/search.html" />
       </list>
     </option>
@@ -607,11 +607,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Template/signup/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="331" column="12" selection-start="8154" selection-end="8158" vertical-scroll-proportion="0.0" vertical-offset="5627" max-vertical-offset="5865" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application-fee.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="34" selection-start="1349" selection-end="1352" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1717">
@@ -677,13 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/search.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="5" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3451">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/search.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="18" selection-start="1729" selection-end="1729" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1462">
@@ -691,9 +679,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="83" selection-start="709" selection-end="711" vertical-scroll-proportion="0.33333334" vertical-offset="72" max-vertical-offset="1955">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/slider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="49" selection-start="451" selection-end="451" vertical-scroll-proportion="251.23529" vertical-offset="12983" max-vertical-offset="13634">
+        <state line="334" column="47" selection-start="18505" selection-end="18505" vertical-scroll-proportion="-45.615383" vertical-offset="4492" max-vertical-offset="14076">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h6#0;n#li#0;n#ul#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -719,9 +723,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/navbar.html">
+    <entry file="file://$PROJECT_DIR$/css/search.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="4" selection-start="220" selection-end="265" vertical-scroll-proportion="-1.8463901" vertical-offset="1304" max-vertical-offset="1955">
+        <state line="62" column="4" selection-start="1155" selection-end="1158" vertical-scroll-proportion="0.33333334" vertical-offset="824" max-vertical-offset="3451">
           <folding />
         </state>
       </provider>

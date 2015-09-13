@@ -60,6 +60,9 @@ $(document).ready(function(){
         $('#picks-ul').show();
         $('#packs-ul').hide();
         $('#goods-ul').hide();
+        $('#picks-li').css('color','lightseagreen');
+        $('#packs-li').css('color','lightgrey');
+        $('#goods-li').css('color','lightgrey');
     });
     $('#packs-li').on('click',function(){
         $('#picks-image').attr("src","img/l2.png");
@@ -68,6 +71,9 @@ $(document).ready(function(){
         $('#picks-ul').hide();
         $('#packs-ul').show();
         $('#goods-ul').hide();
+        $('#packs-li').css('color','lightseagreen');
+        $('#picks-li').css('color','lightgrey');
+        $('#goods-li').css('color','lightgrey');
     });
     $('#goods-li').on('click',function(){
         $('#picks-image').attr("src","img/l2.png");
@@ -76,5 +82,8 @@ $(document).ready(function(){
         $('#picks-ul').hide();
         $('#packs-ul').hide();
         $('#goods-ul').show();
+        $('#picks-li').css('color','lightgrey');
+        $('#packs-li').css('color','lightgrey');
+        $('#goods-li').css('color','lightseagreen');
     });
 });

@@ -2,8 +2,166 @@
 <html>
 <head>
     <title></title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/bootstrap.vertical-tabs.css" rel="stylesheet">
+    <link href="css/settings.css" rel="stylesheet">
 </head>
 <body>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="nav nav-tabs tabs-left">
+                  <li class="title">Account settings</li>
+                  <li class="active"><a href="#notifications" data-toggle="tab"><span>Noifications</span></a></li>
+                  <li><a href="#password" data-toggle="tab"><span>Password</span></a></li>
+                </ul>
+            </div>
+            <div class="col-md-7">
+                <div class="tab-content">
+                  <div class="tab-pane active" id="notifications">
+                      <div style="float: right">
+                          <!--<div class="col-md-9"></div>-->
+                          <!--<div class="col-md-3">-->
+                              <img src="img/phone.png"  class="icon-image" id="envelope-image" >
+                              <img src="img/phone.png" class="icon-image" id="phone-image" >
+                              <img src="img/phone.png" class="icon-image" id="sms-image" >
+                          <!--</div>-->
+                      </div>
+                      </br>
+                      <div>
+                        <ul class="tab-content-ul">
+                          <!--<li>-->
+                              <!--<div class="col-md-9">-->
+                                  <!--<h5 class="title">Notifications on new tasks</h5>-->
+                                  <!--<div>-->
+                                      <!--<span class="description">We let you know when a task relevant to you is posted</span>-->
+                                  <!--</div>-->
+                              <!--</div>-->
+                              <!--<div class="col-md-3">-->
+                                <!--<div class="checkbox">-->
+                                    <!--<label class="checkbox-label"><input type="checkbox" checked=""></label>-->
+                                    <!--<label class="checkbox-label"><input type="checkbox" checked=""></label>-->
+                                    <!--<label class="checkbox-label"><input type="checkbox" checked=""></label>-->
+                                <!--</div>-->
+                              <!--</div>-->
+                          <!--</li>-->
+                          <li>
+                              <div class="checkbox">
+                                    <label class="checkbox-label"><input type="checkbox" checked=""></label>
+                                    <label class="checkbox-label"><input type="checkbox" checked=""></label>
+                                    <label class="checkbox-label"><input type="checkbox" checked=""></label>
+                              </div>
+                              <div ><h5 class="title">Notifications on new tasks</h5></div>
+                              <div>
+                                  <span class="description">We let you know when a task relevant to you is posted</span>
+                              </div>
+                          </li>
+                          <hr>
+                          <li>
+                              <div class="checkbox">
+                                    <label class="checkbox-label"><input type="checkbox" checked=""></label>
+                                    <label class="checkbox-label"><input type="checkbox" checked=""></label>
+                                    <label class="checkbox-label"><input type="checkbox" checked=""></label>
+                              </div>
+                              <div ><h5 class="title">Notifications on new tasks</h5></div>
+                              <div>
+                                  <span class="description">We let you know when a task relevant to you is posted</span>
+                              </div>
+                          </li>
+                          <hr>
+                          <li>
+                              <div class="checkbox">
+                                    <label class="checkbox-label"><input type="checkbox" checked=""></label>
+                                    <label class="checkbox-label"><input type="checkbox" checked=""></label>
+                                    <label class="checkbox-label"><input type="checkbox" checked=""></label>
+                              </div>
+                              <div ><h5 class="title">Notifications on new tasks</h5></div>
+                              <div>
+                                  <span class="description">We let you know when a task relevant to you is posted</span>
+                              </div>
+                          </li>
+                          <hr>
+                          <li>
+                              <div class="checkbox">
+                                    <label class="checkbox-label"><input type="checkbox" checked=""></label>
+                                    <label class="checkbox-label"><input type="checkbox" checked=""></label>
+                                    <label class="checkbox-label"><input type="checkbox" checked=""></label>
+                              </div>
+                              <div ><h5 class="title">Notifications on new tasks</h5></div>
+                              <div>
+                                  <span class="description">We let you know when a task relevant to you is posted</span>
+                              </div>
+                          </li>
+                          <hr>
+                          <li>
+                              <div class="row">
+                                <div class="col-md-8">
+                              </div>
+                              <div class="col-md-4">
+                                  <a href="javascript:void(0)" class="btn btn-success" >Save changes</a>
+                              </div>
+                              </div>
+                          </li>
+                        </ul>
+                      </div>
+                  </div>
+                  <div class="tab-pane" id="password">
+                    <ul class="tab-content-ul">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label>Old password</label>
+                                    </br>
+                                    <input placeholder="Old password" type="password">
+                                </div>
+                                <div class="col-md-7"></div>
+                            </div>
+                        </li>
+                        <hr>
+                        <li>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label>New password</label>
+                                    </br>
+                                    <input  placeholder="New password" type="password">
+                                </div>
+                                <div class="col-md-7"></div>
+                            </div>
+                        </li>
+                        <hr>
+                        <li>
+                            <!--<div class="row">-->
+                                <!--<div class="col-md-8"></div>-->
+                                <!--<div class="col-md-4">-->
+                                     <!--<a href="javascript:void(0)" class="btn btn-success" style="width: 100%;">Save changes</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <div class="row">
+                                <div class="col-md-7">
+                              </div>
+                              <div class="col-md-5">
+                                  <a href="javascript:void(0)" class="btn btn-success">Change Password</a>
+                              </div>
+                                <!--<div class="col-md-1"></div>-->
+                              <!--</div>-->
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.material.init();
+        });
+    </script>
 </body>
 </html>

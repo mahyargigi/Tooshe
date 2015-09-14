@@ -1,0 +1,28 @@
+ul{
+    list-style: none;
+}
+.title{
+    font-weight: bold;
+}
+.tab-content-ul{
+    border: sloid;
+    background-color: white;
+}
+.checkbox{
+    float: right;
+    display: inline;
+}
+.checkbox-label{
+    margin: 3px;
+}
+.icon-image{
+    width: 20px ;
+    height: 20px;
+    margin: 5px;
+}
+.tabs-left{
+    background: none;
+}
+.tabs-left .active a span{
+    color: red;
+}

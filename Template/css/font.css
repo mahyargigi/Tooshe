@@ -3,6 +3,9 @@
     src: url(../fonts/estre.ttf);
 }
 body{
-    font-family: estre;
+    font-family: "Times New Roman", Times, serifT;
     font-size: 200%;
+}
+#menu-list{
+    font-family: sans-serif;
 }

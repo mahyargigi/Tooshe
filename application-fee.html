@@ -10,82 +10,117 @@
     <title></title>
 </head>
 <body>
-    <div class="col-md-2"></div>
-    <div class="col-md-8 container-box">
-        <div class="col-md-3" id="left-box">
-            <div class="row" id="name-div">
-                <span id="name"><h4 style="display: inline-block">Reza Aslan</h4></span>
-
-            </div>
-            <div class="row">
-                <input id="user-rate" class="rating" data-stars="5" data-min="0"
-                       data-max="5" data-step="0.1" data-show-clear="false" data-size="xs"
-                       data-readonly="true" data-symbol="&#x2605">
-            </div>
-            <div class="row">
-                <ul id="ticket-verified">
-                    <li><h6>Ticket verified</h6></li>
-                    <li>
-                        <span><img src="img/phone.png" class="logo"></span>
-                        <span class="description">phone number verified</span>
-                    </li>
-                    <li>
-                        <span><img src="img/credit-card-3.png" class="logo"></span>
-                        <span class="description">credit card</span>
-
-                    </li>
-                    <li>
-                        <span><img src="img/email.png" class="logo"></span>
-                        <span class="description">email verified</span>
-                    </li>
-                    <li>
-                        <span><img src="img/facebook-icon.png" class="logo"></span>
-                        <span class="description">facebook not connected</span>
-                    </li>
-                    <li>
-                        <span><img src="img/linkedin_icon.png" class="logo"></span>
-                        <span class="description">linkedin verified</span>
-                    </li>
-                </ul>
+    <div class="container-fluid" id="application-fee-div">
+        <div class="col-md-2">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <a href="#"><img src="img/back-button.png" id="back-button"></a>
             </div>
         </div>
-        <div class="col-md-9" id="right-box">
-            <div class="col-md-1">
-                <span class="list-group" style="display: inline-block ;" id="user-image">
-                    <span class="list-group-item">
-                        <span class="row-picture">
-                            <img class="circle" src="Img/mahyar.jpg" alt="icon" >
+        <div class="col-md-8 container-box">
+            <div class="col-md-3" id="left-box">
+                <div class="row" id="name-div">
+                    <span id="name"><h4 style="display: inline-block">Reza Aslan</h4></span>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-11">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-11">
+                            <input id="user-rate" class="rating" data-stars="5" data-min="0"
+                           data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
+                           data-readonly="true" data-symbol="&#x2605">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <ul id="ticket-verified">
+                        <li><h6 id="ticket-verified-sentence">Ticket verified</h6></li>
+                        <li>
+                            <span><img src="img/phone.png" class="logo"></span>
+                            <span class="description">phone number verified</span>
+                        </li>
+                        <li>
+                            <span><img src="img/credit-card-3.png" class="logo"></span>
+                            <span class="description">credit card</span>
+
+                        </li>
+                        <li>
+                            <span><img src="img/email.png" class="logo"></span>
+                            <span class="description">email verified</span>
+                        </li>
+                        <li>
+                            <span><img src="img/facebook-icon.png" class="logo"></span>
+                            <span class="description">facebook not connected</span>
+                        </li>
+                        <li>
+                            <span><img src="img/linkedin_icon.png" class="logo"></span>
+                            <span class="description">linkedin verified</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9" id="right-box">
+                <div class="col-md-1">
+                    <span class="list-group" style="display: inline-block ;" id="user-image">
+                        <span class="list-group-item">
+                            <span class="row-picture">
+                                <img class="circle" src="Img/mahyar.jpg" alt="icon" >
+                            </span>
                         </span>
                     </span>
-                </span>
-            </div>
-            <div class="col-md-9">
+                </div>
+                <div class="col-md-9" id="courset">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <span class="title text" style="position: relative ; bottom: -8px;">carries</span>
+                            </div>
+                            <div class="col-md-10">
+                                <span class="text" id="carried" style="display: inline-block"><h4>Application fee of spanish universities</h4></span>
+                            </div>
+                    </div>
                     <div class="row">
-                    <span class="title text">To carry</span>
-                    <span class="text" id="carried" style="display: inline-block"><h4>Application fee of spanish universities</h4></span>
+                        <div class="col-md-2">
+                            <span class="title text">From</span>
+                        </div>
+                        <div class="col-md-2">
+                            <span class="source text">Madrid,Spain</span>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="title text">to</span>
+                        </div>
+                        <div class="col-md-3">
+                            <span class="destination text">Tehran , Iran</span>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <span class="title text">due in</span>
+                        </div>
+                        <div class="col-md-10">
+                            <span class="date text">June23th - Hune 28th</span>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <img src="img/Treasure_Map.jpg" id="map">
+                    </div>
+                    <div class="row buttons">
+                        <div class="btn btn-info">message him</div>
+                        <div class="btn btn-primary">send request</div>
+                    </div>
                 </div>
-                <div class="row">
-                    <span class="title text">From</span>
-                    <span class="source text">Madrid,Spain</span>
-                    <span class="title text">to</span>
-                    <span class="destination text">Tehran , Iran</span>
-                </div>
-                <div class="row">
-                    <span class="title text">due in</span>
-                    <span class="date text">June23th - Hune 28th</span>
-                </div>
-                <div class="row">
-                    <img src="img/Treasure_Map.jpg" id="map">
-                </div>
-                <div class="row buttons">
-                    <div class="btn btn-info">message him</div>
-                    <div class="btn btn-primary">send request</div>
+                <div class="col-md-2">
+                    <img src="img/price.png" id="price-tag">
                 </div>
             </div>
-            <div class="col-md-2"></div>
         </div>
+        <div class="col-md-2"></div>
+
     </div>
-    <div class="col-md-2"></div>
 
     <!--site ends here-->
     <script src="js/jquery-1.11.2.js" ></script>

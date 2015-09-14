@@ -6,7 +6,9 @@
     width: 40px;
 }
 #flight-form{
-    background-color: lightgray;
+    /*background-color: lightgray;*/
+    background: url(../img/foozieh.png);
+    
 }
 .form-input{
     width: 100% ;
@@ -24,6 +26,8 @@
     margin-right: 5px;
 }
 #for-free-description{
+    font-size: 0.85em;
+    color: rgba(141, 141, 141, 0.84);
     position: relative;
     top: 10px;
     margin-left: 10px;
@@ -41,7 +45,44 @@
 }
 #submit-button{
     float: right;
-    margin-right: 10px;
+    margin-right: 75px;
+}
+.travel-label{
+    margin-right: 10px ;
+    font-size: 1.5em;
+}
+.travel-input{
+    width: 200px;
+}
+#travel-date{
+    margin-right: 35px;
+}
+.second-line-input{
+    width: 150px;
+}
+#date3{
+    position: relative;
+    left: -4px;
+}
+#till-label{
+    position: relative;
+    left: 30px;
+}
+#yo-do-request{
+    font-size: 1.5em;
+}
+.radio-primary{
+    margin-bottom: 25px;
+}
+.radio-label{
+    font-size: 1.4em;
+}
+#any-information{
+    width: 50%;
+    font-size: 1.2em;
+}
+label{
+    font-weight: 100;
 }
 /*input[type=range]{*/
     /*-webkit-appearance: none;*/

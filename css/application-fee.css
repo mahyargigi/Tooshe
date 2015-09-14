@@ -14,7 +14,7 @@ ul{
 .title{
     display: inline-block;
     /*margin-right: 10px;*/
-    color: #00b5a4;
+    color: #5dc15d;
 }
 .text{
     margin-right: 20px;
@@ -34,8 +34,8 @@ ul{
     background-color: #ffffff;
 }
 .container-box{
-    border: solid;
-    border-width: thin;
+    /*border: solid;*/
+    /*border-width: thin;*/
     border-radius: 10px;
 }
 #user-image{
@@ -46,4 +46,24 @@ ul{
 }
 #name-div{
     margin: 20px;
+}
+#user-rate{
+    position: relative;
+}
+#courset{
+    margin-top: 20px;
+}
+#back-button{
+    margin-top: 50px;
+}
+#ticket-verified-sentence{
+    color:#d9d63d;
+}
+#application-fee-div{
+    margin-top: 50px;
+}
+#price-tag{
+    float: right;
+    position: relative;
+    top: -12px;
 }

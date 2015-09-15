@@ -2,10 +2,18 @@
     font-family: estre;
     src: url(../fonts/estre.ttf);
 }
+@font-face {
+    font-family: kalinga;
+    src: url(../signup/fonts/kalinga.ttf);
+}
+
 body{
-    font-family: "Times New Roman", Times, serifT;
+    font-family: kalinga;
     font-size: 200%;
 }
 #menu-list{
     font-family: sans-serif;
+}
+.signup{
+    /*font: kalinga;*/
 }

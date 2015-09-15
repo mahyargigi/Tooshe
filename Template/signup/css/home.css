@@ -60,24 +60,27 @@ div.menu a
 }
 div.menu a:hover, div.menu a.current
 {
-    background:#484037;
-    border:1px solid #E65C00 ;
+    /*background:#484037;*/
+    /*border:1px solid #E65C00 ;*/
     color:#E65C00;
-        padding: 4px 9px;
+        /*padding: 4px 9px;*/
 }
 
 div.menu #loginlink:hover/*, div.menu a.current*/
 {
-    background:#484037;
-    border:1px solid green ;
-    color:#ffff00;
-    padding: 4px 9px;
+    /*background:#484037;*/
+    /*border:1px solid green ;*/
+    color: #44e92e;
 }
 div.menu #loginlink{
     /*background:#484037;*/
-    border:1px solid green ;
-    color:#ffff00;
-    padding: 6px;
+    border:3px solid #2db41c ;
+    color: #2db41c;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    /*padding: 6px;*/
     z-index: 100;
 }
 
@@ -150,8 +153,9 @@ div.body a:hover/*, div.menu a.current*/
 /*my css!!!*/
 /*TODO*/
 #search-input
-{      text-align: left;
-     display: inline-block;
+{
+    text-align: left;
+    display: inline-block;
     padding: 10px 20px;
    /* margin-right:2px;  It specifies the distance between each tab */
      /*background:#F7F7F7;*/
@@ -160,7 +164,7 @@ div.body a:hover/*, div.menu a.current*/
     text-decoration:none;
     font: normal 27px good,Arial,sans-serif;
     line-height: 24px;
-    border:1px solid #E65C00;
+    /*border:1px solid #E65C00;*/
     border-radius : 5px;
      /*border-bottom:0;
    color:White;*/

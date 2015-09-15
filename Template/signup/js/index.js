@@ -55,7 +55,7 @@ $(document).ready(function() {
 
 
 var imageArray = ['signup/image/pic1.jpg', 'signup/image/pic2.jpg', 'signup/image/pic3.jpg', 'signup/image/pic4.jpg', 'signup/image/pic5.jpg'];
-var sentence = ['Act optimized', 'Act optimized', 'It Could Be Less Boring', "Surprise'em", "Surprise'em" ];
+var sentence = ['Surprise Them', 'Act optimized', 'More Advantageous Travels', "Keep It Inside", "To The Exact Point" ];
 var i=0;
 $(function(){
    $("#next").click(

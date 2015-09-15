@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Halcyon Days - An Exclusive Freebie for Codrops by Peter Finlan.</title>
-    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <!--<link href="css/font-awesome.min.css" rel="stylesheet">-->
@@ -28,6 +28,8 @@
 
 
 
+
+
     <style type="text/css">
 
     @font-face{
@@ -45,7 +47,7 @@
         <![endif]-->
       </head>
       <body id="top">
-        <div class="container-fluid" style="overflow-x: hidden">
+        <div class="container-fluid" style="overflow-x: hidden;overflow-y: hidden;">
 
 
         <header id="row home">
@@ -97,33 +99,33 @@
                     <div class ="menu">
                     <img id ="logo" src="signup/image/logo2.png" alt="logo"  >
 
-                        <span id="menu-list">
-                          <a href="#" id="contact-menu">Contact</a>
-                          <a href="default.asp" id="loginlink"><font color="green">Login</font></a>
-                          <a href="news.asp">take sth</a>
-                          <a href="news.asp">send</a>
-                          <a href="order.asp">order</a>
+                        <span id="menu-list" style="font: Arial;">
+                          <a href="#" id="contact-menu" style="font-size: 18px;">Contact</a>
+                          <a href="default.asp" id="loginlink" style="margin-right: 60px;font-size: 18px; "><span style="position: relative;top: -6px;">Login</span></a>
+                          <a href="news.asp" style="margin-right: 60px;font-size: 18px;">take sth</a>
+                          <a href="news.asp" style="margin-right: 60px;font-size: 18px;">send sth</a>
+                          <a href="order.asp" style="margin-right: 60px;font-size: 18px;">order sth</a>
                         </span>
                       <!--<a href="signupabout.asp">About</a>-->
 
                     </div>
 
                     <div class= "body" style="width:100%;">
-                    <h1 style="margin-top:300px;font-size: 70px ;  font-family: maiandra;" id="slider-header">
-                    Act optimized
+                    <h1 style="margin-top:300px;font-size: 50px ;  font-family: maiandra;" id="slider-header">
+                    To The Exact Point
                     </h1>
                     <!--<br><br>-->
                     <h2 id="slider-description">
-                    Barmoney helps you find a passenger cary you stuffs. instead of<br />
+                    Tooshe helps you find a passenger cary you stuffs. instead of
                      cumbersome processes of post services.
                        <a class="normal" href="default.asp" >HOW?</a>
                     </h2>
                       <div style="width: 100%">
-                          <a id="signuplink" href="#">Sign Up</a>
-                          <span style="opacity: 0.8"><input placeholder="Find and stuff you want from abroad" id="search-input"></span>
-                          <input id="next" type="image" src="signup/image/direction-nav-right.png" style="height:40px;width: 40px;"  />
+                          <a id="signuplink" href="#" style="width: 150px;font-size: 0.8em;">Sign Up</a>
+                          <span style="opacity: 0.8"><input placeholder="Find and stuff you want from abroad" id="search-input" style="font-size: 0.8em;"></span>
+                          <input id="next" type="image" src="signup/image/right-Arrow.png" style="height:60px;width: 60px;position: relative;top: -170px;right:-750px; "  />
 						  <!---->
-                          <input id="prev" type="image" src="signup/image/direction-nav-left.png" style="height:40px;width: 40px;" />
+                          <input id="prev" type="image" src="signup/image/left-arrow.png" style="height:60px;width: 60px;position: relative;top: -170px;left: -700px;" />
 							<!--; -->
 					  </div>
                     </div>
@@ -132,36 +134,46 @@
 
 
 
-                    <div id="modal">
+                <div id="modal">
                     <center>
                     <div class="signup">
-                    <p>sign up for free      :)</p>
-                    <p>with <a href="#"><font color="red">Google</font></a> or <a href=""><font color="blue">Facebook</font></a></p>
+                    <p style="font-size:15px; margin-top:20px;font: "Times New Roman", Times, serif;">Sign Up For Free      :)</p>
+                    <p>with <a href=""><font color="#4791FF">Facebook</font></a> or <a href="#"><font color="red">Google</font></a></p>
 
                     <div class="signupform">
                     <div>
-                    <span id ="hrsignup1"  ><hr  /></span>
+                    <span id ="hrsignup1" style="margin-top:-15px;" ><hr  /></span>
                     <span>or</span>
-                    <span id = "hrsignup2"><hr /></span>
+                    <span id = "hrsignup2" style="margin-top:-15px;"><hr /></span>
                     </div>
-                    <form action="" id="signupform"method="post">
-                    <input class="icon form-control" type="text" placeholder="First name" name="firstname" id="firstname"/>
-                    <input class="icon form-control"type="text" placeholder="Last name" name="lastname" id="lastname" />
-                    <input class="icon form-control" type="text" placeholder="Email address" name="emailaddress" id="emailaddress" />
-                    <input class="icon form-control"type="password" placeholder="Password" name="pass" id="pass" />
+                    <form action="" id="signupform" method="post">
+                    <!-- <input class="icon form-control" id="fiest_name" type="text" placeholder="First name" name="firstname" id="firstname"/> -->
+                    <!-- <input class="icon form-control"type="text" placeholder="Last name" name="lastname" id="lastname" /> -->
+                      <div class="form-group" style="position:relative; left:-6px;">
+                        <div class="input-group">
+                          <input type="text" class="form-control" id="firstname" placeholder="First Name" style="width:119px; position:absolute; left:-119px; margin-top:5px;">
+                          <input type="text" class="input-group-addon form-control" id="lastname" placeholder="Last Name" style="width:119px; background-color:white; text-align:left; position:absolute; left:0px;">
+                          <span style="position:absolute; top:20px; left:-50px;">|</span>
+                        </div>
+                      </div>
 
-                    <div id = "gender1" >
+                    <input class="icon form-control" type="text" placeholder="Email address" name="emailaddress" id="emailaddress" style="position:relative; float:center; top:30px;"/>
+                    <input class="icon form-control"type="password" placeholder="Password" name="pass" id="pass" style="position:relative; float:center; top:40px;"/>
+
+
+                    <div id = "gender1" style="margin-top:-20px;">
                     <span  id = "gender2" >
                     &nbsp&nbsp&nbsp&nbsp&nbsp
-                    <label  style="margin-left:-100px;" >Gender</label>
+                    <label  style="position:relative; left:-15px;" >Gender</label>
                     </span>
+
                     <span   id = "genderbox" >
-                    <span id = "gendermale">
+                    <span id = "gendermale" style="position:absolute; left:50px;">
                     <input type="radio" id="radio1" name="sex"    >
                     <label for="radio1"  > Male</label>
 
                     </span>
-                    <span id = "genderfemale"style=" ">
+                    <span id = "genderfemale" style="position:absolute; left:180px;">
 
                     <input type="radio"  id="radio2" name="sex"  >
                     <label for="radio2" > Female</label>
@@ -170,12 +182,14 @@
 
                     </span>
 
+                    <hr style="position:relative; top:15px; left:-15px; width:260px;">
                     </div>
+
                     <br />
-                    <hr />
+
 
                     <label id = "lablebirthday" for="birthday"  >Birthday</label>
-                    <br />
+
                     <table id= "birthday">
                       <tr>
                         <th>
@@ -320,17 +334,18 @@
                       </tr>
 
                     </table>
-                    <p>By signing up, i agree with Barmoney's Terms of service.</p>
+                    <p style="position:absolute; top:360px; left:70px;"> <font size="1px" color="#A4A4A4">By signing up, i agree with Barmoney's Terms of service.</font></p>
 
-                      <input class="submit" type="submit" value="sign up">
+                      <input class="submit" type="submit" value="sign up" id="submit">
                     </form>
-                    <hr />
-                    Already a Barmonist? <a href="#" id="loginlink2">Log in</a>
+
+                    <hr style="position:relative; top:200px;">
+                    <span style="position:relative; top:150px;"> <font size="1px" color="#A4A4A4"> Already a Barmonist? <a href="#" id="loginlink2">Log in</a> </font></span>
                     </div>
 
                     </div>
                     </center>
-                    </div>
+                </div>
 
                     <div id="modal2">
 
@@ -692,19 +707,19 @@
               <div class="col-md-4">
                 <div class="light-box box-hover">
                   <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
-                  <p>Level 6, 23 Pitt St, Sydney</p>
+                  <p style="font-size: 0.75em;">P3 , 17th Alley , Moshki St ,Baharestan Sq , Tehran</p>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="light-box box-hover">
                   <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
-                  <p>+61 9 211 3747</p>
+                  <p>+98 21 775 09364</p>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="light-box box-hover">
                   <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
-                  <p><a href="#">hey@halcyondays.com</a></p>
+                  <p><a href="#">Contact@tooshe.net</a></p>
                 </div>
               </div>
             </div>

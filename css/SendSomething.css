@@ -12,4 +12,34 @@ form{
 }
 #find-passengers-id{
     border-radius: 10px;
+    height: 4em;
+    width: 240px;
+}
+#what-div{
+    margin-top: 20px;
+}
+#what-header{
+    display: inline;
+    margin-right: 5px;
+}
+#what-input{
+    width: 275px;
+}
+.second-line-input{
+    width: 110px;
+}
+.location-input{
+    width: 150px;
+}
+.input-label{
+    margin-left: 10px;
+}
+label{
+    font-weight: 100;
+}
+#how-much-label{
+    font-size: 1.7em;
+}
+#is-ok-label{
+    font-size: 1.3em;
 }

@@ -22,67 +22,74 @@
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-6">
-            <form action="" class="form-horizontal">
+            <form action="" class="form-horizontal" style="margin-top: 20px">
                 <div class="row">
                     <div class="col-md-2">
                         <img src="img/send-something-icon.png" id="tambr-img" >
                     </div>
                     <div class="col-md-10">
-                        <h2>Send something</h2><br>
-                        <div class="col-md-2"><h4>What?</h4></div>
-                        <div class="col-md-5">
-                            <!--<input type="text" name="what!">-->
-                            <div class="form-group">
-                                <input class="form-control floating-label" id="focusedInput" type="text" placeholder="What do you want to send?">
-                            </div>
+                        <div class="row">
+                            <h2>Send something</h2>
                         </div>
-                        <div class="col-md-5"></div><br>
-
-                    </div>
-                </div>
-                <!--<div class="row">-->
-                    <!--<div class="col-md-2"></div>-->
-                    <!--<div class="col-md-10">-->
-                        <!--<div class="col-md-1">What?</div>-->
-                        <!--<div class="col-md-5"><input type="text" name="what!"></div>-->
-                        <!--<div class="col-md-6"></div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-10">
-                        <!--<div class="col-md-4"></div>-->
-                        <div class="col-md-3" style="margin-right: 20px">
-                            TO </br>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="dest-input">
-                            </div>
+                        <!--<br>-->
+                        <div class="row" id="what-div">
+                            <!--<div class="col-md-2">-->
+                                <h4 id="what-header">What?</h4>
+                            <!--</div>-->
+                            <!--<div class="col-md-5">-->
+                                <!--<input type="text" name="what!">-->
+                                <!--<div class="form-group">-->
+                                    <input  class="input-lg" id="what-input" type="text" placeholder="What do you want to send?">
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-5"></div><br>-->
                         </div>
-                        <!--<div class="col-md-1"></div>-->
-                        <div class="col-md-3" >
-                            From </br>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="source-input">
-                            </div>
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-2">
-                            </br>
-                                    <input type="text" class="form-control" id="fromDate" placeholder="FromDate">
-                        </div>
-                        <div class="col-md-2">
-                            </br>
-                                    <input type="text" class="form-control" id="toDate" placeholder="ToDate">
-                        </div>
-                        <div class="col-md-1"></div>
-                        <!--<div class="col-md-1"></div>-->
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-1"></div>
+                    <div class="col-md-11">
+                        <!--<div class="col-md-4"></div>-->
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-3">
+                                <label class="input-label">TO</label></br>
+                                <!--<div class="form-group">-->
+                                    <input type="text" placeholder="location" class="input-lg location-input" id="dest-input">
+                                <!--</div>-->
+                            </div>
+                            <!--<div class="col-md-1"></div>-->
+                            <div class="col-md-3">
+                                <label class="input-label">From</label></br>
+                                <!--<div class="form-group">-->
+                                    <input type="text" placeholder="location" class="input-lg location-input" id="source-input">
+                                <!--</div>-->
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row">
+                                    </br>
+                                    <!--<div class="col-md-1"></div>-->
+                                    <div class="col-md-5">
+                                        <input type="text" class="input-lg second-line-input" id="fromDate" placeholder="FromDate">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <input type="text" class="input-lg second-line-input" id="toDate" placeholder="ToDate">
+                                    </div>
+                                    <div class="col-md-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </br>
+                </br>
+                <div class="row" style="margin-bottom: 20px;">
+                    <div class="col-md-1"></div>
                     <div class="col-md-6">
-                        How much</br>
-                        is ok?</br>
+                        <label id="how-much-label">How much</label>
+                        </br>
+                        <label id="is-ok-label">is okay?</label>
+                        </br>
                             <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0" id="slider"/>
                         <div id="slider-value"></div>
                     </div>

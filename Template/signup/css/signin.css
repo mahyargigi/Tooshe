@@ -4,18 +4,18 @@
   /*background-repeat: no-repeat;*/
   /*background-attachment:fixed;*/
   /*background-position: center 0px;*/
-  /*position: fixed;*/
-  /*width: 100%;*/
-  /*height: 100%;*/
-  /*z-index: -1;*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 
 
 
 
-body {   
-      background-size:   cover;                      
+body {
+      background-size:   cover;
       background-repeat: no-repeat;
      background-position: center center;
      background-attachment: fixed;
@@ -26,26 +26,26 @@ body {
         font: normal 12px IRANSans-web,Arial,sans-serif;
         width:100%;
         height:100%;
-     
+
     }
 
 div.signin
-{ 
-background-color:#F0F8FF;
+{
+background-color:#E8E8EB;
      width:400px;
-     height:400px;
+     height:360px;
       position:relative;
-         border:2px solid  Black; 
-         margin: 75px 2px ;
+         border:2px solid  Black;
+         margin: 70px 2px ;
          padding: 2px 2px;
-        
+
         border-radius :8px;
     }
  div.signinform
  {
      width:250px;
      }
-     
+
      div.signin h1
      {
          font-family:b nazanin;
@@ -56,41 +56,41 @@ background-color:#F0F8FF;
          font-family:b nazanin;
          font-size:24px
      }
-     
+
      div.signin input[type=text]
      {
          width:95%;
          line-height: 25px;
-        
+
          position:relative;
-         border:1px solid white; 
+         border:1px solid white;
          margin: 0px 0px ;
          padding: 2px 2px;
-        
+
         border-radius : 2px;
      }
      div.signin input[type=password]
      {
          width:95%;
          line-height: 25px;
-        
+
          position:relative;
-         border:1px solid white; 
+         border:1px solid white;
          margin: 4px 0px ;
          padding: 2px 2px;
-        
+
         border-radius : 2px;
      }
      div.signin input[type=radio]
      {
          width:0px;
-      /*   line-height: 25px;*/
-        
+         line-height: 25px;
+
          position:relative;
-         border:0px solid white; 
+         border:0px solid white;
          margin: 0px ;
          padding: 0px ;
-        
+
         border-radius : 0px;
      }
       #gender1
@@ -128,24 +128,24 @@ background-color:#F0F8FF;
            width:45%;
            float: right;
            }
-           
+
       div.signin label
       {
           width:10px;
-      /*   line-height: 25px;*/
-        
+         line-height: 25px;
+
          position:relative;
-         border:0px solid white; 
+         border:0px solid white;
          margin: 0px ;
          padding: 0px ;
-        
+
         border-radius : 0px;
       }
-     
+
      .icon
      {
-        
-         
+
+
                color: #888888 ;
                margin-top:10px;
                margin-bottom:10px;
@@ -156,7 +156,7 @@ background-color:#F0F8FF;
               background-size:20px 20px;
           background-position:  right;
               background-repeat: no-repeat;
-             
+
                    margin:0px 0 0px 0;
              float:left;
                border-top:0px;
@@ -173,39 +173,42 @@ background-color:#F0F8FF;
              }
    div.signin select
    {
-       
+
          height:30px;
          position:relative;
-         border:1px solid white; 
-         margin: 2px 0px 0px 20px; 
+         border:1px solid white;
+         margin: 2px 0px 0px 20px;
          padding: 2px 2px;
-        
-        border-radius : 2px;
- 
 
-      
-       
-     
+        border-radius : 2px;
+
+
+
+
+
        }
-     .submit
+     .submit2
      {
-             width:100%;
+             width:97%;
              height:40px;
          background-color:#004151;
            border-radius : 5px;
          color:White;
-           
-         margin: 5px 0px ;
-     
+         position: relative;
+         top:10px;
+         left:-8px;
+
+
+
 
      }
-     
+
      #remmeber-check
      {
          float:left;
           margin-top:10px;
           margin-bottom:5px;
-          
+
          }
          #remmeber
          {
@@ -217,5 +220,5 @@ background-color:#F0F8FF;
              {
                  margin-top:5px;
                  }
-             
+
      

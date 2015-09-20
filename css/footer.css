@@ -2,11 +2,52 @@ footer a { color: #a1a9b0; }
 footer {
     background-color: #242830;
     background: url("../img/footer-background.jpg");
-    padding: 40px 0 30px; }
-footer p { color: #fff; }
-ul.legals { list-style: none; color: #fff; line-height: 25px; }
+    padding: 40px 0 30px;
+    margin-top: 50px;
+}
+footer p {
+    color: #fff;
+}
+ul.legals {
+    list-style: none;
+    color: #fff;
+    line-height: 25px;
+}
 ul.legals li { display: inline-block; }
 ul.legals li::after { content: " |"; }
 ul.legals li:last-child::after { content: ""; }
 .legals { text-align: left; }
 .credit { text-align: right; }
+
+.footer-list li{
+    color: white;
+    list-style: none;
+    font-size: 1.2em;
+}
+
+.footer-list{
+    margin-top: 40px;
+}
+#logo-img{
+    width: 250px;
+    height: 150px;
+}
+#join-us{
+    color: #a1a9b0;
+    text-align: center;
+}
+.dropdown-button{
+    width: 100%;
+    margin-top: 20px;
+
+}
+.dropdown{
+    background-color: #aca5aa;
+    margin-bottom: 40px;
+}
+.dropdown-menu{
+    width: 100%;
+}
+.dropdown-div{
+    margin-bottom: 20px;
+}

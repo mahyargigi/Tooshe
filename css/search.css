@@ -2,7 +2,9 @@
     background-color: transparent;
 }
 #search-box{
-    background-color: transparent;
+    /*background-color: transparent;*/
+    background: url(../img/icon-trans-small.png);
+    width: 110%;
 }
 #picks-tab{
     /*float: left;*/
@@ -62,7 +64,10 @@
 }
 .form-input{
     width: 100%;
-    margin-top: 5px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    border: none;
+    height: 2.5em;
 }
 .form-horizontal{
     margin-top: 20px;
@@ -146,6 +151,7 @@ li{
     float: right;
     background: url(../img/sear.png);
     border-radius: 20px;
+    margin-right: 20px;
 }
 .title{
     margin-right: 10px;

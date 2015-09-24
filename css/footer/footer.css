@@ -1,7 +1,7 @@
 footer a { color: #a1a9b0; }
 footer {
     background-color: #242830;
-    background: url("../img/footer-background.jpg");
+    background: url("../../img/footer-background.jpg");
     padding: 40px 0 30px;
     margin-top: 50px;
 }
@@ -42,7 +42,7 @@ ul.legals li:last-child::after { content: ""; }
 
 }
 .dropdown{
-    background-color: #aca5aa;
+    background-color: rgba(255, 253, 253, 0.80);
     margin-bottom: 40px;
 }
 .dropdown-menu{
@@ -50,4 +50,8 @@ ul.legals li:last-child::after { content: ""; }
 }
 .dropdown-div{
     margin-bottom: 20px;
+}
+#footer-shoar{
+    color: rgba(179, 178, 178, 0.80);
+    font-size: 16px;
 }

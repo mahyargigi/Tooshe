@@ -1,0 +1,132 @@
+.container-fluid{
+    font-family: Verdana;
+    font-size: smaller;
+}
+.logo{
+    margin-left: 5px;
+}
+#facebook-logo{
+    width: 25px;
+    height: 25px;
+}
+#linkedin-logo{
+    width: 25px;
+    height: 25px;
+}
+.connections{
+    font-size: 10px;
+    color: rgba(161, 159, 156, 0.80);
+}
+ul{
+    list-style: none;
+}
+#ticket-verified li{
+    margin-top: 20px;
+}
+#ticket-verified{
+    margin-top: 60px;
+}
+.title{
+    display: inline-block;
+    /*margin-right: 10px;*/
+    color: #5dc15d;
+}
+.text{
+    margin-right: 20px;
+}
+#map{
+    width: 100%;
+    /*height: 100%;*/
+}
+.buttons{
+    float: right;
+}
+/*#left-box{*/
+    /*border: solid;*/
+    /*border-width: thin;*/
+/*}*/
+#right-box{
+    background-color: #ffffff;
+}
+.container-box{
+    /*border: solid;*/
+    /*border-width: thin;*/
+    border-radius: 10px;
+}
+#user-image{
+    position: relative;
+    margin-top: 10px;
+    left: -70px;
+    z-index: 1;
+}
+#name-div{
+    margin: 20px;
+}
+#user-rate{
+    position: relative;
+}
+#courset{
+    margin-top: 20px;
+}
+#back-button{
+    margin-top: 50px;
+}
+#ticket-verified-sentence{
+    color:#d9d63d;
+}
+#application-fee-div{
+    margin-top: 50px;
+}
+#price{
+    font-size: 20px;
+    position: absolute ;
+    left: 25px ;
+    bottom: 10px;
+}
+#label-holder{
+    position: relative;
+    top: -4px;
+}
+.button{
+    border-radius: 20px;
+}
+#other-suggestions{
+    font-weight: 100;
+    font-size: 16px;
+    font-family: kalinga , Arial;
+    color: #23b219;
+    display: inline
+}
+#info-icon{
+    height: 18px;
+    width: 18px;
+}
+#cancel-button{
+   color: #000000;
+    background-color: white;
+    border: solid;
+    border-width: 1px;
+    border-color: #e52557;
+}
+#send-request-button{
+    background-color: #25d5c3;
+}
+#message-him-button{
+    float: right;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: #8fd1e3;
+    width: 100%;
+}
+#positive-reviews{
+
+}
+#name{
+    margin-left: 55px;
+}
+.application-fee-row{
+    margin-bottom: 10px;
+}
+#test{
+    border:thin;
+}

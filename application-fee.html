@@ -2,12 +2,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link href="css/footer.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/star-rating.min.css" rel="stylesheet"  media="all" type="text/css"/>
-    <link href="css/material.min.css" rel="stylesheet">
-    <link href="css/application-fee.css" rel="stylesheet">
-    <link href="css/font.css" rel="stylesheet">
+    <link href="css/footer/footer.css" rel="stylesheet">
+    <link href="css/global/bootstrap.min.css" rel="stylesheet">
+    <link href="css/global/star-rating.min.css" rel="stylesheet"  media="all" type="text/css"/>
+    <link href="css/global/material.min.css" rel="stylesheet">
+    <link href="css/application-fee/application-fee.css" rel="stylesheet">
+    <link href="css/global/font.css" rel="stylesheet">
     <title></title>
 </head>
 <body>
@@ -15,23 +15,31 @@
         <div class="col-md-2">
             <div class="col-md-6"></div>
             <div class="col-md-6">
-                <a href="#"><img src="img/back-button.png" id="back-button"></a>
+                <a href="#"><img src="img/application-fee/back-button.png" id="back-button"></a>
             </div>
         </div>
         <div class="col-md-8 container-box">
             <div class="col-md-3" id="left-box">
-                <div class="row" id="name-div">
-                    <span id="name"><h4 style="display: inline-block">Reza Aslan</h4></span>
-
-                </div>
+                <!--<div class="row" id="name-div">-->
+                    <div id="name"><h4>Reza Aslan</h4></div>
+                <!--</div>-->
                 <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-11">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-10">
                         <div class="col-md-1"></div>
                         <div class="col-md-11">
                             <input id="user-rate" class="rating" data-stars="5" data-min="0"
                            data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
                            data-readonly="true" data-symbol="&#x2605">
+                            </br>
+                            <a href="#" id="positive-reviews">53 positive reviews</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-9">
+                            <div class="btn btn-info button" id="message-him-button">message him</div>
                         </div>
                     </div>
 
@@ -40,25 +48,58 @@
                     <ul id="ticket-verified">
                         <li><h6 id="ticket-verified-sentence">Ticket verified</h6></li>
                         <li>
-                            <span><img src="img/phone.png" class="logo"></span>
-                            <span class="description">phone number verified</span>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="img/application-fee/iphone6_gold_portrait.png" class="logo">
+                                </div>
+                                <div class="col-md-10">
+                                    <span class="description">phone number verified</span>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            <span><img src="img/credit-card-3.png" class="logo"></span>
-                            <span class="description">credit card</span>
-
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="img/application-fee/cart.png" class="logo">
+                                </div>
+                                <div class="col-md-10">
+                                    <span class="description">credit card</span>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            <span><img src="img/email.png" class="logo"></span>
-                            <span class="description">email verified</span>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="img/application-fee/Untitled-3.png" class="logo">
+                                </div>
+                                <div class="col-md-10">
+                                    <span class="description">email verified</span>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            <span><img src="img/facebook-icon.png" class="logo"></span>
-                            <span class="description">facebook not connected</span>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="img/application-fee/facebook-icon.png" class="logo" id="facebook-logo">
+                                </div>
+                                <div class="col-md-10">
+                                    <span class="description">facebook not connected</span>
+                                    <br>
+                                    <a href="#" class="connections">250 friends</a>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            <span><img src="img/linkedin_icon.png" class="logo"></span>
-                            <span class="description">linkedin verified</span>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="img/application-fee/linkedin_icon.png" class="logo" id="linkedin-logo">
+                                </div>
+                                <div class="col-md-10">
+                                    <span class="description">linkedin verified</span>
+                                    <br>
+                                    <a href="#" class="connections">250 connections</a>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -68,21 +109,21 @@
                     <span class="list-group" style="display: inline-block ;" id="user-image">
                         <span class="list-group-item">
                             <span class="row-picture">
-                                <img class="circle" src="Img/mahyar.jpg" alt="icon" >
+                                <img class="circle" src="img/global/mahyar.jpg" alt="icon" >
                             </span>
                         </span>
                     </span>
                 </div>
                 <div class="col-md-9" id="courset">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <span class="title text" style="position: relative ; bottom: -8px;">carries</span>
-                            </div>
-                            <div class="col-md-10">
-                                <span class="text" id="carried" style="display: inline-block"><h4>Application fee of spanish universities</h4></span>
-                            </div>
+                    <div class="row application-fee-row">
+                        <div class="col-md-2">
+                            <span class="title text" style="position: relative ; bottom: -8px;">carries</span>
+                        </div>
+                        <div class="col-md-10">
+                            <span class="text" id="carried" style="display: inline-block"><h4>Application fee of spanish universities</h4></span>
+                        </div>
                     </div>
-                    <div class="row">
+                    <div class="row application-fee-row">
                         <div class="col-md-2">
                             <span class="title text">From</span>
                         </div>
@@ -92,96 +133,124 @@
                         <div class="col-md-1">
                             <span class="title text">to</span>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <span class="destination text">Tehran , Iran</span>
                         </div>
-                        <div class="col-md-4"></div>
+                        <div class="col-md-3"></div>
                     </div>
-                    <div class="row">
+                    <div class="row application-fee-row" >
                         <div class="col-md-2">
                             <span class="title text">due in</span>
                         </div>
                         <div class="col-md-10">
-                            <span class="date text">June23th - Hune 28th</span>
+                            <span class="date text">June23th - June 28th</span>
                         </div>
 
                     </div>
                     <div class="row">
-                        <img src="img/Treasure_Map.jpg" id="map">
+                        <img src="img/application-fee/Untitled-4.png" id="map">
                     </div>
                     <div class="row buttons">
-                        <div class="btn btn-info">message him</div>
-                        <div class="btn btn-primary">send request</div>
+                        <div class="btn btn-info button" id="cancel-button">cancel</div>
+                        <div class="btn btn-primary button" id="send-request-button">send request</div>
                     </div>
                 </div>
-                <div class="col-md-2">
-                    <img src="img/price.png" id="price-tag">
+                <div class="col-md-2" id="label-holder">
+                    <img src="img/application-fee/price-label.png">
+                    <label id="price" style="">22$</label>
                 </div>
             </div>
         </div>
-        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <img src="img/application-fee/1024px-Infobox_info_icon.svg.png" id="info-icon">
+            <label id="other-suggestions">Reza is also able to carry your other requests:</label>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" id="test"> number1
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> number2
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> number3
+                </label>
+            </div>
+        </div>
 
     </div>
     <footer>
           <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <img src="img/logo.png" id="logo-img">
+                    <img src="img/global/logo.png" id="logo-img"></br>
+                    <label id="footer-shoar">
+                        <i>
+                            we are some people like you.</br>
+                            we just do not like wasting our money.</br>
+                            we also like getting whatever we wish, from anywhere we like :)
+                        </i>
+                    </label>
                 </div>
                 <div class="col-md-2">
                     <ul class="footer-list">
-                        <li class="title"><a href="#"><b>Company<br><br></b></a></li>
+                        <li class="title"><b>Company<br><br></b></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">Press</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Help</a></li>
                         <li><a href="#">Policies</a></li>
-                        <li><a href="#">Disaster Response</a></li>
                         <li><a href="#">Terms & Privacy</a></li>
+                        <li><a href="#">Who didn't support us?!</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2">
                     <ul class="footer-list">
-                        <li class="title"><a href="#"><b>discover<br><br></b></a></li>
+                        <li class="title"><b>discover<br><br></b></li>
                         <li><a href="#">Trust and safety</a></li>
                         <li><a href="#">Invite friends</a></li>
-                        <li><a href="#">Airbnb picks</a></li>
+                        <li><a href="#">Tooshe picks</a></li>
                         <li><a href="#">Mobile</a></li>
-                        <li><a href="#">Support NYC</a></li>
                         <li><a href="#">Business Travel</a></li>
                         <li><a href="#">Site Map</a></li>
+                        <li><a href="#">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2">
                     <ul class="footer-list">
-                        <li class="title"><a href="#"><b>Hosting<br><br></b></a></li>
-                        <li><a href="#">Why Host</a></li>
+                        <li class="title"><b>Picking<br><br></b></li>
+                        <li><a href="#">Why Pick</a></li>
                         <li><a href="#">Hospitality</a></li>
-                        <li><a href="#">Responsible Hosting</a></li>
-                        <li><a href="#">Home Safety</a></li>
+                        <li><a href="#">Delivery ways</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 footer-list">
-                    <div class="row" id="language-dropdown">
+                    <div class="row dropdown-div" id="language-dropdown">
                         <div class="dropdown">
                           <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Language
                           <span class="caret"></span></button>
                           <ul class="dropdown-menu ">
                             <li><a href="#">English</a></li>
-                            <li><a href="#">Perisan</a></li>
-                            <li><a href="#">French</a></li>
+                            <li><a href="#">Persian</a></li>
+                            <li><a href="#">Arabic</a></li>
+                            <li><a href="#">Indian</a></li>
                           </ul>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row dropdown-div">
                         <div class="dropdown">
-                          <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">GBP?!?!
+                          <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Currency
                           <span class="caret"></span></button>
                           <ul class="dropdown-menu">
-                            <li><a href="#">GBP</a></li>
-                            <li><a href="#">GBP</a></li>
-                            <li><a href="#">GBP</a></li>
+                            <li><a href="#">USD</a></li>
+                            <li><a href="#">Irr</a></li>
+                            <li><a href="#">Eur</a></li>
+                            <li><a href="#">Lira</a></li>
+                            <li><a href="#">Dirham</a></li>
                           </ul>
                         </div>
                     </div>
@@ -198,7 +267,7 @@
               <!--</div>-->
             </div>
             <div class="row">
-               <h4 id="join-us">Join us on</h4>
+               <!--<h4 id="join-us">Join us on</h4>-->
             </div>
             <div class="row">
                 <ul>
@@ -207,11 +276,17 @@
             </div>
           </div>
         </footer>
-
     <!--site ends here-->
     <script src="js/jquery-1.11.2.js" ></script>
+     <script src="js/material.min.js"></script>
     <script src="js/bootstrap.min.js" ></script>
     <script src="js/star-rating.min.js" ></script>
     <script src="js/application-fee.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $.material.init();
+        });
+    </script>
 </body>
 </html>

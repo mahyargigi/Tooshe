@@ -12,7 +12,7 @@
     border: thick;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    background-color: #808080;
+    background-color: rgba(225, 223, 223, 0.80);
     width: 30%;
 }
 #packs-tab{
@@ -21,7 +21,7 @@
     border: thick;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    background-color: #808080;
+    background-color: rgba(225, 223, 223, 0.80);
     width: 30%;
 }
 #goods-tab{
@@ -29,7 +29,7 @@
     border: thick;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    background-color: #808080;
+    background-color: rgba(225, 223, 223, 0.80);
     width: 30%;
 }
 #picks-image{
@@ -54,12 +54,12 @@
 }
 #packs-li{
     display: inline-block;
-    color: lightgrey;
+    color: rgba(117, 116, 116, 0.80);
     text-decoration: none;
 }
 #goods-li{
     display: inline-block;
-    color: lightgrey;
+    color: rgba(117, 116, 116, 0.80);
     text-decoration: none;
 }
 .form-input{
@@ -73,12 +73,14 @@
     margin-top: 20px;
 }
 #amount1{
-    background-color: #ffffff;
     border-radius: 20px;
+    margin-right: 5px;
+    color: rgba(60, 183, 44, 0.80);
 }
 #amount2{
-    background-color: #ffffff;
     border-radius: 20px;
+    margin-right: 5px;
+    color: rgba(60, 183, 44, 0.80);
 }
 .request-btn{
     float: right;
@@ -136,8 +138,10 @@ li{
     list-style: none;
 }
 .alert-dismissable{
-    background-color: #808080;
+    background-color: rgba(183, 181, 181, 0.80);
     width: 120px;
+    height: 45px;
+    border-radius: 20px;
     display: inline-block;
     margin-right: 10px;
 }
@@ -211,7 +215,10 @@ body{
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 .search-box-title{
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 20px;
+    /*margin-top: 10px;*/
 }
 .tab-title-div{
     font-size: 21px;
@@ -221,4 +228,40 @@ body{
 }
 #result-div{
     margin-top: 40px;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;
+}
+
+:-ms-input-placeholder {
+   text-align: center;
+}
+.pagination li a{
+    display: inline-block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.price{
+    font-size: 20px;
+    position: absolute ;
+    left: 25px ;
+    bottom: 10px;
+}
+.what-label{
+    margin-top: 10px;
+}
+.up-to-label{
+    font-size: 12px;
+    width: 100%;
 }

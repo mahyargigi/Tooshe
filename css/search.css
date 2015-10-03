@@ -2,9 +2,8 @@
     background-color: transparent;
 }
 #search-box{
-    /*background-color: transparent;*/
     background: url(../img/icon-trans-small.png);
-    width: 110%;
+    /*width: 110%;*/
 }
 #picks-tab{
     /*float: left;*/
@@ -23,6 +22,9 @@
     border-top-left-radius: 20px;
     background-color: rgba(225, 223, 223, 0.80);
     width: 30%;
+}
+a{
+    color: inherit;
 }
 #goods-tab{
     margin: 3px;
@@ -72,18 +74,19 @@
 .form-horizontal{
     margin-top: 20px;
 }
+.amount{
+    color: rgba(60, 183, 44, 0.80);
+}
 #amount1{
     border-radius: 20px;
     margin-right: 5px;
-    color: rgba(60, 183, 44, 0.80);
 }
 #amount2{
     border-radius: 20px;
     margin-right: 5px;
-    color: rgba(60, 183, 44, 0.80);
 }
+
 .request-btn{
-    float: right;
     background: url(../img/sear.png);
     border-radius: 20px;
 }
@@ -114,6 +117,17 @@
   z-index: 0;
   width: 50px;
   height: 50px;
+}
+
+.search-result-content{
+    border-top: solid;
+    border-top-color: rgba(215, 209, 209, 0.80);
+    border-top-width: 1px;
+}
+
+.list-group-separator{
+    /*display: none;*/
+    visibility: hidden;
 }
 
 .search-image{
@@ -152,14 +166,14 @@ li{
     display: inline;
 }
 .find-passengers{
-    float: right;
+    /*float: right;*/
     background: url(../img/sear.png);
-    border-radius: 20px;
-    margin-right: 20px;
+    border-radius: 10px;
+    width: 100%;
 }
 .title{
     margin-right: 10px;
-    color: #808080;
+    color: rgba(171, 169, 169, 0.80);
 }
 .country{
     margin-right: 10px;
@@ -195,6 +209,12 @@ li{
     display: block;
     text-align: center;
 }
+.goods-slider{
+    margin-left: 20px;
+}
+#item-price-div{
+    margin-bottom: 10px;
+}
 .radio{
     display: inline;
 }
@@ -220,14 +240,34 @@ body{
     margin-left: 20px;
     /*margin-top: 10px;*/
 }
+.to-label{
+    font-size: 0.8em;
+}
+.from-label{
+    font-size: 0.8em;
+}
+
 .tab-title-div{
-    font-size: 21px;
+    font-size: 18px;
 }
 #search-div{
     margin-top: 20px;
 }
 #result-div{
+    margin-left: 40px;
     margin-top: 40px;
+    /*border: solid;*/
+    /*border-width: 1px;*/
+    /*border-radius: 10px;*/
+}
+#result-div ul li {
+    /*background-color: white;*/
+}
+
+.horizontal-line{
+    border-bottom: solid;
+    border-bottom-color: rgba(217, 210, 210, 0.80);
+    border-width: 0.09em;
 }
 
 ::-webkit-input-placeholder {
@@ -251,6 +291,16 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+/*TODO bug dare hamchenan*/
+.pagination li.active a{
+    background-color: rgba(88, 215, 235, 0.80);
+    /*color: #fff;*/
+}
+
+.pagination li.active a:hover{
+    background-color: rgba(98, 185, 215, 0.80);
+    /*color: #fff;*/
+}
 
 .price{
     font-size: 20px;
@@ -264,4 +314,113 @@ body{
 .up-to-label{
     font-size: 12px;
     width: 100%;
+}
+
+/*sliders css*/
+
+input[type=range]{
+    -webkit-appearance: none;
+    margin-top: 10px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    /*width: 300px;*/
+    height: 5px;
+    background: rgba(255, 146, 146, 0.84);
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: solid;
+    border-color: rgba(172, 165, 170, 0.93);
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: white;
+    margin-top: -4px;
+}
+
+.goods-label{
+    margin-top: 10px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    /*width: 300px;*/
+    height: 5px;
+    background: rgba(255, 146, 146, 0.84);
+    border: none;
+    border-radius: 3px;
+}
+
+
+
+
+
+input[type=range]{
+    /* fix for FF unable to apply focus style bug  */
+    /*border: 1px solid white; */
+
+    /*required for proper track sizing in FF*/
+    /*width: 300px;*/
+}
+
+input[type=range]::-moz-range-track {
+    /*width: 300px;*/
+    height: 5px;
+    background: rgba(255, 146, 146, 0.84);
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    border: solid;
+    border-color: rgba(172, 165, 170, 0.93);
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: white;
+    margin-top: -4px;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: none;
+}
+
+input[type=range]:focus::-moz-range-track {
+    /*width: 300px;*/
+    height: 5px;
+    background: rgba(255, 146, 146, 0.84);
+    border: none;
+    border-radius: 3px;
+}
+
+/*modal css*/
+
+.modal-dialog{
+    width: 800px;
+    margin-top: 80px;
+}
+
+.modal-header{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.modal .checkbox{
+    margin-top: 25px;
+}
+.modal-body{
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.modal-footer{
+    margin-top: 50px;
 }

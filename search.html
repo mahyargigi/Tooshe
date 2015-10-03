@@ -8,6 +8,7 @@
 
     <link href="css/global/star-rating.min.css" rel="stylesheet"  media="all" type="text/css"/>
     <link href="css/global/material.min.css" rel="stylesheet">
+    <link href="css/global/material-fullpalette.min.css" rel="stylesheet">
     <link href="css/global/bootstrap-material-datepicker.css" rel="stylesheet">
     <link href="css/search.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
@@ -205,6 +206,7 @@
                                     </div>
                                     <div class="col-md-1"></div>
                                 </div>
+                                <hr class="horizontal-line">
                                 <div class="form-horizontal">
                                     <div class="row">
                                         <div class="col-md-6">
@@ -221,10 +223,11 @@
                                             <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0" id="slider1"/>
                                         </div>
                                         <div class="col-md-3">
-                                            <label id="amount1">25$</label>
+                                            <label id="amount1" class="amount">25$</label>
                                         </div>
                                     </div>
                                 </div>
+                                <hr class="horizontal-line">
                                 <div class="form-horizontal">
                                     <label class="search-box-title">where</label>
                                     <div class="row">
@@ -232,11 +235,11 @@
                                         <div class="col-md-10">
                                             <div class="col-md-10">
                                                 <div class="form-inline">
-                                                <label class="search-box-title">TO</label>
+                                                <label class="search-box-title to-label">TO</label>
                                                 <input class="form-input" id="dest-input1" placeholder="Enter a location">
                                             </div>
                                             <div class="form-inline">
-                                                <label class="search-box-title">From</label>
+                                                <label class="search-box-title from-label">From</label>
                                                 <input class="form-input" id="source-input1" placeholder="Enter a location">
                                             </div>
                                             </div>
@@ -244,6 +247,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <hr class="horizontal-line">
                                 <div class="form-horizontal">
                                     <label class="search-box-title">when</label>
                                     <div class="row">
@@ -262,10 +266,15 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <!--<div class=" col-md-11">-->
-                                        <div id="picks-find-passengers" class="btn btn-info find-passengers "><span class="glyphicon glyphicon-search"></span> Find Passengers!</div>
-                                    <!--</div>-->
-                                    <!--<div class=" col-md-1"></div>-->
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-10">
+                                        <div class="col-md-10">
+                                            <div class="form-inline">
+                                                <div id="picks-find-passengers" class="btn btn-info find-passengers "><span class="glyphicon glyphicon-search"></span> Find!</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -281,6 +290,7 @@
                                     </div>
                                     <div class="col-md-1"></div>
                                 </div>
+                                <hr class="horizontal-line">
                                 <div class="form-horizontal">
                                     <div class="row">
                                         <div class="col-md-6">
@@ -297,10 +307,11 @@
                                             <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0" id="slider2" />
                                         </div>
                                         <div class="col-md-3">
-                                            <label id="amount2">25$</label>
+                                            <label id="amount2" class="amount">25$</label>
                                         </div>
                                     </div>
                                 </div>
+                                <hr class="horizontal-line">
                                 <div class="form-horizontal">
                                     <label class="search-box-title">where</label>
                                     <div class="row">
@@ -308,11 +319,11 @@
                                         <div class="col-md-10">
                                             <div class="col-md-10">
                                                 <div class="form-inline">
-                                                <label class="search-box-title">TO</label>
+                                                <label class="search-box-title to-label">TO</label>
                                                 <input class="form-input" id="dest-input2" placeholder="Enter a location">
                                             </div>
                                             <div class="form-inline">
-                                                <label class="search-box-title">From</label>
+                                                <label class="search-box-title from-label">From</label>
                                                 <input class="form-input" id="source-input2" placeholder="Enter a location">
                                             </div>
                                             </div>
@@ -320,6 +331,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <hr class="horizontal-line">
                                 <div class="form-horizontal">
                                     <label class="search-box-title">when</label>
                                     <div class="row">
@@ -338,84 +350,93 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <!--<div class=" col-md-11">-->
-                                        <div id="packs-find-passengers" class="btn btn-info find-passengers "><span class="glyphicon glyphicon-search"></span> Find Passengers!</div>
-                                    <!--</div>-->
-                                    <!--<div class=" col-md-1"></div>-->
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-10">
+                                        <div class="col-md-10">
+                                            <div class="form-inline">
+                                                <div id="packs-find-passengers" class="btn btn-info find-passengers "><span class="glyphicon glyphicon-search"></span> Find!</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                    </div>
                                 </div>
                             </form>
                         </div>
                         <div id="goods" class="tab-pane fade in" style="width: 100%">
                             <!--<form class="form-horizontal">-->
-                                <label class="search-box-title">Select Category</label>
+                                <!--<label class="search-box-title">What </label>-->
                                 <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-md-5">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" checked>Electronic
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-7">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" checked>Books,Mags,...
-                                                </label>
-                                            </div>
-                                        </div>
+                                    </br>
+                                    <div class="row radio radio-material-cyan-600">
+                                        <label class="search-box-title">
+                                            <input type="radio" name="optionsRadios" id="all-categories-radio" value="option2" checked="">
+                                            All categories
+                                        </label>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-5">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" checked>Exotics
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-7">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" checked>Fashion,Clothes
-                                                </label>
-                                            </div>
-                                        </div>
+                                    <div class="row radio radio-material-cyan-600">
+                                        <label class="search-box-title">
+                                        <input type="radio" name="optionsRadios" id="specific-categories-radio" value="option2">
+                                        Specific Categories
+                                        </label>
                                     </div>
                                 </div>
-                                <label class="search-box-title">The item price</label>
-                                <div class="row">
+                                <hr class="horizontal-line">
+                                <label class="search-box-title goods-label">The item price</label>
+                                <div class="row " id="item-price-div">
                                     <div class="col-md-9">
-                                        <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0" id="slider3"/>
+                                        <input class="mdl-slider mdl-js-slider goods-slider" type="range" min="0" max="100" value="25" tabindex="0" id="slider3"/>
                                     </div>
                                     <div class="col-md-3">
-                                        <label id="amount3"></label>
+                                        <label id="amount3" class="amount">25$</label>
                                     </div>
                                 </div>
-                                <label class="search-box-title">Delivery Fee</label>
+                                <label class="search-box-title goods-label">Delivery Fee</label>
                                 <div class="row">
                                     <div class="col-md-9">
-                                        <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0" id="slider4" />
+                                        <input class="mdl-slider mdl-js-slider goods-slider" type="range" min="0" max="100" value="25" tabindex="0" id="slider4" />
                                     </div>
                                     <div class="col-md-3">
-                                        <label id="amount4"></label>
+                                        <label id="amount4" class="amount">25$</label>
                                     </div>
                                 </div>
 
-                                <label class="search-box-title">From</label>
+                                <hr class="horizontal-line">
+                                <label class="search-box-title goods-label">From</label>
+
                                 <div class="row">
-                                    <div class="col-md-7">
-                                        <input class="form-input" id="source-input3" placeholder="Enter a location">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-10">
+                                        <div class="col-md-10">
+                                            <div class="form-inline">
+                                                <input class="form-input" id="source-input3" placeholder="Enter a location">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2"></div>
                                     </div>
-                                    <div class="col-md-5"></div>
                                 </div>
-                                <label class="search-box-title">Due in</label>
+                                <label class="search-box-title goods-label">Due in</label>
                                 <div class="row">
-                                    <div class="col-md-7">
-                                        <input class="form-input" id="goods-date" placeholder="Enter a date">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-10">
+                                        <div class="col-md-10">
+                                            <div class="form-inline">
+                                                <input class="form-input" id="goods-date" placeholder="Enter a date">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2"></div>
                                     </div>
-                                    <div class="col-md-5"></div>
                                 </div>
-                                <div id="goods-find-passengers" class="btn btn-info find-passengers " ><span class="glyphicon glyphicon-search"></span> Find Passengers!</div>
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-10">
+                                        <div class="col-md-10">
+                                            <div class="form-inline">
+                                                <div id="goods-find-passengers" class="btn btn-info find-passengers "><span class="glyphicon glyphicon-search"></span> Find!</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                    </div>
+                                </div>
                             <!--</form>-->
                         </div>
                     </div>
@@ -424,89 +445,156 @@
             <div class="col-md-1">
 
             </div>
+            <div class="modal" id="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 class="modal-title">What kind of optimized Stuffs are you searching for?</h3>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="row">
+                                <!--<div class="col-md-2"></div>-->
+                                <div class="col-md-4">
+                                    <div class="checkbox" >
+                                        <label>
+                                            <input type="checkbox">Checkbox
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Checkbox
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Checkbox
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Checkbox
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Checkbox
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Checkbox
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Checkbox
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Checkbox
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Checkbox
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Checkbox
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Checkbox
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Checkbox
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Checkbox
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Checkbox
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Checkbox
+                                        </label>
+                                    </div>
+                                </div>
+                                <!--<div class="col-md-1"></div>-->
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-7" id="result-div">
                 <ul id="picks-ul" style="display: none">
                     <!--<li>-->
-                        <div class="alert alert-dismissable alert-danger">
-                            <span><strong>laptop</strong></span><span><button type="button" class="close" data-dismiss="alert">×</button></span>
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="alert alert-dismissable alert-danger">
+                                <span><strong>laptop</strong></span><span><button type="button" class="close" data-dismiss="alert">×</button></span>
+                            </div>
+                            <span>102 Passengers can bring your</span>
                         </div>
-                        <span>102 Passengers can bring your</span>
+                        <div class="col-md-3">
+                            <ul id="picks-pagination" class="pagination">
+                                <li id="picks-previous" class="disabled"><a href="#">«</a></li>
+                                <li class="first-page last-page active"><a href="#">1</a></li>
+                                <!--<li><a>3</a></li>-->
+                                <li id="picks-next" class="disabled"><a href="#">»</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <!--</li>-->
                     <li class="1">
                         <!--<li class="1">-->
-                            <div class="list-group">
-                                    <div class="row">
-                                        <div class="col-md-2 image-div">
-                                            <div class="img-container">
-                                                <img src="img/global/mahyar.jpg" class="img-circle profile-picture-image" >
-                                                <img src="img/smiley.png" class="img-circle top-image">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-10">
-                                            <div class="row">
-                                                <div class="row">
-                                                    <div class="col-md-10">
-                                                        </br>
-                                                        <span class="row-span">
-                                                            <h4 class="list-group-item-heading name">Catherine</h4>
-                                                            <span class="verification-msg">
-                                                                <img src="img/smiley.png" class="verification-image">
-                                                                <span >verified</span>
-                                                            </span>
-                                                        </span>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <img src="img/application-fee/price-label.png">
-                                                        <label class="price">22$</label>
-                                                    </div>
-                                                </div>
-                                                </br>
-                                                <span class="row-span">
-                                                    <span class="origin"><span class="city">Madrid</span>,<span class="country">Spain</span> </span>
-                                                    <span class="glyphicon glyphicon-plane plane"></span>
-                                                    <span class="destination"><span class="city">Tehran</span>,<span class="country">Iran</span></span>
-                                                </span>
-                                                </br>
-                                                <span class="row-span from-date">June 23th to</span>
-                                                <span class="row-span to-date">June 28th</span>
-                                                <span class=" row-span country"> in Berlin</span>
-                                                </br>
-                                                <div class="row">
-                                                    <div class="col-md-11">
-                                                        <input id="user-rate1" class="rating" data-stars="5" data-min="0"
-                                                           data-max="5" data-step="0.1" data-show-clear="false" data-size="xs"
-                                                           data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                        <div class="btn btn-info request-btn">Request</div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                            <div class="list-group search-result-content">
+                                <div class="row">
+                                    <div class="col-md-2 image-div">
+                                        <div class="img-container">
+                                            <img src="img/global/10488310_1657133291180853_5761265602606769541_n.jpg" class="img-circle profile-picture-image" >
+                                            <img src="img/smiley.png" class="img-circle top-image">
                                         </div>
                                     </div>
-                                <!--</div>-->
-                                <div class="list-group-separator"></div>
-                            </div>
-                        <!--</li>-->
-                        <!--<li class="2">-->
-                            <div class="list-group">
-                                    <div class="row">
-                                        <div class="col-md-2 image-div">
-                                            <div class="img-container">
-                                                <img src="img/global/mahyar.jpg" class="img-circle profile-picture-image" >
-                                                <img src="img/smiley.png" class="img-circle top-image">
+                                    <div class="col-md-10">
+                                        <div class="row">
+                                            <div class="row">
+                                                <div class="col-md-10">
+                                                    </br>
+                                                    <span class="row-span">
+                                                        <h4 class="list-group-item-heading name"><a href="#"> Catherine</a></h4>
+                                                        <span class="verification-msg">
+                                                            <img src="img/smiley.png" class="verification-image">
+                                                            <span >verified</span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <img src="img/application-fee/price-label.png">
+                                                    <label class="price">22$</label>
+                                                </div>
                                             </div>
-
-                                        </div>
-                                        <div class="col-md-10">
-                                            </br>
-                                            <span class="row-span">
-                                                <h4 class="list-group-item-heading name">Catherine</h4>
-                                                <span class="verification-msg">
-                                                    <img src="img/smiley.png" class="verification-image">
-                                                    <span >verified</span>
-                                                </span>
-                                            </span>
                                             </br>
                                             <span class="row-span">
                                                 <span class="origin"><span class="city">Madrid</span>,<span class="country">Spain</span> </span>
@@ -514,42 +602,92 @@
                                                 <span class="destination"><span class="city">Tehran</span>,<span class="country">Iran</span></span>
                                             </span>
                                             </br>
+                                            <span class="row-span from-date">June 23th to</span>
+                                            <span class="row-span to-date">June 28th</span>
+                                            <span class=" row-span country"> in Berlin</span>
+                                            </br>
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <input id="user-rate1" class="rating" data-stars="5" data-min="0"
+                                                       data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
+                                                       data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="btn btn-info request-btn">Request</div>
+                                                </div>
                                             </div>
+                                        </div>
                                     </div>
+                                </div>
+                                <!--</div>-->
+                                <div class="list-group-separator"></div>
+                            </div>
+                        <!--</li>-->
+                        <!--<li class="2">-->
+                            <div class="list-group search-result-content">
+                                <div class="row">
+                                    <div class="col-md-2 image-div">
+                                        <div class="img-container">
+                                            <img src="img/global/11024738_854969787883795_4193688850460528963_n.jpg" class="img-circle profile-picture-image" >
+                                            <img src="img/smiley.png" class="img-circle top-image">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-10">
+                                        </br>
+                                        <span class="row-span">
+                                            <h4 class="list-group-item-heading name"><a href="#"> Catherine</a></h4>
+                                            <span class="verification-msg">
+                                                <img src="img/smiley.png" class="verification-image">
+                                                <span >verified</span>
+                                            </span>
+                                        </span>
+                                        </br>
+                                        <span class="row-span">
+                                            <span class="origin"><span class="city">Madrid</span>,<span class="country">Spain</span> </span>
+                                            <span class="glyphicon glyphicon-plane plane"></span>
+                                            <span class="destination"><span class="city">Tehran</span>,<span class="country">Iran</span></span>
+                                        </span>
+                                        </br>
+                                        </div>
+                                </div>
                                 <!--</div>-->
                                 <div class="list-group-separator"></div>
                             </div>
                         <!--</li>-->
                         <!--<li class="3">-->
-                            <div class="list-group">
-                                    <div class="row">
-                                        <div class="col-md-2 image-div">
-                                            <div class="img-container">
-                                                <img src="img/global/mahyar.jpg" class="img-circle profile-picture-image" >
-                                                <img src="img/smiley.png" class="img-circle top-image" >
-                                            </div>
+                            <div class="list-group search-result-content">
+                                <div class="row">
+                                    <div class="col-md-2 image-div">
+                                        <div class="img-container">
+                                            <img src="img/global/cute-baby-photos1.jpg" class="img-circle profile-picture-image" >
+                                            <img src="img/smiley.png" class="img-circle top-image" >
+                                        </div>
 
-                                        </div>
-                                        <div class="col-md-10">
-                                            </br>
-                                            <span>
-                                                <h4 class="list-group-item-heading name">Catherine</h4>
-                                                <span class="verification-msg">
-                                                    <a href="#"><img src="img/application-fee/facebook-icon.png" class="search-image"></a>
-                                                    <a href="#"><img src="img/application-fee/linkedin_icon.png" class="search-image"></a>
-                                                </span>
+                                    </div>
+                                    <div class="col-md-10">
+                                        </br>
+                                        <span>
+                                            <h4 class="list-group-item-heading name"><a href="#"> Catherine</a></h4>
+                                            <span class="verification-msg">
+                                                <a href="#"><img src="img/application-fee/facebook-icon.png" class="search-image"></a>
+                                                <a href="#"><img src="img/application-fee/linkedin_icon.png" class="search-image"></a>
                                             </span>
-                                            </br>
-                                            <span class="from-date">June 23th to</span>
-                                            <span class="to-date">June 28th</span>
-                                            <span class="country"> in Berlin</span>
-                                            <!--<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus</p>-->
-                                            </br>
-                                        </div>
+                                        </span>
+                                        </br>
+                                        <span class="from-date">June 23th to</span>
+                                        <span class="to-date">June 28th</span>
+                                        <span class="country"> in Berlin</span>
+                                        <!--<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus</p>-->
+                                        </br>
                                         <div class="row">
-                                            <div class="btn btn-info request-btn">Request</div>
+                                            <div class="col-md-9"></div>
+                                            <div class="col-md-3">
+                                                <div class="btn btn-info request-btn">Request</div>
+                                            </div>
                                         </div>
                                     </div>
+                                </div>
                                 <!--</div>-->
                                 <div class="list-group-separator"></div>
                             </div>
@@ -558,14 +696,28 @@
                 </ul>
                 <ul id="packs-ul" style="display: none">
                     <!--<li>-->
-                        <div class="alert alert-dismissable alert-danger">
-                            <span><strong>laptop</strong></span><span><button type="button" class="close" data-dismiss="alert">×</button></span>
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="alert alert-dismissable alert-danger">
+                                <span><strong>laptop</strong></span><span><button type="button" class="close" data-dismiss="alert">×</button></span>
+                            </div>
+                            <span>102 Passengers can bring your</span>
                         </div>
-                        <span>102 Passengers can bring your</span>
+                        <div class="col-md-3">
+                            <ul id="packs-pagination" class="pagination">
+                                <li id="packs-previous" class="disabled"><a href="#">«</a></li>
+                                <li class="first-page active"><a href="#">1</a></li>
+                                <li class="last-page"><a href="#">2</a></li>
+                                <!--<li><a>3</a></li>-->
+                                <li id="packs-next"><a href="#">»</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <!--</li>-->
                     <li class="1">
                         <div class="list-group">
-                                <div class="row-content">
+                                <div class="row-content search-result-content">
                                     <div class="col-md-2 image-div">
                                         <div class="img-container">
                                             <img src="img/shirt.png" class="img-circle pack-image" >
@@ -578,7 +730,7 @@
                                             <div class="col-md-10">
                                                 </br>
                                                 <span class="row-span">
-                                                    <h5 class="list-group-item-heading title" style="display: inline;">Catherine</br>Wants to send</h5>
+                                                    <h5 class="list-group-item-heading title" style="display: inline;"><a href="#"> Catherine</a></br>Wants to send</h5>
                                                     <h4 class="pack-name" style="display: inline;">XXL Tshirt</h4>
                                                 </span>
                                             </div>
@@ -599,127 +751,127 @@
                                         <!--<span class=" row-span country"> in Berlin</span>-->
                                         </br>
                                         <div class="row">
-                                            <div class="col-md-11">
+                                            <div class="col-md-9">
                                                 <input id="user-rate2" class="rating" data-stars="5" data-min="0"
-                                               data-max="5" data-step="0.1" data-show-clear="false" data-size="xs"
+                                               data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
                                                data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
                                             </div>
-                                            <div class="col-md-1">
+                                            <div class="col-md-3">
                                                 <div class="btn btn-info request-btn">Request</div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            <!--</div>-->
                             <div class="list-group-separator"></div>
+                            <!--</div>-->
                         </div>
                     <!--</li>-->
                     <!--<li>-->
                         <div class="list-group">
-                                <div class="row-content">
-                                    <div class="col-md-2 image-div">
-                                        <div class="img-container">
-                                            <img src="img/letter.png" class="img-circle pack-image" >
-                                            <a href="#"><img src="img/global/mahyar.jpg" class="img-circle requester-image"></a>
-                                        </div>
-
+                            <div class="row-content search-result-content">
+                                <div class="col-md-2 image-div">
+                                    <div class="img-container">
+                                        <img src="img/letter.png" class="img-circle pack-image" >
+                                        <a href="#"><img src="img/global/mahyar.jpg" class="img-circle requester-image"></a>
                                     </div>
-                                    <div class="col-md-10">
-                                        <div class="row">
-                                            <div class="col-md-10">
-                                                </br>
-                                                <span class="row-span">
-                                                    <h5 class="list-group-item-heading title" style="display: inline;">Catherine</br>Wants to send</h5>
-                                                    <h4 class="pack-name" style="display: inline;">XXL Tshirt</h4>
-                                                </span>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <img src="img/application-fee/price-label.png">
-                                                <label class="price">22$</label>
-                                            </div>
+
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            </br>
+                                            <span class="row-span">
+                                                <h5 class="list-group-item-heading title" style="display: inline;"><a href="#"> Catherine</a></br>Wants to send</h5>
+                                                <h4 class="pack-name" style="display: inline;">XXL Tshirt</h4>
+                                            </span>
                                         </div>
-                                        </br>
-                                        <span class="row-span">
-                                            <span class="origin"><span class="title">From:</span><span class="city">Madrid</span>,<span class="country">Spain</span></span>
-                                            <!--<span class="glyphicon glyphicon-plane plane"></span>-->
-                                            <span class="destination"><span class="title">to:</span><span class="city">Tehran</span>,<span class="country">Iran</span></span>
-                                        </span>
-                                        </br>
-                                        <span class="row-span title">Due in</span>
-                                        <span class="row-span">June 28th</span>
-                                        <!--<span class=" row-span country"> in Berlin</span>-->
-                                        </br>
-                                        <div class="row">
-                                            <div class="col-md-11">
-                                                <input id="user-rate3" class="rating" data-stars="5" data-min="0"
-                                               data-max="5" data-step="0.1" data-show-clear="false" data-size="xs"
-                                               data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
-                                            </div>
-                                            <div class="col-md-1">
-                                                <div class="btn btn-info request-btn">Request</div>
-                                            </div>
+                                        <div class="col-md-2">
+                                            <img src="img/application-fee/price-label.png">
+                                            <label class="price">22$</label>
+                                        </div>
+                                    </div>
+                                    </br>
+                                    <span class="row-span">
+                                        <span class="origin"><span class="title">From:</span><span class="city">Madrid</span>,<span class="country">Spain</span></span>
+                                        <!--<span class="glyphicon glyphicon-plane plane"></span>-->
+                                        <span class="destination"><span class="title">to:</span><span class="city">Tehran</span>,<span class="country">Iran</span></span>
+                                    </span>
+                                    </br>
+                                    <span class="row-span title">Due in</span>
+                                    <span class="row-span">June 28th</span>
+                                    <!--<span class=" row-span country"> in Berlin</span>-->
+                                    </br>
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <input id="user-rate3" class="rating" data-stars="5" data-min="0"
+                                           data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
+                                           data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="btn btn-info request-btn">Request</div>
                                         </div>
                                     </div>
                                 </div>
-                            <!--</div>-->
+                            </div>
                             <div class="list-group-separator"></div>
+                            <!--</div>-->
                         </div>
                     <!--</li>-->
                     <!--<li>-->
                         <div class="list-group">
-                                <div class="row-content">
-                                    <div class="col-md-2 image-div">
-                                        <div class="img-container">
-                                            <img src="img/sandwich.png" class="img-circle pack-image" >
-                                            <a href="#"><img src="img/global/mahyar.jpg" class="img-circle requester-image"></a>
-                                        </div>
-
+                            <div class="row-content search-result-content">
+                                <div class="col-md-2 image-div">
+                                    <div class="img-container">
+                                        <img src="img/sandwich.png" class="img-circle pack-image" >
+                                        <a href="#"><img src="img/global/mahyar.jpg" class="img-circle requester-image"></a>
                                     </div>
-                                    <div class="col-md-10">
-                                        <div class="row">
-                                            <div class="col-md-10">
-                                                </br>
-                                                <span class="row-span">
-                                                    <h5 class="list-group-item-heading title" style="display: inline;">Catherine</br>Wants to send</h5>
-                                                    <h4 class="pack-name" style="display: inline;">XXL Tshirt</h4>
-                                                </span>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <img src="img/application-fee/price-label.png">
-                                                <label class="price">22$</label>
-                                            </div>
+
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            </br>
+                                            <span class="row-span">
+                                                <h5 class="list-group-item-heading title" style="display: inline;"><a href="#"> Catherine</a></br>Wants to send</h5>
+                                                <h4 class="pack-name" style="display: inline;">XXL Tshirt</h4>
+                                            </span>
                                         </div>
-                                        </br>
-                                        <span class="row-span">
-                                            <span class="origin"><span class="title">From:</span><span class="city">Madrid</span>,<span class="country">Spain</span></span>
-                                            <!--<span class="glyphicon glyphicon-plane plane"></span>-->
-                                            <span class="destination"><span class="title">to:</span><span class="city">Tehran</span>,<span class="country">Iran</span></span>
-                                        </span>
-                                        </br>
-                                        <span class="row-span title">Due in</span>
-                                        <span class="row-span">June 28th</span>
-                                        <!--<span class=" row-span country"> in Berlin</span>-->
-                                        </br>
-                                        <div class="row">
-                                            <div class="col-md-11">
-                                                <input id="user-rate4" class="rating" data-stars="5" data-min="0"
-                                               data-max="5" data-step="0.1" data-show-clear="false" data-size="xs"
-                                               data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
-                                            </div>
-                                            <div class="col-md-1">
-                                                <div class="btn btn-info request-btn">Request</div>
-                                            </div>
+                                        <div class="col-md-2">
+                                            <img src="img/application-fee/price-label.png">
+                                            <label class="price">22$</label>
+                                        </div>
+                                    </div>
+                                    </br>
+                                    <span class="row-span">
+                                        <span class="origin"><span class="title">From:</span><span class="city">Madrid</span>,<span class="country">Spain</span></span>
+                                        <!--<span class="glyphicon glyphicon-plane plane"></span>-->
+                                        <span class="destination"><span class="title">to:</span><span class="city">Tehran</span>,<span class="country">Iran</span></span>
+                                    </span>
+                                    </br>
+                                    <span class="row-span title">Due in</span>
+                                    <span class="row-span">June 28th</span>
+                                    <!--<span class=" row-span country"> in Berlin</span>-->
+                                    </br>
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <input id="user-rate4" class="rating" data-stars="5" data-min="0"
+                                           data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
+                                           data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="btn btn-info request-btn">Request</div>
                                         </div>
                                     </div>
                                 </div>
-                            <!--</div>-->
+                            </div>
                             <div class="list-group-separator"></div>
+                            <!--</div>-->
                         </div>
                     </li>
                     <li class="2" style="display: none">
                     <!--<li>-->
                         <div class="list-group">
-                                <div class="row-content">
+                                <div class="row-content search-result-content">
                                     <div class="col-md-2 image-div">
                                             <div class="img-container">
                                                 <img src="img/gift.png" class="img-circle pack-image" >
@@ -731,7 +883,7 @@
                                             <div class="col-md-10">
                                                 </br>
                                                 <span class="row-span">
-                                                    <h5 class="list-group-item-heading title" style="display: inline;">Catherine</br>Wants to send</h5>
+                                                    <h5 class="list-group-item-heading title" style="display: inline;"><a href="#"> Catherine</a></br>Wants to send</h5>
                                                     <h4 class="pack-name" style="display: inline;">XXL Tshirt</h4>
                                                 </span>
                                             </div>
@@ -751,44 +903,27 @@
                                         <span class="row-span">June 28th</span>
                                         <!--<span class=" row-span country"> in Berlin</span>-->
                                         </br>
-                                        <input id="user-rate5" class="rating" data-stars="5" data-min="0"
-                                       data-max="5" data-step="0.1" data-show-clear="false" data-size="xs"
-                                       data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
-                                    </div>
-                                    <div class="row-content">
-
-                                        <div class="row-content">
-
+                                        <div class="col-md-9">
+                                                <input id="user-rate5" class="rating" data-stars="5" data-min="0"
+                                           data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
+                                           data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-
+                                        <div class="col-md-3">
+                                            <div class="btn btn-info request-btn">Request</div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="btn btn-info request-btn">Request</div>
+
                                     </div>
                                 </div>
                             <!--</div>-->
                             <div class="list-group-separator"></div>
                         </div>
                     </li>
-                    <ul class="pagination packs-pagination">
-                        <!--<li class="disabled"><a>«</a></li>-->
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <!--<li><a>3</a></li>-->
-                        <!--<li><a>»</a></li>-->
-                    </ul>
                 </ul>
                 <ul id="goods-ul" style="display: none">
-                    <li>
-                        <div class="alert alert-dismissable alert-danger">
-                            <span><strong>laptop</strong></span><span><button type="button" class="close" data-dismiss="alert">×</button></span>
-                        </div>
-                        <span>102 Passengers can bring your</span>
-                    </li>
+                    <div class="alert alert-dismissable alert-danger">
+                        <span><strong>laptop</strong></span><span><button type="button" class="close" data-dismiss="alert">×</button></span>
+                    </div>
+                    <span>102 Passengers can bring your</span>
                     <div class="row-itmes">
                         <li class="row-li">
                             <img src="img/iphone6.jpg" class="goods-image">

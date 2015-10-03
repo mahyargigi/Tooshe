@@ -1,0 +1,52 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'git' ]
+2 info using npm@2.11.2
+3 info using node@v0.12.6
+4 verbose install initial load of C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\Profile\package.json
+5 verbose readDependencies loading dependencies from C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\Profile\package.json
+6 silly cache add args [ 'git', null ]
+7 verbose cache add spec git
+8 silly cache add parsed spec { raw: 'git',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'git',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed git@*
+10 verbose addNamed "*" is a valid semver range for git
+11 silly addNameRange { name: 'git', range: '*', hasData: false }
+12 silly mapToRegistry name git
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/git
+16 verbose addNameRange registry:https://registry.npmjs.org/git not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/git
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 2:01:49 PM
+20 verbose request id 5a9985a257c3a539
+21 http request GET https://registry.npmjs.org/git
+22 info retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN
+23 info attempt registry request try #2 at 2:01:59 PM
+24 http request GET https://registry.npmjs.org/git
+25 info retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN
+26 info attempt registry request try #3 at 2:02:59 PM
+27 http request GET https://registry.npmjs.org/git
+28 verbose stack Error: getaddrinfo EAI_AGAIN
+28 verbose stack     at Object.exports._errnoException (util.js:746:11)
+28 verbose stack     at errnoException (dns.js:49:15)
+28 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:94:26)
+29 verbose cwd C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\Profile
+30 error Windows_NT 6.2.9200
+31 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "git"
+32 error node v0.12.6
+33 error npm  v2.11.2
+34 error code EAI_AGAIN
+35 error errno EAI_AGAIN
+36 error syscall getaddrinfo
+37 error getaddrinfo EAI_AGAIN
+38 error If you need help, you may report this error at:
+38 error     <https://github.com/npm/npm/issues>
+39 verbose exit [ 1, true ]

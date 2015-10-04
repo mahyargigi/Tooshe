@@ -1,0 +1,10 @@
+.user-image{
+    height: 200px;
+    width: 200px;
+}
+.inline{
+    display: inline;
+}
+li{
+    list-style: none;
+}

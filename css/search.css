@@ -285,14 +285,18 @@ body{
 :-ms-input-placeholder {
    text-align: center;
 }
-.pagination li a{
-    display: inline-block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
 /*TODO bug dare hamchenan*/
+
+.pagination{
+    float: right;
+}
+
 .pagination li.active a{
+    background-color: rgba(88, 215, 235, 0.80);
+    /*color: #fff;*/
+}
+
+.pagination li.active a:enabled{
     background-color: rgba(88, 215, 235, 0.80);
     /*color: #fff;*/
 }

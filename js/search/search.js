@@ -54,25 +54,25 @@ $(document).ready(function(){
     $('#goods-date').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
 
     $('#picks-li').on('click',function(){
-        $('#picks-image').attr("src","img/l.png");
-        $('#packs-image').attr("src","img/d2.png");
-        $('#goods-image').attr("src","img/s2.png");
+        $('#picks-image').attr("src","img/search/l.png");
+        $('#packs-image').attr("src","img/search/d2.png");
+        $('#goods-image').attr("src","img/search/s2.png");
         $('#picks-li').css('color','lightseagreen');
         $('#packs-li').css('color','rgba(117, 116, 116, 0.80)');
         $('#goods-li').css('color','rgba(117, 116, 116, 0.80)');
     });
     $('#packs-li').on('click',function(){
-        $('#picks-image').attr("src","img/l2.png");
-        $('#packs-image').attr("src","img/d.png");
-        $('#goods-image').attr("src","img/s2.png");
+        $('#picks-image').attr("src","img/search/l2.png");
+        $('#packs-image').attr("src","img/search/d.png");
+        $('#goods-image').attr("src","img/search/s2.png");
         $('#packs-li').css('color','lightseagreen');
         $('#picks-li').css('color','rgba(117, 116, 116, 0.80)');
         $('#goods-li').css('color','rgba(117, 116, 116, 0.80)');
     });
     $('#goods-li').on('click',function(){
-        $('#picks-image').attr("src","img/l2.png");
-        $('#packs-image').attr("src","img/d2.png");
-        $('#goods-image').attr("src","img/s.png");
+        $('#picks-image').attr("src","img/search/l2.png");
+        $('#packs-image').attr("src","img/search/d2.png");
+        $('#goods-image').attr("src","img/search/s.png");
         $('#picks-li').css('color','rgba(117, 116, 116, 0.80)');
         $('#packs-li').css('color','rgba(117, 116, 116, 0.80)');
         $('#goods-li').css('color','lightseagreen');

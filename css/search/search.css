@@ -2,7 +2,7 @@
     background-color: transparent;
 }
 #search-box{
-    background: url(../img/icon-trans-small.png);
+    background: url(../../img/icon-trans-small.png);
     /*width: 110%;*/
 }
 #picks-tab{
@@ -87,7 +87,7 @@ a{
 }
 
 .request-btn{
-    background: url(../img/sear.png);
+    background: url(../../img/sear.png);
     border-radius: 20px;
 }
 .verification-msg{
@@ -167,7 +167,7 @@ li{
 }
 .find-passengers{
     /*float: right;*/
-    background: url(../img/sear.png);
+    background: url(../../img/sear.png);
     border-radius: 10px;
     width: 100%;
 }

@@ -238,6 +238,7 @@ li{
 .button-img{
     height: 20px;
     width: 20px;
+    min-width: 100%;
 }
 .row-li h5,h4{
     margin-left: 20px;

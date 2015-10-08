@@ -78,17 +78,17 @@ $(document).ready(function(){
         $('#goods-li').css('color','lightseagreen');
     });
 
-    $('#picks-find-passengers').on('click',function(){
+    $('#picks-li').on('click',function(){
         $('#picks-ul').show();
         $('#packs-ul').hide();
         $('#goods-ul').hide();
     });
-    $('#packs-find-passengers').on('click',function(){
+    $('#packs-li').on('click',function(){
         $('#picks-ul').hide();
         $('#packs-ul').show();
         $('#goods-ul').hide();
     });
-    $('#goods-find-passengers').on('click',function(){
+    $('#goods-li').on('click',function(){
         $('#picks-ul').hide();
         $('#packs-ul').hide();
         $('#goods-ul').show();
@@ -182,6 +182,25 @@ $(document).ready(function(){
     $('input[type=radio]').on('click',function(){
         if($('#specific-categories-radio').is(':checked')){
             $('#modal').modal("show");
+        }
+    });
+    $('.mark-all').on('click',function(){
+        var attr = $(this).attr('checked');
+        console.log("attr is = "+attr)
+        // For some browsers, `attr` is undefined; for others,
+        // `attr` is false.  Check for both.
+        if (typeof attr !== typeof undefined && attr !== false) {
+            $(this).removeAttr("checked");
+            $('.modal-checkbox').each(function(){
+                $(this).removeProp("checked");
+            });
+        }
+        else{
+
+            $(this).attr("checked","");
+            $('.modal-checkbox').each(function(){
+                $(this).prop("checked","true");
+            });
         }
     });
 });

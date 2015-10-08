@@ -1,10 +1,262 @@
+/*left side*/
+
 .user-image{
     height: 200px;
     width: 200px;
 }
-.inline{
-    display: inline;
-}
+
+/*end of left side*/
+
+/*center*/
+
+    /*user specifications css*/
+
+    .user-name-row{
+        /*margin-bottom: 20px;*/
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+    .edit{
+        font-size: 10px;
+        margin-left: 15px;
+    }
+    /*end of user specifications css*/
+
+    /*nav-tabs css*/
+    .nav-tabs{
+        background-color: transparent;
+    }
+    .nav-tabs li a{
+        color: #000000 !important;
+        margin-right: 50px;
+    }
+    .nav-tabs li a:hover{
+        color: #000000 !important;
+    }
+    .nav-tabs li.active a{
+        font-weight: 600;
+    }
+    .nav-tabs li.active a:enabled{
+        color: #000000 !important;
+    }
+    .minus-review{
+        color: red;
+    }
+    .positive-review{
+        color: limegreen;
+    }
+    /*end of nav-tabs css*/
+
+    /*tabcontent css*/
+
+    #my-travels , #reviews{
+        background-color: white;
+        padding-bottom: 50px;
+    }
+        /*my travels css*/
+        .date-div{
+            position: relative ;
+            left: -50px;
+            top: 30px;
+        }
+        .content-div{
+            position: relative ;
+            left: -30px;
+            top: 30px;
+        }
+        .origin , .destination{
+            font-size: 20px;
+        }
+        .destination , .edit-btn , .stuff-btn , .remove-btn{
+            margin-left: 25px;
+            height: 40px;
+        }
+        .btn-circle{
+            border-radius: 20px;
+            font-size: 9px;
+        }
+        .edit-btn{
+            border: solid;
+            border-color: rgba(233, 233, 233, 0.80);
+        }
+        .remove-btn{
+            border: solid;
+            border-color: rgba(233, 141, 158, 0.80);
+        }
+        .suitcase-img{
+            height: 50px;
+            width: 50px;
+        }
+        .suitcase-status{
+            background-color: rgba(111, 224, 229, 0.73);
+            position: relative;
+            top:-30px;
+        }
+        .suitcase-material li{
+            margin-top: 20px;
+        }
+        .weight-div{
+            margin-top: 20px;
+        }
+        .month{
+            font-size: 20px;
+        }
+        .day{
+            font-size: 25px;
+        }
+        .year{
+            font-size: 15px;
+        }
+        .month , .year , .day{
+            color: rgba(141, 138, 140, 0.88);
+        }
+        .weight{
+            font-size: 25px;
+            font-weight: 300;
+        }
+        /*end of my travels css*/
+
+        /*reviews css*/
+
+        .review-info , .review , .row-picture , .more-row{
+            margin-top: 30px;
+        }
+
+        /*end of reviews css*/
+
+        /*live requests css*/
+        .live-requests-img{
+            height: 100px;
+            width: 100px;
+            border: solid;
+            border-color: rgba(228, 229, 217, 0.73);
+            margin-top: 30px;
+        }
+        .live-request-row{
+            margin-top: 15px;
+        }
+        .traveler-row{
+            margin-top: 10px;
+        }
+        .answer{
+            margin-left: 5px;
+        }
+        .live-request-div{
+            background-color: white;
+            margin-top: 20px;
+            border: solid;
+            border-color: rgba(199, 200, 190, 0.73);
+            border-width: 1px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .grid-row-1 , .grid-row-2{
+            position: relative;
+            left: -75px;
+        }
+        .grid-row-3{
+            position: relative;
+            left: -85px;
+        }
+        .grid-row-4{
+            position: relative;
+            left: -20px;
+        }
+        .title{
+            color: rgba(160, 151, 151, 0.66);
+        }
+        .status-title{
+            margin-top: 10px;
+        }
+        .red{
+            color: red;
+        }
+        .gooshe{
+            position: relative;
+            top: -2px;
+        }
+        .live-request-btn{
+            display: inline-block;
+        }
+        .search-btn{
+            width: 100px;
+            border: solid;
+            border-width: 1px;
+            border-color: rgba(80, 195, 200, 0.73);
+        }
+        .cancel-btn{
+            width: 100px;
+            border: solid;
+            border-width: 1px;
+            border-color: rgba(209, 88, 86, 0.75);
+        }
+        .btn-inner-label{
+            /*text-align: center;*/
+        }
+        .search-btn-inner-label{
+            position: relative;
+            left: -15px;
+            color: rgba(76, 193, 209, 0.75);
+        }
+        .cancel-btn-inner-label{
+            position: relative;
+            left: -5px;
+            color: rgba(209, 50, 82, 0.75);
+        }
+
+        /*end of live requests css*/
+
+    /*end of tabcontent css*/
+
+/*end of center*/
+
+
+/*right side*/
+
+    /*verification div css*/
+
+    #verifications-ul li{
+        margin-top: 20px;
+    }
+    #verifications-ul{
+        margin-top: 30px;
+    }
+    .verification-add{
+        color: red;
+    }
+    .logo{
+        margin-left: 5px;
+    }
+    #facebook-logo{
+        width: 25px;
+        height: 25px;
+    }
+    #linkedin-logo{
+        width: 25px;
+        height: 25px;
+    }
+    /*end of verification div css */
+
+/*end of right side*/
+
+
+/*general*/
+
 li{
     list-style: none;
 }
+
+.inline{
+    display: inline;
+}
+
+body{
+    background-color: rgba(248, 248, 248, 0.80);
+}
+
+label{
+    font-weight: 100;
+
+}
+/*end of general*/

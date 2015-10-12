@@ -179,7 +179,7 @@ li{
     margin-right: 10px;
 }
 
-.row-itmes{
+.row-items {
     /*margin-left: auto;*/
     /*margin-right: auto;*/
     text-align: center;
@@ -188,6 +188,7 @@ li{
 
 .row-li{
     font: Verdana, Arial, Helvetica, sans-serif;
+    width: 100%;
     margin-right:5px;
     background-color: white;
     border-radius: 10px;

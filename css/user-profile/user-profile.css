@@ -1,8 +1,18 @@
+/*first row*/
+    .first-row{
+        margin-top: 20px;
+    }
+/*end of first row*/
+
 /*left side*/
 
 .user-image{
     height: 200px;
     width: 200px;
+    margin-top: 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(193, 203, 193, 0.73);
 }
 
 /*end of left side*/
@@ -20,6 +30,13 @@
         font-size: 10px;
         margin-left: 15px;
     }
+    .average-response-time{
+        margin-top: 10px;
+        font-weight: 600;
+    }
+    .user-specification-row{
+        margin-left: 20px;
+    }
     /*end of user specifications css*/
 
     /*nav-tabs css*/
@@ -27,11 +44,15 @@
         background-color: transparent;
         /*border-bottom-width: 5px;*/
         border-bottom-width: 2px;
+        padding-bottom: 10px;
     }
     .nav-tabs li a{
         color: #000000 !important;
         margin-right: 70px;
         font-size: 15px;
+    }
+    .first-li{
+        margin-left: 20px;
     }
     .nav-tabs li a:hover{
         color: #000000 !important;
@@ -52,23 +73,30 @@
 
     /*tabcontent css*/
 
-    #my-travels , #reviews{
+    #my-travels{
         background-color: white;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    #reviews{
         padding-bottom: 50px;
     }
         /*my travels css*/
         .date-div{
             position: relative ;
             left: -50px;
-            top: 30px;
+            top: 20px;
         }
         .content-div{
             position: relative ;
             left: -30px;
-            top: 30px;
+            /*top: 30px;*/
         }
         .origin , .destination{
-            font-size: 20px;
+            font-size: 16px;
+        }
+        .origin{
+            margin-left: 20px;
         }
         .destination , .edit-btn , .stuff-btn , .remove-btn{
             margin-left: 25px;
@@ -81,10 +109,33 @@
         .edit-btn{
             border: solid;
             border-color: rgba(233, 233, 233, 0.80);
+            border-width: 2px;
         }
         .remove-btn{
-            border: solid;
-            border-color: rgba(233, 141, 158, 0.80);
+            /*border: solid;*/
+            /*border-color: rgba(233, 141, 158, 0.80);*/
+            background: none;
+            border: none;
+            color: rgba(165, 174, 165, 0.73);
+            font-size: 35px;
+            position: relative;
+            top: -10px;
+        }
+        .my-travels-hr{
+            border-bottom: solid;
+            border-bottom-width: 1px;
+            border-bottom-color: rgba(185, 196, 185, 0.73);
+            margin-top: 0px;
+        }
+        .buttons-div{
+            position: relative;
+            right: -30px;
+        }
+        .suitcase-status-btn{
+            margin-left: 30px;
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 10px;
         }
         .suitcase-img{
             height: 50px;
@@ -93,7 +144,8 @@
         .suitcase-status{
             background-color: rgba(111, 224, 229, 0.73);
             position: relative;
-            top:-30px;
+            top:-10px;
+            margin-left: 15px;
         }
         .suitcase-material li{
             margin-top: 20px;
@@ -121,10 +173,61 @@
 
         /*reviews css*/
 
-        .review-info , .review , .row-picture , .more-row{
+        .review-bottom , .review , .row-picture , .more-row{
             margin-top: 30px;
         }
+        .review-info{
+            font-size: 12px;
+            color: rgba(113, 119, 113, 0.73);
+        }
+        .review-hr{
+            border-bottom: solid;
+            border-bottom-width: 1px;
+            border-bottom-color: rgba(185, 196, 185, 0.73);
+            /*color: rgba(185, 196, 185, 0.73);*/
+            margin-bottom: 2px;
+        }
 
+        .review-image{
+            margin-bottom: 10px;
+        }
+        
+        .textArea{
+            margin-top: 50px;
+            margin-bottom: 20px;
+            background-color: white;
+            border: solid;
+            border-color: lightgrey;
+            border-width: 1px;
+            padding: 20px;
+            width: 100%;
+        }
+        .textArea:enabled{
+            border: solid !important;
+            border-color: lightgrey !important;
+            border-width: 1px;
+            border-bottom: thin;
+            padding: 20px;
+        }
+        .final-score-header{
+            color: rgba(35, 37, 35, 0.73);
+            font-size: 20px;
+            top: 5px;
+        }
+        .star-rating{
+            display: inline;
+            margin-left: 5px;
+        }
+        .publish-review-btn{
+            /*display: inline;*/
+            font-size: 10px;
+            float: right;
+            border-radius: 20px;
+            position: relative;
+            top: 15px;
+            width: 150px;
+            height: 40px;
+        }
         /*end of reviews css*/
 
 
@@ -140,6 +243,9 @@
         }
         #no-requests-center-div{
             margin-top: 30px;
+        }
+        .hidden-element{
+           /*visibility: hidden;*/
         }
 
         /*live requests no requests css ends*/
@@ -382,6 +488,14 @@
 
 
 /*general*/
+
+.container-fluid{
+    font-family: 'Lato';
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lato';
+}
 
 li{
     list-style: none;

@@ -4,126 +4,131 @@
     <title></title>
     <link href="css/global/bootstrap.min.css" rel="stylesheet">
     <link href="css/global/material.min.css" rel="stylesheet">
+    <link href="css/global/material-fullpalette.min.css" rel="stylesheet">
     <link href="css/global/bootstrap-material-datepicker.css" rel="stylesheet">
-    <link href="css/flightSubmit.css" rel="stylesheet">
+    <link href="css/flightSubmit/flightSubmit.css" rel="stylesheet">
     <link href="css/global/font.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-        <form id="flight-form">
-            <div class="row" id="title">
-                <h3>Fill your travel itinerary</h3>
-            </div>
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-5">
-                    <label class="travel-label">City of departure</label>
-                    <input id="departure-city" class="input-lg travel-input">
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-5">
-                    <label class="travel-label">City of arrival</label>
-                    <input id="arrival-city" class="input-lg travel-input">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-1">
-
-                </div>
-                <div class="col-md-4">
-                    <label class="travel-label" id="travel-date">Date of travel</label>
-                    <input class="form-input input-lg travel-input second-line-input" id="date1">
-                </div>
-                <div class="col-md-4">
-                    <label class="travel-label">The travel</label>
-                    <input class="form-input input-lg travel-input second-line-input" id="date2">
-                    <label class="travel-label" id="till-label">Till</label>
-                </div>
-                <div class="col-md-3">
-
-                    <input class="form-input input-lg travel-input second-line-input" id="date3">
-                </div>
-            </div>
-            <hr style="border-color: #c6c6c6;">
-            <div class="row form-horizontal">
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <div class="col-md-7">
-                        <label class="travel-label">Maximum weight I can carry</label>
+    <div class="container-fluid">
+        <div class="row container-row" style="margin-top: 50px;">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <form id="flight-form">
+                    <div class="row" id="title">
+                        <h3>Fill your travel itinerary</h3>
                     </div>
-                    <div class="col-md-3" >
-                        <input type="number" class="input-lg" min='1' max='40' id="max-weight-input">
-                    </div>
-                    <div class="col-md-2">
-                        <label class="travel-label">Kg</label>
-                    </div>
-                    <!--<div class="col-md-1">-->
-                    <!--</div>-->
-                </div>
-                <div class="col-md-4" id="warning-div">
-                    <!--<label>You cannot carry more than 40kg!</label>-->
-                </div>
-            </div>
-            <hr style="border-color: #c6c6c6;">
-            <div class="row" style="margin-top: 0px">
-                <!--<div class="col-md-1"></div>-->
-                <div class="col-md-7">
-                    <div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-10" id="yo-do-request">
-                            You do request
-                        </div>
-                    </div>
-                    <div>
+                    <div class="row">
                         <div class="col-md-1"></div>
-                        <div class="col-md-11">
-                            <div class="radio radio-primary col-md-12" id="first-radio">
-                                <label class="input-label radio-label">
-                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-                                    For free
-                                </label>
-                                <span><img src="img/farah-pahlavi.png" id="for-free-image"></span>
-                                <div id="for-free-description">(this will bring you more reputation and you can get more requests further)</div>
-                            </div>
-                            <div class="radio radio-primary col-md-12" id="second-radio">
-                                <!--<div class="col-md-6" style="display: inline">-->
-                                    <label class="input-label col-md-6 radio-label">
-                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" >
-                                        I do request more than
-                                    </label>
-                                <!--</div>-->
-                                <!--<div class="col-md-6" style="display: inline">-->
-                                    <span>
-                                        <div class="col-md-10">
-                                            <input class="mdl-slider mdl-js-slider" disabled type="range" min="0" max="100" value="25" tabindex="0" id="slider"/>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <label id="money-input"></label>
-                                        </div>
-                                    </span>
-                                <!--</div>-->
-                            </div>
+                        <div class="col-md-5">
+                            <label class="travel-label">City of departure</label>
+                            <input id="departure-city" class="input-lg travel-input">
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5">
+                            <label class="travel-label">City of arrival</label>
+                            <input id="arrival-city" class="input-lg travel-input">
                         </div>
                     </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="row" style="margin-top: 0px ;">
-                        <label id="any-information">Any information else you might add about your travel?</label>
-                        <textarea class="form-control" rows="4" id="textArea" style="width: 80%"></textarea>
+                    <div class="row">
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-4">
+                            <label class="travel-label" id="travel-date">Date of travel</label>
+                            <input class="form-input input-lg travel-input second-line-input" id="date1">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="travel-label">The travel</label>
+                            <input class="form-input input-lg travel-input second-line-input" id="date2">
+                            <label class="travel-label" id="till-label">Till</label>
+                        </div>
+                        <div class="col-md-3">
+
+                            <input class="form-input input-lg travel-input second-line-input" id="date3">
+                        </div>
                     </div>
-                    <!--<div class="row">-->
-                        <div class="btn btn-info" id='submit-button'>Save this travel</div>
-                    </br>
-                    </br>
-                    <!--</div>-->
-                </div>
+                    <hr style="border-color: #c6c6c6;">
+                    <div class="row form-horizontal">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-6">
+                            <div class="col-md-7">
+                                <label class="travel-label">Maximum weight I can carry</label>
+                            </div>
+                            <div class="col-md-3" >
+                                <input type="number" class="input-lg" min='1' max='40' id="max-weight-input">
+                            </div>
+                            <div class="col-md-2">
+                                <label class="travel-label">Kg</label>
+                            </div>
+                            <!--<div class="col-md-1">-->
+                            <!--</div>-->
+                        </div>
+                        <div class="col-md-4" id="warning-div">
+                            <!--<label>You cannot carry more than 40kg!</label>-->
+                        </div>
+                    </div>
+                    <hr style="border-color: #c6c6c6;">
+                    <div class="row" style="margin-top: 0px">
+                        <!--<div class="col-md-1"></div>-->
+                        <div class="col-md-7">
+                            <div>
+                                <div class="col-md-2"></div>
+                                <div class="col-md-10" id="yo-do-request">
+                                    You do request
+                                </div>
+                            </div>
+                            <div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-11">
+                                    <div class="radio radio-primary col-md-12" id="first-radio">
+                                        <label class="input-label radio-label">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                            For free
+                                        </label>
+                                        <span><img src="img/farah-pahlavi.png" id="for-free-image"></span>
+                                        <div id="for-free-description">(this will bring you more reputation and you can get more requests further)</div>
+                                    </div>
+                                    <div class="radio radio-primary col-md-12" id="second-radio">
+                                        <!--<div class="col-md-6" style="display: inline">-->
+                                            <label class="input-label col-md-12 radio-label">
+                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" >
+                                                I do request more than
+                                            </label>
+                                        <!--</div>-->
+                                        <!--<div class="col-md-6" style="display: inline">-->
+                                            <span>
+                                                <div class="col-md-10">
+                                                    <input class="mdl-slider mdl-js-slider" disabled type="range" min="0" max="100" value="25" tabindex="0" id="slider"/>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label id="money-input"></label>
+                                                </div>
+                                            </span>
+                                        <!--</div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row" style="margin-top: 0px ;">
+                                <label id="any-information">Any information else you might add about your travel?</label>
+                                <textarea class="form-control" rows="4" id="textArea" style="width: 80%"></textarea>
+                            </div>
+                            <!--<div class="row">-->
+                                <div class="btn btn-material-cyan btn-material-cyan-400" id='submit-button'>Save this travel</div>
+                            </br>
+                            </br>
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </form>
             </div>
-        </form>
+            <div class="col-md-4"></div>
+        </div>
     </div>
-    <div class="col-md-4"></div>
     <!--site edns here-->
     <script src="js/global/jquery-1.11.2.js" ></script>
     <script src="js/global/bootstrap.min.js" ></script>
@@ -133,7 +138,7 @@
     <script src="js/global/moment.min.js"></script>
     <script src="js/global/nouislider.min.js"></script>
     <script src="js/global/bootstrap-mterial-datepicker.js"></script>
-    <script src="js/flightSubmit.js"></script>
+    <script src="js/flightSubmit/flightSubmit.js"></script>
     <script>
         $(document).ready(function(){
             $.material.init();

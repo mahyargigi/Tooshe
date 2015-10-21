@@ -23,64 +23,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user-profile.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/user-profile/user-profile.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="494" column="0" selection-start="11667" selection-end="11667" vertical-scroll-proportion="0.0" vertical-offset="7965" max-vertical-offset="8857">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flightSubmit.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flightSubmit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="126" selection-start="4969" selection-end="4969" vertical-scroll-proportion="-8.5" vertical-offset="1479" max-vertical-offset="2516">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user-profile.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="user-profile.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user-profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="95" selection-start="596" selection-end="596" vertical-scroll-proportion="0.28725037" vertical-offset="0" max-vertical-offset="14399">
+            <state line="659" column="98" selection-start="40877" selection-end="40884" vertical-scroll-proportion="-4.254902" vertical-offset="10986" max-vertical-offset="14399">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user-profile.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/user-profile/user-profile.js">
+      <file leaf-file-name="flightSubmit.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flightSubmit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="16" selection-start="1659" selection-end="1659" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="2414">
+            <state line="126" column="0" selection-start="7242" selection-end="7242" vertical-scroll-proportion="0.7388633" vertical-offset="1661" max-vertical-offset="2601">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#1;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flightSubmit.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/flightSubmit/flightSubmit.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="0" selection-start="624" selection-end="624" vertical-scroll-proportion="-11.24" vertical-offset="263" max-vertical-offset="1921">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/search/search.js">
+      <file leaf-file-name="flightSubmit.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/flightSubmit/flightSubmit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="4" selection-start="693" selection-end="859" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="3604">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1088" column="4" selection-start="72498" selection-end="72653" vertical-scroll-proportion="-12.923077" vertical-offset="18160" max-vertical-offset="18836">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application-fee.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/application-fee/application-fee.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="4" selection-start="73" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="187">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="271" max-vertical-offset="1054">
               <folding />
             </state>
           </provider>
@@ -96,13 +76,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/notification.html" />
         <option value="$PROJECT_DIR$/css/application-fee.css" />
         <option value="$PROJECT_DIR$/footer.html" />
         <option value="$PROJECT_DIR$/css/footer.css" />
         <option value="$PROJECT_DIR$/css/font.css" />
         <option value="$PROJECT_DIR$/application-fee.html" />
-        <option value="$PROJECT_DIR$/flightSubmit.html" />
         <option value="$PROJECT_DIR$/js/search.js" />
         <option value="$PROJECT_DIR$/css/search.css" />
         <option value="$PROJECT_DIR$/js/search/search.js" />
@@ -112,6 +90,8 @@
         <option value="$PROJECT_DIR$/js/user-profile/user-profile.js" />
         <option value="$PROJECT_DIR$/user-profile.html" />
         <option value="$PROJECT_DIR$/css/user-profile/user-profile.css" />
+        <option value="$PROJECT_DIR$/css/flightSubmit/flightSubmit.css" />
+        <option value="$PROJECT_DIR$/flightSubmit.html" />
       </list>
     </option>
   </component>
@@ -297,6 +277,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="flightSubmit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="application-fee" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -366,6 +364,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="global" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flightSubmit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -530,6 +546,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="footer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flightSubmit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -818,24 +852,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img/search" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js/flightSubmit" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\img\flightSubmit" />
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\fonts\global" />
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\img\user-profile" />
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe" />
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\img\search" />
-      <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\img\global" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\js\flightSubmit" />
+      <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\css\flightSubmit" />
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\img\search" />
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\js\search" />
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\css\search" />
-      <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\js\global" />
-      <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\js\application-fee" />
     </key>
   </component>
   <component name="RunManager">
@@ -1001,15 +1035,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6707153" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6707153" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1036,16 +1070,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/img/search/iphone6.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SendSomething.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="61" selection-start="317" selection-end="317" vertical-scroll-proportion="0.17603551" vertical-offset="0" max-vertical-offset="2363" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/search/search.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="199" column="0" selection-start="3501" selection-end="3627" vertical-scroll-proportion="0.0" vertical-offset="3085" max-vertical-offset="8007" />
@@ -1109,24 +1133,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/user-profile/user-profile.css">
+    <entry file="file://$PROJECT_DIR$/js/flightSubmit/flightSubmit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="494" column="0" selection-start="11667" selection-end="11667" vertical-scroll-proportion="0.0" vertical-offset="7965" max-vertical-offset="8857">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flightSubmit.html">
+    <entry file="file://$PROJECT_DIR$/css/user-profile/user-profile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="126" selection-start="4969" selection-end="4969" vertical-scroll-proportion="-8.5" vertical-offset="1479" max-vertical-offset="2516">
+        <state line="508" column="14" selection-start="11799" selection-end="11809" vertical-scroll-proportion="-18.76" vertical-offset="8167" max-vertical-offset="8857">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user-profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="95" selection-start="596" selection-end="596" vertical-scroll-proportion="0.28725037" vertical-offset="0" max-vertical-offset="14399">
+        <state line="659" column="98" selection-start="40877" selection-end="40884" vertical-scroll-proportion="-4.254902" vertical-offset="10986" max-vertical-offset="14399">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/flightSubmit/flightSubmit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="624" selection-end="624" vertical-scroll-proportion="-11.24" vertical-offset="263" max-vertical-offset="1921">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flightSubmit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="0" selection-start="7242" selection-end="7242" vertical-scroll-proportion="0.7388633" vertical-offset="1661" max-vertical-offset="2601">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#1;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

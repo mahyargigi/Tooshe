@@ -26,16 +26,16 @@
       <file leaf-file-name="user-profile.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user-profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="659" column="98" selection-start="40877" selection-end="40884" vertical-scroll-proportion="-4.254902" vertical-offset="10986" max-vertical-offset="14399">
+            <state line="659" column="98" selection-start="40877" selection-end="40884" vertical-scroll-proportion="0.0" vertical-offset="10986" max-vertical-offset="14399">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flightSubmit.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="flightSubmit.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flightSubmit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="0" selection-start="7242" selection-end="7242" vertical-scroll-proportion="0.7388633" vertical-offset="1661" max-vertical-offset="2601">
+            <state line="126" column="0" selection-start="7242" selection-end="7242" vertical-scroll-proportion="-18.5" vertical-offset="1661" max-vertical-offset="2601">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#hr#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -48,10 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flightSubmit.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="flightSubmit.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/flightSubmit/flightSubmit.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="624" selection-end="624" vertical-scroll-proportion="-11.24" vertical-offset="263" max-vertical-offset="1921">
+            <state line="31" column="65" selection-start="632" selection-end="632" vertical-scroll-proportion="0.36923078" vertical-offset="263" max-vertical-offset="1921">
               <folding />
             </state>
           </provider>
@@ -90,8 +90,8 @@
         <option value="$PROJECT_DIR$/js/user-profile/user-profile.js" />
         <option value="$PROJECT_DIR$/user-profile.html" />
         <option value="$PROJECT_DIR$/css/user-profile/user-profile.css" />
-        <option value="$PROJECT_DIR$/css/flightSubmit/flightSubmit.css" />
         <option value="$PROJECT_DIR$/flightSubmit.html" />
+        <option value="$PROJECT_DIR$/css/flightSubmit/flightSubmit.css" />
       </list>
     </option>
   </component>
@@ -957,6 +957,9 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -978,9 +981,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -1035,7 +1035,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1097,9 +1097,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/application-fee/application-fee.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="73" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
-          <folding />
-        </state>
+        <state line="4" column="4" selection-start="73" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application-fee.html">
@@ -1114,23 +1112,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/search/search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="4" selection-start="693" selection-end="859" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="3604">
-          <folding />
-        </state>
+        <state line="23" column="4" selection-start="693" selection-end="859" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="3604" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1088" column="4" selection-start="72498" selection-end="72653" vertical-scroll-proportion="-12.923077" vertical-offset="18160" max-vertical-offset="18836">
-          <folding />
-        </state>
+        <state line="1088" column="4" selection-start="72498" selection-end="72653" vertical-scroll-proportion="-12.923077" vertical-offset="18160" max-vertical-offset="18836" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/user-profile/user-profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="16" selection-start="1659" selection-end="1659" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="2414">
-          <folding />
-        </state>
+        <state line="53" column="16" selection-start="1659" selection-end="1659" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="2414" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/flightSubmit/flightSubmit.js">
@@ -1142,28 +1134,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/user-profile/user-profile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="508" column="14" selection-start="11799" selection-end="11809" vertical-scroll-proportion="-18.76" vertical-offset="8167" max-vertical-offset="8857">
-          <folding />
-        </state>
+        <state line="508" column="14" selection-start="11799" selection-end="11809" vertical-scroll-proportion="-18.76" vertical-offset="8167" max-vertical-offset="8857" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user-profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="659" column="98" selection-start="40877" selection-end="40884" vertical-scroll-proportion="-4.254902" vertical-offset="10986" max-vertical-offset="14399">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/flightSubmit/flightSubmit.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="624" selection-end="624" vertical-scroll-proportion="-11.24" vertical-offset="263" max-vertical-offset="1921">
+        <state line="659" column="98" selection-start="40877" selection-end="40884" vertical-scroll-proportion="0.0" vertical-offset="10986" max-vertical-offset="14399">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flightSubmit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="0" selection-start="7242" selection-end="7242" vertical-scroll-proportion="0.7388633" vertical-offset="1661" max-vertical-offset="2601">
+        <state line="126" column="0" selection-start="7242" selection-end="7242" vertical-scroll-proportion="-18.5" vertical-offset="1661" max-vertical-offset="2601">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#hr#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1172,6 +1155,13 @@
             <element signature="n#style#0;n#div#0;n#div#1;n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/flightSubmit/flightSubmit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="65" selection-start="632" selection-end="632" vertical-scroll-proportion="0.36923078" vertical-offset="263" max-vertical-offset="1921">
+          <folding />
         </state>
       </provider>
     </entry>

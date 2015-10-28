@@ -30,12 +30,16 @@ $(document).ready(function(){
         if($('#optionsRadios1').is(':checked')) {
 //            alert("first is checked!");
             $('#slider').prop('disabled',true);
+            $('#slider').css('visibility','hidden');
+            $('#money-input').css('visibility','hidden');
         }
     });
     $('#second-radio').on('click',function(){
         if($('#optionsRadios2').is(':checked')) {
 //            alert("second is checked!");
             $('#slider').removeAttr("disabled");
+            $('#slider').css('visibility','visible');
+            $('#money-input').css('visibility','visible');
         }
 //        console.log("second radio clicked");
     });

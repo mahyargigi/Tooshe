@@ -181,7 +181,26 @@ $(document).ready(function(){
     });
     $('input[type=radio]').on('click',function(){
         if($('#specific-categories-radio').is(':checked')){
-            $('#modal').modal("show");
+            $('#modal1').modal("show");
+        }
+    });
+    $('.picks-btn').on('click',function(){
+        $('#modal2').modal("show");
+    });
+    $('#modal2 input[type=radio]').on('click',function(){
+       if($('#optionsRadios1').is(':checked')){
+             console.log("hello1");
+            $('#upper-image').attr('src','img/search/create-req2.png');
+            $('#upper-a').attr('href','#');
+            $('#bottom-image').attr('src','img/search/create-req.png');
+            $('#bottom-image').removeAttr('href');
+        }
+        if($('#optionsRadios2').is(':checked')){
+             console.log("hello2");
+            $('#bottom-image').attr('src','img/search/create-req2.png');
+            $('#bottom-a').attr('href','#');
+            $('#upper-image').attr('src','img/search/create-req.png');
+            $('#upper-a').removeAttr('href');
         }
     });
     $('.mark-all').on('click',function(){

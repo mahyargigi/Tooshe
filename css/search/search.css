@@ -442,25 +442,34 @@ input[type=range]:focus::-moz-range-track {
     border-radius: 3px;
 }
 
-/*modal css*/
+/*modal1 css*/
 
-.modal-dialog{
+#modal1 .modal-dialog{
     width: 800px;
     margin-top: 80px;
 }
 
-.modal-header{
+#modal1 .modal-header{
     margin-top: 10px;
     margin-left: 20px;
 }
 
-.modal .checkbox{
+#modal .checkbox{
     margin-top: 25px;
 }
-.modal-body{
+#modal1 .modal-body{
     margin-left: 20px;
     margin-top: 50px;
 }
-.modal-footer{
+#modal1 .modal-footer{
     margin-top: 50px;
 }
+/*end of modal1 css*/
+
+/*modal2 css*/
+
+#modal2{
+    margin-top: 60px;
+}
+
+/*end of modal2 css*/

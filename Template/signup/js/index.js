@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $('#signuplink').click(function(e) { // Button which will activate our modal
       console.log("clicked!");
-      $('#modal').reveal({ // The item which will be opened with reveal
+      $('#modal1').reveal({ // The item which will be opened with reveal
         animation: 'fade',                   // fade, fadeAndPop, none
       animationspeed: 250,                       // how fast animtions are
       closeonbackgroundclick: true,              // if you click background will modal close?
@@ -14,7 +14,7 @@ $(document).ready(function() {
     $(document).ready(function() {
   $('#signuplink2').click(function(e) { // Button which will activate our modal
       $('#modal2').fadeOut();
-      $('#modal').reveal({ // The item which will be opened with reveal
+      $('#modal1').reveal({ // The item which will be opened with reveal
         animation: 'fade',                   // fade, fadeAndPop, none
       animationspeed: 250,                       // how fast animtions are
       closeonbackgroundclick: true,              // if you click background will modal close?
@@ -39,7 +39,7 @@ $(document).ready(function() {
 
     $(document).ready(function() {
   $('#loginlink2').click(function(e) { // Button which will activate our modal
-      $('#modal').fadeOut();
+      $('#modal1').fadeOut();
       $('#modal2').reveal({ // The item which will be opened with reveal
         animation: 'fade',                   // fade, fadeAndPop, none
       animationspeed: 250,                       // how fast animtions are

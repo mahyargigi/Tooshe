@@ -1016,8 +1016,8 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
   })
 
   $(document)
-    .on('show.bs.modal', '.modal', function () { $(document.body).addClass('modal-open') })
-    .on('hidden.bs.modal', '.modal', function () { $(document.body).removeClass('modal-open') })
+    .on('show.bs.modal', '.modal1', function () { $(document.body).addClass('modal-open') })
+    .on('hidden.bs.modal', '.modal1', function () { $(document.body).removeClass('modal-open') })
 
 }(jQuery);
 

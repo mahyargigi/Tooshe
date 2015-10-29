@@ -68,8 +68,9 @@
     .nav-tabs li.active a{
         font-weight: 600;
     }
-    .nav-tabs li.active a:enabled{
+    .nav-tabs li.active a:focus{
         color: #000000 !important;
+        outline: 0;
     }
     .minus-review{
         color: red;

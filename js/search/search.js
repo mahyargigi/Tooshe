@@ -222,4 +222,10 @@ $(document).ready(function(){
             });
         }
     });
+    $('.button-img').hover(function(){
+//        console.log("hello");
+       $(this).attr('src','img/search/kharid2.png');
+    },function(){
+        $(this).attr('src','img/search/kharid1.png');
+    });
 });

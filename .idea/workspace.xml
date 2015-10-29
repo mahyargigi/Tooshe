@@ -23,27 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user-profile.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="user-profile.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user-profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="384" column="61" selection-start="23112" selection-end="23112" vertical-scroll-proportion="-167.23077" vertical-offset="2180" max-vertical-offset="14892">
+            <state line="858" column="59" selection-start="53183" selection-end="53183" vertical-scroll-proportion="0.5473373" vertical-offset="14216" max-vertical-offset="14892">
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#2;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#3;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#2;n#div#3;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#3;n#div#3;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#2;n#div#3;n#div#3;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user-profile.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="user-profile.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/user-profile/user-profile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="31" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.40724638" vertical-offset="909" max-vertical-offset="9265">
+            <state line="70" column="31" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.0" vertical-offset="909" max-vertical-offset="9265">
               <folding />
             </state>
           </provider>
@@ -130,7 +124,6 @@
         <option value="$PROJECT_DIR$/css/search.css" />
         <option value="$PROJECT_DIR$/chert2.html" />
         <option value="$PROJECT_DIR$/js/user-profile/user-profile.js" />
-        <option value="$PROJECT_DIR$/user-profile.html" />
         <option value="$PROJECT_DIR$/css/flightSubmit/flightSubmit.css" />
         <option value="$PROJECT_DIR$/js/flightSubmit/flightSubmit.js" />
         <option value="$PROJECT_DIR$/flightSubmit.html" />
@@ -138,6 +131,7 @@
         <option value="$PROJECT_DIR$/search.html" />
         <option value="$PROJECT_DIR$/js/search/search.js" />
         <option value="$PROJECT_DIR$/css/user-profile/user-profile.css" />
+        <option value="$PROJECT_DIR$/user-profile.html" />
       </list>
     </option>
   </component>
@@ -173,7 +167,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -894,6 +887,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1003,9 +997,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1027,6 +1018,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -1099,7 +1093,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1217,25 +1211,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-profile.html">
+    <entry file="file://$PROJECT_DIR$/css/user-profile/user-profile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="384" column="61" selection-start="23112" selection-end="23112" vertical-scroll-proportion="-167.23077" vertical-offset="2180" max-vertical-offset="14892">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#2;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#3;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#2;n#div#3;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#3;n#div#3;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="70" column="31" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.0" vertical-offset="909" max-vertical-offset="9265">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/user-profile/user-profile.css">
+    <entry file="file://$PROJECT_DIR$/user-profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="31" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.40724638" vertical-offset="909" max-vertical-offset="9265">
-          <folding />
+        <state line="858" column="59" selection-start="53183" selection-end="53183" vertical-scroll-proportion="0.5473373" vertical-offset="14216" max-vertical-offset="14892">
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#2;n#div#3;n#div#3;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

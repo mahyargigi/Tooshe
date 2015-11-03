@@ -1,0 +1,21 @@
+input[type=text],textarea{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.order-product{
+    color: rgba(100, 189, 197, 0.90);
+}
+.tooshe-will-find{
+    color: rgba(32, 139, 10, 0.90);
+}
+.kamrang-header{
+    color: rgba(159, 158, 155, 0.90);
+}
+.form-label{
+    color: rgba(88, 146, 159, 0.90);
+}
+.row{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

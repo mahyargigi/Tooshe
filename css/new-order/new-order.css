@@ -1,13 +1,20 @@
-input[type=text],textarea{
+input[type=text],input[type=url],textarea{
     width: 100%;
     border-radius: 10px;
     border: none;
     resize: none;
 }
 
-input[type=text]{
+input[type=text],input[type=url]{
     height: 3em;
     padding-left: 15px;
+}
+textarea{
+    padding-left: 15px;
+}
+
+input[disabled=true],input[disabled=disabled]{
+    background-color: rgba(205, 207, 203, 0.90);
 }
 
 span.checkbox-material{
@@ -15,9 +22,30 @@ span.checkbox-material{
     margin-left: 5px;
 }
 
+.radio-div{
+    width: 60%;
+    display: inline-block;
+}
+
+.input-div{
+    width: 39%;
+    display: none;
+}
+
 .alert{
     display: inline-block;
-    width: 25%;
+    /*width: 23%;*/
+    margin-right: 5px;
+    border-radius: 8px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: rgba(117, 115, 109, 0.90);
+}
+
+.regions{
+    margin-top: 10px;
+    display: none;
 }
 
 div.radio{

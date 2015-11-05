@@ -209,13 +209,14 @@ $(document).ready(function(){
         // For some browsers, `attr` is undefined; for others,
         // `attr` is false.  Check for both.
         if (typeof attr !== typeof undefined && attr !== false) {
+            console.log("1");
             $(this).removeAttr("checked");
             $('.modal-checkbox').each(function(){
                 $(this).removeProp("checked");
             });
         }
         else{
-
+            console.log("2");
             $(this).attr("checked","");
             $('.modal-checkbox').each(function(){
                 $(this).prop("checked","true");

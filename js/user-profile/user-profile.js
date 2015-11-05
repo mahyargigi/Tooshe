@@ -5,9 +5,16 @@ $(document).ready((function(){
     $('.close').on('click',function(){
         $(this).closest('.row-li').remove();
     });
-    $('.remove-btn').on('click',function(){
+    $('.trash-link').on('click',function(){
+        console.log("here1");
         var element = $(this).closest('.travel-info');
-        element.remove();
+        $('.modal').modal("show");
+        console.log("here2");
+        $('.confirm-delete').on('click',function(){
+            element.remove();
+            $('.modal').modal("hide");
+        });
+
     });
     $('.hidden-element').hide();
     window.setTimeout(function() {

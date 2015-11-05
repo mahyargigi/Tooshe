@@ -65,10 +65,10 @@
                         <label class="form-label">Where do you want it from?</label>
                     </div>
                     <div class="col-md-8">
-                        <div style="width: 60%;display: inline-block;" >
+                        <div class="radio-div" >
                             <div class="radio radio-primary">
                                 <label>
-                                    <input type="radio" name="optionsRadios" id="radio1" value="anywhere">
+                                    <input type="radio" name="optionsRadios" id="radio1" checked="" value="anywhere">
                                     Anywhere
                                 </label>
                             </div>
@@ -79,19 +79,13 @@
                                 </label>
                             </div>
                         </div>
-                        <div style="width: 39%;display: inline-block;">
+                        <div class="input-div">
                             <div class="specific-region-input">
                                 <input type="text" id="specific-region-input">
                             </div>
                         </div>
                         <div class="regions">
-                            <!--<div class="alert alert-dismissable alert-danger">-->
-                                <!--<span><strong>laptop</strong></span><span><button type="button" class="close" data-dismiss="alert">×</button></span>-->
-                            <!--</div>-->
-                            <!--<div class="alert alert-dismissable alert-danger">-->
-                                <!--<span><strong>laptop</strong></span><span><button type="button" class="close" data-dismiss="alert">×</button></span>-->
-                            <!--</div>-->
-                            <!--<div class="alert alert-dismissable alert-danger">-->
+                            <!--<div class="alert alert-dismissable alert-material-green-A100">-->
                                 <!--<span><strong>laptop</strong></span><span><button type="button" class="close" data-dismiss="alert">×</button></span>-->
                             <!--</div>-->
                             <!--<div class="alert alert-dismissable alert-danger">-->
@@ -112,7 +106,7 @@
                     <div class="col-md-8">
                         <div class="checkbox" >
                             <label>
-                                <input type="checkbox">Online Stores(Amazon,Ebay,..)
+                                <input type="checkbox" class="online-stores">Online Stores(Amazon,Ebay,..)
                             </label>
                         </div>
                     </div>
@@ -120,7 +114,7 @@
                 <div class="row">
                     <div class="col-md-4"></div>
                     <div class="col-md-8">
-                        <input type="text">
+                        <input type="url" class="url" disabled="true" value="http://">
                     </div>
                 </div>
 

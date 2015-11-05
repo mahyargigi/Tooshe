@@ -76,6 +76,7 @@ input:focus{
 #submit-button{
     float: right;
     margin-right: 75px;
+    margin-bottom: 30px;
 }
 .travel-label{
     /*margin-right: 10px ;*/

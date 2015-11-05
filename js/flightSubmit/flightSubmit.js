@@ -14,14 +14,33 @@ $(document).ready(function(){
        console.log((this).value);
       $('#money-input').html((this).value+"$");
    });
+//    var input1 = document.getElementById('departure-city');
+//    input1.onkeypress = function(){
+//        $('#departure-city').geocomplete();
+//    }
+//    var input2 = document.getElementById('arrival-city');
+//    input2.onkeypress = function(){
+//        $('#arrival-city').geocomplete();
+//    }
+
+
+    function initialize(input) {
+
+     var options = {
+      types: ['(cities)']
+//      componentRestrictions: {country: "us"}
+     };
+
+//     var input = document.getElementById('arrival-city');
+     var autocomplete = new google.maps.places.Autocomplete(input, options);
+    }
+
     var input1 = document.getElementById('departure-city');
-    input1.onkeypress = function(){
-        $('#departure-city').geocomplete();
-    }
+    input1.onkeypress = initialize(input1);
+
     var input2 = document.getElementById('arrival-city');
-    input2.onkeypress = function(){
-        $('#arrival-city').geocomplete();
-    }
+    input2.onkeypress = initialize(input2);
+
 
     $('#date1').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
     $('#date2').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );

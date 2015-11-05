@@ -1,6 +1,27 @@
 input[type=text],textarea{
     width: 100%;
     border-radius: 10px;
+    border: none;
+    resize: none;
+}
+
+input[type=text]{
+    height: 3em;
+    padding-left: 15px;
+}
+
+span.checkbox-material{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.alert{
+    display: inline-block;
+    width: 25%;
+}
+
+div.radio{
+    display: inline-block;
 }
 
 .order-product{
@@ -15,7 +36,14 @@ input[type=text],textarea{
 .form-label{
     color: rgba(88, 146, 159, 0.90);
 }
+.or-header{
+    color: rgba(94, 89, 91, 0.90);
+}
 .row{
     margin-top: 20px;
     margin-bottom: 10px;
+}
+.row.or-div{
+    margin-top: 40px;
+    margin-bottom: 40px;
 }

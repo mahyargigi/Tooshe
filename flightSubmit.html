@@ -7,7 +7,7 @@
     <link href="css/global/material-fullpalette.min.css" rel="stylesheet">
     <link href="css/global/bootstrap-material-datepicker.css" rel="stylesheet">
     <link href="css/flightSubmit/flightSubmit.css" rel="stylesheet">
-    <link href="css/global/font.css" rel="stylesheet">
+    <!--<link href="css/global/font.css" rel="stylesheet">-->
     <!--<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>-->
 </head>
 <body>
@@ -20,22 +20,22 @@
                     <div class="row" id="title">
                         <h3 class="header">Fill your travel itinerary</h3>
                     </div>
-                    <div class="row">
-                        <div class="col-md-1"></div>
+                    <div class="row first-row">
+                        <!--<div class="col-md-1"></div>-->
                         <div class="col-md-5">
                             <label class="travel-label">City of departure</label>
                             <input id="departure-city" class="input-lg travel-input">
                         </div>
-                        <div class="col-md-1"></div>
+                        <div class="col-md-2"></div>
                         <div class="col-md-5">
                             <label class="travel-label">City of arrival</label>
                             <input id="arrival-city" class="input-lg travel-input">
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-1">
+                    <div class="row second-row">
+                        <!--<div class="col-md-1">-->
 
-                        </div>
+                        <!--</div>-->
                         <div class="col-md-4">
                             <label class="travel-label" id="travel-date">Date of travel</label>
                             <input class="form-input input-lg travel-input second-line-input" id="date1">
@@ -43,19 +43,18 @@
                         <div class="col-md-4">
                             <label class="travel-label">The travel</label>
                             <input class="form-input input-lg travel-input second-line-input" id="date2">
-                            <label class="travel-label" id="till-label">Till</label>
                         </div>
-                        <div class="col-md-3">
-
+                        <div class="col-md-4">
+                            <label class="travel-label" id="till-label">Till</label>
                             <input class="form-input input-lg travel-input second-line-input" id="date3">
                         </div>
                     </div>
                     <hr style="border-color: #c6c6c6;">
                     <div class="row form-horizontal">
                         <div class="col-md-2"></div>
-                        <div class="col-md-6">
-                            <div class="col-md-1"></div>
-                            <div class="col-md-7">
+                        <div class="col-md-7">
+                            <!--<div class="col-md-1"></div>-->
+                            <div class="col-md-6">
                                 <label class="travel-label max-weight-label">Maximum weight I can carry</label>
                             </div>
                             <div class="col-md-3" >
@@ -65,7 +64,7 @@
                                 <label class="travel-label">Kg</label>
                             </div>
                         </div>
-                        <div class="col-md-4" id="warning-div">
+                        <div class="col-md-3" id="warning-div">
                             <!--<label>You cannot carry more than 40kg!</label>-->
                         </div>
                     </div>
@@ -124,7 +123,7 @@
     <!--site edns here-->
     <script src="js/global/jquery-1.11.2.js" ></script>
     <script src="js/global/bootstrap.min.js" ></script>
-    <!--<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>-->
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
     <script src="js/global/jquery.geocomplete.js"></script>
     <script src="js/global/material.min.js"></script>
     <script src="js/global/moment.min.js"></script>

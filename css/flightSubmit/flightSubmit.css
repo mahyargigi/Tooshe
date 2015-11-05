@@ -34,7 +34,8 @@ input:focus{
     /*background-color: lightgray;*/
     /*background: url(../../img/foozieh.png);*/
     background: url(../../img/flightSubmit/ssssssssssssssssss.png);
-
+    /*background-size: 100%;*/
+    background-repeat: round;
 }
 .form-input{
     width: 100% ;
@@ -43,7 +44,8 @@ input:focus{
     margin-top: 30px;
 }
 #max-weight-input{
-    width: 100%;
+    /*width: 100%;*/
+    width: 80px;
     color: red;
     text-align: center;
     font-size: 20px;
@@ -69,31 +71,35 @@ input:focus{
 }
 #textArea{
     background-color: white;
+    resize: none;
 }
 #submit-button{
     float: right;
     margin-right: 75px;
 }
 .travel-label{
-    margin-right: 10px ;
+    /*margin-right: 10px ;*/
+    margin-right: 5% ;
     font-size: 1.3em;
 }
 .travel-input{
-    width: 200px;
+    /*width: 200px;*/
+    width: 50%;
 }
 #travel-date{
-    margin-right: 35px;
-}
-.second-line-input{
-    width: 150px;
+    /*margin-right: 35px;*/
 }
 #date3{
-    position: relative;
-    left: -4px;
+    /*position: relative;*/
+    /*left: -4px;*/
 }
 #till-label{
-    position: relative;
-    left: 30px;
+    /*position: relative;*/
+    /*left: 30px;*/
+}
+.first-row , .second-row{
+    /*margin-left: 65px;*/
+    margin-left: 6%;
 }
 #yo-do-request{
     /*font-size: 1.5em;*/

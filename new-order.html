@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>order</title>
 
     <link href="css/global/bootstrap.min.css" rel="stylesheet">
@@ -39,10 +40,16 @@
                         <input type="text" >
                     </div>
                 </div>
+                <div class="row or-div text-center">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8">
+                        <h2 class="or-header">Or</h2>
+                    </div>
+                </div>
                 <div class="row text-center">
                     <div class="col-md-4"></div>
                     <div class="col-md-8">
-                        <h3 class="kamrang-header">Or Create your own request</h3>
+                        <h3 class="kamrang-header">Create your own request</h3>
                     </div>
                 </div>
                 <div class="row form-inline">
@@ -58,15 +65,38 @@
                         <label class="form-label">Where do you want it from?</label>
                     </div>
                     <div class="col-md-8">
-                        <div class="checkbox" style="display: inline-block;" >
-                            <label>
-                                <input type="checkbox" class="check">Anywhere
-                            </label>
+                        <div style="width: 60%;display: inline-block;" >
+                            <div class="radio radio-primary">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="radio1" value="anywhere">
+                                    Anywhere
+                                </label>
+                            </div>
+                            <div class="radio radio-primary">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="radio2" value="specific-regions">
+                                    Specific Regions
+                                </label>
+                            </div>
                         </div>
-                        <div class="checkbox" style="display: inline-block;" >
-                            <label>
-                                <input type="checkbox">Specific Regions
-                            </label>
+                        <div style="width: 39%;display: inline-block;">
+                            <div class="specific-region-input">
+                                <input type="text" id="specific-region-input">
+                            </div>
+                        </div>
+                        <div class="regions">
+                            <!--<div class="alert alert-dismissable alert-danger">-->
+                                <!--<span><strong>laptop</strong></span><span><button type="button" class="close" data-dismiss="alert">×</button></span>-->
+                            <!--</div>-->
+                            <!--<div class="alert alert-dismissable alert-danger">-->
+                                <!--<span><strong>laptop</strong></span><span><button type="button" class="close" data-dismiss="alert">×</button></span>-->
+                            <!--</div>-->
+                            <!--<div class="alert alert-dismissable alert-danger">-->
+                                <!--<span><strong>laptop</strong></span><span><button type="button" class="close" data-dismiss="alert">×</button></span>-->
+                            <!--</div>-->
+                            <!--<div class="alert alert-dismissable alert-danger">-->
+                                <!--<span><strong>laptop</strong></span><span><button type="button" class="close" data-dismiss="alert">×</button></span>-->
+                            <!--</div>-->
                         </div>
                     </div>
 
@@ -124,10 +154,12 @@
 
     <script src="js/global/jquery-1.11.2.js" ></script>
     <script src="js/global/bootstrap.min.js" ></script>
-    <!--<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>-->
-    <!--<script src="js/global/jquery.geocomplete.js"></script>-->
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+    <script src="js/global/jquery.geocomplete.js"></script>
     <script src="js/global/material.min.js"></script>
     <script src="js/global/moment.min.js"></script>
+    <script src="js/new-order/new-order.js"></script>
+
     <script>
         $(document).ready(function(){
             $.material.init();

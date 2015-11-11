@@ -93,7 +93,6 @@
                             <!--</div>-->
                         </div>
                     </div>
-
                 </div>
                 <div class="row">
                     <div class="col-md-4"></div>
@@ -119,9 +118,15 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-8">
-                        chikar bayad bokonam inja asan?!?!
+                    <div class="col-md-4">
+                        <label class="form-label">Photo</label>
+                    </div>
+                    <div class="col-md-8 image-container">
+                        <input type="file" onchange="readURL(this);"  accept="image/*" id="fileInput" name="fileInput" style="display: none;" />
+                        <a class="upload-image-link" href="#">
+                            <img src="img/new-order/dotted1.png" uploaded="false" id='user-image' class="upload-image" alt=""/>
+                            <img src="img/new-order/close_button_1-512.png" alt="" class="top-image"/>
+                        </a>
                     </div>
                 </div>
                 <div class="row">
@@ -158,6 +163,27 @@
         $(document).ready(function(){
             $.material.init();
         });
+    </script>
+    <script>
+        function readURL(input){
+    //            $('#user-image').attr('src',$('#fileInput').val());
+            if($('#user-image').attr('uploaded')==='false'){
+                if (input.files && input.files[0]) {
+                    console.log("bale");
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                      $('#user-image')
+                        .attr('src', e.target.result);
+                      $('#user-image')
+                        .attr('uploaded', 'true');
+                    };
+                    reader.readAsDataURL(input.files[0]);
+                    $('#user-image').attr('uploaded','true');
+
+                }
+            }
+
+            };
     </script>
 </body>
 </html>

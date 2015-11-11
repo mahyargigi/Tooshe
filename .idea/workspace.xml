@@ -26,11 +26,8 @@
       <file leaf-file-name="flightSubmit.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flightSubmit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="93" selection-start="6835" selection-end="6848" vertical-scroll-proportion="-4.254902" vertical-offset="1687" max-vertical-offset="4063">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#hr#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="109" column="97" selection-start="6634" selection-end="6634" vertical-scroll-proportion="0.0" vertical-offset="1687" max-vertical-offset="4063">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -38,7 +35,7 @@
       <file leaf-file-name="flightSubmit.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/flightSubmit/flightSubmit.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="20" selection-start="1407" selection-end="1407" vertical-scroll-proportion="-11.24" vertical-offset="1045" max-vertical-offset="3689">
+            <state line="78" column="20" selection-start="1407" selection-end="1407" vertical-scroll-proportion="0.0" vertical-offset="1326" max-vertical-offset="3689">
               <folding />
             </state>
           </provider>
@@ -47,74 +44,25 @@
       <file leaf-file-name="new-order.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new-order.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="67" selection-start="5380" selection-end="5380" vertical-scroll-proportion="-20.26923" vertical-offset="1445" max-vertical-offset="2856">
+            <state line="127" column="74" selection-start="6087" selection-end="6087" vertical-scroll-proportion="-6.352941" vertical-offset="1835" max-vertical-offset="3298">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search.html">
+      <file leaf-file-name="new-order.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/new-order/new-order.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="447" column="12" selection-start="31354" selection-end="31354" vertical-scroll-proportion="40.307693" vertical-offset="8647" max-vertical-offset="19363">
+            <state line="49" column="48" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="969">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user-profile.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/user-profile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="527" column="69" selection-start="32727" selection-end="32727" vertical-scroll-proportion="0.4639017" vertical-offset="8657" max-vertical-offset="16898">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#2;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#2;n#div#3;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user-profile.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/user-profile/user-profile.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="26" selection-start="2648" selection-end="2648" vertical-scroll-proportion="-16.0" vertical-offset="1742" max-vertical-offset="9435">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user-profile.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/user-profile/user-profile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="35" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2533">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/search/search.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="183" column="39" selection-start="7580" selection-end="7607" vertical-scroll-proportion="-9.2" vertical-offset="2881" max-vertical-offset="4046">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new-order.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="new-order.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/new-order/new-order.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="23" selection-start="234" selection-end="234" vertical-scroll-proportion="-8.16" vertical-offset="0" max-vertical-offset="1394">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/footer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="17" selection-start="248" selection-end="4811" vertical-scroll-proportion="-16.192308" vertical-offset="1330" max-vertical-offset="2074">
+            <state line="93" column="12" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.8811189" vertical-offset="951" max-vertical-offset="1717">
               <folding />
             </state>
           </provider>
@@ -137,15 +85,15 @@
         <option value="$PROJECT_DIR$/css/search/search.css" />
         <option value="$PROJECT_DIR$/search.html" />
         <option value="$PROJECT_DIR$/js/flightSubmit/flightSubmit.js" />
-        <option value="$PROJECT_DIR$/new-order.html" />
         <option value="$PROJECT_DIR$/js/search/search.js" />
-        <option value="$PROJECT_DIR$/js/new-order/new-order.js" />
-        <option value="$PROJECT_DIR$/css/new-order/new-order.css" />
         <option value="$PROJECT_DIR$/flightSubmit.html" />
         <option value="$PROJECT_DIR$/css/flightSubmit/flightSubmit.css" />
         <option value="$PROJECT_DIR$/js/user-profile/user-profile.js" />
         <option value="$PROJECT_DIR$/css/user-profile/user-profile.css" />
         <option value="$PROJECT_DIR$/user-profile.html" />
+        <option value="$PROJECT_DIR$/js/new-order/new-order.js" />
+        <option value="$PROJECT_DIR$/new-order.html" />
+        <option value="$PROJECT_DIR$/css/new-order/new-order.css" />
       </list>
     </option>
   </component>
@@ -181,6 +129,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -418,6 +367,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new-order" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -937,7 +904,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -948,11 +914,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\img\new-order" />
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\img\user-profile" />
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\img\search" />
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\img\flightSubmit" />
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\fonts\global" />
-      <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\js\flightSubmit" />
@@ -1143,14 +1109,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6707153" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6707153" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1179,68 +1145,27 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/search/search.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="11" selection-start="1326" selection-end="1331" vertical-scroll-proportion="1.626087" vertical-offset="0" max-vertical-offset="8160">
-          <folding />
-        </state>
+        <state line="66" column="11" selection-start="1326" selection-end="1331" vertical-scroll-proportion="1.626087" vertical-offset="0" max-vertical-offset="8160" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/flightSubmit/flightSubmit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="6" selection-start="385" selection-end="532" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1445">
-          <folding />
-        </state>
+        <state line="16" column="6" selection-start="385" selection-end="532" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1445" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/global/jquery.geocomplete.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10081">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/new-order/new-order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="46" selection-start="1227" selection-end="1227" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/new-order/new-order.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="23" selection-start="234" selection-end="234" vertical-scroll-proportion="-8.16" vertical-offset="0" max-vertical-offset="1394">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="17" selection-start="248" selection-end="4811" vertical-scroll-proportion="-16.192308" vertical-offset="1330" max-vertical-offset="2074">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10081" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SendSomething.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2363">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flightSubmit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="93" selection-start="6835" selection-end="6848" vertical-scroll-proportion="-4.254902" vertical-offset="1687" max-vertical-offset="4063">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#hr#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2363" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/flightSubmit/flightSubmit.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="20" selection-start="1407" selection-end="1407" vertical-scroll-proportion="-11.24" vertical-offset="1045" max-vertical-offset="3689">
+        <state line="78" column="20" selection-start="1407" selection-end="1407" vertical-scroll-proportion="0.0" vertical-offset="1045" max-vertical-offset="3689">
           <folding />
         </state>
       </provider>
@@ -1252,49 +1177,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new-order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="67" selection-start="5380" selection-end="5380" vertical-scroll-proportion="-20.26923" vertical-offset="1445" max-vertical-offset="2856">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/search/search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="39" selection-start="7580" selection-end="7607" vertical-scroll-proportion="-9.2" vertical-offset="2881" max-vertical-offset="4046">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/user-profile/user-profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="35" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2533">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/user-profile/user-profile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="26" selection-start="2648" selection-end="2648" vertical-scroll-proportion="-16.0" vertical-offset="1742" max-vertical-offset="9435">
-          <folding />
-        </state>
+        <state line="183" column="39" selection-start="7580" selection-end="7607" vertical-scroll-proportion="0.0" vertical-offset="2881" max-vertical-offset="4046" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="447" column="12" selection-start="31354" selection-end="31354" vertical-scroll-proportion="40.307693" vertical-offset="8647" max-vertical-offset="19363">
-          <folding />
-        </state>
+        <state line="447" column="12" selection-start="31354" selection-end="31354" vertical-scroll-proportion="0.0" vertical-offset="8647" max-vertical-offset="19363" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user-profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="527" column="69" selection-start="32727" selection-end="32727" vertical-scroll-proportion="0.4639017" vertical-offset="8657" max-vertical-offset="16898">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#2;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#2;n#div#3;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="527" column="69" selection-start="32727" selection-end="32727" vertical-scroll-proportion="-11.615385" vertical-offset="8657" max-vertical-offset="16898" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/user-profile/user-profile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="26" selection-start="2648" selection-end="2648" vertical-scroll-proportion="0.0" vertical-offset="1742" max-vertical-offset="9435" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="17" selection-start="248" selection-end="4811" vertical-scroll-proportion="0.62278104" vertical-offset="1330" max-vertical-offset="2074" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/user-profile/user-profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="28" selection-start="2420" selection-end="2423" vertical-scroll-proportion="-9.2" vertical-offset="1028" max-vertical-offset="2533" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flightSubmit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="97" selection-start="6634" selection-end="6634" vertical-scroll-proportion="0.0" vertical-offset="1687" max-vertical-offset="4063">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new-order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="74" selection-start="6087" selection-end="6087" vertical-scroll-proportion="-6.352941" vertical-offset="1835" max-vertical-offset="3298">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/new-order/new-order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="48" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/new-order/new-order.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="12" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.8811189" vertical-offset="951" max-vertical-offset="1717">
+          <folding />
         </state>
       </provider>
     </entry>

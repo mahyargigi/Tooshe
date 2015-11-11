@@ -30,4 +30,23 @@ $(document).ready(function(){
             $(this).attr("checked","");
         }
     });
+    $('.upload-image-link').on('click',function(){
+        if($('#user-image').attr('uploaded')==='false'){
+            document.getElementById("fileInput").click();
+        }
+
+    });
+    $('.upload-image-link').hover(function(){
+        if($('#user-image').attr('uploaded')==='true'){
+            console.log("hovered!");
+            $('.top-image').css('visibility','visible');
+            $(this).on('click',function(){
+            $('.top-image').css('visibility','hidden');
+            $('#user-image').attr('src','img/new-order/dotted1.png');
+            $('#user-image').attr('uploaded','false');
+            });
+        }
+    },function(){
+        $('.top-image').css('visibility','hidden');
+    });
 });

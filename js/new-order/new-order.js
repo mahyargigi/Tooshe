@@ -38,8 +38,8 @@ $(document).ready(function(){
     });
     $('.upload-image-link').hover(function(){
         if($('#user-image').attr('uploaded')==='true'){
-            console.log("hovered!");
             $('.top-image').css('visibility','visible');
+            $('#user-image').css('opacity','0.3');
             $(this).on('click',function(){
             $('.top-image').css('visibility','hidden');
             $('#user-image').attr('src','img/new-order/dotted1.png');
@@ -48,5 +48,13 @@ $(document).ready(function(){
         }
     },function(){
         $('.top-image').css('visibility','hidden');
+        $('#user-image').css('opacity','1');
+    });
+    var number = 1000;
+    var tooshe = 10;
+    $('#slider').attr('min',number/10);
+    $('#slider').attr('max',number);
+    $('#slider').on('change',function(){
+       $('.fee-amount').html($(this).val()+'$');
     });
 });

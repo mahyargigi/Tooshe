@@ -89,8 +89,126 @@ div.radio{
     visibility: hidden;
 }
 .image-container .top-image {
-  position: absolute;
-  top: 0;
-  left: 10px;
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    z-index: 1;
+    opacity: 0.7;
 }
+.offers-div{
+    margin-bottom: 10px;
+}
+.fewer-offers{
+    color: palevioletred;
+}
+.more-offers{
+    float: right;
+    color:royalblue;
+}
+.empty-div{
+    height: 50px;
+}
+.slider-div{
+    margin-top: 40px;
+}
+.percent-label{
+    margin-bottom: 30px;
+    color: rgba(207, 85, 80, 0.90);
+}
+.totally-pay{
+    margin-left: 5%;
+    color: green;
+    font-size: 20px;
+}
+.fee-amount{
+    color: darkred;
+}
+.totally-pay-div{
+    border: solid;
+    border-width: 3px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: green;
+}
+
+/*slider*/
+
+
+input[type=range]{
+    -webkit-appearance: none;
+    margin-top: 10px;
+    border: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    /*width: 300px;*/
+    height: 5px;
+    /*background: rgba(255, 146, 146, 0.84);*/
+    background: rgba(255, 146, 146, 0.84);
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: solid;
+    border-color: rgba(172, 165, 170, 0.93);
+    height: 36px; /* past 16px*/
+    width: 36px; /* past 16px*/
+    border-radius: 50%;
+    background: white;
+    margin-top: -15px; /* past -4px*/
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    /*width: 300px;*/
+    height: 5px;
+    background: rgba(255, 146, 146, 0.84);
+    border: none;
+    /*border-radius: 3px;*/
+}
+
+input[type=range]{
+    /* fix for FF unable to apply focus style bug  */
+    /*border: 1px solid white; */
+
+    /*required for proper track sizing in FF*/
+    /*width: 300px;*/
+}
+
+input[type=range]::-moz-range-track {
+    /*width: 300px;*/
+    height: 5px;
+    background: rgba(255, 146, 146, 0.84);
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    border: solid;
+    border-color: rgba(172, 165, 170, 0.93);
+    height: 36px; /* past 16px*/
+    width: 36px; /* past 16px*/
+    border-radius: 50%;
+    background: white;
+    margin-top: -4px; /* past -4px*/
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    border: none;
+}
+
+input[type=range]:focus::-moz-range-track {
+    /*height: 5px;*/
+    /*background: rgba(255, 146, 146, 0.84);*/
+    /*border: none;*/
+    /*border-radius: 3px;*/
+    border: none;
+}
+/*end of slider css*/

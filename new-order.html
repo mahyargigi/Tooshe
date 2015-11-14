@@ -7,6 +7,8 @@
     <link href="css/global/bootstrap.min.css" rel="stylesheet">
     <link href="css/global/material.min.css" rel="stylesheet">
     <link href="css/global/material-fullpalette.min.css" rel="stylesheet">
+    <link href="css/global/jquery.dropdown.css" rel="stylesheet">
+    <link href="css/global/jquery-ui.css" rel="stylesheet">
     <link href="css/new-order/new-order.css" rel="stylesheet">
 
 </head>
@@ -37,7 +39,9 @@
                 <div class="row">
                     <div class="col-md-4"></div>
                     <div class="text-center col-md-8">
-                        <input type="text" >
+                        <div class="col-md-12">
+                            <input type="text" class="search-input" >
+                        </div>
                     </div>
                 </div>
                 <div class="row or-div text-center">
@@ -57,7 +61,9 @@
                         <label class="form-label">What do you want?</label>
                     </div>
                     <div class="col-md-8">
-                        <input type="text" placeholder="write the name of your product exactly">
+                        <div class="col-md-12">
+                            <input type="text" placeholder="write the name of your product exactly">
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -65,55 +71,63 @@
                         <label class="form-label">Where do you want it from?</label>
                     </div>
                     <div class="col-md-8">
-                        <div class="radio-div" >
-                            <div class="radio radio-primary">
+                        <div class="col-md-12">
+                            <div class="radio-div" >
+                                <div class="radio radio-primary">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="radio1" checked="" value="anywhere">
+                                        Anywhere
+                                    </label>
+                                </div>
+                                <div class="radio radio-primary">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="radio2" value="specific-regions">
+                                        Specific Regions
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="input-div">
+                                <div class="specific-region-input">
+                                    <input type="text" id="specific-region-input">
+                                </div>
+                            </div>
+                            <div class="regions">
+                                <!--<div class="alert alert-dismissable alert-material-green-A100">-->
+                                    <!--<span><strong>laptop</strong></span><span><button type="button" class="close" data-dismiss="alert">×</button></span>-->
+                                <!--</div>-->
+                                <!--<div class="alert alert-dismissable alert-danger">-->
+                                    <!--<span><strong>laptop</strong></span><span><button type="button" class="close" data-dismiss="alert">×</button></span>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8">
+                        <div class="col-md-12">
+                            <textarea class="textArea pull-right" rows="4" placeholder="More details if needed (Specify city,shopstore,address,etc)"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8">
+                        <div class="col-md-12">
+                            <div class="checkbox" >
                                 <label>
-                                    <input type="radio" name="optionsRadios" id="radio1" checked="" value="anywhere">
-                                    Anywhere
+                                    <input type="checkbox" class="online-stores">Online Stores(Amazon,Ebay,..)
                                 </label>
                             </div>
-                            <div class="radio radio-primary">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="radio2" value="specific-regions">
-                                    Specific Regions
-                                </label>
-                            </div>
-                        </div>
-                        <div class="input-div">
-                            <div class="specific-region-input">
-                                <input type="text" id="specific-region-input">
-                            </div>
-                        </div>
-                        <div class="regions">
-                            <!--<div class="alert alert-dismissable alert-material-green-A100">-->
-                                <!--<span><strong>laptop</strong></span><span><button type="button" class="close" data-dismiss="alert">×</button></span>-->
-                            <!--</div>-->
-                            <!--<div class="alert alert-dismissable alert-danger">-->
-                                <!--<span><strong>laptop</strong></span><span><button type="button" class="close" data-dismiss="alert">×</button></span>-->
-                            <!--</div>-->
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4"></div>
                     <div class="col-md-8">
-                        <textarea class="textArea pull-right" rows="4" placeholder="More details if needed (Specify city,shopstore,address,etc)"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-8">
-                        <div class="checkbox" >
-                            <label>
-                                <input type="checkbox" class="online-stores">Online Stores(Amazon,Ebay,..)
-                            </label>
+                        <div class="col-md-12">
+                            <input type="url" class="url" disabled="true" value="http://">
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-8">
-                        <input type="url" class="url" disabled="true" value="http://">
                     </div>
                 </div>
 
@@ -122,11 +136,14 @@
                         <label class="form-label">Photo</label>
                     </div>
                     <div class="col-md-8 image-container">
-                        <input type="file" onchange="readURL(this);"  accept="image/*" id="fileInput" name="fileInput" style="display: none;" />
-                        <a class="upload-image-link" href="#">
-                            <img src="img/new-order/dotted1.png" uploaded="false" id='user-image' class="upload-image" alt=""/>
-                            <img src="img/new-order/close_button_1-512.png" alt="" class="top-image"/>
-                        </a>
+                        <div class="col-md-12">
+                            <input type="file" onchange="readURL(this);"  accept="image/*" id="fileInput" name="fileInput" style="display: none;" />
+                            <a class="upload-image-link" href="#">
+                                <img src="img/new-order/dotted1.png" uploaded="false" id='user-image' class="upload-image" alt=""/>
+                                <img src="img/new-order/close_button_1-512.png" alt="" class="top-image"/>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
                 <div class="row">
@@ -134,7 +151,18 @@
                         <label class="form-label">Approximate price of product</label>
                     </div>
                     <div class="col-md-8">
-
+                        <div class="col-md-4">
+                            <input type="number"  placeholder="Amount" class="amount-input" value="0"/>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="select currency"  placeholder="Currency">
+                              <!--<option></option>-->
+                              <option>Dollar</option>
+                              <option>Rial</option>
+                              <option>Euro</option>
+                            </select>
+                        </div>
+                        <div class="col-md-7"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -142,29 +170,37 @@
                         <label class="form-label">Delivery Fee</label>
                     </div>
                     <div class="col-md-8">
-                        <div class="offers-div">
-                            <div class="col-md-5">
-                                <label class="fewer-offers">Get Fewer Offers<-</label>
-                            </div>
-                            <div class="col-md-2"></div>
-                            <div class="col-md-5">
-                                <label class="more-offers">->Get More Offers</label>
-                            </div>
-                        </div>
+                        <!--<div class="offers-div">-->
+                            <!--<div class="col-md-5">-->
+                                <!--<label class="fewer-offers">Get Fewer Offers<-</label>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash;<div class="col-md-2"></div>&ndash;&gt;-->
+                            <!--<div class="col-md-5">-->
+                                <!--<label class="more-offers">->Get More Offers</label>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-2"></div>-->
+                        <!--</div>-->
                         <div class="slider-div">
-                            <div class="col-md-12">
+                            <div class="col-md-10">
                                 <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" tabindex="0" id="slider"/>
+                            </div>
+                            <div class="col-md-2">
+                                <label class="delivery-fee-label">
+                                    <span class="you-pay"></span>
+                                </label>
                             </div>
                         </div>
                         <div class="empty-div"></div>
                         <div class="percent-for-tooshe">
                             <div class="col-md-12">
-                                <label class="percent-label">+10 % for tooshe</label>
+                                <!--<label class="percent-label">The amount you will pay=</label>-->
+                                <!--<br>-->
+                                <label class="percent-label">+10 % for tooshe= <span class="ten-percent-amount"></span></label>
                             </div>
                         </div>
                         <div class="totally-pay-upper-div">
                             <div class="col-md-12 totally-pay-div">
-                                <label class="totally-pay">You will totally pay :<span class="fee-amount">85$</span></label>
+                                <label class="totally-pay">You will totally pay :<span class="fee-amount"></span></label>
                             </div>
                         </div>
                     </div>
@@ -185,6 +221,14 @@
                         <textarea class="textArea pull-right" rows="4" placeholder="write your Review here..."></textarea>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8 text-center">
+                        <div class="col-md-12 ">
+                            <div class="btn btn-material-light-blue-600">submit order</div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4"></div>
 
@@ -197,11 +241,15 @@
     <script src="js/global/jquery.geocomplete.js"></script>
     <script src="js/global/material.min.js"></script>
     <script src="js/global/moment.min.js"></script>
+    <script src="js/global/ripples.min.js"></script>
+    <script src="js/global/jquery.dropdown.js"></script>
+    <script src="js/global/jquery-ui.js"></script>
     <script src="js/new-order/new-order.js"></script>
 
     <script>
         $(document).ready(function(){
             $.material.init();
+            $(".select").dropdown({"optionClass": "withripple"});
         });
     </script>
     <script>

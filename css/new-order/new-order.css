@@ -1,18 +1,21 @@
-input[type=text],input[type=url],textarea{
+input[type=text],input[type=url],input[type=number],textarea,select{
     width: 100%;
     border-radius: 10px;
     border: none;
     resize: none;
 }
 
-input[type=text],input[type=url]{
+input[type=text],input[type=url],input[type=number],select{
     height: 3em;
     padding-left: 15px;
+}
+option{
+    border: solid;
+    border-color: #761c19;
 }
 textarea{
     padding-left: 15px;
 }
-
 input[disabled=true],input[disabled=disabled]{
     background-color: rgba(205, 207, 203, 0.90);
 }
@@ -95,6 +98,14 @@ div.radio{
     z-index: 1;
     opacity: 0.7;
 }
+.amount-input{
+    width: 100%;
+    margin-right: 0px;
+}
+.currency{
+    width: 100%;
+    margin-left: 0px;
+}
 .offers-div{
     margin-bottom: 10px;
 }
@@ -109,11 +120,15 @@ div.radio{
     height: 50px;
 }
 .slider-div{
-    margin-top: 40px;
+    /*margin-top: 40px;*/
+}
+.delivery-fee-label{
+    font-size: 20px;
+
 }
 .percent-label{
     margin-bottom: 30px;
-    color: rgba(207, 85, 80, 0.90);
+    color: rgba(136, 134, 133, 0.90);
 }
 .totally-pay{
     margin-left: 5%;
@@ -122,6 +137,7 @@ div.radio{
 }
 .fee-amount{
     color: darkred;
+    margin-left: 15px;
 }
 .totally-pay-div{
     border: solid;

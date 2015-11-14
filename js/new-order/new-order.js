@@ -2,7 +2,37 @@
  * Created by User on 11/2/15.
  */
 $(document).ready(function(){
-   var input1 = document.getElementById('specific-region-input');
+//    $('.search-input').on('',function(){
+           var availableTags = [
+          "ActionScript",
+          "AppleScript",
+          "Asp",
+          "BASIC",
+          "C",
+          "C++",
+          "Clojure",
+          "COBOL",
+          "ColdFusion",
+          "Erlang",
+          "Fortran",
+          "Groovy",
+          "Haskell",
+          "Java",
+          "JavaScript",
+          "Lisp",
+          "Perl",
+          "PHP",
+          "Python",
+          "Ruby",
+          "Scala",
+          "Scheme"
+        ];
+        $( ".search-input" ).autocomplete({
+          source: availableTags
+        });
+//        console.log("change");
+//    });
+    var input1 = document.getElementById('specific-region-input');
     $('#specific-region-input').geocomplete().bind("geocode:result", function(event, click){
         $('.regions').append('<div class="alert alert-dismissable alert-material-green-A100"><span><strong>'+click.address_components[0].long_name+'</strong></span><span><button type="button" class="close" data-dismiss="alert">×</button></span></div>');
         $(this).val('');
@@ -54,7 +84,15 @@ $(document).ready(function(){
     var tooshe = 10;
     $('#slider').attr('min',number/10);
     $('#slider').attr('max',number);
+   $('.you-pay').html($('#slider').val()+'$');
+    $('.ten-percent-amount').html($('.amount-input').val()+"$");
+    $('.fee-amount').html((parseInt($('.amount-input').val()) + parseInt($('#slider').val()))+'$');
     $('#slider').on('change',function(){
-       $('.fee-amount').html($(this).val()+'$');
+       $('.fee-amount').html((parseInt($(this).val()) + parseInt($('.amount-input').val()))+'$');
+       $('.you-pay').html($(this).val()+'$');
+    });
+    $('.amount-input').on('change',function(){
+       $('.ten-percent-amount').html($(this).val()+"$");
+       $('.fee-amount').html((parseInt($(this).val()) + parseInt($('#slider').val()))+'$')
     });
 });

@@ -1,6 +1,17 @@
+body{
+    background-color: rgba(248, 248, 248, 0.80);
+}
+
+.container-fluid{
+    font-family: 'Lato',Arial !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lato',Arial !important;
+}
+
 input[type=text],input[type=url],input[type=number],textarea,select{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     resize: none;
 }
@@ -8,6 +19,11 @@ input[type=text],input[type=url],input[type=number],textarea,select{
 input[type=text],input[type=url],input[type=number],select{
     height: 3em;
     padding-left: 15px;
+}
+.search-input{
+    /*margin-left: 4%;*/
+    width: 80% !important;
+    display: inline-block;
 }
 option{
     border: solid;
@@ -18,6 +34,38 @@ textarea{
 }
 input[disabled=true],input[disabled=disabled]{
     background-color: rgba(205, 207, 203, 0.90);
+}
+
+.slider-row{
+    display: none;
+    margin-top: 4em !important;
+}
+
+.empty-span{
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.search-image-btn{
+    width: 15%;
+    display: inline-block;
+    height: 3em;
+    margin-left: 0px;
+}
+
+.search-image{
+    width: 40%;
+    display: inline;
+    height: 150px;
+}
+.arrow-key{
+    width: 6%;
+    display: inline;
+}
+.search-image-label{
+    width: 40%;
+    padding: 0.6em;
+    background-color: rgba(229, 230, 228, 0.90);
 }
 
 span.checkbox-material{
@@ -33,6 +81,14 @@ span.checkbox-material{
 .input-div{
     width: 39%;
     display: none;
+}
+
+.approximate-row{
+    /*margin-bottom: 4em !important;*/
+    margin-top: 4em !important;
+}
+.delivery-fee-row{
+    margin-bottom: 4em !important;
 }
 
 .alert{
@@ -82,6 +138,8 @@ div.radio{
     width: 100px;
     height: 100px;
 }
+
+
 .image-container{
     position: relative;
 }
@@ -102,6 +160,16 @@ div.radio{
     width: 100%;
     margin-right: 0px;
 }
+
+.you-pay {
+    color: green;
+}
+
+.accurate-to-be{
+    color: rgba(161, 159, 157, 0.90);
+    font-size: 0.9em;
+}
+
 .currency{
     width: 100%;
     margin-left: 0px;
@@ -136,7 +204,7 @@ div.radio{
     font-size: 20px;
 }
 .fee-amount{
-    color: darkred;
+    /*color: darkred;*/
     margin-left: 15px;
 }
 .totally-pay-div{

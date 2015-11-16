@@ -10,7 +10,7 @@
     <link href="css/global/jquery.dropdown.css" rel="stylesheet">
     <link href="css/global/jquery-ui.css" rel="stylesheet">
     <link href="css/new-order/new-order.css" rel="stylesheet">
-
+    <!--<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>-->
 </head>
 <body>
     <div class="container-fluid">
@@ -39,9 +39,39 @@
                 <div class="row">
                     <div class="col-md-4"></div>
                     <div class="text-center col-md-8">
-                        <div class="col-md-12">
+                        <!--<div class="col-md-10">-->
                             <input type="text" class="search-input" >
-                        </div>
+                        <!--</div>-->
+                        <!--<div class="col-md-2">-->
+                            <a href="#">
+                                <img src="img/new-order/search-img.png" class="search-image-btn" alt="">
+                            </a>
+                        <!--</div>-->
+                    </div>
+                </div>
+                <div class="row slider-row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8 ">
+                        <a href="#">
+                            <img src="img/new-order/back.png" alt="" class="prev-arrow arrow-key">
+                        </a>
+                        <a href="#" class="first">
+                            <img src="img/new-order/kafsh.jpg" class="first-search-image search-image" alt="">
+                        </a>
+                        <span class="empty-span">
+                        </span>
+                        <a href="#" class="second">
+                            <img src="img/new-order/d%20(2).png" class="second-search-image search-image" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/new-order/next.png" alt="" class="next-arrow arrow-key">
+                        </a>
+                        <br>
+                    <span style="padding-left: 7%"></span>
+                    <label class="search-image-label text-center first-search-image-label">nexus5</label>
+                    <span class="empty-span">
+                    </span>
+                    <label class="search-image-label text-center second-search-image-label">nexus5</label>
                     </div>
                 </div>
                 <div class="row or-div text-center">
@@ -62,7 +92,7 @@
                     </div>
                     <div class="col-md-8">
                         <div class="col-md-12">
-                            <input type="text" placeholder="write the name of your product exactly">
+                            <input type="text" class="what-u-want-input" placeholder="write the name of your product exactly">
                         </div>
                     </div>
                 </div>
@@ -137,7 +167,7 @@
                     </div>
                     <div class="col-md-8 image-container">
                         <div class="col-md-12">
-                            <input type="file" onchange="readURL(this);"  accept="image/*" id="fileInput" name="fileInput" style="display: none;" />
+                            <input type="file" onchange="readURL(this);" onclick="readURL(this);"  accept="image/*" id="fileInput" name="fileInput" style="display: none;" />
                             <a class="upload-image-link" href="#">
                                 <img src="img/new-order/dotted1.png" uploaded="false" id='user-image' class="upload-image" alt=""/>
                                 <img src="img/new-order/close_button_1-512.png" alt="" class="top-image"/>
@@ -146,15 +176,15 @@
 
                     </div>
                 </div>
-                <div class="row">
+                <div class="row approximate-row">
                     <div class="col-md-4">
                         <label class="form-label">Approximate price of product</label>
                     </div>
                     <div class="col-md-8">
-                        <div class="col-md-4">
-                            <input type="number"  placeholder="Amount" class="amount-input" value="0"/>
+                        <div class="col-md-3">
+                            <input type="number"  placeholder="Amount" class="amount-input" value="10"/>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <select class="select currency"  placeholder="Currency">
                               <!--<option></option>-->
                               <option>Dollar</option>
@@ -162,10 +192,12 @@
                               <option>Euro</option>
                             </select>
                         </div>
-                        <div class="col-md-7"></div>
+                        <div class="col-md-6">
+                            <label class="accurate-to-be"><i>Please be as accurate as it can be</i></label>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row delivery-fee-row">
                     <div class="col-md-4">
                         <label class="form-label">Delivery Fee</label>
                     </div>
@@ -182,7 +214,7 @@
                         <!--</div>-->
                         <div class="slider-div">
                             <div class="col-md-10">
-                                <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" tabindex="0" id="slider"/>
+                                <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" tabindex="0"  id="slider"/>
                             </div>
                             <div class="col-md-2">
                                 <label class="delivery-fee-label">
@@ -210,7 +242,7 @@
                         <label class="form-label">To be delivered where?</label>
                     </div>
                     <div class="col-md-8">
-                        <input type="text">
+                        <input type="text" id="delivered-where-input">
                     </div>
                 </div>
                 <div class="row">
@@ -225,7 +257,7 @@
                     <div class="col-md-4"></div>
                     <div class="col-md-8 text-center">
                         <div class="col-md-12 ">
-                            <div class="btn btn-material-light-blue-600">submit order</div>
+                            <div class="btn btn-material-cyan-400">submit order</div>
                         </div>
                     </div>
                 </div>
@@ -253,11 +285,11 @@
         });
     </script>
     <script>
+//        $(document).ready(function(){
+//        });
         function readURL(input){
-    //            $('#user-image').attr('src',$('#fileInput').val());
             if($('#user-image').attr('uploaded')==='false'){
                 if (input.files && input.files[0]) {
-                    console.log("bale");
                     var reader = new FileReader();
                     reader.onload = function (e) {
                       $('#user-image')
@@ -270,8 +302,7 @@
 
                 }
             }
-
-            };
+        };
     </script>
 </body>
 </html>

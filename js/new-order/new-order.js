@@ -89,7 +89,7 @@ $(document).ready(function(){
         $('.or-div').animate({height: "0px"},"slow",function(){
             $(this).css('display','none');
         });
-    });     
+    });
     $('.first').on('click',function(){
         var name = $('.first-search-image-label').html();
         var picsrc = $('.first-search-image').attr('src');

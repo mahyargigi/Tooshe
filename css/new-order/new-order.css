@@ -39,6 +39,7 @@ input[disabled=true],input[disabled=disabled]{
 .slider-row{
     display: none;
     margin-top: 4em !important;
+    margin-bottom: 5% !important;
 }
 
 .empty-span{

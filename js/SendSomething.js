@@ -35,5 +35,6 @@ $(document).ready(function(){
     input2.onkeypress = function(){
         $('#source-input').geocomplete();
     }
+    $('#slider-value').html($('#slider').val()+"$");
 
 });

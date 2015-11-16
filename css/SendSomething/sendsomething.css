@@ -1,70 +1,100 @@
+.container-fluid{
+    font-family: 'Lato',Arial !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lato',Arial !important;
+}
+.row{
+    margin-bottom: 2% ;
+}
+
 form{
     background-color: #f9f9f9;
     /*border-radius: 20px;*/
     border: solid;
     border-width: 20px;
     border-color: rgba(209, 209, 209, 0.84);
-    padding-bottom: 20px;
+    padding: 20px;
 }
-#tambr-img{
-    position: relative;
-    left: -200px;
+.tambr-img{
+    /*width: 200%;*/
+    /*display: inline;*/
+    /*position: relative;*/
+    /*right: 200px;*/
+    position: absolute;
+    left: -150px;
+    /*margin-right: 10px;*/
+    /*left: -120%;*/
+}
+
+.send-something-header{
+    font-weight: 600 !important;
+    font-size: 30px;
+}
+.what-header{
+    display: inline;
+    margin-right: 2%;
+}
+.what-input{
+    width: 38%;
+}
+.second-line-span , .third-line-span {
+    display: inline-block;
+}
+.third-line-span{
+    vertical-align: top;
+}
+
+.empty-span{
+    width: 2%;
+}
+.second-line-span input{
+    width: 100%;
+}
+.dest-span , .source-span{
+    width: 22%;
+}
+.from-date-span , .to-date-span{
+    width: 20%;
+}
+.empty-span-2{
+    width: 6%;
+}
+.how-much-span{
+    width: 50%;
+}
+.how-much-label{
+    font-size: 20px;
+}
+.find-passengers-span{
+    width: 34%;
+}
+
+#slider{
+    margin-top: 5%;
+}
+#slider-value{
+    font-size: 20px;
 }
 #find-passengers-id{
+    width: 100%;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
     border-radius: 10px;
-    height: 4em;
-    width: 240px;
-    margin-left: 20px;
-    position: relative;
-    top: 10px;
-    background-color: rgba(0, 184, 186, 0.84);
-}
-#what-div{
-    margin-top: 20px;
-}
-#what-header{
-    display: inline;
-    margin-right: 5px;
-}
-#what-input{
-    width: 275px;
-}
-.second-line-input{
-    width: 110px;
-}
-.location-input{
-    width: 150px;
-}
-.input-label{
-    margin-left: 10px;
-}
-label{
-    font-weight: 100;
-}
-#how-much-label{
-    font-size: 1.7em;
-}
-#is-ok-label{
-    font-size: 1.3em;
-}
-#button-label{
-    position: relative ;
-    top: 15px;
 }
 
+/*#slider{*/
+    /*width: 80%;*/
+/*}*/
 
-#slider-value{
-    font-size: 2em;
-    margin-top: 5px;
-    color: rgba(194, 135, 136, 0.93);
-}
+/*slider css*/
 
 input[type=range]{
     -webkit-appearance: none;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
-    width: 300px;
+    /*width: 100px;*/
     height: 5px;
     background: rgba(255, 146, 146, 0.84);
     border: none;
@@ -87,7 +117,7 @@ input[type=range]:focus {
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
-    width: 300px;
+    /*width: 100px;*/
     height: 5px;
     background: rgba(255, 146, 146, 0.84);
     border: none;

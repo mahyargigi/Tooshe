@@ -3,105 +3,82 @@
 <head lang="eng">
     <meta charset="UTF-8">
     <link href="css/global/bootstrap.min.css" rel="stylesheet">
-    <link href="css/global/roboto.min.css" rel="stylesheet">
+    <!--<link href="css/global/roboto.min.css" rel="stylesheet">-->
     <link href="css/global/material.min.css" rel="stylesheet">
-    <link href="css/global/ripples.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/global/nouislider.min.css" rel="stylesheet">
+    <link href="css/global/material-fullpalette.min.css" rel="stylesheet">
+    <!--<link href="css/global/ripples.min.css" rel="stylesheet">-->
+    <!--<link href="css/main.css" rel="stylesheet">-->
+    <!--<link href="css/global/nouislider.min.css" rel="stylesheet">-->
     <link href="css/global/bootstrap-material-datepicker.css" rel="stylesheet">
-    <link href="css/SendSomething.css" rel="stylesheet">
-    <link href="css/global/font.css" rel="stylesheet">
-    <!--<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">-->
-    <!-- Material Design icon font -->
-    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <!--<link href="css/SendSomething.css" rel="stylesheet">-->
+    <link href="css/SendSomething/sendsomething.css" rel="stylesheet">
+    <!--<link href="css/global/font.css" rel="stylesheet">-->
     <title>Send-something</title>
 </head>
 <body>
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-7">
-            <form action="" class="form-horizontal" style="margin-top: 20px">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <form action="">
                 <div class="row">
                     <div class="col-md-2">
-                        <img src="img/send-something-icon.png" id="tambr-img" >
+                        <img src="img/send-something-icon.png" class="tambr-img" >
                     </div>
                     <div class="col-md-10">
-                        <div class="row">
-                            <h2>Send something</h2>
-                        </div>
-                        <!--<br>-->
-                        <div class="row" id="what-div">
-                            <!--<div class="col-md-2">-->
-                                <h4 id="what-header">What?</h4>
-                            <!--</div>-->
-                            <!--<div class="col-md-5">-->
-                                <!--<input type="text" name="what!">-->
-                                <!--<div class="form-group">-->
-                                    <input  class="input-lg" id="what-input" type="text" placeholder="What do you want to send?">
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="col-md-5"></div><br>-->
-                        </div>
+                        <h2 class="send-something-header">Send something</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-11">
-                        <!--<div class="col-md-4"></div>-->
-                        <div class="row">
-                            <div class="col-md-1"></div>
-                            <div class="col-md-3">
-                                <label class="input-label">TO</label></br>
-                                <!--<div class="form-group">-->
-                                    <input type="text" placeholder="location" class="input-lg location-input" id="dest-input">
-                                <!--</div>-->
-                            </div>
-                            <!--<div class="col-md-1"></div>-->
-                            <div class="col-md-3">
-                                <label class="input-label">From</label></br>
-                                <!--<div class="form-group">-->
-                                    <input type="text" placeholder="location" class="input-lg location-input" id="source-input">
-                                <!--</div>-->
-                            </div>
-                            <div class="col-md-5">
-                                <div class="row">
-                                    </br>
-                                    <!--<div class="col-md-1"></div>-->
-                                    <div class="col-md-5">
-                                        <input type="text" class="input-lg second-line-input" id="fromDate" placeholder="FromDate">
-                                    </div>
-                                    <div class="col-md-5">
-                                        <input type="text" class="input-lg second-line-input" id="toDate" placeholder="ToDate">
-                                    </div>
-                                    <div class="col-md-3"></div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-10">
+                        <h4 class="what-header">What?</h4>
+                        <input  class="input-lg what-input" type="text" placeholder="What do you want to send?">
                     </div>
                 </div>
-                </br>
-                </br>
-                <div class="row" style="margin-bottom: 20px;">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-6">
-                        <label id="how-much-label">How much</label>
-                        </br>
-                        <label id="is-ok-label">is okay?</label>
-                        </br>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-10">
+                        <span class="second-line-span dest-span">
+                            <label class="input-label">TO</label><br>
+                            <input type="text" placeholder="location" class="input-lg location-input" id="dest-input">
+                        </span>
+                        <span class="second-line-span empty-span"></span>
+                        <span class="second-line-span source-span">
+                            <label class="input-label">From</label><br>
+                            <input type="text" placeholder="location" class="input-lg location-input" id="source-input">
+                        </span>
+                        <span class="second-line-span empty-span"></span>
+                        <span class="second-line-span from-date-span">
+                            <input type="text" class="input-lg second-line-input" id="fromDate" placeholder="FromDate">
+                        </span>
+                        <span class="second-line-span empty-span"></span>
+                        <span class="second-line-span to-date-span">
+                            <input type="text" class="input-lg second-line-input" id="toDate" placeholder="ToDate">
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                        <span class="third-line-span empty-span-2"></span>
+                        <span class="third-line-span how-much-span">
+                            <label class="how-much-label">How much</label><br>
+                            <label class="is-ok-label">is okay?</label><br>
                             <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0" id="slider"/>
-                        <div id="slider-value"></div>
-                    </div>
-                    <div class="col-md-5">
-                        <a href="javascript:void(0)" class="btn btn-info btn-lg" id="find-passengers-id"><label id="button-label">Find Passengers!</label></a></br>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Let my request be searchable for everyone
-                                (Your name is still private)
-                            </label>
-                        </div>
-                    </div>
+                            <div id="slider-value"></div>
+                        </span>
+                        <span class="third-line-span empty-span"></span>
+                        <span class="third-line-span find-passengers-span">
+                            <a href="javascript:void(0)" class="btn btn-info btn-lg btn-material-cyan-600" id="find-passengers-id"><label id="button-label">Find Passengers!</label></a></br>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"><span>Let my request be searchable for everyone
+                                    (Your name is still private)</span>
+                                </label>
+                            </div>
+                        </span>
+                    <!--</div>-->
                 </div>
             </form>
         </div>

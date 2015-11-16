@@ -57,6 +57,7 @@ $(document).ready(function(){
         console.log(input);
         if(true){
             $('.slider-row').css('display','block');
+            $('.or-div').css('display','block');
         }
     }
     var src1 = $('.first-search-image').attr('src');
@@ -88,7 +89,7 @@ $(document).ready(function(){
         $('.or-div').animate({height: "0px"},"slow",function(){
             $(this).css('display','none');
         });
-    });
+    });     
     $('.first').on('click',function(){
         var name = $('.first-search-image-label').html();
         var picsrc = $('.first-search-image').attr('src');
@@ -129,7 +130,7 @@ $(document).ready(function(){
             $(this).attr("checked","");
         }
     });
-    $('.upload-image-link').on('click',function(){
+    $('.upload-image').on('click',function(){
         if($('#user-image').attr('uploaded')==='false'){
             document.getElementById("fileInput").click();
         }
@@ -177,11 +178,11 @@ $(document).ready(function(){
      var autocomplete = new google.maps.places.Autocomplete(input, options);
     }
 
-    var input1 = document.getElementById('delivered-where-input');
-    input1.onkeypress = initialize(input1);
+    var input2 = document.getElementById('delivered-where-input');
+    input2.onkeypress = initialize(input2);
 
    $('.you-pay').html($('#slider').val()+'$');
-    console.log("slider-amount:"+$('slider').val());
+//    console.log("slider-amount:"+$('slider').val());
 
     $('.fee-amount').html((parseInt($('.amount-input').val()) + parseInt($('#slider').val()))+'$');
     $('#slider').on('change',function(){

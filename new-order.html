@@ -167,7 +167,7 @@
                     </div>
                     <div class="col-md-8 image-container">
                         <div class="col-md-12">
-                            <input type="file" onchange="readURL(this);" onclick="readURL(this);"  accept="image/*" id="fileInput" name="fileInput" style="display: none;" />
+                            <input type="file" onchange="readURL(this);"   accept="image/*" id="fileInput" name="fileInput" style="display: none;" />
                             <a class="upload-image-link" href="#">
                                 <img src="img/new-order/dotted1.png" uploaded="false" id='user-image' class="upload-image" alt=""/>
                                 <img src="img/new-order/close_button_1-512.png" alt="" class="top-image"/>
@@ -296,6 +296,7 @@
                         .attr('src', e.target.result);
                       $('#user-image')
                         .attr('uploaded', 'true');
+//                        console.log("picture uploaded!");
                     };
                     reader.readAsDataURL(input.files[0]);
                     $('#user-image').attr('uploaded','true');

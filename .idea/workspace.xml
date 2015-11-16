@@ -53,7 +53,7 @@
       <file leaf-file-name="new-order.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new-order.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="304" column="0" selection-start="14869" selection-end="14869" vertical-scroll-proportion="-38.423077" vertical-offset="4169" max-vertical-offset="5321">
+            <state line="169" column="84" selection-start="8348" selection-end="8348" vertical-scroll-proportion="-4.423077" vertical-offset="2758" max-vertical-offset="5338">
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#12;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -64,7 +64,7 @@
       <file leaf-file-name="new-order.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/new-order/new-order.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="26" selection-start="5314" selection-end="5314" vertical-scroll-proportion="0.5834564" vertical-offset="2070" max-vertical-offset="3434">
+            <state line="91" column="12" selection-start="3219" selection-end="3219" vertical-scroll-proportion="0.77400297" vertical-offset="1023" max-vertical-offset="3451">
               <folding />
             </state>
           </provider>
@@ -1120,14 +1120,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6707153" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6707153" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1236,7 +1236,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/new-order.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="304" column="0" selection-start="14869" selection-end="14869" vertical-scroll-proportion="-38.423077" vertical-offset="4169" max-vertical-offset="5321">
+        <state line="169" column="84" selection-start="8348" selection-end="8348" vertical-scroll-proportion="-4.423077" vertical-offset="2758" max-vertical-offset="5338">
           <folding>
             <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#12;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1245,7 +1245,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/new-order/new-order.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="26" selection-start="5314" selection-end="5314" vertical-scroll-proportion="0.5834564" vertical-offset="2070" max-vertical-offset="3434">
+        <state line="91" column="12" selection-start="3219" selection-end="3219" vertical-scroll-proportion="0.77400297" vertical-offset="1023" max-vertical-offset="3451">
           <folding />
         </state>
       </provider>

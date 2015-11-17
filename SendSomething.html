@@ -25,7 +25,7 @@
             <form action="">
                 <div class="row">
                     <div class="col-md-2">
-                        <img src="img/send-something-icon.png" class="tambr-img" >
+                        <img src="img/sendsomething/send-something-icon.png" class="tambr-img" >
                     </div>
                     <div class="col-md-10">
                         <h2 class="send-something-header">Send something</h2>
@@ -36,21 +36,59 @@
                     <div class="col-md-10">
                         <h4 class="what-header">What?</h4>
                         <input  class="input-lg what-input" type="text" placeholder="What do you want to send?">
+                        <h4 class="weight-header">Weight(Kg):</h4>
+                        <input  class="input-lg weight-input" type="number" value="0" min="0" max="40">
+
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-10">
+                         <h4 class="upload-header">Upload some photos of it:</h4>
+                         <input type="file" onchange="readURL1(this);"   accept="image/*" id="fileInput1" name="fileInput" style="display: none;" />
+                         <input type="file" onchange="readURL2(this);"   accept="image/*" id="fileInput2" name="fileInput" style="display: none;" />
+                         <input type="file" onchange="readURL3(this);"   accept="image/*" id="fileInput3" name="fileInput" style="display: none;" />
+                        <span class="image-container">
+                            <a class="upload-image-link1" href="#">
+                                <img src="img/sendsomething/dotted1.png" uploaded="false" id='user-image1' class="upload-image1" alt=""/>
+                                <img src="img/sendsomething/close_button_1-512.png" alt="" class="top-image1"/>
+                            </a>
+                        </span>
+                        <span class="image-container">
+                            <a class="upload-image-link2" href="#">
+                                <img src="img/sendsomething/dotted1.png" uploaded="false" id='user-image2' class="upload-image2" alt=""/>
+                                <img src="img/sendsomething/close_button_1-512.png" alt="" class="top-image2"/>
+                            </a>
+                        </span>
+                        <span class="image-container">
+                            <a class="upload-image-link3" href="#">
+                                <img src="img/sendsomething/dotted1.png" uploaded="false" id='user-image3' class="upload-image3" alt=""/>
+                                <img src="img/sendsomething/close_button_1-512.png" alt="" class="top-image3"/>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--<div class="col-md-2"></div>-->
+                    <!--<div class="col-md-10">-->
+                        <!--<br>-->
+                        <span class="third-line-span empty-span-2"></span>
+                        <span class="second-line-span to-span">
+                            <label class="input-label">TO</label>
+                        </span>
                         <span class="second-line-span dest-span">
-                            <label class="input-label">TO</label><br>
-                            <input type="text" placeholder="location" class="input-lg location-input" id="dest-input">
+                            <input type="text" placeholder="To location" class="input-lg location-input" id="dest-input">
                         </span>
                         <span class="second-line-span empty-span"></span>
+                        <span class="second-line-span from-span">
+                            <label class="input-label">From</label>
+                        </span>
                         <span class="second-line-span source-span">
-                            <label class="input-label">From</label><br>
-                            <input type="text" placeholder="location" class="input-lg location-input" id="source-input">
+                            <input type="text" placeholder="From location" class="input-lg location-input" id="source-input">
                         </span>
-                        <span class="second-line-span empty-span"></span>
+                        <div class="second-line-span empty-span inline-span">
+                            <span style="visibility: hidden">a</span>
+                        </div>
                         <span class="second-line-span from-date-span">
                             <input type="text" class="input-lg second-line-input" id="fromDate" placeholder="FromDate">
                         </span>
@@ -58,9 +96,13 @@
                         <span class="second-line-span to-date-span">
                             <input type="text" class="input-lg second-line-input" id="toDate" placeholder="ToDate">
                         </span>
-                    </div>
+                    <!--</div>-->
                 </div>
                 <div class="row">
+                    <!--<div class="col-md-2">-->
+
+                    <!--</div>-->
+                    <!--<div class="col-md-10">-->
                         <span class="third-line-span empty-span-2"></span>
                         <span class="third-line-span how-much-span">
                             <label class="how-much-label">How much</label><br>
@@ -70,7 +112,8 @@
                         </span>
                         <span class="third-line-span empty-span"></span>
                         <span class="third-line-span find-passengers-span">
-                            <a href="javascript:void(0)" class="btn btn-info btn-lg btn-material-cyan-600" id="find-passengers-id"><label id="button-label">Find Passengers!</label></a></br>
+                            <!--<a href="javascript:void(0)"  class="btn btn-info btn-lg btn-material-cyan-600" id="find-passengers-id"><label style="width: 100%;" id="button-label">Save & find passenger!</label></a></br>-->
+                            <div class="btn btn-info btn-lg btn-material-cyan-600" style="overflow: hidden;white-space: normal;" id="find-passengers-id">Save & find passenger!</div>
                             <div class="checkbox">
                                 <label>
                                     <input type="checkbox"><span>Let my request be searchable for everyone
@@ -78,6 +121,8 @@
                                 </label>
                             </div>
                         </span>
+                    <!--</div>-->
+
                     <!--</div>-->
                 </div>
             </form>
@@ -99,12 +144,67 @@
     <script src="js/global/nouislider.min.js"></script>
     <script src="js/global/bootstrap-mterial-datepicker.js"></script>
     <!--<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>-->
-    <script src="js/SendSomething.js"></script>
+    <script src="js/sendsomething/SendSomething.js"></script>
     <script>
         $(document).ready(function(){
             $.material.init();
         });
     </script>
+    <script>
+    //        $(document).ready(function(){
+    //        });
+            function readURL1(input){
+                if($('#user-image1').attr('uploaded')==='false'){
+                    if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                          $('#user-image1')
+                            .attr('src', e.target.result);
+                          $('#user-image1')
+                            .attr('uploaded', 'true');
+    //                        console.log("picture uploaded!");
+                        };
+                        reader.readAsDataURL(input.files[0]);
+                        $('#user-image1').attr('uploaded','true');
+
+                    }
+                }
+            };
+            function readURL2(input){
+                if($('#user-image2').attr('uploaded')==='false'){
+                    if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                          $('#user-image2')
+                            .attr('src', e.target.result);
+                          $('#user-image2')
+                            .attr('uploaded', 'true');
+    //                        console.log("picture uploaded!");
+                        };
+                        reader.readAsDataURL(input.files[0]);
+                        $('#user-image2').attr('uploaded','true');
+
+                    }
+                }
+            };
+            function readURL3(input){
+                if($('#user-image3').attr('uploaded')==='false'){
+                    if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                          $('#user-image3')
+                            .attr('src', e.target.result);
+                          $('#user-image3')
+                            .attr('uploaded', 'true');
+    //                        console.log("picture uploaded!");
+                        };
+                        reader.readAsDataURL(input.files[0]);
+                        $('#user-image3').attr('uploaded','true');
+
+                    }
+                }
+            };
+        </script>
 </body>
 
 </html>

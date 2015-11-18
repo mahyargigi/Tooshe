@@ -3,6 +3,10 @@
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Lato',Arial !important;
+    font-size: 0.9em;
+}
+label{
+    font-size: 0.9em;
 }
 .row{
     margin-bottom: 3% ;
@@ -140,7 +144,7 @@ form{
     font-size: 20px;
 }
 .find-passengers-span{
-    width: 34%;
+    width: 33%;
 }
 
 #slider{
@@ -154,6 +158,12 @@ form{
     padding-top: 1.2em;
     padding-bottom: 1.2em;
     border-radius: 10px;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.let-my-span{
+    margin-left: 5px;
 }
 
 /*#slider{*/

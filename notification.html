@@ -10,246 +10,342 @@
     <!--<link href="css/nouislider.min.css" rel="stylesheet">-->
     <!--<link href="css/bootstrap-material-datepicker.css" rel="stylesheet">-->
     <link href="css/notification/notification.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href="css/global/font.css" rel="stylesheet">
+    <link href="css/footer/footer.css" rel="stylesheet">
     <title></title>
 </head>
 <body>
+    <div class="container-fluid">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h1>Notifications</h1>
+            <ul class="nav nav-tabs">
+                <li class="nav-li active"><a data-toggle="tab" href="#all">All</a></li>
+                <li class="nav-li"><a data-toggle="tab" href="#my-orders">my Orders</a></li>
+                <li class="nav-li"><a data-toggle="tab" href="#my-flights">my flights<span class="badge">3</span></a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="all" class="tab-pane fade in active">
+                    <ul>
+                        <li>
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <div class="row-picture">
+                                        <img src="img/notification/carrying.png" class="circle top">
+                                        <img class="circle" src="img/global/mahyar.jpg" alt="icon">
+                                    </div>
+                                    <div class="row-content">
+                                        <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
+                                        </br><p class="list-group-item-text black single-notification">Amirali has asked you to buy persian green carpet for him from Ganjeh</p>
+                                        <a href="#" class="red">decline</a>
+                                        <a href="#" class="green">Accept</a>
+                                        <a href="#" class="link see-detail">approve the delivery</a>
+                                    </div>
+                                </div>
+                                <div class="list-group-separator"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <div class="row-picture">
+                                        <img src="img/notification/accepted.png" class="circle top">
+                                        <img class="circle" src="img/global/mahyar.jpg" alt="icon">
+                                    </div>
+                                    <div class="row-content">
+                                        <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
+                                        </br><p class="list-group-item-text black single-notification">Masoud has asked you to bring a documents</p>
+                                        <a href="#" class="red">decline</a>
+                                        <a href="#" class="green">Accept</a>
+                                        <a href="#" class="link see-detail">see detailed</a>
+                                    </div>
+                                </div>
+                                <div class="list-group-separator"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <div class="row-picture">
+                                        <img src="img/notification/declined.png" class="circle top">
+                                        <img class="circle bottom" src="img/global/mahyar.jpg" alt="icon">
+                                    </div>
+                                    <div class="row-content">
+                                        <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
+                                        </br><p class="list-group-item-text black single-notification" >Great Araghchi accepted to bring you an iphone 6 plus</p>
+                                        <a href="#" class="red">Cancel request</a>
+                                        <a href="#" class="sormeii">Finalize the deal</a>
+                                    </div>
+                                </div>
+                                <div class="list-group-separator"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <span style="font-size: 30px; margin-left: 30px;margin-top: 100px;">seen</span></br>
+                    <ul class="seen-ul">
+                        <li>
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <div class="row-picture">
+                                        <img src="img/notification/declined.png" class="circle top">
+                                        <img class="circle" src="img/global/mahyar.jpg" alt="icon">
+                                    </div>
+                                    <div class="row-content">
+                                        <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
+                                        </br><p class="list-group-item-text gray single-notification">Amirali has asked you to buy persian green carpet for him from Ganjeh</p>
+                                        <a href="#" class="link">write a review about it</a>
+                                    </div>
+                                </div>
+                                <div class="list-group-separator"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <div class="row-picture">
+                                        <img src="img/notification/accepted.png" class="circle top">
+                                        <img class="circle" src="img/global/mahyar.jpg" alt="icon">
+                                    </div>
+                                    <div class="row-content">
+                                        <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
+                                        </br><p class="list-group-item-text gray single-notification">Danika has accepted to bring you an iphone 6 plus</p>
+                                        <!--<span class="label label-danger" style="float: right ; position: relative ; left:60px ; z-index:-1 ">Danger</span>-->
+                                        <a href="#" class="red">Cancel request</a>
+                                        <a href="#" class="sormeii">Finalize the deal</a>
+                                    </div>
+                                </div>
+                                <div class="list-group-separator"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <div class="row-picture">
+                                        <img src="img/notification/accepted%20(2).png" class="circle top">
+                                        <img class="circle" src="img/global/mahyar.jpg" alt="icon">
+                                    </div>
+                                    <div class="row-content">
+                                        <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
+                                        </br><p class="list-group-item- text gray single-notification" >Danika has accepted to bring you an iphone 6 plus</p>
+                                        <a href="#" class="link">write a review about it</a>
+                                    </div>
+                                </div>
+                                <div class="list-group-separator"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="my-orders" class="tab-pane fade">
+                    <ul>
+                        <li>
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <div class="row-picture">
+                                        <img src="img/notification/accepted%20(2).png" class="circle top">
 
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-        <h1>Notifications</h1>
-        <ul class="nav nav-tabs">
-            <li class="nav-li active"><a data-toggle="tab" href="#all">All</a></li>
-            <li class="nav-li"><a data-toggle="tab" href="#my-orders">my Orders</a></li>
-            <li class="nav-li"><a data-toggle="tab" href="#my-flights">my flights<span class="badge">3</span></a></li>
-        </ul>
-        <div class="tab-content">
-            <div id="all" class="tab-pane fade in active">
-                <ul>
-                    <li>
-                        <div class="list-group">
-                            <div class="list-group-item">
-                                <div class="row-picture">
-                                    <img src="img/notification/carrying.png" class="circle top">
-                                    <img class="circle" src="img/global/mahyar.jpg" alt="icon">
+                                        <img class="circle" src="img/global/mahyar.jpg" alt="icon">
+                                    </div>
+                                    <div class="row-content">
+                                        <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
+                                        </br><p class="list-group-item-text black single-notification">Amirali has asked you to buy persian green carpet for him from Ganjeh</p>
+                                        <a href="#" class="red">decline</a>
+                                        <a href="#" class="green">Accept</a>
+                                        <a href="#" class="link see-detail">see detailed</a>
+                                    </div>
                                 </div>
-                                <div class="row-content">
-                                    <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
-                                    </br><p class="list-group-item-text black single-notification">Amirali has asked you to buy persian green carpet for him from Ganjeh</p>
-                                    <a href="#" class="red">decline</a>
-                                    <a href="#" class="green">Accept</a>
-                                    <a href="#" class="link see-detail">approve the delivery</a>
-                                </div>
+                                <div class="list-group-separator"></div>
                             </div>
-                            <div class="list-group-separator"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-group">
-                            <div class="list-group-item">
-                                <div class="row-picture">
-                                    <img src="img/notification/accepted.png" class="circle top">
-                                    <img class="circle" src="img/global/mahyar.jpg" alt="icon">
+                        </li>
+                        <li>
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <div class="row-picture">
+                                        <img src="img/notification/accepted.png" class="circle top">
+                                        <img class="circle" src="img/global/mahyar.jpg" alt="icon">
+                                    </div>
+                                    <div class="row-content">
+                                        <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
+                                        </br><p class="list-group-item-text black single-notification">Masoud has asked you to bring a documents</p>
+                                        <a href="#" class="red">decline</a>
+                                        <a href="#" class="green">Accept</a>
+                                        <a href="#" class="link see-detail">see detailed</a>
+                                    </div>
                                 </div>
-                                <div class="row-content">
-                                    <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
-                                    </br><p class="list-group-item-text black single-notification">Masoud has asked you to bring a documents</p>
-                                    <a href="#" class="red">decline</a>
-                                    <a href="#" class="green">Accept</a>
-                                    <a href="#" class="link see-detail">see detailed</a>
-                                </div>
+                                <div class="list-group-separator"></div>
                             </div>
-                            <div class="list-group-separator"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-group">
-                            <div class="list-group-item">
-                                <div class="row-picture">
-                                    <img src="img/notification/declined.png" class="circle top">
-                                    <img class="circle bottom" src="img/global/mahyar.jpg" alt="icon">
+                        </li>
+                        <li>
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <div class="row-picture">
+                                        <img src="img/notification/declined.png" class="circle top">
+                                        <img class="circle bottom" src="img/global/mahyar.jpg" alt="icon">
+                                    </div>
+                                    <div class="row-content">
+                                        <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
+                                        </br><p class="list-group-item-text black single-notification" >Great Araghchi accepted to bring you an iphone 6 plus</p>
+                                        <a href="#" class="red">Cancel request</a>
+                                        <a href="#" class="sormeii">Finalize the deal</a>
+                                    </div>
                                 </div>
-                                <div class="row-content">
-                                    <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
-                                    </br><p class="list-group-item-text black single-notification" >Great Araghchi accepted to bring you an iphone 6 plus</p>
-                                    <a href="#" class="red">Cancel request</a>
-                                    <a href="#" class="sormeii">Finalize the deal</a>
-                                </div>
+                                <div class="list-group-separator"></div>
                             </div>
-                            <div class="list-group-separator"></div>
-                        </div>
-                    </li>
-                </ul>
-                <span style="font-size: 30px; margin-left: 30px;margin-top: 100px;">seen</span></br>
-                <ul class="seen-ul">
-                    <li>
-                        <div class="list-group">
-                            <div class="list-group-item">
-                                <div class="row-picture">
-                                    <img src="img/notification/declined.png" class="circle top">
-                                    <img class="circle" src="img/global/mahyar.jpg" alt="icon">
+                        </li>
+                    </ul>
+                </div>
+                <div id="my-flights" class="tab-pane fade">
+                    <ul>
+                        <li>
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <div class="row-picture picture">
+                                        <img src="img/notification/declined.png" class="circle top">
+                                        <img class="circle" src="img/global/mahyar.jpg" alt="icon">
+                                    </div>
+                                    <div class="row-content">
+                                        <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
+                                        </br><p class="list-group-item-text gray single-notification">Amirali has asked you to buy persian green carpet for him from Ganjeh</p>
+                                        <a href="#" class="link">write a review about it</a>
+                                    </div>
                                 </div>
-                                <div class="row-content">
-                                    <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
-                                    </br><p class="list-group-item-text gray single-notification">Amirali has asked you to buy persian green carpet for him from Ganjeh</p>
-                                    <a href="#" class="link">write a review about it</a>
-                                </div>
+                                <div class="list-group-separator"></div>
                             </div>
-                            <div class="list-group-separator"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-group">
-                            <div class="list-group-item">
-                                <div class="row-picture">
-                                    <img src="img/notification/accepted.png" class="circle top">
-                                    <img class="circle" src="img/global/mahyar.jpg" alt="icon">
+                        </li>
+                        <li>
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <div class="row-picture">
+                                        <img src="img/notification/cancelled.png" class="circle top">
+                                        <img class="circle" src="img/global/mahyar.jpg" alt="icon">
+                                    </div>
+                                    <div class="row-content">
+                                        <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
+                                        </br><p class="list-group-item-text gray single-notification">Danika has accepted to bring you an iphone 6 plus</p>
+                                        <!--<span class="label label-danger" style="float: right ; position: relative ; left:60px ; z-index:-1 ">Danger</span>-->
+                                        <a href="#" class="red">Cancel request</a>
+                                        <a href="#" class="sormeii">Finalize the deal</a>
+                                    </div>
                                 </div>
-                                <div class="row-content">
-                                    <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
-                                    </br><p class="list-group-item-text gray single-notification">Danika has accepted to bring you an iphone 6 plus</p>
-                                    <!--<span class="label label-danger" style="float: right ; position: relative ; left:60px ; z-index:-1 ">Danger</span>-->
-                                    <a href="#" class="red">Cancel request</a>
-                                    <a href="#" class="sormeii">Finalize the deal</a>
-                                </div>
+                                <div class="list-group-separator"></div>
                             </div>
-                            <div class="list-group-separator"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-group">
-                            <div class="list-group-item">
-                                <div class="row-picture">
-                                    <img src="img/notification/accepted%20(2).png" class="circle top">
-                                    <img class="circle" src="img/global/mahyar.jpg" alt="icon">
+                        </li>
+                        <li>
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <div class="row-picture">
+                                        <img src="img/notification/accepted%20(2).png" class="circle top">
+                                        <img class="circle" src="img/global/mahyar.jpg" alt="icon">
+                                    </div>
+                                    <div class="row-content">
+                                        <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
+                                        </br><p class="list-group-item- text gray single-notification" >Danika has accepted to bring you an iphone 6 plus</p>
+                                        <a href="#" class="link">write a review about it</a>
+                                    </div>
                                 </div>
-                                <div class="row-content">
-                                    <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
-                                    </br><p class="list-group-item- text gray single-notification" >Danika has accepted to bring you an iphone 6 plus</p>
-                                    <a href="#" class="link">write a review about it</a>
-                                </div>
+                                <div class="list-group-separator"></div>
                             </div>
-                            <div class="list-group-separator"></div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div id="my-orders" class="tab-pane fade">
-                <ul>
-                    <li>
-                        <div class="list-group">
-                            <div class="list-group-item">
-                                <div class="row-picture">
-                                    <img src="img/notification/accepted%20(2).png" class="circle top">
-
-                                    <img class="circle" src="img/global/mahyar.jpg" alt="icon">
-                                </div>
-                                <div class="row-content">
-                                    <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
-                                    </br><p class="list-group-item-text black single-notification">Amirali has asked you to buy persian green carpet for him from Ganjeh</p>
-                                    <a href="#" class="red">decline</a>
-                                    <a href="#" class="green">Accept</a>
-                                    <a href="#" class="link see-detail">see detailed</a>
-                                </div>
-                            </div>
-                            <div class="list-group-separator"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-group">
-                            <div class="list-group-item">
-                                <div class="row-picture">
-                                    <img src="img/notification/accepted.png" class="circle top">
-                                    <img class="circle" src="img/global/mahyar.jpg" alt="icon">
-                                </div>
-                                <div class="row-content">
-                                    <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
-                                    </br><p class="list-group-item-text black single-notification">Masoud has asked you to bring a documents</p>
-                                    <a href="#" class="red">decline</a>
-                                    <a href="#" class="green">Accept</a>
-                                    <a href="#" class="link see-detail">see detailed</a>
-                                </div>
-                            </div>
-                            <div class="list-group-separator"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-group">
-                            <div class="list-group-item">
-                                <div class="row-picture">
-                                    <img src="img/notification/declined.png" class="circle top">
-                                    <img class="circle bottom" src="img/global/mahyar.jpg" alt="icon">
-                                </div>
-                                <div class="row-content">
-                                    <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
-                                    </br><p class="list-group-item-text black single-notification" >Great Araghchi accepted to bring you an iphone 6 plus</p>
-                                    <a href="#" class="red">Cancel request</a>
-                                    <a href="#" class="sormeii">Finalize the deal</a>
-                                </div>
-                            </div>
-                            <div class="list-group-separator"></div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div id="my-flights" class="tab-pane fade">
-                <ul>
-                    <li>
-                        <div class="list-group">
-                            <div class="list-group-item">
-                                <div class="row-picture picture">
-                                    <img src="img/notification/declined.png" class="circle top">
-                                    <img class="circle" src="img/global/mahyar.jpg" alt="icon">
-                                </div>
-                                <div class="row-content">
-                                    <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
-                                    </br><p class="list-group-item-text gray single-notification">Amirali has asked you to buy persian green carpet for him from Ganjeh</p>
-                                    <a href="#" class="link">write a review about it</a>
-                                </div>
-                            </div>
-                            <div class="list-group-separator"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-group">
-                            <div class="list-group-item">
-                                <div class="row-picture">
-                                    <img src="img/notification/cancelled.png" class="circle top">
-                                    <img class="circle" src="img/global/mahyar.jpg" alt="icon">
-                                </div>
-                                <div class="row-content">
-                                    <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
-                                    </br><p class="list-group-item-text gray single-notification">Danika has accepted to bring you an iphone 6 plus</p>
-                                    <!--<span class="label label-danger" style="float: right ; position: relative ; left:60px ; z-index:-1 ">Danger</span>-->
-                                    <a href="#" class="red">Cancel request</a>
-                                    <a href="#" class="sormeii">Finalize the deal</a>
-                                </div>
-                            </div>
-                            <div class="list-group-separator"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-group">
-                            <div class="list-group-item">
-                                <div class="row-picture">
-                                    <img src="img/notification/accepted%20(2).png" class="circle top">
-                                    <img class="circle" src="img/global/mahyar.jpg" alt="icon">
-                                </div>
-                                <div class="row-content">
-                                    <!--<h6 class="list-group-item-heading">Amirali has asked you to buy persian green carpet for him from Ganjeh</h6>-->
-                                    </br><p class="list-group-item- text gray single-notification" >Danika has accepted to bring you an iphone 6 plus</p>
-                                    <a href="#" class="link">write a review about it</a>
-                                </div>
-                            </div>
-                            <div class="list-group-separator"></div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <div class="col-md-2"></div>
     </div>
-    <div class="col-md-2"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="img/global/logo.png" id="logo-img"></br>
+                <label id="footer-shoar">
+                    <i>
+                        we are some people like you.</br>
+                        we just do not like wasting our money.</br>
+                        we also like getting whatever we wish, from anywhere we like :)
+                    </i>
+                </label>
+            </div>
+            <div class="col-md-2">
+                <ul class="footer-list">
+                    <li class="title"><b>Company<br><br></b></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Policies</a></li>
+                    <li><a href="#">Terms & Privacy</a></li>
+                    <li><a href="#">Who didn't support us?!</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul class="footer-list">
+                    <li class="title"><b>discover<br><br></b></li>
+                    <li><a href="#">Trust and safety</a></li>
+                    <li><a href="#">Invite friends</a></li>
+                    <li><a href="#">Tooshe picks</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Business Travel</a></li>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul class="footer-list">
+                    <li class="title"><b>Picking<br><br></b></li>
+                    <li><a href="#">Why Pick</a></li>
+                    <li><a href="#">Hospitality</a></li>
+                    <li><a href="#">Delivery ways</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-list">
+                <div class="row dropdown-div" id="language-dropdown">
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Language
+                      <span class="caret"></span></button>
+                      <ul class="dropdown-menu ">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Persian</a></li>
+                        <li><a href="#">Arabic</a></li>
+                        <li><a href="#">Indian</a></li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="row dropdown-div">
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Currency
+                      <span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">USD</a></li>
+                        <li><a href="#">Irr</a></li>
+                        <li><a href="#">Eur</a></li>
+                        <li><a href="#">Lira</a></li>
+                        <li><a href="#">Dirham</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
 
+          <!--<div class="col-md-6">-->
+            <!--<ul class="legals">-->
+              <!--<li><a href="#">Terms &amp; Conditions</a></li>-->
+              <!--<li><a href="#">Legals</a></li>-->
+            <!--</ul>-->
+          <!--</div>-->
+          <!--<div class="col-md-6 credit">-->
+            <!--<p>Designed &amp; Developed by <a href="http://www.peterfinlan.com/">Peter Finlan</a> exclusively for <a href="http://tympanus.net/codrops/"><em>Codrops</em></a></p>-->
+          <!--</div>-->
+        </div>
+        <div class="row">
+           <!--<h4 id="join-us">Join us on</h4>-->
+        </div>
+        <div class="row">
+            <ul>
+                <li><img></li>
+            </ul>
+        </div>
+      </div>
+    </footer>
 <!--site ends-->
 
     <script src="js/global/jquery-1.11.2.js" ></script>

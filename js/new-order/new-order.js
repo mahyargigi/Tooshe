@@ -51,6 +51,14 @@ $(document).ready(function(){
             search_select($(this).val());
 //             console.log("enter");
         }
+        else{
+            if($('.slider-row').css('display')==='block'){
+                $('.slider-row').animate({height: "0px"},"slow",function(){
+                    $(this).css('display','none');
+                    console.log("animate called!");
+                });
+            }
+        }
 
     });
     function search_select(input){

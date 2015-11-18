@@ -1,3 +1,10 @@
+.container-fluid{
+    font-family: 'Lato',Arial !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lato',Arial !important;
+}
+
 .link{
     float: right;
     color: #888888;

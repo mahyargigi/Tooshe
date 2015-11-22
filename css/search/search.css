@@ -266,6 +266,11 @@ li{
     position: relative;
     top: -20px;
 }
+
+.navbar-inverse{
+    font-family: 'Lato',Arial !important;
+}
+
 body{
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }

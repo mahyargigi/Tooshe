@@ -26,7 +26,7 @@
       <file leaf-file-name="notification.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notification.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="576" selection-end="671" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="6239">
+            <state line="12" column="0" selection-start="576" selection-end="671" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="6239">
               <folding />
             </state>
           </provider>
@@ -44,9 +44,10 @@
       <file leaf-file-name="contactform.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/contactform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="535" selection-end="952" vertical-scroll-proportion="0.31336406" vertical-offset="0" max-vertical-offset="5610">
+            <state line="234" column="12" selection-start="8873" selection-end="8873" vertical-scroll-proportion="0.5560676" vertical-offset="3616" max-vertical-offset="5729">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -56,9 +57,10 @@
                 <element signature="n#style#0;n#span#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1448047746442" expanded="true" signature="973:1056" placeholder="..." />
-                <marker date="1448047746442" expanded="true" signature="1005:1045" placeholder="{...}" />
+                <marker date="1448190145976" expanded="true" signature="973:1056" placeholder="..." />
+                <marker date="1448190145976" expanded="true" signature="1005:1045" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -67,7 +69,7 @@
       <file leaf-file-name="footer.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="4" selection-start="4274" selection-end="4324" vertical-scroll-proportion="-15.384615" vertical-offset="1215" max-vertical-offset="1904">
+            <state line="95" column="4" selection-start="4274" selection-end="4324" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="1904">
               <folding />
             </state>
           </provider>
@@ -76,7 +78,7 @@
       <file leaf-file-name="sendsomething.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/SendSomething/sendsomething.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="18" selection-end="59" vertical-scroll-proportion="-0.68" vertical-offset="0" max-vertical-offset="4369">
+            <state line="1" column="0" selection-start="18" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="4369">
               <folding />
             </state>
           </provider>
@@ -143,7 +145,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1058,6 +1059,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1167,9 +1169,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1191,6 +1190,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -1297,18 +1299,21 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application-fee.html">
+    <entry file="file://$PROJECT_DIR$/css/SendSomething/sendsomething.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="56" selection-start="61" selection-end="113" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="5049">
+        <state line="1" column="0" selection-start="18" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="4369">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application-fee.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="56" selection-start="61" selection-end="113" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="5049" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/new-order.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="270" column="4" selection-start="13644" selection-end="17839" vertical-scroll-proportion="0.0" vertical-offset="4403" max-vertical-offset="6970">
-          <folding />
-        </state>
+        <state line="270" column="4" selection-start="13644" selection-end="17839" vertical-scroll-proportion="0.0" vertical-offset="4403" max-vertical-offset="6970" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/new-order/new-order.css">
@@ -1348,21 +1353,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SendSomething.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="43" selection-start="874" selection-end="874" vertical-scroll-proportion="-2.6153846" vertical-offset="187" max-vertical-offset="5287">
-          <folding />
-        </state>
+        <state line="15" column="43" selection-start="874" selection-end="874" vertical-scroll-proportion="-2.6153846" vertical-offset="187" max-vertical-offset="5287" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notification.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="576" selection-end="671" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="6239">
+        <state line="12" column="0" selection-start="576" selection-end="671" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="6239">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/SendSomething/sendsomething.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="18" selection-end="59" vertical-scroll-proportion="-0.68" vertical-offset="0" max-vertical-offset="4369">
+        <state line="1" column="0" selection-start="18" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="4369">
           <folding />
         </state>
       </provider>
@@ -1376,16 +1379,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="4" selection-start="4274" selection-end="4324" vertical-scroll-proportion="-15.384615" vertical-offset="1215" max-vertical-offset="1904">
+        <state line="95" column="4" selection-start="4274" selection-end="4324" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="1904">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contactform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="535" selection-end="952" vertical-scroll-proportion="0.31336406" vertical-offset="0" max-vertical-offset="5610">
+        <state line="234" column="12" selection-start="8873" selection-end="8873" vertical-scroll-proportion="0.5560676" vertical-offset="3616" max-vertical-offset="5729">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1395,9 +1399,10 @@
             <element signature="n#style#0;n#span#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1448047746442" expanded="true" signature="973:1056" placeholder="..." />
-            <marker date="1448047746442" expanded="true" signature="1005:1045" placeholder="{...}" />
+            <marker date="1448190145976" expanded="true" signature="973:1056" placeholder="..." />
+            <marker date="1448190145976" expanded="true" signature="1005:1045" placeholder="{...}" />
           </folding>
         </state>
       </provider>

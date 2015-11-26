@@ -1,0 +1,261 @@
+@font-face {
+    font-family: broya;
+    src: url(../../fonts/global/BROYA.TTF);
+}
+.container-fluid{
+    font-family: broya,Arial !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: broya,Arial !important;
+    /*font-size: 0.9em;*/
+}
+label{
+    /*font-size: 0.9em;*/
+}
+.row{
+    margin-bottom: 3% ;
+}
+input[type=text] , input[type=number]{
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(229, 230, 228, 0.90);
+}
+form{
+    background-color: #f9f9f9;
+    /*border-radius: 20px;*/
+    border: solid;
+    border-width: 20px;
+    border-color: rgba(209, 209, 209, 0.84);
+    padding: 20px;
+    margin-top: 100px;
+}
+.tambr-img{
+    /*width: 200%;*/
+    /*display: inline;*/
+    /*position: relative;*/
+    /*right: 200px;*/
+    position: absolute;
+    left: -150px;
+    /*margin-right: 10px;*/
+    /*left: -120%;*/
+}
+.input-label{
+    font-size: 1.4em !important;
+    margin-right: 5px;
+    font-weight: 100;
+}
+.send-something-header{
+    font-weight: 100 !important;
+    font-size: 40px;
+}
+.what-header{
+    display: inline;
+    margin-right: 2%;
+    width: 5%;
+}
+.what-input{
+    width: 38%;
+}
+.weight-header{
+    display: inline;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 5%;
+}
+.weight-input{
+    width: 10%;
+}
+.upload-header{
+    display: inline;
+    width: 15%;
+}
+.upload-image1 , .upload-image2 , .upload-image3{
+    display: inline;
+    /*width: 18%;*/
+    margin-left: 10px;
+}
+.upload-image1 , .upload-image2 , .upload-image3{
+    width: 100px;
+    height: 100px;
+    /*width: 16%;*/
+}
+.top-image1 , .top-image2 , .top-image3{
+    visibility: hidden;
+    width: 100px;
+    height: 100px;
+    /*width: 16%;*/
+}
+.image-container{
+    position: relative;
+    width: 16%;
+}
+.image-container .top-image1 {
+    position: absolute;
+    top: -42px;
+    left: 10px;
+    z-index: 1;
+    opacity: 0.7;
+}
+.image-container .top-image2 {
+    position: absolute;
+    top: -42px;
+    left: 10px;
+    z-index: 1;
+    opacity: 0.7;
+}
+.image-container .top-image3 {
+    position: absolute;
+    top: -42px;
+    left: 10px;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.second-line-span , .third-line-span {
+    display: inline-block;
+}
+.third-line-span{
+    vertical-align: top;
+}
+
+.empty-span{
+    width: 2%;
+}
+.empty-span-2{
+    width: 6%;
+}
+.inline-span{
+    width: 1% !important;
+    margin-right: 1%;
+    display: inline-block;
+    vertical-align: top;
+    border-right: solid !important;
+    border-right-color: rgba(214, 215, 213, 0.90) !important;
+    border-right-width: 3px !important;
+    height: 3em;
+}
+.second-line-span input{
+    width: 100%;
+}
+.dest-span , .source-span{
+    width: 18%;
+}
+.from-date-span , .to-date-span{
+    width: 18%;
+}
+
+.how-much-span{
+    width: 50%;
+}
+.how-much-label{
+    font-weight: 100 !important;
+    font-size: 20px;
+}
+.find-passengers-span{
+    width: 33%;
+}
+
+#slider{
+    margin-top: 5%;
+}
+#slider-value{
+    font-size: 30px;
+}
+#find-passengers-id{
+    width: 100%;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    border-radius: 10px;
+    overflow: hidden;
+    white-space: normal;
+    font-size: 1.5em !important;
+}
+
+.let-my-span{
+    margin-left: 5px;
+}
+
+/*#slider{*/
+    /*width: 80%;*/
+/*}*/
+
+/*slider css*/
+
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    /*width: 100px;*/
+    height: 5px;
+    background: rgba(255, 146, 146, 0.84);
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: solid;
+    border-color: rgba(172, 165, 170, 0.93);
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: white;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    /*width: 100px;*/
+    height: 5px;
+    background: rgba(255, 146, 146, 0.84);
+    border: none;
+    border-radius: 3px;
+}
+
+
+
+
+
+input[type=range]{
+    /* fix for FF unable to apply focus style bug  */
+    /*border: 1px solid white; */
+
+    /*required for proper track sizing in FF*/
+    /*width: 300px;*/
+}
+
+input[type=range]::-moz-range-track {
+    width: 300px;
+    height: 5px;
+    background: rgba(255, 146, 146, 0.84);
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    border: solid;
+    border-color: rgba(172, 165, 170, 0.93);
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: white;
+    margin-top: -4px;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: none;
+}
+
+input[type=range]:focus::-moz-range-track {
+    width: 300px;
+    height: 5px;
+    background: rgba(255, 146, 146, 0.84);
+    border: none;
+    border-radius: 3px;
+}

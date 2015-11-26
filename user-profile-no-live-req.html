@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>user profile</title>
+     <link href="css/global/bootstrap.min.css" rel="stylesheet">
+    <link href="css/global/star-rating.min.css" rel="stylesheet"  media="all" type="text/css"/>
+    <link href="css/global/material.min.css" rel="stylesheet">
+    <link href="css/global/material-fullpalette.min.css" rel="stylesheet">
+    <link href="css/user-profile/user-profile.css" rel="stylesheet">
+    <link href="css/footer/footer.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+        <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+
+        <style type="text/css">
+            #notif
+            {
+                background-color: #ECF6FF;
+            }
+
+            .line1
+            {
+                width: 0px;
+                height: 3px;
+                margin-left:31px; 
+                margin-top:5px;
+                background-color:#E12258; 
+            }
+            .line2
+            {
+                width: 0px;
+                height: 3px;
+                margin-left:23px; 
+                margin-top:5px;
+                background-color:#E12258; 
+            }
+            .line3
+            {
+                width: 0px;
+                height: 3px;
+                margin-left:16px; 
+                margin-top:-15px;
+                background-color:#E12258; 
+            }
+
+        .line4
+        {
+          width: 0px;
+          height: 3px;
+          margin-left:20px; 
+          margin-top:-15px;
+          background-color:#E12258; 
+
+        }
+        </style>
+
+
+</head>
+<body>
+<nav class="navbar navbar-inverse" style="background-image:url('img/user-profile/bg.jpg'); height:65px;">
+  <div class="container-fluid">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <!-- <li><a class="navbar-brand" href="#" style="position:relative; left:0px; top:-10px;" ><img src="images/logo.gif"/></a></li> -->
+        <li><a href="#" style="font-family:Kurnia; font-size:40px; color:white; position:relative; top:-10px;"><img src="img/user-profile/logo2.png" height="60px" width="100px;"></a></li>
+      </ul>
+<!--       <form class="navbar-form navbar-left" role="search">
+    <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+            <div class="input-group">
+                <div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span id="search_concept">Destination</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#contains">United States</a></li>
+                      <li><a href="#its_equal">Canada</a></li>
+                      <li><a href="#greather_than">Switzerland</a></li>
+                      <li><a href="#less_than">UEA</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#all">Anywhere</a></li>
+                    </ul>
+                </div>
+                <input type="hidden" name="search_param" value="all" id="search_param">
+                <input type="text" style="width:250px; margin-top:0px;" class="form-control" name="x" placeholder="Search term...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" style="height:34px;"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+    </div>
+</div>
+      </form> -->
+      <ul class="nav navbar-nav navbar-left">
+
+    <li><a href="#" style="width:160px; margin-left:50px;" id="search"><img src="img/user-profile/takesth.png" style="width:100px; height:40px; margin-top:-5px; margin-left:10px;" id="button2"\><b style="position:relative; top:-30px; margin-left:27px; font-size:13px;"><span class="glyphicon glyphicon-search"></span>&nbsp Search</b><div class="line4"></div></a></li>
+
+        <li><a href="#" style="width:160px; margin-left:70px;" id="order"><!-- <input class="dropdown-toggle img-circle" type="image" src="images/small-cart-icon.png" style="width:20px; height:20px; margin-top:0px; margin-left:150px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> --><img src="img/user-profile/order-kam.png" style="width:40px; height:40px; margin-top:-7px; margin-left:15px;" id="cart"/><b style="margin-top:-7px;"> order sth</b><!-- <img src="images/line.png" style="width:90px; margin-left:-85px; margin-top:25px;" id="line1"/> --><div class="line1"></div></a></li>
+
+        <li><a href="#" style="width:160px; margin-left:80px;" id="send"><!-- <span class="glyphicon glyphicon-align-right" style="margin-left:50px; top:-2px;"></span><input class="dropdown-toggle img-circle" type="image" src="images/gift.png" style="width:20px; height:20px; margin-top:0px; margin-left:5px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> --><img src="img/user-profile/send-kam.png" style="width:40px; height:40px; margin-top:-7px; margin-left:15px;" id="gift"/><b style="position:relative; top:0px;">&nbsp send sth</b><!-- <img src="images/line.png" style="width:90px; margin-left:-85px; margin-top:25px; visibility:hidden;" id="line2"/> --><div class="line2"></div></a></li>
+
+        <li><a href="#" style="width:160px; margin-left:80px;" id="take"><!-- <button class="btn btn-default" style="background-color:transparent; border-width:2px; border-color:#D6D6C2; color:#7C3A39; height:40px; width:100px; margin-top:8px; margin-left:50px;" type="button"><p style="color:white;">Take sth</p></button><span class="glyphicon glyphicon-align-left" style="color:#D6D6C2; margin-left:5px; top:7px;"></span> --><img src="img/user-profile/take-sth-kam.png" style="width:150px; height:40px; margin-top:-5px; margin-left:10px;" id="button"\><b style="position:relative; top:-30px; margin-left:30px;">Take sth</b><!-- <img src="images/line.png" style="width:90px; margin-left:-72px; margin-top:40px; visibility:hidden;" id="line3"/> --><div class="line3"></div></a></li>
+        </ul>
+        <!-- <li>
+           <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span><span color="green" style="background-color:#2980b9;" class="badge">1</span></img></a>
+            <div class="dropdown">
+
+                <input class="dropdown-toggle img-circle" type="image" src="images/small-cart-icon.png" style="width:20px; height:20px; margin-top:10px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span color="green" style="background-color:#2980b9;" class="badge">0</span>
+
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li><a href="#">My Profile</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">My Credit</a></li>
+                    <li role="separator" class="divider">
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Setting</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Log Out</a></li>
+
+                </ul>
+            </div>
+        </li> -->
+        <ul class="nav navbar-nav navbar-right">
+        <li>
+            <div class="dropdown" style="background-color:transparent;">
+
+                <input class="dropdown-toggle img-circle" type="image" src="img/user-profile/Bell.png" style="width:25px; height:25px; margin-top:20px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span color="green" style="background-color:#E12258; position:relative; margin-right:10px; margin-left:-10px; margin-top:-35px;" class="badge">4</span>
+
+                <!-- <span class="caret"></span></a> -->
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" id="notif" style="color:black; width:300px;">
+                    <li><center><b>Notifications</b><span color="green" style="background-color:#E12258; margin-top:0px;" class="badge">4</span></center></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><img src="img/user-profile/hamid.jpg" class="img-circle" style="width:40px; height:40px;"/><!-- <p style="margin-top:-40px; margin-left:50px;"><b>  Hamid </b>posted a photo<br>on your wall.</p> --></a><div style="width:200px; height:50px; margin-top:-45px; margin-left:80px;"><b>Hamid </b>posted a photo on your wall.</div></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><img src="img/user-profile/abbas.jpg" class="img-circle" style="width:40px; height:40px;"/><!-- <p style="margin-top:-40px; margin-left:50px;"><b>  Abbas </b>liked the post<br>you've shared.</p> --></a><div style="width:200px; height:50px; margin-top:-45px; margin-left:80px;"><b>Abbas </b>liked the post you've shared.</div></li></li>
+                    <li role="separator" class="divider">
+                    <li><a href="#"><img src="img/user-profile/peyman.png" class="img-circle" style="width:40px; height:40px;"/><!-- <p style="margin-top:-40px; margin-left:50px;"><b>  Peyman </b>added you to<br>his circle.</p> --></a><div style="width:200px; height:50px; margin-top:-45px; margin-left:80px;"><b>Peyman </b>added you to his circle.</div></li></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><img src="img/user-profile/masoud.jpg" class="img-circle" style="width:40px; height:40px;"/><!-- <p style="margin-top:-40px; margin-left:50px;"><b>  Masoud </b>commented on the post<br>you've shared.</p> --></a><div style="width:200px; height:50px; margin-top:-45px; margin-left:80px;"><b>Masoud </b>commented on the post you've shared.</div></li></li>
+                    <li role="separator" class="divider"></li>
+                    <li><center><a href="#"><b>view all notifications</b></a></center></li>
+
+                </ul>
+            </div>
+          <!-- <a href="#"><span class="glyphicon glyphicon-bell"></span><span color="green" style="background-color:#2980b9;" class="badge">0</span></img></a> -->
+        </li>
+        <li>
+          <!-- <a href="#"><span class="glyphicon glyphicon-envelope"></span><span color="green" style="background-color:#c0392b;" class="badge">3</span></img></a> -->
+            <div class="dropdown" style="background-color:transparent;">
+
+                <input class="dropdown-toggle img-circle" type="image" src="img/user-profile/envelope.png" style="width:30px; height:30px; margin-top:17px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span color="green" style="background-color:#2980b9; position:relative; margin-right:10px; margin-left:-5px; margin-top:-38px;" class="badge">0</span>
+
+                <!-- <span class="caret"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li><a href="#">My Profile</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">My Credit</a></li>
+                    <li role="separator" class="divider">
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Setting</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Log Out</a></li>
+
+                </ul> -->
+            </div>
+        </li>
+        <li>
+            <div class="dropdown" style="background-color:transparent;">
+
+                <input class="dropdown-toggle img-circle" type="image" src="img/user-profile/ibn_sina_by_sneghka-d6rwzvg.jpg" style="width:40px; height:40px; margin-top:10px; margin-right:30px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+                <!-- <span class="caret"></span> -->
+                </input>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">My Profile</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">My Wallet</a></li>
+                    <li role="separator" class="divider">
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Setting</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Log Out</a></li>
+
+                </ul>
+            </div>
+
+
+
+
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<script type="text/javascript">
+    $("#order").hover(function(){
+
+        // $("#line1").css('visibility','visible');
+        // $("#line2").css('visibility','hidden');
+        // $("#line3").css('visibility','hidden');
+        // $("#line1").css('visibility','visible');
+        // $("#line1").toggle('slide');
+        $('.line1').animate({width: '90px'}, 400);
+        $("#cart").attr('src','img/user-profile/order-por.png');
+        $("#cart").css('width','40px');
+        $("#cart").css('height','40px');
+    }, function(){
+        $('.line1').animate({width: '0'}, 400);
+        $("#cart").attr('src','img/user-profile/order-kam.png');
+    });
+
+    // $("#send").mouseover(function(){
+    //  // $("#line2").show('slide', {direction: 'right'}, 1000);
+    //  // //$("#line2").css('visibility','visible');
+    //  $("#line1").css('visibility','hidden');
+    //  $("#line3").css('visibility','hidden');
+    //  $("#line2").css('visibility','visible');
+    //  $("#line2").toggle('slide');
+
+    // });
+    $('#send').hover(function(){
+        $('.line2').animate({width: '100px'}, 400);
+        $("#gift").attr('src','img/user-profile/send-por.png');
+        $("#gift").css('width','40px');
+        $("#gift").css('height','40px');
+    }, function(){
+        $('.line2').animate({width: '0'}, 400);
+        $("#gift").attr('src','img/user-profile/send-kam.png');
+    });
+
+    $("#take").hover(function(){
+        // $("#line3").css('visibility','visible');
+        // $("#line2").css('visibility','hidden');
+        // $("#line1").css('visibility','hidden');
+        // $("#line3").css('visibility','visible');
+        $('.line3').animate({width: '90px'}, 400);
+        $("#button").attr('src','img/user-profile/take-sth-por.png');
+        $("#button").css('width','150px');
+        $("#button").css('height','40px');
+        $("#button").css('margin-left','-2px');
+        $("#button").css('margin-top','-6px');
+    }, function(){
+        $('.line3').animate({width: '0'}, 400);
+        $("#button").attr('src','img/user-profile/take-sth-kam.png');
+        $("#button").css('margin-left','10px');
+        $("#button").css('margin-top','-5px');
+    });
+
+    $("#search").hover(function(){
+        // $("#line3").css('visibility','visible');
+        // $("#line2").css('visibility','hidden');
+        // $("#line1").css('visibility','hidden');
+        // $("#line3").css('visibility','visible');
+        $('.line4').animate({width: '90px'}, 400);
+        $("#button2").attr('src','img/user-profile/takesthpor.png');
+        $("#button2").css('width','100px');
+        $("#button2").css('height','40px');
+        $("#button2").css('margin-left','15px');
+        $("#button2").css('margin-top','-6px');
+    }, function(){
+        $('.line4').animate({width: '0'}, 400);
+        $("#button2").attr('src','img/user-profile/takesth.png');
+        $("#button2").css('width','100px;');
+        $("#button2").css('margin-left','10px');
+        $("#button2").css('margin-top','-5px');
+    });
+
+
+</script>
+
+
+
+    <div class="container-fluid">
+        <div class="row first-row">
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9">
+                        <img class="img-circle user-image" src="img/global/ensan-avalie.jpg" alt="">
+                    </div>
+                    <!--<div class="col-md-1"></div>-->
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row user-specification-row user-name-row">
+                    <h2 class="user-name inline" id="name" contenteditable="false">Seyyed Abbas Araghchi</h2>
+                    <h4 class="edit inline"><a href="#" class="edit-name"> EDIT</a></h4>
+                </div>
+                <div class="row user-specification-row">
+                    <h5 class="inline address">
+                        <input alt="a" type="text" id="input-address" style="display: none">
+                        <span id="address">Tehran,Iran</span>
+                    </h5>
+                    <h4 class="inline edit" id="test"><a href="#" id="test2" class="edit-address"> EDIT</a></h4>
+                </div>
+                <div class="row user-specification-row">
+                    <h5>Member since July 2015</h5>
+                </div>
+                <div class="row user-specification-row">
+                    <h5 class="average-response-time">Average Response Time: 5hrs</h5>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row" style="width: 100%">
+                    <ul id="verifications-ul">
+                        <li><h5 id="verifications">Verifications</h5></li>
+                        <li>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="img/application-fee/iphone6_gold_portrait.png" class="logo" alt="">
+                                </div>
+                                <div class="col-md-7">
+                                    <span class="description">phone number verified</span>
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="img/user-profile/tick.png" alt="">
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="img/application-fee/cart.png" class="logo" alt="">
+                                </div>
+                                <div class="col-md-7">
+                                    <span class="description">credit card</span>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="#" class="verification-add">add</a>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="img/application-fee/Untitled-3.png" class="logo" alt="">
+                                </div>
+                                <div class="col-md-7">
+                                    <span class="description">email verified</span>
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="img/user-profile/tick.png" alt="">
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="img/application-fee/facebook-icon.png" class="logo" id="facebook-logo" alt="">
+                                </div>
+                                <div class="col-md-7">
+                                    <span class="description">facebook not connected</span>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="#" class="verification-add">add</a>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="img/application-fee/linkedin_icon.png" class="logo" id="linkedin-logo" alt="">
+                                </div>
+                                <div class="col-md-7">
+                                    <span class="description">linkedin verified</span>
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="img/user-profile/tick.png" alt="">
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active first-li"><a href="#live-requests" data-toggle="tab">My live requests</a></li>
+                    <li><a href="#my-travels" data-toggle="tab">My travels</a></li>
+                    <li><a href="#wishlist" data-toggle="tab">wishlist</a></li>
+                    <li><a href="#reviews" data-toggle="tab">Reviews(<span class="minus-review">-3</span>,<span class="positive-review">+5</span>)</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="live-requests">
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8" id="no-requests-center-div">
+                                <img src="img/user-profile/sun.png" class="sun-img">
+                                </br>
+                                <h2 >You have no current requests !</h2>
+                                <h4 class="hidden-element fade-in-1"><a href="#"> start finding awesome offers</a></h4>
+                                <h4 class="hidden-element fade-in-2">or</h4>
+                                <h5 class="hidden-element fade-in-3"><a href="#"> Send something</a></h5>
+                                <h4 class="hidden-element fade-in-4">or</h4>
+                                <h5 class="hidden-element fade-in-5"><a href="#"> play a game</a></h5>
+                                <img src="img/user-profile/logo.png" class="logo">
+                            </div>
+                            <div class="col-md-2"></div>
+                        </div>
+                    </div>
+
+                    <!--<div class="tab-pane fade in active" id="live-requests">-->
+                        <!--<div class="row live-request-div">-->
+                            <!--<div class="col-md-1 grid-row-1">-->
+                                <!--<img src="img/user-profile/Gooshe-send.png" class="gooshe" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="col-md-3 grid-row-2">-->
+                                <!--<div class="row">-->
+                                    <!--<div class="col-md-2"></div>-->
+                                    <!--<div class="col-md-10">-->
+                                        <!--<img src="img/user-profile/iphone6.jpg" class="img-circle live-requests-img" alt=""/>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+
+                            <!--</div>-->
+                            <!--<div class="col-md-4 grid-row-3">-->
+                                <!--<div class="row live-request-row">-->
+                                    <!--<h4>-->
+                                        <!--iphone 6s grey unlocked 64 G-->
+                                    <!--</h4>-->
+                                <!--</div>-->
+                                <!--<div class="row live-request-row">-->
+                                    <!--<label class="title">From:</label>-->
+                                    <!--<label class="answer bold-answer">Asia,Europe,South America</label>-->
+                                <!--</div>-->
+                                <!--<div class="row traveler-row">-->
+                                    <!--<label class="title">traveler:</label>-->
+                                    <!--<label class="answer">no one commited yet</label>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-4 grid-row-4">-->
+                                <!--<div class="row live-request-row">-->
+                                    <!--<label class="title status-title">Status</label>-->
+                                    <!--<div style="display: inline-block">-->
+                                        <!--<img class="request-color" src="img/user-profile/request-sent.png" alt="">-->
+                                        <!--<label class="answer bold-answer">request sent to 6 <a href="#">pickers</a></label>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="row live-request-row">-->
+                                    <!--<label class="title">Days remain<br>-->
+                                    <!--to delivery-->
+                                    <!--</label>-->
+                                    <!--<label class="answer">-</label>-->
+                                <!--</div>-->
+                                <!--<div class="row live-request-row ">-->
+                                    <!--&lt;!&ndash;<div class="col-md-2"></div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="col-md-6">&ndash;&gt;-->
+                                        <!--<div style="width: 150px;" class="btn btn-circle btn-sm live-request-btn search-btn btn-lg btn-white"><label class=" btn-label search-btn-inner-label">search again</label></div>-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--<div class="clearfix visible-md-block">-->
+
+                                    <!--</div>-->
+
+                                    <!--&lt;!&ndash;<div class="col-md-6">&ndash;&gt;-->
+                                        <!--<div style="width: 150px;" class="btn btn-circle btn-sm live-request-btn cancel-btn btn-lg btn-white"><label class=" btn-label cancel-btn-inner-label">cancel it</label></div>-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--<br>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row live-request-div">-->
+                            <!--<div class="col-md-1 grid-row-1">-->
+                                <!--<img src="img/user-profile/Gooshe-order.png" class="gooshe" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="col-md-3 grid-row-2">-->
+                                <!--<div class="row">-->
+                                    <!--<div class="col-md-2"></div>-->
+                                    <!--<div class="col-md-10">-->
+                                        <!--<img src="img/user-profile/shirt.png" class="img-circle live-requests-img" alt=""/>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-4 grid-row-3">-->
+                                <!--<div class="row live-request-row">-->
+                                    <!--<h4>-->
+                                        <!--iphone 6s grey unlocked 64 G-->
+                                    <!--</h4>-->
+                                <!--</div>-->
+                                <!--<div class="row live-request-row">-->
+                                    <!--<label class="title">From:</label>-->
+                                    <!--<label class="answer bold-answer">Asia,Europe,South America</label>-->
+                                <!--</div>-->
+                                <!--<div class="row traveler-row">-->
+                                    <!--<label class="title">traveler:</label>-->
+                                    <!--<label class="answer">no one commited yet</label>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-4 grid-row-4">-->
+                                <!--<div class="row live-request-row">-->
+                                    <!--<label class="title status-title">Status</label>-->
+                                    <!--<div style="display: inline-block">-->
+                                        <!--<img class="request-color" src="img/user-profile/request-finalizedd.png" alt="">-->
+                                        <!--<label class="answer multi-line-status bold-answer">request finalized,<br>-->
+                                            <!--waiting for delivery-->
+                                            <!--&lt;!&ndash;<a href="#">pickers</a>&ndash;&gt;-->
+                                        <!--</label>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="row live-request-row">-->
+                                    <!--<label class="title">Days remain<br>-->
+                                    <!--to delivery-->
+                                    <!--</label>-->
+                                    <!--<label class="answer red"><b>8 days</b></label>-->
+                                <!--</div>-->
+                                <!--<div class="row live-request-row">-->
+                                    <!--&lt;!&ndash;<div class="col-md-2"></div>&ndash;&gt;-->
+                                    <!--<div class="btn btn-circle btn-sm live-request-btn send-message-btn btn-lg btn-white">-->
+                                        <!--<label class="btn-label send-message-btn-inner-label">send a message</label>-->
+                                    <!--</div>-->
+                                    <!--&lt;!&ndash;<div class="col-md-1"></div>&ndash;&gt;-->
+                                    <!--<div class="clearfix visible-md-block">-->
+
+                                    <!--</div>-->
+                                    <!--<div class="btn btn-circle btn-sm live-request-btn finish-review-btn btn-lg btn-material-cyan-800">-->
+                                        <!--<label class="btn-label finish-review-btn-inner-label">finish & review</label>-->
+                                    <!--</div>-->
+                                    <!--&lt;!&ndash;<div class="col-md-1"></div>&ndash;&gt;-->
+                                    <!--<br>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="row live-request-div">-->
+                            <!--<div class="col-md-1 grid-row-1">-->
+                                <!--<img src="img/user-profile/Gooshe-delivery.png" class="gooshe" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="col-md-3 grid-row-2">-->
+                                <!--<div class="row">-->
+                                    <!--<div class="col-md-2"></div>-->
+                                    <!--<div class="col-md-10">-->
+                                        <!--<img src="img/user-profile/shirt.png" class="img-circle live-requests-img" alt=""/>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-4 grid-row-3">-->
+                                <!--<div class="row live-request-row">-->
+                                    <!--<h4>-->
+                                        <!--iphone 6s grey unlocked 64 G-->
+                                    <!--</h4>-->
+                                <!--</div>-->
+                                <!--<div class="row live-request-row">-->
+                                    <!--<label class="title">From:</label>-->
+                                    <!--<label class="answer bold-answer">Asia,Europe,South America</label>-->
+                                <!--</div>-->
+                                <!--<div class="row traveler-row">-->
+                                    <!--<label class="title">traveler:</label>-->
+                                    <!--<label class="answer">no one commited yet</label>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-4 grid-row-4">-->
+                                <!--<div class="row live-request-row">-->
+                                    <!--<label class="title status-title">Status</label>-->
+                                    <!--<div style="display: inline-block">-->
+                                        <!--<img class="request-color" src="img/user-profile/request-finalized.png" alt="">-->
+                                        <!--<label class="answer multi-line-status bold-answer">request accepted,<br>-->
+                                            <!--waiting for finalize-->
+                                            <!--&lt;!&ndash;<a href="#">pickers</a>&ndash;&gt;-->
+                                        <!--</label>-->
+                                    <!--</div>-->
+
+                                <!--</div>-->
+                                <!--<div class="row live-request-row">-->
+                                    <!--<label class="title">Days remain<br>-->
+                                    <!--to delivery-->
+                                    <!--</label>-->
+                                    <!--<label class="answer red"><b>8 days</b></label>-->
+                                <!--</div>-->
+                                <!--<div class="row live-request-row">-->
+                                    <!--&lt;!&ndash;<div class="col-md-2"></div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="col-md-6">&ndash;&gt;-->
+                                        <!--<div style="width: 150px" class="btn btn-circle btn-sm live-request-btn finalize-btn btn-lg btn-material-red-400"><label class="finalize-btn-inner-label">Finalize</label></div>-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--<div class="clearfix visible-md-block">-->
+
+                                    <!--</div>-->
+                                    <!--&lt;!&ndash;<div class="col-md-6">&ndash;&gt;-->
+                                        <!--<div style="width: 150px" class="btn btn-circle btn-sm live-request-btn cancel-btn btn-lg btn-white"><label class="cancel-btn-inner-label">cancel it</label></div>-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--<br>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row live-request-div">-->
+                            <!--<div class="col-md-1 grid-row-1">-->
+                                <!--<img src="img/user-profile/Gooshe-delivery.png" class="gooshe" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="col-md-3 grid-row-2">-->
+                                <!--<div class="row">-->
+                                    <!--<div class="col-md-2"></div>-->
+                                    <!--<div class="col-md-10">-->
+                                        <!--<img src="img/user-profile/shirt.png" class="img-circle live-requests-img" alt=""/>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-4 grid-row-3">-->
+                                <!--<div class="row live-request-row">-->
+                                    <!--<h4>-->
+                                        <!--iphone 6s grey unlocked 64 G-->
+                                    <!--</h4>-->
+                                <!--</div>-->
+                                <!--<div class="row live-request-row">-->
+                                    <!--<label class="title">From:</label>-->
+                                    <!--<label class="answer bold-answer">Asia,Europe,South America</label>-->
+                                <!--</div>-->
+                                <!--<div class="row traveler-row">-->
+                                    <!--<label class="title">traveler:</label>-->
+                                    <!--<label class="answer">no one commited yet</label>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-4 grid-row-4">-->
+                                <!--<div class="row live-request-row">-->
+                                    <!--<label class="title status-title">Status</label>-->
+                                    <!--<div style="display: inline-block">-->
+                                        <!--<img class="request-color" src="img/user-profile/no-offers.png" alt="">-->
+                                        <!--<label class="answer bold-answer">no offers yet recieved-->
+                                            <!--&lt;!&ndash;<a href="#">pickers</a>&ndash;&gt;-->
+                                        <!--</label>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="row live-request-row">-->
+                                    <!--<label class="title">Days remain<br>-->
+                                    <!--to delivery-->
+                                    <!--</label>-->
+                                    <!--<label class="answer red"><b>8 days</b></label>-->
+                                <!--</div>-->
+                                <!--<div class="row live-request-row">-->
+                                    <!--&lt;!&ndash;<div class="col-md-2"></div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="col-md-6">&ndash;&gt;-->
+                                        <!--<div style="width: 150px;"  class="btn btn-circle btn-sm live-request-btn search-btn btn-lg btn-white"><label class="search-btn-inner-label">search again</label></div>-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                        <!--<div class="clearfix visible-md-block">-->
+
+                                        <!--</div>-->
+                                    <!--&lt;!&ndash;<div class="col-md-6">&ndash;&gt;-->
+                                        <!--<div style="width: 150px;" class="btn btn-circle btn-sm live-request-btn cancel-btn btn-lg btn-white"><label class="cancel-btn-inner-label">cancel it</label></div>-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--<br>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <div class="tab-pane fade" id="my-travels">
+                        <div class="row travel-info">
+                            <div class="col-md-1 date-div">
+                                <div class="row date">
+                                    <span class="month">Aug</span>
+                                    <br>
+                                    <span class="day">26</span>
+                                    <br>
+                                    <span class="year">2015</span>
+                                </div>
+                            </div>
+                            <div class="col-md-11 content-div">
+                                <div class="row">
+                                    <!--rowye ezafie gozashte shode baraye align kardan ba buttone suitcase status mibashad-->
+                                    <div class="row">
+                                        <div class="col-md-6"><br>
+                                            <span class="origin">Madrid , Spain</span>
+                                            <span class="airplane"></span>
+                                            <span class="destination">Tehran , IranIranIran</span>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="buttons-div">
+                                                <div class="btn btn-circle btn-white edit-btn btn-xs">edit it</div>
+                                                <div class="btn btn-circle btn-material-amber-400 stuff-btn btn-xs">find stuff and earn</div>
+                                                <!--<button type="button" class="remove-btn">×</button>-->
+                                            </div>
+                                        </div>
+                                        <!--<div class="btn btn-circle btn-white btn-xs">remove the flight</div>-->
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="row">
+                                        <div class="col-md-11">
+                                            <div class="btn btn-material-cyan-200 suitcase-status-btn" data-toggle="collapse" data-target="#suitcase-status-1">
+                                                suitcase status
+                                                <img src="img/user-profile/drop-down.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <a class="trash-link" href="#"><img class="trashcan-img" src="img/user-profile/trashbin.png"></a>
+                                        </div>
+                                    </div>
+                                    <div id="suitcase-status-1" class="suitcase-status collapse row">
+                                        <div class="col-md-9">
+                                            <ul class="suitcase-material">
+                                                <li>You carry a gun for moslehi</li>
+                                                <li>You carry a gun for moslehi</li>
+                                                <li>You carry a gun for moslehi</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row weight-div">
+                                                <div class="col-md-5">
+                                                    <span class="weight">5KG</span><br>
+                                                    <span >Available</span>
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <img src="img/user-profile/smiley-AM.png" class="suitcase-img" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-travels-hr">
+                        <div class="row travel-info">
+                            <div class="col-md-1 date-div">
+                                <div class="row date">
+                                    <span class="month">Aug</span>
+                                    <br>
+                                    <span class="day">25</span>
+                                    <br>
+                                    <span class="year">2015</span>
+                                </div>
+                            </div>
+                            <div class="col-md-11 content-div">
+                                <div class="row">
+                                    <!--rowye ezafie gozashte shode baraye align kardan ba buttone suitcase status mibashad-->
+                                    <div class="row">
+                                        <div class="col-md-6"><br>
+                                            <span class="origin">Madrid , Spain</span>
+                                            <span class="airplane"></span>
+                                            <span class="destination">Tehran , IranIranIran</span>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="buttons-div">
+                                                <div class="btn btn-circle btn-white edit-btn btn-xs">edit it</div>
+                                                <div class="btn btn-circle btn-material-amber-400 stuff-btn btn-xs">find stuff and earn</div>
+                                            </div>
+                                        </div>
+                                        <!--<div class="btn btn-circle btn-white btn-xs">remove the flight</div>-->
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="row">
+                                        <div class="col-md-11">
+                                            <div class="btn btn-material-cyan-200 suitcase-status-btn" data-toggle="collapse" data-target="#suitcase-status-2">
+                                                suitcase status
+                                                <img src="img/user-profile/drop-down.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <a class="trash-link" href="#"><img class="trashcan-img" src="img/user-profile/trashbin.png"></a>
+                                        </div>
+                                    </div>
+                                    <div id="suitcase-status-2" class="suitcase-status collapse row">
+                                        <div class="col-md-9">
+                                            <ul class="suitcase-material">
+                                                <li>You carry a gun for moslehi</li>
+                                                <li>You carry a gun for moslehi</li>
+                                                <li>You carry a gun for moslehi</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row weight-div">
+                                                <div class="col-md-5">
+                                                    <span class="weight">5KG</span><br>
+                                                    <span>Available</span>
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <img src="img/user-profile/smiley-AM.png" class="suitcase-img" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-travels-hr">
+                    </div>
+                    <div class="modal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>-->
+                                    <h4 class="modal-title">Are you sure you want to delete it?</h4>
+                                </div>
+                                <!--<div class="modal-body">-->
+                                    <!--<p>One fine body…</p>-->
+                                <!--</div>-->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary confirm-delete">Confirm</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="wishlist">
+                        <div class="row-items row">
+                            <div class="col-md-4">
+                                <li class="row-li">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <h4 class="goods-price"><b>51000$</b></h4>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button type="button" class="close" data-dismiss="closing">×</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-10">
+                                            <img alt="" src="img/search/iphone6.jpg" class="goods-image">
+                                        </div>
+                                        <div class="col-md-1"></div>
+                                    </div>
+                                    <label class="goods-name">Samsung Galaxy S5</label>
+                                    <label class="goods-from">From : Italy</label>
+                                    <!--<div class="row">-->
+                                    <h5 class="goods-available-passengers">3passengers available</h5>
+                                    <button><img alt="" src="img/search/smiley.png" class="button-img"></button>
+                                    <!--</div>-->
+
+                                </li>
+                            </div>
+                            <div class="col-md-4">
+                                <li class="row-li">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <h4 class="goods-price"><b>51000$</b></h4>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button type="button" class="close" data-dismiss="closing">×</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-10">
+                                            <img alt="" src="img/search/yo_n6_000.jpg" class="goods-image">
+                                        </div>
+                                        <div class="col-md-1"></div>
+                                    </div>
+                                    <label class="goods-name">Samsung Galaxy S5</label>
+                                    <label class="goods-from">From : Italy</label>
+                                    <!--<div class="row">-->
+                                    <h5 class="goods-available-passengers">3passengers available</h5>
+                                    <button><img alt="" src="img/search/smiley.png" class="button-img"></button>
+                                    <!--</div>-->
+
+                                </li>
+                            </div>
+                            <div class="col-md-4">
+                                <li class="row-li">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <h4 class="goods-price"><b>51000$</b></h4>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button type="button" class="close" data-dismiss="closing">×</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-10">
+                                            <img alt="" src="img/search/swatch_watches_sa02_suob715_press.jpg" class="goods-image">
+                                        </div>
+                                        <div class="col-md-1"></div>
+                                    </div>
+                                    <label class="goods-name">Samsung Galaxy S5</label>
+                                    <label class="goods-from">From : Italy</label>
+                                    <!--<div class="row">-->
+                                    <h5 class="goods-available-passengers">3passengers available</h5>
+                                    <button><img alt="" src="img/search/smiley.png" class="button-img"></button>
+                                    <!--</div>-->
+
+                                </li>
+                            </div>
+                        </div>
+                        <div class="row-items row">
+                            <div class="col-md-4 closing">
+                                <li class="row-li">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <h4 class="goods-price"><b>51000$</b></h4>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button type="button" class="close" data-dismiss="closing">×</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-10">
+                                            <img alt="" src="img/search/lamborghini-11.jpg" class="goods-image">
+                                        </div>
+                                        <div class="col-md-1"></div>
+                                    </div>
+                                    <label class="goods-name">Samsung Galaxy S5</label>
+                                    <label class="goods-from">From : Italy</label>
+                                    <!--<div class="row">-->
+                                    <h5 class="goods-available-passengers">3passengers available</h5>
+                                    <button><img alt="" src="img/search/smiley.png" class="button-img"></button>
+                                    <!--</div>-->
+
+                                </li>
+                            </div>
+                            <div class="col-md-4">
+                                <li class="row-li">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <h4 class="goods-price"><b>51000$</b></h4>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button type="button" class="close" data-dismiss="closing">×</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-10">
+                                            <img alt="" src="img/search/41tbcx2sahL.jpg" class="goods-image">
+                                        </div>
+                                        <div class="col-md-1"></div>
+                                    </div>
+                                    <label class="goods-name">Samsung Galaxy S5</label>
+                                    <label class="goods-from">From : Italy</label>
+                                    <!--<div class="row">-->
+                                    <h5 class="goods-available-passengers">3passengers available</h5>
+                                    <button><img alt="" src="img/search/smiley.png" class="button-img"></button>
+                                    <!--</div>-->
+
+                                </li>
+                            </div>
+                            <div class="col-md-4">
+                                <li class="row-li">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <h4 class="goods-price"><b>51000$</b></h4>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button type="button" class="close" data-dismiss="closing">×</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-10">
+                                            <img alt="" src="img/search/nd.21547.jpg" class="goods-image">
+                                        </div>
+                                        <div class="col-md-1"></div>
+                                    </div>
+                                    <label class="goods-name">Samsung Galaxy S5</label>
+                                    <label class="goods-from">From : Italy</label>
+                                    <!--<div class="row">-->
+                                    <h5 class="goods-available-passengers">3passengers available</h5>
+                                    <button><img alt="" src="img/search/smiley.png" class="button-img"></button>
+                                    <!--</div>-->
+
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="reviews">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <textarea class="textArea" rows="4" placeholder="write your Review here..."></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label class="final-score-header">your final score to his/her accompolishment</label>
+                                    <input alt="a" id="user-rate" class="rating" data-stars="5" data-min="0"
+                               data-max="5" data-step="1" data-show-clear="false" data-show-caption="false" data-size="md"
+                               data-readonly="false" data-symbol="&#x2605;">
+                                <button class="btn btn-material-cyan btn-material-cyan-400 publish-review-btn"><span style="position: relative;left: -15px;">publish your review</span></button>
+                                <hr style="border-bottom: thick;border-width: 1px;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <span class="list-group">
+                                    <span class="list-group-item">
+                                        <span class="row-picture">
+                                            <img class="circle review-image" src="img/user-profile/smiley-AM.png" alt="icon" >
+                                        </span>
+                                    </span>
+                                </span>
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <label>Nick</label>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="row review">
+                                    <div class="col-md-12">
+                                        it is very goood.very very very goood.
+                                        it is very goood.very very very goood.
+                                        it is very goood.very very very goood.
+                                        it is very goood.very very very goood.
+                                        it is very goood.very very very goood.
+                                        it is very goood.very very very goood.
+                                    </div>
+                                </div>
+                                <div class="row review-bottom">
+                                    <div class="col-md-9 review-info">
+                                        July 2015
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="row">
+                                            <div class="col-md-5 thumbs-down-div">
+                                                <label class="negative-thumb-label">0</label>
+                                                <input alt="a" type="image" class="thumbs-down thumbs-down-deactive" src="img/user-profile/thumbs-down-deactive.png">
+                                            </div>
+                                            <div class="col-md-5 thumbs-up-div">
+                                                    <label class="positive-thumb-label">0</label>
+                                                    <input alt="a" type="image" class="thumbs-up thumbs-up-deactive" src="img/user-profile/thumbs-up-deactive.png">
+                                            </div>
+                                            <div class="col-md-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <hr class="review-hr">
+                            <div class="col-md-2">
+                                <span class="list-group">
+                                    <span class="list-group-item">
+                                        <span class="row-picture">
+                                            <img class="circle review-image" src="img/user-profile/smiley-AM.png" alt="icon" >
+                                        </span>
+                                    </span>
+                                </span>
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <label>Nick</label>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="row review">
+                                    <div class="col-md-12">
+                                        it is very goood.very very very goood.
+                                        it is very goood.very very very goood.
+                                        it is very goood.very very very goood.
+                                        it is very goood.very very very goood.
+                                        it is very goood.very very very goood.
+                                        it is very goood.very very very goood.
+                                    </div>
+                                </div>
+                                <div class="row review-bottom">
+                                    <div class="col-md-9 review-info">
+                                        July 2015
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="row">
+                                            <div class="col-md-5 thumbs-down-div">
+                                                <label class="negative-thumb-label">0</label>
+                                                <input alt="a" type="image" class="thumbs-down thumbs-down-deactive" src="img/user-profile/thumbs-down-deactive.png">
+                                            </div>
+                                            <div class="col-md-5 thumbs-up-div">
+                                                    <label class="positive-thumb-label">0</label>
+                                                    <input alt="a" type="image" class="thumbs-up thumbs-up-deactive" src="img/user-profile/thumbs-up-deactive.png">
+                                            </div>
+                                            <div class="col-md-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <hr class="review-hr">
+                            <div class="col-md-2">
+                                <span class="list-group">
+                                    <span class="list-group-item">
+                                        <span class="row-picture">
+                                            <img class="circle review-image" src="img/user-profile/smiley-AM.png" alt="icon" >
+                                        </span>
+                                    </span>
+                                </span>
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <label>Nick</label>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="row review">
+                                    <div class="col-md-12">
+                                        it is very goood.very very very goood.
+                                        it is very goood.very very very goood.
+                                        it is very goood.very very very goood.
+                                        it is very goood.very very very goood.
+                                        it is very goood.very very very goood.
+                                        it is very goood.very very very goood.
+                                    </div>
+                                </div>
+                                <div class="row review-bottom">
+                                    <div class="col-md-9 review-info">
+                                        July 2015
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="row">
+                                            <div class="col-md-5 thumbs-down-div">
+                                                <label class="negative-thumb-label">0</label>
+                                                <input alt="e" type="image" class="thumbs-down thumbs-down-deactive" src="img/user-profile/thumbs-down-deactive.png">
+                                            </div>
+                                            <div class="col-md-5 thumbs-up-div">
+                                                    <label class="positive-thumb-label">0</label>
+                                                    <input alt="e" type="image" class="thumbs-up thumbs-up-deactive" src="img/user-profile/thumbs-up-deactive.png">
+                                            </div>
+                                            <div class="col-md-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row more-row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-10">
+                                <a href="#">
+                                    +More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <footer>
+          <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="img/global/logo.png" id="logo-img"></br>
+                    <label id="footer-shoar">
+                        <i>
+                            we are some people like you.</br>
+                            we just do not like wasting our money.</br>
+                            we also like getting whatever we wish, from anywhere we like :)
+                        </i>
+                    </label>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <li class="title"><b>Company<br><br></b></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Policies</a></li>
+                        <li><a href="#">Terms & Privacy</a></li>
+                        <li><a href="#">Who didn't support us?!</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <li class="title"><b>discover<br><br></b></li>
+                        <li><a href="#">Trust and safety</a></li>
+                        <li><a href="#">Invite friends</a></li>
+                        <li><a href="#">Tooshe picks</a></li>
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Business Travel</a></li>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <li class="title"><b>Picking<br><br></b></li>
+                        <li><a href="#">Why Pick</a></li>
+                        <li><a href="#">Hospitality</a></li>
+                        <li><a href="#">Delivery ways</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-list">
+                    <div class="row dropdown-div" id="language-dropdown">
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Language
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu ">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Persian</a></li>
+                            <li><a href="#">Arabic</a></li>
+                            <li><a href="#">Indian</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="row dropdown-div">
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Currency
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">USD</a></li>
+                            <li><a href="#">Irr</a></li>
+                            <li><a href="#">Eur</a></li>
+                            <li><a href="#">Lira</a></li>
+                            <li><a href="#">Dirham</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+
+              <!--<div class="col-md-6">-->
+                <!--<ul class="legals">-->
+                  <!--<li><a href="#">Terms &amp; Conditions</a></li>-->
+                  <!--<li><a href="#">Legals</a></li>-->
+                <!--</ul>-->
+              <!--</div>-->
+              <!--<div class="col-md-6 credit">-->
+                <!--<p>Designed &amp; Developed by <a href="http://www.peterfinlan.com/">Peter Finlan</a> exclusively for <a href="http://tympanus.net/codrops/"><em>Codrops</em></a></p>-->
+              <!--</div>-->
+            </div>
+            <div class="row">
+               <!--<h4 id="join-us">Join us on</h4>-->
+            </div>
+            <div class="row">
+                <ul>
+                    <li><img></li>
+                </ul>
+            </div>
+          </div>
+        </footer>
+    <!--site ends here-->
+    <!--<script src="js/global/jquery-1.11.2.js" ></script>-->
+     <script src="js/global/bootstrap.min.js" ></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+    <script src="js/global/jquery.geocomplete.js"></script>
+    <script src="js/global/moment.min.js"></script>
+    <script src="js/global/material.min.js"></script>
+    <script src="js/global/star-rating.min.js" ></script>
+    <script src="js/user-profile/user-profile.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $.material.init();
+        });
+    </script>
+</body>
+</html>

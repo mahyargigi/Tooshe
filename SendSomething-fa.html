@@ -13,7 +13,7 @@
     <link href="css/global/bootstrap-material-datepicker.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <!--<link href="css/SendSomething.css" rel="stylesheet">-->
-    <link href="css/SendSomething/sendsomething.css" rel="stylesheet">
+    <link href="css/SendSomething/sendsomething-fa.css" rel="stylesheet">
     <!--<link href="css/global/font.css" rel="stylesheet">-->
 
 
@@ -31,34 +31,34 @@
             {
                 width: 0px;
                 height: 3px;
-                margin-left:31px; 
+                margin-left:31px;
                 margin-top:5px;
-                background-color:#E12258; 
+                background-color:#E12258;
             }
             .line2
             {
                 width: 0px;
                 height: 3px;
-                margin-left:23px; 
+                margin-left:23px;
                 margin-top:5px;
-                background-color:#E12258; 
+                background-color:#E12258;
             }
             .line3
             {
                 width: 0px;
                 height: 3px;
-                margin-left:16px; 
+                margin-left:16px;
                 margin-top:-15px;
-                background-color:#E12258; 
+                background-color:#E12258;
             }
 
         .line4
         {
           width: 0px;
           height: 3px;
-          margin-left:19px; 
+          margin-left:19px;
           margin-top:-15px;
-          background-color:#E12258; 
+          background-color:#E12258;
 
         }
         </style>
@@ -77,7 +77,7 @@
         <li><a href="#" style="font-family:Kurnia; font-size:40px; color:white; position:relative; top:-10px;"><img src="images/logo.png" height="60px" width="100px;"></a></li>
       </ul>
 <!--       <form class="navbar-form navbar-left" role="search">
-    <div class="row">    
+    <div class="row">
         <div class="col-xs-8 col-xs-offset-2">
             <div class="input-group">
                 <div class="input-group-btn search-panel">
@@ -93,7 +93,7 @@
                       <li><a href="#all">Anywhere</a></li>
                     </ul>
                 </div>
-                <input type="hidden" name="search_param" value="all" id="search_param">         
+                <input type="hidden" name="search_param" value="all" id="search_param">
                 <input type="text" style="width:250px; margin-top:0px;" class="form-control" name="x" placeholder="Search term...">
                 <span class="input-group-btn">
                     <button class="btn btn-default" type="button" style="height:34px;"><span class="glyphicon glyphicon-search"></span></button>
@@ -115,9 +115,9 @@
         <!-- <li>
            <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span><span color="green" style="background-color:#2980b9;" class="badge">1</span></img></a>
             <div class="dropdown">
-  
+
                 <input class="dropdown-toggle img-circle" type="image" src="images/small-cart-icon.png" style="width:20px; height:20px; margin-top:10px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span color="green" style="background-color:#2980b9;" class="badge">0</span>
-                
+
                 <span class="caret"></span></a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                     <li><a href="#">My Profile</a></li>
@@ -135,9 +135,9 @@
         <ul class="nav navbar-nav navbar-right">
         <li>
             <div class="dropdown" style="background-color:transparent;">
-  
+
                 <input class="dropdown-toggle img-circle" type="image" src="images/Bell.png" style="width:25px; height:25px; margin-top:20px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span color="green" style="background-color:#E12258; position:relative; margin-right:10px; margin-left:-10px; margin-top:-35px;" class="badge">4</span>
-                
+
                 <!-- <span class="caret"></span></a> -->
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" id="notif" style="width:300px; color:black;">
                     <li><center><b>Notifications</b><span color="green" style="background-color:#E12258; margin-top:0px;" class="badge">4</span></center></li>
@@ -159,9 +159,9 @@
         <li>
           <!-- <a href="#"><span class="glyphicon glyphicon-envelope"></span><span color="green" style="background-color:#c0392b;" class="badge">3</span></img></a> -->
             <div class="dropdown" style="background-color:transparent;">
-  
+
                 <input class="dropdown-toggle img-circle" type="image" src="images/envelope.png" style="width:30px; height:30px; margin-top:17px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span color="green" style="background-color:#2980b9; position:relative; margin-right:10px; margin-left:-5px; margin-top:-38px;" class="badge">0</span>
-                
+
                 <!-- <span class="caret"></span></a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                     <li><a href="#">My Profile</a></li>
@@ -178,9 +178,9 @@
         </li>
         <li>
             <div class="dropdown" style="background-color:transparent;">
-  
+
                 <input class="dropdown-toggle img-circle" type="image" src="images/ibn_sina_by_sneghka-d6rwzvg.jpg" style="width:40px; height:40px; margin-top:10px; margin-right:30px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                
+
                 <!-- <span class="caret"></span> -->
                 </input>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -197,7 +197,7 @@
             </div>
 
 
-          
+
 
         </li>
       </ul>
@@ -207,12 +207,12 @@
 
 <script type="text/javascript">
     $("#order").hover(function(){
-        
+
         // $("#line1").css('visibility','visible');
         // $("#line2").css('visibility','hidden');
         // $("#line3").css('visibility','hidden');
         // $("#line1").css('visibility','visible');
-        // $("#line1").toggle('slide');     
+        // $("#line1").toggle('slide');
         $('.line1').animate({width: '90px'}, 400);
         $("#cart").attr('src','images/order-por.png');
         $("#cart").css('width','40px');
@@ -292,15 +292,21 @@
                         <img src="img/sendsomething/send-something-icon.png" class="tambr-img" >
                     </div>
                     <div class="col-md-10">
-                        <h2 class="send-something-header">Send something</h2>
+                        <h2 class="send-something-header">
+                        ارسال جنس
+                        </h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-10">
-                        <h4 class="what-header">What?</h4>
-                        <input  class="input-lg what-input" type="text" placeholder="What do you want to send?">
-                        <h4 class="weight-header">Weight(Kg):</h4>
+                        <h4 class="what-header" dir="rtl">
+                        وزن
+                        </h4>
+                        <input  class="input-lg what-input" type="text" dir="rtl" placeholder="چه می خواهی بفرستی؟(مشخصات کامل)">
+                        <h4 class="weight-header" dir="rtl">
+                                                چه چیزی
+                        </h4>
                         <input  class="input-lg weight-input" type="number" value="0" min="0" max="40">
 
                     </div>
@@ -308,7 +314,9 @@
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-10">
-                         <h4 class="upload-header">Upload photos of it:</h4>
+                         <h4 class="upload-header">
+                         چند تصویر از آن بارگذاری کنید:
+                         </h4>
                          <input type="file" onchange="readURL1(this);"   accept="image/*" id="fileInput1" name="fileInput" style="display: none;" />
                          <input type="file" onchange="readURL2(this);"   accept="image/*" id="fileInput2" name="fileInput" style="display: none;" />
                          <input type="file" onchange="readURL3(this);"   accept="image/*" id="fileInput3" name="fileInput" style="display: none;" />
@@ -338,27 +346,31 @@
                         <!--<br>-->
                         <span class="third-line-span empty-span-2"></span>
                         <span class="second-line-span to-span">
-                            <label class="input-label">TO</label>
+                            <label class="input-label">
+                            از
+                            </label>
                         </span>
                         <span class="second-line-span dest-span">
-                            <input type="text" placeholder="To location" class="input-lg location-input" id="dest-input">
+                            <input type="text" placeholder="نام شهر" class="input-lg location-input" id="dest-input">
                         </span>
                         <span class="second-line-span empty-span"></span>
                         <span class="second-line-span from-span">
-                            <label class="input-label">From</label>
+                            <label class="input-label">
+                            به
+                            </label>
                         </span>
                         <span class="second-line-span source-span">
-                            <input type="text" placeholder="From location" class="input-lg location-input" id="source-input">
+                            <input type="text" placeholder="نام شهر" class="input-lg location-input" id="source-input">
                         </span>
                         <div class="second-line-span empty-span inline-span">
                             <span style="visibility: hidden">a</span>
                         </div>
                         <span class="second-line-span from-date-span">
-                            <input type="text" class="input-lg second-line-input" id="fromDate" placeholder="FromDate">
+                            <input type="text" class="input-lg second-line-input" id="fromDate" placeholder="از تاریخ">
                         </span>
                         <span class="second-line-span empty-span"></span>
                         <span class="second-line-span to-date-span">
-                            <input type="text" class="input-lg second-line-input" id="toDate" placeholder="TODate">
+                            <input type="text" class="input-lg second-line-input" id="toDate" placeholder="تا تاریخ">
                         </span>
                     <!--</div>-->
                 </div>
@@ -368,20 +380,26 @@
                     <!--</div>-->
                     <!--<div class="col-md-10">-->
                         <span class="third-line-span empty-span-2"></span>
-                        <span class="third-line-span how-much-span">
-                            <label class="how-much-label">How much</label><br>
-                            <label class="is-ok-label">is okay?</label><br>
-                            <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0" id="slider"/>
+                        <span class="third-line-span how-much-span" dir="rtl">
+                            <label class="how-much-label">
+چقدر
+                            </label><br>
+                            <label class="is-ok-label">
+حاضری پرداخت کنی؟
+                            </label><br>
+                            <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0" id="slider" dir="ltr"/>
                             <div id="slider-value"></div>
                         </span>
                         <span class="third-line-span empty-span"></span>
                         <span class="third-line-span find-passengers-span">
                             <!--<a href="javascript:void(0)"  class="btn btn-info btn-lg btn-material-cyan-600" id="find-passengers-id"><label style="width: 100%;" id="button-label">Save & find passenger!</label></a></br>-->
-                            <div class="btn btn-info btn-lg btn-material-cyan-600" id="find-passengers-id">Save & find passenger!</div>
-                            <div class="checkbox">
+                            <div class="btn btn-info btn-lg btn-material-cyan-600" id="find-passengers-id">
+                                ذخیره و نمایش مسافران مربوطه
+                            </div>
+                            <div class="checkbox" dir="rtl">
                                 <label>
-                                    <input type="checkbox"><span class="let-my-span">Let my request be searchable for everyone
-                                    (Your name is still private)</span>
+                                    <input type="checkbox"><span class="let-my-span">
+ تقاضای من برای سایر کاربران قابل جست و جو باشد (البته مشخصات شما مخفی خواهد ماند)                                    </span>
                                 </label>
                             </div>
                         </span>
@@ -489,7 +507,7 @@
       </div>
     </footer>
     <script src="js/global/jquery-1.11.2.js" ></script>
-    
+
     <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
     <script src="js/global/jquery.geocomplete.js"></script>
     <script src="js/global/ripples.min.js"></script>

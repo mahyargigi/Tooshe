@@ -1,23 +1,18 @@
 <!DOCTYPE html>
-<html>
-<head lang="fa">
+<html lang="fa">
+<head>
+    <title></title>
     <meta charset="UTF-8">
     <link href="css/global/bootstrap.min.css" rel="stylesheet">
-    <!--<link href="css/global/roboto.min.css" rel="stylesheet">-->
     <link href="css/global/material.min.css" rel="stylesheet">
     <link href="css/global/material-fullpalette.min.css" rel="stylesheet">
-    <!--<link href="css/global/ripples.min.css" rel="stylesheet">-->
-    <!--<link href="css/main.css" rel="stylesheet">-->
-    <!--<link href="css/global/nouislider.min.css" rel="stylesheet">-->
-    <link href="css/footer/footer.css" rel="stylesheet">
     <link href="css/global/bootstrap-material-datepicker.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <!--<link href="css/SendSomething.css" rel="stylesheet">-->
-    <link href="css/SendSomething/sendsomething.css" rel="stylesheet">
-    <!--<link href="css/global/font.css" rel="stylesheet">-->
+    <link href="css/flightSubmit/flightSubmit-fa.css" rel="stylesheet">
+    <link href="css/footer/footer.css" rel="stylesheet">
+    <link href="css/global/font.css" rel="stylesheet">
+    <!--<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>-->
 
-
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
@@ -62,9 +57,6 @@
 
         }
         </style>
-
-
-    <title>Send-something</title>
 </head>
 <body>
 
@@ -108,7 +100,7 @@
 
         <li><a href="/order" style="width:160px; margin-left:70px;" id="order"><!-- <input class="dropdown-toggle img-circle" type="image" src="images/small-cart-icon.png" style="width:20px; height:20px; margin-top:0px; margin-left:150px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> --><img src="images/order-kam.png" style="width:40px; height:40px; margin-top:-7px; margin-left:15px;" id="cart"/><b style="margin-top:-7px;"> order sth</b><!-- <img src="images/line.png" style="width:90px; margin-left:-85px; margin-top:25px;" id="line1"/> --><div class="line1"></div></a></li>
 
-        <li><a href="/send" style="width:160px; margin-left:80px;" id="send"><!-- <span class="glyphicon glyphicon-align-right" style="margin-left:50px; top:-2px;"></span><input class="dropdown-toggle img-circle" type="image" src="images/gift.png" style="width:20px; height:20px; margin-top:0px; margin-left:5px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> --><img src="images/send-kam.png" style="width:40px; height:40px; margin-top:-7px; margin-left:15px;" id="gift"/><b style="position:relative; top:0px;">&nbsp send sth</b><!-- <img src="images/line.png" style="width:90px; margin-left:-85px; margin-top:25px; visibility:hidden;" id="line2"/> --><div class="line2"></div></a></li>
+        <li><a href="send" style="width:160px; margin-left:80px;" id="send"><!-- <span class="glyphicon glyphicon-align-right" style="margin-left:50px; top:-2px;"></span><input class="dropdown-toggle img-circle" type="image" src="images/gift.png" style="width:20px; height:20px; margin-top:0px; margin-left:5px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> --><img src="images/send-kam.png" style="width:40px; height:40px; margin-top:-7px; margin-left:15px;" id="gift"/><b style="position:relative; top:0px;">&nbsp send sth</b><!-- <img src="images/line.png" style="width:90px; margin-left:-85px; margin-top:25px; visibility:hidden;" id="line2"/> --><div class="line2"></div></a></li>
 
         <li><a href="/travelSubmit" style="width:160px; margin-left:80px;" id="take"><!-- <button class="btn btn-default" style="background-color:transparent; border-width:2px; border-color:#D6D6C2; color:#7C3A39; height:40px; width:100px; margin-top:8px; margin-left:50px;" type="button"><p style="color:white;">Take sth</p></button><span class="glyphicon glyphicon-align-left" style="color:#D6D6C2; margin-left:5px; top:7px;"></span> --><img src="images/take-sth-kam.png" style="width:150px; height:40px; margin-top:-5px; margin-left:10px;" id="button"\><b style="position:relative; top:-30px; margin-left:30px;">Take sth</b><!-- <img src="images/line.png" style="width:90px; margin-left:-72px; margin-top:40px; visibility:hidden;" id="line3"/> --><div class="line3"></div></a></li>
         </ul>
@@ -160,7 +152,7 @@
           <!-- <a href="#"><span class="glyphicon glyphicon-envelope"></span><span color="green" style="background-color:#c0392b;" class="badge">3</span></img></a> -->
             <div class="dropdown" style="background-color:transparent;">
   
-                <input class="dropdown-toggle img-circle" type="image" src="images/envelope.png" style="width:30px; height:30px; margin-top:17px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span color="green" style="background-color:#2980b9; position:relative; margin-right:10px; margin-left:-5px; margin-top:-38px;" class="badge">0</span>
+                <!-- <input class="dropdown-toggle img-circle" type="image" src="images/envelope.png" style="width:30px; height:30px; margin-top:17px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span color="green" style="background-color:#2980b9; position:relative; margin-right:10px; margin-left:-5px; margin-top:-38px;" class="badge">0</span> -->
                 
                 <!-- <span class="caret"></span></a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -281,288 +273,243 @@
 
 </script>
 
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8" style="margin-top:-100px;">
-            <form action="">
-                <div class="row">
-                    <div class="col-md-2">
-                        <img src="img/sendsomething/send-something-icon.png" class="tambr-img" >
+    <div class="container-fluid">
+        <div class="row container-row" style="margin-top: 50px;">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <form id="flight-form">
+                    <div class="row" id="title">
+                        <h3 class="header">
+                            برنامه ی سفرت را اعلام کن
+                        </h3>
                     </div>
-                    <div class="col-md-10">
-                        <h2 class="send-something-header">Send something</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-10">
-                        <h4 class="what-header">What?</h4>
-                        <input  class="input-lg what-input" type="text" placeholder="What do you want to send?">
-                        <h4 class="weight-header">Weight(Kg):</h4>
-                        <input  class="input-lg weight-input" type="number" value="0" min="0" max="40">
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-10">
-                         <h4 class="upload-header">Upload photos of it:</h4>
-                         <input type="file" onchange="readURL1(this);"   accept="image/*" id="fileInput1" name="fileInput" style="display: none;" />
-                         <input type="file" onchange="readURL2(this);"   accept="image/*" id="fileInput2" name="fileInput" style="display: none;" />
-                         <input type="file" onchange="readURL3(this);"   accept="image/*" id="fileInput3" name="fileInput" style="display: none;" />
-                        <span class="image-container">
-                            <a class="upload-image-link1" href="#">
-                                <img src="img/sendsomething/dotted1.png" uploaded="false" id='user-image1' class="upload-image1" alt=""/>
-                                <img src="img/sendsomething/close_button_1-512.png" alt="" class="top-image1"/>
-                            </a>
-                        </span>
-                        <span class="image-container">
-                            <a class="upload-image-link2" href="#">
-                                <img src="img/sendsomething/dotted1.png" uploaded="false" id='user-image2' class="upload-image2" alt=""/>
-                                <img src="img/sendsomething/close_button_1-512.png" alt="" class="top-image2"/>
-                            </a>
-                        </span>
-                        <span class="image-container">
-                            <a class="upload-image-link3" href="#">
-                                <img src="img/sendsomething/dotted1.png" uploaded="false" id='user-image3' class="upload-image3" alt=""/>
-                                <img src="img/sendsomething/close_button_1-512.png" alt="" class="top-image3"/>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <div class="row">
-                    <!--<div class="col-md-2"></div>-->
-                    <!--<div class="col-md-10">-->
-                        <!--<br>-->
-                        <span class="third-line-span empty-span-2"></span>
-                        <span class="second-line-span to-span">
-                            <label class="input-label">TO</label>
-                        </span>
-                        <span class="second-line-span dest-span">
-                            <input type="text" placeholder="To location" class="input-lg location-input" id="dest-input">
-                        </span>
-                        <span class="second-line-span empty-span"></span>
-                        <span class="second-line-span from-span">
-                            <label class="input-label">From</label>
-                        </span>
-                        <span class="second-line-span source-span">
-                            <input type="text" placeholder="From location" class="input-lg location-input" id="source-input">
-                        </span>
-                        <div class="second-line-span empty-span inline-span">
-                            <span style="visibility: hidden">a</span>
+                    <div class="row first-row">
+                        <!--<div class="col-md-1"></div>-->
+                        <div class="col-md-5">
+                            <label class="travel-label">
+                                شهر مبدا
+                            </label>
+                            <input id="departure-city" class="input-lg travel-input">
                         </div>
-                        <span class="second-line-span from-date-span">
-                            <input type="text" class="input-lg second-line-input" id="fromDate" placeholder="FromDate">
-                        </span>
-                        <span class="second-line-span empty-span"></span>
-                        <span class="second-line-span to-date-span">
-                            <input type="text" class="input-lg second-line-input" id="toDate" placeholder="TODate">
-                        </span>
-                    <!--</div>-->
-                </div>
-                <div class="row">
-                    <!--<div class="col-md-2">-->
+                        <div class="col-md-2"></div>
+                        <div class="col-md-5">
+                            <label class="travel-label">
+                            شهر مقصد
+                            </label>
+                            <input id="arrival-city" class="input-lg travel-input">
+                        </div>
+                    </div>
+                    <div class="row second-row">
+                        <!--<div class="col-md-1">-->
 
-                    <!--</div>-->
-                    <!--<div class="col-md-10">-->
-                        <span class="third-line-span empty-span-2"></span>
-                        <span class="third-line-span how-much-span">
-                            <label class="how-much-label">How much</label><br>
-                            <label class="is-ok-label">is okay?</label><br>
-                            <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0" id="slider"/>
-                            <div id="slider-value"></div>
-                        </span>
-                        <span class="third-line-span empty-span"></span>
-                        <span class="third-line-span find-passengers-span">
-                            <!--<a href="javascript:void(0)"  class="btn btn-info btn-lg btn-material-cyan-600" id="find-passengers-id"><label style="width: 100%;" id="button-label">Save & find passenger!</label></a></br>-->
-                            <div class="btn btn-info btn-lg btn-material-cyan-600" id="find-passengers-id">Save & find passenger!</div>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"><span class="let-my-span">Let my request be searchable for everyone
-                                    (Your name is still private)</span>
+                        <!--</div>-->
+                        <div class="col-md-4">
+                            <label class="travel-label" id="travel-date">
+                                تاریخ پرواز
+                            </label>
+                            <input class="form-input input-lg travel-input second-line-input" id="date1">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="travel-label">
+                            تاریخ نشستن پرواز
+                            </label>
+                            <input class="form-input input-lg travel-input second-line-input" id="date2">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="travel-label" id="till-label">
+                                آخرین روز اقامت
+                            </label>
+                            <input class="form-input input-lg travel-input second-line-input" id="date3">
+                        </div>
+                    </div>
+                    <hr style="border-color: #c6c6c6;">
+                    <div class="row form-horizontal">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-7">
+                            <!--<div class="col-md-1"></div>-->
+                            <div class="col-md-6">
+                                <label class="travel-label max-weight-label">
+                                بیشترین وزنی که می توانم جا به جا کنم
                                 </label>
                             </div>
-                        </span>
-                    <!--</div>-->
-
-                    <!--</div>-->
-                </div>
-            </form>
+                            <div class="col-md-3" >
+                                <input type="number" class="input-lg" min='1' max='40' id="max-weight-input">
+                            </div>
+                            <div class="col-md-1">
+                                <label class="travel-label">
+                                    کیلوگرم
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3" id="warning-div">
+                            <!--<label>You cannot carry more than 40kg!</label>-->
+                        </div>
+                    </div>
+                    <hr style="border-color: #c6c6c6;">
+                    <div class="row" style="margin-top: 0px">
+                        <div class="col-md-7">
+                            <div>
+                                <!--<div class="col-md-1"></div>-->
+                                <div class="col-md-12">
+                                    <div class="radio radio-primary col-md-12" id="first-radio">
+                                        <label style="width: 55%;" class="input-label radio-label">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                                                                        به صورت رایگان تقاضاها را انجام می دهم
+                                        </label>
+                                        <span style="width: 10%;"><img style="width: inherit;"  src="img/farah-pahlavi.png" id="for-free-image"></span>
+                                        <span style="width: 25%;vertical-align: middle;" dir="rtl" id="for-free-description">                                        (این کار باعث می شود که شما پروفایل محبوب تری داشته باشید و در آینده تقاضاهای بیشتری دریافت کنید)</span>
+                                    </div>
+                                    <div class="radio radio-primary col-md-12" id="second-radio">
+                                        <!--<div class="col-md-6" style="display: inline">-->
+                                            <label class="input-label col-md-12 radio-label">
+                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" >
+                                               صرفا تقاضاهای بالای این قیمت را انجام می دهم
+                                            </label>
+                                        <!--</div>-->
+                                        <!--<div class="col-md-6" style="display: inline">-->
+                                            <span>
+                                                <div class="col-md-10">
+                                                    <input class="mdl-slider mdl-js-slider" disabled type="range" min="0" max="100" value="25" tabindex="0" id="slider"/>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label id="money-input">25$</label>
+                                                </div>
+                                            </span>
+                                        <!--</div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row" style="margin-top: 0px ;">
+                                <label id="any-information" style="width: 80%;" dir="rtl" >
+                                   آیا چیز دیگری هست که افراد باید در مورد مسافرت شما بدانند ؟
+                            <br>
+                                    (نظیر محدودیت ها و ...)
+                                </label>
+                                <textarea class="form-control" dir="rtl" rows="4" id="textArea" style="width: 80%"></textarea>
+                            </div>
+                            <!--<div class="row">-->
+                                <div class="btn btn-material-cyan btn-material-cyan-400" id='submit-button'>
+                                    سفر من را ثبت کن
+                                </div>
+                            <br>
+                            <br>
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4"></div>
         </div>
-        <div class="col-md-2"></div>
     </div>
-</div>
-<footer>
-      <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <img src="img/global/logo.png" id="logo-img"></br>
-                <label id="footer-shoar">
-                    <i>
-                        we are some people like you.</br>
-                        we just do not like wasting our money.</br>
-                        we also like getting whatever we wish, from anywhere we like :)
-                    </i>
-                </label>
-            </div>
-            <div class="col-md-2">
-                <ul class="footer-list">
-                    <li class="title"><b>Company<br><br></b></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Press</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Policies</a></li>
-                    <li><a href="#">Terms & Privacy</a></li>
-                    <li><a href="#">Who didn't support us?!</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2">
-                <ul class="footer-list">
-                    <li class="title"><b>discover<br><br></b></li>
-                    <li><a href="#">Trust and safety</a></li>
-                    <li><a href="#">Invite friends</a></li>
-                    <li><a href="#">Tooshe picks</a></li>
-                    <li><a href="#">Mobile</a></li>
-                    <li><a href="#">Business Travel</a></li>
-                    <li><a href="#">Site Map</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2">
-                <ul class="footer-list">
-                    <li class="title"><b>Picking<br><br></b></li>
-                    <li><a href="#">Why Pick</a></li>
-                    <li><a href="#">Hospitality</a></li>
-                    <li><a href="#">Delivery ways</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 footer-list">
-                <div class="row dropdown-div" id="language-dropdown">
-                    <div class="dropdown">
-                      <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Language
-                      <span class="caret"></span></button>
-                      <ul class="dropdown-menu ">
-                        <li><a href="#">English</a></li>
-                        <li><a href="#">Persian</a></li>
-                        <li><a href="#">Arabic</a></li>
-                        <li><a href="#">Indian</a></li>
-                      </ul>
+    <footer>
+          <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="img/global/logo.png" id="logo-img"></br>
+                    <label id="footer-shoar">
+                        <i>
+                            we are some people like you.</br>
+                            we just do not like wasting our money.</br>
+                            we also like getting whatever we wish, from anywhere we like :)
+                        </i>
+                    </label>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <li class="title"><b>Company<br><br></b></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Policies</a></li>
+                        <li><a href="#">Terms & Privacy</a></li>
+                        <li><a href="#">Who didn't support us?!</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <li class="title"><b>discover<br><br></b></li>
+                        <li><a href="#">Trust and safety</a></li>
+                        <li><a href="#">Invite friends</a></li>
+                        <li><a href="#">Tooshe picks</a></li>
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Business Travel</a></li>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <li class="title"><b>Picking<br><br></b></li>
+                        <li><a href="#">Why Pick</a></li>
+                        <li><a href="#">Hospitality</a></li>
+                        <li><a href="#">Delivery ways</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-list">
+                    <div class="row dropdown-div" id="language-dropdown">
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Language
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu ">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Persian</a></li>
+                            <li><a href="#">Arabic</a></li>
+                            <li><a href="#">Indian</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="row dropdown-div">
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Currency
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">USD</a></li>
+                            <li><a href="#">Irr</a></li>
+                            <li><a href="#">Eur</a></li>
+                            <li><a href="#">Lira</a></li>
+                            <li><a href="#">Dirham</a></li>
+                          </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="row dropdown-div">
-                    <div class="dropdown">
-                      <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Currency
-                      <span class="caret"></span></button>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">USD</a></li>
-                        <li><a href="#">Irr</a></li>
-                        <li><a href="#">Eur</a></li>
-                        <li><a href="#">Lira</a></li>
-                        <li><a href="#">Dirham</a></li>
-                      </ul>
-                    </div>
-                </div>
-            </div>
 
-          <!--<div class="col-md-6">-->
-            <!--<ul class="legals">-->
-              <!--<li><a href="#">Terms &amp; Conditions</a></li>-->
-              <!--<li><a href="#">Legals</a></li>-->
-            <!--</ul>-->
-          <!--</div>-->
-          <!--<div class="col-md-6 credit">-->
-            <!--<p>Designed &amp; Developed by <a href="http://www.peterfinlan.com/">Peter Finlan</a> exclusively for <a href="http://tympanus.net/codrops/"><em>Codrops</em></a></p>-->
-          <!--</div>-->
-        </div>
-        <div class="row">
-           <!--<h4 id="join-us">Join us on</h4>-->
-        </div>
-        <div class="row">
-            <ul>
-                <li><img></li>
-            </ul>
-        </div>
-      </div>
-    </footer>
+              <!--<div class="col-md-6">-->
+                <!--<ul class="legals">-->
+                  <!--<li><a href="#">Terms &amp; Conditions</a></li>-->
+                  <!--<li><a href="#">Legals</a></li>-->
+                <!--</ul>-->
+              <!--</div>-->
+              <!--<div class="col-md-6 credit">-->
+                <!--<p>Designed &amp; Developed by <a href="http://www.peterfinlan.com/">Peter Finlan</a> exclusively for <a href="http://tympanus.net/codrops/"><em>Codrops</em></a></p>-->
+              <!--</div>-->
+            </div>
+            <div class="row">
+               <!--<h4 id="join-us">Join us on</h4>-->
+            </div>
+            <div class="row">
+                <ul>
+                    <li><img></li>
+                </ul>
+            </div>
+          </div>
+        </footer>
+    <!--site edns here-->
     <script src="js/global/jquery-1.11.2.js" ></script>
-    
     <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
     <script src="js/global/jquery.geocomplete.js"></script>
-    <script src="js/global/ripples.min.js"></script>
     <script src="js/global/material.min.js"></script>
     <script src="js/global/moment.min.js"></script>
-    <script src="js/typeahead.js"></script>
-    <script src="js/typeahead.bundle.js"></script>
-    <script src="js/bloodhound.js"></script>
-    <script src="js/typeahead.jquery.js"></script>
-    <script src="js/global/nouislider.min.js"></script>
+    <!--<script src="js/global/nouislider.min.js"></script>-->
     <script src="js/global/bootstrap-mterial-datepicker.js"></script>
-    <!--<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>-->
-    <script src="js/sendsomething/SendSomething.js"></script>
+    <script src="js/flightSubmit/flightSubmit.js"></script>
     <script>
         $(document).ready(function(){
             $.material.init();
         });
     </script>
-    <script>
-    //        $(document).ready(function(){
-    //        });
-            function readURL1(input){
-                if($('#user-image1').attr('uploaded')==='false'){
-                    if (input.files && input.files[0]) {
-                        var reader = new FileReader();
-                        reader.onload = function (e) {
-                          $('#user-image1')
-                            .attr('src', e.target.result);
-                          $('#user-image1')
-                            .attr('uploaded', 'true');
-    //                        console.log("picture uploaded!");
-                        };
-                        reader.readAsDataURL(input.files[0]);
-                        $('#user-image1').attr('uploaded','true');
-
-                    }
-                }
-            };
-            function readURL2(input){
-                if($('#user-image2').attr('uploaded')==='false'){
-                    if (input.files && input.files[0]) {
-                        var reader = new FileReader();
-                        reader.onload = function (e) {
-                          $('#user-image2')
-                            .attr('src', e.target.result);
-                          $('#user-image2')
-                            .attr('uploaded', 'true');
-    //                        console.log("picture uploaded!");
-                        };
-                        reader.readAsDataURL(input.files[0]);
-                        $('#user-image2').attr('uploaded','true');
-
-                    }
-                }
-            };
-            function readURL3(input){
-                if($('#user-image3').attr('uploaded')==='false'){
-                    if (input.files && input.files[0]) {
-                        var reader = new FileReader();
-                        reader.onload = function (e) {
-                          $('#user-image3')
-                            .attr('src', e.target.result);
-                          $('#user-image3')
-                            .attr('uploaded', 'true');
-    //                        console.log("picture uploaded!");
-                        };
-                        reader.readAsDataURL(input.files[0]);
-                        $('#user-image3').attr('uploaded','true');
-
-                    }
-                }
-            };
-        </script>
 </body>
-
 </html>

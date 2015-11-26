@@ -1,0 +1,321 @@
+body{
+    background-color: rgba(248, 248, 248, 0.80);
+}
+
+@font-face {
+    font-family: broya;
+    src: url(../../fonts/global/BROYA.TTF);
+}
+.navbar-inverse{
+    font-family: broya,Arial !important;
+}
+
+.container-fluid{
+    font-family: broya,Arial !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: broya,Arial !important;
+}
+
+input[type=text],input[type=url],input[type=number],textarea,select{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(202, 198, 203, 0.90);
+}
+
+input[type=text],input[type=url],input[type=number],select{
+    height: 3em;
+    padding-left: 15px;
+}
+.search-input{
+    /*margin-left: 4%;*/
+    width: 80% !important;
+    display: inline-block;
+}
+.tooshe-will-find-div{
+    margin-top: 10px !important;
+}
+option{
+    border: solid;
+    border-color: #761c19;
+}
+textarea{
+    padding-left: 15px;
+}
+input[disabled=true],input[disabled=disabled]{
+    background-color: rgba(205, 207, 203, 0.90);
+}
+
+.slider-row{
+    display: none;
+    margin-top: 4em !important;
+    margin-bottom: 5% !important;
+}
+
+.empty-span{
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.search-image-btn{
+    width: 15%;
+    display: inline-block;
+    height: 3em;
+    margin-left: 0px;
+}
+
+.search-image{
+    width: 40%;
+    display: inline;
+    height: 150px;
+}
+.search-div{
+    margin-top: 0.5em !important;
+}
+
+.arrow-key{
+    width: 6%;
+    display: inline;
+}
+.search-image-label{
+    width: 40%;
+    padding: 0.6em;
+    background-color: rgba(229, 230, 228, 0.90);
+}
+
+span.checkbox-material{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.radio-div{
+    width: 60%;
+    display: inline-block;
+}
+
+.input-div{
+    width: 39%;
+    display: none;
+}
+
+.approximate-row{
+    /*margin-bottom: 4em !important;*/
+    margin-top: 4em !important;
+}
+.delivery-fee-row{
+    margin-bottom: 4em !important;
+}
+
+.alert{
+    display: inline-block;
+    /*width: 23%;*/
+    margin-right: 5px;
+    border-radius: 8px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: rgba(117, 115, 109, 0.90);
+}
+
+.regions{
+    margin-top: 10px;
+    display: none;
+}
+
+div.radio{
+    display: inline-block;
+}
+
+.order-product{
+    color: rgba(100, 189, 197, 0.90);
+}
+.tooshe-will-find{
+    color: rgba(32, 139, 10, 0.90);
+    font-size: 1.1em;
+}
+.kamrang-header{
+    color: rgba(159, 158, 155, 0.90);
+}
+.form-label{
+    color: rgba(88, 146, 159, 0.90);
+}
+.or-header{
+    color: rgba(94, 89, 91, 0.90);
+}
+.row{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.row.or-div{
+    margin-top: 40px;
+    margin-bottom: 5px !important;
+}
+.create-req-div{
+    margin-top: 5px !important;
+}
+.upload-image,.top-image{
+    width: 100px;
+    height: 100px;
+}
+
+
+.image-container{
+    position: relative;
+}
+.image-container{
+    position: relative;
+}
+.top-image{
+    visibility: hidden;
+}
+.image-container .top-image {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    z-index: 1;
+    opacity: 0.7;
+}
+.amount-input{
+    width: 100%;
+    margin-right: 0px;
+}
+
+.you-pay {
+    color: green;
+}
+
+.accurate-to-be{
+    color: rgba(161, 159, 157, 0.90);
+    font-size: 0.9em;
+}
+
+.currency{
+    width: 100%;
+    margin-left: 0px;
+}
+.offers-div{
+    margin-bottom: 10px;
+}
+.fewer-offers{
+    color: palevioletred;
+}
+.more-offers{
+    float: right;
+    color:royalblue;
+}
+.empty-div{
+    height: 50px;
+}
+.slider-div{
+    /*margin-top: 40px;*/
+}
+.delivery-fee-label{
+    font-size: 20px;
+
+}
+.percent-label{
+    margin-bottom: 30px;
+    color: rgba(136, 134, 133, 0.90);
+}
+.totally-pay{
+    margin-left: 5%;
+    color: green;
+    font-size: 20px;
+}
+.fee-amount{
+    /*color: darkred;*/
+    margin-left: 15px;
+}
+.totally-pay-div{
+    border: solid;
+    border-width: 3px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: green;
+}
+
+/*slider*/
+
+
+input[type=range]{
+    -webkit-appearance: none;
+    margin-top: 10px;
+    border: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    /*width: 300px;*/
+    height: 5px;
+    /*background: rgba(255, 146, 146, 0.84);*/
+    background: rgba(255, 146, 146, 0.84);
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: solid;
+    border-color: rgba(172, 165, 170, 0.93);
+    height: 36px; /* past 16px*/
+    width: 36px; /* past 16px*/
+    border-radius: 50%;
+    background: white;
+    margin-top: -15px; /* past -4px*/
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    /*width: 300px;*/
+    height: 5px;
+    background: rgba(255, 146, 146, 0.84);
+    border: none;
+    /*border-radius: 3px;*/
+}
+
+input[type=range]{
+    /* fix for FF unable to apply focus style bug  */
+    /*border: 1px solid white; */
+
+    /*required for proper track sizing in FF*/
+    /*width: 300px;*/
+}
+
+input[type=range]::-moz-range-track {
+    /*width: 300px;*/
+    height: 5px;
+    background: rgba(255, 146, 146, 0.84);
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    border: solid;
+    border-color: rgba(172, 165, 170, 0.93);
+    height: 36px; /* past 16px*/
+    width: 36px; /* past 16px*/
+    border-radius: 50%;
+    background: white;
+    margin-top: -4px; /* past -4px*/
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    border: none;
+}
+
+input[type=range]:focus::-moz-range-track {
+    /*height: 5px;*/
+    /*background: rgba(255, 146, 146, 0.84);*/
+    /*border: none;*/
+    /*border-radius: 3px;*/
+    border: none;
+}
+/*end of slider css*/

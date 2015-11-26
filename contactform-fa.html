@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Contact Form</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="css/footer/footer.css" rel="stylesheet">
+    <link href="css/global/bootstrap.min.css" rel="stylesheet">
+    <link href="css/global/material.min.css" rel="stylesheet">
+	<!--<script  src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>-->
+    <script src="js/global/jquery-1.11.2.js"></script>
+    <script
+    src="http://maps.googleapis.com/maps/api/js">
+    </script>
+
+    <script>
+    function initialize() {
+      var mapProp = {
+        center:new google.maps.LatLng(35.728299, 51.432851),
+        zoom:18,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+	<!--[if IE]><script>
+	$(document).ready(function() { 
+
+$("#form_wrap").addClass('hide');
+
+})
+
+</script><![endif]-->
+
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+
+        <style type="text/css">
+            #notif
+            {
+                background-color: #ECF6FF;
+            }
+
+            .line1
+            {
+                width: 0px;
+                height: 3px;
+                margin-left:31px; 
+                margin-top:5px;
+                background-color:#E12258; 
+            }
+            .line2
+            {
+                width: 0px;
+                height: 3px;
+                margin-left:23px; 
+                margin-top:5px;
+                background-color:#E12258; 
+            }
+            .line3
+            {
+                width: 0px;
+                height: 3px;
+                margin-left:16px; 
+                margin-top:-15px;
+                background-color:#E12258; 
+            }
+
+        .line4
+        {
+          width: 0px;
+          height: 3px;
+          margin-left:19px; 
+          margin-top:-15px;
+          background-color:#E12258; 
+
+        }
+        </style>
+
+<style>
+
+
+body, div, h1,h2, form, fieldset, input, textarea, footer,p {
+	margin: 0; padding: 0; border: 0; outline: none;
+}
+
+
+@font-face {
+	/*font-family: 'YanoneKaffeesatzRegular';*/
+	/*src: url('contactForm/yanonekaffeesatz-regular-webfont.eot');*/
+	/*src: url('contactForm/yanonekaffeesatz-regular-webfont.eot?#iefix') format('embedded-opentype'),*/
+	/*url('contactForm/yanonekaffeesatz-regular-webfont.woff') format('woff'),*/
+	/*url('contactForm/yanonekaffeesatz-regular-webfont.ttf') format('truetype'),*/
+	/*url('contactForm/yanonekaffeesatz-regular-webfont.svg#YanoneKaffeesatzRegular') format('svg');*/
+	/*font-weight: normal;*/
+	/*font-style: normal;*/
+}
+
+body {background: #f9f9f9 ; color: #7c7873;
+    /*font-family: 'YanoneKaffeesatzRegular';*/
+    font-family: 'Lato',Arial !important;
+}
+p {text-shadow:0 1px 0 #fff; font-size:24px;}
+#wrap {width:530px; margin:20px auto 0; margin-bottom: 180px !important;}
+h1 {margin-bottom:20px; text-align:center;font-size:48px; text-shadow:0 1px 0 #ede8d9; }
+
+
+	#form_wrap { overflow:hidden; height:446px; position:relative; top:0px;
+		-webkit-transition: all 1s ease-in-out .3s;
+		-moz-transition: all 1s ease-in-out .3s;
+		-o-transition: all 1s ease-in-out .3s;
+		transition: all 1s ease-in-out .3s;}
+	
+	#form_wrap:before {content:"";
+		position:absolute;
+		bottom:128px;left:0px;
+		background:url('img/contactform/before.png');
+		width:530px;height: 316px;}
+	
+	#form_wrap:after {content:"";position:absolute;
+		bottom:0px;left:0;
+		background:url('img/contactform/after.png');
+		width:530px;height: 260px; }
+
+	#form_wrap.hide:after, #form_wrap.hide:before {display:none; }
+	#form_wrap:hover {height:776px;top:-200px;}
+
+
+	form {background:#f7f2ec url('img/contactform/letter_bg.png');
+		position:relative;top:200px;overflow:hidden;
+		height:200px;width:400px;margin:0px auto;padding:20px; 
+		border: 1px solid #fff;
+		border-radius: 3px; 
+		-moz-border-radius: 3px; -webkit-border-radius: 3px;
+		box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;
+		-moz-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 14px #fff;
+		-webkit-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;
+		-webkit-transition: all 1s ease-in-out .3s;
+		-moz-transition: all 1s ease-in-out .3s;
+		-o-transition: all 1s ease-in-out .3s;
+		transition: all 1s ease-in-out .3s;}
+
+
+		#form_wrap:hover form {height:530px;}
+
+		label {
+			margin: 11px 20px 0 0;
+			font-size: 16px; color: #b3aba1;
+			text-transform: uppercase; 
+			text-shadow: 0px 1px 0px #fff;
+		}
+        i{
+            text-transform: lowercase;
+        }
+
+		input[type=text], textarea {
+			font: 14px normal normal uppercase Lato, arial, serif;
+			color: #7c7873;background:none;
+			width: 380px; height: 36px; padding: 0px 10px; margin: 0 0 10px 0;
+			border:1px solid #f8f5f1;
+			-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+			-moz-box-shadow: inset 0px 0px 1px #726959;
+			-webkit-box-shadow:  inset 0px 0px 1px #b3a895; 
+			box-shadow:  inset 0px 0px 1px #b3a895;
+		}	
+
+		textarea { height: 80px; padding-top:14px;}
+
+		textarea:focus, input[type=text]:focus {background:rgba(255,255,255,.35);}
+
+		#form_wrap input[type=submit] {
+			position:relative;
+            /*font-family: 'YanoneKaffeesatzRegular'; */
+            font-family: 'Lato',Arial !important;
+            font-size:24px; color: #7c7873;text-shadow:0 1px 0 #fff;
+			width:100%; text-align:center;opacity:0;
+			background:none;
+			cursor: pointer;
+			-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; 
+			-webkit-transition: opacity .6s ease-in-out 0s;
+			-moz-transition: opacity .6s ease-in-out 0s;
+			-o-transition: opacity .6s ease-in-out 0s;
+			transition: opacity .6s ease-in-out 0s;
+		}
+
+		#form_wrap:hover input[type=submit] {z-index:1;opacity:1;
+			-webkit-transition: opacity .5s ease-in-out 1.3s;
+			-moz-transition: opacity .5s ease-in-out 1.3s;
+			-o-transition: opacity .5s ease-in-out 1.3s;
+			transition: opacity .5s ease-in-out 1.3s;}
+
+			#form_wrap:hover input:hover[type=submit] {color:#435c70;}
+    /*.phone-number label{*/
+        /*margin-top: 100px;*/
+    /*}*/
+    .inline-image{
+        display: inline-block;
+    }
+    .non-capital{
+        text-transform: lowercase;
+    }
+
+</style>
+</head>
+<body>
+
+
+        <nav class="navbar navbar-inverse" style="background-image:url('images/bg.jpg'); height:65px;">
+  <div class="container-fluid">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <!-- <li><a class="navbar-brand" href="#" style="position:relative; left:0px; top:-10px;" ><img src="images/logo.gif"/></a></li> -->
+        <li><a href="#" style="font-family:Kurnia; font-size:40px; color:white; position:relative; top:-10px;"><img src="images/logo.png" height="60px" width="100px;"></a></li>
+      </ul>
+<!--       <form class="navbar-form navbar-left" role="search">
+    <div class="row">    
+        <div class="col-xs-8 col-xs-offset-2">
+            <div class="input-group">
+                <div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span id="search_concept">Destination</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#contains">United States</a></li>
+                      <li><a href="#its_equal">Canada</a></li>
+                      <li><a href="#greather_than">Switzerland</a></li>
+                      <li><a href="#less_than">UEA</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#all">Anywhere</a></li>
+                    </ul>
+                </div>
+                <input type="hidden" name="search_param" value="all" id="search_param">         
+                <input type="text" style="width:250px; margin-top:0px;" class="form-control" name="x" placeholder="Search term...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" style="height:34px;"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+    </div>
+</div>
+      </form> -->
+      <ul class="nav navbar-nav navbar-left">
+
+    <li><a href="/search" style="width:160px; margin-left:50px;" id="search"><img src="images/takesth.png" style="width:100px; height:40px; margin-top:-5px; margin-left:10px;" id="button2"\><b style="position:relative; top:-30px; margin-left:27px; font-size:13px;"><span class="glyphicon glyphicon-search"></span>&nbsp Search</b><div class="line4"></div></a></li>
+
+        <li><a href="/order" style="width:160px; margin-left:70px;" id="order"><!-- <input class="dropdown-toggle img-circle" type="image" src="images/small-cart-icon.png" style="width:20px; height:20px; margin-top:0px; margin-left:150px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> --><img src="images/order-kam.png" style="width:40px; height:40px; margin-top:-7px; margin-left:15px;" id="cart"/><b style="margin-top:-7px;"> order sth</b><!-- <img src="images/line.png" style="width:90px; margin-left:-85px; margin-top:25px;" id="line1"/> --><div class="line1"></div></a></li>
+
+        <li><a href="send" style="width:160px; margin-left:80px;" id="send"><!-- <span class="glyphicon glyphicon-align-right" style="margin-left:50px; top:-2px;"></span><input class="dropdown-toggle img-circle" type="image" src="images/gift.png" style="width:20px; height:20px; margin-top:0px; margin-left:5px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> --><img src="images/send-kam.png" style="width:40px; height:40px; margin-top:-7px; margin-left:15px;" id="gift"/><b style="position:relative; top:0px;">&nbsp send sth</b><!-- <img src="images/line.png" style="width:90px; margin-left:-85px; margin-top:25px; visibility:hidden;" id="line2"/> --><div class="line2"></div></a></li>
+
+        <li><a href="/travelSubmit" style="width:160px; margin-left:80px;" id="take"><!-- <button class="btn btn-default" style="background-color:transparent; border-width:2px; border-color:#D6D6C2; color:#7C3A39; height:40px; width:100px; margin-top:8px; margin-left:50px;" type="button"><p style="color:white;">Take sth</p></button><span class="glyphicon glyphicon-align-left" style="color:#D6D6C2; margin-left:5px; top:7px;"></span> --><img src="images/take-sth-kam.png" style="width:150px; height:40px; margin-top:-5px; margin-left:10px;" id="button"\><b style="position:relative; top:-30px; margin-left:30px;">Take sth</b><!-- <img src="images/line.png" style="width:90px; margin-left:-72px; margin-top:40px; visibility:hidden;" id="line3"/> --><div class="line3"></div></a></li>
+        </ul>
+        <!-- <li>
+           <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span><span color="green" style="background-color:#2980b9;" class="badge">1</span></img></a>
+            <div class="dropdown">
+  
+                <input class="dropdown-toggle img-circle" type="image" src="images/small-cart-icon.png" style="width:20px; height:20px; margin-top:10px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span color="green" style="background-color:#2980b9;" class="badge">0</span>
+                
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li><a href="#">My Profile</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">My Credit</a></li>
+                    <li role="separator" class="divider">
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Setting</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Log Out</a></li>
+
+                </ul>
+            </div>
+        </li> -->
+        <ul class="nav navbar-nav navbar-right">
+        <li>
+            <div class="dropdown" style="background-color:transparent;">
+  
+                <input class="dropdown-toggle img-circle" type="image" src="images/Bell.png" style="width:25px; height:25px; margin-top:20px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span color="green" style="background-color:#E12258; position:relative; margin-right:10px; margin-left:-10px; margin-top:-35px;" class="badge">4</span>
+                
+                <!-- <span class="caret"></span></a> -->
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" id="notif" style="width:300px; color:black;">
+                    <li><center><b>Notifications</b><span color="green" style="background-color:#E12258; margin-top:0px;" class="badge">4</span></center></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><img src="images/hamid.jpg" class="img-circle" style="width:40px; height:40px;"/><!-- <p style="margin-top:-40px; margin-left:50px;"><b>  Hamid </b>posted a photo<br>on your wall.</p> --></a><div style="width:200px; height:50px; margin-top:-45px; margin-left:80px;"><b>Hamid </b>posted a photo on your wall.</div></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><img src="images/abbas.jpg" class="img-circle" style="width:40px; height:40px;"/><!-- <p style="margin-top:-40px; margin-left:50px;"><b>  Abbas </b>liked the post<br>you've shared.</p> --></a><div style="width:200px; height:50px; margin-top:-45px; margin-left:80px;"><b>Abbas </b>liked the post you've shared.</div></li></li>
+                    <li role="separator" class="divider">
+                    <li><a href="#"><img src="images/peyman.png" class="img-circle" style="width:40px; height:40px;"/><!-- <p style="margin-top:-40px; margin-left:50px;"><b>  Peyman </b>added you to<br>his circle.</p> --></a><div style="width:200px; height:50px; margin-top:-45px; margin-left:80px;"><b>Peyman </b>added you to his circle.</div></li></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><img src="images/masoud.jpg" class="img-circle" style="width:40px; height:40px;"/><!-- <p style="margin-top:-40px; margin-left:50px;"><b>  Masoud </b>commented on the post<br>you've shared.</p> --></a><div style="width:200px; height:50px; margin-top:-45px; margin-left:80px;"><b>Masoud </b>commented on the post you've shared.</div></li></li>
+                    <li role="separator" class="divider"></li>
+                    <li><center><a href="#"><b>view all notifications</b></a></center></li>
+
+                </ul>
+            </div>
+          <!-- <a href="#"><span class="glyphicon glyphicon-bell"></span><span color="green" style="background-color:#2980b9;" class="badge">0</span></img></a> -->
+        </li>
+        <li>
+          <!-- <a href="#"><span class="glyphicon glyphicon-envelope"></span><span color="green" style="background-color:#c0392b;" class="badge">3</span></img></a> -->
+            <div class="dropdown" style="background-color:transparent;">
+  
+                <!-- <input class="dropdown-toggle img-circle" type="image" src="images/envelope.png" style="width:30px; height:30px; margin-top:17px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span color="green" style="background-color:#2980b9; position:relative; margin-right:10px; margin-left:-5px; margin-top:-38px;" class="badge">0</span> -->
+                
+                <!-- <span class="caret"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li><a href="#">My Profile</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">My Credit</a></li>
+                    <li role="separator" class="divider">
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Setting</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Log Out</a></li>
+
+                </ul> -->
+            </div>
+        </li>
+        <li>
+            <div class="dropdown" style="background-color:transparent;">
+  
+                <input class="dropdown-toggle img-circle" type="image" src="images/ibn_sina_by_sneghka-d6rwzvg.jpg" style="width:40px; height:40px; margin-top:10px; margin-right:30px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                
+                <!-- <span class="caret"></span> -->
+                </input>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">My Profile</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">My Wallet</a></li>
+                    <li role="separator" class="divider">
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Setting</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="/profile/logout">Log Out</a></li>
+
+                </ul>
+            </div>
+
+
+          
+
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<script type="text/javascript">
+    $("#order").hover(function(){
+        
+        // $("#line1").css('visibility','visible');
+        // $("#line2").css('visibility','hidden');
+        // $("#line3").css('visibility','hidden');
+        // $("#line1").css('visibility','visible');
+        // $("#line1").toggle('slide');     
+        $('.line1').animate({width: '90px'}, 400);
+        $("#cart").attr('src','images/order-por.png');
+        $("#cart").css('width','40px');
+        $("#cart").css('height','40px');
+    }, function(){
+        $('.line1').animate({width: '0'}, 400);
+        $("#cart").attr('src','images/order-kam.png');
+    });
+
+    // $("#send").mouseover(function(){
+    //  // $("#line2").show('slide', {direction: 'right'}, 1000);
+    //  // //$("#line2").css('visibility','visible');
+    //  $("#line1").css('visibility','hidden');
+    //  $("#line3").css('visibility','hidden');
+    //  $("#line2").css('visibility','visible');
+    //  $("#line2").toggle('slide');
+
+    // });
+    $('#send').hover(function(){
+        $('.line2').animate({width: '100px'}, 400);
+        $("#gift").attr('src','images/send-por.png');
+        $("#gift").css('width','40px');
+        $("#gift").css('height','40px');
+    }, function(){
+        $('.line2').animate({width: '0'}, 400);
+        $("#gift").attr('src','images/send-kam.png');
+    });
+
+    $("#take").hover(function(){
+        // $("#line3").css('visibility','visible');
+        // $("#line2").css('visibility','hidden');
+        // $("#line1").css('visibility','hidden');
+        // $("#line3").css('visibility','visible');
+        $('.line3').animate({width: '90px'}, 400);
+        $("#button").attr('src','images/take-sth-por.png');
+        $("#button").css('width','150px');
+        $("#button").css('height','40px');
+        $("#button").css('margin-left','-2px');
+        $("#button").css('margin-top','-6px');
+    }, function(){
+        $('.line3').animate({width: '0'}, 400);
+        $("#button").attr('src','images/take-sth-kam.png');
+        $("#button").css('margin-left','10px');
+        $("#button").css('margin-top','-5px');
+    });
+
+    $("#search").hover(function(){
+        // $("#line3").css('visibility','visible');
+        // $("#line2").css('visibility','hidden');
+        // $("#line1").css('visibility','hidden');
+        // $("#line3").css('visibility','visible');
+        $('.line4').animate({width: '90px'}, 400);
+        $("#button2").attr('src','images/takesthpor.png');
+        $("#button2").css('width','100px');
+        $("#button2").css('height','40px');
+        $("#button2").css('margin-left','15px');
+        $("#button2").css('margin-top','-6px');
+    }, function(){
+        $('.line4').animate({width: '0'}, 400);
+        $("#button2").attr('src','images/takesth.png');
+        $("#button2").css('width','100px;');
+        $("#button2").css('margin-left','10px');
+        $("#button2").css('margin-top','-5px');
+    });
+
+
+</script>
+
+
+
+    <div class="big-div" style="text-align:center;background-color: white;width: 1200px;margin-top: 100px;margin-left: auto;margin-right: auto;margin-bottom: 50px;">
+        <br>
+        <br>
+        <div>
+            <p><span style="font-size: 1.5em ; color: red;margin-top: 5px;">&#8640</span> if you want to tell us something,you can use the pocket below
+            <br>
+                or below in the tooshe whistle then our army will come and help you.
+            </p>
+        </div>
+        <div class="phone-number" style="display:inline-block;background-color: white;vertical-align: top;margin-top: 22%;">
+            <span style="position: relative;left: -100px;">
+                <label>+98-919-0752537</label>
+                <img src="img/contactform/Untitled-3 (4).png" class="inline-image" alt="">
+            </span>
+            <br>
+            <br>
+            <br>
+            <span style="position: relative;left: -50px;">
+                <label>+98-919-0752537</label>
+                <img src="img/contactform/Untitled-4 (4).png" class="inline-image" alt="">
+            </span>
+            <br>
+            <br>
+            <br>
+            <span style="position: relative ; left: -10px;">
+                <label>+98-919-0752537</label>
+                <img src="img/contactform/Untitled-5.png" class="inline-image" alt="">
+            </span>
+        </div>
+        <div id="wrap" style="display: inline-block;background-color: white;">
+
+            <!--<h1>Send a message</h1>-->
+            <div id='form_wrap'>
+                <form>
+                    <p>Hello Tooshe,</p>
+                    <label for="email">Your Message : </label>
+                    <textarea  name="message" value="Your Message" id="message" ></textarea>
+                    <p>Best,</p>
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" value="" id="name" />
+                    <label for="email">Email: </label>
+                    <input type="text" name="email" value="" id="email" />
+                    <input type="submit" name ="submit" value="Now, I send, thanks!" />
+                </form>
+            </div>
+        </div>
+        <div style="display:inline-block;background-color: white;vertical-align: top;margin-top: 22%;">
+            <span style="position: relative;left: 100px;">
+                <img src="img/contactform/ss.png" class="inline-image" alt="">
+                <label class="non-capital">Support@tooshe.net</label>
+            </span>
+            <br>
+            <br>
+            <br>
+            <span style="position: relative;left: 50px;">
+                <img src="img/contactform/Untitlesd-2.png" class="inline-image" alt="">
+                <label class="non-capital">telegram.me/berah</label>
+            </span>
+            <br>
+            <br>
+            <br>
+            <span style="position: relative ; left: 10px;">
+                <img src="img/contactform/Untitled-2 (4).png" class="inline-image" alt="">
+                <label class="non-capital">Tooshe.net@gmail.com</label>
+            </span>
+
+        </div>
+        <div>
+            <p><span style="font-size: 1.5em ; color: red;margin-top: 5px;">&#8642</span>And if you want to come to our office to have a coffe with us , you are welcomed to this address:</p><br>
+            <h4>111 Mirzaye zeynali avenue , Beheshti St. Tehran , Iran</h4>
+            <div id="googleMap" style="width:500px;height:380px;margin-left: auto;margin-right: auto;"></div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <footer>
+          <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="img/global/logo.png" id="logo-img"></br>
+                    <label id="footer-shoar">
+                        <i>
+                            we are some people like you.</br>
+                            we just do not like wasting our money.</br>
+                            we also like getting whatever we wish, from anywhere we like :)
+                        </i>
+                    </label>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <li class="title"><b>Company<br><br></b></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Policies</a></li>
+                        <li><a href="#">Terms & Privacy</a></li>
+                        <li><a href="#">Who didn't support us?!</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <li class="title"><b>discover<br><br></b></li>
+                        <li><a href="#">Trust and safety</a></li>
+                        <li><a href="#">Invite friends</a></li>
+                        <li><a href="#">Tooshe picks</a></li>
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Business Travel</a></li>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <li class="title"><b>Picking<br><br></b></li>
+                        <li><a href="#">Why Pick</a></li>
+                        <li><a href="#">Hospitality</a></li>
+                        <li><a href="#">Delivery ways</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-list">
+                    <div class="row dropdown-div" id="language-dropdown">
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Language
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu ">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Persian</a></li>
+                            <li><a href="#">Arabic</a></li>
+                            <li><a href="#">Indian</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="row dropdown-div">
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Currency
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">USD</a></li>
+                            <li><a href="#">Irr</a></li>
+                            <li><a href="#">Eur</a></li>
+                            <li><a href="#">Lira</a></li>
+                            <li><a href="#">Dirham</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+               <!--<h4 id="join-us">Join us on</h4>-->
+            </div>
+            <div class="row">
+                <ul>
+                    <li><img></li>
+                </ul>
+            </div>
+          </div>
+        </footer>
+    <script src="js/global/material.min.js"></script>
+    <script src="js/global/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $.material.init();
+        });
+    </script>
+<!--More script and css style-->
+<!--: <a href="http://www.htmldrive.net/" title="HTML DRIVE - Free DHMTL Scripts,Jquery plugins,Javascript,CSS,CSS3,Html5 Library">www.htmldrive.net </a>-->
+</body>
+</html>

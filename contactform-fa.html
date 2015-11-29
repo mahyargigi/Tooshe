@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fa">
 <head>
 	<meta charset="utf-8" />
 	<title>Contact Form</title>
@@ -81,6 +81,10 @@ $("#form_wrap").addClass('hide');
 
 <style>
 
+    @font-face {
+    font-family: broya;
+    src: url(fonts/global/BROYA.TTF);
+    }
 
 body, div, h1,h2, form, fieldset, input, textarea, footer,p {
 	margin: 0; padding: 0; border: 0; outline: none;
@@ -100,7 +104,7 @@ body, div, h1,h2, form, fieldset, input, textarea, footer,p {
 
 body {background: #f9f9f9 ; color: #7c7873;
     /*font-family: 'YanoneKaffeesatzRegular';*/
-    font-family: 'Lato',Arial !important;
+    font-family: broya,Arial !important;
 }
 p {text-shadow:0 1px 0 #fff; font-size:24px;}
 #wrap {width:530px; margin:20px auto 0; margin-bottom: 180px !important;}
@@ -173,7 +177,7 @@ h1 {margin-bottom:20px; text-align:center;font-size:48px; text-shadow:0 1px 0 #e
 		#form_wrap input[type=submit] {
 			position:relative;
             /*font-family: 'YanoneKaffeesatzRegular'; */
-            font-family: 'Lato',Arial !important;
+            font-family: broya,Arial !important;
             font-size:24px; color: #7c7873;text-shadow:0 1px 0 #fff;
 			width:100%; text-align:center;opacity:0;
 			background:none;
@@ -426,9 +430,7 @@ h1 {margin-bottom:20px; text-align:center;font-size:48px; text-shadow:0 1px 0 #e
         <br>
         <br>
         <div>
-            <p><span style="font-size: 1.5em ; color: red;margin-top: 5px;">&#8640</span> if you want to tell us something,you can use the pocket below
-            <br>
-                or below in the tooshe whistle then our army will come and help you.
+            <p><span style="font-size: 1.5em ; color: red;margin-top: 5px;">&#8640</span> اگر می خواهید مطلبی به ما بگویید از پاکت زیر استفاده کنید
             </p>
         </div>
         <div class="phone-number" style="display:inline-block;background-color: white;vertical-align: top;margin-top: 22%;">
@@ -456,15 +458,15 @@ h1 {margin-bottom:20px; text-align:center;font-size:48px; text-shadow:0 1px 0 #e
             <!--<h1>Send a message</h1>-->
             <div id='form_wrap'>
                 <form>
-                    <p>Hello Tooshe,</p>
-                    <label for="email">Your Message : </label>
+                    <p dir="rtl">سلام توشه!</p>
+                    <label for="email">متن پیغام </label>
                     <textarea  name="message" value="Your Message" id="message" ></textarea>
-                    <p>Best,</p>
-                    <label for="name">Name: </label>
+                    <p>با تشکر</p>
+                    <label for="name">نام </label>
                     <input type="text" name="name" value="" id="name" />
-                    <label for="email">Email: </label>
+                    <label for="email">ایمیل </label>
                     <input type="text" name="email" value="" id="email" />
-                    <input type="submit" name ="submit" value="Now, I send, thanks!" />
+                    <input type="submit" name ="submit" value="پیغام تمام شد، بفرست" />
                 </form>
             </div>
         </div>
@@ -490,8 +492,8 @@ h1 {margin-bottom:20px; text-align:center;font-size:48px; text-shadow:0 1px 0 #e
 
         </div>
         <div>
-            <p><span style="font-size: 1.5em ; color: red;margin-top: 5px;">&#8642</span>And if you want to come to our office to have a coffe with us , you are welcomed to this address:</p><br>
-            <h4>111 Mirzaye zeynali avenue , Beheshti St. Tehran , Iran</h4>
+            <p><span style="font-size: 1.5em ; color: red;margin-top: 5px;">&#8642</span>اگر می خواهید که با ما به صورت حضوری ملاقات داشته باشید به آدرس زیر مراجعه کنید</p><br>
+            <h4>ایران - تهران - خیابان شهید بهشتی - خیابان میرزای زینلی</h4>
             <div id="googleMap" style="width:500px;height:380px;margin-left: auto;margin-right: auto;"></div>
         </div>
         <br>

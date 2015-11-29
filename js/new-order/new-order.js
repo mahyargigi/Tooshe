@@ -195,15 +195,19 @@ $(document).ready(function(){
    $('.you-pay').html($('#slider').val()+'$');
 //    console.log("slider-amount:"+$('slider').val());
 
-    $('.fee-amount').html((parseInt($('.amount-input').val()) + parseInt($('#slider').val()))+'$');
+    $('.fee-amount').html((parseInt($('.amount-input').val()) + parseInt($('#slider').val())+(parseInt($('#slider').val())/10))+'$');
+//    console.log("amount-input:"+(parseInt($('.amount-input').val()))+" slider-amount:"+parseInt($('#slider').val())+" slider/10:"+(parseInt($('#slider').val())/10));
     $('#slider').on('change',function(){
-       $('.fee-amount').html((parseInt($(this).val()) + parseInt($('.amount-input').val()))+'$');
+       $('.fee-amount').html((parseInt($(this).val()) + parseInt($('.amount-input').val())+(parseInt($('#slider').val())/10))+'$');
        $('.you-pay').html($(this).val()+'$');
         $('.ten-percent-amount').html((parseInt($('#slider').val())/10)+"$");
+//            console.log("amount-input:"+(parseInt($('.amount-input').val()))+" slider-amount:"+parseInt($('#slider').val())+" slider/10:"+(parseInt($('#slider').val())/10));
     });
     $('.amount-input').on('change',function(){
        $('.ten-percent-amount').html($(this).val()+"$");
-       $('.fee-amount').html((parseInt($(this).val()) + parseInt($('#slider').val()))+'$');
+       $('.fee-amount').html((parseInt($(this).val()) + parseInt($('#slider').val()) +(parseInt($('#slider').val())/10))+'$');
         $('.ten-percent-amount').html((parseInt($('#slider').val())/10)+"$");
+        $('.you-pay').html($('#slider').val()+'$');
+//            console.log("amount-input:"+(parseInt($('.amount-input').val()))+" slider-amount:"+parseInt($('#slider').val())+" slider/10:"+(parseInt($('#slider').val())/10));
     });
 });

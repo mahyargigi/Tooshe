@@ -1,3 +1,8 @@
+@font-face {
+    font-family: broya;
+    src: url(../../fonts/global/BROYA.TTF);
+}
+
 /*first row*/
     .first-row{
         margin-top: 20px;
@@ -116,7 +121,7 @@
         }
         .btn-circle{
             border-radius: 20px;
-            font-size: 9px;
+            font-size: 12px !important;
         }
         .edit-btn{
             border: solid;
@@ -154,7 +159,7 @@
             margin-left: 30px;
             padding-left: 5px;
             padding-right: 5px;
-            font-size: 10px;
+            font-size: 15px;
         }
         .suitcase-img{
             height: 50px;
@@ -168,6 +173,7 @@
         }
         .suitcase-material li{
             margin-top: 20px;
+            font-size: 16px;
         }
         .weight-div{
             margin-top: 20px;
@@ -210,7 +216,7 @@
         .review-image{
             margin-bottom: 10px;
         }
-        
+
         .textArea{
             margin-top: 50px;
             margin-bottom: 20px;
@@ -239,7 +245,8 @@
         }
         .publish-review-btn{
             /*display: inline;*/
-            font-size: 10px;
+            font-size: 16px;
+
             float: right;
             border-radius: 20px;
             position: relative;
@@ -349,6 +356,7 @@
             text-align: center;
             display: table-cell;
             width: 100%;
+            /*font-size:em;*/
         }
         .search-btn{
             /*width: 100px;*/
@@ -524,12 +532,16 @@
 /*general*/
 
 .container-fluid{
-    font-family: 'Lato',Arial;
+    font-family: broya,Arial;
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Lato',Arial;
+    font-family: broya,Arial;
+    /*font-size: 1.1em !important;*/
 }
+ h4, h5 , h6{
+     font-size: 1.1em !important;
+ }
 
 li{
     list-style: none;
@@ -544,7 +556,7 @@ body{
 }
 
 label{
-    font-weight: 100;
+    font-weight: 100 !important;
 
 }
 textarea{

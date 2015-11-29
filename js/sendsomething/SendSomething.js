@@ -27,6 +27,14 @@ $(document).ready(function(){
         console.log((this).value);
         $('#slider-value').html((this).value+"$");
     });
+    $('.weight-input').on('change',function(){
+      if(this.value > 40){
+          this.value = 40;
+      }
+       else if(this.value<0){
+          this.value=0;
+      }
+   });
     var input1 = document.getElementById('dest-input');
     input1.onkeypress = function(){
         $('#dest-input').geocomplete();

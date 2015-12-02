@@ -1,0 +1,23 @@
+@font-face {
+    font-family: broya;
+    src: url(../../fonts/global/BROYA.TTF);
+}
+.about-us-text{
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: lightgrey;
+    background-color: white;
+    padding: 10px;
+}
+.about-us{
+    margin-bottom: 20px;
+}
+.container-fluid{
+    font-family: broya,Arial;
+    font-size: 1.2em;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: broya,Arial;
+}

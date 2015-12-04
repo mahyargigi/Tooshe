@@ -23,82 +23,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="search.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search.html">
+      <file leaf-file-name="Finalize.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Finalize.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1379" column="43" selection-start="90161" selection-end="90161" vertical-scroll-proportion="0.0" vertical-offset="23039" max-vertical-offset="23766">
+            <state line="42" column="126" selection-start="2208" selection-end="2208" vertical-scroll-proportion="0.64006025" vertical-offset="289" max-vertical-offset="1326">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about-us.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/about-us/about-us.css">
+      <file leaf-file-name="application-fee.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application-fee.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="27" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="5049">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about-us-fa.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/about-us-fa.html">
+      <file leaf-file-name="SendSomething.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SendSomething.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="2813" selection-end="2813" vertical-scroll-proportion="0.65384614" vertical-offset="544" max-vertical-offset="3162">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="9775">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about-us-fa.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/about-us/about-us-fa.css">
+      <file leaf-file-name="finalize.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/finalize/finalize.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="18" selection-start="183" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+            <state line="59" column="9" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1292">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about-us.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/about-us.html">
+      <file leaf-file-name="user-profile.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="18" selection-start="875" selection-end="875" vertical-scroll-proportion="3.2692308" vertical-offset="476" max-vertical-offset="2924">
+            <state line="9" column="37" selection-start="424" selection-end="424" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="21369">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search-fa.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search-fa.html">
+      <file leaf-file-name="finalize.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/finalize/finalize.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="157" selection-end="158" vertical-scroll-proportion="-0.0" vertical-offset="119" max-vertical-offset="25823">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flightSubmit.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flightSubmit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="97" selection-start="732" selection-end="830" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="8500">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flightSubmit-fa.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/flightSubmit/flightSubmit-fa.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="1" selection-start="57" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="3757">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search-fa.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/search/search-fa.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="82" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8466">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
               <folding />
             </state>
           </provider>
@@ -114,9 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/new-order/new-order.js" />
-        <option value="$PROJECT_DIR$/js/sendsomething/SendSomething.js" />
-        <option value="$PROJECT_DIR$/SendSomething-fa.html" />
         <option value="$PROJECT_DIR$/SendSomething.html" />
         <option value="$PROJECT_DIR$/css/user-profile/user-profile.css" />
         <option value="$PROJECT_DIR$/css/user-profile/user-profile-fa.css" />
@@ -125,11 +95,14 @@
         <option value="$PROJECT_DIR$/search-fa.html" />
         <option value="$PROJECT_DIR$/search.html" />
         <option value="$PROJECT_DIR$/new-order-fa.html" />
-        <option value="$PROJECT_DIR$/user-profile.html" />
         <option value="$PROJECT_DIR$/about-us.html" />
         <option value="$PROJECT_DIR$/css/about-us/about-us-fa.css" />
         <option value="$PROJECT_DIR$/css/about-us/about-us.css" />
         <option value="$PROJECT_DIR$/about-us-fa.html" />
+        <option value="$PROJECT_DIR$/js/finalize/finalize.js" />
+        <option value="$PROJECT_DIR$/user-profile.html" />
+        <option value="$PROJECT_DIR$/css/finalize/finalize.css" />
+        <option value="$PROJECT_DIR$/Finalize.html" />
       </list>
     </option>
   </component>
@@ -165,6 +138,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -370,6 +344,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="flightSubmit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finalize" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -781,6 +773,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="finalize" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="application-fee" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1097,7 +1107,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1207,9 +1216,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1231,6 +1237,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -1337,48 +1346,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/contactform-fa.html">
+    <entry file="file://$PROJECT_DIR$/css/about-us/about-us-fa.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="11" selection-start="531" selection-end="531" vertical-scroll-proportion="-11.9008875" vertical-offset="8232" max-vertical-offset="10234" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/flightSubmit/flightSubmit-fa.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="1" selection-start="57" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3757">
+        <state line="8" column="18" selection-start="183" selection-end="192" vertical-scroll-proportion="0.19020979" vertical-offset="0" max-vertical-offset="715">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/global/jquery-ui.css">
+    <entry file="file://$PROJECT_DIR$/js/finalize/finalize.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.84757835" vertical-offset="595" max-vertical-offset="20927" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new-order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="637" column="54" selection-start="33966" selection-end="33966" vertical-scroll-proportion="-4.423077" vertical-offset="10714" max-vertical-offset="11424" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flightSubmit-fa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="41" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="8857" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new-order-fa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="92" selection-end="572" vertical-scroll-proportion="-16.446745" vertical-offset="11203" max-vertical-offset="12138" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flightSubmit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="97" selection-start="732" selection-end="830" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="8500">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1379" column="43" selection-start="90161" selection-end="90161" vertical-scroll-proportion="0.0" vertical-offset="23039" max-vertical-offset="23766">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715">
           <folding />
         </state>
       </provider>
@@ -1392,49 +1369,89 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user-profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="26" selection-start="34" selection-end="56" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="21369">
+        <state line="9" column="37" selection-start="424" selection-end="424" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="21369">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search-fa.html">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/embed.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="157" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="25823">
+        <state line="13" column="22" selection-start="427" selection-end="427" vertical-scroll-proportion="0.3090909" vertical-offset="0" max-vertical-offset="11271">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/search/search-fa.css">
+    <entry file="file://$PROJECT_DIR$/img/iphone.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new-order.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="82" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8466">
+        <state line="525" column="26" selection-start="29061" selection-end="29061" vertical-scroll-proportion="0.4639017" vertical-offset="8623" max-vertical-offset="11424">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/about-us/about-us.css">
+    <entry file="file://$PROJECT_DIR$/application-fee.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5049">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/about-us/about-us-fa.css">
+    <entry file="file://$PROJECT_DIR$/flightSubmit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="183" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+        <state line="1" column="6" selection-start="22" selection-end="22" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="8500">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/about-us.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="18" selection-start="875" selection-end="875" vertical-scroll-proportion="3.2692308" vertical-offset="476" max-vertical-offset="2924">
+        <state line="164" column="13" selection-start="6723" selection-end="7407" vertical-scroll-proportion="-20.76923" vertical-offset="2248" max-vertical-offset="2924">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/about-us-fa.html">
+    <entry file="file://$PROJECT_DIR$/flightSubmitOld.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="2813" selection-end="2813" vertical-scroll-proportion="0.65384614" vertical-offset="544" max-vertical-offset="3162">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6919">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flightSubmit-fa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8857">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SendSomething-fa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10081">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/finalize/finalize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="9" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SendSomething.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9775">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Finalize.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="126" selection-start="2208" selection-end="2208" vertical-scroll-proportion="0.64006025" vertical-offset="289" max-vertical-offset="1326">
           <folding />
         </state>
       </provider>

@@ -1,0 +1,71 @@
+.first-row-1-span{
+    width: 30%;
+}
+.first-row-2-span{
+    width: 30%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.first-row-3-span{
+    width: 30%;
+}
+.first-row-img{
+    width: 60%;
+    height: 100px;
+}
+.second-row-1-span{
+    width: 50%;
+    vertical-align: top;
+}
+.second-row-2-span{
+    width: 45%;
+}
+.second-row-img{
+    width: 80%;
+    height: 150px;
+    border: solid;
+    border-width: 2px;
+    border-color: lightgrey;
+    border-radius: 5px;
+    /*height: 80%;*/
+
+}
+.inner-span-1{
+    width: 25%;
+}
+.inner-span-2{
+    width: 70%;
+}
+.first-row-div{
+    position: relative;
+    top: -70px;
+}
+.inline-div{
+    margin-bottom: 10px;
+}
+.price{
+    color: green;
+    font-size: 2em;
+}
+.labelz{
+    color: rgba(156, 153, 157, 0.90);
+}
+.container-fluid{
+    font-family: 'Lato',Arial;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lato',Arial;
+}
+span.span{
+    display: inline-block;
+}
+.deal-div{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5%;
+    margin-top: 50px;
+}
+.go-to-payment{
+    padding: 20px 30px 20px 10px ;
+}

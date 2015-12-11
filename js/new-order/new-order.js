@@ -167,17 +167,27 @@ $(document).ready(function(){
     $('#slider').attr('max',parseInt($('.amount-input').val()));
     $('#slider').attr('min',parseInt($('.amount-input').val())/10);
     $('#slider').val(parseInt($('#slider').attr('max')/2))
+/*    10% bood ke 0% kardimesh
     $('.ten-percent-amount').html((parseInt($('#slider').val())/10)+"$");
+    */
+    $('.ten-percent-amount').html((0)+"$");
+
     $('.amount-input').on('change',function(){
        if($(this).val()<500){
         $('#slider').attr('min',parseInt($(this).val())/10);
         $('#slider').attr('max',parseInt($(this).val()));
+/*         10% bood ke 0% kardimesh
         $('.ten-percent-amount').html((parseInt($('#slider').val())/10)+"$");
+        */
+        $('.ten-percent-amount').html((0)+"$");
        }
         else{
            $('#slider').attr('min',(6*(parseInt($(this).val())/100)));
            $('#slider').attr('max',parseInt($(this).val()));
+/*           10% bood ke 0% shod
            $('.ten-percent-amount').html((parseInt($('#slider').val())/10)+"$");
+           */
+           $('.ten-percent-amount').html((0)+"$");
        }
     });
 
@@ -194,19 +204,36 @@ $(document).ready(function(){
 
    $('.you-pay').html($('#slider').val()+'$');
 //    console.log("slider-amount:"+$('slider').val());
-
+/* 10% - 0%
     $('.fee-amount').html((parseInt($('.amount-input').val()) + parseInt($('#slider').val())+(parseInt($('#slider').val())/10))+'$');
+    */
+    $('.fee-amount').html((parseInt($('.amount-input').val()) + parseInt($('#slider').val()))+'$');
+
+
 //    console.log("amount-input:"+(parseInt($('.amount-input').val()))+" slider-amount:"+parseInt($('#slider').val())+" slider/10:"+(parseInt($('#slider').val())/10));
     $('#slider').on('change',function(){
+/*        10% - 0%
        $('.fee-amount').html((parseInt($(this).val()) + parseInt($('.amount-input').val())+(parseInt($('#slider').val())/10))+'$');
-       $('.you-pay').html($(this).val()+'$');
+       */
+       $('.fee-amount').html((parseInt($(this).val()) + parseInt($('.amount-input').val()))+'$');
+
+        $('.you-pay').html($(this).val()+'$');
+/*        10% bood ke 0% shod
         $('.ten-percent-amount').html((parseInt($('#slider').val())/10)+"$");
+        */
+        $('.ten-percent-amount').html((0)+"$");
 //            console.log("amount-input:"+(parseInt($('.amount-input').val()))+" slider-amount:"+parseInt($('#slider').val())+" slider/10:"+(parseInt($('#slider').val())/10));
     });
     $('.amount-input').on('change',function(){
        $('.ten-percent-amount').html($(this).val()+"$");
+/*        10% - 0%
        $('.fee-amount').html((parseInt($(this).val()) + parseInt($('#slider').val()) +(parseInt($('#slider').val())/10))+'$');
+       */
+       $('.fee-amount').html((parseInt($(this).val()) + parseInt($('#slider').val()))+'$');
+/*        10% bood ke 0% shod
         $('.ten-percent-amount').html((parseInt($('#slider').val())/10)+"$");
+        */
+        $('.ten-percent-amount').html((0)+"$");
         $('.you-pay').html($('#slider').val()+'$');
 //            console.log("amount-input:"+(parseInt($('.amount-input').val()))+" slider-amount:"+parseInt($('#slider').val())+" slider/10:"+(parseInt($('#slider').val())/10));
     });

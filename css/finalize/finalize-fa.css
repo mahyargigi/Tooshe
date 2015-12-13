@@ -1,3 +1,7 @@
+@font-face {
+    font-family: broya;
+    src: url(../../fonts/global/BROYA.TTF);
+}
 .first-row-1-span{
     width: 30%;
 }
@@ -67,7 +71,7 @@
 }
 .sum-div-2-span{
     margin-right: 5px;
-    font-size: 0.6em;
+    /*font-size: 0.6em;*/
         color: rgba(179, 175, 180, 0.90);
 }
 .inline-div{
@@ -79,14 +83,17 @@
 }
 .labelz{
     color: rgba(156, 153, 157, 0.90);
-    /*width: 20%;*/
 }
 .container-fluid{
-    font-family: 'Lato',Arial;
+    font-family: broya,Arial;
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Lato',Arial;
+    font-family: broya,Arial;
+}
+/*for farsi version*/
+ h5 ,.container-fluid h6{
+    font-size: 1.2em;
 }
 span.span{
     display: inline-block;
@@ -102,4 +109,5 @@ span.span{
 }
 .go-to-payment{
     padding: 20px 20px 20px 20px ;
+    font-size: 1.2em;
 }

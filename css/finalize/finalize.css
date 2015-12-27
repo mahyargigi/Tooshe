@@ -30,6 +30,23 @@
 .second-row-2-span{
     width: 45%;
 }
+
+.third-row-1-span{
+    width: 90%;
+    vertical-align: top;
+}
+.edit{
+    text-decoration: underline;
+    color: inherit;
+}
+
+.phone-number{
+    color: rgba(165, 70, 67, 0.82);
+    text-decoration: underline;
+}
+.detail-span{
+    margin-right: 10px;
+}
 .second-row-img{
     width: 80%;
     height: 150px;
@@ -54,7 +71,8 @@
     position: absolute;
     left: 12%;
     right: 5%;
-    width: 40%;
+    /*width: 40%;*/
+    max-width: 40%;
 
 }
 .sum-div-h{
@@ -87,6 +105,10 @@
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Lato',Arial;
+}
+.details{
+    color: rgba(107, 114, 105, 0.82);
+    /*rgba(148, 155, 146, 0.72);*/
 }
 span.span{
     display: inline-block;

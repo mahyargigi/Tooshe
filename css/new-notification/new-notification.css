@@ -1,0 +1,150 @@
+.container-fluid{
+    font-family: 'Lato',Arial;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lato',Arial;
+}
+.nav-tabs{
+    width: 400px;
+    background-color: rgba(228, 221, 232, 0.72);
+}
+.nav-li{
+    width: 33.3%;
+}
+.nav-tabs > .nav-li > a{
+    color: rgba(64, 62, 65, 0.90) !important;
+}
+ .nav-li.active{
+     background-color: white;
+ }
+ .nav-tabs li a:hover{
+    color: rgba(64, 62, 65, 0.90) !important;
+}
+.nav-tabs li.active a:focus{
+    color: rgba(64, 62, 65, 0.90) !important;
+    outline: 0;
+}
+.note-div{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: white;
+    border-bottom: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #808080;
+}
+.badge{
+    background-color: red;
+}
+.inline-div{
+    display: inline-block;
+}
+.btn-div{
+    /*vertical-align: top;*/
+    vertical-align: 350%;
+    width: 25%;
+    margin-left: 5px;
+}
+.btn-2-div{
+    vertical-align: 350%;
+    width: 50%;
+}
+.acc-btn{
+    border: solid;
+    border-color: rgba(116, 193, 232, 0.72);
+    border-radius: 2px;
+    border-width: 2px;
+}
+.dec-btn{
+    border: solid;
+    border-color: rgba(221, 62, 64, 0.72);
+    border-radius: 2px;
+    border-width: 2px;
+}
+.finalize-btn{
+    color: rgba(82, 227, 41, 0.72) !important;
+    border: solid;
+    border-color: rgba(101, 180, 79, 0.72);
+    border-radius: 2px;
+    border-width: 2px;
+}
+.cancel-btn{
+    color: #808080 !important;
+    border: solid;
+    border-color: #808080;
+    border-radius: 2px;
+    border-width: 2px;
+}
+.image-div{
+    vertical-align: 350%;
+    position: relative;
+    width: 8%;
+    margin-left: 2%;
+}
+.note-text-div{
+    width: 30%;
+    margin-left: 10px;
+    /*vertical-align: top;*/
+    vertical-align: 350%;
+}
+.centerize-div{
+    width: 65%;
+    vertical-align: bottom;
+}
+.goods-div{
+    width: 30%;
+}
+.goods-inf{
+    margin-bottom: 5px;
+
+}
+.first-row-goods-div{
+    width: 30%;
+}
+.second-row-goods-div{
+   width: 10%;
+}
+.third-row-goods-div{
+    width: 30%;
+}
+.goods-space{
+    width: 3%;
+}
+.goods-information-div{
+    width: 50%;
+    /*vertical-align: 10px;*/
+}
+.goods-img-div{
+    width: 42%;
+}
+.goods-img{
+    width: 90%;
+    height: 0.9em;
+    vertical-align: -40px;
+    min-height: 200px;
+}
+.good-text{
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    /*margin-left: 20px;*/
+    padding-bottom: 10px;
+}
+.goods-label{
+    color: rgba(119, 203, 221, 0.72);
+}
+.riz-img{
+    width: 15px;
+    height: 15px;
+}
+.user-image{
+    width: 70px;
+    height: 70px;
+}
+.sticker-image{
+    position: absolute;
+    top: 40px;
+    left: -10px;
+    width: 30px !important;
+    height: 30px !important;
+    z-index: 100;
+}

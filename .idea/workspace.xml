@@ -23,38 +23,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Finalize.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Finalize.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Finalize.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="83" selection-start="2359" selection-end="2359" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="3111">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Finalize-fa.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Finalize-fa.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="27" selection-start="1914" selection-end="1914" vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="4607">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer-fa.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/footer-fa.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="17" selection-start="278" selection-end="5980" vertical-scroll-proportion="0.0" vertical-offset="2235" max-vertical-offset="2992">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="finalize-fa.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/finalize/finalize-fa.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="0" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0" vertical-offset="1316" max-vertical-offset="2006">
-              <folding />
+            <state line="35" column="31" selection-start="1645" selection-end="1645" vertical-scroll-proportion="0.57840234" vertical-offset="204" max-vertical-offset="3366">
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#h5#0;n#div#0;n#span#0;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#2;n#h5#0;n#div#0;n#span#0;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#4;n#h5#0;n#div#0;n#span#0;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,33 +40,53 @@
       <file leaf-file-name="finalize.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/finalize/finalize.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="1" selection-start="1241" selection-end="1241" vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1870">
+            <state line="50" column="12" selection-start="745" selection-end="745" vertical-scroll-proportion="-9.88" vertical-offset="603" max-vertical-offset="2244">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contactform.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contactform.html">
+      <file leaf-file-name="notification.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/notification.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="31" selection-start="3904" selection-end="3904" vertical-scroll-proportion="-8.653846" vertical-offset="1934" max-vertical-offset="10200">
-              <folding>
-                <element signature="n#style#0;n#span#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1450027418165" expanded="true" signature="973:1056" placeholder="..." />
-                <marker date="1450027418165" expanded="true" signature="1005:1045" placeholder="{...}" />
-              </folding>
+            <state line="293" column="52" selection-start="17103" selection-end="17103" vertical-scroll-proportion="-15.038462" vertical-offset="4590" max-vertical-offset="10829">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contactform-fa.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/contactform-fa.html">
+      <file leaf-file-name="notification.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/notification/notification.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="32" selection-start="4002" selection-end="4002" vertical-scroll-proportion="0.67899406" vertical-offset="1768" max-vertical-offset="11322">
-              <folding>
-                <marker date="1450027918932" expanded="true" signature="986:1069" placeholder="..." />
-                <marker date="1450027918932" expanded="true" signature="1018:1058" placeholder="{...}" />
-              </folding>
+            <state line="80" column="0" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0" vertical-offset="1070" max-vertical-offset="1785">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new-notification.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/new-notification/new-notification.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new-notification.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/new-notification.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="109" column="47" selection-start="6747" selection-end="6762" vertical-scroll-proportion="0.0" vertical-offset="1300" max-vertical-offset="2465">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new-notification.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/new-notification/new-notification.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="87" column="25" selection-start="1594" selection-end="1687" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="2652">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,22 +101,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/footer-fa.html" />
-        <option value="$PROJECT_DIR$/about-us-fa.html" />
-        <option value="$PROJECT_DIR$/css/footer/footer-fa.css" />
-        <option value="$PROJECT_DIR$/flightSubmit-fa.html" />
-        <option value="$PROJECT_DIR$/user-profile-fa.html" />
         <option value="$PROJECT_DIR$/SendSomething-fa.html" />
         <option value="$PROJECT_DIR$/user-profile.html" />
         <option value="$PROJECT_DIR$/new-order.html" />
         <option value="$PROJECT_DIR$/js/new-order/new-order.js" />
-        <option value="$PROJECT_DIR$/Finalize.html" />
         <option value="$PROJECT_DIR$/css/finalize/finalize-fa.css" />
         <option value="$PROJECT_DIR$/new-order-fa.html" />
         <option value="$PROJECT_DIR$/Finalize-fa.html" />
-        <option value="$PROJECT_DIR$/css/finalize/finalize.css" />
         <option value="$PROJECT_DIR$/contactform.html" />
         <option value="$PROJECT_DIR$/contactform-fa.html" />
+        <option value="$PROJECT_DIR$/SendSomething.html" />
+        <option value="$PROJECT_DIR$/notification.html" />
+        <option value="$PROJECT_DIR$/js/new-notification/new-notification.js" />
+        <option value="$PROJECT_DIR$/css/new-notification/new-notification.css" />
+        <option value="$PROJECT_DIR$/new-notification.html" />
+        <option value="$PROJECT_DIR$/css/finalize/finalize.css" />
+        <option value="$PROJECT_DIR$/Finalize.html" />
       </list>
     </option>
   </component>
@@ -341,6 +339,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="new-notification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="global" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -500,6 +516,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="new-order" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new-notification" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -718,6 +752,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="new-order" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new-notification" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1133,11 +1185,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\img\new-notification" />
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\img\finalize" />
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\img\user-profile" />
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\fonts\global" />
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\contactForm\img" />
-      <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\img\notification" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\img\contactform" />
@@ -1327,7 +1379,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1335,7 +1387,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.194375" sideWeight="0.6707153" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.194375" sideWeight="0.6707153" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1362,6 +1414,53 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/contactform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="31" selection-start="3904" selection-end="3904" vertical-scroll-proportion="0.0" vertical-offset="1934" max-vertical-offset="10200" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flightSubmit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8500" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new-order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11424" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SendSomething.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="-0.0" vertical-offset="17" max-vertical-offset="9792" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SendSomething-fa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11016" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-profile-fa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22695" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/user-profile/user-profile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="5" selection-start="1244" selection-end="1463" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="9486" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="39" selection-start="426" selection-end="426" vertical-scroll-proportion="0.22633137" vertical-offset="0" max-vertical-offset="21369" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/new-notification/new-notification.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/global/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="16253" selection-start="16418" selection-end="16418" vertical-scroll-proportion="0.09686609" vertical-offset="0" max-vertical-offset="702">
@@ -1369,106 +1468,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-profile.html">
+    <entry file="file://$PROJECT_DIR$/css/notification/notification.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="692" column="144" selection-start="41825" selection-end="41825" vertical-scroll-proportion="17.379366" vertical-offset="815" max-vertical-offset="21369" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-profile-no-live-req.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="21352" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/new-order/new-order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="209" column="92" selection-start="7732" selection-end="7732" vertical-scroll-proportion="0.0" vertical-offset="3294" max-vertical-offset="4165" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new-order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="30" selection-end="56" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="11424" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/new-order/new-order-fa.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="1" selection-start="58" selection-end="140" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5542">
+        <state line="80" column="0" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0" vertical-offset="1070" max-vertical-offset="1785">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-profile-fa.html">
+    <entry file="file://$PROJECT_DIR$/new-notification.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="36" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="22695">
+        <state line="109" column="47" selection-start="6747" selection-end="6762" vertical-scroll-proportion="0.0" vertical-offset="1300" max-vertical-offset="2465">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/finalize/finalize-fa.css">
+    <entry file="file://$PROJECT_DIR$/css/new-notification/new-notification.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0" vertical-offset="1316" max-vertical-offset="2006">
+        <state line="87" column="25" selection-start="1594" selection-end="1687" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="2652">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new-order-fa.html">
+    <entry file="file://$PROJECT_DIR$/notification.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="36" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="13056">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/footer-fa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="17" selection-start="278" selection-end="5980" vertical-scroll-proportion="0.0" vertical-offset="2235" max-vertical-offset="2992">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Finalize-fa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="27" selection-start="1914" selection-end="1914" vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="4607">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Finalize.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="83" selection-start="2359" selection-end="2359" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="3111">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="8" selection-start="248" selection-end="4268" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="1904">
+        <state line="293" column="52" selection-start="17103" selection-end="17103" vertical-scroll-proportion="-15.038462" vertical-offset="4590" max-vertical-offset="10829">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/finalize/finalize.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="1" selection-start="1241" selection-end="1241" vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1870">
+        <state line="50" column="12" selection-start="745" selection-end="745" vertical-scroll-proportion="-9.88" vertical-offset="603" max-vertical-offset="2244">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contactform.html">
+    <entry file="file://$PROJECT_DIR$/Finalize.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="31" selection-start="3904" selection-end="3904" vertical-scroll-proportion="-8.653846" vertical-offset="1934" max-vertical-offset="10200">
+        <state line="35" column="31" selection-start="1645" selection-end="1645" vertical-scroll-proportion="0.57840234" vertical-offset="204" max-vertical-offset="3366">
           <folding>
-            <element signature="n#style#0;n#span#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1450027418165" expanded="true" signature="973:1056" placeholder="..." />
-            <marker date="1450027418165" expanded="true" signature="1005:1045" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contactform-fa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="32" selection-start="4002" selection-end="4002" vertical-scroll-proportion="0.67899406" vertical-offset="1768" max-vertical-offset="11322">
-          <folding>
-            <marker date="1450027918932" expanded="true" signature="986:1069" placeholder="..." />
-            <marker date="1450027918932" expanded="true" signature="1018:1058" placeholder="{...}" />
+            <element signature="n#style#0;n#span#0;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#h5#0;n#div#0;n#span#0;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#h5#0;n#div#0;n#span#0;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#4;n#h5#0;n#div#0;n#span#0;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

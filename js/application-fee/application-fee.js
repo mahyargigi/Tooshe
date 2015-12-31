@@ -7,4 +7,18 @@ $(document).ready(function(){
        console.log((this).value);
       $('#money-input').html((this).value+"$");
    });
+
+    var requester_money = 60;
+    console.log($('#slider').val());
+    if($('#slider').val()>requester_money){
+        $('.warning-label').css('display','block');
+    }
+    $('#slider').on('change',function(){
+        if($('#slider').val()>requester_money){
+            $('.warning-label').css('display','block');
+        }
+        else{
+            $('.warning-label').css('display','none');
+        }
+    });
 });

@@ -216,32 +216,37 @@
                         <!--<img src="img/application-fee/Untitled-4.png" id="map">-->
                     <!--</div>-->
                     <div class="row buttons">
-                        <div class="btn btn-info button" id="cancel-button">cancel</div>
-                        <div class="btn btn-primary button" id="send-request-button">send request</div>
+                        <!--<div class="btn btn-info button" id="cancel-button">cancel</div>-->
+                        <!--<div class="btn btn-primary button" id="send-request-button">send request</div>-->
                     </div>
                 </div>
-                <div class="col-md-2" id="label-holder">
+                <div class="col-md-2" style="vertical-align: top" id="label-holder">
                     <img src="img/application-fee/price-label.png">
                     <label id="price" style="">22$</label>
+                    <br>
+                    <label class="fee-recieve">delivery fee</label>
                 </div>
                 <div class="row">
                     <div class="row order-application-fee-row">
-                        <div class="col-md-9">
-                            <div class="col-md-3">
-                                <span class="title text">You do this for</span>
+                        <div class="col-md-8">
+                            <div class="col-md-4">
+                                <span class="title text" style="float: right;">You do this for</span>
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-md-6">
                                 <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0" id="slider"/>
                                 <br>
-                                <label>
-                                    This is the price the requester can afford
+                                <label class="warning-label" style="display: none;">
+                                    This is the price requester can afford , amounts more than this has less chance to be agreed.
                                 </label>
                             </div>
                             <div class="col-md-2">
-                                <label class="title text" id="money-input">
+                                <label class="title text"  id="money-input">
                                     25$
                                 </label>
                             </div>
+                        </div>
+                        <div class="col-md-4" style="position: relative;top: -10px;">
+                            <div class="btn btn-primary button" id="send-request-button">send request</div>
                         </div>
                     </div>
                 </div>

@@ -58,7 +58,7 @@ $(document).ready((function(){
            $(this).removeClass('edit-name');
            $('#name').attr('contenteditable','true');
            $('#name').focus();
-           place
+//           place
        }
     });
     $('.edit-address').on('click',function(){

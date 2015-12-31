@@ -3,4 +3,8 @@
  */
 $(document).ready(function(){
     $('#user-rate').rating('update', 3.6);
+    $('#slider').on('change',function(){
+       console.log((this).value);
+      $('#money-input').html((this).value+"$");
+   });
 });

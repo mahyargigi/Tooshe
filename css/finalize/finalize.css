@@ -93,8 +93,12 @@
 }
 .price{
     color: green;
+    font-size: 1.1em;
+}
+.price > .dollar{
     font-size: 2em;
 }
+
 .labelz{
     color: rgba(156, 153, 157, 0.90);
     /*width: 20%;*/

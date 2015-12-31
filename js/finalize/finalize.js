@@ -21,6 +21,8 @@ $(document).ready(function(){
         $('.done').css('display','inline-block');
         $('.phone-number-span').css('display','none');
     });
+    var dollar = parseInt($('.dollar').html());
+    $('.toman').html(dollar*3500);
 });
 
 

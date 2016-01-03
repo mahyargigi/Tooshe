@@ -31,19 +31,21 @@ h1,h2,h3,h4,h5,h6{
     background-color: white;
     border-bottom: solid;
     border-bottom-width: 2px;
-    border-bottom-color: #808080;
+    border-bottom-color: rgba(180, 186, 194, 0.82);
+}
+.seen-div{
+    font-size: 25px;
+    color: rgba(98, 101, 105, 0.82);
+}
+.seen-label{
+    margin-left: 3%;
+    margin-top: 1%;
 }
 .badge{
     background-color: red;
 }
 .inline-div{
     display: inline-block;
-}
-.btn-div{
-    /*vertical-align: top;*/
-    vertical-align: 350%;
-    width: 25%;
-    margin-left: 5px;
 }
 .btn-2-div{
     vertical-align: 350%;
@@ -55,16 +57,31 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 2px;
     border-width: 2px;
 }
+.tick{
+    color: rgba(116, 193, 232, 0.72);
+    margin-right: 10px;
+}
 .dec-btn{
     border: solid;
     border-color: rgba(221, 62, 64, 0.72);
     border-radius: 2px;
     border-width: 2px;
 }
+.remove{
+    color: rgba(221, 62, 64, 0.72);
+    margin-right: 10px;
+}
 .finalize-btn{
-    color: rgba(82, 227, 41, 0.72) !important;
+    color: rgba(16, 201, 154, 0.82) !important;
     border: solid;
-    border-color: rgba(101, 180, 79, 0.72);
+    border-color: rgba(16, 201, 154, 0.82);
+    border-radius: 2px;
+    border-width: 2px;
+}
+.write-review-btn{
+    color: rgba(120, 123, 128, 0.82) !important;
+    border: solid;
+    border-color: rgba(120, 123, 128, 0.82);
     border-radius: 2px;
     border-width: 2px;
 }
@@ -78,8 +95,8 @@ h1,h2,h3,h4,h5,h6{
 .image-div{
     vertical-align: 350%;
     position: relative;
-    width: 8%;
-    margin-left: 2%;
+    width: 7%;
+    margin-left: 5%;
 }
 .note-text-div{
     width: 30%;
@@ -87,41 +104,79 @@ h1,h2,h3,h4,h5,h6{
     /*vertical-align: top;*/
     vertical-align: 350%;
 }
+.note-text-2-div{
+    width: 40%;
+    margin-left: 10px;
+    /*vertical-align: top;*/
+    vertical-align: 350%;
+}
+.note-text-3-div{
+    width: 70%;
+    margin-left: 10px;
+    /*vertical-align: top;*/
+    vertical-align: 350%;
+}
+.cancelled-bring{
+    color: rgba(98, 101, 105, 0.82);
+}
+.find-here-why{
+    width: 30%;
+    vertical-align: 350%;
+}
+
+.here-why{
+    color: rgba(98, 100, 104, 0.82) !important;
+}
+
 .centerize-div{
     width: 65%;
     vertical-align: bottom;
 }
 .goods-div{
-    width: 30%;
+    width: 25%;
+}
+.btn-div{
+    /*vertical-align: top;*/
+    vertical-align: 350%;
+    width: 28%;
+    margin-left: 5px;
 }
 .goods-inf{
     margin-bottom: 5px;
 
 }
 .first-row-goods-div{
-    width: 30%;
+    width: 40%;
+    /*ta 25% ham emtehan kardam mishod ke bashe!*/
 }
 .second-row-goods-div{
-   width: 10%;
+   /*width: 5%;*/
 }
 .third-row-goods-div{
-    width: 30%;
+    width: 48%;
 }
 .goods-space{
     width: 3%;
 }
 .goods-information-div{
-    width: 50%;
+    width: 45%;
+    border-right: solid;
+    border-right-width: 1px;
+    border-right-color: black;
+    /*padding-right: 5%;*/
     /*vertical-align: 10px;*/
 }
 .goods-img-div{
     width: 42%;
+    margin-left: 10%;
 }
 .goods-img{
-    width: 90%;
-    height: 0.9em;
-    vertical-align: -40px;
-    min-height: 200px;
+    width: 80%;
+    /*90%*/
+    /*height: 0.5em;*/
+    /*0.9em*/
+    vertical-align: -5px;
+    min-height: 150px;
 }
 .good-text{
     border-bottom: solid;
@@ -147,4 +202,26 @@ h1,h2,h3,h4,h5,h6{
     width: 30px !important;
     height: 30px !important;
     z-index: 100;
+}
+
+
+/*long strings*/
+body{
+
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
 }

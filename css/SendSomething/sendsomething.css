@@ -16,7 +16,7 @@ input[type=text] , input[type=number]{
     border-width: 1px;
     border-color: rgba(229, 230, 228, 0.90);
 }
-form{
+form.send-something-form{
     background-color: #f9f9f9;
     /*border-radius: 20px;*/
     border: solid;
@@ -25,13 +25,45 @@ form{
     padding: 20px;
     margin-top: 100px;
 }
+@media (max-width: 991px) {
+    .tambr-img{
+        /*position: absolute;*/
+        /*left: -300px !important;*/
+        display: none;
+    }
+    .media-headers{
+        margin-left: 15%;
+    }
+    .tambr-img{
+        display: inline;
+        position: absolute;
+        left: -80px;
+        height: 150px;
+        width: 200px;
+    }
+    /*form{*/
+        /*margin-left: 200px;*/
+        /*margin-right: auto;*/
+    /*}*/
+}
+@media (min-width: 992px) and (max-width: 1388px){
+    .tambr-img{
+        /*position: absolute;*/
+        left: -200px !important;
+    }
+}
+@media (min-width: 1389px) {
+    .tambr-img{
+        left: -150px !important;
+    }
+}
 .tambr-img{
     /*width: 200%;*/
     /*display: inline;*/
     /*position: relative;*/
     /*right: 200px;*/
     position: absolute;
-    left: -150px;
+    /*left: -150px;*/
     /*margin-right: 10px;*/
     /*left: -120%;*/
 }
@@ -55,7 +87,7 @@ form{
     width: 5%;
 }
 .weight-input{
-    width: 10%;
+    width: 15%;
 }
 .upload-header{
     display: inline;
@@ -164,6 +196,10 @@ form{
 
 .let-my-span{
     margin-left: 5px;
+}
+
+.send-something-container{
+    margin-top: 150px;
 }
 
 /*#slider{*/

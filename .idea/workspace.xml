@@ -26,7 +26,7 @@
       <file leaf-file-name="most-new-navbar-anonymous.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/most-new-navbar-anonymous.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="105" selection-start="5006" selection-end="5006" vertical-scroll-proportion="135.90196" vertical-offset="8512" max-vertical-offset="10472">
+            <state line="531" column="22" selection-start="5819" selection-end="27638" vertical-scroll-proportion="-7.7647057" vertical-offset="8631" max-vertical-offset="10472">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -49,10 +49,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new-order.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/new-order.html">
+      <file leaf-file-name="SendSomething.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SendSomething.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="406" column="7" selection-start="19512" selection-end="19512" vertical-scroll-proportion="-22.076923" vertical-offset="6328" max-vertical-offset="7004">
+            <state line="16" column="42" selection-start="873" selection-end="873" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="5338">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new-order.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/new-order/new-order.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="324" column="1" selection-start="5733" selection-end="5733" vertical-scroll-proportion="0.0" vertical-offset="4963" max-vertical-offset="5678">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dashboard/navbar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="25" selection-start="217" selection-end="217" vertical-scroll-proportion="116.69231" vertical-offset="3119" max-vertical-offset="3910">
               <folding />
             </state>
           </provider>
@@ -61,7 +81,7 @@
       <file leaf-file-name="new-order-not-signed-up.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/new-order-not-signed-up.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="914" column="58" selection-start="46547" selection-end="46547" vertical-scroll-proportion="0.42159763" vertical-offset="15253" max-vertical-offset="17544">
+            <state line="778" column="55" selection-start="39950" selection-end="39962" vertical-scroll-proportion="0.33333334" vertical-offset="13009" max-vertical-offset="17544">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -85,40 +105,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tooshe.min.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/most-new-navbar/tooshe.min.js">
+      <file leaf-file-name="SendSomething-not-signed-up.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SendSomething-not-signed-up.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="1334" selection-start="129458" selection-end="129458" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/most-new-navbar/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="263205" selection-start="264670" selection-end="264675" vertical-scroll-proportion="-9.0" vertical-offset="846" max-vertical-offset="4148">
+            <state line="136" column="28" selection-start="6897" selection-end="6924" vertical-scroll-proportion="-4.254902" vertical-offset="2095" max-vertical-offset="15572">
               <folding>
-                <element signature="e#15140#15391#2" expanded="true" />
-                <element signature="e#47275#50746#2" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#div#1;n#div#2;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#2;n#div#1;n#div#2;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#6;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#6;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="most-new-navbar.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/most-new-navbar/most-new-navbar.css">
+      <file leaf-file-name="sendsomething.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/SendSomething/sendsomething.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="18" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navbar.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dashboard/navbar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="25" selection-start="217" selection-end="217" vertical-scroll-proportion="116.69231" vertical-offset="3119" max-vertical-offset="3910">
+            <state line="18" column="24" selection-start="362" selection-end="362" vertical-scroll-proportion="-9.2" vertical-offset="76" max-vertical-offset="4981">
               <folding />
             </state>
           </provider>
@@ -134,9 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/landing-page/new-order-not-signed-up.html" />
-        <option value="$PROJECT_DIR$/landing-page/en.html" />
-        <option value="$PROJECT_DIR$/js/global/english-input.js" />
         <option value="$PROJECT_DIR$/js/most-new-navbar/most-new-navbar.js" />
         <option value="$PROJECT_DIR$/Dashboard/navbar.html" />
         <option value="$PROJECT_DIR$/css/new-order-not-signed-up/modal.css" />
@@ -149,6 +166,9 @@
         <option value="$PROJECT_DIR$/css/new-order/new-order.css" />
         <option value="$PROJECT_DIR$/new-order.html" />
         <option value="$PROJECT_DIR$/js/most-new-navbar/tooshe.min.js" />
+        <option value="$PROJECT_DIR$/SendSomething-not-signed-up.html" />
+        <option value="$PROJECT_DIR$/SendSomething.html" />
+        <option value="$PROJECT_DIR$/css/SendSomething/sendsomething.css" />
         <option value="$PROJECT_DIR$/new-order-not-signed-up.html" />
       </list>
     </option>
@@ -228,6 +248,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new-order-not-signed-up" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -243,6 +313,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new-order-not-signed-up" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -278,6 +366,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="modal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="fonts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -288,7 +394,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/landing-page" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js/modal" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
@@ -301,11 +407,11 @@
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\css\most-new-navbar" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\js\modal" />
+      <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\css\modal" />
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\Dashboard\fonts" />
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\" />
       <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\landing-page" />
-      <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe\img\contactform" />
-      <recent name="C:\Users\User\PycharmProjects\Tooshe-project\Tooshe" />
     </key>
   </component>
   <component name="RunManager">
@@ -496,7 +602,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.194375" sideWeight="0.6707153" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.194375" sideWeight="0.6707153" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -523,28 +629,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/new-notification.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3196" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/new-order-not-signed-up/contact_me.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/new-order-not-signed-up/modal.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="0" selection-start="4386" selection-end="4386" vertical-scroll-proportion="0.0" vertical-offset="3340" max-vertical-offset="7531">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/most-new-navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="50" selection-start="2970" selection-end="2970" vertical-scroll-proportion="-1.3317972" vertical-offset="1955" max-vertical-offset="3927" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Template/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14484">
@@ -573,6 +657,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/most-new-navbar/tooshe.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="1334" selection-start="129458" selection-end="129458" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/most-new-navbar/most-new-navbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="18" selection-start="280" selection-end="280" vertical-scroll-proportion="0.21398601" vertical-offset="0" max-vertical-offset="715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new-order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="406" column="7" selection-start="19512" selection-end="19512" vertical-scroll-proportion="0.84911245" vertical-offset="6328" max-vertical-offset="7004">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Dashboard/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="25" selection-start="217" selection-end="217" vertical-scroll-proportion="116.69231" vertical-offset="3119" max-vertical-offset="3910">
@@ -580,16 +685,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/most-new-navbar/most-new-navbar.css">
+    <entry file="file://$PROJECT_DIR$/css/modal/modal.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="18" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.903458" vertical-offset="4097" max-vertical-offset="7531">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/most-new-navbar/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="263205" selection-start="264670" selection-end="264675" vertical-scroll-proportion="-9.0" vertical-offset="846" max-vertical-offset="4148">
+        <state line="63" column="28473" selection-start="29927" selection-end="29943" vertical-scroll-proportion="-9.0" vertical-offset="846" max-vertical-offset="4148">
           <folding>
             <element signature="e#15140#15391#2" expanded="true" />
             <element signature="e#47275#50746#2" expanded="true" />
@@ -599,14 +704,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/new-order/new-order.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="325" column="16" selection-start="5750" selection-end="5750" vertical-scroll-proportion="0.0" vertical-offset="4861" max-vertical-offset="5678">
+        <state line="324" column="1" selection-start="5733" selection-end="5733" vertical-scroll-proportion="0.0" vertical-offset="4963" max-vertical-offset="5678">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/most-new-navbar-anonymous.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="105" selection-start="5006" selection-end="5006" vertical-scroll-proportion="135.90196" vertical-offset="8512" max-vertical-offset="10472">
+        <state line="531" column="22" selection-start="5819" selection-end="27638" vertical-scroll-proportion="-7.7647057" vertical-offset="8631" max-vertical-offset="10472">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -628,23 +733,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new-order.html">
+    <entry file="file://$PROJECT_DIR$/SendSomething-not-signed-up.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="406" column="7" selection-start="19512" selection-end="19512" vertical-scroll-proportion="-22.076923" vertical-offset="6328" max-vertical-offset="7004">
-          <folding />
+        <state line="136" column="28" selection-start="6897" selection-end="6924" vertical-scroll-proportion="-4.254902" vertical-offset="2095" max-vertical-offset="15572">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#1;n#div#2;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#div#1;n#div#2;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/most-new-navbar/tooshe.min.js">
+    <entry file="file://$PROJECT_DIR$/SendSomething.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="1334" selection-start="129458" selection-end="129458" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
+        <state line="16" column="42" selection-start="873" selection-end="873" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="5338">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/SendSomething/sendsomething.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="24" selection-start="362" selection-end="362" vertical-scroll-proportion="-9.2" vertical-offset="76" max-vertical-offset="4981">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/new-order-not-signed-up.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="914" column="58" selection-start="46547" selection-end="46547" vertical-scroll-proportion="0.42159763" vertical-offset="15253" max-vertical-offset="17544">
+        <state line="778" column="55" selection-start="39950" selection-end="39962" vertical-scroll-proportion="0.33333334" vertical-offset="13009" max-vertical-offset="17544">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />

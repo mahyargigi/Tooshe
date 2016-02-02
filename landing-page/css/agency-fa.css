@@ -1,0 +1,184 @@
+body{
+    font-family: yekan,tahoma;
+}
+p{
+    direction: rtl;
+}
+.navbar-default .nav li a{
+    font-family: yekan,tahoma;
+    font-size: 16px;
+}
+header{
+    text-align: right;
+}
+.navbar-nav{
+    text-align: right;
+}
+@media (min-width: 768px){
+    .navbar-nav>li {
+        float: right;
+    }
+}
+ul.navbar-right li:nth-child(3) .highlightnav{
+    border-radius: 5px 0 0 5px;
+}
+ul.navbar-right li:nth-child(2) .highlightnav{
+    border-radius: 0 5px 5px 0;
+    border-left-width: 0;
+}
+#amazingslider-wrapper-1{
+    direction: rtl;
+}
+.amazingslider-text-box-1{
+    float: right;
+}
+.amazingslider-title-1,.amazingslider-description-1{
+    text-align: justify;
+    direction: rtl;
+}
+.amazingslider-title-1
+{
+    font: 70px yekan !important;
+    line-height: 70px !important;
+    white-space: normal !important;
+    width: auto !important;
+    overflow: visible !important;
+}
+.amazingslider-description-1
+{
+    font: 18px yekan !important;
+}
+@media(min-width:768px) {
+    .amazingslider-text-box-1{
+    left: 0;
+    right: 50%;
+    margin-right: -375px;
+    margin-left: 0;
+    }
+}
+@media(min-width:992px) {
+    .amazingslider-text-box-1{
+    left: 0;
+    right: 50%;
+    margin-right: -485px;
+    margin-left: 0;
+    }
+}
+@media(min-width:1200px) {
+    .amazingslider-text-box-1{
+    left: 0;
+    right: 50%;
+    margin-right: -585px;
+    margin-left: 0;
+    }
+}
+.search-wrapper input
+{
+    font: 19px yekan,tahoma;
+    direction: rtl;
+    text-align: right;
+}
+.nav>li>a{
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}
+@media(max-width:995px) {
+    .nav>li>a
+    {
+        padding-right: 10px !important;
+        padding-left: 10px !important;
+    }
+}
+section h2.section-heading{
+    direction: rtl;
+}
+h1, h2, h3, h4, h5, h6,section h3.section-subheading,#portfolio .portfolio-item .portfolio-caption p,.copyright{
+    font-family: yekan,tahoma !important;
+    direction: rtl;
+}
+#services p{
+    font-size: 17px;
+}
+.more_product_title-fa{
+    padding-right: 0;
+    float: left;
+    text-align: left;
+}
+.caption_product_title-fa{
+    padding-left: 0;
+    text-align: right;
+    float: right;
+}
+.caption_product_title-fa span{
+    background-color: #2b3442;
+    padding: 15px 20px;
+    color: #fff;
+    transition: background-color 0.5s ease-out;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+}
+.more_product_title-fa span:hover
+{
+    color: #2B3442;
+}
+.clients .container .row a:nth-last-child(1) div span
+{
+    background-image: url('../img/team/tnx00.png');
+}
+.clients .container .row a:nth-last-child(2) div span
+{
+    background-image: url('../img/team/tnx1.png');
+}
+.clients .container .row a:nth-last-child(3) div span
+{
+    background-image: url('../img/team/tnx2.png');
+}
+.clients .container .row a:nth-last-child(4) div span
+{
+    background-image: url('../img/team/tnx3.png');
+}
+.clients .container .row a:nth-last-child(5) div span
+{
+    background-image: url('../img/team/tnx4.png');
+}
+.clients .container .row a:nth-last-child(6) div span
+{
+    background-image: url('../img/team/tnx5.png');
+}
+form#contactForm{
+    direction: rtl;
+    text-align: right;
+    font-family: yekan,tahoma; 
+}
+.btn-xl,footer ul.quicklinks,.portfolio-hover-content p,.btn-primary{
+    font-family: yekan,tahoma !important;
+}
+.social-buttons li a{font-family:  leela,"Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;}
+.copyright{display: block;}
+form{
+    text-align: right;
+    direction: rtl;
+}
+.signupfield{
+    float: right;
+}
+.signupfield label{
+    padding-left: 35px !important;
+}
+.checkbox label{
+    padding-right: 20px !important;
+}
+input[type=radio],input[type=checkbox]{
+    margin-right: -20px;
+}
+.amazingslider-img-1 img{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+.search-wrapper input{
+    padding: 7px 25px;
+}

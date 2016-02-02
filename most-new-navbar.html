@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+    <link href="css/most-new-navbar/style.css" rel="stylesheet">
+    <link href="css/most-new-navbar/navbar.css" rel="stylesheet">
+    <link href="css/most-new-navbar/most-new-navbar.css" rel="stylesheet">
+    <title></title>
+</head>
+<body>
+    <div class="ajax-loader"></div>
+
+		<div class="navmenu navmenu-inverse navmenu-fixed-right offcanvas">
+      		<ul class="nav navmenu-nav">
+
+				<li><a href="/">Home</a></li>
+				<li class="divider"></li>
+                <li><a href="/requests/new" class="highlighted">Search</a></li>
+                <li class="divider"></li>
+                <li><a href="/trips/new" class="highlighted">Order sth</a></li>
+				<li><a href="/trips/new" class="highlighted">Send sth</a></li>
+				<li><a href="/trips/new" class="highlighted">Take sth</a></li>
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Notifications<b class="caret"></b></a>
+					<ul class="dropdown-menu navmenu-nav">
+						<li><a href="/dashboard/profile">ali requested you to ship an item</a></li>
+						<li class="divider"></li>
+                        <li><a href="/dashboard/payment">ali accepted your request</a></li>
+						<li class="divider"></li>
+						<li><a href="/dashboard/account">ali requested you to buy an item</a></li>
+						<!--<li><a href="/dashboard/notifications">Notification Settings</a></li>-->
+					</ul>
+				</li>
+                <li class="divider"></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard<b class="caret"></b></a>
+					<ul class="dropdown-menu navmenu-nav">
+						<li><a href="/dashboard/profile">My profile</a></li>
+						<li class="divider"></li>
+                        <li><a href="/dashboard/payment">My Wallet</a></li>
+						<li class="divider"></li>
+						<li><a href="/dashboard/account">Help</a></li>
+						<li><a href="/dashboard/notifications">Settings</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Logout</a> </li>
+					</ul>
+				</li>
+                <!--<li><a href="/notifications">Notifications</a></li>-->
+				<!--<li class="divider"></li>-->
+				<!--<li><a href="/about">About</a></li>-->
+				<!--<li><a href="/help">Help</a></li>-->
+				<!--<li><a href="/contact">Contact</a></li>-->
+				<!--<li class="divider"></li>-->
+				<!--<li><a href="/logout">Log Out</a></li>-->
+
+			</ul>
+    	</div>
+    <div class="navbar navbar-default mynavbar">
+        <div class="container" style="padding-top: 0px;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img src="img/most-new-navbar/Tooshe_logo.png" alt="Tooshe" style="position: fixed;top: 25px;left: 0;margin-left: 20px;margin-bottom: 10px;height: 45px;width: 110px;"></a>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li id="search_button" style="position: absolute;bottom: 0;margin-left: 20px;margin-bottom: 20px;">
+                        <a class="page-scroll" href="#"><i class="fa fa-lg fa-search"></i>Search</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <!--<ul class="nav navbar-nav navbar-right">-->
+                    <!--&lt;!&ndash;<li><img src="img/most-new-navbar/profile-tn.png" class="img-circle" style="height:32px;margin-top:-5px">&ndash;&gt;-->
+                    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                    <!---->
+                <!--</ul>-->
+                <ul id="middle-navbar" class="nav navbar-nav navbar-right" >
+                    <li class="middle-li">
+                        <a class="page-scroll" href="#"><i class="fa fa-lg fa-shopping-cart"></i>Order sth</a>
+                    </li>
+                    <li class="middle-li">
+                        <a class="page-scroll" href="#"><i class="fa fa-lg fa-gift"></i>Send sth</a>
+                    </li>
+                    <li id="rightest-li" class="middle-li">
+                        <a class="page-scroll" href="#"><i class="fa fa-lg fa-plane"></i>Take sth</a>
+                    </li>
+                    <li id="bell-li" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="padding: 0px;margin-right: 40px;">
+                        <img src="img/most-new-navbar/Bell-Icon.png" alt="note" class="img-circle" style="height:32px;margin-top:-5px;margin-left: 0px;">
+                        </a>
+                            <!--<div>-->
+                                <!--<div style="width: 70%;background-color: transparent;display: inline-block;">-->
+                                <!--</div>-->
+                                <!--<div style="width: 25%;display: inline-block;">-->
+                                    <!--he-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="profile.html" style="">
+                                    ali requested you to ship an item
+                                </a></li>
+                                <li class="divider"></li>
+                                <li><a href="payment.html">
+                                    ali accepted your request
+                                </a></li>
+                                <li class="divider"></li>
+                                <li><a href="account.html">
+                                    ali requested you to buy an item
+                                </a></li>
+                                <!--<li class="divider"></li>-->
+                                <!--<li><a href="notifications.html">-->
+                                    <!--mahyar requested you to buy a product-->
+                                <!--</a></li>-->
+                                <!--<li class="divider"></li>-->
+                                <!--<li><a href="/logout">-->
+                                    <!--mahyar requested you to buy a product-->
+                                <!--</a></li>-->
+                            </ul>
+                    </li>
+                    <li id="profile-li" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <img src="img/most-new-navbar/profile-tn.png" class="img-circle" style="height:32px;margin-top:-5px;margin-left: 0px;">
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="profile.html">My Profile</a></li>
+                            <li class="divider"></li>
+                            <li><a href="payment.html">My Wallet</a></li>
+                            <li class="divider"></li>
+                            <li><a href="account.html">Help</a></li>
+                            <li><a href="notifications.html">Settings</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/logout">Log Out</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&language=en-us"></script>
+		<script type="text/javascript" src="js/most-new-navbar/tooshe.min.js"></script>
+
+
+		<script type="text/javascript">
+		$(document).ready(function() {
+			Picktup.Root.init();
+		});
+		</script>
+
+
+
+
+
+<script>
+
+$(document).ready(function() {
+	function handleFileUpload(evt) {
+		var files = evt.target.files;
+		for (var i = 0; f = files[i]; i++) {
+			if (!f.type.match("image.*")) {
+				alert("not image");
+				return;
+			}
+
+			var reader = new FileReader();
+
+			reader.onload = (function(theFile) {
+				return function(e) {
+					var image = new Image();
+					image.src = e.target.result;
+					image.onload = function() {
+						console.log(this.width);
+						console.log(this.height);
+					}
+					var img = $('<img src="' + e.target.result + '" title="' + escape(theFile.name) + '"/>');
+					//$("#photo-upload-editor").empty().add(img);
+					//document.getElementById("photo-upload-editor").innerHTML = img;
+
+					$("#modal-photo-upload").on("show.bs.modal", function() {
+						$("#modal-photo-upload .modal-content").css("height", $(window).height() * 0.8);
+						//$("#modal-photo-upload .thumb").css("max-height", $("#modal-photo-upload .modal-content").height() * 0.85);
+					});
+
+
+					$('#photo-upload-editor > img').cropper({
+					  aspectRatio: 1,
+					  autoCropArea: 0.65,
+					  strict: false,
+					  guides: true,
+					  highlight: true,
+					  dragCrop: true,
+					  movable: true,
+					  resizable: true,
+					  crop: function(data) {
+						console.log(data);
+						$(this).cropper('setCanvasData', canvasData);
+						$(this).cropper('setCropBoxData', cropBoxData);
+					  }
+					});
+
+					$("#modal-photo-upload").modal("show");
+				};
+			})(f);
+
+			reader.readAsDataURL(f);
+		}
+	}
+
+	var translations = {
+		"placeholder_enter_a_city": "Enter a City"
+	};
+
+	Picktup.Dashboard.PhotoUpload.setTranslations(translations);
+	Picktup.Dashboard.PhotoUpload.init();
+});
+</script>
+</body>
+</html>

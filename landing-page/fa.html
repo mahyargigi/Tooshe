@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Agency - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+    <link href="css/agency-fa.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Start of Slider codes -->
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <!-- End of Slider codes -->
+
+</head>
+<body>
+    
+    <body id="page-top" class="index">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top"><span>Tooshe</span></a>
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="hidden">
+                            <a class="page-scroll" href="#" data-toggle="modal" data-target="#signup_modal">Sign up</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="sign-in">
+                            <a class="page-scroll highlightnav" href="#" data-toggle="modal" data-target="#signup_modal">
+                            عضویت<i id="" class="fa fa-lg fa-user-plus"></i></a>
+                        </li>
+                        <li class="sign-in">
+                            <a class="page-scroll highlightnav" href="#" data-toggle="modal" data-target="#signin_modal">
+                            ورود<i id="" class="fa fa-lg fa-sign-in"></i></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#">خرید<i class="fa fa-lg fa-shopping-cart"></i></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#">ارسال<i class="fa fa-lg fa-gift"></i></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#">ثبت سفر<i class="fa fa-lg fa-plane"></i></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">ارتباط با ما<i id="icontact" class="fa fa-lg fa-envelope" style="font-size: 1.2em;"></i></a>
+                        </li>
+                        <li id="search_button" class="hidden">
+                            <a class="page-scroll" href="#">جستجو<i class="fa fa-lg fa-search"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <!-- Modal -->
+        <div class="modal fade" id="signin_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <br>
+                <h4 class="modal-title" id="myModalLabel" style="text-align:center">ورود به حساب کاربری</h4>
+                <span style="display:block;text-align:center">با <a class="fbcl" href="#">فیسبوک</a> یا <a class="glcl" href="#">گوگل</a></span>
+                <p class="or_container"><span>یا</span></p>
+              </div>
+              <div class="modal-body">
+              <form novalidate>
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+                        <div class="form-group mgb">
+                            <input type="email" class="form-control" placeholder="ایمیل" id="signin-username" required data-validation-required-message="لطفا ایمیل خود را وارد کنید" data-validation-email-message="فرمت ایمیل صحیح نمی‌باشد.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+                        <div class="form-group mgb">
+                            <input type="password" class="form-control" placeholder="رمز عبور" id="signin-password" required data-validation-required-message="لطفا رمز عبور خود را وارد کنید">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> مرا به خاطر بسپار
+                          </label>
+                        <span style="float:left;"><a href="#">رمزعبور را فراموش کرده‌ام</a></span>
+                        </div>
+
+                    </div>
+
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">انصراف</button>
+                <button type="submit" class="btn btn-primary">ورود</button>
+                <p>عضو توشه نشده‌اید؟ <a href="#" data-toggle="modal" data-target="#signup_modal" data-dismiss="modal">عضویت</a> رایگان</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="signup_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <br>
+                <h4 class="modal-title" id="myModalLabel" style="text-align:center">رایگان عضو شوید</h4>
+                <span style="display:block;text-align:center">با <a class="fbcl" href="#">فیسبوک</a> یا <a class="glcl" href="#">گوگل</a></span>
+                <p class="or_container"><span>یا</span></p>
+              </div>
+              <div class="modal-body">
+              <form novalidate>
+                <div class="row">
+
+                    <div class="col-md-6 signupfield">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="نام" id="signup-faname" required data-validation-required-message="نام ضروری است" pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="فقط شامل حروف باشد">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 signupfield">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="نام خانوادگی" id="signup-laname" required data-validation-required-message="نام ضروری است" pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="فقط شامل حروف باشد">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="ایمیل" id="signup-username" required data-validation-required-message="لطفا ایمیل خود را وارد کنید" data-validation-email-message="فرمت ایمیل صحیح نمی‌باشد.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="رمز عبور" id="signup-password" minlength="6" required data-validation-required-message="لطفا رمز عبور خود وارد کنید" data-validation-minlength-message="حداقل 6 کاراکتر">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <span style="margin-left:30px;">جنسیت:</span>
+                        <div class="radio" style="display:inline-block;">
+                          <label>
+                            <input type="radio" name="gender" value="1" checked="checked"> مرد  
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="0"> زن
+                          </label>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-12 signupfield">
+                        <span>تاریخ تولد:</span>
+                        <div class="birthday">
+                            <select class="form-control">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                              <option>7</option>
+                              <option>8</option>
+                              <option>9</option>
+                              <option>10</option>
+                              <option>11</option>
+                              <option>12</option>
+                              <option>13</option>
+                              <option>14</option>
+                              <option>15</option>
+                              <option>16</option>
+                              <option>17</option>
+                              <option>18</option>
+                              <option>19</option>
+                              <option>20</option>
+                              <option>21</option>
+                              <option>22</option>
+                              <option>23</option>
+                              <option>24</option>
+                              <option>25</option>
+                              <option>26</option>
+                              <option>27</option>
+                              <option>28</option>
+                              <option>29</option>
+                              <option>30</option>
+                              <option>31</option>
+                            </select>
+                            <select class="form-control">
+                              <option>فروردین</option>
+                              <option>اردیبهشت</option>
+                              <option>خرداد</option>
+                              <option>تیر</option>
+                              <option>مرداد</option>
+                              <option>شهریور</option>
+                              <option>مهر</option>
+                              <option>آبان</option>
+                              <option>آذر</option>
+                              <option>دی</option>
+                              <option>بهمن</option>
+                              <option>اسفند</option>
+                            </select>
+                            <select class="form-control">
+                              <option>1383</option>
+                              <option>1382</option>
+                              <option>1381</option>
+                              <option>1380</option>
+                              <option>1379</option>
+                              <option>1378</option>
+                              <option>1377</option>
+                              <option>1376</option>
+                              <option>1375</option>
+                              <option>1374</option>
+                              <option>1373</option>
+                              <option>1372</option>
+                              <option>1371</option>
+                              <option>1370</option>
+                              <option>1369</option>
+                              <option>1368</option>
+                              <option>1367</option>
+                              <option>1366</option>
+                              <option>1365</option>
+                              <option>1364</option>
+                              <option>1363</option>
+                              <option>1362</option>
+                              <option>1361</option>
+                              <option>1360</option>
+                              <option>1359</option>
+                              <option>1358</option>
+                              <option>1357</option>
+                              <option>1356</option>
+                              <option>1355</option>
+                              <option>1354</option>
+                              <option>1353</option>
+                              <option>1352</option>
+                              <option>1351</option>
+                              <option>1350</option>
+                              <option>1349</option>
+                              <option>1348</option>
+                              <option>1347</option>
+                              <option>1346</option>
+                              <option>1345</option>
+                              <option>1344</option>
+                              <option>1343</option>
+                              <option>1342</option>
+                              <option>1341</option>
+                              <option>1340</option>
+                              <option>1339</option>
+                              <option>1338</option>
+                              <option>1337</option>
+                              <option>1336</option>
+                              <option>1335</option>
+                              <option>1334</option>
+                              <option>1333</option>
+                              <option>1332</option>
+                              <option>1331</option>
+                              <option>1330</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 text-muted" style="text-align: center;margin-top: 10px;">
+                        عضویت شما به منزله‌ی پذیرفتن <a href="#">شرایط و مقررات</a> توشه می‌باشد
+                    </div> 
+                
+                </div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">انصراف</button>
+                <button type="submit" class="btn btn-primary">عضویت</button>
+                <p>آیا قبلا عضو شده‌اید ؟ <a href="#" data-toggle="modal" data-target="#signin_modal" data-dismiss="modal">وارد شوید</a></p>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+
+    <header>
+    <!-- Insert to your webpage where you want to display the slider -->
+    <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:100%;height:100%;margin:0 auto;">
+        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="sliderimages/pic1.jpg" alt="بهترین راه" data-description="به وسیله توشه هر چیزی را که بخواهید می‌توانید از ایران به کشور دیگری بفرستید، پیدا کردن مسافرش هم با ما." />
+                </li>
+                <li><img data-src="sliderimages/pic3.jpg" alt="مقرون به صرفه" data-description="به وسیله توشه هر چیزی را که بخواهید می‌توانید از ایران به کشور دیگری بفرستید، پیدا کردن مسافرش هم با ما." />
+                </li>
+                <li><img data-src="sliderimages/pic4.jpg" alt="راه حلی آسان" data-description="افرادی را پیدا کنید که از کشور موردنظر شما قصد سفر به ایران را دارند و حاضرند چیزی که شما لازم دارید را با برایتان بیاورند." />
+                </li>
+                <li><img data-src="sliderimages/pic2.jpg" alt="انتخاب بهینه" data-description="به وسیله توشه هر چیزی را که بخواهید می‌توانید از ایران به کشور دیگری بفرستید، پیدا کردن مسافرش هم با ما." />
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End of body section HTML codes -->
+
+    <div class="container search-container">
+        <div class="search-wrapper">
+            <input type="submit" value="جستجوی مسافر" id="find-travelers">
+            <input type="text" placeholder="مقصد" id="destination">
+            <input type="text" placeholder="مبدأ" id="Origin">
+        </div>
+    </div>
+
+    </header>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 id="greenhead" class="section-heading">سیستم این جا چیست ؟</h2>
+                    <h3 class="section-subheading text-muted">خیلی ساده</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="work work-left"></span>
+                    <p class="text-muted">چیزی که می‌خواهی جابجا شود (خریدن یا ارسال کردن) را مشخص کن</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="work work-center"></span>
+                    <p class="text-muted">مسافر ی را متناسب با تقاضایت از نظر زمانی ، مقصد ، هزینه‌ای که می‌گیرد و... پیدا کن</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="work work-right"></span>
+                    <p class="text-muted">به او تقاضا بده ، وجه را پرداخت کن و منتظر جابجا شدن مرسوله‌ی دلخواهت باش!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray-new">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">چه چیزهایی</h2>
+                    <h3 class="section-subheading text-muted">را توشه‌ای‌ها سفارش می‌دهند ؟</h3>
+                </div>
+            </div>
+
+            <div class="row prduct_title">
+                <div class="col-md-6 more_product_title-fa"><a href="#"><span><i class="fa fa-arrow-left"></i> موارد بیشتر</span></a></div>
+                <div class="col-md-6 caption_product_title-fa"><span><i class="fa fa-arrow-down"></i> محبوب‌ترین‌ها</span></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-2x fa-shopping-cart"></i>
+                                <p>مشاهده جزئیات</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/01.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Apple iPhone 6s</h4>
+                        <p class="text-muted new-price">قیمت در توشه: $299</p>
+                        <p class="text-muted old-price">قیمت در ایران: $380</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-2x fa-shopping-cart"></i>
+                                <p>مشاهده جزئیات</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/02.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Microsoft Surface Pro 2</h4>
+                        <p class="text-muted new-price">قیمت در توشه: $480</p>
+                        <p class="text-muted old-price">قیمت در ایران: $520</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-2x fa-shopping-cart"></i>
+                                <p>مشاهده جزئیات</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/03.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Microsoft Surface Pro 3</h4>
+                        <p class="text-muted new-price">قیمت در توشه: $500</p>
+                        <p class="text-muted old-price">قیمت در ایران: $650</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-2x fa-shopping-cart"></i>
+                                <p>مشاهده جزئیات</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/04.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Magazine Der Spiegel</h4>
+                        <p class="text-muted new-price">قیمت در توشه: $5</p>
+                        <p class="text-muted old-price">قیمت در ایران: $12</p>
+                    </div>
+                </div>
+                </div>
+                <div class="row prduct_title">
+                    <div class="col-md-6 more_product_title-fa"><a href="#"><span><i class="fa fa-arrow-left"></i> موارد بیشتر</span></a></div>
+                    <div class="col-md-6 caption_product_title-fa"><span><i class="fa fa-arrow-down"></i> جدیدترین‌ها</span></div>
+                </div>
+                <div class="row">
+                <div class="col-md-3 col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-2x fa-shopping-cart"></i>
+                                <p>مشاهده جزئیات</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/05.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Magazine World Soccer</h4>
+                        <p class="text-muted new-price">قیمت در توشه: $7</p>
+                        <p class="text-muted old-price">قیمت در ایران: $15</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-2x fa-shopping-cart"></i>
+                                <p>مشاهده جزئیات</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/06.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Termeh Rezaee Runner</h4>
+                        <p class="text-muted new-price">قیمت در توشه: $700</p>
+                        <p class="text-muted old-price">قیمت در ایران: $750</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-2x fa-shopping-cart"></i>
+                                <p>مشاهده جزئیات</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/07.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Microsoft Surface Pro 2</h4>
+                        <p class="text-muted new-price">قیمت در توشه: $400</p>
+                        <p class="text-muted old-price">قیمت در ایران: $500</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-2x fa-shopping-cart"></i>
+                                <p>مشاهده جزئیات</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/08.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Dolce Di Giorno 100ml</h4>
+                        <p class="text-muted new-price">قیمت در توشه: $133</p>
+                        <p class="text-muted old-price">قیمت در ایران: $270</p>
+                    </div>
+                </div>
+                </div>
+                <div class="row prduct_title">
+                    <div class="col-md-6 more_product_title-fa"><a href="#"><span><i class="fa fa-arrow-left"></i> موارد بیشتر</span></a></div>
+                    <div class="col-md-6 caption_product_title-fa"><span><i class="fa fa-arrow-down"></i> محصولات ویژه</span></div>
+                </div>
+                <div class="row">
+                <div class="col-md-3 col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-2x fa-shopping-cart"></i>
+                                <p>مشاهده جزئیات</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/09.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>kindle Fire HDX</h4>
+                        <p class="text-muted new-price">قیمت در توشه: $430</p>
+                        <p class="text-muted old-price">قیمت در ایران: $701</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-2x fa-shopping-cart"></i>
+                                <p>مشاهده جزئیات</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/10.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Dimo P2 Dual-Sim</h4>
+                        <p class="text-muted new-price">قیمت در توشه: $150</p>
+                        <p class="text-muted old-price">قیمت در ایران: $190</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-2x fa-shopping-cart"></i>
+                                <p>مشاهده جزئیات</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Product title</h4>
+                        <p class="text-muted new-price">قیمت در توشه: $100</p>
+                        <p class="text-muted old-price">قیمت در ایران: $150</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-2x fa-shopping-cart"></i>
+                                <p>مشاهده جزئیات</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Product title</h4>
+                        <p class="text-muted new-price">قیمت در توشه: $100</p>
+                        <p class="text-muted old-price">قیمت در ایران: $150</p>
+                    </div>
+                </div>
+                </div>
+            
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 id="largerhead" class="section-heading">چرا</h2>
+                    <h3 class="section-subheading text-muted">باید اعتماد کنم ؟</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image trust1">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>مسافرهای با واسطه را پیدا کن:</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">کاربران ما در اینجا پروفایل‌های شبکه‌های اجتماعی خود را متصل می‌کنند. مساله‌ای که به شما کمک خواهد کرد علاوه بر دیدن پروفایل آنها ، رابطه‌های متقابل را پیدا کنید. (مثلاً مسافرینی که با واسطه‌ی یک دوست مشترک به هم می‌رسید) این امر، کار تحقیق و خاطر جمع شدن را برای شما آسان خواهد کرد.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image trust2">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>محدودیت در نوع اجناس:</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">گستره‌ی اجناسی که ریسک آنها پایین می‌باشد، زیاد است و شاید عمده‌ی تقاضاهای حمل هم در همین دایره بگنجند. نظیر مدارک ، پوشاک معمولی نخی، بدلیجات ، خوراکی‌های خشک نظیر پسته و خیلی چیزهای دیگر، مقولاتی هستند که ذاتا ریسک آنها بسیار پایین است.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image trust3">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>نظرات دیگران:</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">ما در اینجا یک سیستم نظرات کاربران داریم که شما می‌توانید کارنامه‌ی یک فرد در حمل بارها را ببینید و متوجه شوید که کدام کاربر چقدر قابل اعتماد است. سیستمی که قابل جعل کردن نیست زیرا صرفا وقتی یک کاربر مجاز به نظر نوشتن برای کاربر دیگر است که تراکنشی بین آن دو انجام شده باشد (و به توشه پول داده باشند)</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image trust4">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>تأیید اعتبار قانونی افراد:</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">اولویت را به افراد تایید اعتبار شده‌ی توشه بدهید. افرادی که مستقیما توسط توشه احراز هویت شده‌اند و احتمال خطای آنان نزدیک به صفر است و در صورت وقوع هر گونه اتفاق سوء عمدی ازجانب این افراد، مسئولیت قانونی آن بر عهده‌ی توشه خواهد بود و نه شما.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">چه افرادی</h2>
+                    <h3 class="section-subheading text-muted">تازگی‌ها از توشه استفاده کرده‌اند ؟</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
+                        <h4>علی</h4>
+                        <p class="text-muted">علی، دانشجوی دانشگاه تهران، اولین نفری است که از ایتالیا کالایی برایش آوردند...</p>
+                        <div><a href="#" class="readmore">جزئیات ماجرا</a></div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
+                        <h4>محمدحسین</h4>
+                        <p class="text-muted">ماجرای محمدحسین از جایی شروع شد که دنبال راهی برای دریافت کردن مدارکش از ایران بود...</p>
+                        <div><a href="#" class="readmore">جزئیات ماجرا</a></div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
+                        <h4>الی</h4>
+                        <p class="text-muted">وقتی نوتلای الی و شوهرش تمام شد، آنها خیلی حس بدی داشتند تا که فهمیدند خیلی راحت میتوانند آن را دوباره بخرند...</p>
+                        <div><a href="#" class="readmore">جزئیات ماجرا</a></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Clients Aside -->
+    <aside class="clients">
+        <div class="container">
+            <div class="row">
+                <a target="_blank" href="http://tanzil.net/#14:34"><div class="col-md-2 col-sm-6"><span></span></div></a>
+                <a target="_blank" href="#"><div class="col-md-2 col-sm-6"><span></span></div></a>
+                <a target="_blank" href="#"><div class="col-md-2 col-sm-6"><span></span></div></a>
+                <a target="_blank" href="#"><div class="col-md-2 col-sm-6"><span></span></div></a>
+                <a target="_blank" href="#"><div class="col-md-2 col-sm-6"><span></span></div></a>
+                <a target="_blank" href="#"><div class="col-md-2 col-sm-6"><span></span></div></a>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">با ما در تماس باشید</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="پیام شما" id="message" required data-validation-required-message="لطفا پیام خود را وارد کنید."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="نام شما" id="name" required data-validation-required-message="لطفا نام خود را وارد کنید.">
+                                  <p class="help-block text-danger"></p>
+                              </div>
+                              <div class="form-group">
+                                  <input type="email" class="form-control" placeholder="ایمیل شما" id="email" required data-validation-required-message="لطفا ایمیل خود را وارد کنید." data-validation-email-message="فرمت ایمیل صحیح نمی‌باشد.">
+                                  <p class="help-block text-danger"></p>
+                              </div>
+                              <div class="form-group">
+                                  <input type="tel" class="form-control" placeholder="شماره تماس شما" id="phone" required data-validation-required-message="لطفا شماره تماس خود را وارد کنید.">
+                                  <p class="help-block text-danger"></p>
+                              </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">ارسال پیام</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">&copy; کلیه حقوق برای <a href="http://www.tooshe.net">توشه</a> محفوظ است</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-paper-plane"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">درباره ما</a>
+                        </li>
+                        <li><a href="#">شرایط استفاده</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+    <script src="js/jquery.geocomplete.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+    <!-- Start of Slider codes -->
+    <script src="sliderengine/amazingslider.js"></script>
+    <script src="sliderengine/initslider-1.js"></script>
+    <!-- End of Slider codes -->
+
+
+
+</body>
+</html>

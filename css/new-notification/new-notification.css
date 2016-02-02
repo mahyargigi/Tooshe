@@ -5,6 +5,12 @@
 h1,h2,h3,h4,h5,h6{
     font-family: 'Lato',Arial;
 }
+.notification{
+    /*margin-left: 3%;*/
+}
+.btn{
+    border-radius: 5px !important;
+}
 .nav-tabs{
     width: 400px;
     background-color: rgba(228, 221, 232, 0.72);
@@ -25,6 +31,14 @@ h1,h2,h3,h4,h5,h6{
     color: rgba(64, 62, 65, 0.90) !important;
     outline: 0;
 }
+.first-div{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.last-div{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 .note-div{
     padding-top: 20px;
     padding-bottom: 10px;
@@ -38,7 +52,7 @@ h1,h2,h3,h4,h5,h6{
     color: rgba(98, 101, 105, 0.82);
 }
 .seen-label{
-    margin-left: 3%;
+    /*margin-left: 3%;*/
     margin-top: 1%;
 }
 .badge{
@@ -57,6 +71,11 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 2px;
     border-width: 2px;
 }
+.acc-btn:hover{
+    background-color:rgba(113, 205, 229, 0.82) !important;
+    color: white !important;
+}
+
 .tick{
     color: rgba(116, 193, 232, 0.72);
     margin-right: 10px;
@@ -66,6 +85,10 @@ h1,h2,h3,h4,h5,h6{
     border-color: rgba(221, 62, 64, 0.72);
     border-radius: 2px;
     border-width: 2px;
+}
+.dec-btn:hover{
+    background-color: rgba(229, 69, 68, 0.82) !important;
+    color: white !important;
 }
 .remove{
     color: rgba(221, 62, 64, 0.72);
@@ -78,12 +101,20 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 2px;
     border-width: 2px;
 }
+.finalize-btn:hover{
+    background-color: rgba(94, 229, 171, 0.82) !important;
+    color: white !important;
+}
 .write-review-btn{
     color: rgba(120, 123, 128, 0.82) !important;
     border: solid;
     border-color: rgba(120, 123, 128, 0.82);
     border-radius: 2px;
     border-width: 2px;
+}
+.write-review-btn:hover , .cancel-btn:hover{
+    background-color: rgba(172, 175, 177, 0.82) !important;
+    color: white !important;
 }
 .cancel-btn{
     color: #808080 !important;
@@ -95,14 +126,13 @@ h1,h2,h3,h4,h5,h6{
 .image-div{
     vertical-align: 350%;
     position: relative;
-    width: 7%;
-    margin-left: 5%;
+    width: 8%;
+    margin-left: 3%;
 }
 .note-text-div{
     width: 30%;
     margin-left: 10px;
-    /*vertical-align: top;*/
-    vertical-align: 350%;
+    vertical-align: 320%;
 }
 .note-text-2-div{
     width: 40%;
@@ -146,7 +176,7 @@ h1,h2,h3,h4,h5,h6{
 
 }
 .first-row-goods-div{
-    width: 40%;
+    width: 35%;
     /*ta 25% ham emtehan kardam mishod ke bashe!*/
 }
 .second-row-goods-div{
@@ -162,7 +192,7 @@ h1,h2,h3,h4,h5,h6{
     width: 45%;
     border-right: solid;
     border-right-width: 1px;
-    border-right-color: black;
+    border-right-color: rgba(214, 221, 229, 0.82);
     /*padding-right: 5%;*/
     /*vertical-align: 10px;*/
 }
@@ -175,12 +205,13 @@ h1,h2,h3,h4,h5,h6{
     /*90%*/
     /*height: 0.5em;*/
     /*0.9em*/
-    vertical-align: -5px;
-    min-height: 150px;
+    vertical-align: 100%;
+    /*min-height: 150px;*/
 }
 .good-text{
     border-bottom: solid;
     border-bottom-width: 1px;
+    border-bottom-color: rgba(214, 221, 229, 0.82);
     /*margin-left: 20px;*/
     padding-bottom: 10px;
 }

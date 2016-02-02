@@ -1,6 +1,13 @@
 body{
     background-color: rgba(248, 248, 248, 0.80);
 }
+@media (max-width: 1200px) {
+  .container-fluid {
+    width: 1600px;
+  }
+}
+
+
 .container-row{
     margin-top: 130px;
     font-family: 'Lato',Arial;

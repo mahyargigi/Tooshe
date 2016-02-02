@@ -2,6 +2,7 @@
  * Created by User on 8/31/15.
  */
 $(document).ready(function(){
+
    $('#max-weight-input').on('change',function(){
       if(this.value > 40){
           this.value = 40;

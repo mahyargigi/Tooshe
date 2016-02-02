@@ -1,0 +1,1153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Update Profile - Tooshe</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+		<link href="css/style.css" rel="stylesheet">
+
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-62816216-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	</head>
+
+	<body> 
+		<div class="ajax-loader"></div>
+
+		<div class="navmenu navmenu-inverse navmenu-fixed-right offcanvas">
+      		<ul class="nav navmenu-nav">
+        	
+				<li><a href="/">Home</a></li>
+				<li class="divider"></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard<b class="caret"></b></a>
+					<ul class="dropdown-menu navmenu-nav">
+						<li><a href="/dashboard/profile">Update Profile</a></li>
+						<li><a href="/dashboard/payment">Payment Information</a></li>
+						<li class="divider"></li>
+						<li><a href="/dashboard/account">Account Settings</a></li>
+						<li><a href="/dashboard/notifications">Notification Settings</a></li>
+					</ul>
+				</li>
+				<li><a href="/trips/new" class="highlighted">Order sth</a></li>
+				<li><a href="/trips/new" class="highlighted">Send sth</a></li>
+				<li><a href="/trips/new" class="highlighted">Take sth</a></li>
+				<li><a href="/requests/new" class="highlighted">Search</a></li>
+				<li><a href="/notifications">Notifications</a></li>
+				<li class="divider"></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/help">Help</a></li>
+				<li><a href="/contact">Contact</a></li>
+				<li class="divider"></li>
+				<li><a href="/logout">Log Out</a></li>
+			
+			</ul>
+    	</div>		
+    	<div id="fillerheight">
+		<div class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/"><img src="img/Tooshe_logo.png" alt="Tooshe" /></a>
+				</div>
+
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+
+					<li id="search_button" class="">
+					    <a class="page-scroll" href="#"><i class="fa fa-lg fa-search"></i>Search</a>
+					</li>
+					<li>
+					    <a class="page-scroll" href="#"><i class="fa fa-lg fa-shopping-cart"></i>Order sth</a>
+					</li>
+					<li>
+					    <a class="page-scroll" href="#"><i class="fa fa-lg fa-gift"></i>Send sth</a>
+					</li>
+					<li>
+					    <a class="page-scroll" href="#"><i class="fa fa-lg fa-plane"></i>Take sth</a>
+					</li>
+
+
+					<li><img src="img/profile-tn.png" class="img-circle" style="height:32px;margin-top:-5px"/>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+								Hassan<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="profile.html">My Profile</a></li>
+								<li class="divider"></li>
+								<li><a href="payment.html">My Wallet</a></li>
+								<li class="divider"></li>
+								<li><a href="account.html">Help</a></li>
+								<li><a href="notifications.html">Settings</a></li>
+								<li class="divider"></li>
+								<li><a href="/logout">Log Out</a></li>
+					  		</ul>
+						</li>
+
+						
+
+						
+
+					
+
+					</ul>
+				</div>
+			</div>
+		</div>	
+			
+		<div class="container">
+			
+				
+
+<div class="row top-buffer20">
+    <div class="col-sm-3 hidden-xs">
+		<ul class="nav nav-pills nav-stacked">
+			<li class="active"><a href="profile.html">Update Profile</a></li>
+			<li><a href="payment.html">Payment Information</a></li>
+		</ul>
+		<hr>
+		<ul class="nav nav-pills nav-stacked">
+			<li><a href="account.html">Account Settings</a></li>
+			<li><a href="notifications.html">Notification Settings</a></li>
+		</ul>
+    </div>
+    
+    <div class="col-sm-9">
+	
+
+<div class="modal" id="modal-photo-upload" tabindex="-1" role="dialog" aria-labelledby="modal-photo-upload-label" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="modal-photo-upload-label">Profile Photo</h4>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-xs-6">
+						You can zoom in/out the image
+					</div>
+					<div class="col-xs-6 text-right">
+						<button id="button-crop" class="btn btn-primary btn-sm">Set Profile Photo</button>
+					</div>
+				</div>
+
+				<div id="photo-upload-editor"  class="bootstrap-modal-cropper top-buffer20 text-center"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-4 col-sm-3">
+		<div class="row">
+			<div class="col-xs-12 form-group">
+				<img id="img-photo" src="img/profile.png" style="width:100%;">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 form-group text-center">
+				<span class="btn btn-primary btn-file btn-block">
+					Change Photo<input id="button-photo-upload" type="file" multiple="false" />
+				</span>
+				<a href="/512" class="btn btn-default btn-block">View Profile</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-xs-8 col-sm-9">
+		<form class="form-horizontal" method="POST">
+			<div class="panel panel-default">
+				<div class="panel-heading">Update Profile</div>
+				<div class="panel-body">
+
+					
+
+					<div class="form-group">
+						<label class="control-label col-sm-5 col-md-3" for="txt-first-name">First Name</label>
+						<div class="col-sm-7 col-md-6">
+							<input type="text" class="form-control" name="txt-first-name" id="txt-first-name" value="Hassan">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-5 col-md-3" for="txt-last-name">Last Name</label>
+						<div class="col-sm-7 col-md-6">
+							<input type="text" class="form-control" name="txt-last-name" id="txt-last-name" value="Alizadeh">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-5 col-md-3" for="dd-nationality">Nationality</label>
+						<div class="col-sm-7 col-md-6">
+							<select class="form-control" name="dd-nationality" id="dd-nationality">
+								<option value="0"></option>
+								
+								<option value="3">Afghan</option>
+								
+								<option value="4">Albanian</option>
+								
+								<option value="5">Algerian</option>
+								
+								<option value="6">American</option>
+								
+								<option value="7">Andorran</option>
+								
+								<option value="8">Angolan</option>
+								
+								<option value="9">Antiguans</option>
+								
+								<option value="10">Argentinean</option>
+								
+								<option value="11">Armenian</option>
+								
+								<option value="12">Australian</option>
+								
+								<option value="13">Austrian</option>
+								
+								<option value="14">Azerbaijani</option>
+								
+								<option value="15">Bahamian</option>
+								
+								<option value="16">Bahraini</option>
+								
+								<option value="17">Bangladeshi</option>
+								
+								<option value="18">Barbadian</option>
+								
+								<option value="19">Barbudans</option>
+								
+								<option value="20">Batswana</option>
+								
+								<option value="21">Belarusian</option>
+								
+								<option value="22">Belgian</option>
+								
+								<option value="23">Belizean</option>
+								
+								<option value="24">Beninese</option>
+								
+								<option value="25">Bhutanese</option>
+								
+								<option value="26">Bolivian</option>
+								
+								<option value="27">Bosnian</option>
+								
+								<option value="28">Brazilian</option>
+								
+								<option value="29">British</option>
+								
+								<option value="30">Bruneian</option>
+								
+								<option value="31">Bulgarian</option>
+								
+								<option value="32">Burkinabe</option>
+								
+								<option value="33">Burmese</option>
+								
+								<option value="34">Burundian</option>
+								
+								<option value="35">Cambodian</option>
+								
+								<option value="36">Cameroonian</option>
+								
+								<option value="37">Canadian</option>
+								
+								<option value="38">Cape Verdean</option>
+								
+								<option value="39">Central African</option>
+								
+								<option value="40">Chadian</option>
+								
+								<option value="41">Chilean</option>
+								
+								<option value="42">Chinese</option>
+								
+								<option value="43">Colombian</option>
+								
+								<option value="44">Comoran</option>
+								
+								<option value="45">Congolese</option>
+								
+								<option value="46">Costa Rican</option>
+								
+								<option value="47">Croatian</option>
+								
+								<option value="48">Cuban</option>
+								
+								<option value="49">Cypriot</option>
+								
+								<option value="50">Czech</option>
+								
+								<option value="51">Danish</option>
+								
+								<option value="52">Djibouti</option>
+								
+								<option value="53">Dominican</option>
+								
+								<option value="54">Dutch</option>
+								
+								<option value="55">East Timorese</option>
+								
+								<option value="56">Ecuadorean</option>
+								
+								<option value="57">Egyptian</option>
+								
+								<option value="58">Emirian</option>
+								
+								<option value="59">Equatorial Guinean</option>
+								
+								<option value="60">Eritrean</option>
+								
+								<option value="61">Estonian</option>
+								
+								<option value="62">Ethiopian</option>
+								
+								<option value="63">Fijian</option>
+								
+								<option value="64">Filipino</option>
+								
+								<option value="65">Finnish</option>
+								
+								<option value="66">French</option>
+								
+								<option value="67">Gabonese</option>
+								
+								<option value="68">Gambian</option>
+								
+								<option value="69">Georgian</option>
+								
+								<option value="70">German</option>
+								
+								<option value="71">Ghanaian</option>
+								
+								<option value="72">Greek</option>
+								
+								<option value="73">Grenadian</option>
+								
+								<option value="74">Guatemalan</option>
+								
+								<option value="75">Guinea-Bissauan</option>
+								
+								<option value="76">Guinean</option>
+								
+								<option value="77">Guyanese</option>
+								
+								<option value="78">Haitian</option>
+								
+								<option value="79">Herzegovinian</option>
+								
+								<option value="80">Honduran</option>
+								
+								<option value="81">Hungarian</option>
+								
+								<option value="82">Icelander</option>
+								
+								<option value="83">Indian</option>
+								
+								<option value="84">Indonesian</option>
+								
+								<option value="85" selected="selected">Iranian</option>
+								
+								<option value="86">Iraqi</option>
+								
+								<option value="87">Irish</option>
+								
+								<option value="88">Israeli</option>
+								
+								<option value="89">Italian</option>
+								
+								<option value="90">Ivorian</option>
+								
+								<option value="91">Jamaican</option>
+								
+								<option value="92">Japanese</option>
+								
+								<option value="93">Jordanian</option>
+								
+								<option value="94">Kazakhstani</option>
+								
+								<option value="95">Kenyan</option>
+								
+								<option value="96">Kittian and Nevisian</option>
+								
+								<option value="97">Kuwaiti</option>
+								
+								<option value="98">Kyrgyz</option>
+								
+								<option value="99">Laotian</option>
+								
+								<option value="100">Latvian</option>
+								
+								<option value="101">Lebanese</option>
+								
+								<option value="102">Liberian</option>
+								
+								<option value="103">Libyan</option>
+								
+								<option value="104">Liechtensteiner</option>
+								
+								<option value="105">Lithuanian</option>
+								
+								<option value="106">Luxembourger</option>
+								
+								<option value="107">Macedonian</option>
+								
+								<option value="108">Malagasy</option>
+								
+								<option value="109">Malawian</option>
+								
+								<option value="110">Malaysian</option>
+								
+								<option value="111">Maldivan</option>
+								
+								<option value="112">Malian</option>
+								
+								<option value="113">Maltese</option>
+								
+								<option value="114">Marshallese</option>
+								
+								<option value="115">Mauritanian</option>
+								
+								<option value="116">Mauritian</option>
+								
+								<option value="117">Mexican</option>
+								
+								<option value="118">Micronesian</option>
+								
+								<option value="119">Moldovan</option>
+								
+								<option value="120">Monacan</option>
+								
+								<option value="121">Mongolian</option>
+								
+								<option value="122">Moroccan</option>
+								
+								<option value="123">Mosotho</option>
+								
+								<option value="124">Motswana</option>
+								
+								<option value="125">Mozambican</option>
+								
+								<option value="126">Namibian</option>
+								
+								<option value="127">Nauruan</option>
+								
+								<option value="128">Nepalese</option>
+								
+								<option value="129">Netherlander</option>
+								
+								<option value="130">New Zealander</option>
+								
+								<option value="131">Ni-Vanuatu</option>
+								
+								<option value="132">Nicaraguan</option>
+								
+								<option value="133">Nigerian</option>
+								
+								<option value="134">Nigerien</option>
+								
+								<option value="135">North Korean</option>
+								
+								<option value="136">Northern Irish</option>
+								
+								<option value="137">Norwegian</option>
+								
+								<option value="138">Omani</option>
+								
+								<option value="139">Pakistani</option>
+								
+								<option value="140">Palauan</option>
+								
+								<option value="141">Panamanian</option>
+								
+								<option value="142">Papua New Guinean</option>
+								
+								<option value="143">Paraguayan</option>
+								
+								<option value="144">Peruvian</option>
+								
+								<option value="145">Polish</option>
+								
+								<option value="146">Portuguese</option>
+								
+								<option value="147">Qatari</option>
+								
+								<option value="148">Romanian</option>
+								
+								<option value="149">Russian</option>
+								
+								<option value="150">Rwandan</option>
+								
+								<option value="151">Saint Lucian</option>
+								
+								<option value="152">Salvadoran</option>
+								
+								<option value="153">Samoan</option>
+								
+								<option value="154">San Marinese</option>
+								
+								<option value="155">Sao Tomean</option>
+								
+								<option value="156">Saudi</option>
+								
+								<option value="157">Scottish</option>
+								
+								<option value="158">Senegalese</option>
+								
+								<option value="159">Serbian</option>
+								
+								<option value="160">Seychellois</option>
+								
+								<option value="161">Sierra Leonean</option>
+								
+								<option value="162">Singaporean</option>
+								
+								<option value="163">Slovakian</option>
+								
+								<option value="164">Slovenian</option>
+								
+								<option value="165">Solomon Islander</option>
+								
+								<option value="166">Somali</option>
+								
+								<option value="167">South African</option>
+								
+								<option value="168">South Korean</option>
+								
+								<option value="169">Spanish</option>
+								
+								<option value="170">Sri Lankan</option>
+								
+								<option value="171">Sudanese</option>
+								
+								<option value="172">Surinamer</option>
+								
+								<option value="173">Swazi</option>
+								
+								<option value="174">Swedish</option>
+								
+								<option value="175">Swiss</option>
+								
+								<option value="176">Syrian</option>
+								
+								<option value="177">Taiwanese</option>
+								
+								<option value="178">Tajik</option>
+								
+								<option value="179">Tanzanian</option>
+								
+								<option value="180">Thai</option>
+								
+								<option value="181">Togolese</option>
+								
+								<option value="182">Tongan</option>
+								
+								<option value="183">Trinidadian or Tobagonian</option>
+								
+								<option value="184">Tunisian</option>
+								
+								<option value="185">Turkish</option>
+								
+								<option value="186">Tuvaluan</option>
+								
+								<option value="187">Ugandan</option>
+								
+								<option value="188">Ukrainian</option>
+								
+								<option value="189">Uruguayan</option>
+								
+								<option value="190">Uzbekistani</option>
+								
+								<option value="191">Venezuelan</option>
+								
+								<option value="192">Vietnamese</option>
+								
+								<option value="193">Welsh</option>
+								
+								<option value="194">Yemenite</option>
+								
+								<option value="195">Zambian</option>
+								
+								<option value="196">Zimbabwean</option>
+								
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-5 col-md-3" for="dd-birthdate-month">Date of Birth</label>
+						<div class="col-sm-7 col-md-9">
+							<div class="form-inline">
+								<select class="form-control" name="dd-birthdate-month" id="dd-birthdate-month">
+									
+									<option value="1">January</option>
+									
+									<option value="2">February</option>
+									
+									<option value="3" selected="selected">March</option>
+									
+									<option value="4">April</option>
+									
+									<option value="5">May</option>
+									
+									<option value="6">June</option>
+									
+									<option value="7">July</option>
+									
+									<option value="8">August</option>
+									
+									<option value="9">September</option>
+									
+									<option value="10">October</option>
+									
+									<option value="11">November</option>
+									
+									<option value="12">December</option>
+									
+								</select>
+
+								<select class="form-control" name="dd-birthdate-day" id="dd-birthdate-day">
+									
+									<option value="1">1</option>
+									
+									<option value="2">2</option>
+									
+									<option value="3">3</option>
+									
+									<option value="4">4</option>
+									
+									<option value="5">5</option>
+									
+									<option value="6">6</option>
+									
+									<option value="7">7</option>
+									
+									<option value="8">8</option>
+									
+									<option value="9">9</option>
+									
+									<option value="10">10</option>
+									
+									<option value="11">11</option>
+									
+									<option value="12">12</option>
+									
+									<option value="13">13</option>
+									
+									<option value="14">14</option>
+									
+									<option value="15">15</option>
+									
+									<option value="16">16</option>
+									
+									<option value="17">17</option>
+									
+									<option value="18">18</option>
+									
+									<option value="19">19</option>
+									
+									<option value="20">20</option>
+									
+									<option value="21" selected="selected">21</option>
+									
+									<option value="22">22</option>
+									
+									<option value="23">23</option>
+									
+									<option value="24">24</option>
+									
+									<option value="25">25</option>
+									
+									<option value="26">26</option>
+									
+									<option value="27">27</option>
+									
+									<option value="28">28</option>
+									
+									<option value="29">29</option>
+									
+									<option value="30">30</option>
+									
+									<option value="31">31</option>
+									
+								</select>
+
+								<select class="form-control" name="dd-birthdate-year" id="dd-birthdate-year">
+									
+									
+									<option value="1995">1995</option>
+									
+									<option value="1994">1994</option>
+									
+									<option value="1993" selected="selected">1993</option>
+									
+									<option value="1992">1992</option>
+									
+									<option value="1991">1991</option>
+									
+									<option value="1990">1990</option>
+									
+									<option value="1989">1989</option>
+									
+									<option value="1988">1988</option>
+									
+									<option value="1987">1987</option>
+									
+									<option value="1986">1986</option>
+									
+									<option value="1985">1985</option>
+									
+									<option value="1984">1984</option>
+									
+									<option value="1983">1983</option>
+									
+									<option value="1982">1982</option>
+									
+									<option value="1981">1981</option>
+									
+									<option value="1980">1980</option>
+									
+									<option value="1979">1979</option>
+									
+									<option value="1978">1978</option>
+									
+									<option value="1977">1977</option>
+									
+									<option value="1976">1976</option>
+									
+									<option value="1975">1975</option>
+									
+									<option value="1974">1974</option>
+									
+									<option value="1973">1973</option>
+									
+									<option value="1972">1972</option>
+									
+									<option value="1971">1971</option>
+									
+									<option value="1970">1970</option>
+									
+									<option value="1969">1969</option>
+									
+									<option value="1968">1968</option>
+									
+									<option value="1967">1967</option>
+									
+									<option value="1966">1966</option>
+									
+									<option value="1965">1965</option>
+									
+									<option value="1964">1964</option>
+									
+									<option value="1963">1963</option>
+									
+									<option value="1962">1962</option>
+									
+									<option value="1961">1961</option>
+									
+									<option value="1960">1960</option>
+									
+									<option value="1959">1959</option>
+									
+									<option value="1958">1958</option>
+									
+									<option value="1957">1957</option>
+									
+									<option value="1956">1956</option>
+									
+									<option value="1955">1955</option>
+									
+									<option value="1954">1954</option>
+									
+									<option value="1953">1953</option>
+									
+									<option value="1952">1952</option>
+									
+									<option value="1951">1951</option>
+									
+									<option value="1950">1950</option>
+									
+									<option value="1949">1949</option>
+									
+									<option value="1948">1948</option>
+									
+									<option value="1947">1947</option>
+									
+									<option value="1946">1946</option>
+									
+									<option value="1945">1945</option>
+									
+									<option value="1944">1944</option>
+									
+									<option value="1943">1943</option>
+									
+									<option value="1942">1942</option>
+									
+									<option value="1941">1941</option>
+									
+									<option value="1940">1940</option>
+									
+									<option value="1939">1939</option>
+									
+									<option value="1938">1938</option>
+									
+									<option value="1937">1937</option>
+									
+									<option value="1936">1936</option>
+									
+									<option value="1935">1935</option>
+									
+									<option value="1934">1934</option>
+									
+									<option value="1933">1933</option>
+									
+									<option value="1932">1932</option>
+									
+									<option value="1931">1931</option>
+									
+									<option value="1930">1930</option>
+									
+									<option value="1929">1929</option>
+									
+									<option value="1928">1928</option>
+									
+									<option value="1927">1927</option>
+									
+									<option value="1926">1926</option>
+									
+									<option value="1925">1925</option>
+									
+									<option value="1924">1924</option>
+									
+									<option value="1923">1923</option>
+									
+									<option value="1922">1922</option>
+									
+									<option value="1921">1921</option>
+									
+									<option value="1920">1920</option>
+									
+									<option value="1919">1919</option>
+									
+									<option value="1918">1918</option>
+									
+									<option value="1917">1917</option>
+									
+									<option value="1916">1916</option>
+									
+								</select>
+
+							</div>
+						</div>
+					</div>
+
+
+					<div class="form-group">
+						<label class="control-label col-sm-5 col-md-3" for="job">Job/Career</label>
+						<div class="col-sm-7 col-md-6">
+							<input type="text" class="form-control" name="job" id="job" value="Designer">
+						</div>
+					</div>
+
+
+					<div class="form-group">
+						<label class="control-label col-sm-5 col-md-3" for="txt-languages">Languages</label>
+						<div class="col-sm-7 col-md-6">
+							<select class="form-control" multiple data-placeholder="Choose languages" id="dd-languages" name="dd-languages">
+								
+								<option value="331">Bahasa Indonesia</option>
+								
+								<option value="332">Bahasa Malaysia</option>
+								
+								<option value="333">Bengali</option>
+								
+								<option value="334">Dansk</option>
+								
+								<option value="335">Deutsch</option>
+								
+								<option value="336">English</option>
+								
+								<option value="337">Español</option>
+								
+								<option value="338">Français</option>
+								
+								<option value="339">Hindi</option>
+								
+								<option value="340">Italiano</option>
+								
+								<option value="341">Magyar</option>
+								
+								<option value="342">Nederlands</option>
+								
+								<option value="343">Norsk</option>
+								
+								<option value="344">Polski</option>
+								
+								<option value="345">Português</option>
+								
+								<option value="346">Punjabi</option>
+								
+								<option value="347">Suomi</option>
+								
+								<option value="348">Svenska</option>
+								
+								<option value="349">Tagalog</option>
+								
+								<option value="350">Türkçe</option>
+								
+								<option value="351">Čeština</option>
+								
+								<option value="352">Ελληνικά</option>
+								
+								<option value="353">Русский</option>
+								
+								<option value="354">українська</option>
+								
+								<option value="355">עברית</option>
+								
+								<option value="356">العربية</option>
+								
+								<option value="357">ภาษาไทย</option>
+								
+								<option value="358">中文</option>
+								
+								<option value="359">日本語</option>
+								
+								<option value="360">한국어</option>
+								
+							</select>
+						</div>
+					</div>
+
+					<div id="list"></div>
+					<div class="form-group">
+						<label class="control-label col-sm-5 col-md-3" for="txt-current-location">Current City</label>
+						<div class="col-sm-7 col-md-6">
+							<input type="text" name="txt-current-location" 
+								id="txt-current-location" value="Tehran, Iran" />
+							<input type="hidden" name="hidden-current-location-formatted-address" 
+								id="hidden-current-location-formatted-address" value="Tehran, Iran" /> 
+							<input type="hidden" name="hidden-current-location-google-place-id" 
+								id="hidden-current-location-google-place-id" value="ChIJ2dzzH0kAjj8RvCRwVnxps_A" />
+							<input type="hidden" name="hidden-current-location-locality" 
+								id="hidden-current-location-locality" value="Tehran" />
+							<input type="hidden" name="hidden-current-location-country" 
+								id="hidden-current-location-country" value="Iran" />
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-5 col-md-3" for="dd-gender">Gender</label>
+						<div class="col-sm-7 col-md-6">
+							<select class="form-control" name="dd-gender" id="dd-gender">
+								<option value="">Select</option>
+								
+								<option value="Male" selected="selected">Male</option>
+								
+								<option value="Female">Female</option>
+								
+								<option value="Other">Other</option>
+								
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-sm-offset-5 col-md-offset-3 col-sm-7 col-md-9">
+							<input type="submit" id="button-apply-changes" class="btn btn-warning" value="Apply Changes" autocomplete="off" data-loading-text="Applying Changes..."/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+
+	</div>
+</div>
+
+    </div>
+</div>
+
+
+			
+		</div>
+		</div>
+		<footer>
+		  <div class="container">
+		  <div class="row">
+		  <div class="col-md-3">
+		  <img src="img/logo.png" id="logo-img"></br>
+		  <label id="footer-shoar">
+		    <i>
+		        we are some people like you.
+		        we just do not like wasting our money.
+		        we also like getting whatever we wish, from anywhere we like :)
+		    </i>
+		  </label>
+		  </div>
+		  <div class="col-md-2">
+		  <ul class="footer-list">
+		    <li class="title"><b>Company</b></li>
+		    <li><a href="#">About</a></li>
+		    <li><a href="#">Careers</a></li>
+		    <li><a href="#">Press</a></li>
+		    <li><a href="#">Blog</a></li>
+		    <li><a href="#">Help</a></li>
+		    <li><a href="#">Policies</a></li>
+		    <li><a href="#">Terms & Privacy</a></li>
+		    <li><a href="#">Who didn't support us?!</a></li>
+		  </ul>
+		  </div>
+		  <div class="col-md-2">
+		  <ul class="footer-list">
+		    <li class="title"><b>Discover</b></li>
+		    <li><a href="#">Trust and safety</a></li>
+		    <li><a href="#">Invite friends</a></li>
+		    <li><a href="#">Tooshe picks</a></li>
+		    <li><a href="#">Mobile</a></li>
+		    <li><a href="#">Business Travel</a></li>
+		    <li><a href="#">Site Map</a></li>
+		    <li><a href="#">FAQ</a></li>
+		  </ul>
+		  </div>
+		  <div class="col-md-2">
+		  <ul class="footer-list">
+		    <li class="title"><b>Picking</b></li>
+		    <li><a href="#">Why Pick</a></li>
+		    <li><a href="#">Hospitality</a></li>
+		    <li><a href="#">Delivery ways</a></li>
+		  </ul>
+		  </div>
+		  <div class="col-md-3 footer-list">
+		  <div class="row dropdown-div" id="language-dropdown">
+		    <div class="dropdown">
+		      <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Language
+		      <span class="caret"></span></button>
+		      <ul class="dropdown-menu dropdown-menu-lang">
+		        <li><a href="#">English</a></li>
+		        <li><a href="#">Persian</a></li>
+		        <li><a href="#">Arabic</a></li>
+		        <li><a href="#">Indian</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		  <div class="row dropdown-div">
+		    <div class="dropdown">
+		      <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Currency
+		      <span class="caret"></span></button>
+		      <ul class="dropdown-menu dropdown-menu-currency">
+		        <li><a href="#">USD</a></li>
+		        <li><a href="#">Irr</a></li>
+		        <li><a href="#">Eur</a></li>
+		        <li><a href="#">Lira</a></li>
+		        <li><a href="#">Dirham</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		  </div>
+		  </div>
+
+
+		</footer>
+
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&language=en-us"></script>
+		<script type="text/javascript" src="js/tooshe.min.js"></script>
+
+		
+		<script type="text/javascript">
+		$(document).ready(function() {
+			Picktup.Root.init();
+		});
+		</script>
+		
+
+		
+
+
+<script>
+
+$(document).ready(function() {
+	function handleFileUpload(evt) {
+		var files = evt.target.files;
+		for (var i = 0; f = files[i]; i++) {
+			if (!f.type.match("image.*")) {
+				alert("not image");
+				return;
+			}
+
+			var reader = new FileReader();
+
+			reader.onload = (function(theFile) {
+				return function(e) {
+					var image = new Image();
+					image.src = e.target.result;
+					image.onload = function() {
+						console.log(this.width);
+						console.log(this.height);
+					}
+					var img = $('<img src="' + e.target.result + '" title="' + escape(theFile.name) + '"/>');
+					//$("#photo-upload-editor").empty().add(img);
+					//document.getElementById("photo-upload-editor").innerHTML = img;
+
+					$("#modal-photo-upload").on("show.bs.modal", function() {
+						$("#modal-photo-upload .modal-content").css("height", $(window).height() * 0.8);
+						//$("#modal-photo-upload .thumb").css("max-height", $("#modal-photo-upload .modal-content").height() * 0.85);
+					});
+
+
+					$('#photo-upload-editor > img').cropper({
+					  aspectRatio: 1,
+					  autoCropArea: 0.65,
+					  strict: false,
+					  guides: true,
+					  highlight: true,
+					  dragCrop: true,
+					  movable: true,
+					  resizable: true,
+					  crop: function(data) {
+						console.log(data);
+						$(this).cropper('setCanvasData', canvasData);
+						$(this).cropper('setCropBoxData', cropBoxData);
+					  }
+					});
+
+					$("#modal-photo-upload").modal("show");
+				};
+			})(f);
+
+			reader.readAsDataURL(f);
+		}
+	}
+
+	var translations = {
+		"placeholder_enter_a_city": "Enter a City"
+	};
+
+	Picktup.Dashboard.PhotoUpload.setTranslations(translations);
+	Picktup.Dashboard.PhotoUpload.init();
+});
+</script>
+
+
+
+		
+	</body>
+</html>
+

@@ -1,0 +1,93 @@
+@media (min-width:768px){
+    #bell-li{
+        position: fixed;
+        right: 0;
+        margin-right: 2%;
+    }
+    #profile-li{
+        position: fixed;
+        right: 1%;
+    }
+    #rightest-li{
+        margin-right: 120px;
+    }
+}
+@media (max-width: 1199px){
+    #bell-li{
+        position: fixed;
+        right: 0;
+        margin-right: 4%;
+    }
+    #profile-li{
+        position: fixed;
+        right: 1%;
+    }
+    #rightest-li{
+        margin-right: 120px;
+    }
+    .search-navbar{
+        margin-top: -50px !important;
+    }
+
+}
+@media (min-width:1200px){
+    #bell-li{
+        position: fixed; !important
+        right: 0; !important
+        margin-right: 2%; !important
+    }
+    #profile-li{
+        position: fixed; !important
+        right: 1%; !important
+    }
+    #rightest-li{
+        margin-right: 120px; !important
+    }
+    .search-navbar{
+        margin-top: -60px !important;
+    }
+}
+
+/*anonymous css*/
+#join a{
+    border:2px solid #00FD04 !important;
+    color: #00FD04;
+    border-radius: 0 5px 5px 0;
+    /*border-left-width: 0;*/
+    border-left: none !important;
+    padding: 10px;
+}
+#join a:hover{
+    background-color: rgba(123, 177, 122, 0.82);
+}
+#sign-in a:hover{
+    background-color: rgba(123, 177, 122, 0.82);
+}
+#sign-in a{
+    border:2px solid #00FD04 !important;
+    color: #00FD04;
+    border-radius: 5px 0px 0px 5px;
+    padding: 10px;
+    /*border-left-width: 0;*/
+}
+
+
+/*long strings*/
+/*li{*/
+
+  /* These are technically the same, but use both */
+  /*overflow-wrap: break-word;*/
+  /*word-wrap: break-word;*/
+
+  /*-ms-word-break: break-all;*/
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  /*word-break: break-all;*/
+  /* Instead use this non-standard one: */
+  /*word-break: break-word;*/
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  /*-ms-hyphens: auto;*/
+  /*-moz-hyphens: auto;*/
+  /*-webkit-hyphens: auto;*/
+  /*hyphens: auto;*/
+/*}*/

@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Account setting - Tooshe</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+		<link href="css/style.css" rel="stylesheet">
+
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-62816216-1', 'auto');
+		  ga('send', 'pageview');
+		
+
+		</script>
+
+
+	</head>
+
+	<body> 
+		<div class="ajax-loader"></div>
+
+		<div class="navmenu navmenu-inverse navmenu-fixed-right offcanvas">
+      		<ul class="nav navmenu-nav">
+        	
+				<li><a href="/">Home</a></li>
+				<li class="divider"></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard<b class="caret"></b></a>
+					<ul class="dropdown-menu navmenu-nav">
+						<li><a href="/dashboard/profile">Update Profile</a></li>
+						<li><a href="/dashboard/payment">Payment Information</a></li>
+						<li class="divider"></li>
+						<li><a href="/dashboard/account">Account Settings</a></li>
+						<li><a href="/dashboard/notifications">Notification Settings</a></li>
+					</ul>
+				</li>
+				<li><a href="/trips/new" class="highlighted">Order sth</a></li>
+				<li><a href="/trips/new" class="highlighted">Send sth</a></li>
+				<li><a href="/trips/new" class="highlighted">Take sth</a></li>
+				<li><a href="/requests/new" class="highlighted">Search</a></li>
+				<li><a href="/notifications">Notifications</a></li>
+				<li class="divider"></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/help">Help</a></li>
+				<li><a href="/contact">Contact</a></li>
+				<li class="divider"></li>
+				<li><a href="/logout">Log Out</a></li>
+			
+			</ul>
+    	</div>		
+    	<div id="fillerheight">
+		<div class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/"><img src="img/Tooshe_logo.png" alt="Tooshe" /></a>
+				</div>
+
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+
+					<li id="search_button" class="">
+					    <a class="page-scroll" href="#"><i class="fa fa-lg fa-search"></i>Search</a>
+					</li>
+					<li>
+					    <a class="page-scroll" href="#"><i class="fa fa-lg fa-shopping-cart"></i>Order sth</a>
+					</li>
+					<li>
+					    <a class="page-scroll" href="#"><i class="fa fa-lg fa-gift"></i>Send sth</a>
+					</li>
+					<li>
+					    <a class="page-scroll" href="#"><i class="fa fa-lg fa-plane"></i>Take sth</a>
+					</li>
+
+
+					<li><img src="img/profile-tn.png" class="img-circle" style="height:32px;margin-top:-5px"/>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+								Hassan<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="profile.html">My Profile</a></li>
+								<li class="divider"></li>
+								<li><a href="payment.html">My Wallet</a></li>
+								<li class="divider"></li>
+								<li><a href="account.html">Help</a></li>
+								<li><a href="notifications.html">Settings</a></li>
+								<li class="divider"></li>
+								<li><a href="/logout">Log Out</a></li>
+					  		</ul>
+						</li>
+
+						
+
+						
+
+					
+
+					</ul>
+				</div>
+			</div>
+		</div>	
+			
+<div class="container">
+			
+				
+
+	<div class="row top-buffer20">
+	    <div class="col-sm-3 hidden-xs bottom-buffer50">
+			<ul class="nav nav-pills nav-stacked">
+				<li><a href="profile.html">Update Profile</a></li>
+				<li><a href="payment.html">Payment Information</a></li>
+			</ul>
+			<hr>
+			<ul class="nav nav-pills nav-stacked">
+				<li class="active"><a href="account.html">Account Settings</a></li>
+				<li><a href="notifications.html">Notification Settings</a></li>
+			</ul>
+    	</div>
+
+    	<div class="col-sm-9">
+    		
+
+    		<form class="form-horizontal" method="POST">
+    			<div class="panel panel-default">
+    				<div class="panel-heading">Account Settings</div>
+    				<div class="panel-body">
+
+
+    				
+    					<div class="form-group">
+    						
+    						<label class="control-label col-sm-3" for="txt-email">Email</label>
+    						<div class="col-sm-6">
+    							<p class="form-control-static static-input1">Alizadeh118@gmail.com</p>
+    							
+    							<span class="glyphicon glyphicon-edit form-control-feedback edit-button1" aria-hidden="true" title="Edit"></span>
+    							
+    							<input type="email" class="form-control editable-input1" name="txt-email" id="txt-email" placeholder="enter email" value="Alizadeh118@gmail.com">
+    						</div>
+
+
+    					</div>
+
+    				
+    					<div class="form-group">
+    						
+    						<label class="control-label col-sm-3" for="txt-phone-number">Phone Number</label>
+    						<div class="col-sm-6">
+    							<p class="form-control-static static-input2">+989191190783</p>
+    							
+    							<span class="glyphicon glyphicon-edit form-control-feedback edit-button2" aria-hidden="true" title="Edit"></span>
+    							
+    							<input type="text" class="form-control editable-input2" id="txt-phone-number" name="txt-phone-number" placeholder="enter phone nubmer" value="+989191190783">
+    						</div>
+
+
+    					</div>
+    				
+
+
+    					<div class="form-group">
+    						<div class="col-sm-offset-3 col-sm-6">
+    							<input type="submit" id="button-apply-changes" class="btn btn-warning" value="Apply Changes" autocomplete="off" data-loading-text="Applying Changes...">
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</form>
+
+
+    	</div>
+
+
+    	<div class="col-sm-9">
+    		
+
+    		<form id="form-password" class="form-horizontal" method="POST" novalidate="novalidate">
+    			<div class="panel panel-default">
+    				<div class="panel-heading">Change Password</div>
+    				<div class="panel-body">
+
+    					
+
+    					<div class="form-group">
+    						<label class="control-label col-sm-4 col-md-3" for="txt-new-password">New Password</label>
+    						<div class="col-sm-6 col-md-4">
+    							<input type="password" class="form-control" name="txt-new-password" id="txt-new-password">
+    						</div>
+    					</div>
+
+    					<div class="form-group">
+    						<label class="control-label col-sm-4 col-md-3" for="txt-new-password-again">New Password Again</label>
+    						<div class="col-sm-6 col-md-4">
+    							<input type="password" class="form-control" name="txt-new-password-again" id="txt-new-password-again">
+    						</div>
+    					</div>
+
+    					<div class="form-group">
+    						<div class="col-sm-offset-4 col-sm-8 col-md-offset-3 col-md-9">
+    							<button type="submit" class="btn btn-warning">Update Password</button>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</form>
+
+
+    	</div>
+    
+
+	</div>
+
+
+</div>
+
+		<footer>
+		  <div class="container">
+		  <div class="row">
+		  <div class="col-md-3">
+		  <img src="img/logo.png" id="logo-img"></br>
+		  <label id="footer-shoar">
+		    <i>
+		        we are some people like you.
+		        we just do not like wasting our money.
+		        we also like getting whatever we wish, from anywhere we like :)
+		    </i>
+		  </label>
+		  </div>
+		  <div class="col-md-2">
+		  <ul class="footer-list">
+		    <li class="title"><b>Company</b></li>
+		    <li><a href="#">About</a></li>
+		    <li><a href="#">Careers</a></li>
+		    <li><a href="#">Press</a></li>
+		    <li><a href="#">Blog</a></li>
+		    <li><a href="#">Help</a></li>
+		    <li><a href="#">Policies</a></li>
+		    <li><a href="#">Terms & Privacy</a></li>
+		    <li><a href="#">Who didn't support us?!</a></li>
+		  </ul>
+		  </div>
+		  <div class="col-md-2">
+		  <ul class="footer-list">
+		    <li class="title"><b>Discover</b></li>
+		    <li><a href="#">Trust and safety</a></li>
+		    <li><a href="#">Invite friends</a></li>
+		    <li><a href="#">Tooshe picks</a></li>
+		    <li><a href="#">Mobile</a></li>
+		    <li><a href="#">Business Travel</a></li>
+		    <li><a href="#">Site Map</a></li>
+		    <li><a href="#">FAQ</a></li>
+		  </ul>
+		  </div>
+		  <div class="col-md-2">
+		  <ul class="footer-list">
+		    <li class="title"><b>Picking</b></li>
+		    <li><a href="#">Why Pick</a></li>
+		    <li><a href="#">Hospitality</a></li>
+		    <li><a href="#">Delivery ways</a></li>
+		  </ul>
+		  </div>
+		  <div class="col-md-3 footer-list">
+		  <div class="row dropdown-div" id="language-dropdown">
+		    <div class="dropdown">
+		      <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Language
+		      <span class="caret"></span></button>
+		      <ul class="dropdown-menu dropdown-menu-lang">
+		        <li><a href="#">English</a></li>
+		        <li><a href="#">Persian</a></li>
+		        <li><a href="#">Arabic</a></li>
+		        <li><a href="#">Indian</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		  <div class="row dropdown-div">
+		    <div class="dropdown">
+		      <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Currency
+		      <span class="caret"></span></button>
+		      <ul class="dropdown-menu dropdown-menu-currency">
+		        <li><a href="#">USD</a></li>
+		        <li><a href="#">Irr</a></li>
+		        <li><a href="#">Eur</a></li>
+		        <li><a href="#">Lira</a></li>
+		        <li><a href="#">Dirham</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		  </div>
+		  </div>
+
+
+		</footer>
+
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&language=en-us"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/tooshe.min.js"></script>
+
+		
+		<script type="text/javascript">
+		$(document).ready(function() {
+			Picktup.Root.init();
+		});
+		</script>
+		
+
+		
+
+
+<script>
+
+$(document).ready(function() {
+	function handleFileUpload(evt) {
+		var files = evt.target.files;
+		for (var i = 0; f = files[i]; i++) {
+			if (!f.type.match("image.*")) {
+				alert("not image");
+				return;
+			}
+
+			var reader = new FileReader();
+
+			reader.onload = (function(theFile) {
+				return function(e) {
+					var image = new Image();
+					image.src = e.target.result;
+					image.onload = function() {
+						console.log(this.width);
+						console.log(this.height);
+					}
+					var img = $('<img src="' + e.target.result + '" title="' + escape(theFile.name) + '"/>');
+					//$("#photo-upload-editor").empty().add(img);
+					//document.getElementById("photo-upload-editor").innerHTML = img;
+
+					$("#modal-photo-upload").on("show.bs.modal", function() {
+						$("#modal-photo-upload .modal-content").css("height", $(window).height() * 0.8);
+						//$("#modal-photo-upload .thumb").css("max-height", $("#modal-photo-upload .modal-content").height() * 0.85);
+					});
+
+
+					$('#photo-upload-editor > img').cropper({
+					  aspectRatio: 1,
+					  autoCropArea: 0.65,
+					  strict: false,
+					  guides: true,
+					  highlight: true,
+					  dragCrop: true,
+					  movable: true,
+					  resizable: true,
+					  crop: function(data) {
+						console.log(data);
+						$(this).cropper('setCanvasData', canvasData);
+						$(this).cropper('setCropBoxData', cropBoxData);
+					  }
+					});
+
+					$("#modal-photo-upload").modal("show");
+				};
+			})(f);
+
+			reader.readAsDataURL(f);
+		}
+	}
+
+	var translations = {
+		"placeholder_enter_a_city": "Enter a City"
+	};
+
+	Picktup.Dashboard.PhotoUpload.setTranslations(translations);
+	Picktup.Dashboard.PhotoUpload.init();
+});
+</script>
+
+
+
+		
+	</body>
+</html>
+

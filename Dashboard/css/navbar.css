@@ -1,0 +1,63 @@
+@media (min-width:768px){
+    #bell-li{
+        position: fixed;
+        right: 0;
+        margin-right: 2%;
+    }
+    #profile-li{
+        position: fixed;
+        right: 1%;
+    }
+    #rightest-li{
+        margin-right: 120px;
+    }
+}
+@media (max-width: 1199px){
+    #bell-li{
+        position: fixed;
+        right: 0;
+        margin-right: 4%;
+    }
+    #profile-li{
+        position: fixed;
+        right: 1%;
+    }
+    #rightest-li{
+        margin-right: 120px;
+    }
+
+}
+@media (min-width:1200px){
+    #bell-li{
+        position: fixed; !important
+        right: 0; !important
+        margin-right: 2%; !important
+    }
+    #profile-li{
+        position: fixed; !important
+        right: 1%; !important
+    }
+    #rightest-li{
+        margin-right: 120px; !important
+    }
+}
+
+/*long strings*/
+/*li{*/
+
+  /* These are technically the same, but use both */
+  /*overflow-wrap: break-word;*/
+  /*word-wrap: break-word;*/
+
+  /*-ms-word-break: break-all;*/
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  /*word-break: break-all;*/
+  /* Instead use this non-standard one: */
+  /*word-break: break-word;*/
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  /*-ms-hyphens: auto;*/
+  /*-moz-hyphens: auto;*/
+  /*-webkit-hyphens: auto;*/
+  /*hyphens: auto;*/
+/*}*/

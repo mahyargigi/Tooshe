@@ -1,0 +1,17 @@
+.mynavbar{
+    background-image: url("../../img/most-new-navbar/background.png");
+    background-repeat: repeat;
+    background: url("../../img/most-new-navbar/background.png");
+}
+#search_button{
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*top: auto;*/
+    margin-top: 40px;
+    margin-left: 30px;
+    /*margin-bottom: 22px !important;*/
+    height: 20px;
+}
+.mynavbar{
+    max-height: 80px;
+}

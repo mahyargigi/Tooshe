@@ -1,9 +1,20 @@
+body{
+    min-width: 500px;
+}
 .container-fluid{
     font-family: 'Lato',Arial !important;
 }
+/*h4{*/
+    /*font-size: 13px !important;*/
+/*}*/
 h1,h2,h3,h4,h5,h6{
     font-family: 'Lato',Arial !important;
     font-size: 0.9em;
+}
+@media (max-width: 500px) {
+    .input-label{
+        font-size: 0.5em !important;
+    }
 }
 label{
     font-size: 0.9em;
@@ -46,6 +57,7 @@ form.send-something-form{
         /*margin-right: auto;*/
     /*}*/
 }
+
 @media (min-width: 992px) and (max-width: 1388px){
     .tambr-img{
         /*position: absolute;*/
@@ -256,7 +268,7 @@ input[type=range]{
 }
 
 input[type=range]::-moz-range-track {
-    width: 300px;
+    /*width: 300px;*/
     height: 5px;
     background: rgba(255, 146, 146, 0.84);
     border: none;
@@ -280,9 +292,13 @@ input[type=range]:-moz-focusring{
 }
 
 input[type=range]:focus::-moz-range-track {
-    width: 300px;
+    /*width: 300px;*/
     height: 5px;
     background: rgba(255, 146, 146, 0.84);
     border: none;
     border-radius: 3px;
+}
+
+.send-sth-a , .send-sth-i{
+    color: #E65C00 !important;
 }

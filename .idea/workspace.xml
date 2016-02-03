@@ -26,25 +26,8 @@
       <file leaf-file-name="most-new-navbar-anonymous.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/most-new-navbar-anonymous.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="531" column="22" selection-start="5819" selection-end="27638" vertical-scroll-proportion="-7.7647057" vertical-offset="8631" max-vertical-offset="10472">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="517" column="0" selection-start="27083" selection-end="27083" vertical-scroll-proportion="-6.076923" vertical-offset="8631" max-vertical-offset="10472">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,10 +35,8 @@
       <file leaf-file-name="SendSomething.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SendSomething.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="42" selection-start="873" selection-end="873" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="5338">
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="16" column="42" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="5338">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,25 +44,16 @@
       <file leaf-file-name="new-order.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/new-order/new-order.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="324" column="1" selection-start="5733" selection-end="5733" vertical-scroll-proportion="0.0" vertical-offset="4963" max-vertical-offset="5678">
+            <state line="15" column="0" selection-start="246" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5678">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dashboard/navbar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="25" selection-start="217" selection-end="217" vertical-scroll-proportion="116.69231" vertical-offset="3119" max-vertical-offset="3910">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new-order-not-signed-up.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="new-order-not-signed-up.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new-order-not-signed-up.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="778" column="55" selection-start="39950" selection-end="39962" vertical-scroll-proportion="0.33333334" vertical-offset="13009" max-vertical-offset="17544">
+            <state line="709" column="25" selection-start="35896" selection-end="35896" vertical-scroll-proportion="-11.254902" vertical-offset="11479" max-vertical-offset="17561">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -108,29 +80,17 @@
       <file leaf-file-name="SendSomething-not-signed-up.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SendSomething-not-signed-up.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="28" selection-start="6897" selection-end="6924" vertical-scroll-proportion="-4.254902" vertical-offset="2095" max-vertical-offset="15572">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#1;n#div#1;n#div#2;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#2;n#div#1;n#div#2;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="339" column="21" selection-start="17788" selection-end="17793" vertical-scroll-proportion="-4.254902" vertical-offset="5546" max-vertical-offset="15589">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input-styles.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/global/input-styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,7 +98,7 @@
       <file leaf-file-name="sendsomething.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/SendSomething/sendsomething.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="24" selection-start="362" selection-end="362" vertical-scroll-proportion="-9.2" vertical-offset="76" max-vertical-offset="4981">
+            <state line="18" column="24" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="4981">
               <folding />
             </state>
           </provider>
@@ -154,7 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/most-new-navbar/most-new-navbar.js" />
         <option value="$PROJECT_DIR$/Dashboard/navbar.html" />
         <option value="$PROJECT_DIR$/css/new-order-not-signed-up/modal.css" />
         <option value="$PROJECT_DIR$/most-new-navbar.html" />
@@ -166,10 +125,11 @@
         <option value="$PROJECT_DIR$/css/new-order/new-order.css" />
         <option value="$PROJECT_DIR$/new-order.html" />
         <option value="$PROJECT_DIR$/js/most-new-navbar/tooshe.min.js" />
-        <option value="$PROJECT_DIR$/SendSomething-not-signed-up.html" />
         <option value="$PROJECT_DIR$/SendSomething.html" />
         <option value="$PROJECT_DIR$/css/SendSomething/sendsomething.css" />
         <option value="$PROJECT_DIR$/new-order-not-signed-up.html" />
+        <option value="$PROJECT_DIR$/SendSomething-not-signed-up.html" />
+        <option value="$PROJECT_DIR$/css/global/input-styles.css" />
       </list>
     </option>
   </component>
@@ -205,7 +165,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -384,12 +343,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="global" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tooshe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="fonts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -499,9 +477,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -523,6 +498,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -602,7 +580,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.194375" sideWeight="0.6707153" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.194375" sideWeight="0.6707153" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -629,25 +607,14 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Template/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14484">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/landing-page/en.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="8" selection-start="4762" selection-end="7520" vertical-scroll-proportion="0.23502304" vertical-offset="1479" max-vertical-offset="14518">
-          <folding />
-        </state>
+        <state line="96" column="8" selection-start="4762" selection-end="7520" vertical-scroll-proportion="0.23502304" vertical-offset="1479" max-vertical-offset="14518" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/new-order/new-order.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="44" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.40088105" vertical-offset="373" max-vertical-offset="4182">
-          <folding />
-        </state>
+        <state line="38" column="44" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.40088105" vertical-offset="373" max-vertical-offset="4182" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/most-new-navbar/navbar.css">
@@ -673,14 +640,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/new-order.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="406" column="7" selection-start="19512" selection-end="19512" vertical-scroll-proportion="0.84911245" vertical-offset="6328" max-vertical-offset="7004">
-          <folding />
-        </state>
+        <state line="406" column="7" selection-start="19512" selection-end="19512" vertical-scroll-proportion="0.84911245" vertical-offset="6328" max-vertical-offset="7004" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Dashboard/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="25" selection-start="217" selection-end="217" vertical-scroll-proportion="116.69231" vertical-offset="3119" max-vertical-offset="3910">
+        <state line="5" column="25" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="3119" max-vertical-offset="3910">
           <folding />
         </state>
       </provider>
@@ -696,90 +661,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="28473" selection-start="29927" selection-end="29943" vertical-scroll-proportion="-9.0" vertical-offset="846" max-vertical-offset="4148">
           <folding>
-            <element signature="e#15140#15391#2" expanded="true" />
-            <element signature="e#47275#50746#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/new-order/new-order.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="324" column="1" selection-start="5733" selection-end="5733" vertical-scroll-proportion="0.0" vertical-offset="4963" max-vertical-offset="5678">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/most-new-navbar-anonymous.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="531" column="22" selection-start="5819" selection-end="27638" vertical-scroll-proportion="-7.7647057" vertical-offset="8631" max-vertical-offset="10472">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SendSomething-not-signed-up.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="28" selection-start="6897" selection-end="6924" vertical-scroll-proportion="-4.254902" vertical-offset="2095" max-vertical-offset="15572">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#div#1;n#div#2;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#div#1;n#div#2;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#15140#15391#2" expanded="false" />
+            <element signature="e#47275#50746#2" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SendSomething.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="42" selection-start="873" selection-end="873" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="5338">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="16" column="42" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="5338">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/SendSomething/sendsomething.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="24" selection-start="362" selection-end="362" vertical-scroll-proportion="-9.2" vertical-offset="76" max-vertical-offset="4981">
+        <state line="18" column="24" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="4981">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/most-new-navbar-anonymous.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="517" column="0" selection-start="27083" selection-end="27083" vertical-scroll-proportion="-6.076923" vertical-offset="8631" max-vertical-offset="10472">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/new-order-not-signed-up.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="778" column="55" selection-start="39950" selection-end="39962" vertical-scroll-proportion="0.33333334" vertical-offset="13009" max-vertical-offset="17544">
+        <state line="709" column="25" selection-start="35896" selection-end="35896" vertical-scroll-proportion="-11.254902" vertical-offset="11479" max-vertical-offset="17561">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -799,6 +710,27 @@
             <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#6;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/new-order/new-order.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="246" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5678">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SendSomething-not-signed-up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="339" column="21" selection-start="17788" selection-end="17793" vertical-scroll-proportion="-4.254902" vertical-offset="5546" max-vertical-offset="15589">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/global/input-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715">
+          <folding />
         </state>
       </provider>
     </entry>

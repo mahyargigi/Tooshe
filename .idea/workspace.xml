@@ -23,19 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sendsomething.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="sendsomething.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/SendSomething/sendsomething.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="301" column="19" selection-start="5430" selection-end="5430" vertical-scroll-proportion="-24.88" vertical-offset="4495" max-vertical-offset="5253">
+            <state line="1" column="18" selection-start="24" selection-end="24" vertical-scroll-proportion="0.02463768" vertical-offset="0" max-vertical-offset="5253">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SendSomething-not-signed-up.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SendSomething-not-signed-up.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SendSomething-not-signed-up.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="59" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.359447" vertical-offset="463" max-vertical-offset="15606">
+            <state line="41" column="59" selection-start="1791" selection-end="1791" vertical-scroll-proportion="-4.5882354" vertical-offset="463" max-vertical-offset="15606">
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -114,8 +114,8 @@
         <option value="$PROJECT_DIR$/new-order-not-signed-up.html" />
         <option value="$PROJECT_DIR$/css/new-order/new-order.css" />
         <option value="$PROJECT_DIR$/css/global/input-styles.css" />
-        <option value="$PROJECT_DIR$/css/SendSomething/sendsomething.css" />
         <option value="$PROJECT_DIR$/SendSomething-not-signed-up.html" />
+        <option value="$PROJECT_DIR$/css/SendSomething/sendsomething.css" />
       </list>
     </option>
   </component>
@@ -708,16 +708,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/SendSomething/sendsomething.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="301" column="19" selection-start="5430" selection-end="5430" vertical-scroll-proportion="-24.88" vertical-offset="4495" max-vertical-offset="5253">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SendSomething-not-signed-up.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="59" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.359447" vertical-offset="463" max-vertical-offset="15606">
+        <state line="41" column="59" selection-start="1791" selection-end="1791" vertical-scroll-proportion="-4.5882354" vertical-offset="463" max-vertical-offset="15606">
           <folding>
             <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -732,6 +725,13 @@
             <element signature="n#style#0;n#div#6;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/SendSomething/sendsomething.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="18" selection-start="24" selection-end="24" vertical-scroll-proportion="0.02463768" vertical-offset="0" max-vertical-offset="5253">
+          <folding />
         </state>
       </provider>
     </entry>

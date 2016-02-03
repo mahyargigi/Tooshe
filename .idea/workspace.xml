@@ -23,19 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="most-new-navbar-anonymous.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/most-new-navbar-anonymous.html">
+      <file leaf-file-name="sendsomething.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/SendSomething/sendsomething.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="517" column="0" selection-start="27083" selection-end="27083" vertical-scroll-proportion="-6.076923" vertical-offset="8631" max-vertical-offset="10472">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SendSomething.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SendSomething.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="42" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="5338">
+            <state line="197" column="1" selection-start="3547" selection-end="3547" vertical-scroll-proportion="-9.88" vertical-offset="3102" max-vertical-offset="4981">
               <folding />
             </state>
           </provider>
@@ -44,16 +35,16 @@
       <file leaf-file-name="new-order.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/new-order/new-order.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="246" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5678">
+            <state line="234" column="0" selection-start="3790" selection-end="3930" vertical-scroll-proportion="0.0" vertical-offset="3739" max-vertical-offset="5678">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new-order-not-signed-up.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="new-order-not-signed-up.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/new-order-not-signed-up.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="709" column="25" selection-start="35896" selection-end="35896" vertical-scroll-proportion="-11.254902" vertical-offset="11479" max-vertical-offset="17561">
+            <state line="15" column="62" selection-start="721" selection-end="721" vertical-scroll-proportion="0.2611367" vertical-offset="85" max-vertical-offset="17595">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -80,25 +71,16 @@
       <file leaf-file-name="SendSomething-not-signed-up.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SendSomething-not-signed-up.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="339" column="21" selection-start="17788" selection-end="17793" vertical-scroll-proportion="-4.254902" vertical-offset="5546" max-vertical-offset="15589">
+            <state line="16" column="4" selection-start="769" selection-end="827" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="15572">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input-styles.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="input-styles.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/global/input-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sendsomething.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/SendSomething/sendsomething.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="24" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="4981">
+            <state line="23" column="30" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
@@ -125,11 +107,11 @@
         <option value="$PROJECT_DIR$/css/new-order/new-order.css" />
         <option value="$PROJECT_DIR$/new-order.html" />
         <option value="$PROJECT_DIR$/js/most-new-navbar/tooshe.min.js" />
-        <option value="$PROJECT_DIR$/SendSomething.html" />
         <option value="$PROJECT_DIR$/css/SendSomething/sendsomething.css" />
-        <option value="$PROJECT_DIR$/new-order-not-signed-up.html" />
+        <option value="$PROJECT_DIR$/SendSomething.html" />
         <option value="$PROJECT_DIR$/SendSomething-not-signed-up.html" />
         <option value="$PROJECT_DIR$/css/global/input-styles.css" />
+        <option value="$PROJECT_DIR$/new-order-not-signed-up.html" />
       </list>
     </option>
   </component>
@@ -573,14 +555,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.194375" sideWeight="0.6707153" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.194375" sideWeight="0.6707153" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -607,11 +589,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/landing-page/en.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="8" selection-start="4762" selection-end="7520" vertical-scroll-proportion="0.23502304" vertical-offset="1479" max-vertical-offset="14518" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/new-order/new-order.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="44" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.40088105" vertical-offset="373" max-vertical-offset="4182" />
@@ -667,20 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SendSomething.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="42" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="5338">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/SendSomething/sendsomething.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="24" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="4981">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/most-new-navbar-anonymous.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="517" column="0" selection-start="27083" selection-end="27083" vertical-scroll-proportion="-6.076923" vertical-offset="8631" max-vertical-offset="10472">
@@ -688,9 +651,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/SendSomething.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="9" selection-start="712" selection-end="714" vertical-scroll-proportion="0.33333334" vertical-offset="501" max-vertical-offset="2448">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SendSomething.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="30" selection-start="861" selection-end="861" vertical-scroll-proportion="0.40236688" vertical-offset="0" max-vertical-offset="5338">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/new-order/new-order.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="234" column="0" selection-start="3790" selection-end="3930" vertical-scroll-proportion="0.0" vertical-offset="3739" max-vertical-offset="5678">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/SendSomething/sendsomething.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="197" column="1" selection-start="3547" selection-end="3547" vertical-scroll-proportion="-9.88" vertical-offset="3102" max-vertical-offset="4981">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/global/input-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="30" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SendSomething-not-signed-up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="4" selection-start="769" selection-end="827" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="15572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/new-order-not-signed-up.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="709" column="25" selection-start="35896" selection-end="35896" vertical-scroll-proportion="-11.254902" vertical-offset="11479" max-vertical-offset="17561">
+        <state line="15" column="62" selection-start="721" selection-end="721" vertical-scroll-proportion="0.2611367" vertical-offset="85" max-vertical-offset="17595">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -710,27 +715,6 @@
             <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#6;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/new-order/new-order.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="246" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5678">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SendSomething-not-signed-up.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="339" column="21" selection-start="17788" selection-end="17793" vertical-scroll-proportion="-4.254902" vertical-offset="5546" max-vertical-offset="15589">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/global/input-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715">
-          <folding />
         </state>
       </provider>
     </entry>

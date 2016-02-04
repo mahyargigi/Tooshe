@@ -320,10 +320,10 @@ input[type=range]:focus::-moz-range-track {
     /*border-radius: 3px;*/
     border: none;
 }
+/*end of slider css*/
 .container-fluid{
     margin-top: 40px;
 }
 .order-sth-a , .order-sth-i{
     color: #E65C00 !important;
 }
-/*end of slider css*/

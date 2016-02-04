@@ -4,13 +4,14 @@
 }
 footer{
     font-family: broya,Arial;
-    font-size: 1.2em;
+    font-size: 15px !important;
+    /*font-size: 1.2em;*/
 }
 h1,h2,h3,h4,h5,h6{
     font-family: broya,Arial;
 }
 .dropdown-button{
-    font-size: 1.2em !important;
+    /*font-size: 1.2em !important;*/
 }
 footer a { color: #a1a9b0; }
 footer {
@@ -34,15 +35,15 @@ ul.legals li:last-child::after { content: ""; }
 .credit { text-align: right; }
 
 .footer-list li{
+    margin-bottom: 10px;
     color: white;
     list-style: none;
     font-size: 1.2em;
 }
 
-footer.label{
-    font-weight: 100;
+footer label , footer ul , footer div{
+    font-weight: 100 !important;
 }
-
 .footer-list{
     margin-top: 40px;
 }

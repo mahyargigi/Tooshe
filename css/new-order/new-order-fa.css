@@ -3,18 +3,18 @@ body{
 }
 
 @font-face {
-    font-family: broya;
-    src: url(../../fonts/global/BROYA.TTF);
+    font-family: byekan;
+    src: url(../fonts/BYekan.ttf);
 }
 .navbar-inverse{
-    font-family: broya,Arial !important;
+    font-family: byekan,Arial !important;
 }
 
 .container-fluid{
-    font-family: broya,Arial !important;
+    font-family: byekan,Arial !important;
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: broya,Arial !important;
+    font-family: byekan,Arial !important;
 }
 
 input[type=text],input[type=url],input[type=number],textarea,select{
@@ -135,7 +135,8 @@ div.radio{
 }
 .tooshe-will-find{
     color: rgba(32, 139, 10, 0.90);
-    font-size: 1.1em;
+    /*font-size: 1.1em;*/
+    font-size: 18px;
 }
 .kamrang-header{
     color: rgba(159, 158, 155, 0.90);
@@ -222,7 +223,7 @@ div.radio{
     color: rgba(136, 134, 133, 0.90);
 }
 .totally-pay{
-    margin-left: 5%;
+    /*margin-left: 5%;*/
     color: green;
     font-size: 20px;
 }
@@ -297,7 +298,7 @@ input[type=range]::-moz-range-track {
 
 input[type=range]::-moz-range-thumb {
     -webkit-appearance: none;
-    border: solid;
+    border: solid;f
     border-color: rgba(172, 165, 170, 0.93);
     height: 36px; /* past 16px*/
     width: 36px; /* past 16px*/
@@ -319,3 +320,10 @@ input[type=range]:focus::-moz-range-track {
     border: none;
 }
 /*end of slider css*/
+
+.container-fluid{
+    margin-top: 40px;
+}
+.order-sth-a , .order-sth-i{
+    color: #E65C00 !important;
+}

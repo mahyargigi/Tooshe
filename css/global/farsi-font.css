@@ -1,0 +1,18 @@
+@font-face {
+    font-family: byekan;
+    src: url(../fonts/BYekan.ttf);
+}
+#middle-navbar> li> a, #search_button> a , label , footer , input , textarea , a , p , button , span , div{
+    font-family: byekan,Arial !important;
+}
+
+.container-fluid{
+    font-family: byekan,Arial !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: byekan,Arial !important;
+}
+label{
+    font-weight: 100 !important;
+    font-size: 1.2em;
+}

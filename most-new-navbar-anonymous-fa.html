@@ -29,15 +29,29 @@
 		<div class="navmenu navmenu-inverse navmenu-fixed-right offcanvas">
       		<ul class="nav navmenu-nav">
 
-				<li><a href="/">Home</a></li>
+				<li><a href="/">
+                    خانه
+				</a></li>
 				<li class="divider"></li>
-                <li><a href="/requests/new" class="">Search</a></li>
+                <li><a href="/requests/new" class="">
+                    جست و جو
+                </a></li>
                 <li class="divider"></li>
-                <li><a href="/trips/new" class="highlighted">Order sth</a></li>
-				<li><a href="/trips/new" class="">Send sth</a></li>
-				<li><a href="/trips/new" class="">Take sth</a></li>
-                <li><a href="#"  data-toggle="modal" data-target="#signup_modal">Join</a> </li>
-                <li><a href="#" data-toggle="modal" data-target="#signin_modal">Signin</a> </li>
+                <li><a href="/trips/new" class="highlighted">
+                    خرید
+                </a></li>
+				<li><a href="/trips/new" class="">
+                    ارسال
+				</a></li>
+				<li><a href="/trips/new" class="">
+                    ثبت سفر
+				</a></li>
+                <li><a href="#"  data-toggle="modal" data-target="#signup_modal">
+                    عضویت
+                </a> </li>
+                <li><a href="#" data-toggle="modal" data-target="#signin_modal">
+                    ورود
+                </a> </li>
 				<!--<li class="dropdown">-->
 					<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Notifications<b class="caret"></b></a>-->
 					<!--<ul class="dropdown-menu navmenu-nav">-->
@@ -85,7 +99,9 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav search-navbar">
                     <li id="search_button">
-                        <a class="page-scroll search-a" href="#"><i class="fa fa-lg fa-search search-i"></i>Search</a>
+                        <a class="page-scroll search-a" href="#"><i class="fa fa-lg fa-search search-i"></i>
+                        جست و جو
+                        </a>
                     </li>
                 </ul>
 
@@ -101,24 +117,30 @@
                 <!--</ul>-->
                 <ul id="middle-navbar" class="nav navbar-nav navbar-right" >
                     <li class="middle-li">
-                        <a class="page-scroll order-sth-a" href="#"><i class="fa fa-lg fa-shopping-cart order-sth-i"></i>Order sth</a>
+                        <a class="page-scroll order-sth-a" href="#"><i class="fa fa-lg fa-shopping-cart order-sth-i"></i>
+                        خرید
+                        </a>
                     </li>
                     <li class="middle-li">
-                        <a class="page-scroll send-sth-a" href="#"><i class="fa fa-lg fa-gift send-sth-i"></i>Send sth</a>
+                        <a class="page-scroll send-sth-a" href="#"><i class="fa fa-lg fa-gift send-sth-i"></i>
+                        ارسال
+                        </a>
                     </li>
                     <li id="rightest-li" class="middle-li">
-                        <a class="page-scroll take-sth-a" href="#"><i class="fa fa-lg fa-plane take-sth-i"></i>Take sth</a>
+                        <a class="page-scroll take-sth-a" href="#"><i class="fa fa-lg fa-plane take-sth-i"></i>
+                        ثبت سفر
+                        </a>
                     </li>
                     <li id="sign-in">
-                        <a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signin_modal2" >
+                        <a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signin_modal" >
                             <!--style="padding: 0px;margin-right: 40px;"-->
-                            Sign in
+                            ورود
                         </a>
                     </li>
                     <li id="join">
                         <a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signup_modal2" >
                             <!--style="padding: 0px;margin-right: 40px;"-->
-                            join
+                            عضویت
                         </a>
                     </li>
                 </ul>
@@ -481,15 +503,16 @@
         </div>
       </div>
     </footer>
-    <div class="modal fade" id="signup_modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <!-- Modal -->
+        <div class="modal fade" id="signup_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <br>
-                <h4 class="modal-title" id="myModalLabel2" style="text-align:center;color: rgba(103, 177, 123, 0.82);">Join us for free</h4>
-                <span style="display:block;text-align:center">(U can also join with <a class="fbcl" href="#">Facebook</a> or <a class="glcl" href="#">Google</a>)</span>
-                <!--<p class="or_container"><span>or</span></p>-->
+                <h4 class="modal-title" id="myModalLabel" style="text-align:center">رایگان عضو شوید</h4>
+                <span style="display:block;text-align:center">با <a class="fbcl" href="#">فیسبوک</a> یا <a class="glcl" href="#">گوگل</a></span>
+                <p class="or_container"><span>یا</span></p>
               </div>
               <div class="modal-body">
               <form novalidate>
@@ -497,46 +520,46 @@
 
                     <div class="col-md-6 signupfield">
                         <div class="form-group">
-                            <input type="text" class="search-in" placeholder="First name" id="signup-faname2" required data-validation-required-message="Not filled." pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="Not valid">
+                            <input type="text" class="" placeholder="نام" id="signup-faname" required data-validation-required-message="نام ضروری است" pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="فقط شامل حروف باشد">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
 
                     <div class="col-md-6 signupfield">
                         <div class="form-group">
-                            <input type="text" class="" placeholder="Last name" id="signup-laname2" required data-validation-required-message="Not filled." pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="Not valid">
+                            <input type="text" class="" placeholder="نام خانوادگی" id="signup-laname" required data-validation-required-message="نام ضروری است" pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="فقط شامل حروف باشد">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
 
                     <div class="col-md-12 signupfield">
                         <div class="form-group">
-                            <input type="email" class="" placeholder="Email address" id="signup-username2" required data-validation-required-message="Please enter your email">
+                            <input type="email" class="" placeholder="ایمیل" id="signup-username" required data-validation-required-message="لطفا ایمیل خود را وارد کنید" data-validation-email-message="فرمت ایمیل صحیح نمی‌باشد.">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
 
                     <div class="col-md-12 signupfield">
                         <div class="form-group">
-                            <input type="password" class="" placeholder="Password" id="signup-password2" minlength="6" required data-validation-required-message="Please enter your password">
+                            <input type="password" class="" placeholder="رمز عبور" id="signup-password" minlength="6" required data-validation-required-message="لطفا رمز عبور خود وارد کنید" data-validation-minlength-message="حداقل 6 کاراکتر">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
 
                     <div class="col-md-12 signupfield">
-                        <span style="margin-right:30px;">Gender:</span>
-                        <div class="radio radio-primary" style="display:inline-block;">
+                        <span style="margin-left:30px;">جنسیت:</span>
+                        <div class="radio" style="display:inline-block;">
                           <label>
-                            <input type="radio" name="gender" value="1" checked="checked"> Male
+                            <input type="radio" name="gender" value="1" checked="checked"> مرد
                           </label>
                           <label>
-                            <input type="radio" name="gender" value="0"> Female
+                            <input type="radio" name="gender" value="0"> زن
                           </label>
                         </div>
                     </div>
 
                     <div class="col-md-12 signupfield">
-                        <span>Birthday:</span>
+                        <span>تاریخ تولد:</span>
                         <div class="birthday">
                             <select class="form-control">
                               <option>1</option>
@@ -572,97 +595,277 @@
                               <option>31</option>
                             </select>
                             <select class="form-control">
-                              <option>Jan</option>
-                              <option>Feb</option>
-                              <option>Mar</option>
-                              <option>Apr</option>
-                              <option>May</option>
-                              <option>Jun</option>
-                              <option>Jul</option>
-                              <option>Aug</option>
-                              <option>Sep</option>
-                              <option>Oct</option>
-                              <option>Nov</option>
-                              <option>Dec</option>
+                              <option>فروردین</option>
+                              <option>اردیبهشت</option>
+                              <option>خرداد</option>
+                              <option>تیر</option>
+                              <option>مرداد</option>
+                              <option>شهریور</option>
+                              <option>مهر</option>
+                              <option>آبان</option>
+                              <option>آذر</option>
+                              <option>دی</option>
+                              <option>بهمن</option>
+                              <option>اسفند</option>
                             </select>
                             <select class="form-control">
-                              <option>2005</option>
-                              <option>2004</option>
-                              <option>2003</option>
-                              <option>2002</option>
-                              <option>2001</option>
-                              <option>2000</option>
-                              <option>1999</option>
-                              <option>1998</option>
-                              <option>1997</option>
-                              <option>1996</option>
-                              <option>1995</option>
-                              <option>1994</option>
-                              <option>1993</option>
-                              <option>1992</option>
-                              <option>1991</option>
-                              <option>1990</option>
-                              <option>1989</option>
-                              <option>1988</option>
-                              <option>1987</option>
-                              <option>1986</option>
-                              <option>1985</option>
-                              <option>1984</option>
-                              <option>1983</option>
-                              <option>1982</option>
-                              <option>1981</option>
-                              <option>1980</option>
-                              <option>1979</option>
-                              <option>1978</option>
-                              <option>1977</option>
-                              <option>1976</option>
-                              <option>1975</option>
-                              <option>1974</option>
-                              <option>1973</option>
-                              <option>1972</option>
-                              <option>1971</option>
-                              <option>1970</option>
-                              <option>1969</option>
-                              <option>1968</option>
-                              <option>1967</option>
-                              <option>1966</option>
-                              <option>1965</option>
-                              <option>1964</option>
-                              <option>1963</option>
-                              <option>1962</option>
-                              <option>1961</option>
-                              <option>1960</option>
-                              <option>1959</option>
-                              <option>1958</option>
-                              <option>1957</option>
-                              <option>1956</option>
-                              <option>1955</option>
-                              <option>1954</option>
-                              <option>1953</option>
-                              <option>1952</option>
-                              <option>1951</option>
+                              <option>1383</option>
+                              <option>1382</option>
+                              <option>1381</option>
+                              <option>1380</option>
+                              <option>1379</option>
+                              <option>1378</option>
+                              <option>1377</option>
+                              <option>1376</option>
+                              <option>1375</option>
+                              <option>1374</option>
+                              <option>1373</option>
+                              <option>1372</option>
+                              <option>1371</option>
+                              <option>1370</option>
+                              <option>1369</option>
+                              <option>1368</option>
+                              <option>1367</option>
+                              <option>1366</option>
+                              <option>1365</option>
+                              <option>1364</option>
+                              <option>1363</option>
+                              <option>1362</option>
+                              <option>1361</option>
+                              <option>1360</option>
+                              <option>1359</option>
+                              <option>1358</option>
+                              <option>1357</option>
+                              <option>1356</option>
+                              <option>1355</option>
+                              <option>1354</option>
+                              <option>1353</option>
+                              <option>1352</option>
+                              <option>1351</option>
+                              <option>1350</option>
+                              <option>1349</option>
+                              <option>1348</option>
+                              <option>1347</option>
+                              <option>1346</option>
+                              <option>1345</option>
+                              <option>1344</option>
+                              <option>1343</option>
+                              <option>1342</option>
+                              <option>1341</option>
+                              <option>1340</option>
+                              <option>1339</option>
+                              <option>1338</option>
+                              <option>1337</option>
+                              <option>1336</option>
+                              <option>1335</option>
+                              <option>1334</option>
+                              <option>1333</option>
+                              <option>1332</option>
+                              <option>1331</option>
+                              <option>1330</option>
                             </select>
 
                         </div>
                     </div>
 
                     <div class="col-md-12 text-muted" style="text-align: center;margin-top: 10px;">
-                        By signing up, i agree with Tooshe's <a href="#">terms & conditions</a>
+                        عضویت شما به منزله‌ی پذیرفتن <a href="#">شرایط و مقررات</a> توشه می‌باشد
                     </div>
 
                 </div>
 
-              <!--</div>-->
-              <div class="modal-footer">
-                <button type="submit" class="btn btn-primary btn-material-cyan-400">Join</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                <p>Already a pickpacker? <a href="#" data-toggle="modal" data-target="#signin_modal2" data-dismiss="modal">Log in</a></p>
               </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">انصراف</button>
+                <button type="submit" class="btn btn-primary">عضویت</button>
+                <p>آیا قبلا عضو شده‌اید ؟ <a href="#" data-toggle="modal" data-target="#signin_modal" data-dismiss="modal">وارد شوید</a></p>
               </form>
               </div>
             </div>
           </div>
-    </div>
+        </div>
+        <!-- Modal -->
+    <!-- Modal -->
+        <div class="modal fade" id="signup_modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <br>
+                <h4 class="modal-title" id="myModalLabel2" style="text-align:center">رایگان عضو شوید</h4>
+                <span style="display:block;text-align:center">با <a class="fbcl" href="#">فیسبوک</a> یا <a class="glcl" href="#">گوگل</a></span>
+                <p class="or_container"><span>یا</span></p>
+              </div>
+              <div class="modal-body">
+              <form novalidate>
+                <div class="row">
+
+                    <div class="col-md-6 signupfield">
+                        <div class="form-group">
+                            <input type="text" class="" placeholder="نام" id="signup-faname2" required data-validation-required-message="نام ضروری است" pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="فقط شامل حروف باشد">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 signupfield">
+                        <div class="form-group">
+                            <input type="text" class="" placeholder="نام خانوادگی" id="signup-laname2" required data-validation-required-message="نام ضروری است" pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="فقط شامل حروف باشد">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <div class="form-group">
+                            <input type="email" class="" placeholder="ایمیل" id="signup-username2" required data-validation-required-message="لطفا ایمیل خود را وارد کنید" data-validation-email-message="فرمت ایمیل صحیح نمی‌باشد.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <div class="form-group">
+                            <input type="password" class="" placeholder="رمز عبور" id="signup-password2" minlength="6" required data-validation-required-message="لطفا رمز عبور خود وارد کنید" data-validation-minlength-message="حداقل 6 کاراکتر">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <span >جنسیت:</span>
+                        <div class="radio" style="display:inline-block;">
+                          <label>
+                            <input type="radio" name="gender" value="1" checked="checked"> مرد
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="0"> زن
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <span>تاریخ تولد:</span>
+                        <div class="birthday">
+                            <select class="form-control">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                              <option>7</option>
+                              <option>8</option>
+                              <option>9</option>
+                              <option>10</option>
+                              <option>11</option>
+                              <option>12</option>
+                              <option>13</option>
+                              <option>14</option>
+                              <option>15</option>
+                              <option>16</option>
+                              <option>17</option>
+                              <option>18</option>
+                              <option>19</option>
+                              <option>20</option>
+                              <option>21</option>
+                              <option>22</option>
+                              <option>23</option>
+                              <option>24</option>
+                              <option>25</option>
+                              <option>26</option>
+                              <option>27</option>
+                              <option>28</option>
+                              <option>29</option>
+                              <option>30</option>
+                              <option>31</option>
+                            </select>
+                            <select class="form-control">
+                              <option>فروردین</option>
+                              <option>اردیبهشت</option>
+                              <option>خرداد</option>
+                              <option>تیر</option>
+                              <option>مرداد</option>
+                              <option>شهریور</option>
+                              <option>مهر</option>
+                              <option>آبان</option>
+                              <option>آذر</option>
+                              <option>دی</option>
+                              <option>بهمن</option>
+                              <option>اسفند</option>
+                            </select>
+                            <select class="form-control">
+                              <option>1383</option>
+                              <option>1382</option>
+                              <option>1381</option>
+                              <option>1380</option>
+                              <option>1379</option>
+                              <option>1378</option>
+                              <option>1377</option>
+                              <option>1376</option>
+                              <option>1375</option>
+                              <option>1374</option>
+                              <option>1373</option>
+                              <option>1372</option>
+                              <option>1371</option>
+                              <option>1370</option>
+                              <option>1369</option>
+                              <option>1368</option>
+                              <option>1367</option>
+                              <option>1366</option>
+                              <option>1365</option>
+                              <option>1364</option>
+                              <option>1363</option>
+                              <option>1362</option>
+                              <option>1361</option>
+                              <option>1360</option>
+                              <option>1359</option>
+                              <option>1358</option>
+                              <option>1357</option>
+                              <option>1356</option>
+                              <option>1355</option>
+                              <option>1354</option>
+                              <option>1353</option>
+                              <option>1352</option>
+                              <option>1351</option>
+                              <option>1350</option>
+                              <option>1349</option>
+                              <option>1348</option>
+                              <option>1347</option>
+                              <option>1346</option>
+                              <option>1345</option>
+                              <option>1344</option>
+                              <option>1343</option>
+                              <option>1342</option>
+                              <option>1341</option>
+                              <option>1340</option>
+                              <option>1339</option>
+                              <option>1338</option>
+                              <option>1337</option>
+                              <option>1336</option>
+                              <option>1335</option>
+                              <option>1334</option>
+                              <option>1333</option>
+                              <option>1332</option>
+                              <option>1331</option>
+                              <option>1330</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 text-muted" style="text-align: center;margin-top: 10px;">
+                        عضویت شما به منزله‌ی پذیرفتن <a href="#">شرایط و مقررات</a> توشه می‌باشد
+                    </div>
+
+                </div>
+            </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">انصراف</button>
+                <button type="submit" class="btn btn-primary">عضویت</button>
+                <p>آیا قبلا عضو شده‌اید ؟ <a href="#" data-toggle="modal" data-target="#signin_modal" data-dismiss="modal">وارد شوید</a></p>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- Modal -->
     <!-- Modal -->
         <div class="modal fade" id="signin_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -671,16 +874,16 @@
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <br>
-                <h4 class="modal-title" id="myModalLabel" style="text-align:center">Login</h4>
-                <span style="display:block;text-align:center">with <a class="fbcl" href="#">Facebook</a> or <a class="glcl" href="#">Google</a></span>
-                <p class="or_container"><span>or</span></p>
+                <h4 class="modal-title" id="myModalLabel" style="text-align:center">ورود به حساب کاربری</h4>
+                <span style="display:block;text-align:center">با <a class="fbcl" href="#">فیسبوک</a> یا <a class="glcl" href="#">گوگل</a></span>
+                <p class="or_container"><span>یا</span></p>
               </div>
               <div class="modal-body">
               <form novalidate>
                 <div class="row">
                     <div class="col-md-12 signinfield">
                         <div class="form-group mgb">
-                            <input type="email" class="" placeholder="Email address" id="signin-username" required data-validation-required-message="Please enter your email">
+                            <input type="email" class="form-control" placeholder="ایمیل" id="signin-username" required data-validation-required-message="لطفا ایمیل خود را وارد کنید" data-validation-email-message="فرمت ایمیل صحیح نمی‌باشد.">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
@@ -690,7 +893,7 @@
                 <div class="row">
                     <div class="col-md-12 signinfield">
                         <div class="form-group mgb">
-                            <input type="password" class="" placeholder="Password" id="signin-password" required data-validation-required-message="Please enter your password">
+                            <input type="password" class="form-control" placeholder="رمز عبور" id="signin-password" required data-validation-required-message="لطفا رمز عبور خود را وارد کنید">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
@@ -701,77 +904,20 @@
 
                         <div class="checkbox">
                           <label>
-                            <input type="checkbox"> Remember me
+                                                            مرا به خاطر بسپار
+                            <input type="checkbox">
                           </label>
-                        <span style="float:right;"><a href="#">Forgot password?</a></span>
+                        <span style="float:left;"><a href="#">رمزعبور را فراموش کرده‌ام</a></span>
                         </div>
 
                     </div>
 
                 </div>
-                  </form>
               </div>
               <div class="modal-footer">
-                <button type="submit" class="btn btn-primary">Sign in</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                <p>Dont have account? <a href="#" data-toggle="modal" data-target="#signup_modal" data-dismiss="modal">Join us</a> for free</p>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Modal -->
-    <!-- Modal -->
-        <div class="modal fade" id="signin_modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <br>
-                <h4 class="modal-title" id="myModalLabel2_1" style="text-align:center">Login</h4>
-                <span style="display:block;text-align:center">with <a class="fbcl" href="#">Facebook</a> or <a class="glcl" href="#">Google</a></span>
-                <p class="or_container"><span>or</span></p>
-              </div>
-              <div class="modal-body">
-              <form novalidate>
-                <div class="row">
-                    <div class="col-md-12 signinfield">
-                        <div class="form-group mgb">
-                            <input type="email" class="" placeholder="Email address" id="signin-username2" required data-validation-required-message="Please enter your email">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="col-md-12 signinfield">
-                        <div class="form-group mgb">
-                            <input type="password" class="" placeholder="Password" id="signin-password2" required data-validation-required-message="Please enter your password">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12 signinfield">
-
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Remember me
-                          </label>
-                        <span style="float:right;"><a href="#">Forgot password?</a></span>
-                        </div>
-
-                    </div>
-
-                </div>
-                  </form>
-              </div>
-              <div class="modal-footer">
-                <button type="submit" class="btn btn-primary">Sign in</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                <p>Dont have account? <a href="#" data-toggle="modal" data-target="#signup_modal2" data-dismiss="modal">Join us</a> for free</p>
+                <button type="button" class="btn btn-default" data-dismiss="modal">انصراف</button>
+                <button type="submit" class="btn btn-primary">ورود</button>
+                <p>عضو توشه نشده‌اید؟ <a href="#" data-toggle="modal" data-target="#signup_modal" data-dismiss="modal">عضویت</a> رایگان</p>
                 </form>
               </div>
             </div>
@@ -779,189 +925,6 @@
         </div>
         <!-- Modal -->
     <!--<a class="page-scroll highlightnav" href="#" data-toggle="modal" data-target="#signup_modal">join</a>-->
-    <div class="modal fade" id="signup_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <br>
-                <h4 class="modal-title" id="myModalLabel3" style="text-align:center;color: rgba(103, 177, 123, 0.82);">Fill the fields below & complete your action</h4>
-                <span style="display:block;text-align:center">(U can also join with <a class="fbcl" href="#">Facebook</a> or <a class="glcl" href="#">Google</a>)</span>
-                <!--<p class="or_container"><span>or</span></p>-->
-              </div>
-              <div class="modal-body">
-              <form novalidate>
-                <div class="row">
-
-                    <div class="col-md-6 signupfield">
-                        <div class="form-group">
-                            <input type="text" class="search-in" placeholder="First name" id="signup-faname" required data-validation-required-message="Not filled." pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="Not valid">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 signupfield">
-                        <div class="form-group">
-                            <input type="text" class="" placeholder="Last name" id="signup-laname" required data-validation-required-message="Not filled." pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="Not valid">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 signupfield">
-                        <div class="form-group">
-                            <input type="email" class="" placeholder="Email address" id="signup-username" required data-validation-required-message="Please enter your email">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 signupfield">
-                        <div class="form-group">
-                            <input type="password" class="" placeholder="Password" id="signup-password" minlength="6" required data-validation-required-message="Please enter your password">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 signupfield">
-                        <span style="margin-right:30px;">Gender:</span>
-                        <div class="radio radio-primary" style="display:inline-block;">
-                          <label>
-                            <input type="radio" name="gender" value="1" checked="checked"> Male
-                          </label>
-                          <label>
-                            <input type="radio" name="gender" value="0"> Female
-                          </label>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 signupfield">
-                        <span>Birthday:</span>
-                        <div class="birthday">
-                            <select class="form-control">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                              <option>6</option>
-                              <option>7</option>
-                              <option>8</option>
-                              <option>9</option>
-                              <option>10</option>
-                              <option>11</option>
-                              <option>12</option>
-                              <option>13</option>
-                              <option>14</option>
-                              <option>15</option>
-                              <option>16</option>
-                              <option>17</option>
-                              <option>18</option>
-                              <option>19</option>
-                              <option>20</option>
-                              <option>21</option>
-                              <option>22</option>
-                              <option>23</option>
-                              <option>24</option>
-                              <option>25</option>
-                              <option>26</option>
-                              <option>27</option>
-                              <option>28</option>
-                              <option>29</option>
-                              <option>30</option>
-                              <option>31</option>
-                            </select>
-                            <select class="form-control">
-                              <option>Jan</option>
-                              <option>Feb</option>
-                              <option>Mar</option>
-                              <option>Apr</option>
-                              <option>May</option>
-                              <option>Jun</option>
-                              <option>Jul</option>
-                              <option>Aug</option>
-                              <option>Sep</option>
-                              <option>Oct</option>
-                              <option>Nov</option>
-                              <option>Dec</option>
-                            </select>
-                            <select class="form-control">
-                              <option>2005</option>
-                              <option>2004</option>
-                              <option>2003</option>
-                              <option>2002</option>
-                              <option>2001</option>
-                              <option>2000</option>
-                              <option>1999</option>
-                              <option>1998</option>
-                              <option>1997</option>
-                              <option>1996</option>
-                              <option>1995</option>
-                              <option>1994</option>
-                              <option>1993</option>
-                              <option>1992</option>
-                              <option>1991</option>
-                              <option>1990</option>
-                              <option>1989</option>
-                              <option>1988</option>
-                              <option>1987</option>
-                              <option>1986</option>
-                              <option>1985</option>
-                              <option>1984</option>
-                              <option>1983</option>
-                              <option>1982</option>
-                              <option>1981</option>
-                              <option>1980</option>
-                              <option>1979</option>
-                              <option>1978</option>
-                              <option>1977</option>
-                              <option>1976</option>
-                              <option>1975</option>
-                              <option>1974</option>
-                              <option>1973</option>
-                              <option>1972</option>
-                              <option>1971</option>
-                              <option>1970</option>
-                              <option>1969</option>
-                              <option>1968</option>
-                              <option>1967</option>
-                              <option>1966</option>
-                              <option>1965</option>
-                              <option>1964</option>
-                              <option>1963</option>
-                              <option>1962</option>
-                              <option>1961</option>
-                              <option>1960</option>
-                              <option>1959</option>
-                              <option>1958</option>
-                              <option>1957</option>
-                              <option>1956</option>
-                              <option>1955</option>
-                              <option>1954</option>
-                              <option>1953</option>
-                              <option>1952</option>
-                              <option>1951</option>
-                            </select>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 text-muted" style="text-align: center;margin-top: 10px;">
-                        By signing up, i agree with Tooshe's <a href="#">terms & conditions</a>
-                    </div>
-
-                </div>
-
-              <!--</div>-->
-              <div class="modal-footer">
-                <button type="submit" class="btn btn-primary btn-material-cyan-400">Join</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                <p>Already a pickpacker? <a href="#" data-toggle="modal" data-target="#signin_modal" data-dismiss="modal">Log in</a></p>
-              </div>
-              </form>
-              </div>
-            </div>
-          </div>
-    </div>
-        <!-- Modal -->
 
     <!-- jQuery -->
     <script src="js/global/jquery-1.11.2.js"></script>

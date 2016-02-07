@@ -1,14 +1,61 @@
-@font-face {
-    font-family: broya;
-    src: url(../../fonts/global/BROYA.TTF);
-}
-.container-fluid{
-    font-family: broya,Arial !important;
-}
-h1,h2,h3,h4,h5,h6{
-    font-family: broya,Arial !important;
+/*@font-face {*/
+    /*font-family: broya;*/
+    /*src: url(../../fonts/global/BROYA.TTF);*/
+/*}*/
+/*.container-fluid{*/
+    /*font-family: broya,Arial !important;*/
+/*}*/
+/*h1,h2,h3,h4,h5,h6{*/
+    /*font-family: broya,Arial !important;*/
     /*font-size: 0.9em;*/
+/*}*/
+body{
+    min-width: 950px;
 }
+@media (max-width: 991px) {
+    .tambr-img{
+        /*position: absolute;*/
+        /*left: -300px !important;*/
+        display: none;
+    }
+    .media-headers{
+        margin-left: 15% !important;
+    }
+    .tambr-img{
+        display: inline;
+        position: absolute;
+        left: -80px !important;
+        height: 150px;
+        width: 200px;
+    }
+    /*form{*/
+        /*margin-left: 200px;*/
+        /*margin-right: auto;*/
+    /*}*/
+}
+
+@media (min-width: 992px) and (max-width: 1388px){
+    .tambr-img{
+        /*position: absolute;*/
+        left: -200px !important;
+    }
+}
+@media (min-width: 1389px) {
+    .tambr-img{
+        left: -150px !important;
+    }
+}
+.tambr-img{
+    /*width: 200%;*/
+    /*display: inline;*/
+    /*position: relative;*/
+    /*right: 200px;*/
+    position: absolute;
+    /*left: -150px;*/
+    /*margin-right: 10px;*/
+    /*left: -120%;*/
+}
+
 label{
     /*font-size: 0.9em;*/
 }
@@ -19,15 +66,6 @@ input[type=text] , input[type=number]{
     border: solid;
     border-width: 1px;
     border-color: rgba(229, 230, 228, 0.90);
-}
-form{
-    background-color: #f9f9f9;
-    /*border-radius: 20px;*/
-    border: solid;
-    border-width: 20px;
-    border-color: rgba(209, 209, 209, 0.84);
-    padding: 20px;
-    margin-top: 100px;
 }
 .tambr-img{
     /*width: 200%;*/
@@ -51,6 +89,7 @@ form{
 .what-header{
     display: inline;
     margin-right: 2%;
+    margin-left: 2%;
     width: 5%;
 }
 .what-input{
@@ -58,12 +97,11 @@ form{
 }
 .weight-header{
     display: inline;
-    margin-left: 2%;
     margin-right: 2%;
     width: 5%;
 }
 .weight-input{
-    width: 10%;
+    width: 15%;
 }
 .upload-header{
     display: inline;
@@ -142,6 +180,16 @@ form{
 }
 .from-date-span , .to-date-span{
     width: 18%;
+}
+form.send-something-form{
+    background-color: #f9f9f9;
+    /*border-radius: 20px;*/
+    border: solid;
+    border-width: 20px;
+    border-color: rgba(209, 209, 209, 0.84);
+    padding: 20px;
+    /*margin-top: 100px;*/
+    margin-top: 220px !important;
 }
 
 .how-much-span{
@@ -258,4 +306,7 @@ input[type=range]:focus::-moz-range-track {
     background: rgba(255, 146, 146, 0.84);
     border: none;
     border-radius: 3px;
+}
+.send-sth-a , .send-sth-i{
+    color: #E65C00 !important;
 }

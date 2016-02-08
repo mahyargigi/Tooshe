@@ -43,45 +43,46 @@
 				<li class="divider"></li>
                 <li><a href="/requests/new" class="">Search</a></li>
                 <li class="divider"></li>
-                <li><a href="/trips/new" class="">Order sth</a></li>
-				<li><a href="/trips/new" class="highlighted">Send sth</a></li>
+                <li><a href="/trips/new" class="highlighted">Order sth</a></li>
+				<li><a href="/trips/new" class="">Send sth</a></li>
 				<li><a href="/trips/new" class="">Take sth</a></li>
-                <li><a href="#"  data-toggle="modal" data-target="#signup_modal">Join</a> </li>
-                <li><a href="#" data-toggle="modal" data-target="#signin_modal">Signin</a> </li>
-				<!--<li class="dropdown">-->
-					<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Notifications<b class="caret"></b></a>-->
-					<!--<ul class="dropdown-menu navmenu-nav">-->
-						<!--<li><a href="/dashboard/profile">ali requested you to ship an item</a></li>-->
-						<!--<li class="divider"></li>-->
-                        <!--<li><a href="/dashboard/payment">ali accepted your request</a></li>-->
-						<!--<li class="divider"></li>-->
-						<!--<li><a href="/dashboard/account">ali requested you to buy an item</a></li>-->
-						<!--&lt;!&ndash;<li><a href="/dashboard/notifications">Notification Settings</a></li>&ndash;&gt;-->
-					<!--</ul>-->
-				<!--</li>-->
-                <!--<li class="divider"></li>-->
-				<!--<li class="dropdown">-->
-					<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard<b class="caret"></b></a>-->
-					<!--<ul class="dropdown-menu navmenu-nav">-->
-						<!--<li><a href="/dashboard/profile">My profile</a></li>-->
-						<!--<li class="divider"></li>-->
-                        <!--<li><a href="/dashboard/payment">My Wallet</a></li>-->
-						<!--<li class="divider"></li>-->
-						<!--<li><a href="/dashboard/account">Help</a></li>-->
-						<!--<li><a href="/dashboard/notifications">Settings</a></li>-->
-                        <!--<li class="divider"></li>-->
-                        <!--<li><a href="#">Logout</a> </li>-->
-					<!--</ul>-->
-				<!--</li>-->
-                <!--<li><a href="/notifications">Notifications</a></li>-->
-				<!--<li class="divider"></li>-->
-				<!--<li><a href="/about">About</a></li>-->
-				<!--<li><a href="/help">Help</a></li>-->
-				<!--<li><a href="/contact">Contact</a></li>-->
-				<!--<li class="divider"></li>-->
-				<!--<li><a href="/logout">Log Out</a></li>-->
 
-			</ul>
+                <!--not signed up 1-->
+
+                <!--<li><a href="#"  data-toggle="modal" data-target="#signup_modal2">Join</a> </li>-->
+                <!--<li><a href="#" data-toggle="modal" data-target="#signin_modal2">Signin</a> </li>-->
+
+                <!--end not signed up 1-->
+
+                <!--signed in 1-->
+
+                <li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Notifications<b class="caret"></b></a>
+					<ul class="dropdown-menu navmenu-nav">
+						<li><a href="/dashboard/profile">ali requested you to ship an item</a></li>
+						<li class="divider"></li>
+                        <li><a href="/dashboard/payment">ali accepted your request</a></li>
+						<li class="divider"></li>
+						<li><a href="/dashboard/account">ali requested you to buy an item</a></li>
+					</ul>
+				</li>
+                <li class="divider"></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard<b class="caret"></b></a>
+					<ul class="dropdown-menu navmenu-nav">
+						<li><a href="/dashboard/profile">My profile</a></li>
+						<li class="divider"></li>
+                        <li><a href="/dashboard/payment">My Wallet</a></li>
+						<li class="divider"></li>
+						<li><a href="/dashboard/account">Help</a></li>
+						<li><a href="/dashboard/notifications">Settings</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Logout</a> </li>
+					</ul>
+				</li>
+
+                <!--end signed in 1-->
+            </ul>
     	</div>
     <div class="navbar navbar-default mynavbar navbar-fixed-top">
         <div class="container" style="padding-top: 0px;">
@@ -104,11 +105,6 @@
             </div>
 
             <div class="navbar-collapse collapse">
-                <!--<ul class="nav navbar-nav navbar-right">-->
-                    <!--&lt;!&ndash;<li><img src="img/most-new-navbar/profile-tn.png" class="img-circle" style="height:32px;margin-top:-5px">&ndash;&gt;-->
-                    <!--&lt;!&ndash;</li>&ndash;&gt;-->
-                    <!---->
-                <!--</ul>-->
                 <ul id="middle-navbar" class="nav navbar-nav navbar-right" >
                     <li class="middle-li">
                         <a class="page-scroll order-sth-a" href="#"><i class="fa fa-lg fa-shopping-cart order-sth-i"></i>Order sth</a>
@@ -119,18 +115,54 @@
                     <li id="rightest-li" class="middle-li">
                         <a class="page-scroll take-sth-a" href="#"><i class="fa fa-lg fa-plane take-sth-i"></i>Take sth</a>
                     </li>
-                    <li id="sign-in">
-                        <a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signin_modal" >
-                            <!--style="padding: 0px;margin-right: 40px;"-->
-                            Sign in
+
+                    <!--not signed up 2-->
+                    <!--<li id="sign-in">-->
+                        <!--<a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signin_modal2" >-->
+                            <!--Sign in-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--<li id="join">-->
+                        <!--<a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signup_modal2" >-->
+                            <!--join-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--end not signed up 2-->
+
+                    <!--signed in 2-->
+                    <li id="bell-li" class="dropdown" style="background: none;"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="padding: 0px;margin-right: 40px;">
+                        <img src="img/most-new-navbar/Bell-Icon.png" alt="note" class="img-circle" style="height:32px;margin-top:-5px;margin-left: 0px;">
                         </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="profile.html" style="">
+                                    ali requested you to ship an item
+                                </a></li>
+                                <li class="divider"></li>
+                                <li><a href="payment.html">
+                                    ali accepted your request
+                                </a></li>
+                                <li class="divider"></li>
+                                <li><a href="account.html">
+                                    ali requested you to buy an item
+                                </a></li>
+                            </ul>
                     </li>
-                    <li id="join">
-                        <a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signup_modal" >
-                            <!--style="padding: 0px;margin-right: 40px;"-->
-                            join
+                    <li id="profile-li" class="dropdown" style="background: none;">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <img src="img/most-new-navbar/profile-tn.png" class="img-circle" style="height:32px;margin-top:-5px;margin-left: 0px;">
                         </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="profile.html">My Profile</a></li>
+                            <li class="divider"></li>
+                            <li><a href="payment.html">My Wallet</a></li>
+                            <li class="divider"></li>
+                            <li><a href="account.html">Help</a></li>
+                            <li><a href="notifications.html">Settings</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/logout">Log Out</a></li>
+                        </ul>
                     </li>
+                    <!--end signed in 2-->
                 </ul>
             </div>
         </div>
@@ -230,7 +262,7 @@
                         <span class="third-line-span empty-span"></span>
                         <span class="third-line-span find-passengers-span">
                             <!--<a href="javascript:void(0)"  class="btn btn-info btn-lg btn-material-cyan-600" id="find-passengers-id"><label style="width: 100%;" id="button-label">Save & find passenger!</label></a></br>-->
-                            <div class="btn btn-info btn-lg btn-material-cyan-600" id="find-passengers-id" data-toggle="modal" data-target="#signup_modal2">Save & find passenger!</div>
+                            <div class="btn btn-info btn-lg btn-material-cyan-600" id="find-passengers-id" data-toggle="modal" data-target="#signup_modal">Save & find passenger!</div>
                             <div class="checkbox">
                                 <label>
                                     <input type="checkbox"><span class="let-my-span">Let my request be searchable for everyone
@@ -341,13 +373,13 @@
         </div>
       </div>
     </footer>
-    <div class="modal fade" id="signup_modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="signup_modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <br>
-                <h4 class="modal-title" id="myModalLabel2" style="text-align:center;color: rgba(103, 177, 123, 0.82);">Fill the fields below & complete your action</h4>
+                <h4 class="modal-title" id="myModalLabel2" style="text-align:center;color: rgba(103, 177, 123, 0.82);">Join us for free</h4>
                 <span style="display:block;text-align:center">(U can also join with <a class="fbcl" href="#">Facebook</a> or <a class="glcl" href="#">Google</a>)</span>
                 <!--<p class="or_container"><span>or</span></p>-->
               </div>
@@ -516,20 +548,136 @@
               <div class="modal-footer">
                 <button type="submit" class="btn btn-primary btn-material-cyan-400">Join</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                <p>Already a pickpacker? <a href="#" data-toggle="modal" data-target="#signin_modal" data-dismiss="modal">Log in</a></p>
+                <p>Already a pickpacker? <a href="#" data-toggle="modal" data-target="#signin_modal2" data-dismiss="modal">Log in</a></p>
               </div>
               </form>
               </div>
             </div>
           </div>
     </div>
+        <!-- Modal -->
+    <!-- Modal -->
+        <div class="modal fade" id="signin_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <br>
+                <h4 class="modal-title" id="myModalLabel" style="text-align:center">Login</h4>
+                <span style="display:block;text-align:center">with <a class="fbcl" href="#">Facebook</a> or <a class="glcl" href="#">Google</a></span>
+                <p class="or_container"><span>or</span></p>
+              </div>
+              <div class="modal-body">
+              <form novalidate>
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+                        <div class="form-group mgb">
+                            <input type="email" class="" placeholder="Email address" id="signin-username" required data-validation-required-message="Please enter your email">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+                        <div class="form-group mgb">
+                            <input type="password" class="" placeholder="Password" id="signin-password" required data-validation-required-message="Please enter your password">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Remember me
+                          </label>
+                        <span style="float:right;"><a href="#">Forgot password?</a></span>
+                        </div>
+
+                    </div>
+
+                </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <p>Dont have account? <a href="#" data-toggle="modal" data-target="#signup_modal" data-dismiss="modal">Join us</a> for free</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+    <!-- Modal -->
+        <div class="modal fade" id="signin_modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <br>
+                <h4 class="modal-title" id="myModalLabel2_1" style="text-align:center">Login</h4>
+                <span style="display:block;text-align:center">with <a class="fbcl" href="#">Facebook</a> or <a class="glcl" href="#">Google</a></span>
+                <p class="or_container"><span>or</span></p>
+              </div>
+              <div class="modal-body">
+              <form novalidate>
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+                        <div class="form-group mgb">
+                            <input type="email" class="" placeholder="Email address" id="signin-username2" required data-validation-required-message="Please enter your email">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+                        <div class="form-group mgb">
+                            <input type="password" class="" placeholder="Password" id="signin-password2" required data-validation-required-message="Please enter your password">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Remember me
+                          </label>
+                        <span style="float:right;"><a href="#">Forgot password?</a></span>
+                        </div>
+
+                    </div>
+
+                </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <p>Dont have account? <a href="#" data-toggle="modal" data-target="#signup_modal2" data-dismiss="modal">Join us</a> for free</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+    <!--<a class="page-scroll highlightnav" href="#" data-toggle="modal" data-target="#signup_modal">join</a>-->
     <div class="modal fade" id="signup_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <br>
-                <h4 class="modal-title" id="myModalLabel3" style="text-align:center;color: rgba(103, 177, 123, 0.82);">Join us for free</h4>
+                <h4 class="modal-title" id="myModalLabel3" style="text-align:center;color: rgba(103, 177, 123, 0.82);">Fill the fields below & complete your action</h4>
                 <span style="display:block;text-align:center">(U can also join with <a class="fbcl" href="#">Facebook</a> or <a class="glcl" href="#">Google</a>)</span>
                 <!--<p class="or_container"><span>or</span></p>-->
               </div>
@@ -705,63 +853,6 @@
             </div>
           </div>
     </div>
-        <!-- Modal -->
-    <!-- Modal -->
-        <div class="modal fade" id="signin_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <br>
-                <h4 class="modal-title" id="myModalLabel" style="text-align:center">Login</h4>
-                <span style="display:block;text-align:center">with <a class="fbcl" href="#">Facebook</a> or <a class="glcl" href="#">Google</a></span>
-                <p class="or_container"><span>or</span></p>
-              </div>
-              <div class="modal-body">
-              <form novalidate>
-                <div class="row">
-                    <div class="col-md-12 signinfield">
-                        <div class="form-group mgb">
-                            <input type="email" class="" placeholder="Email address" id="signin-username" required data-validation-required-message="Please enter your email">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="col-md-12 signinfield">
-                        <div class="form-group mgb">
-                            <input type="password" class="" placeholder="Password" id="signin-password" required data-validation-required-message="Please enter your password">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12 signinfield">
-
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Remember me
-                          </label>
-                        <span style="float:right;"><a href="#">Forgot password?</a></span>
-                        </div>
-
-                    </div>
-
-                </div>
-                  </form>
-              </div>
-              <div class="modal-footer">
-                <button type="submit" class="btn btn-primary">Sign in</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                <p>Dont have account? <a href="#" data-toggle="modal" data-target="#signup_modal2" data-dismiss="modal">Join us</a> for free</p>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
         <!-- Modal -->
 
     <script src="js/global/jquery-1.11.2.js" ></script>

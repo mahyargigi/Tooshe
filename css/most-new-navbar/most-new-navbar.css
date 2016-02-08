@@ -15,3 +15,12 @@
 .mynavbar{
     max-height: 80px;
 }
+
+#bell-li ul li a {
+    white-space: normal;
+}
+#bell-li ul{
+    min-width: 200px;
+    /*position: relative;*/
+    /*right: -50px;*/
+}

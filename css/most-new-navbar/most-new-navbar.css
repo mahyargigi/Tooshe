@@ -24,3 +24,6 @@
     /*position: relative;*/
     /*right: -50px;*/
 }
+.note-ul , .dash-ul{
+    text-align: right;
+}

@@ -52,45 +52,66 @@
 				<li><a href="/trips/new" class="">
                     ثبت سفر
 				</a></li>
-                <li><a href="#"  data-toggle="modal" data-target="#signup_modal2">
-                    عضویت
-                </a> </li>
-                <li><a href="#" data-toggle="modal" data-target="#signin_modal2">
-                    ورود
-                </a> </li>
-				<!--<li class="dropdown">-->
-					<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Notifications<b class="caret"></b></a>-->
-					<!--<ul class="dropdown-menu navmenu-nav">-->
-						<!--<li><a href="/dashboard/profile">ali requested you to ship an item</a></li>-->
-						<!--<li class="divider"></li>-->
-                        <!--<li><a href="/dashboard/payment">ali accepted your request</a></li>-->
-						<!--<li class="divider"></li>-->
-						<!--<li><a href="/dashboard/account">ali requested you to buy an item</a></li>-->
-						<!--&lt;!&ndash;<li><a href="/dashboard/notifications">Notification Settings</a></li>&ndash;&gt;-->
-					<!--</ul>-->
-				<!--</li>-->
-                <!--<li class="divider"></li>-->
-				<!--<li class="dropdown">-->
-					<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard<b class="caret"></b></a>-->
-					<!--<ul class="dropdown-menu navmenu-nav">-->
-						<!--<li><a href="/dashboard/profile">My profile</a></li>-->
-						<!--<li class="divider"></li>-->
-                        <!--<li><a href="/dashboard/payment">My Wallet</a></li>-->
-						<!--<li class="divider"></li>-->
-						<!--<li><a href="/dashboard/account">Help</a></li>-->
-						<!--<li><a href="/dashboard/notifications">Settings</a></li>-->
-                        <!--<li class="divider"></li>-->
-                        <!--<li><a href="#">Logout</a> </li>-->
-					<!--</ul>-->
-				<!--</li>-->
-                <!--<li><a href="/notifications">Notifications</a></li>-->
-				<!--<li class="divider"></li>-->
-				<!--<li><a href="/about">About</a></li>-->
-				<!--<li><a href="/help">Help</a></li>-->
-				<!--<li><a href="/contact">Contact</a></li>-->
-				<!--<li class="divider"></li>-->
-				<!--<li><a href="/logout">Log Out</a></li>-->
 
+                <!--not signed up 1-->
+                <!--<li><a href="#"  data-toggle="modal" data-target="#signup_modal2">-->
+                    <!--عضویت-->
+                <!--</a> </li>-->
+                <!--<li><a href="#" data-toggle="modal" data-target="#signin_modal2">-->
+                    <!--ورود-->
+                <!--</a> </li>-->
+                <!--end not signed up-->
+
+                <!--signed in 1-->
+
+                <li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                 نوتیفیکیشن ها
+                        <b class="caret"></b>
+                    </a>
+					<ul class="dropdown-menu navmenu-nav note-ul" dir="rtl">
+						<li><a href="/dashboard/profile">
+                            ali درخواست ارسال بار کرده است.
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li><a href="/dashboard/payment">
+                        ali درخواست تو را پذیرفت.
+                        </a></li>
+						<li class="divider"></li>
+						<li><a href="/dashboard/account">
+                            ali به تو درخواست خرید یک جنس را داده است.
+                        </a></li>
+					</ul>
+				</li>
+                <li class="divider"></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        داشبورد
+                        <b class="caret"></b></a>
+					<ul class="dropdown-menu navmenu-nav dash-ul" dir="rtl">
+						<li><a href="/dashboard/profile">
+                            پروفایل من
+						</a></li>
+						<li class="divider"></li>
+                        <li><a href="/dashboard/payment">
+                            کیف پول من
+                        </a></li>
+						<li class="divider"></li>
+						<li><a href="/dashboard/account">
+                            کمک
+						</a></li>
+						<li><a href="/dashboard/notifications">
+                            تنظیمات
+						</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">
+                            خروج
+                        </a> </li>
+					</ul>
+				</li>
+
+                <!--end signed in 1-->
 			</ul>
     	</div>
     <div class="navbar navbar-default mynavbar navbar-fixed-top">
@@ -116,11 +137,6 @@
             </div>
 
             <div class="navbar-collapse collapse">
-                <!--<ul class="nav navbar-nav navbar-right">-->
-                    <!--&lt;!&ndash;<li><img src="img/most-new-navbar/profile-tn.png" class="img-circle" style="height:32px;margin-top:-5px">&ndash;&gt;-->
-                    <!--&lt;!&ndash;</li>&ndash;&gt;-->
-                    <!---->
-                <!--</ul>-->
                 <ul id="middle-navbar" class="nav navbar-nav navbar-right" >
                     <li class="middle-li">
                         <a class="page-scroll order-sth-a" href="#"><i class="fa fa-lg fa-shopping-cart order-sth-i"></i>
@@ -137,18 +153,64 @@
                         ثبت سفر
                         </a>
                     </li>
-                    <li id="sign-in">
-                        <a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signin_modal2" >
-                            <!--style="padding: 0px;margin-right: 40px;"-->
-                            ورود
+
+                    <!--not signed up 2-->
+                    <!--<li id="sign-in">-->
+                        <!--<a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signin_modal2" >-->
+                            <!--ورود-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--<li id="join">-->
+                        <!--<a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signup_modal2" >-->
+                            <!--عضویت-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--end not signed up 2-->
+
+                    <!--signed in 2-->
+                    <li id="bell-li" class="dropdown" style="background: none;"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="padding: 0px;margin-right: 40px;">
+                        <img src="img/most-new-navbar/Bell-Icon.png" alt="note" class="img-circle" style="height:32px;margin-top:-5px;margin-left: 0px;">
                         </a>
+                            <ul class="dropdown-menu note-ul" role="menu" dir="rtl">
+                                <li><a href="profile.html" style="">
+                            ali درخواست ارسال بار کرده است.
+                                </a></li>
+                                <li class="divider"></li>
+                                <li><a href="payment.html">
+                        ali درخواست تو را پذیرفت.
+                                </a></li>
+                                <li class="divider"></li>
+                                <li><a href="account.html">
+                            ali به تو درخواست خرید یک جنس را داده است.
+                                </a></li>
+                            </ul>
                     </li>
-                    <li id="join">
-                        <a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signup_modal2" >
-                            <!--style="padding: 0px;margin-right: 40px;"-->
-                            عضویت
+                    <li id="profile-li" class="dropdown" style="background: none;">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <img src="img/most-new-navbar/profile-tn.png" class="img-circle" style="height:32px;margin-top:-5px;margin-left: 0px;">
                         </a>
+                        <ul class="dropdown-menu dash-ul" role="menu">
+                            <li><a href="profile.html">
+                                پروفایل من
+                            </a></li>
+                            <li class="divider"></li>
+                            <li><a href="payment.html">
+                                کیف پول من
+                            </a></li>
+                            <li class="divider"></li>
+                            <li><a href="account.html">
+                                کمک
+                            </a></li>
+                            <li><a href="notifications.html">
+                                تنظیمات
+                            </a></li>
+                            <li class="divider"></li>
+                            <li><a href="/logout">
+                                خروج
+                            </a></li>
+                        </ul>
                     </li>
+                    <!--end signed in 2-->
                 </ul>
             </div>
         </div>

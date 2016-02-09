@@ -3,280 +3,155 @@
 <head>
     <title></title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/global/bootstrap.min.css" rel="stylesheet">
     <link href="css/global/material.min.css" rel="stylesheet">
     <link href="css/global/material-fullpalette.min.css" rel="stylesheet">
     <link href="css/global/bootstrap-material-datepicker.css" rel="stylesheet">
     <link href="css/flightSubmit/flightSubmit-fa.css" rel="stylesheet">
+    <link href="css/global/input-styles.css" rel="stylesheet">
+
+        <!--navbar css-->
+    <link href="css/most-new-navbar/style.css" rel="stylesheet">
+    <link href="css/most-new-navbar/navbar.css" rel="stylesheet">
+    <link href="css/most-new-navbar/most-new-navbar.css" rel="stylesheet">
     <link href="css/footer/footer-fa.css" rel="stylesheet">
-    <link href="css/global/font.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/flightSubmit/flightSubmit-input-styles.css" rel="stylesheet">
+    <link href="css/modal/modal.css" rel="stylesheet">
+    <link href="css/global/farsi-font.css" rel="stylesheet">
+
     <!--<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>-->
-
-        <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-        <style type="text/css">
-            #notif
-            {
-                background-color: #ECF6FF;
-            }
-
-            .line1
-            {
-                width: 0px;
-                height: 3px;
-                margin-left:31px; 
-                margin-top:5px;
-                background-color:#E12258; 
-            }
-            .line2
-            {
-                width: 0px;
-                height: 3px;
-                margin-left:23px; 
-                margin-top:5px;
-                background-color:#E12258; 
-            }
-            .line3
-            {
-                width: 0px;
-                height: 3px;
-                margin-left:16px; 
-                margin-top:-15px;
-                background-color:#E12258; 
-            }
-
-        .line4
-        {
-          width: 0px;
-          height: 3px;
-          margin-left:19px; 
-          margin-top:-15px;
-          background-color:#E12258; 
-
-        }
-        </style>
 </head>
 <body>
 
-        <nav class="navbar navbar-inverse" style="background-image:url('images/bg.jpg'); height:65px;">
-  <div class="container-fluid">
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <!-- <li><a class="navbar-brand" href="#" style="position:relative; left:0px; top:-10px;" ><img src="images/logo.gif"/></a></li> -->
-        <li><a href="#" style="font-family:Kurnia; font-size:40px; color:white; position:relative; top:-10px;"><img src="images/logo.png" height="60px" width="100px;"></a></li>
-      </ul>
-<!--       <form class="navbar-form navbar-left" role="search">
-    <div class="row">    
-        <div class="col-xs-8 col-xs-offset-2">
-            <div class="input-group">
-                <div class="input-group-btn search-panel">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                        <span id="search_concept">Destination</span> <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#contains">United States</a></li>
-                      <li><a href="#its_equal">Canada</a></li>
-                      <li><a href="#greather_than">Switzerland</a></li>
-                      <li><a href="#less_than">UEA</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#all">Anywhere</a></li>
-                    </ul>
-                </div>
-                <input type="hidden" name="search_param" value="all" id="search_param">         
-                <input type="text" style="width:250px; margin-top:0px;" class="form-control" name="x" placeholder="Search term...">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type="button" style="height:34px;"><span class="glyphicon glyphicon-search"></span></button>
-                </span>
+    <div class="ajax-loader"></div>
+
+		<div class="navmenu navmenu-inverse navmenu-fixed-right offcanvas">
+      		<ul class="nav navmenu-nav">
+
+				<li><a href="/">
+                    خانه
+				</a></li>
+				<li class="divider"></li>
+                <li><a href="/requests/new" class="">
+                    جست و جو
+                </a></li>
+                <li class="divider"></li>
+                <li><a href="/trips/new" class="highlighted">
+                    خرید
+                </a></li>
+				<li><a href="/trips/new" class="">
+                    ارسال
+				</a></li>
+				<li><a href="/trips/new" class="">
+                    ثبت سفر
+				</a></li>
+                <li><a href="#"  data-toggle="modal" data-target="#signup_modal2">
+                    عضویت
+                </a> </li>
+                <li><a href="#" data-toggle="modal" data-target="#signin_modal2">
+                    ورود
+                </a> </li>
+				<!--<li class="dropdown">-->
+					<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Notifications<b class="caret"></b></a>-->
+					<!--<ul class="dropdown-menu navmenu-nav">-->
+						<!--<li><a href="/dashboard/profile">ali requested you to ship an item</a></li>-->
+						<!--<li class="divider"></li>-->
+                        <!--<li><a href="/dashboard/payment">ali accepted your request</a></li>-->
+						<!--<li class="divider"></li>-->
+						<!--<li><a href="/dashboard/account">ali requested you to buy an item</a></li>-->
+						<!--&lt;!&ndash;<li><a href="/dashboard/notifications">Notification Settings</a></li>&ndash;&gt;-->
+					<!--</ul>-->
+				<!--</li>-->
+                <!--<li class="divider"></li>-->
+				<!--<li class="dropdown">-->
+					<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard<b class="caret"></b></a>-->
+					<!--<ul class="dropdown-menu navmenu-nav">-->
+						<!--<li><a href="/dashboard/profile">My profile</a></li>-->
+						<!--<li class="divider"></li>-->
+                        <!--<li><a href="/dashboard/payment">My Wallet</a></li>-->
+						<!--<li class="divider"></li>-->
+						<!--<li><a href="/dashboard/account">Help</a></li>-->
+						<!--<li><a href="/dashboard/notifications">Settings</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li><a href="#">Logout</a> </li>-->
+					<!--</ul>-->
+				<!--</li>-->
+                <!--<li><a href="/notifications">Notifications</a></li>-->
+				<!--<li class="divider"></li>-->
+				<!--<li><a href="/about">About</a></li>-->
+				<!--<li><a href="/help">Help</a></li>-->
+				<!--<li><a href="/contact">Contact</a></li>-->
+				<!--<li class="divider"></li>-->
+				<!--<li><a href="/logout">Log Out</a></li>-->
+
+			</ul>
+    	</div>
+    <div class="navbar navbar-default mynavbar navbar-fixed-top">
+        <div class="container" style="padding-top: 0px;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img src="img/most-new-navbar/Tooshe_logo.png" alt="Tooshe" style="position: fixed;top: 25px;;left: 0;margin-left: 20px;margin-bottom: 10px;height: 45px;width: 110px;"></a>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav search-navbar">
+                    <li id="search_button">
+                        <a class="page-scroll search-a" href="#"><i class="fa fa-lg fa-search search-i"></i>
+                        جست و جو
+                        </a>
+                    </li>
+                </ul>
+
             </div>
+
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <!--<ul class="nav navbar-nav navbar-right">-->
+                    <!--&lt;!&ndash;<li><img src="img/most-new-navbar/profile-tn.png" class="img-circle" style="height:32px;margin-top:-5px">&ndash;&gt;-->
+                    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                    <!---->
+                <!--</ul>-->
+                <ul id="middle-navbar" class="nav navbar-nav navbar-right" >
+                    <li class="middle-li">
+                        <a class="page-scroll order-sth-a" href="#"><i class="fa fa-lg fa-shopping-cart order-sth-i"></i>
+                        خرید
+                        </a>
+                    </li>
+                    <li class="middle-li">
+                        <a class="page-scroll send-sth-a" href="#"><i class="fa fa-lg fa-gift send-sth-i"></i>
+                        ارسال
+                        </a>
+                    </li>
+                    <li id="rightest-li" class="middle-li">
+                        <a class="page-scroll take-sth-a" href="#"><i class="fa fa-lg fa-plane take-sth-i"></i>
+                        ثبت سفر
+                        </a>
+                    </li>
+                    <li id="sign-in">
+                        <a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signin_modal2" >
+                            <!--style="padding: 0px;margin-right: 40px;"-->
+                            ورود
+                        </a>
+                    </li>
+                    <li id="join">
+                        <a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signup_modal2" >
+                            <!--style="padding: 0px;margin-right: 40px;"-->
+                            عضویت
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-</div>
-      </form> -->
-      <ul class="nav navbar-nav navbar-left">
-
-    <li><a href="/search" style="width:160px; margin-left:50px;" id="search"><img src="images/takesth.png" style="width:100px; height:40px; margin-top:-5px; margin-left:10px;" id="button2"\><b style="position:relative; top:-30px; margin-left:27px; font-size:13px;"><span class="glyphicon glyphicon-search"></span>&nbsp Search</b><div class="line4"></div></a></li>
-
-        <li><a href="/order" style="width:160px; margin-left:70px;" id="order"><!-- <input class="dropdown-toggle img-circle" type="image" src="images/small-cart-icon.png" style="width:20px; height:20px; margin-top:0px; margin-left:150px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> --><img src="images/order-kam.png" style="width:40px; height:40px; margin-top:-7px; margin-left:15px;" id="cart"/><b style="margin-top:-7px;"> order sth</b><!-- <img src="images/line.png" style="width:90px; margin-left:-85px; margin-top:25px;" id="line1"/> --><div class="line1"></div></a></li>
-
-        <li><a href="send" style="width:160px; margin-left:80px;" id="send"><!-- <span class="glyphicon glyphicon-align-right" style="margin-left:50px; top:-2px;"></span><input class="dropdown-toggle img-circle" type="image" src="images/gift.png" style="width:20px; height:20px; margin-top:0px; margin-left:5px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> --><img src="images/send-kam.png" style="width:40px; height:40px; margin-top:-7px; margin-left:15px;" id="gift"/><b style="position:relative; top:0px;">&nbsp send sth</b><!-- <img src="images/line.png" style="width:90px; margin-left:-85px; margin-top:25px; visibility:hidden;" id="line2"/> --><div class="line2"></div></a></li>
-
-        <li><a href="/travelSubmit" style="width:160px; margin-left:80px;" id="take"><!-- <button class="btn btn-default" style="background-color:transparent; border-width:2px; border-color:#D6D6C2; color:#7C3A39; height:40px; width:100px; margin-top:8px; margin-left:50px;" type="button"><p style="color:white;">Take sth</p></button><span class="glyphicon glyphicon-align-left" style="color:#D6D6C2; margin-left:5px; top:7px;"></span> --><img src="images/take-sth-kam.png" style="width:150px; height:40px; margin-top:-5px; margin-left:10px;" id="button"\><b style="position:relative; top:-30px; margin-left:30px;">Take sth</b><!-- <img src="images/line.png" style="width:90px; margin-left:-72px; margin-top:40px; visibility:hidden;" id="line3"/> --><div class="line3"></div></a></li>
-        </ul>
-        <!-- <li>
-           <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span><span color="green" style="background-color:#2980b9;" class="badge">1</span></img></a>
-            <div class="dropdown">
-  
-                <input class="dropdown-toggle img-circle" type="image" src="images/small-cart-icon.png" style="width:20px; height:20px; margin-top:10px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span color="green" style="background-color:#2980b9;" class="badge">0</span>
-                
-                <span class="caret"></span></a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <li><a href="#">My Profile</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">My Credit</a></li>
-                    <li role="separator" class="divider">
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Setting</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Log Out</a></li>
-
-                </ul>
-            </div>
-        </li> -->
-        <ul class="nav navbar-nav navbar-right">
-        <li>
-            <div class="dropdown" style="background-color:transparent;">
-  
-                <input class="dropdown-toggle img-circle" type="image" src="images/Bell.png" style="width:25px; height:25px; margin-top:20px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span color="green" style="background-color:#E12258; position:relative; margin-right:10px; margin-left:-10px; margin-top:-35px;" class="badge">4</span>
-                
-                <!-- <span class="caret"></span></a> -->
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" id="notif" style="width:300px; color:black;">
-                    <li><center><b>Notifications</b><span color="green" style="background-color:#E12258; margin-top:0px;" class="badge">4</span></center></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#"><img src="images/hamid.jpg" class="img-circle" style="width:40px; height:40px;"/><!-- <p style="margin-top:-40px; margin-left:50px;"><b>  Hamid </b>posted a photo<br>on your wall.</p> --></a><div style="width:200px; height:50px; margin-top:-45px; margin-left:80px;"><b>Hamid </b>posted a photo on your wall.</div></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#"><img src="images/abbas.jpg" class="img-circle" style="width:40px; height:40px;"/><!-- <p style="margin-top:-40px; margin-left:50px;"><b>  Abbas </b>liked the post<br>you've shared.</p> --></a><div style="width:200px; height:50px; margin-top:-45px; margin-left:80px;"><b>Abbas </b>liked the post you've shared.</div></li></li>
-                    <li role="separator" class="divider">
-                    <li><a href="#"><img src="images/peyman.png" class="img-circle" style="width:40px; height:40px;"/><!-- <p style="margin-top:-40px; margin-left:50px;"><b>  Peyman </b>added you to<br>his circle.</p> --></a><div style="width:200px; height:50px; margin-top:-45px; margin-left:80px;"><b>Peyman </b>added you to his circle.</div></li></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#"><img src="images/masoud.jpg" class="img-circle" style="width:40px; height:40px;"/><!-- <p style="margin-top:-40px; margin-left:50px;"><b>  Masoud </b>commented on the post<br>you've shared.</p> --></a><div style="width:200px; height:50px; margin-top:-45px; margin-left:80px;"><b>Masoud </b>commented on the post you've shared.</div></li></li>
-                    <li role="separator" class="divider"></li>
-                    <li><center><a href="#"><b>view all notifications</b></a></center></li>
-
-                </ul>
-            </div>
-          <!-- <a href="#"><span class="glyphicon glyphicon-bell"></span><span color="green" style="background-color:#2980b9;" class="badge">0</span></img></a> -->
-        </li>
-        <li>
-          <!-- <a href="#"><span class="glyphicon glyphicon-envelope"></span><span color="green" style="background-color:#c0392b;" class="badge">3</span></img></a> -->
-            <div class="dropdown" style="background-color:transparent;">
-  
-                <!-- <input class="dropdown-toggle img-circle" type="image" src="images/envelope.png" style="width:30px; height:30px; margin-top:17px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span color="green" style="background-color:#2980b9; position:relative; margin-right:10px; margin-left:-5px; margin-top:-38px;" class="badge">0</span> -->
-                
-                <!-- <span class="caret"></span></a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <li><a href="#">My Profile</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">My Credit</a></li>
-                    <li role="separator" class="divider">
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Setting</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Log Out</a></li>
-
-                </ul> -->
-            </div>
-        </li>
-        <li>
-            <div class="dropdown" style="background-color:transparent;">
-  
-                <input class="dropdown-toggle img-circle" type="image" src="images/ibn_sina_by_sneghka-d6rwzvg.jpg" style="width:40px; height:40px; margin-top:10px; margin-right:30px;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                
-                <!-- <span class="caret"></span> -->
-                </input>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">My Profile</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">My Wallet</a></li>
-                    <li role="separator" class="divider">
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Setting</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="/profile/logout">Log Out</a></li>
-
-                </ul>
-            </div>
-
-
-          
-
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-<script type="text/javascript">
-    $("#order").hover(function(){
-        
-        // $("#line1").css('visibility','visible');
-        // $("#line2").css('visibility','hidden');
-        // $("#line3").css('visibility','hidden');
-        // $("#line1").css('visibility','visible');
-        // $("#line1").toggle('slide');     
-        $('.line1').animate({width: '90px'}, 400);
-        $("#cart").attr('src','images/order-por.png');
-        $("#cart").css('width','40px');
-        $("#cart").css('height','40px');
-    }, function(){
-        $('.line1').animate({width: '0'}, 400);
-        $("#cart").attr('src','images/order-kam.png');
-    });
-
-    // $("#send").mouseover(function(){
-    //  // $("#line2").show('slide', {direction: 'right'}, 1000);
-    //  // //$("#line2").css('visibility','visible');
-    //  $("#line1").css('visibility','hidden');
-    //  $("#line3").css('visibility','hidden');
-    //  $("#line2").css('visibility','visible');
-    //  $("#line2").toggle('slide');
-
-    // });
-    $('#send').hover(function(){
-        $('.line2').animate({width: '100px'}, 400);
-        $("#gift").attr('src','images/send-por.png');
-        $("#gift").css('width','40px');
-        $("#gift").css('height','40px');
-    }, function(){
-        $('.line2').animate({width: '0'}, 400);
-        $("#gift").attr('src','images/send-kam.png');
-    });
-
-    $("#take").hover(function(){
-        // $("#line3").css('visibility','visible');
-        // $("#line2").css('visibility','hidden');
-        // $("#line1").css('visibility','hidden');
-        // $("#line3").css('visibility','visible');
-        $('.line3').animate({width: '90px'}, 400);
-        $("#button").attr('src','images/take-sth-por.png');
-        $("#button").css('width','150px');
-        $("#button").css('height','40px');
-        $("#button").css('margin-left','-2px');
-        $("#button").css('margin-top','-6px');
-    }, function(){
-        $('.line3').animate({width: '0'}, 400);
-        $("#button").attr('src','images/take-sth-kam.png');
-        $("#button").css('margin-left','10px');
-        $("#button").css('margin-top','-5px');
-    });
-
-    $("#search").hover(function(){
-        // $("#line3").css('visibility','visible');
-        // $("#line2").css('visibility','hidden');
-        // $("#line1").css('visibility','hidden');
-        // $("#line3").css('visibility','visible');
-        $('.line4').animate({width: '90px'}, 400);
-        $("#button2").attr('src','images/takesthpor.png');
-        $("#button2").css('width','100px');
-        $("#button2").css('height','40px');
-        $("#button2").css('margin-left','15px');
-        $("#button2").css('margin-top','-6px');
-    }, function(){
-        $('.line4').animate({width: '0'}, 400);
-        $("#button2").attr('src','images/takesth.png');
-        $("#button2").css('width','100px;');
-        $("#button2").css('margin-left','10px');
-        $("#button2").css('margin-top','-5px');
-    });
-
-
-</script>
-
     <div class="container-fluid">
         <div class="row container-row" style="margin-top: 50px;">
             <div class="col-md-2"></div>
-            <div class="col-md-8">
+            <div class="col-md-8 col-sm-12 col-xs-12">
                 <form id="flight-form">
                     <div class="row" id="title">
                         <h3 class="header">
@@ -285,15 +160,21 @@
                     </div>
                     <div class="row first-row">
                         <!--<div class="col-md-1"></div>-->
-                        <div class="col-md-5">
-                            <label class="travel-label">
+                        <div class="col-md-5 col-sm-6 col-xs-12">
+                            <label class="travel-label col-xs-12 visible-xs">
+                                شهر مبدا
+                            </label>
+                            <label class="travel-label hidden-xs">
                                 شهر مبدا
                             </label>
                             <input id="departure-city" class="input-lg travel-input">
                         </div>
                         <div class="col-md-2"></div>
-                        <div class="col-md-5">
-                            <label class="travel-label">
+                        <div class="col-md-5 col-sm-6 col-xs-12">
+                            <label class="travel-label col-xs-12 visible-xs">
+                            شهر مقصد
+                            </label>
+                            <label class="travel-label hidden-xs">
                             شهر مقصد
                             </label>
                             <input id="arrival-city" class="input-lg travel-input">
@@ -303,20 +184,29 @@
                         <!--<div class="col-md-1">-->
 
                         <!--</div>-->
-                        <div class="col-md-4">
-                            <label class="travel-label" id="travel-date">
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <label class="travel-label visible-xs col-xs-12">
+                                تاریخ پرواز
+                            </label>
+                            <label class="travel-label hidden-xs">
                                 تاریخ پرواز
                             </label>
                             <input class="form-input input-lg travel-input second-line-input" id="date1">
                         </div>
-                        <div class="col-md-4">
-                            <label class="travel-label">
-                            تاریخ نشستن پرواز
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <label class="travel-label col-xs-12 visible-xs">
+تاریخ فرود پرواز
+                            </label>
+                            <label class="travel-label hidden-xs">
+تاریخ فرود پرواز
                             </label>
                             <input class="form-input input-lg travel-input second-line-input" id="date2">
                         </div>
-                        <div class="col-md-4">
-                            <label class="travel-label" id="till-label">
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <label class="travel-label col-xs-12 visible-xs">
+                                آخرین روز اقامت
+                            </label>
+                            <label class="travel-label hidden-xs">
                                 آخرین روز اقامت
                             </label>
                             <input class="form-input input-lg travel-input second-line-input" id="date3">
@@ -325,53 +215,53 @@
                     <hr style="border-color: #c6c6c6;">
                     <div class="row form-horizontal">
                         <div class="col-md-2"></div>
-                        <div class="col-md-7">
-                            <!--<div class="col-md-1"></div>-->
-                            <div class="col-md-6">
-                                <label class="travel-label max-weight-label">
+                        <div class="col-md-7 col-sm-9 col-xs-12">
+                            <div class="col-sm-1 col-xs-1 visible-xs visible-sm"></div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <label class="travel-label max-weight-label" dir="rtl">
                                 بیشترین وزنی که می توانم جا به جا کنم
                                 </label>
                             </div>
-                            <div class="col-md-3" >
+                            <div class="col-md-3 col-sm-3 col-xs-4">
                                 <input type="number" class="input-lg" min='1' max='40' id="max-weight-input">
                             </div>
-                            <div class="col-md-1">
+                            <div class="col-md-1 col-sm-2">
                                 <label class="travel-label">
                                     کیلوگرم
                                 </label>
                             </div>
                         </div>
-                        <div class="col-md-3" id="warning-div">
+                        <div class="col-md-3 col-sm-3 col-xs-3" id="warning-div">
                             <!--<label>You cannot carry more than 40kg!</label>-->
                         </div>
                     </div>
                     <hr style="border-color: #c6c6c6;">
                     <div class="row" style="margin-top: 0px">
-                        <div class="col-md-7">
+                        <div class="col-md-7  col-sm-12 col-xs-12">
                             <div>
                                 <!--<div class="col-md-1"></div>-->
-                                <div class="col-md-12">
-                                    <div class="radio radio-primary col-md-12" id="first-radio">
-                                        <label style="width: 55%;" class="input-label radio-label">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="radio radio-primary col-md-12 col-sm-12 col-xs-12" id="first-radio">
+                                        <label style="" class="input-label radio-label">
                                             <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
                                                                                         به صورت رایگان تقاضاها را انجام می دهم
                                         </label>
-                                        <span style="width: 10%;"><img style="width: inherit;"  src="img/farah-pahlavi.png" id="for-free-image"></span>
-                                        <span style="width: 25%;vertical-align: middle;" dir="rtl" id="for-free-description">                                        (این کار باعث می شود که شما پروفایل محبوب تری داشته باشید و در آینده تقاضاهای بیشتری دریافت کنید)</span>
+                                        <span style="width: 10%;"><img style=""  src="img/farah-pahlavi.png" id="for-free-image"></span>
+                                        <span style="width: 21%;vertical-align: middle;" dir="rtl" id="for-free-description">                                        (این کار باعث می شود که شما پروفایل محبوب تری داشته باشید و در آینده تقاضاهای بیشتری دریافت کنید)</span>
                                     </div>
-                                    <div class="radio radio-primary col-md-12" id="second-radio">
+                                    <div class="radio radio-primary col-md-12 col-sm-12 col-xs-12" id="second-radio">
                                         <!--<div class="col-md-6" style="display: inline">-->
-                                            <label class="input-label col-md-12 radio-label">
+                                            <label class="input-label col-md-12 col-sm-12 col-xs-12 radio-label">
                                                 <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" >
                                                صرفا تقاضاهای بالای این قیمت را انجام می دهم
                                             </label>
                                         <!--</div>-->
                                         <!--<div class="col-md-6" style="display: inline">-->
                                             <span>
-                                                <div class="col-md-10">
+                                                <div class="col-md-10 col-sm-10 col-xs-10">
                                                     <input class="mdl-slider mdl-js-slider" disabled type="range" min="0" max="100" value="25" tabindex="0" id="slider"/>
                                                 </div>
-                                                <div class="col-md-2">
+                                                <div class="col-md-2 col-sm-2 col-xs-2">
                                                     <label id="money-input">25$</label>
                                                 </div>
                                             </span>
@@ -380,7 +270,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-5 col-sm-12 col-xs-12">
                             <div class="row" style="margin-top: 0px ;">
                                 <label id="any-information" style="width: 80%;" dir="rtl" >
                                    آیا چیز دیگری هست که افراد باید در مورد مسافرت شما بدانند ؟
@@ -390,7 +280,7 @@
                                 <textarea class="form-control" dir="rtl" rows="4" id="textArea" style="width: 80%"></textarea>
                             </div>
                             <!--<div class="row">-->
-                                <div class="btn btn-material-cyan btn-material-cyan-400" id='submit-button'>
+                                <div class="btn btn-material-cyan btn-material-cyan-400" id='submit-button' data-toggle="modal" data-target="#signup_modal">
                                     سفر من را ثبت کن
                                 </div>
                             <br>
@@ -550,16 +440,513 @@
                 </ul>
             </div>
           </div>
-        </footer>
+    </footer>
+    <!-- Modal -->
+        <div class="modal fade" id="signup_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <br>
+                <h4 class="modal-title" id="myModalLabel3" style="text-align:center;color: rgba(103, 177, 123, 0.82);">
+                                        برای تکمیل درخواست کافیست عضو شوید
+                </h4>
+                <span style="display:block;text-align:center">
+                    می توانید با
+                    <a class="fbcl" href="#">فیسبوک</a> یا <a class="glcl" href="#">گوگل</a>
+                هم عضو شوید
+                </span>
+                <!--<p class="or_container"><span>یا</span></p>-->
+              </div>
+              <div class="modal-body">
+              <form novalidate>
+                <div class="row">
+
+                    <div class="col-md-6 signupfield">
+                        <div class="form-group">
+                            <input type="text" class="" placeholder="نام خانوادگی" id="signup-laname" required data-validation-required-message="نام ضروری است" pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="فقط شامل حروف باشد">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 signupfield">
+                        <div class="form-group">
+                            <input type="text" class="" placeholder="نام" id="signup-faname" required data-validation-required-message="نام ضروری است" pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="فقط شامل حروف باشد">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <div class="form-group">
+                            <input type="email" class="" placeholder="ایمیل" id="signup-username" required data-validation-required-message="لطفا ایمیل خود را وارد کنید" data-validation-email-message="فرمت ایمیل صحیح نمی‌باشد.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <div class="form-group">
+                            <input type="password" class="" placeholder="رمز عبور" id="signup-password" minlength="6" required data-validation-required-message="لطفا رمز عبور خود وارد کنید" data-validation-minlength-message="حداقل 6 کاراکتر">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <span >جنسیت:</span>
+                        <div class="radio radio-primary" style="display:inline-block;margin-left: 20px;">
+                          <label>
+                            <input type="radio" name="gender" value="1" checked="checked"> مرد
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="0"> زن
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <span>تاریخ تولد:</span>
+                        <div class="birthday">
+                            <select class="form-control">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                              <option>7</option>
+                              <option>8</option>
+                              <option>9</option>
+                              <option>10</option>
+                              <option>11</option>
+                              <option>12</option>
+                              <option>13</option>
+                              <option>14</option>
+                              <option>15</option>
+                              <option>16</option>
+                              <option>17</option>
+                              <option>18</option>
+                              <option>19</option>
+                              <option>20</option>
+                              <option>21</option>
+                              <option>22</option>
+                              <option>23</option>
+                              <option>24</option>
+                              <option>25</option>
+                              <option>26</option>
+                              <option>27</option>
+                              <option>28</option>
+                              <option>29</option>
+                              <option>30</option>
+                              <option>31</option>
+                            </select>
+                            <select class="form-control">
+                              <option>Jan</option>
+                              <option>Feb</option>
+                              <option>Mar</option>
+                              <option>Apr</option>
+                              <option>May</option>
+                              <option>Jun</option>
+                              <option>Jul</option>
+                              <option>Aug</option>
+                              <option>Sep</option>
+                              <option>Oct</option>
+                              <option>Nov</option>
+                              <option>Dec</option>
+                            </select>
+                            <select class="form-control">
+                              <option>2005</option>
+                              <option>2004</option>
+                              <option>2003</option>
+                              <option>2002</option>
+                              <option>2001</option>
+                              <option>2000</option>
+                              <option>1999</option>
+                              <option>1998</option>
+                              <option>1997</option>
+                              <option>1996</option>
+                              <option>1995</option>
+                              <option>1994</option>
+                              <option>1993</option>
+                              <option>1992</option>
+                              <option>1991</option>
+                              <option>1990</option>
+                              <option>1989</option>
+                              <option>1988</option>
+                              <option>1987</option>
+                              <option>1986</option>
+                              <option>1985</option>
+                              <option>1984</option>
+                              <option>1983</option>
+                              <option>1982</option>
+                              <option>1981</option>
+                              <option>1980</option>
+                              <option>1979</option>
+                              <option>1978</option>
+                              <option>1977</option>
+                              <option>1976</option>
+                              <option>1975</option>
+                              <option>1974</option>
+                              <option>1973</option>
+                              <option>1972</option>
+                              <option>1971</option>
+                              <option>1970</option>
+                              <option>1969</option>
+                              <option>1968</option>
+                              <option>1967</option>
+                              <option>1966</option>
+                              <option>1965</option>
+                              <option>1964</option>
+                              <option>1963</option>
+                              <option>1962</option>
+                              <option>1961</option>
+                              <option>1960</option>
+                              <option>1959</option>
+                              <option>1958</option>
+                              <option>1957</option>
+                              <option>1956</option>
+                              <option>1955</option>
+                              <option>1954</option>
+                              <option>1953</option>
+                              <option>1952</option>
+                              <option>1951</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 text-muted" style="text-align: center;margin-top: 10px;">
+                        عضویت شما به منزله‌ی پذیرفتن <a href="#">شرایط و مقررات</a> توشه می‌باشد
+                    </div>
+
+                </div>
+            </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">انصراف</button>
+                <button type="submit" class="btn btn-primary">عضویت</button>
+                <p>آیا قبلا عضو شده‌اید ؟ <a href="#" data-toggle="modal" data-target="#signin_modal" data-dismiss="modal">وارد شوید</a></p>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+    <!-- Modal -->
+        <div class="modal fade" id="signup_modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <br>
+                <h4 class="modal-title" id="myModalLabel2" style="text-align:center;color: rgba(103, 177, 123, 0.82);">
+رایگان عضو شوید
+                </h4>
+                <span style="display:block;text-align:center">
+                    می توانید با
+                    <a class="fbcl" href="#">فیسبوک</a> یا <a class="glcl" href="#">گوگل</a>
+                هم عضو شوید
+                </span>
+                <!--<p class="or_container"><span>یا</span></p>-->
+              </div>
+              <div class="modal-body">
+              <form novalidate>
+                <div class="row">
+
+                    <div class="col-md-6 signupfield">
+                        <div class="form-group">
+                            <input type="text" class="" placeholder="نام خانوادگی" id="signup-laname2" required data-validation-required-message="نام ضروری است" pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="فقط شامل حروف باشد">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 signupfield">
+                        <div class="form-group">
+                            <input type="text" class="" placeholder="نام" id="signup-faname2" required data-validation-required-message="نام ضروری است" pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="فقط شامل حروف باشد">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <div class="form-group">
+                            <input type="email" class="" placeholder="ایمیل" id="signup-username2" required data-validation-required-message="لطفا ایمیل خود را وارد کنید" data-validation-email-message="فرمت ایمیل صحیح نمی‌باشد.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <div class="form-group">
+                            <input type="password" class="" placeholder="رمز عبور" id="signup-password2" minlength="6" required data-validation-required-message="لطفا رمز عبور خود وارد کنید" data-validation-minlength-message="حداقل 6 کاراکتر">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <span >جنسیت:</span>
+                        <div class="radio radio-primary" style="display:inline-block;margin-left: 20px;">
+                          <label>
+                            <input type="radio" name="gender" value="1" checked="checked"> مرد
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="0"> زن
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <span>تاریخ تولد:</span>
+                        <div class="birthday">
+                            <select class="form-control">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                              <option>7</option>
+                              <option>8</option>
+                              <option>9</option>
+                              <option>10</option>
+                              <option>11</option>
+                              <option>12</option>
+                              <option>13</option>
+                              <option>14</option>
+                              <option>15</option>
+                              <option>16</option>
+                              <option>17</option>
+                              <option>18</option>
+                              <option>19</option>
+                              <option>20</option>
+                              <option>21</option>
+                              <option>22</option>
+                              <option>23</option>
+                              <option>24</option>
+                              <option>25</option>
+                              <option>26</option>
+                              <option>27</option>
+                              <option>28</option>
+                              <option>29</option>
+                              <option>30</option>
+                              <option>31</option>
+                            </select>
+                            <select class="form-control">
+                              <option>Jan</option>
+                              <option>Feb</option>
+                              <option>Mar</option>
+                              <option>Apr</option>
+                              <option>May</option>
+                              <option>Jun</option>
+                              <option>Jul</option>
+                              <option>Aug</option>
+                              <option>Sep</option>
+                              <option>Oct</option>
+                              <option>Nov</option>
+                              <option>Dec</option>
+                            </select>
+                            <select class="form-control">
+                              <option>2005</option>
+                              <option>2004</option>
+                              <option>2003</option>
+                              <option>2002</option>
+                              <option>2001</option>
+                              <option>2000</option>
+                              <option>1999</option>
+                              <option>1998</option>
+                              <option>1997</option>
+                              <option>1996</option>
+                              <option>1995</option>
+                              <option>1994</option>
+                              <option>1993</option>
+                              <option>1992</option>
+                              <option>1991</option>
+                              <option>1990</option>
+                              <option>1989</option>
+                              <option>1988</option>
+                              <option>1987</option>
+                              <option>1986</option>
+                              <option>1985</option>
+                              <option>1984</option>
+                              <option>1983</option>
+                              <option>1982</option>
+                              <option>1981</option>
+                              <option>1980</option>
+                              <option>1979</option>
+                              <option>1978</option>
+                              <option>1977</option>
+                              <option>1976</option>
+                              <option>1975</option>
+                              <option>1974</option>
+                              <option>1973</option>
+                              <option>1972</option>
+                              <option>1971</option>
+                              <option>1970</option>
+                              <option>1969</option>
+                              <option>1968</option>
+                              <option>1967</option>
+                              <option>1966</option>
+                              <option>1965</option>
+                              <option>1964</option>
+                              <option>1963</option>
+                              <option>1962</option>
+                              <option>1961</option>
+                              <option>1960</option>
+                              <option>1959</option>
+                              <option>1958</option>
+                              <option>1957</option>
+                              <option>1956</option>
+                              <option>1955</option>
+                              <option>1954</option>
+                              <option>1953</option>
+                              <option>1952</option>
+                              <option>1951</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 text-muted" style="text-align: center;margin-top: 10px;">
+                        عضویت شما به منزله‌ی پذیرفتن <a href="#">شرایط و مقررات</a> توشه می‌باشد
+                    </div>
+
+                </div>
+            </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">انصراف</button>
+                <button type="submit" class="btn btn-primary">عضویت</button>
+                <p>آیا قبلا عضو شده‌اید ؟ <a href="#" data-toggle="modal" data-target="#signin_modal2" data-dismiss="modal">وارد شوید</a></p>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+    <!-- Modal -->
+        <div class="modal fade" id="signin_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <br>
+                <h4 class="modal-title" id="myModalLabel" style="text-align:center">ورود به حساب کاربری</h4>
+                <span style="display:block;text-align:center">با <a class="fbcl" href="#">فیسبوک</a> یا <a class="glcl" href="#">گوگل</a></span>
+                <p class="or_container"><span>یا</span></p>
+              </div>
+              <div class="modal-body">
+              <form novalidate>
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+                        <div class="form-group mgb">
+                            <input type="email" class="" placeholder="ایمیل" id="signin-username" required data-validation-required-message="لطفا ایمیل خود را وارد کنید" data-validation-email-message="فرمت ایمیل صحیح نمی‌باشد.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+                        <div class="form-group mgb">
+                            <input type="password" class="" placeholder="رمز عبور" id="signin-password" required data-validation-required-message="لطفا رمز عبور خود را وارد کنید">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+
+                        <div class="checkbox" >
+                          <label style="float: right;">
+مرا به خاطر بسپار
+                            <input type="checkbox">
+                          </label>
+                        <span style="float:left;"><a href="#">رمزعبور را فراموش کرده‌ام</a></span>
+                        </div>
+
+                    </div>
+
+                </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">انصراف</button>
+                <button type="submit" class="btn btn-primary">ورود</button>
+                <p>عضو توشه نشده‌اید؟ <a href="#" data-toggle="modal" data-target="#signup_modal" data-dismiss="modal">عضویت</a> رایگان</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+    <!-- Modal -->
+        <div class="modal fade" id="signin_modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2_1">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <br>
+                <h4 class="modal-title" id="myModalLabel2_1" style="text-align:center">ورود به حساب کاربری</h4>
+                <span style="display:block;text-align:center">با <a class="fbcl" href="#">فیسبوک</a> یا <a class="glcl" href="#">گوگل</a></span>
+                <p class="or_container"><span>یا</span></p>
+              </div>
+              <div class="modal-body">
+              <form novalidate>
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+                        <div class="form-group mgb">
+                            <input type="email" class="" placeholder="ایمیل" id="signin-username2" required data-validation-required-message="لطفا ایمیل خود را وارد کنید" data-validation-email-message="فرمت ایمیل صحیح نمی‌باشد.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+                        <div class="form-group mgb">
+                            <input type="password" class="" placeholder="رمز عبور" id="signin-password2" required data-validation-required-message="لطفا رمز عبور خود را وارد کنید">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+
+                        <div class="checkbox" >
+                          <label style="float: right;">
+مرا به خاطر بسپار
+                            <input type="checkbox">
+                          </label>
+                        <span style="float:left;"><a href="#">رمزعبور را فراموش کرده‌ام</a></span>
+                        </div>
+
+                    </div>
+
+                </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">انصراف</button>
+                <button type="submit" class="btn btn-primary">ورود</button>
+                <p>عضو توشه نشده‌اید؟ <a href="#" data-toggle="modal" data-target="#signup_modal2" data-dismiss="modal">عضویت</a> رایگان</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
     <!--site edns here-->
     <script src="js/global/jquery-1.11.2.js" ></script>
     <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
     <script src="js/global/jquery.geocomplete.js"></script>
+    <script src="js/most-new-navbar/tooshe.min.js"></script>
     <script src="js/global/material.min.js"></script>
     <script src="js/global/moment.min.js"></script>
     <!--<script src="js/global/nouislider.min.js"></script>-->
     <script src="js/global/bootstrap-mterial-datepicker.js"></script>
     <script src="js/flightSubmit/flightSubmit.js"></script>
+   <script src="js/modal/jqBootstrapValidation.js"></script>
+    <script src="js/modal/contact_me.js"></script>
     <script src="js/global/english-input.js"></script>
     <script>
         $(document).ready(function(){

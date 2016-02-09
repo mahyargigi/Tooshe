@@ -1,13 +1,45 @@
 body{
     background-color: rgba(248, 248, 248, 0.80);
+    /*min-width: 1525px;*/
 }
-@media (max-width: 1200px) {
-  .container-fluid {
-    width: 1600px;
-  }
+@media (max-width: 768px){
+    #any-information{
+        margin-left: 20px;
+    }
+    #textArea{
+        margin-left: 20px;
+    }
+    #submit-button{
+        margin-right: 160px !important;
+        margin-left: 100px !important;
+    }
+    #money-input{
+        margin-right: 30px;
+    }
 }
-
-
+@media(max-width: 1552px) and (min-width: 992px){
+    body{
+        width: 1552px !important;
+    }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    body{
+        width: 991px !important;
+    }
+    #any-information{
+        margin-left: 50px;
+    }
+    #textArea{
+        margin-left: 50px;
+    }
+        #submit-button{
+        margin-right: 135px !important;
+        margin-left: 100px !important;
+    }
+}
+.container-fluid{
+    margin-top: 50px;
+}
 .container-row{
     margin-top: 130px;
     font-family: 'Lato',Arial;
@@ -32,7 +64,7 @@ input:focus{
 #title{
     text-align: center;
 }
-#for-free-image{
+.for-free-image{
     height: 40px;
     width: 40px;
 
@@ -60,7 +92,7 @@ input:focus{
 .input-label{
     margin-right: 5px;
 }
-#for-free-description{
+.for-free-description{
     font-size: 0.85em;
     color: rgba(141, 141, 141, 0.84);
     position: relative;
@@ -217,3 +249,4 @@ input[type=range]:focus::-moz-range-track {
     border: none;
 }
 /*end of slider css*/
+

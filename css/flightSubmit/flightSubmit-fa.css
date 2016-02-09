@@ -5,6 +5,44 @@ body{
     font-family: broya;
     src: url(../../fonts/global/BROYA.TTF);
 }
+@media (max-width: 768px){
+    #any-information{
+        margin-left: 20px;
+    }
+    #textArea{
+        margin-left: 20px;
+    }
+    #submit-button{
+        margin-right: 160px !important;
+        margin-left: 100px !important;
+    }
+    #money-input{
+        margin-right: 30px;
+    }
+}
+@media(max-width: 1552px) and (min-width: 992px){
+    body{
+        width: 1552px !important;
+    }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    body{
+        width: 991px !important;
+    }
+    #any-information{
+        margin-left: 50px;
+    }
+    #textArea{
+        margin-left: 50px;
+    }
+        #submit-button{
+        margin-right: 135px !important;
+        margin-left: 100px !important;
+    }
+}
+.container-fluid{
+    margin-top: 50px;
+}
 .container-row{
     margin-top: 130px;
     font-family: broya,Arial;

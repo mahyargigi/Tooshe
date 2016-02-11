@@ -62,11 +62,20 @@
       <file leaf-file-name="flightSubmit-fa.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flightSubmit-fa.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="190" column="92" selection-start="9094" selection-end="9094" vertical-scroll-proportion="0.74656487" vertical-offset="2741" max-vertical-offset="16354">
+            <state line="22" column="71" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.57099235" vertical-offset="0" max-vertical-offset="16354">
               <folding>
                 <element signature="n#style#0;n#label#1;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#1;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SendSomething-fa.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SendSomething-fa.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="71" selection-start="1280" selection-end="1351" vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="19584">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -102,15 +111,6 @@
         <entry file="file://$PROJECT_DIR$/css/flightSubmit/flightSubmit.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="40" column="12" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="4386">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new-order.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/new-order/new-order.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="1" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="5678">
               <folding />
             </state>
           </provider>
@@ -551,11 +551,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SendSomething-not-signed-up.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="39" selection-start="1137" selection-end="1137" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="17238" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/SendSomething/sendsomething.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="27" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5253" />
@@ -646,9 +641,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SendSomething-fa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="71" selection-start="1280" selection-end="1351" vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="19584">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flightSubmit-fa.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="190" column="92" selection-start="9094" selection-end="9094" vertical-scroll-proportion="0.74656487" vertical-offset="2741" max-vertical-offset="16354">
+        <state line="22" column="71" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.57099235" vertical-offset="0" max-vertical-offset="16354">
           <folding>
             <element signature="n#style#0;n#label#1;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#1;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />

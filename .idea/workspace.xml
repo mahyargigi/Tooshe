@@ -26,7 +26,34 @@
       <file leaf-file-name="flightSubmit.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flightSubmit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="862" column="50" selection-start="45479" selection-end="45590" vertical-scroll-proportion="-16.846153" vertical-offset="14216" max-vertical-offset="14892">
+            <state line="859" column="42" selection-start="45393" selection-end="45393" vertical-scroll-proportion="-6.6862745" vertical-offset="14262" max-vertical-offset="14892">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap-mterial-datepicker.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/global/bootstrap-mterial-datepicker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="221" column="110" selection-start="6882" selection-end="6882" vertical-scroll-proportion="0.33231708" vertical-offset="3539" max-vertical-offset="15538">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap-material-datepicker.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/global/bootstrap-material-datepicker.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="36" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flightSubmit.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/flightSubmit/flightSubmit.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="70" column="13" selection-start="2299" selection-end="2299" vertical-scroll-proportion="0.0" vertical-offset="768" max-vertical-offset="1513">
               <folding />
             </state>
           </provider>
@@ -50,19 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="23766">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flightSubmit-fa.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="flightSubmit-fa.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flightSubmit-fa.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="71" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.57099235" vertical-offset="0" max-vertical-offset="16354">
+            <state line="945" column="40" selection-start="47274" selection-end="47274" vertical-scroll-proportion="-14.884615" vertical-offset="15678" max-vertical-offset="16354">
               <folding>
                 <element signature="n#style#0;n#label#1;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#1;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -83,16 +101,7 @@
       <file leaf-file-name="new-order-not-signed-up-fa.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new-order-not-signed-up-fa.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="150" column="14" selection-start="6926" selection-end="6926" vertical-scroll-proportion="0.0" vertical-offset="2146" max-vertical-offset="20519">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="farsi-font.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/global/farsi-font.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+            <state line="150" column="14" selection-start="6926" selection-end="6926" vertical-scroll-proportion="-15.538462" vertical-offset="2146" max-vertical-offset="20519">
               <folding />
             </state>
           </provider>
@@ -102,15 +111,6 @@
         <entry file="file://$PROJECT_DIR$/css/flightSubmit/flightSubmit-fa.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="19" column="27" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="4403">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flightSubmit.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/flightSubmit/flightSubmit.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="12" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="4386">
               <folding />
             </state>
           </provider>
@@ -126,8 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/css/global/farsi-font.css" />
-        <option value="$PROJECT_DIR$/css/global/farsi-datepicker-font.css" />
         <option value="$PROJECT_DIR$/css/SendSomething/sendsomething-fa.css" />
         <option value="$PROJECT_DIR$/most-new-navbar-anonymous.html" />
         <option value="$PROJECT_DIR$/most-new-navbar.html" />
@@ -139,9 +137,11 @@
         <option value="$PROJECT_DIR$/css/flightSubmit/flightSubmit-input-styles.css" />
         <option value="$PROJECT_DIR$/css/flightSubmit/flightSubmit.css" />
         <option value="$PROJECT_DIR$/css/flightSubmit/flightSubmit-fa.css" />
-        <option value="$PROJECT_DIR$/flightSubmit.html" />
         <option value="$PROJECT_DIR$/new-order-not-signed-up-fa.html" />
         <option value="$PROJECT_DIR$/flightSubmit-fa.html" />
+        <option value="$PROJECT_DIR$/flightSubmit.html" />
+        <option value="$PROJECT_DIR$/js/flightSubmit/flightSubmit.js" />
+        <option value="$PROJECT_DIR$/js/global/bootstrap-mterial-datepicker.js" />
       </list>
     </option>
   </component>
@@ -551,26 +551,11 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/SendSomething/sendsomething.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="27" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5253" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/global/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22635" selection-start="22800" selection-end="22800" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/global/input-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/flightSubmit/flightSubmit-input-styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="5" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255" />
+        <state line="7" column="5" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/new-order/new-order.css">
@@ -606,13 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new-order-not-signed-up-fa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="14" selection-start="6926" selection-end="6926" vertical-scroll-proportion="0.0" vertical-offset="2146" max-vertical-offset="20519">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/new-order.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7004">
@@ -634,13 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flightSubmit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="862" column="50" selection-start="45479" selection-end="45590" vertical-scroll-proportion="-16.846153" vertical-offset="14216" max-vertical-offset="14892">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SendSomething-fa.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="71" selection-start="1280" selection-end="1351" vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="19584">
@@ -648,13 +619,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/new-order-not-signed-up-fa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="14" selection-start="6926" selection-end="6926" vertical-scroll-proportion="-15.538462" vertical-offset="2146" max-vertical-offset="20519">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flightSubmit-fa.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="71" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.57099235" vertical-offset="0" max-vertical-offset="16354">
+        <state line="945" column="40" selection-start="47274" selection-end="47274" vertical-scroll-proportion="-14.884615" vertical-offset="15678" max-vertical-offset="16354">
           <folding>
             <element signature="n#style#0;n#label#1;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#1;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/flightSubmit/flightSubmit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="13" selection-start="2299" selection-end="2299" vertical-scroll-proportion="0.0" vertical-offset="768" max-vertical-offset="1513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/global/bootstrap-material-datepicker.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="36" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flightSubmit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="859" column="42" selection-start="45393" selection-end="45393" vertical-scroll-proportion="-6.6862745" vertical-offset="14262" max-vertical-offset="14892">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/global/bootstrap-mterial-datepicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="221" column="110" selection-start="6882" selection-end="6882" vertical-scroll-proportion="0.33231708" vertical-offset="3539" max-vertical-offset="15538">
+          <folding />
         </state>
       </provider>
     </entry>

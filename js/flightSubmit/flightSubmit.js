@@ -66,6 +66,9 @@ $(document).ready(function(){
 //    console.log("is: "+$('#optionsRadios1').checked);
 
 
+    $('#date1').bootstrapMaterialDatePicker('setMinDate', moment());
+    $('#date2').bootstrapMaterialDatePicker('setMinDate', moment());
+    $('#date3').bootstrapMaterialDatePicker('setMinDate', moment());
 });
 
 

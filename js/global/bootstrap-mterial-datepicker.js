@@ -219,7 +219,7 @@
 											'</div>' +
 											'<div class="dtp-buttons">' +
 												'<button class="dtp-btn-ok pull-right btn btn-flat">OK</button>' +
-												'<button class="dtp-btn-cancel pull-right btn btn-flat">ANNULER</button>' +
+												'<button class="dtp-btn-cancel pull-right btn btn-flat">Cancel</button>' +
 												'<div class="clearfix"></div>' +
 											'</div>' +
 										'</div>' +

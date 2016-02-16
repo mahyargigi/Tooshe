@@ -10,16 +10,162 @@
     <!--<link href="css/main.css" rel="stylesheet">-->
     <!--<link href="css/nouislider.min.css" rel="stylesheet">-->
     <!--<link href="css/bootstrap-material-datepicker.css" rel="stylesheet">-->
-    <link href="css/new-notification/new-notification.css" rel="stylesheet">
-    <!--<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>-->
-    <link href="css/footer/footer.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	
+	<link href="css/global/input-styles.css" rel="stylesheet">
+
+	<!--navbar css-->
+	<link href="css/most-new-navbar/style.css" rel="stylesheet">
+    <link href="css/most-new-navbar/navbar.css" rel="stylesheet">
+    <link href="css/most-new-navbar/most-new-navbar.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modal/modal.css" rel="stylesheet">
+	
+	<link href="css/new-notification/new-notification.css" rel="stylesheet">
+	<link href="css/footer/footer.css" rel="stylesheet">
+	
     <title>Notification</title>
 </head>
 <body>
+	    
+	<div class="ajax-loader"></div>
+
+		<div class="navmenu navmenu-inverse navmenu-fixed-right offcanvas">
+      		<ul class="nav navmenu-nav">
+
+				<li><a href="/">Home</a></li>
+				<li class="divider"></li>
+                <li><a href="/requests/new" class="">Search</a></li>
+                <li class="divider"></li>
+                <li><a href="/trips/new" class="">Order sth</a></li>
+				<li><a href="/trips/new" class="">Send sth</a></li>
+				<li><a href="/trips/new" class="">Take sth</a></li>
+
+                <!--not signed up 1-->
+
+                <!--<li><a href="#"  data-toggle="modal" data-target="#signup_modal2">Join</a> </li>-->
+                <!--<li><a href="#" data-toggle="modal" data-target="#signin_modal2">Signin</a> </li>-->
+
+                <!--end not signed up 1-->
+
+                <!--signed in 1-->
+
+                <li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Notifications<b class="caret"></b></a>
+					<ul class="dropdown-menu navmenu-nav">
+						<li><a href="/dashboard/profile">ali requested you to ship an item</a></li>
+						<li class="divider"></li>
+                        <li><a href="/dashboard/payment">ali accepted your request</a></li>
+						<li class="divider"></li>
+						<li><a href="/dashboard/account">ali requested you to buy an item</a></li>
+					</ul>
+				</li>
+                <li class="divider"></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard<b class="caret"></b></a>
+					<ul class="dropdown-menu navmenu-nav">
+						<li><a href="/dashboard/profile">My profile</a></li>
+						<li class="divider"></li>
+                        <li><a href="/dashboard/payment">My Wallet</a></li>
+						<li class="divider"></li>
+						<li><a href="/dashboard/account">Help</a></li>
+						<li><a href="/dashboard/notifications">Settings</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Logout</a> </li>
+					</ul>
+				</li>
+
+                <!--end signed in 1-->
+            </ul>
+    	</div>
+    <div class="navbar navbar-default mynavbar navbar-fixed-top">
+        <div class="container" style="padding-top: 0px;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img src="img/most-new-navbar/Tooshe_logo.png" alt="Tooshe" style="position: fixed;top: 25px;;left: 0;margin-left: 20px;margin-bottom: 10px;height: 45px;width: 110px;"></a>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav search-navbar">
+                    <li id="search_button">
+                        <a class="page-scroll search-a" href="#"><i class="fa fa-lg fa-search search-i"></i>Search</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul id="middle-navbar" class="nav navbar-nav navbar-right" >
+                    <li class="middle-li">
+                        <a class="page-scroll order-sth-a" href="#"><i class="fa fa-lg fa-shopping-cart order-sth-i"></i>Order sth</a>
+                    </li>
+                    <li class="middle-li">
+                        <a class="page-scroll send-sth-a" href="#"><i class="fa fa-lg fa-gift send-sth-i"></i>Send sth</a>
+                    </li>
+                    <li id="rightest-li" class="middle-li">
+                        <a class="page-scroll take-sth-a" href="#"><i class="fa fa-lg fa-plane take-sth-i"></i>Take sth</a>
+                    </li>
+
+                    <!--not signed up 2-->
+                    <!--<li id="sign-in">-->
+                        <!--<a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signin_modal2" >-->
+                            <!--Sign in-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--<li id="join">-->
+                        <!--<a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signup_modal2" >-->
+                            <!--join-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--end not signed up 2-->
+
+                    <!--signed in 2-->
+                    <li id="bell-li" class="dropdown" style="background: none;"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="padding: 0px;margin-right: 40px;">
+                        <img src="img/most-new-navbar/Bell-Icon.png" alt="note" class="img-circle" style="height:32px;margin-top:-5px;margin-left: 0px;">
+                        </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="profile.html" style="">
+                                    ali requested you to ship an item
+                                </a></li>
+                                <li class="divider"></li>
+                                <li><a href="payment.html">
+                                    ali accepted your request
+                                </a></li>
+                                <li class="divider"></li>
+                                <li><a href="account.html">
+                                    ali requested you to buy an item
+                                </a></li>
+                            </ul>
+                    </li>
+                    <li id="profile-li" class="dropdown" style="background: none;">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <img src="img/most-new-navbar/profile-tn.png" class="img-circle" style="height:32px;margin-top:-5px;margin-left: 0px;">
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="profile.html">My Profile</a></li>
+                            <li class="divider"></li>
+                            <li><a href="payment.html">My Wallet</a></li>
+                            <li class="divider"></li>
+                            <li><a href="account.html">Help</a></li>
+                            <li><a href="notifications.html">Settings</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/logout">Log Out</a></li>
+                        </ul>
+                    </li>
+                    <!--end signed in 2-->
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <div class="container-fluid">
-        <div class="col-md-1"></div>
-        <div class="col-md-9">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
             <h1 class="notification">Notifications</h1>
             <!--<ul class="nav nav-tabs">-->
                 <!--<li class="nav-li active"><a data-toggle="tab" href="#all">All</a></li>-->
@@ -161,13 +307,593 @@
         </div>
         <div class="col-md-2"></div>
     </div>
+	
+	<footer>
+          <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="img/global/logo.png" id="logo-img"></br>
+                    <label id="footer-shoar">
+                        <i>
+                            we are some people like you.</br>
+                            we just do not like wasting our money.</br>
+                            we also like getting whatever we wish, from anywhere we like :)
+                        </i>
+                    </label>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <li class="title"><b>Company<br><br></b></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Policies</a></li>
+                        <li><a href="#">Terms & Privacy</a></li>
+                        <li><a href="#">Who didn't support us?!</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <li class="title"><b>discover<br><br></b></li>
+                        <li><a href="#">Trust and safety</a></li>
+                        <li><a href="#">Invite friends</a></li>
+                        <li><a href="#">Tooshe picks</a></li>
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Business Travel</a></li>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <li class="title"><b>Picking<br><br></b></li>
+                        <li><a href="#">Why Pick</a></li>
+                        <li><a href="#">Hospitality</a></li>
+                        <li><a href="#">Delivery ways</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-list">
+                    <div class="row dropdown-div" id="language-dropdown">
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Language
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu ">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Persian</a></li>
+                            <li><a href="#">Arabic</a></li>
+                            <li><a href="#">Indian</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="row dropdown-div">
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Currency
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">USD</a></li>
+                            <li><a href="#">Irr</a></li>
+                            <li><a href="#">Eur</a></li>
+                            <li><a href="#">Lira</a></li>
+                            <li><a href="#">Dirham</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+
+              <!--<div class="col-md-6">-->
+                <!--<ul class="legals">-->
+                  <!--<li><a href="#">Terms &amp; Conditions</a></li>-->
+                  <!--<li><a href="#">Legals</a></li>-->
+                <!--</ul>-->
+              <!--</div>-->
+              <!--<div class="col-md-6 credit">-->
+                <!--<p>Designed &amp; Developed by <a href="http://www.peterfinlan.com/">Peter Finlan</a> exclusively for <a href="http://tympanus.net/codrops/"><em>Codrops</em></a></p>-->
+              <!--</div>-->
+            </div>
+            <div class="row">
+               <!--<h4 id="join-us">Join us on</h4>-->
+            </div>
+            <div class="row">
+                <ul>
+                    <li><img></li>
+                </ul>
+            </div>
+          </div>
+    </footer>
+	<!--modal-->
+	<div class="modal fade" id="signup_modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <br>
+                <h4 class="modal-title" id="myModalLabel2" style="text-align:center;color: rgba(103, 177, 123, 0.82);">Join us for free</h4>
+                <span style="display:block;text-align:center">(U can also join with <a class="fbcl" href="#">Facebook</a> or <a class="glcl" href="#">Google</a>)</span>
+                <!--<p class="or_container"><span>or</span></p>-->
+              </div>
+              <div class="modal-body">
+              <form novalidate>
+                <div class="row">
+
+                    <div class="col-md-6 signupfield">
+                        <div class="form-group">
+                            <input type="text" class="search-in" placeholder="First name" id="signup-faname2" required data-validation-required-message="Not filled." pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="Not valid">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 signupfield">
+                        <div class="form-group">
+                            <input type="text" class="" placeholder="Last name" id="signup-laname2" required data-validation-required-message="Not filled." pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="Not valid">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <div class="form-group">
+                            <input type="email" class="" placeholder="Email address" id="signup-username2" required data-validation-required-message="Please enter your email">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <div class="form-group">
+                            <input type="password" class="" placeholder="Password" id="signup-password2" minlength="6" required data-validation-required-message="Please enter your password">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <span style="margin-right:30px;">Gender:</span>
+                        <div class="radio radio-primary" style="display:inline-block;">
+                          <label>
+                            <input type="radio" name="gender" value="1" checked="checked"> Male
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="0"> Female
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <span>Birthday:</span>
+                        <div class="birthday">
+                            <select class="form-control">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                              <option>7</option>
+                              <option>8</option>
+                              <option>9</option>
+                              <option>10</option>
+                              <option>11</option>
+                              <option>12</option>
+                              <option>13</option>
+                              <option>14</option>
+                              <option>15</option>
+                              <option>16</option>
+                              <option>17</option>
+                              <option>18</option>
+                              <option>19</option>
+                              <option>20</option>
+                              <option>21</option>
+                              <option>22</option>
+                              <option>23</option>
+                              <option>24</option>
+                              <option>25</option>
+                              <option>26</option>
+                              <option>27</option>
+                              <option>28</option>
+                              <option>29</option>
+                              <option>30</option>
+                              <option>31</option>
+                            </select>
+                            <select class="form-control">
+                              <option>Jan</option>
+                              <option>Feb</option>
+                              <option>Mar</option>
+                              <option>Apr</option>
+                              <option>May</option>
+                              <option>Jun</option>
+                              <option>Jul</option>
+                              <option>Aug</option>
+                              <option>Sep</option>
+                              <option>Oct</option>
+                              <option>Nov</option>
+                              <option>Dec</option>
+                            </select>
+                            <select class="form-control">
+                              <option>2005</option>
+                              <option>2004</option>
+                              <option>2003</option>
+                              <option>2002</option>
+                              <option>2001</option>
+                              <option>2000</option>
+                              <option>1999</option>
+                              <option>1998</option>
+                              <option>1997</option>
+                              <option>1996</option>
+                              <option>1995</option>
+                              <option>1994</option>
+                              <option>1993</option>
+                              <option>1992</option>
+                              <option>1991</option>
+                              <option>1990</option>
+                              <option>1989</option>
+                              <option>1988</option>
+                              <option>1987</option>
+                              <option>1986</option>
+                              <option>1985</option>
+                              <option>1984</option>
+                              <option>1983</option>
+                              <option>1982</option>
+                              <option>1981</option>
+                              <option>1980</option>
+                              <option>1979</option>
+                              <option>1978</option>
+                              <option>1977</option>
+                              <option>1976</option>
+                              <option>1975</option>
+                              <option>1974</option>
+                              <option>1973</option>
+                              <option>1972</option>
+                              <option>1971</option>
+                              <option>1970</option>
+                              <option>1969</option>
+                              <option>1968</option>
+                              <option>1967</option>
+                              <option>1966</option>
+                              <option>1965</option>
+                              <option>1964</option>
+                              <option>1963</option>
+                              <option>1962</option>
+                              <option>1961</option>
+                              <option>1960</option>
+                              <option>1959</option>
+                              <option>1958</option>
+                              <option>1957</option>
+                              <option>1956</option>
+                              <option>1955</option>
+                              <option>1954</option>
+                              <option>1953</option>
+                              <option>1952</option>
+                              <option>1951</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 text-muted" style="text-align: center;margin-top: 10px;">
+                        By signing up, i agree with Tooshe's <a href="#">terms & conditions</a>
+                    </div>
+
+                </div>
+
+              <!--</div>-->
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary btn-material-cyan-400">Join</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <p>Already a pickpacker? <a href="#" data-toggle="modal" data-target="#signin_modal2" data-dismiss="modal">Log in</a></p>
+              </div>
+              </form>
+              </div>
+            </div>
+          </div>
+    </div>
+        <!-- Modal -->
+    <!-- Modal -->
+        <div class="modal fade" id="signin_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <br>
+                <h4 class="modal-title" id="myModalLabel" style="text-align:center">Login</h4>
+                <span style="display:block;text-align:center">with <a class="fbcl" href="#">Facebook</a> or <a class="glcl" href="#">Google</a></span>
+                <p class="or_container"><span>or</span></p>
+              </div>
+              <div class="modal-body">
+              <form novalidate>
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+                        <div class="form-group mgb">
+                            <input type="email" class="" placeholder="Email address" id="signin-username" required data-validation-required-message="Please enter your email">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+                        <div class="form-group mgb">
+                            <input type="password" class="" placeholder="Password" id="signin-password" required data-validation-required-message="Please enter your password">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Remember me
+                          </label>
+                        <span style="float:right;"><a href="#">Forgot password?</a></span>
+                        </div>
+
+                    </div>
+
+                </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <p>Dont have account? <a href="#" data-toggle="modal" data-target="#signup_modal" data-dismiss="modal">Join us</a> for free</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+    <!-- Modal -->
+        <div class="modal fade" id="signin_modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <br>
+                <h4 class="modal-title" id="myModalLabel2_1" style="text-align:center">Login</h4>
+                <span style="display:block;text-align:center">with <a class="fbcl" href="#">Facebook</a> or <a class="glcl" href="#">Google</a></span>
+                <p class="or_container"><span>or</span></p>
+              </div>
+              <div class="modal-body">
+              <form novalidate>
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+                        <div class="form-group mgb">
+                            <input type="email" class="" placeholder="Email address" id="signin-username2" required data-validation-required-message="Please enter your email">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+                        <div class="form-group mgb">
+                            <input type="password" class="" placeholder="Password" id="signin-password2" required data-validation-required-message="Please enter your password">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Remember me
+                          </label>
+                        <span style="float:right;"><a href="#">Forgot password?</a></span>
+                        </div>
+
+                    </div>
+
+                </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <p>Dont have account? <a href="#" data-toggle="modal" data-target="#signup_modal2" data-dismiss="modal">Join us</a> for free</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+    <!--<a class="page-scroll highlightnav" href="#" data-toggle="modal" data-target="#signup_modal">join</a>-->
+    <div class="modal fade" id="signup_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <br>
+                <h4 class="modal-title" id="myModalLabel3" style="text-align:center;color: rgba(103, 177, 123, 0.82);">Fill the fields below & complete your action</h4>
+                <span style="display:block;text-align:center">(U can also join with <a class="fbcl" href="#">Facebook</a> or <a class="glcl" href="#">Google</a>)</span>
+                <!--<p class="or_container"><span>or</span></p>-->
+              </div>
+              <div class="modal-body">
+              <form novalidate>
+                <div class="row">
+
+                    <div class="col-md-6 signupfield">
+                        <div class="form-group">
+                            <input type="text" class="search-in" placeholder="First name" id="signup-faname" required data-validation-required-message="Not filled." pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="Not valid">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 signupfield">
+                        <div class="form-group">
+                            <input type="text" class="" placeholder="Last name" id="signup-laname" required data-validation-required-message="Not filled." pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="Not valid">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <div class="form-group">
+                            <input type="email" class="" placeholder="Email address" id="signup-username" required data-validation-required-message="Please enter your email">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <div class="form-group">
+                            <input type="password" class="" placeholder="Password" id="signup-password" minlength="6" required data-validation-required-message="Please enter your password">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <span style="margin-right:30px;">Gender:</span>
+                        <div class="radio radio-primary" style="display:inline-block;">
+                          <label>
+                            <input type="radio" name="gender" value="1" checked="checked"> Male
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="0"> Female
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <span>Birthday:</span>
+                        <div class="birthday">
+                            <select class="form-control">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                              <option>7</option>
+                              <option>8</option>
+                              <option>9</option>
+                              <option>10</option>
+                              <option>11</option>
+                              <option>12</option>
+                              <option>13</option>
+                              <option>14</option>
+                              <option>15</option>
+                              <option>16</option>
+                              <option>17</option>
+                              <option>18</option>
+                              <option>19</option>
+                              <option>20</option>
+                              <option>21</option>
+                              <option>22</option>
+                              <option>23</option>
+                              <option>24</option>
+                              <option>25</option>
+                              <option>26</option>
+                              <option>27</option>
+                              <option>28</option>
+                              <option>29</option>
+                              <option>30</option>
+                              <option>31</option>
+                            </select>
+                            <select class="form-control">
+                              <option>Jan</option>
+                              <option>Feb</option>
+                              <option>Mar</option>
+                              <option>Apr</option>
+                              <option>May</option>
+                              <option>Jun</option>
+                              <option>Jul</option>
+                              <option>Aug</option>
+                              <option>Sep</option>
+                              <option>Oct</option>
+                              <option>Nov</option>
+                              <option>Dec</option>
+                            </select>
+                            <select class="form-control">
+                              <option>2005</option>
+                              <option>2004</option>
+                              <option>2003</option>
+                              <option>2002</option>
+                              <option>2001</option>
+                              <option>2000</option>
+                              <option>1999</option>
+                              <option>1998</option>
+                              <option>1997</option>
+                              <option>1996</option>
+                              <option>1995</option>
+                              <option>1994</option>
+                              <option>1993</option>
+                              <option>1992</option>
+                              <option>1991</option>
+                              <option>1990</option>
+                              <option>1989</option>
+                              <option>1988</option>
+                              <option>1987</option>
+                              <option>1986</option>
+                              <option>1985</option>
+                              <option>1984</option>
+                              <option>1983</option>
+                              <option>1982</option>
+                              <option>1981</option>
+                              <option>1980</option>
+                              <option>1979</option>
+                              <option>1978</option>
+                              <option>1977</option>
+                              <option>1976</option>
+                              <option>1975</option>
+                              <option>1974</option>
+                              <option>1973</option>
+                              <option>1972</option>
+                              <option>1971</option>
+                              <option>1970</option>
+                              <option>1969</option>
+                              <option>1968</option>
+                              <option>1967</option>
+                              <option>1966</option>
+                              <option>1965</option>
+                              <option>1964</option>
+                              <option>1963</option>
+                              <option>1962</option>
+                              <option>1961</option>
+                              <option>1960</option>
+                              <option>1959</option>
+                              <option>1958</option>
+                              <option>1957</option>
+                              <option>1956</option>
+                              <option>1955</option>
+                              <option>1954</option>
+                              <option>1953</option>
+                              <option>1952</option>
+                              <option>1951</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 text-muted" style="text-align: center;margin-top: 10px;">
+                        By signing up, i agree with Tooshe's <a href="#">terms & conditions</a>
+                    </div>
+
+                </div>
+
+              <!--</div>-->
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary btn-material-cyan-400">Join</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <p>Already a pickpacker? <a href="#" data-toggle="modal" data-target="#signin_modal" data-dismiss="modal">Log in</a></p>
+              </div>
+              </form>
+              </div>
+            </div>
+          </div>
+    </div>
+        <!-- Modal -->
 
 
     <script src="js/global/jquery-1.11.2.js" ></script>
-    <!--<script src="js/ripples.min.js"></script>-->
-    <script src="js/global/bootstrap.min.js"></script>
-    <script src="js/global/material.min.js"></script>
+    <script src="js/ripples.min.js"></script>
+
+    <script src="js/most-new-navbar/tooshe.min.js"></script>
+	<script src="js/global/material.min.js"></script>
+	<script src="js/global/moment.min.js"></script>
     <script src="js/new-notification/new-notification.js"></script>
+	<script src="js/global/english-input.js"></script>
     <!--<script src="js/moment.min.js"></script>-->
     <!--<script src="js/typeahead.js"></script>-->
     <!--<script src="js/typeahead.bundle.js"></script>-->

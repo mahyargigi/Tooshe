@@ -52,6 +52,9 @@ h1,h2,h3,h4,h5,h6{
     font-size: 25px;
     color: rgba(98, 101, 105, 0.82);
 }
+.seened-div{
+    background-color: #f8f8f8;
+}
 .seen-label{
     /*margin-left: 3%;*/
     margin-top: 1%;
@@ -130,6 +133,9 @@ h1,h2,h3,h4,h5,h6{
     width: 8%;
     margin-left: 3%;
 }
+.empty-div{
+    width: 19%;
+}
 .note-text-div{
     width: 30%;
     margin-left: 10px;
@@ -153,6 +159,7 @@ h1,h2,h3,h4,h5,h6{
 .find-here-why{
     width: 30%;
     vertical-align: 350%;
+    margin-left: 15px;
 }
 
 .here-why{
@@ -171,6 +178,11 @@ h1,h2,h3,h4,h5,h6{
     vertical-align: 350%;
     width: 28%;
     margin-left: 5px;
+}
+.btn-3-div{
+    vertical-align: 350%;
+    width: 35%;
+    margin-left: 15px;
 }
 .goods-inf{
     margin-bottom: 5px;

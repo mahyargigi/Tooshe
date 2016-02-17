@@ -1,0 +1,39 @@
+.image-div{
+    margin-right: 3% !important;
+    margin-left: 0 !important;
+}
+.note-text-div , .note-text-2-div , .note-text-3-div , .note-text-4-div{
+    margin-left: 0 !important;
+    margin-right: 10px !important;
+}
+.btn-div{
+    margin-right: 5px !important;
+    margin-left: 0 !important;
+}
+.sticker-image{
+    position: absolute;
+    top: 40px;
+    left: 0 !important;
+    right: -10px !important;
+    width: 30px !important;
+    height: 30px !important;
+    z-index: 100;
+}
+.goods-information-div{
+    width: 45%;
+    border-right: none;
+    border-left: solid;
+    border-left-width: 1px;
+    border-left-color: rgba(214, 221, 229, 0.82);
+}
+.goods-img-div{
+    margin-left: 0 !important;
+    margin-right: 10% !important;
+}
+.tick , .remove{
+    margin-right: 0 !important;
+    margin-left: 10px !important;
+}
+.goods-inf{
+    font-size: 0.9em !important;
+}

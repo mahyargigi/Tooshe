@@ -55,6 +55,9 @@ h1,h2,h3,h4,h5,h6{
 .seened-div{
     background-color: #f8f8f8;
 }
+label{
+    font-size: 1em !important;
+}
 .seen-label{
     /*margin-left: 3%;*/
     margin-top: 1%;
@@ -136,6 +139,9 @@ h1,h2,h3,h4,h5,h6{
 .empty-div{
     width: 19%;
 }
+.empty-2-div{
+    width: 1%;
+}
 .note-text-div{
     width: 30%;
     margin-left: 10px;
@@ -148,16 +154,21 @@ h1,h2,h3,h4,h5,h6{
     vertical-align: 350%;
 }
 .note-text-3-div{
-    width: 70%;
+    width: 60%;
     margin-left: 10px;
     /*vertical-align: top;*/
     vertical-align: 350%;
+}
+.note-text-4-div{
+    vertical-align: 350%;
+    width: 30%;
+    margin-left: 10px;
 }
 .cancelled-bring{
     color: rgba(98, 101, 105, 0.82);
 }
 .find-here-why{
-    width: 30%;
+    width: 28%;
     vertical-align: 350%;
     margin-left: 15px;
 }
@@ -212,6 +223,10 @@ h1,h2,h3,h4,h5,h6{
 .goods-img-div{
     width: 42%;
     margin-left: 10%;
+    text-align: center;
+}
+.goods-description{
+    font-size: 0.9em;
 }
 .goods-img{
     width: 80%;
@@ -247,7 +262,12 @@ h1,h2,h3,h4,h5,h6{
     height: 30px !important;
     z-index: 100;
 }
-
+.phone-number , .email-address , .money{
+    color : rgba(16, 201, 154, 0.82) !important ;
+}
+.toosi{
+    color: #848484;
+}
 
 /*long strings*/
 body{

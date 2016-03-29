@@ -1,0 +1,379 @@
+.container-fluid{
+    margin-top: 100px;
+}
+.search-box-title{
+    text-align: center;
+}
+.search-box-ul{
+    text-align: center;
+    border-radius: 5px;
+    background-color: #b7b7b7;
+}
+.search-box-li{
+    margin-left: auto;
+    margin-right: auto;
+}
+.search-box-label{
+    color: white;
+}
+.social-media-icons-div{
+    margin-bottom: 10px;
+}
+.up-to-div{
+    width: 15%;
+    margin-left: 5px;
+}
+.up-to-number-div{
+    width: 15%;
+    text-align: center;
+}
+.input-range-div{
+    width: 65%;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+a img,a label {
+    cursor: pointer;
+}
+.tab-content-div{
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: #eff0ec;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.travelers-a label{
+    color: #229974;
+    border-bottom: solid;
+    border-bottom-color: #b7354c;
+}
+.input-div{
+    text-align: center;
+}
+.keyword-input{
+    width: 90%;
+}
+.where-whole-div , .when-whole-div{
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.where-div{
+    margin-top: 5px;
+}
+.current-location-div , .to-location-div , .from-date-div , .to-date-div{
+    width: 40%;
+}
+.felesh-img-div{
+    width: 15%;
+    text-align: center;
+}
+.location-input{
+    width: 100%;
+}
+
+.how-much-div , .where-div , .when-div{
+    border-bottom: solid 2px #c4c5c1;
+    height: 10px;
+    line-height: 20px;
+    text-align: left;
+}
+.empty-div{
+    width: 20%;
+}
+.button-div{
+    width: 75%;
+}
+.search-box{
+    /*min-width: 280px;*/
+}
+.find-passenger-btn{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 5px;
+    width: 100%;
+    color: white !important;
+    background-color: #26c6da !important;
+}
+.content {
+    background-color: #eff0ec;
+    display: inline;
+    padding: 0 5px;
+    font-size: 18px;
+    color: #676864;
+    font-weight: 500;
+    position: relative;
+    top: -5px;
+}
+.inline-div{
+    display: inline-block;
+}
+.information-div{
+    background: rgba(255, 255, 255, 0.94);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: #e3e4e0;
+}
+.information-1st-div{
+    width: 13%;
+    margin-top: 10px;
+}
+.information-2nd-div{
+    width: 65%;
+    vertical-align: top;
+    margin-top: 10px;
+}
+.information-3rd-div{
+    width: 20%;
+    text-align: center;
+    border-left: solid;
+    border-left-width: 2px;
+    border-left-color: #e3e4e0;
+    vertical-align: top;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+.disabled a{
+    cursor: not-allowed !important;
+}
+.price{
+    vertical-align: top;
+    margin-top: 4px;
+}
+.number-span{
+    color: rgba(16, 201, 154, 0.82) !important;
+}
+.request-btn{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 5px;
+    background-color: #26c6da !important;
+    color: white !important;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+.to-send-div{
+    width: 70%;
+    vertical-align: top;
+    color: #b8bbbb;
+}
+.product-name{
+    margin-top: 0px !important;
+}
+.from-div{
+    width: 10%;
+}
+.from-city-div , .to-city-div{
+    width: 30%;
+}
+.from-city-div , .to-city-div , .due-date{
+    color: #a2a39f;
+}
+.airplane-div{
+    margin-right: 10px;
+}
+.to-div{
+    width: 7%;
+}
+.whole-due-div{
+    /*margin-top: 5px;*/
+}
+.due-div{
+    width: 10%;
+}
+.due-date{
+    width:70%;
+}
+.detail-div{
+    width: 90%;
+}
+
+.profile-img{
+    height: 60px;
+    width:  60px;
+}
+.to-send{
+    font-weight: 300;
+}
+.social-img{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.sort-div{
+    border-bottom: solid;
+    border-width: 2px;
+    border-bottom-color: #e8ebeb;
+}
+
+.sort-1st-div{
+    width: 10%;
+}
+
+.sort-item{
+    margin-top: 10px;
+}
+.sort-by-label{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.item2{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /*border-radius: 5px;*/
+    position: relative;
+    left: -4px;
+}
+
+
+.item1{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /*border-radius: 5px;*/
+}
+.passengers-can-bring-div{
+    width: 50%;
+    margin-top: 3%;
+}
+
+.pagination-div{
+    vertical-align: middle;
+    float: right;
+}
+.passengers-can-bring-label{
+    font-size: 17px;
+    font-weight: 300;
+
+}
+
+.pagination li.active a{
+    background-color: rgba(88, 215, 235, 0.80);
+    /*color: #fff;*/
+}
+
+.pagination li.active a:enabled{
+    background-color: rgba(88, 215, 235, 0.80);
+    /*color: #fff;*/
+}
+
+.pagination li.active a:hover{
+    background-color: rgba(98, 185, 215, 0.80);
+    /*color: #fff;*/
+}
+
+
+.search-select option{
+    border-radius: 15px;
+}
+
+
+input[type=text]{
+    border-radius: 5px;
+    border: solid;
+    border-width: 1px;
+    border-color: #d4d5d1;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.rating-container .rating-stars{
+    color :rgb(253, 216, 109);
+}
+
+/*sliders css*/
+
+input[type=range]{
+    -webkit-appearance: none;
+    margin-top: 10px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    /*width: 300px;*/
+    height: 5px;
+    background: rgba(255, 146, 146, 0.84);
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: solid;
+    border-color: rgba(172, 165, 170, 0.93);
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: white;
+    margin-top: -4px;
+}
+
+.goods-label{
+    margin-top: 10px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    /*width: 300px;*/
+    height: 5px;
+    background: rgba(255, 146, 146, 0.84);
+    border: none;
+    border-radius: 3px;
+}
+
+
+
+
+
+input[type=range]{
+    /* fix for FF unable to apply focus style bug  */
+    /*border: 1px solid white; */
+
+    /*required for proper track sizing in FF*/
+    /*width: 300px;*/
+}
+
+input[type=range]::-moz-range-track {
+    /*width: 300px;*/
+    height: 5px;
+    background: rgba(255, 146, 146, 0.84);
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    border: solid;
+    border-color: rgba(172, 165, 170, 0.93);
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: white;
+    margin-top: -4px;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: none;
+}
+
+input[type=range]:focus::-moz-range-track {
+    /*width: 300px;*/
+    height: 5px;
+    background: rgba(255, 146, 146, 0.84);
+    border: none;
+    border-radius: 3px;
+}

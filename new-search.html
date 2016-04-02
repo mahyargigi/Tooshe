@@ -379,7 +379,7 @@
                             22$
                         </h1>
                         <br>
-                        <div class="btn btn-default request-btn">Request</div>
+                        <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal" >Request</div>
                     </div>
                 </div>
 
@@ -601,6 +601,95 @@
         <div class="col-md-2">
             hello2
         </div>
+        <div class="modal fade application-fee-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="text-center modal-row">
+                <h4 class="you-are-requesting-header">You are requesting to ship :</h4>
+            </div>
+            <div class="modal-row item-information">
+                <div class="item-whole-div">
+                    <div class="item-inf-first-row inline-div">
+                        <br>
+                        <label class="item-name">
+                            sabzi ghorme yakh zade taze
+                        </label>
+                        <br>
+                        <br>
+                        <label class="item-weight question-label">
+                            Weight: 4kg
+                        </label>
+                    </div>
+                    <div class="item-inf-second-row inline-div">
+                        <img src="img/new-search/mn-7..sony-black-laptop-bag-.jpg" class="item-img">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-row">
+                <br>
+                <div class="inline-div modal-from-div">
+                    <label class="from-label question-label">From:</label>
+                    <label class="city-label ans-label">Nevada,Las Vegas</label>
+                </div>
+                <div class="inline-div modal-space-div"></div>
+                <div class="inline-div modal-to-div">
+                    <label class="to-label question-label">To:</label>
+                    <label class="city-label ans-label">javadiye,hash metri avval</label>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label class="question-label">
+                        Due in:
+                    </label>
+                    <label class="ans-label due-date-label">
+                        13 Jan 2016 - 23 Jan 2018
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <label class="question-label">
+                        The requested price
+                    </label>
+                    <span class="request-price-amount-span">
+                        <label class="requested-price-amount">
+                            25
+                        </label>
+                        <label class="requested-price-amount-sign">
+                            $
+                        </label>
+                    </span>
+
+                </div>
+                <br>
+                <div>
+                    <div class="inline-div you-do-this-div">
+                        <label class="question-label">
+                            You do this for
+                        </label>
+                    </div>
+                    <div class="inline-div slider-div">
+                        <input class="do-this-slider mdl-slider mdl-js-slider goods-slider" type="range" min="0" max="100" value="25" tabindex="0" id="you-do-this-slider-1" />
+                    </div>
+                    <div class="inline-div slider-amount-div">
+                        <label class="slider-amount-label">
+                            25
+                        </label>
+                        <label class="slider-amount-sign">
+                            $
+                        </label>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <label class="warning-label">
+                        Amounts  more than requested  price has few  chance to be  agreed
+                    </label>
+                </div>
+            </div>
+            <div class="modal-row-2">
+                <div class="btn btn-default send-request-btn ">Send request</div>
+            </div>
+            <!--<div-->
+        </div>
     </div>
 
     <footer>
@@ -709,6 +798,7 @@
     <script src="js/global/star-rating.min.js" ></script>
     <script src="js/global/bootstrap-mterial-datepicker.js"></script>
     <script src="js/global/english-input.js"></script>
+
     <script src="js/new-search/new-search.js"></script>
 
 

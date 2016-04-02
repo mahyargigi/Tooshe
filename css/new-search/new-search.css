@@ -292,6 +292,124 @@ input[type=text]{
     color :rgb(253, 216, 109);
 }
 
+.application-fee-modal{
+    background: whitesmoke;
+    width: 500px;
+    height: 590px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+.modal-row{
+    border-bottom: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: lightgrey;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 20px !important;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.you-are-requesting-header{
+    margin-top: 20px;
+    font-weight: 700;
+}
+.modal-row-2{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 30px !important;
+}
+.item-whole-div{
+    /*margin-bottom: 60px;*/
+}
+.item-name{
+    font-size: 18px;
+}
+.item-weight{
+    font-size: 18px;
+}
+.item-information{
+    /*height: 100px;*/
+    /*padding-bottom: ;*/
+}
+.item-inf-first-row{
+    width: 65%;
+    vertical-align: top;
+}
+.item-inf-second-row{
+    width: 30%;
+    height: 100%;
+}
+.item-img{
+    width: 100px;
+    height: 100%;
+    max-height: 100px;
+    margin-top: 5px;
+    margin-left: 45%;
+    vertical-align: baseline;
+}
+.requested-price-amount , .requested-price-amount-sign{
+    font-size: 30px;
+}
+.request-price-amount-span{
+    margin-left: 10px;
+    background: rgba(88, 215, 174, 0.86);
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.modal-from-div{
+    width: 45%;
+}
+.modal-space-div{
+    width: 8%;
+}
+.modal-to-div{
+    width: 45%;
+}
+.due-date-label{
+    margin-left: 10px;
+}
+
+.you-do-this-div{
+    width: 25%;
+}
+.slider-div{
+    width: 40%;
+}
+.slider-amount-div{
+    width: 30%;
+    color: red;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.slider-amount-label{
+}
+.warning-label{
+    color: red;
+}
+.send-request-btn{
+    background-color: #26c6da !important;
+    color: white !important;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.question-label{
+    color: #b1b6ac;
+}
+.ans-label{
+    color: #62665f;
+}
+
 /*sliders css*/
 
 input[type=range]{

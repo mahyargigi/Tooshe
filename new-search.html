@@ -267,7 +267,96 @@
                             </div>
                         </div>
                         <div id="shopping" class="tab-pane fade in">
-                            shopping
+                            <div class="input-div">
+                                <input class="keyword-input" type="text" placeholder="Enter a keyword i.e document">
+                            </div>
+                            <br>
+                            <br>
+                            <div class="how-much-div">
+                                 <div class="content">
+                                     The item price
+                                 </div>
+                            </div>
+                            <br>
+                            <div class="">
+                                <div class="inline-div up-to-div">
+                                    <label class="up-to-label">
+                                        up to
+                                    </label>
+                                </div>
+                                <div class="input-range-div inline-div">
+                                    <input class="mdl-slider mdl-js-slider goods-slider" type="range" min="0" max="100" value="25" tabindex="0" id="shopping-item-price-slider" />
+                                </div>
+                                <div class="inline-div up-to-number-div">
+                                    <label class="number-label" id="shopping-item-price-amount">
+                                        25$
+                                    </label>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="how-much-div">
+                                 <div class="content">
+                                     Delivery fee
+                                 </div>
+                            </div>
+                            <br>
+                            <div class="">
+                                <div class="inline-div up-to-div">
+                                    <label class="up-to-label">
+                                        up to
+                                    </label>
+                                </div>
+                                <div class="input-range-div inline-div">
+                                    <input class="mdl-slider mdl-js-slider goods-slider" type="range" min="0" max="100" value="25" tabindex="0" id="shopping-delivery-fee-slider" />
+                                </div>
+                                <div class="inline-div up-to-number-div">
+                                    <label class="number-label" id="shopping-delivery-fee-amount">
+                                        25$
+                                    </label>
+                                </div>
+                            </div>
+
+                            <br>
+                            <div class="where-div">
+                                 <div class="content">
+                                     Where?
+                                 </div>
+                            </div>
+                            <div class="where-whole-div">
+                                 <div class="inline-div current-location-div">
+                                     <input type="text" placeholder="origin" class="location-input" id="shopping-from-input">
+                                 </div>
+                                 <div class="inline-div felesh-img-div">
+                                     <img src="img/new-search/felesh.png">
+                                 </div>
+                                 <div class="inline-div to-location-div">
+                                     <input type="text" placeholder="destination" class="location-input" id="shopping-to-input">
+                                 </div>
+                             </div>
+                             <br>
+                             <div class="when-div">
+                                 <div class="content">
+                                     Due in
+                                 </div>
+                             </div>
+                             <div class="when-whole-div">
+                                 <div class="inline-div from-date-div">
+                                     <input type="text" placeholder="Enter a date" class="location-input" id="shopping-due-in-date">
+                                 </div>
+                                 <div class="inline-div felesh-img-div">
+                                 </div>
+                             </div>
+                             <br>
+                            <div class="last-div">
+                                <div class="empty-div inline-div"></div>
+                                <div class="button-div inline-div">
+                                    <div class="btn btn-default find-passenger-btn">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                        Find Passengers!
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -275,333 +364,565 @@
             <div class="col-md-1"></div>
         </div>
         <div class="col-md-7">
-            <div class="col-md-12 sort-div">
-                <div class="inline-div sort-1st-div sort-item">
-                    <label class="sort-by-label">Sort by</label>
-                </div>
-                <div class="inline-div form-group sort-2nd-div sort-item">
-                    <select class="item1 search-select">
-                        <option>Price</option>
-                        <option>Date</option>
-                        <option>Verifications</option>
-                    </select>
-                    <select class="item2 search-select">
-                        <option>Low to high</option>
-                        <option>High to low</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div class="inline-div passengers-can-bring-div">
-                    <label class="passengers-can-bring-label">
-                        There are
-                        <span class="number-span">102</span>
-                        parcels for U to ship
-                    </label>
-                </div>
-                <div class="inline-div pagination-div">
-                    <ul id="parcels-pagination" class="pagination">
-                        <li class="parcels-first disabled"><a href="#"> << </a></li>
-                        <li class="parcels-previous disabled"><a href="#"> < </a></li>
-                        <li class="active"><a href="#" class="page">1 - 4</a></li>
-                        <!--<li><a>3</a></li>-->
-                        <li class="parcels-next" ><a href="#"> > </a></li>
-                        <li class="parcels-last"><a href="#"> >> </a></li>
-                    </ul>
-                </div>
-            </div>
-            <br>
-            <div class="result">
-                <div class="col-md-12 information-div">
-                    <div class="information-1st-div inline-div">
-                        <a href="#"><img class="img-circle profile-img" src="img/global/11024738_854969787883795_4193688850460528963_n.jpg"></a>
-                        <br>
-                        <input id="user-rate1" class="rating" data-stars="5" data-min="0"
-                           data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
-                           data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
-                        <!--<br>-->
-                            <label class="to-send">5 reviews</label>
-                        <br>
-                        <div class="social-media-icons-div">
-                            <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
-                            <a href="#"><img src="img/new-search/facebook-icon.png" class="social-img"></a>
-                        </div>
+            <div class="parcels-result-div">
+                <div class="col-md-12 sort-div">
+                    <div class="inline-div sort-1st-div sort-item">
+                        <label class="sort-by-label">Sort by</label>
                     </div>
-                    <div class="information-2nd-div inline-div">
-                        <div class="to-send-div">
-                            <label>
-                                <a href="">Catherine</a>
-                                <!--<br>-->
-                                wants to send
-                            </label>
-                        </div>
-                        <div class="inline-div detail-div">
-                            <h3 class="product-name">
-                                Recepient fee of drugstore
-                            </h3>
-                            <!--<br>-->
-                            <br>
-                            <div>
-                                <div class="inline-div from-div">
-                                    <label>
-                                        From
-                                    </label>
-                                </div>
-                                <div class="inline-div from-city-div">
-                                    Madrid,Spain
-                                </div>
-                                <div class="inline-div airplane-div">
-                                    <img src="img/new-search/airplane.png">
-                                </div>
-                                <div class="inline-div to-div">
-                                    <label>
-                                        To
-                                    </label>
-                                </div>
-                                <div class="inline-div to-city-div">
-                                    Tehran,Iran
-                                </div>
+                    <div class="inline-div form-group sort-2nd-div sort-item">
+                        <select class="item1 search-select">
+                            <option>Price</option>
+                            <option>Date</option>
+                            <option>Verifications</option>
+                        </select>
+                        <select class="item2 search-select">
+                            <option>Low to high</option>
+                            <option>High to low</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="inline-div passengers-can-bring-div">
+                        <label class="passengers-can-bring-label">
+                            There are
+                            <span class="number-span">102</span>
+                            parcels for U to ship
+                        </label>
+                    </div>
+                    <div class="inline-div pagination-div">
+                        <ul id="parcels-pagination" class="pagination">
+                            <li class="parcels-first disabled"><a href="#"> << </a></li>
+                            <li class="parcels-previous disabled"><a href="#"> < </a></li>
+                            <li class="active"><a href="#" class="page">1 - 4</a></li>
+                            <!--<li><a>3</a></li>-->
+                            <li class="parcels-next" ><a href="#"> > </a></li>
+                            <li class="parcels-last"><a href="#"> >> </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="result">
+                    <div class="col-md-12 information-div">
+                        <div class="information-1st-div inline-div">
+                            <div class="img-container">
+                                <img  class="img-circle top-img" src="img/new-search/mn-7..sony-black-laptop-bag-.jpg">
+                                <a href="#">
+                                    <img class="img-circle profile-img" src="img/global/11024738_854969787883795_4193688850460528963_n.jpg">
+                                </a>
                             </div>
-                            <div class="whole-due-div">
-                                <div class="inline-div due-div">
-                                    <label>
-                                        Due in
-                                    </label>
-                                </div>
-                                <div class="inline-div due-date">
-                                    June 29th to June 31th in berlin
-                                </div>
+                            <br>
+                            <br>
+                            <br>
+                            <input id="user-rate1" class="rating" data-stars="5" data-min="0"
+                               data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
+                               data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
+                            <!--<br>-->
+                                <label class="to-send">5 reviews</label>
+                            <br>
+                            <div class="social-media-icons-div">
+                                <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
+                                <a href="#"><img src="img/new-search/facebook-icon.png" class="social-img"></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="inline-div information-3rd-div">
-                        <h1 class="price">
-                            22$
-                        </h1>
-                        <br>
-                        <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal" >Request</div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-12 information-div">
-                    <div class="information-1st-div inline-div">
-                        <a href="#"><img class="img-circle profile-img" src="img/global/11024738_854969787883795_4193688850460528963_n.jpg"></a>
-                        <br>
-                        <input id="user-rate2" class="rating" data-stars="5" data-min="0"
-                           data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
-                           data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
-                        <!--<br>-->
-                            <label class="to-send">5 reviews</label>
-                        <br>
-                        <div class="social-media-icons-div">
-                            <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
-                            <a href="#"><img src="img/new-search/facebook-icon.png" class="social-img"></a>
-                        </div>
-                    </div>
-                    <div class="information-2nd-div inline-div">
-                        <div class="to-send-div">
-                            <label>
-                                <a href="">Catherine</a>
+                        <div class="information-2nd-div inline-div">
+                            <div class="to-send-div">
+                                <label>
+                                    <a href="">Catherine</a>
+                                    <!--<br>-->
+                                    wants to send
+                                </label>
+                            </div>
+                            <div class="inline-div detail-div">
+                                <h3 class="product-name">
+                                    Recepient fee of drugstore
+                                </h3>
                                 <!--<br>-->
-                                wants to send
-                            </label>
-                        </div>
-                        <div class="inline-div detail-div">
-                            <h3 class="product-name">
-                                Recepient fee of drugstore
-                            </h3>
-                            <!--<br>-->
-                            <br>
-                            <div>
-                                <div class="inline-div from-div">
-                                    <label>
-                                        From
-                                    </label>
+                                <!--<br>-->
+                                <div class="product-weight-detail">
+                                    <label class="product-weight">10KG</label>
+                                    <a href="#" class="detail-anchor">Detail</a>
                                 </div>
-                                <div class="inline-div from-city-div">
-                                    Madrid,Spain
-                                </div>
-                                <div class="inline-div airplane-div">
+                                <!--<br>-->
+                                <div>
+                                    <div class="inline-div from-div">
+                                        <label>
+                                            From
+                                        </label>
+                                    </div>
+                                    <div class="inline-div from-city-div">
+                                        Madrid,Spain
+                                    </div>
+                                    <div class="inline-div airplane-div">
                                         <img src="img/new-search/airplane.png">
+                                    </div>
+                                    <div class="inline-div to-div">
+                                        <label>
+                                            To
+                                        </label>
+                                    </div>
+                                    <div class="inline-div to-city-div">
+                                        Tehran,Iran
+                                    </div>
                                 </div>
-                                <div class="inline-div to-div">
-                                    <label>
-                                        To
-                                    </label>
-                                </div>
-                                <div class="inline-div to-city-div">
-                                    Tehran,Iran
-                                </div>
-                            </div>
-                            <div class="whole-due-div">
-                                <div class="inline-div due-div">
-                                    <label>
-                                        Due in
-                                    </label>
-                                </div>
-                                <div class="inline-div due-date">
-                                    June 29th to June 31th in berlin
+                                <div class="whole-due-div">
+                                    <div class="inline-div due-div">
+                                        <label>
+                                            Due in
+                                        </label>
+                                    </div>
+                                    <div class="inline-div due-date">
+                                        June 29th to June 31th in berlin
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="inline-div information-3rd-div">
+                            <h1 class="price">
+                                22$
+                            </h1>
+                            <br>
+                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal" >Request</div>
+                        </div>
                     </div>
-                    <div class="inline-div information-3rd-div">
-                        <h1 class="price">
-                            22$
-                        </h1>
-                        <br>
-                        <div class="btn btn-default request-btn">Request</div>
-                    </div>
-                </div>
 
-                <div class="col-md-12 information-div">
-                    <div class="information-1st-div inline-div">
-                        <a href="#"><img class="img-circle profile-img" src="img/global/11024738_854969787883795_4193688850460528963_n.jpg"></a>
-                        <br>
-                        <input id="user-rate3" class="rating" data-stars="5" data-min="0"
-                           data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
-                           data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
-                        <!--<br>-->
-                            <label class="to-send">5 reviews</label>
-                        <br>
-                        <div class="social-media-icons-div">
-                            <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
-                            <a href="#"><img src="img/new-search/facebook-icon.png" class="social-img"></a>
-                        </div>
-                    </div>
-                    <div class="information-2nd-div inline-div">
-                        <div class="to-send-div">
-                            <label>
-                                <a href="">Catherine</a>
-                                <!--<br>-->
-                                wants to send
-                            </label>
-                        </div>
-                        <div class="inline-div detail-div">
-                            <h3 class="product-name">
-                                Recepient fee of drugstore
-                            </h3>
-                            <!--<br>-->
+
+                    <div class="col-md-12 information-div">
+                        <div class="information-1st-div inline-div">
+                            <div class="img-container">
+                                <img  class="img-circle top-img" src="img/new-search/mn-7..sony-black-laptop-bag-.jpg">
+                                <a href="#">
+                                    <img class="img-circle profile-img" src="img/global/11024738_854969787883795_4193688850460528963_n.jpg">
+                                </a>
+                            </div>
                             <br>
-                            <div>
-                                <div class="inline-div from-div">
-                                    <label>
-                                        From
-                                    </label>
-                                </div>
-                                <div class="inline-div from-city-div">
-                                    Madrid,Spain
-                                </div>
-                                <div class="inline-div airplane-div">
-                                    <img src="img/new-search/airplane.png">
-                                </div>
-                                <div class="inline-div to-div">
-                                    <label>
-                                        To
-                                    </label>
-                                </div>
-                                <div class="inline-div to-city-div">
-                                    Tehran,Iran
-                                </div>
-                            </div>
-                            <div class="whole-due-div">
-                                <div class="inline-div due-div">
-                                    <label>
-                                        Due in
-                                    </label>
-                                </div>
-                                <div class="inline-div due-date">
-                                    June 29th to June 31th in berlin
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inline-div information-3rd-div">
-                        <h1 class="price">
-                            22$
-                        </h1>
-                        <br>
-                        <div class="btn btn-default request-btn">Request</div>
-                    </div>
-                </div>
-                <div class="col-md-12 information-div">
-                    <div class="information-1st-div inline-div">
-                        <img class="img-circle profile-img" src="img/global/11024738_854969787883795_4193688850460528963_n.jpg">
-                        <br>
-                        <input id="user-rate4" class="rating" data-stars="5" data-min="0"
-                           data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
-                           data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
-                        <!--<br>-->
-                            <label class="to-send">5 reviews</label>
-                        <br>
-                        <div class="social-media-icons-div">
-                            <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
-                            <a href="#"><img src="img/new-search/facebook-icon.png" class="social-img"></a>
-                        </div>
-                    </div>
-                    <div class="information-2nd-div inline-div">
-                        <div class="to-send-div">
-                            <label>
-                                Catherine
-                                <!--<br>-->
-                                wants to send
-                            </label>
-                        </div>
-                        <div class="inline-div detail-div">
-                            <h3 class="product-name">
-                                Recepient fee of drugstore
-                            </h3>
-                            <!--<br>-->
                             <br>
-                            <div>
-                                <div class="inline-div from-div">
-                                    <label>
-                                        From
-                                    </label>
-                                </div>
-                                <div class="inline-div from-city-div">
-                                    Madrid,Spain
-                                </div>
-                                <div class="inline-div airplane-div">
-                                    <img src="img/new-search/airplane.png" >
-                                </div>
-                                <div class="inline-div to-div">
-                                    <label>
-                                        To
-                                    </label>
-                                </div>
-                                <div class="inline-div to-city-div">
-                                    Tehran,Iran
-                                </div>
+                            <br>
+                            <input id="user-rate2" class="rating" data-stars="5" data-min="0"
+                               data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
+                               data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
+                            <!--<br>-->
+                                <label class="to-send">5 reviews</label>
+                            <br>
+                            <div class="social-media-icons-div">
+                                <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
+                                <a href="#"><img src="img/new-search/facebook-icon.png" class="social-img"></a>
                             </div>
-                            <div class="whole-due-div">
-                                <div class="inline-div due-div">
-                                    <label>
-                                        Due in
-                                    </label>
+                        </div>
+                        <div class="information-2nd-div inline-div">
+                            <div class="to-send-div">
+                                <label>
+                                    <a href="">Catherine</a>
+                                    <!--<br>-->
+                                    wants to send
+                                </label>
+                            </div>
+                            <div class="inline-div detail-div">
+                                <h3 class="product-name">
+                                    Recepient fee of drugstore
+                                </h3>
+                                <div class="product-weight-detail">
+                                    <label class="product-weight">10KG</label>
+                                    <a href="#" class="detail-anchor">Detail</a>
                                 </div>
-                                <div class="inline-div due-date">
-                                    June 29th to June 31th in berlin
+                                <!--<br>-->
+                                <!--<br>-->
+                                <div>
+                                    <div class="inline-div from-div">
+                                        <label>
+                                            From
+                                        </label>
+                                    </div>
+                                    <div class="inline-div from-city-div">
+                                        Madrid,Spain
+                                    </div>
+                                    <div class="inline-div airplane-div">
+                                            <img src="img/new-search/airplane.png">
+                                    </div>
+                                    <div class="inline-div to-div">
+                                        <label>
+                                            To
+                                        </label>
+                                    </div>
+                                    <div class="inline-div to-city-div">
+                                        Tehran,Iran
+                                    </div>
+                                </div>
+                                <div class="whole-due-div">
+                                    <div class="inline-div due-div">
+                                        <label>
+                                            Due in
+                                        </label>
+                                    </div>
+                                    <div class="inline-div due-date">
+                                        June 29th to June 31th in berlin
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="inline-div information-3rd-div">
+                            <h1 class="price">
+                                22$
+                            </h1>
+                            <br>
+                            <div class="btn btn-default request-btn">Request</div>
+                        </div>
                     </div>
-                    <div class="inline-div information-3rd-div">
-                        <h1 class="price">
-                            22$
-                        </h1>
-                        <br>
-                        <div class="btn btn-default request-btn">Request</div>
+
+                    <div class="col-md-12 information-div">
+                        <div class="information-1st-div inline-div">
+                            <div class="img-container">
+                                <img  class="img-circle top-img" src="img/new-search/mn-7..sony-black-laptop-bag-.jpg">
+                                <a href="#">
+                                    <img class="img-circle profile-img" src="img/global/11024738_854969787883795_4193688850460528963_n.jpg">
+                                </a>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <input id="user-rate3" class="rating" data-stars="5" data-min="0"
+                               data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
+                               data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
+                            <!--<br>-->
+                                <label class="to-send">5 reviews</label>
+                            <br>
+                            <div class="social-media-icons-div">
+                                <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
+                                <a href="#"><img src="img/new-search/facebook-icon.png" class="social-img"></a>
+                            </div>
+                        </div>
+                        <div class="information-2nd-div inline-div">
+                            <div class="to-send-div">
+                                <label>
+                                    <a href="">Catherine</a>
+                                    <!--<br>-->
+                                    wants to send
+                                </label>
+                            </div>
+                            <div class="inline-div detail-div">
+                                <h3 class="product-name">
+                                    Recepient fee of drugstore
+                                </h3>
+                                <div class="product-weight-detail">
+                                    <label class="product-weight">10KG</label>
+                                    <a href="#" class="detail-anchor">Detail</a>
+                                </div>
+                                <!--<br>-->
+                                <!--<br>-->
+                                <div>
+                                    <div class="inline-div from-div">
+                                        <label>
+                                            From
+                                        </label>
+                                    </div>
+                                    <div class="inline-div from-city-div">
+                                        Madrid,Spain
+                                    </div>
+                                    <div class="inline-div airplane-div">
+                                        <img src="img/new-search/airplane.png">
+                                    </div>
+                                    <div class="inline-div to-div">
+                                        <label>
+                                            To
+                                        </label>
+                                    </div>
+                                    <div class="inline-div to-city-div">
+                                        Tehran,Iran
+                                    </div>
+                                </div>
+                                <div class="whole-due-div">
+                                    <div class="inline-div due-div">
+                                        <label>
+                                            Due in
+                                        </label>
+                                    </div>
+                                    <div class="inline-div due-date">
+                                        June 29th to June 31th in berlin
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inline-div information-3rd-div">
+                            <h1 class="price">
+                                22$
+                            </h1>
+                            <br>
+                            <div class="btn btn-default request-btn">Request</div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 information-div">
+                        <div class="information-1st-div inline-div">
+                            <div class="img-container">
+                                <img  class="img-circle top-img" src="img/new-search/mn-7..sony-black-laptop-bag-.jpg">
+                                <a href="#">
+                                    <img class="img-circle profile-img" src="img/global/11024738_854969787883795_4193688850460528963_n.jpg">
+                                </a>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <input id="user-rate4" class="rating" data-stars="5" data-min="0"
+                               data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
+                               data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
+                            <!--<br>-->
+                                <label class="to-send">5 reviews</label>
+                            <br>
+                            <div class="social-media-icons-div">
+                                <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
+                                <a href="#"><img src="img/new-search/facebook-icon.png" class="social-img"></a>
+                            </div>
+                        </div>
+                        <div class="information-2nd-div inline-div">
+                            <div class="to-send-div">
+                                <label>
+                                    Catherine
+                                    <!--<br>-->
+                                    wants to send
+                                </label>
+                            </div>
+                            <div class="inline-div detail-div">
+                                <h3 class="product-name">
+                                    Recepient fee of drugstore
+                                </h3>
+                                <div class="product-weight-detail">
+                                    <label class="product-weight">10KG</label>
+                                    <a href="#" class="detail-anchor">Detail</a>
+                                </div>
+                                <!--<br>-->
+                                <!--<br>-->
+                                <div>
+                                    <div class="inline-div from-div">
+                                        <label>
+                                            From
+                                        </label>
+                                    </div>
+                                    <div class="inline-div from-city-div">
+                                        Madrid,Spain
+                                    </div>
+                                    <div class="inline-div airplane-div">
+                                        <img src="img/new-search/airplane.png" >
+                                    </div>
+                                    <div class="inline-div to-div">
+                                        <label>
+                                            To
+                                        </label>
+                                    </div>
+                                    <div class="inline-div to-city-div">
+                                        Tehran,Iran
+                                    </div>
+                                </div>
+                                <div class="whole-due-div">
+                                    <div class="inline-div due-div">
+                                        <label>
+                                            Due in
+                                        </label>
+                                    </div>
+                                    <div class="inline-div due-date">
+                                        June 29th to June 31th in berlin
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inline-div information-3rd-div">
+                            <h1 class="price">
+                                22$
+                            </h1>
+                            <br>
+                            <div class="btn btn-default request-btn">Request</div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="shopping-result-div">
+                <div class="col-md-12 sort-div">
+                    <div class="inline-div sort-1st-div sort-item">
+                        <label class="sort-by-label">Sort by</label>
+                    </div>
+                    <div class="inline-div form-group sort-2nd-div sort-item">
+                        <select class="item1 search-select">
+                            <option>Price</option>
+                            <option>Date</option>
+                            <option>Verifications</option>
+                        </select>
+                        <select class="item2 search-select">
+                            <option>Low to high</option>
+                            <option>High to low</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="inline-div passengers-can-bring-div">
+                        <label class="passengers-can-bring-label">
+                            <!--There are-->
+                            <span class="number-span">102</span>
+                            items to bring
+                        </label>
+                    </div>
+                    <div class="inline-div pagination-div">
+                        <ul id="shopping-pagination" class="pagination">
+                            <li class="shopping-first disabled"><a href="#"> << </a></li>
+                            <li class="shopping-previous disabled"><a href="#"> < </a></li>
+                            <li class="active"><a href="#" class="page">1 - 4</a></li>
+                            <!--<li><a>3</a></li>-->
+                            <li class="shopping-next" ><a href="#"> > </a></li>
+                            <li class="shopping-last"><a href="#"> >> </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="result">
+                    <div class="col-md-4">
+                        <div class="col-md-11 shopping-result-item">
+                            <div class="shopping-result-item-first-div">
+                                <img class="img-circle shopping-item-user-img" src="img/global/11024738_854969787883795_4193688850460528963_n.jpg">
+                                <label class="delivery-fee-label">
+                                    <span class="shopping-item-delivery-price">22</span>
+                                    <span class="shopping-item-delivery-price-currency">$</span>
+                                    <br>
+                                    Delivery Fee
+                                </label>
+                            </div>
+                            <div class="shopping-result-item-second-div col-md-11">
+                                <img class="shopping-result-item-img" src="img/new-search/mn-7..sony-black-laptop-bag-.jpg">
+                            </div>
+                            <div class="shopping-result-item-third-div col-md-12">
+                                <label class="shopping-result-item-name">
+                                    HuawiHonor 4X Dual Sim Mobile Phone
+                                </label>
+                                <br>
+                                <label class="shopping-result-question-label">
+                                    Item's price :
+                                </label>
+                                <label class="shopping-result-item-price">
+                                    86000 $
+                                </label>
+                                <br>
+                                <label class="shopping-result-question-label">
+                                    From:
+                                </label>
+                                <label class="shopping-result-item-from">
+                                    US, Spain
+                                </label>
+                            </div>
+                            <div class="shopping-result-item-forth-div col-md-12">
+                                <div class="inline-div shopping-result-detail-div">
+                                    <a href="#">Detail</a>
+                                </div>
+                                <div class="inline-div req-to-bring-div">
+                                    <div class="btn req-to-bring-btn"  data-toggle="modal" data-target=".shopping-1st-modal">
+                                        Request to bring
+                                        <img src="img/new-search/vhovk.png" class="req-to-bring-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
 
+                    <div class="col-md-4">
+                        <div class="col-md-11 shopping-result-item">
+                            <div class="shopping-result-item-first-div">
+                                <img class="img-circle shopping-item-user-img" src="img/global/11024738_854969787883795_4193688850460528963_n.jpg">
+                                <label class="delivery-fee-label">
+                                    <span class="shopping-item-delivery-price">22</span>
+                                    <span class="shopping-item-delivery-price-currency">$</span>
+                                    <br>
+                                    Delivery Fee
+                                </label>
+                            </div>
+                            <div class="shopping-result-item-second-div col-md-11">
+                                <img class="shopping-result-item-img" src="img/new-search/note3.jpg">
+                            </div>
+                            <div class="shopping-result-item-third-div col-md-12">
+                                <label class="shopping-result-item-name">
+                                    HuawiHonor 4X Dual Sim Mobile Phone
+                                </label>
+                                <br>
+                                <label class="shopping-result-question-label">
+                                    Item's price :
+                                </label>
+                                <label class="shopping-result-item-price">
+                                    86000 $
+                                </label>
+                                <br>
+                                <label class="shopping-result-question-label">
+                                    From:
+                                </label>
+                                <label class="shopping-result-item-from">
+                                    US, Spain
+                                </label>
+
+                            </div>
+                            <div class="shopping-result-item-forth-div col-md-12">
+                                <div class="inline-div shopping-result-detail-div">
+                                    <a href="#">Detail</a>
+                                </div>
+                                <div class="inline-div req-to-bring-div">
+                                    <div class="btn req-to-bring-btn" data-toggle="modal" data-target=".shopping-2nd-modal">
+                                        Request to bring
+                                        <img src="img/new-search/vhovk.png" class="req-to-bring-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="col-md-11 shopping-result-item">
+                            <div class="shopping-result-item-first-div">
+                                <img class="img-circle shopping-item-user-img" src="img/global/11024738_854969787883795_4193688850460528963_n.jpg">
+                                <label class="delivery-fee-label">
+                                    <span class="shopping-item-delivery-price">22</span>
+                                    <span class="shopping-item-delivery-price-currency">$</span>
+                                    <br>
+                                    Delivery Fee
+                                </label>
+                            </div>
+                            <div class="shopping-result-item-second-div col-md-12">
+                                <img class="shopping-result-item-img" src="img/new-search/mouse.jpg">
+                            </div>
+                            <div class="shopping-result-item-third-div col-md-12">
+                                <label class="shopping-result-item-name">
+                                    HuawiHonor 4X Dual Sim Mobile Phone
+                                </label>
+                                <br>
+                                <label class="shopping-result-question-label">
+                                    Item's price :
+                                </label>
+                                <label class="shopping-result-item-price">
+                                    86000 $
+                                </label>
+                                <br>
+                                <label class="shopping-result-question-label">
+                                    From:
+                                </label>
+                                <label class="shopping-result-item-from">
+                                    US, Spain
+                                </label>
+                            </div>
+                            <div class="shopping-result-item-forth-div col-md-12">
+                                <div class="inline-div shopping-result-detail-div">
+                                    <a href="#">Detail</a>
+                                </div>
+                                <div class="inline-div req-to-bring-div">
+                                    <div class="btn req-to-bring-btn">
+                                        Request to bring
+                                        <img src="img/new-search/vhovk.png" class="req-to-bring-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
         <div class="col-md-2">
             hello2
         </div>
-        <div class="modal fade application-fee-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade application-fee-modal" >
             <div class="text-center modal-row">
                 <h4 class="you-are-requesting-header">You are requesting to ship :</h4>
             </div>
@@ -689,6 +1010,53 @@
                 <div class="btn btn-default send-request-btn ">Send request</div>
             </div>
             <!--<div-->
+        </div>
+        <div class="modal fade shopping-1st-modal">
+            <div class="shopping-2nd-modal-close-div">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="text-center shopping-1st-modal-1st-div shopping-1st-modal-div">
+                You are requesting this passenger to:
+            </div>
+            <div class="shopping-1st-modal-2nd-div shopping-1st-modal-div">
+                <div class="radio radio-primary">
+                    <label class="radio-label">
+                        <input type="radio" name="shopping-1st-modal-radio" checked> (shop &)Bring you an item
+                    </label>
+                    <br>
+                    <span class="radio-label-description">cherto pert cherto pert cherto pert</span>
+                </div>
+                <div class="radio radio-primary">
+                    <label class="radio-label">
+                        <input type="radio" name="shopping-1st-modal-radio">ship an item for you to some where
+                    </label>
+                    <br>
+                    <span class="radio-label-description">cherto pert cherto pert cherto pert</span>
+                </div>
+            </div>
+            <div class="shopping-1st-modal-3rd-div">
+                <div class="btn shopping-1st-modal-btn">
+                    Proceed Your Request
+                </div>
+            </div>
+        </div>
+        <div class="modal fade shopping-2nd-modal">
+            <div class="shopping-2nd-modal-close-div">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="text-center shopping-2nd-modal-1st-div  shopping-2nd-modal-div">
+                <img src="img/new-search/lopoo.png" class="img-circle inner-smiley-1st inline-div">
+                We found no related travel on your list to do this , so
+            </div>
+            <div class="text-center shopping-2nd-modal-2nd-div shopping-2nd-modal-div">
+                <div class="btn declare-travel-btn">
+                    Declare your travel
+                </div>
+            </div>
+            <div class="text-center shopping-2nd-modal-3rd-div shopping-2nd-modal-div">
+                Then come back & enjoy fulfilling other requests!
+                <img src="img/new-search/lopoo.png" class="img-circle inner-smiley-2nd inline-div">
+            </div>
         </div>
     </div>
 

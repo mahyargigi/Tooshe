@@ -1,5 +1,6 @@
 .container-fluid{
     margin-top: 100px;
+    min-height: 750px;
 }
 .search-box-title{
     text-align: center;
@@ -7,7 +8,10 @@
 .search-box-ul{
     text-align: center;
     border-radius: 5px;
-    background-color: #b7b7b7;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    /*background-color: #b7b7b7;*/
+    background: url("../../img/new-search/search-pad.png") !important;
 }
 .search-box-li{
     margin-left: auto;
@@ -15,6 +19,8 @@
 }
 .search-box-label{
     color: white;
+    font-size: 18px;
+    margin-top: 10px;
 }
 .social-media-icons-div{
     margin-bottom: 10px;
@@ -38,20 +44,27 @@ a img,a label {
 .tab-content-div{
     margin-top: 5px;
     border-radius: 5px;
-    background-color: #eff0ec;
+    border: solid 1px #e1e2de;
+    background-color: #ECEFF0;
     padding-top: 20px;
     padding-bottom: 10px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
 }
 .travelers-a label{
     color: #229974;
+    padding-bottom: 2px;
     border-bottom: solid;
     border-bottom-color: #b7354c;
+}
+.parcels-a label , .shopping-a label{
+    padding-bottom: 2px;
 }
 .input-div{
     text-align: center;
 }
 .keyword-input{
-    width: 90%;
+    width: 100%;
 }
 .where-whole-div , .when-whole-div{
     margin-top: 20px;
@@ -72,7 +85,7 @@ a img,a label {
 }
 
 .how-much-div , .where-div , .when-div{
-    border-bottom: solid 2px #c4c5c1;
+    border-bottom: solid 2px #e6e7e3;
     height: 10px;
     line-height: 20px;
     text-align: left;
@@ -84,7 +97,8 @@ a img,a label {
     width: 75%;
 }
 .search-box{
-    /*min-width: 280px;*/
+    min-width: 280px;
+    margin-bottom: 20px;
 }
 .find-passenger-btn{
     padding-top: 10px;
@@ -95,6 +109,7 @@ a img,a label {
     width: 100%;
     color: white !important;
     background-color: #26c6da !important;
+    /*min-width: 200px !important;*/
 }
 .content {
     background-color: #eff0ec;
@@ -166,13 +181,24 @@ a img,a label {
 .product-name{
     margin-top: 0px !important;
 }
+.traveler-name{
+    margin-top: 5px !important;
+}
+.traveler-from-div{
+    margin-top: 10px;
+}
 .product-weight{
     color: rgba(16, 201, 154, 0.82) !important;
 }
 .detail-anchor{
     text-decoration: underline;
     margin-left: 10px;
-    color: rgba(154, 155, 155, 0.86);
+    color: rgba(229, 78, 95, 0.86);
+}
+.detail-anchor-2{
+    text-decoration: underline;
+    color: rgba(229, 78, 95, 0.86);
+    vertical-align: -webkit-baseline-middle;
 }
 .from-div{
     width: 10%;
@@ -184,7 +210,7 @@ a img,a label {
     color: #a2a39f;
 }
 .airplane-div{
-    margin-right: 10px;
+    margin-right: 15px;
 }
 .to-div{
     width: 7%;
@@ -194,6 +220,9 @@ a img,a label {
 }
 .due-div{
     width: 10%;
+}
+.date-div{
+    width: 20%;
 }
 .due-date{
     width:70%;
@@ -226,7 +255,7 @@ a img,a label {
     width: 20px;
     height: 20px;
 }
-.shopping-result-div{
+.shopping-result-div , .parcels-result-div{
     display: none;
 }
 .sort-div{
@@ -318,12 +347,29 @@ input[type=text]{
 .application-fee-modal{
     background: whitesmoke;
     width: 500px;
-    height: 585px;
+    height: 602px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 20px !important;
-    padding-left: 20px !important;
+    /*padding-right: 20px !important;*/
+    /*padding-left: 20px !important;*/
+}
+.traveler-detail-modal , .parcels-detail-modal{
+    background: whitesmoke;
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.shopping-detail-modal{
+    background: whitesmoke;
+    width: 500px;
+    overflow-y: visible !important;
+    max-height: 580px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .modal-row{
     border-bottom: solid;
@@ -340,6 +386,10 @@ input[type=text]{
     margin-top: 20px;
     font-weight: 700;
 }
+.modal-detail-header{
+    margin-top: 0px;
+    font-weight: 700;
+}
 .modal-row-2{
     padding-left: 15px;
     padding-right: 15px;
@@ -354,6 +404,12 @@ input[type=text]{
 }
 .item-weight{
     font-size: 18px;
+}
+.item-price , .item-price-amount{
+    font-size: 18px;
+}
+.item-price-amount{
+    margin-right: 15%;
 }
 .item-information{
     /*height: 100px;*/
@@ -375,7 +431,7 @@ input[type=text]{
     margin-left: 45%;
     vertical-align: baseline;
 }
-.requested-price-amount , .requested-price-amount-sign{
+.requested-price-amount , .requested-price-amount-sign , .requested-price-amount-2{
     font-size: 30px;
 }
 .request-price-amount-span{
@@ -413,7 +469,7 @@ input[type=text]{
 }
 .slider-amount-label{
 }
-.warning-label{
+.warning-label , .warning-label-2{
     color: red;
 }
 .send-request-btn{
@@ -440,6 +496,7 @@ input[type=text]{
     padding-bottom: 10px;
     padding-left: 0px !important;
     padding-right: 0px !important;
+    margin-bottom: 20px;
     /*margin-right: 10px;*/
 }
 .shopping-item-user-img{
@@ -450,14 +507,18 @@ input[type=text]{
 }
 .delivery-fee-label{
     float: right;
-    background: rgba(164, 212, 227, 0.86);
+    font-size: 12px;
+    color: rgba(145, 148, 145, 0.86);
+    background: rgba(177, 226, 241, 0.86);
     /*border-radius: 5px;*/
     margin-right: 0px;
     padding-left: 10px;
     padding-right: 20px;
+    padding-bottom: 5px;
 }
 .shopping-item-delivery-price , .shopping-item-delivery-price-currency{
     font-size: 25px;
+    color: #646464;
 }
 .shopping-result-item-first-div{
     margin-top: 10px;
@@ -511,8 +572,8 @@ input[type=text]{
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 20px !important;
-    padding-left: 20px !important;
+    /*padding-right: 20px !important;*/
+    /*padding-left: 20px !important;*/
 }
 .shopping-1st-modal-btn{
     margin-left: auto !important;
@@ -592,6 +653,111 @@ button.close{
     font-size: 30px !important;
     margin-right: 20px !important;
 }
+
+.shopping-3rd-modal{
+    background: whitesmoke;
+    width: 500px;
+    height: 720px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /*padding-right: 20px !important;*/
+    /*padding-left: 20px !important;*/
+    top: 3% !important;
+}
+.total-payment-to-u{
+    font-size: 18px;
+    border: solid rgba(64, 135, 171, 0.86);
+    border-radius: 3px;
+    padding: 5px;
+}
+.total-payment-amount , .total-payment-amount-currency{
+    font-weight: 800;
+    font-size: 22px;
+}
+.for-div{
+    font-size: 15px;
+}
+.for-img{
+    width: 40px;
+    height: 40px;
+    float: right;
+    position: relative;
+    bottom: 10px;
+}
+/*, .shopping-detail-modal*/
+.application-fee-modal , .shopping-1st-modal , .shopping-2nd-modal , .shopping-3rd-modal , .traveler-detail-modal , .parcels-detail-modal{
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+
+.special-br{
+    display: none;
+}
+@media (max-width: 1570px) and (min-width: 992px) {
+    .special-br{
+        display: block;
+    }
+    .req-to-bring-div{
+        margin-left: -3px;
+    }
+}
+@media (max-width: 991px){
+    .shopping-result-detail-div{
+        width: 55%;
+    }
+    .req-to-bring-div{
+        width: 40%;
+    }
+}
+@media(max-width: 900px){
+    .shopping-result-detail-div{
+        width: 45%;
+    }
+    .req-to-bring-div{
+        width: 50%;
+    }
+}
+@media (max-width: 1500px ){
+    .result-div {
+        margin-left: 5%;
+        /*min-width: 660px;*/
+        min-width: 780px !important;
+    }
+    .last-container-div{
+        max-width: 5%;
+    }
+}
+
+@media (max-width: 1230px) {
+    .result-div{
+        margin-left: 8%;
+    }
+}
+@media(max-width: 1212px){
+    .result-div{
+        margin-left: 4%;
+    }
+}
+@media (max-width: 1146px) {
+    .result-div{
+        min-width: 700px !important;
+        margin-left: 5% !important;
+    }
+
+}
+@media (max-width: 1090px) and (min-width: 992px) {
+    .container-fluid{
+        min-width: 1090px;
+    }
+}
+@media (max-width: 991px) {
+    .result-div{
+        margin-left: 0% !important;
+    }
+}
+
 
 /*sliders css*/
 

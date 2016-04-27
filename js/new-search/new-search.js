@@ -38,6 +38,10 @@ $(document).ready(function() {
         $('.travelers-a label').css('border-bottom', 'none');
         $('.parcels-a label').css('border-bottom', 'none');
     });
+    $('#traveler-user-rate1').rating('update', 3.6);
+    $('#traveler-user-rate2').rating('update', 2);
+    $('#traveler-user-rate3').rating('update', 1.6);
+    $('#traveler-user-rate4').rating('update', 4.6);
     $('#user-rate1').rating('update', 3.6);
     $('#user-rate2').rating('update', 4);
     $('#user-rate3').rating('update', 1);
@@ -87,6 +91,36 @@ $(document).ready(function() {
 //            }
 //        }
 //    });
+
+    $('#travelers-pagination li a').on('click', function () {
+        if ($(this).parent().hasClass('disabled')) {
+
+        }
+        else {
+            if ($(this).parent().hasClass('travelers-first')) {
+                $('.travelers-result-div .result').fadeOut('slow');
+                $('.travelers-result-div .result').fadeIn('slow');
+                $('.travelers-result-div .page').html('5 - 8');
+            }
+            else if ($(this).parent().hasClass('travelers-previous')) {
+                $('.travelers-result-div .result').fadeOut('slow');
+                $('.travelers-result-div .result').fadeIn('slow');
+                $('.travelers-result-div .page').html('5 - 8');
+            }
+            else if ($(this).parent().hasClass('travelers-next')) {
+                $('.travelers-result-div .result').fadeOut('slow');
+                $('.travelers-result-div .result').fadeIn('slow');
+                $('.travelers-result-div .page').html('5 - 8');
+            }
+            else if ($(this).parent().hasClass('travelers-last')) {
+                $('.travelers-result-div .result').fadeOut('slow');
+                $('.travelers-result-div .result').fadeIn('slow');
+                $('.travelers-result-div .page').html('5 - 8');
+            }
+
+
+        }
+    });
 
     $('#parcels-pagination li a').on('click', function () {
         if ($(this).parent().hasClass('disabled')) {
@@ -149,6 +183,14 @@ $(document).ready(function() {
 //        console.log((this).value);
         $('#amount1').html((this).value + "$");
     });
+    $('#traveler-slider1').on('change', function () {
+//        console.log((this).value);
+        $('#traveler-amount1').html((this).value + "KG");
+    });
+    $('#traveler-slider2').on('change', function () {
+//        console.log((this).value);
+        $('#traveler-amount2').html((this).value + "$");
+    });
     $('#shopping-item-price-slider').on('change', function () {
 //        console.log((this).value);
         $('#shopping-item-price-amount').html((this).value + "$");
@@ -163,15 +205,32 @@ $(document).ready(function() {
     else {
         $('.warning-label').css('display', 'none');
     }
+    if ($('.do-this-slider-2').val() > parseInt($('.requested-price-amount-2').html())) {
+        $('.warning-label-2').css('display', 'block');
+    }
+    else {
+        $('.warning-label-2').css('display', 'none');
+    }
     $('#you-do-this-slider-1').on('change',function(){
         $('.slider-amount-label').html($(this).val());
         if($(this).val()>parseInt($('.requested-price-amount').html())){
             $('.warning-label').css('display','block');
-            console.log("here1");
+            //console.log("here1");
         }
         else{
             $('.warning-label').css('display','none');
-            console.log("here2");
+            //console.log("here2");
+        }
+    });
+    $('#you-do-this-slider-2').on('change',function(){
+        $('.slider-amount-label-2').html($(this).val());
+        if($(this).val()>parseInt($('.requested-price-amount-2').html())){
+            $('.warning-label-2').css('display','block');
+            //console.log("here1");
+        }
+        else{
+            $('.warning-label-2').css('display','none');
+            //console.log("here2");
         }
     });
 
@@ -191,6 +250,14 @@ $(document).ready(function() {
     input4.onkeypress = function(){
         $('#shopping-to-input').geocomplete();
     }
+    var input5 = document.getElementById('traveler-from-input');
+    input5.onkeypress = function(){
+        $('#traveler-from-input').geocomplete();
+    }
+    var input6 = document.getElementById('traveler-to-input');
+    input6.onkeypress = function(){
+        $('#traveler-to-input').geocomplete();
+    }
 
 
     $('#from-date').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
@@ -199,15 +266,59 @@ $(document).ready(function() {
     $('.travelers-a').on('click',function(){
         $('.parcels-result-div').css('display','none');
         $('.shopping-result-div').css('display','none');
+        $('.travelers-result-div').css('display','block');
     });
     $('.parcels-a').on('click',function(){
         $('.parcels-result-div').css('display','block');
         $('.shopping-result-div').css('display','none');
+        $('.travelers-result-div').css('display','none');
     });
     $('.shopping-a').on('click',function(){
+        $('.travelers-result-div').css('display','none');
         $('.parcels-result-div').css('display','none');
         $('.shopping-result-div').css('display','block');
     });
+    $('.traveler-select').change(function(){
+        //$('option').on('click',function(){
+        //    console.log("selected!");
+        //    console.log($(this).html);
+        //});
+        if($(this).val() === 'Price'){
+            $('.traveler-second-select').html(
+                '<option>Low to high</option>'+'<option>High to low</option>');
+        }else if($(this).val() === 'Weight'){
+            $('.traveler-second-select').html(
+                '<option>Low to High</option>'+'<option>High to Low</option>');
+        }else if($(this).val() === 'Date'){
+            $('.traveler-second-select').html(
+                '<option>Close to Far</option>'+'<option>Far to close</option>');
+        }else if($(this).val() === 'Reputation'){
+            $('.traveler-second-select').html(
+                '<option>Verified users first</option>'+'<option>Top rated</option>');
+        }
+    });
+    $('.parcels-select').change(function(){
+        if($(this).val() === 'Weight'){
+            $('.parcels-second-select').html(
+                '<option>Heavy to Light</option>'+'<option>Light to Heavy</option>');
+        }else if($(this).val() === 'Delivery Fee'){
+            $('.parcels-second-select').html(
+                '<option>Low to High</option>'+'<option>High to Low</option>');
+        }
+    });
+    $('.shopping-select').change(function(){
+        if($(this).val() === 'Weight'){
+            $('.shopping-second-select').html(
+                '<option>Heavy to Light</option>'+'<option>Light to Heavy</option>');
+        }else if($(this).val() === 'Price'){
+            $('.shopping-second-select').html(
+                '<option>Low to High</option>'+'<option>High to Low</option>');
+        }else if($(this).val() === 'Delivery Fee'){
+            $('.shopping-second-select').html(
+                '<option>Low to High</option>'+'<option>High to Low</option>');
+        }
+    });
+
 //    $('#from-date').bootstrapMaterialDatePicker('setMinDate', moment());
 //    $('#to-date').bootstrapMaterialDatePicker('setMinDate', moment());
 });

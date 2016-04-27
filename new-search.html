@@ -15,10 +15,11 @@
         <link href="css/most-new-navbar/navbar.css" rel="stylesheet">
         <link href="css/most-new-navbar/most-new-navbar.css" rel="stylesheet">
 
-        <link href="css/new-search/new-search.css" rel="stylesheet">
+        <!--jash injas-->
         <link href="css/footer/footer.css" rel="stylesheet">
         <!-- Custom CSS -->
         <link href="css/modal/modal.css" rel="stylesheet">
+        <link href="css/new-search/new-search.css" rel="stylesheet">
 
         <title>Search</title>
     </head>
@@ -160,9 +161,9 @@
 
 
     <div class="container-fluid">
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-12 col-xs-12">
             <!--<div class="col-md-1"></div>-->
-            <div class="col-md-11">
+            <div class="col-md-12">
                 <div class="search-box-title">
                     <h3>Refine search in</h3>
                 </div>
@@ -191,10 +192,96 @@
                         </li>
                     </ul>
                     <div class="tab-content tab-content-div">
-                        <div id="travelers" class="tab-pane fade in">
-                            travelers
+                        <div id="travelers" class="tab-pane fade in active">
+                            <div class="how-much-div">
+                                 <div class="content">
+                                     Weight Capacity
+                                 </div>
+                            </div>
+                            <br>
+                            <div class="">
+                                <div class="inline-div up-to-div">
+                                    <label class="up-to-label">
+                                        up to
+                                    </label>
+                                </div>
+                                <div class="input-range-div inline-div">
+                                    <input class="mdl-slider mdl-js-slider goods-slider" type="range" min="0" max="40" value="5" tabindex="0" id="traveler-slider1" />
+                                </div>
+                                <div class="inline-div up-to-number-div">
+                                    <label class="number-label" id="traveler-amount1">
+                                        5KG
+                                    </label>
+                                </div>
+                            </div>
+
+                            <br>
+                            <div class="how-much-div">
+                                 <div class="content">
+                                     Delivery Fee
+                                 </div>
+                            </div>
+                            <br>
+                            <div class="">
+                                <div class="inline-div up-to-div">
+                                    <label class="up-to-label">
+                                        up to
+                                    </label>
+                                </div>
+                                <div class="input-range-div inline-div">
+                                    <input class="mdl-slider mdl-js-slider goods-slider" type="range" min="0" max="100" value="40" tabindex="0" id="traveler-slider2" />
+                                </div>
+                                <div class="inline-div up-to-number-div">
+                                    <label class="number-label" id="traveler-amount2">
+                                        40$
+                                    </label>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="where-div">
+                                 <div class="content">
+                                     Where?
+                                 </div>
+                            </div>
+                            <div class="where-whole-div">
+                                 <div class="inline-div current-location-div">
+                                     <input type="text" placeholder="origin" class="location-input" id="traveler-from-input">
+                                 </div>
+                                 <div class="inline-div felesh-img-div">
+                                     <img src="img/new-search/felesh.png">
+                                 </div>
+                                 <div class="inline-div to-location-div">
+                                     <input type="text" placeholder="destination" class="location-input" id="traveler-to-input">
+                                 </div>
+                             </div>
+                             <br>
+                             <div class="when-div">
+                                 <div class="content">
+                                     When?
+                                 </div>
+                             </div>
+                             <div class="when-whole-div">
+                                 <div class="inline-div from-date-div">
+                                     <input type="text" placeholder="From date" class="location-input" id="from-date">
+                                 </div>
+                                 <div class="inline-div felesh-img-div">
+                                 </div>
+                                 <div class="inline-div to-date-div">
+                                     <input type="text" placeholder="To date" class="location-input" id="to-date">
+                                 </div>
+                             </div>
+                             <br>
+                            <div class="last-div">
+                                <div class="empty-div inline-div"></div>
+                                <div class="button-div inline-div">
+                                    <div class="btn btn-default find-passenger-btn">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                        Find Passengers!
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div id="parcels" class="tab-pane fade in active">
+                        <div id="parcels" class="tab-pane fade in">
                             <div class="input-div">
                                 <input class="keyword-input" type="text" placeholder="Enter a keyword i.e document">
                             </div>
@@ -361,23 +448,373 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-1"></div>
+            <!--<div class="col-md-1"></div>-->
         </div>
-        <div class="col-md-7">
+        <div class="col-md-7 col-sm-12 col-xs-12 result-div">
+            <div class="travelers-result-div">
+                <div class="col-md-12 sort-div">
+                    <div class="inline-div sort-1st-div sort-item">
+                        <label class="sort-by-label">Sort by</label>
+                    </div>
+                    <div class="inline-div form-group sort-2nd-div sort-item">
+                        <select class="item1 search-select traveler-select">
+                            <option>Price</option>
+                            <option>Weight</option>
+                            <option>Date</option>
+                            <option>Reputation</option>
+                        </select>
+                        <select class="item2 search-select traveler-second-select">
+                            <option>Low to high</option>
+                            <option>High to low</option>
+
+                            <!--close to far-->
+                            <!--far to close-->
+
+                            <!--verified users first-->
+                            <!--top rated-->
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="inline-div passengers-can-bring-div">
+                        <label class="passengers-can-bring-label">
+                            There are
+                            <span class="number-span">102</span>
+                            parcels for U to ship
+                        </label>
+                    </div>
+                    <div class="inline-div pagination-div">
+                        <ul id="travelers-pagination" class="pagination">
+                            <li class="travelers-first disabled"><a href="#"> << </a></li>
+                            <li class="travelers-previous disabled"><a href="#"> < </a></li>
+                            <li class="active"><a href="#" class="page">1 - 4</a></li>
+                            <!--<li><a>3</a></li>-->
+                            <li class="travelers-next" ><a href="#"> > </a></li>
+                            <li class="travelers-last"><a href="#"> >> </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="result">
+                    <div class="col-md-12 information-div">
+                        <div class="information-1st-div inline-div">
+                            <div class="img-container">
+                                <a href="#"><img  class="img-circle top-img" src="img/global/11024738_854969787883795_4193688850460528963_n.jpg"></a>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <input id="traveler-user-rate1" class="rating" data-stars="5" data-min="0"
+                               data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
+                               data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
+                            <!--<br>-->
+                                <label class="to-send"><a href='#'>5 reviews</a></label>
+                            <br>
+                            <div class="social-media-icons-div">
+                                <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
+                                <a href="#"><img src="img/new-search/facebook-icon.png" class="social-img"></a>
+                            </div>
+                        </div>
+                        <div class="information-2nd-div inline-div">
+                            <!--<div class="to-send-div">-->
+                                <!--<label>-->
+                                    <!--<a href="">Catherine J</a>-->
+                                <!--</label>-->
+                            <!--</div>-->
+                            <div class="inline-div detail-div">
+                                <h3 class="traveler-name">
+                                    <a href="">Catherine J.</a>
+                                </h3>
+                                <!--<br>-->
+                                <!--<br>-->
+                                <div class="product-weight-detail">
+                                    <label class="product-weight">10KG</label>
+                                    <a href=".traveler-detail-modal" data-toggle="modal" data-target=".traveler-detail-modal" class="detail-anchor">Detail</a>
+                                </div>
+                                <div class="traveler-from-div">
+                                    <div class="inline-div from-div">
+                                        <label>
+                                            From
+                                        </label>
+                                    </div>
+                                    <div class="inline-div from-city-div">
+                                        Madrid,Spain
+                                    </div>
+                                    <div class="inline-div airplane-div">
+                                        <img src="img/new-search/airplane.png">
+                                    </div>
+                                    <div class="inline-div to-div">
+                                        <label>
+                                            To
+                                        </label>
+                                    </div>
+                                    <div class="inline-div to-city-div">
+                                        Tehran,Iran
+                                    </div>
+                                </div>
+                                <div class="whole-due-div">
+                                    <div class="inline-div date-div">
+                                        <label>
+                                            Date of travel
+                                        </label>
+                                    </div>
+                                    <div class="inline-div due-date">
+                                        June 29th, until June 31th is in Tehran
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inline-div information-3rd-div">
+                            <h1 class="price">
+                                22$
+                            </h1>
+                            <br>
+                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal" >Request</div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 information-div">
+                        <div class="information-1st-div inline-div">
+                            <div class="img-container">
+                                <a href="#"><img  class="img-circle top-img" src="img/global/11024738_854969787883795_4193688850460528963_n.jpg"></a>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <input id="traveler-user-rate2" class="rating" data-stars="5" data-min="0"
+                               data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
+                               data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
+                            <!--<br>-->
+                                <label class="to-send"><a href='#'>5 reviews</a></label>
+                            <br>
+                            <div class="social-media-icons-div">
+                                <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
+                                <a href="#"><img src="img/new-search/facebook-icon.png" class="social-img"></a>
+                            </div>
+                        </div>
+                        <div class="information-2nd-div inline-div">
+                            <!--<div class="to-send-div">-->
+                                <!--<label>-->
+                                    <!--<a href="">Catherine J</a>-->
+                                <!--</label>-->
+                            <!--</div>-->
+                            <div class="inline-div detail-div">
+                                <h3 class="traveler-name">
+                                    <a href="">Catherine J.</a>
+                                </h3>
+                                <!--<br>-->
+                                <!--<br>-->
+                                <div class="product-weight-detail">
+                                    <label class="product-weight">10KG</label>
+                                    <a href=".traveler-detail-modal" data-toggle="modal" data-target=".traveler-detail-modal" class="detail-anchor">Detail</a>
+                                </div>
+                                <div class="traveler-from-div">
+                                    <div class="inline-div from-div">
+                                        <label>
+                                            From
+                                        </label>
+                                    </div>
+                                    <div class="inline-div from-city-div">
+                                        Madrid,Spain
+                                    </div>
+                                    <div class="inline-div airplane-div">
+                                        <img src="img/new-search/airplane.png">
+                                    </div>
+                                    <div class="inline-div to-div">
+                                        <label>
+                                            To
+                                        </label>
+                                    </div>
+                                    <div class="inline-div to-city-div">
+                                        Tehran,Iran
+                                    </div>
+                                </div>
+                                <div class="whole-due-div">
+                                    <div class="inline-div date-div">
+                                        <label>
+                                            Date of travel
+                                        </label>
+                                    </div>
+                                    <div class="inline-div due-date">
+                                        June 29th, until June 31th is in Tehran
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inline-div information-3rd-div">
+                            <h1 class="price">
+                                22$
+                            </h1>
+                            <br>
+                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal" >Request</div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 information-div">
+                        <div class="information-1st-div inline-div">
+                            <div class="img-container">
+                                <a href="#"><img  class="img-circle top-img" src="img/global/11024738_854969787883795_4193688850460528963_n.jpg"></a>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <input id="traveler-user-rate3" class="rating" data-stars="5" data-min="0"
+                               data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
+                               data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
+                            <!--<br>-->
+                                <label class="to-send"><a href='#'>5 reviews</a></label>
+                            <br>
+                            <div class="social-media-icons-div">
+                                <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
+                                <a href="#"><img src="img/new-search/facebook-icon.png" class="social-img"></a>
+                            </div>
+                        </div>
+                        <div class="information-2nd-div inline-div">
+                            <!--<div class="to-send-div">-->
+                                <!--<label>-->
+                                    <!--<a href="">Catherine J</a>-->
+                                <!--</label>-->
+                            <!--</div>-->
+                            <div class="inline-div detail-div">
+                                <h3 class="traveler-name">
+                                    <a href="">Catherine J.</a>
+                                </h3>
+                                <!--<br>-->
+                                <!--<br>-->
+                                <div class="product-weight-detail">
+                                    <label class="product-weight">10KG</label>
+                                    <a href=".traveler-detail-modal" data-toggle="modal" data-target=".traveler-detail-modal" class="detail-anchor">Detail</a>
+                                </div>
+                                <div class="traveler-from-div">
+                                    <div class="inline-div from-div">
+                                        <label>
+                                            From
+                                        </label>
+                                    </div>
+                                    <div class="inline-div from-city-div">
+                                        Madrid,Spain
+                                    </div>
+                                    <div class="inline-div airplane-div">
+                                        <img src="img/new-search/airplane.png">
+                                    </div>
+                                    <div class="inline-div to-div">
+                                        <label>
+                                            To
+                                        </label>
+                                    </div>
+                                    <div class="inline-div to-city-div">
+                                        Tehran,Iran
+                                    </div>
+                                </div>
+                                <div class="whole-due-div">
+                                    <div class="inline-div date-div">
+                                        <label>
+                                            Date of travel
+                                        </label>
+                                    </div>
+                                    <div class="inline-div due-date">
+                                        June 29th, until June 31th is in Tehran
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inline-div information-3rd-div">
+                            <h1 class="price">
+                                22$
+                            </h1>
+                            <br>
+                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal" >Request</div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 information-div">
+                        <div class="information-1st-div inline-div">
+                            <div class="img-container">
+                                <a href="#"><img  class="img-circle top-img" src="img/global/11024738_854969787883795_4193688850460528963_n.jpg"></a>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <input id="traveler-user-rate4" class="rating" data-stars="5" data-min="0"
+                               data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
+                               data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
+                            <!--<br>-->
+                                <label class="to-send"><a href='#'>5 reviews</a></label>
+                            <br>
+                            <div class="social-media-icons-div">
+                                <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
+                                <a href="#"><img src="img/new-search/facebook-icon.png" class="social-img"></a>
+                            </div>
+                        </div>
+                        <div class="information-2nd-div inline-div">
+                            <!--<div class="to-send-div">-->
+                                <!--<label>-->
+                                    <!--<a href="">Catherine J</a>-->
+                                <!--</label>-->
+                            <!--</div>-->
+                            <div class="inline-div detail-div">
+                                <h3 class="traveler-name">
+                                    <a href="">Catherine J.</a>
+                                </h3>
+                                <!--<br>-->
+                                <!--<br>-->
+                                <div class="product-weight-detail">
+                                    <label class="product-weight">10KG</label>
+                                    <a href=".traveler-detail-modal" data-toggle="modal" data-target=".traveler-detail-modal" class="detail-anchor">Detail</a>
+                                </div>
+                                <div class="traveler-from-div">
+                                    <div class="inline-div from-div">
+                                        <label>
+                                            From
+                                        </label>
+                                    </div>
+                                    <div class="inline-div from-city-div">
+                                        Madrid,Spain
+                                    </div>
+                                    <div class="inline-div airplane-div">
+                                        <img src="img/new-search/airplane.png">
+                                    </div>
+                                    <div class="inline-div to-div">
+                                        <label>
+                                            To
+                                        </label>
+                                    </div>
+                                    <div class="inline-div to-city-div">
+                                        Tehran,Iran
+                                    </div>
+                                </div>
+                                <div class="whole-due-div">
+                                    <div class="inline-div date-div">
+                                        <label>
+                                            Date of travel
+                                        </label>
+                                    </div>
+                                    <div class="inline-div due-date">
+                                        June 29th, until June 31th is in Tehran
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inline-div information-3rd-div">
+                            <h1 class="price">
+                                22$
+                            </h1>
+                            <br>
+                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal" >Request</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="parcels-result-div">
                 <div class="col-md-12 sort-div">
                     <div class="inline-div sort-1st-div sort-item">
                         <label class="sort-by-label">Sort by</label>
                     </div>
                     <div class="inline-div form-group sort-2nd-div sort-item">
-                        <select class="item1 search-select">
-                            <option>Price</option>
-                            <option>Date</option>
-                            <option>Verifications</option>
+                        <select class="item1 search-select parcels-select">
+                            <option>Weight</option>
+                            <option>Delivery Fee</option>
                         </select>
-                        <select class="item2 search-select">
-                            <option>Low to high</option>
-                            <option>High to low</option>
+                        <select class="item2 search-select parcels-second-select">
+                            <option>Heavy to Light</option>
+                            <option>Light to Heavy</option>
                         </select>
                     </div>
                 </div>
@@ -417,7 +854,7 @@
                                data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
                                data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
                             <!--<br>-->
-                                <label class="to-send">5 reviews</label>
+                                <label class="to-send"><a href="#"><a href='#'>5 reviews</a></a></label>
                             <br>
                             <div class="social-media-icons-div">
                                 <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
@@ -440,7 +877,7 @@
                                 <!--<br>-->
                                 <div class="product-weight-detail">
                                     <label class="product-weight">10KG</label>
-                                    <a href="#" class="detail-anchor">Detail</a>
+                                    <a href=".parcels-detail-modal" data-target=".parcels-detail-modal" data-toggle="modal" class="detail-anchor">Detail</a>
                                 </div>
                                 <!--<br>-->
                                 <div>
@@ -484,8 +921,6 @@
                             <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal" >Request</div>
                         </div>
                     </div>
-
-
                     <div class="col-md-12 information-div">
                         <div class="information-1st-div inline-div">
                             <div class="img-container">
@@ -501,7 +936,7 @@
                                data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
                                data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
                             <!--<br>-->
-                                <label class="to-send">5 reviews</label>
+                                <label class="to-send"><a href='#'>5 reviews</a></label>
                             <br>
                             <div class="social-media-icons-div">
                                 <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
@@ -522,7 +957,7 @@
                                 </h3>
                                 <div class="product-weight-detail">
                                     <label class="product-weight">10KG</label>
-                                    <a href="#" class="detail-anchor">Detail</a>
+                                    <a href=".parcels-detail-modal" data-target=".parcels-detail-modal" data-toggle="modal" class="detail-anchor">Detail</a>
                                 </div>
                                 <!--<br>-->
                                 <!--<br>-->
@@ -564,7 +999,7 @@
                                 22$
                             </h1>
                             <br>
-                            <div class="btn btn-default request-btn">Request</div>
+                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal">Request</div>
                         </div>
                     </div>
 
@@ -583,7 +1018,7 @@
                                data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
                                data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
                             <!--<br>-->
-                                <label class="to-send">5 reviews</label>
+                                <label class="to-send"><a href='#'>5 reviews</a></label>
                             <br>
                             <div class="social-media-icons-div">
                                 <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
@@ -604,7 +1039,7 @@
                                 </h3>
                                 <div class="product-weight-detail">
                                     <label class="product-weight">10KG</label>
-                                    <a href="#" class="detail-anchor">Detail</a>
+                                    <a href=".parcels-detail-modal" data-target=".parcels-detail-modal" data-toggle="modal" class="detail-anchor">Detail</a>
                                 </div>
                                 <!--<br>-->
                                 <!--<br>-->
@@ -646,7 +1081,7 @@
                                 22$
                             </h1>
                             <br>
-                            <div class="btn btn-default request-btn">Request</div>
+                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal">Request</div>
                         </div>
                     </div>
                     <div class="col-md-12 information-div">
@@ -664,7 +1099,7 @@
                                data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
                                data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
                             <!--<br>-->
-                                <label class="to-send">5 reviews</label>
+                                <label class="to-send"><a href='#'>5 reviews</a></label>
                             <br>
                             <div class="social-media-icons-div">
                                 <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
@@ -685,7 +1120,7 @@
                                 </h3>
                                 <div class="product-weight-detail">
                                     <label class="product-weight">10KG</label>
-                                    <a href="#" class="detail-anchor">Detail</a>
+                                    <a href=".parcels-detail-modal" data-target=".parcels-detail-modal" data-toggle="modal" class="detail-anchor">Detail</a>
                                 </div>
                                 <!--<br>-->
                                 <!--<br>-->
@@ -727,7 +1162,7 @@
                                 22$
                             </h1>
                             <br>
-                            <div class="btn btn-default request-btn">Request</div>
+                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal">Request</div>
                         </div>
                     </div>
                 </div>
@@ -738,12 +1173,12 @@
                         <label class="sort-by-label">Sort by</label>
                     </div>
                     <div class="inline-div form-group sort-2nd-div sort-item">
-                        <select class="item1 search-select">
+                        <select class="item1 search-select shopping-select">
                             <option>Price</option>
-                            <option>Date</option>
-                            <option>Verifications</option>
+                            <option>Delivery Fee</option>
+                            <option>Weight</option>
                         </select>
-                        <select class="item2 search-select">
+                        <select class="item2 search-select shopping-second-select">
                             <option>Low to high</option>
                             <option>High to low</option>
                         </select>
@@ -770,8 +1205,8 @@
                 </div>
                 <br>
                 <div class="result">
-                    <div class="col-md-4">
-                        <div class="col-md-11 shopping-result-item">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="col-md-11 col-sm-11 shopping-result-item">
                             <div class="shopping-result-item-first-div">
                                 <img class="img-circle shopping-item-user-img" src="img/global/11024738_854969787883795_4193688850460528963_n.jpg">
                                 <label class="delivery-fee-label">
@@ -781,10 +1216,10 @@
                                     Delivery Fee
                                 </label>
                             </div>
-                            <div class="shopping-result-item-second-div col-md-11">
+                            <div class="shopping-result-item-second-div col-md-11 col-sm-11">
                                 <img class="shopping-result-item-img" src="img/new-search/mn-7..sony-black-laptop-bag-.jpg">
                             </div>
-                            <div class="shopping-result-item-third-div col-md-12">
+                            <div class="shopping-result-item-third-div col-md-12 col-sm-12">
                                 <label class="shopping-result-item-name">
                                     HuawiHonor 4X Dual Sim Mobile Phone
                                 </label>
@@ -803,10 +1238,11 @@
                                     US, Spain
                                 </label>
                             </div>
-                            <div class="shopping-result-item-forth-div col-md-12">
+                            <div class="shopping-result-item-forth-div col-md-12 col-sm-12">
                                 <div class="inline-div shopping-result-detail-div">
-                                    <a href="#">Detail</a>
+                                    <a href=".shopping-detail-modal" data-toggle="modal" data-target=".shopping-detail-modal" class="detail-anchor-2">Detail</a>
                                 </div>
+                                <br class="special-br">
                                 <div class="inline-div req-to-bring-div">
                                     <div class="btn req-to-bring-btn"  data-toggle="modal" data-target=".shopping-1st-modal">
                                         Request to bring
@@ -815,11 +1251,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-1"></div>
+                        <div class="col-md-1 col-sm-1"></div>
                     </div>
 
-                    <div class="col-md-4">
-                        <div class="col-md-11 shopping-result-item">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="col-md-11 col-sm-11 shopping-result-item">
                             <div class="shopping-result-item-first-div">
                                 <img class="img-circle shopping-item-user-img" src="img/global/11024738_854969787883795_4193688850460528963_n.jpg">
                                 <label class="delivery-fee-label">
@@ -829,10 +1265,10 @@
                                     Delivery Fee
                                 </label>
                             </div>
-                            <div class="shopping-result-item-second-div col-md-11">
+                            <div class="shopping-result-item-second-div col-md-11 col-sm-11">
                                 <img class="shopping-result-item-img" src="img/new-search/note3.jpg">
                             </div>
-                            <div class="shopping-result-item-third-div col-md-12">
+                            <div class="shopping-result-item-third-div col-md-12 col-sm-12">
                                 <label class="shopping-result-item-name">
                                     HuawiHonor 4X Dual Sim Mobile Phone
                                 </label>
@@ -852,10 +1288,11 @@
                                 </label>
 
                             </div>
-                            <div class="shopping-result-item-forth-div col-md-12">
+                            <div class="shopping-result-item-forth-div col-md-12 col-sm-12">
                                 <div class="inline-div shopping-result-detail-div">
-                                    <a href="#">Detail</a>
+                                    <a href=".shopping-detail-modal" data-toggle="modal" data-target=".shopping-detail-modal" class="detail-anchor-2">Detail</a>
                                 </div>
+                                <br class="special-br">
                                 <div class="inline-div req-to-bring-div">
                                     <div class="btn req-to-bring-btn" data-toggle="modal" data-target=".shopping-2nd-modal">
                                         Request to bring
@@ -864,11 +1301,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-1"></div>
+                        <div class="col-md-1 col-sm-1"></div>
                     </div>
 
-                    <div class="col-md-4">
-                        <div class="col-md-11 shopping-result-item">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="col-md-11 col-sm-11 shopping-result-item">
                             <div class="shopping-result-item-first-div">
                                 <img class="img-circle shopping-item-user-img" src="img/global/11024738_854969787883795_4193688850460528963_n.jpg">
                                 <label class="delivery-fee-label">
@@ -878,10 +1315,10 @@
                                     Delivery Fee
                                 </label>
                             </div>
-                            <div class="shopping-result-item-second-div col-md-12">
+                            <div class="shopping-result-item-second-div col-md-12 col-sm-12">
                                 <img class="shopping-result-item-img" src="img/new-search/mouse.jpg">
                             </div>
-                            <div class="shopping-result-item-third-div col-md-12">
+                            <div class="shopping-result-item-third-div col-md-12 col-sm-12">
                                 <label class="shopping-result-item-name">
                                     HuawiHonor 4X Dual Sim Mobile Phone
                                 </label>
@@ -900,29 +1337,249 @@
                                     US, Spain
                                 </label>
                             </div>
-                            <div class="shopping-result-item-forth-div col-md-12">
+                            <div class="shopping-result-item-forth-div col-md-12 col-sm-12">
                                 <div class="inline-div shopping-result-detail-div">
-                                    <a href="#">Detail</a>
+                                    <a href=".shopping-detail-modal" data-toggle="modal" data-target=".shopping-detail-modal" class="detail-anchor-2">Detail</a>
                                 </div>
+                                <br class="special-br">
                                 <div class="inline-div req-to-bring-div">
-                                    <div class="btn req-to-bring-btn">
+                                    <div class="btn req-to-bring-btn" data-toggle="modal" data-target=".shopping-3rd-modal">
                                         Request to bring
                                         <img src="img/new-search/vhovk.png" class="req-to-bring-img">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-1"></div>
+                        <div class="col-md-1 col-sm-1"></div>
                     </div>
-
-
+                    <div class="col-md-4 col-sm-6">
+                        <div class="col-md-11 col-sm-11 shopping-result-item">
+                            <div class="shopping-result-item-first-div">
+                                <img class="img-circle shopping-item-user-img" src="img/global/11024738_854969787883795_4193688850460528963_n.jpg">
+                                <label class="delivery-fee-label">
+                                    <span class="shopping-item-delivery-price">22</span>
+                                    <span class="shopping-item-delivery-price-currency">$</span>
+                                    <br>
+                                    Delivery Fee
+                                </label>
+                            </div>
+                            <div class="shopping-result-item-second-div col-md-12 col-sm-12">
+                                <img class="shopping-result-item-img" src="img/new-search/mouse.jpg">
+                            </div>
+                            <div class="shopping-result-item-third-div col-md-12 col-sm-12">
+                                <label class="shopping-result-item-name">
+                                    HuawiHonor 4X Dual Sim Mobile Phone
+                                </label>
+                                <br>
+                                <label class="shopping-result-question-label">
+                                    Item's price :
+                                </label>
+                                <label class="shopping-result-item-price">
+                                    86000 $
+                                </label>
+                                <br>
+                                <label class="shopping-result-question-label">
+                                    From:
+                                </label>
+                                <label class="shopping-result-item-from">
+                                    US, Spain
+                                </label>
+                            </div>
+                            <div class="shopping-result-item-forth-div col-md-12 col-sm-12">
+                                <div class="inline-div shopping-result-detail-div">
+                                    <a href=".shopping-detail-modal" data-toggle="modal" data-target=".shopping-detail-modal" class="detail-anchor-2">Detail</a>
+                                </div>
+                                <br class="special-br">
+                                <div class="inline-div req-to-bring-div">
+                                    <div class="btn req-to-bring-btn" data-toggle="modal" data-target=".shopping-3rd-modal">
+                                        Request to bring
+                                        <img src="img/new-search/vhovk.png" class="req-to-bring-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-sm-1"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="col-md-11 col-sm-11 shopping-result-item">
+                            <div class="shopping-result-item-first-div">
+                                <img class="img-circle shopping-item-user-img" src="img/global/11024738_854969787883795_4193688850460528963_n.jpg">
+                                <label class="delivery-fee-label">
+                                    <span class="shopping-item-delivery-price">22</span>
+                                    <span class="shopping-item-delivery-price-currency">$</span>
+                                    <br>
+                                    Delivery Fee
+                                </label>
+                            </div>
+                            <div class="shopping-result-item-second-div col-md-12 col-sm-12">
+                                <img class="shopping-result-item-img" src="img/new-search/mouse.jpg">
+                            </div>
+                            <div class="shopping-result-item-third-div col-md-12 col-sm-12">
+                                <label class="shopping-result-item-name">
+                                    HuawiHonor 4X Dual Sim Mobile Phone
+                                </label>
+                                <br>
+                                <label class="shopping-result-question-label">
+                                    Item's price :
+                                </label>
+                                <label class="shopping-result-item-price">
+                                    86000 $
+                                </label>
+                                <br>
+                                <label class="shopping-result-question-label">
+                                    From:
+                                </label>
+                                <label class="shopping-result-item-from">
+                                    US, Spain
+                                </label>
+                            </div>
+                            <div class="shopping-result-item-forth-div col-md-12 col-sm-12">
+                                <div class="inline-div shopping-result-detail-div">
+                                    <a href=".shopping-detail-modal" data-toggle="modal" data-target=".shopping-detail-modal" class="detail-anchor-2">Detail</a>
+                                </div>
+                                <br class="special-br">
+                                <div class="inline-div req-to-bring-div">
+                                    <div class="btn req-to-bring-btn" data-toggle="modal" data-target=".shopping-3rd-modal">
+                                        Request to bring
+                                        <img src="img/new-search/vhovk.png" class="req-to-bring-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-sm-1"></div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-2">
-            hello2
+        <div class="col-md-2 last-container-div">
+            <!--hello2-->
+        </div>
+        <div class="modal fade parcels-detail-modal">
+            <div class="shopping-2nd-modal-close-div">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="text-center modal-row">
+                <h2 class="modal-detail-header">Details:</h2>
+            </div>
+            <div class="modal-row item-information">
+                <div class="item-whole-div">
+                    <div class="item-inf-first-row inline-div">
+                        <br>
+                        <label class="item-name">
+                            Ghorme Sabzi Yakhzade
+                        </label>
+                        <br>
+                        <br>
+                        <label class="item-weight question-label">
+                            Weight: 4kg
+                        </label>
+                    </div>
+                    <div class="item-inf-second-row inline-div">
+                        <img src="img/new-search/mn-7..sony-black-laptop-bag-.jpg" class="item-img img-circle">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-row">
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet, atqui movet ex sit, ea corpora blandit vix, te alia paulo praesent eos. Ullum menandri ei usu, at oportere interesset pri. Est ei erroribus constituto. Vis te enim omittantur, vim zril eripuit et. Sint assum scaevola eos eu, iudico veniam urbanitas mea an. Eam probo error dolore in, labore quodsi insolens id vix.Hinc torquatos an sit, graeco euismod duo ei. Vel eu copiosae nominati, nisl ancillae liberavisse et
+                </p>
+            </div>
+            <div class="modal-row-2">
+                <div class="btn btn-default send-request-btn " class="close" data-dismiss="modal">Got It!</div>
+            </div>
+            <!--<div-->
+        </div>
+        <div class="modal fade traveler-detail-modal" >
+            <div class="shopping-2nd-modal-close-div">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="text-center modal-row">
+                <h2 class="modal-detail-header">Details:</h2>
+            </div>
+            <div class="modal-row item-information">
+                <div class="item-whole-div">
+                    <div class="item-inf-first-row inline-div">
+                        <br>
+                        <label class="item-name">
+                            Catherine J
+                        </label>
+                        <br>
+                        <br>
+                        <label class="item-weight question-label">
+                            Weight: 4kg
+                        </label>
+                    </div>
+                    <div class="item-inf-second-row inline-div">
+                        <img src="img/global/11024738_854969787883795_4193688850460528963_n.jpg" class="item-img img-circle">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-row">
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet, atqui movet ex sit, ea corpora blandit vix, te alia paulo praesent eos. Ullum menandri ei usu, at oportere interesset pri. Est ei erroribus constituto. Vis te enim omittantur, vim zril eripuit et. Sint assum scaevola eos eu, iudico veniam urbanitas mea an. Eam probo error dolore in, labore quodsi insolens id vix.Hinc torquatos an sit, graeco euismod duo ei. Vel eu copiosae nominati, nisl ancillae liberavisse et
+                </p>
+            </div>
+            <div class="modal-row-2">
+                <div class="btn btn-default send-request-btn " class="close" data-dismiss="modal">Got It!</div>
+            </div>
+            <!--<div-->
+        </div>
+        <div class="modal fade shopping-detail-modal" >
+            <div class="shopping-2nd-modal-close-div">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="text-center modal-row">
+                <h2 class="modal-detail-header">Details:</h2>
+            </div>
+            <div class="modal-row item-information">
+                <div class="item-whole-div">
+                    <div class="item-inf-first-row inline-div">
+                        <br>
+                        <label class="item-name">
+                            Catherine J
+                        </label>
+                        <br>
+                        <br>
+                        <label class="item-weight question-label">
+                            Weight: 4kg
+                        </label>
+                        <br>
+                        <label class="item-weight question-label">
+                            Item price: 100$
+                        </label>
+                    </div>
+                    <div class="item-inf-second-row inline-div">
+                        <img src="img/new-search/mn-7..sony-black-laptop-bag-.jpg" class="item-img img-circle">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-row">
+                <label class="item-name">shopping locations:</label>
+                <br>
+                <label>
+                    the amazon shopping center located in disneyland
+                    the amazon shopping center located in disneyland
+                    the amazon shopping center located in disneyland
+                </label>
+            </div>
+            <div class="modal-row">
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet, atqui movet ex sit,
+                    ea corpora blandit vix, te alia paulo praesent eos. Ullum menandri ei usu, at oportere interesset pri. Est ei erroribus constituto. Vis te enim omittantur, vim zril eripuit et. Sint assum scaevola eos eu, iudico veniam urbanitas mea an. Eam probo error dolore in, labore quodsi insolens id vix.Hinc torquatos an sit, graeco euismod duo ei. Vel eu copiosae nominati, nisl ancillae liberavisse et
+                </p>
+            </div>
+            <div class="modal-row-2">
+                <div class="btn btn-default send-request-btn " class="close" data-dismiss="modal">Got It!</div>
+            </div>
+            <!--<div-->
         </div>
         <div class="modal fade application-fee-modal" >
+            <div class="shopping-2nd-modal-close-div">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
             <div class="text-center modal-row">
                 <h4 class="you-are-requesting-header">You are requesting to ship :</h4>
             </div>
@@ -1045,7 +1702,7 @@
                 <button type="button" class="close" data-dismiss="modal">×</button>
             </div>
             <div class="text-center shopping-2nd-modal-1st-div  shopping-2nd-modal-div">
-                <img src="img/new-search/lopoo.png" class="img-circle inner-smiley-1st inline-div">
+                <img src="img/new-search/wondered.png" class="img-circle inner-smiley-1st inline-div">
                 We found no related travel on your list to do this , so
             </div>
             <div class="text-center shopping-2nd-modal-2nd-div shopping-2nd-modal-div">
@@ -1055,8 +1712,123 @@
             </div>
             <div class="text-center shopping-2nd-modal-3rd-div shopping-2nd-modal-div">
                 Then come back & enjoy fulfilling other requests!
-                <img src="img/new-search/lopoo.png" class="img-circle inner-smiley-2nd inline-div">
+                <img src="img/new-search/Satisfied.png" class="img-circle inner-smiley-2nd inline-div">
             </div>
+        </div>
+        <div class="modal fade shopping-3rd-modal" >
+            <div class="shopping-2nd-modal-close-div">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="text-center modal-row">
+                <h4 class="you-are-requesting-header">You are requesting to ship :</h4>
+            </div>
+            <div class="modal-row item-information">
+                <div class="item-whole-div">
+                    <div class="item-inf-first-row inline-div">
+                        <br>
+                        <label class="item-name">
+                            sabzi ghorme yakh zade taze
+                        </label>
+                        <br>
+                        <br>
+                        <label class="item-price question-label">
+                            Item price:
+                        </label>
+                        <label class="item-price-amount ans-label">
+                            2000$
+                        </label>
+
+                        <label class="item-weight question-label">
+                            Weight:
+                        </label>
+                        <label class="item-weight ans-label">
+                            4kg
+                        </label>
+                    </div>
+                    <div class="item-inf-second-row inline-div">
+                        <img src="img/new-search/mn-7..sony-black-laptop-bag-.jpg" class="item-img">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-row">
+                <br>
+                <div class="inline-div modal-from-div">
+                    <label class="from-label question-label">From:</label>
+                    <label class="city-label ans-label">Nevada,Las Vegas</label>
+                </div>
+                <div class="inline-div modal-space-div"></div>
+                <div class="inline-div modal-to-div">
+                    <label class="to-label question-label">To:</label>
+                    <label class="city-label ans-label">javadiye,hash metri avval</label>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label class="question-label">
+                        Due in:
+                    </label>
+                    <label class="ans-label due-date-label">
+                        13 Jan 2016
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <label class="question-label">
+                        The requested price
+                    </label>
+                    <span class="request-price-amount-span">
+                        <label class="requested-price-amount-2">
+                            25
+                        </label>
+                        <label class="requested-price-amount-sign">
+                            $
+                        </label>
+                    </span>
+
+                </div>
+                <br>
+                <div>
+                    <div class="inline-div you-do-this-div">
+                        <label class="question-label">
+                            You do this for
+                        </label>
+                    </div>
+                    <div class="inline-div slider-div">
+                        <input class="do-this-slider-2 mdl-slider mdl-js-slider goods-slider" type="range" min="0" max="100" value="25" tabindex="0" id="you-do-this-slider-2" />
+                    </div>
+                    <div class="inline-div slider-amount-div">
+                        <label class="slider-amount-label-2">
+                            25
+                        </label>
+                        <label class="slider-amount-sign">
+                            $
+                        </label>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <label class="warning-label-2">
+                        Amounts  more than requested  price has few  chance to be  agreed
+                    </label>
+                    <br>
+                </div>
+                <div class="total-payment-to-u">
+                    <span>total payment to you</span>
+                    <span class="total-payment-amount">2025</span>
+                    <span class="total-payment-amount-currency">$ </span>
+                    <span> (delivery reward + item price )</span>
+                </div>
+                <br>
+                <div class="for-div">
+                    <span>for</span>
+                    <span><a href="#">Seyed pooya karim baba nezhad mamaghani</a></span>
+                    <a href="#"><img src="img/global/11024738_854969787883795_4193688850460528963_n.jpg" class="inline-div img-circle for-img"></a>
+                </div>
+            </div>
+            <div class="modal-row-2" style="padding-bottom: 10px !important;">
+                <div class="btn btn-default send-request-btn ">Send request</div>
+            </div>
+            <!--<div-->
         </div>
     </div>
 

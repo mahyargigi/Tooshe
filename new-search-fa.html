@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fa">
     <head>
         <meta charset="UTF-8">
         <link href="css/global/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +20,9 @@
         <!-- Custom CSS -->
         <link href="css/modal/modal.css" rel="stylesheet">
         <link href="css/new-search/new-search.css" rel="stylesheet">
+        <link href="css/new-search/new-search-fa.css" rel="stylesheet">
 
+        <link href="css/global/farsi-font.css" rel="stylesheet">
         <title>Search</title>
     </head>
     <body>
@@ -30,50 +32,63 @@
 		<div class="navmenu navmenu-inverse navmenu-fixed-right offcanvas">
       		<ul class="nav navmenu-nav">
 
-				<li><a href="/">Home</a></li>
+				<li><a href="/">
+                    خانه
+				</a></li>
 				<li class="divider"></li>
-                <li><a href="/requests/new" class="">Search</a></li>
+                <li><a href="/requests/new" class="">
+                    جست و جو
+                </a></li>
                 <li class="divider"></li>
-                <li><a href="/trips/new" class="">Order sth</a></li>
-				<li><a href="/trips/new" class="">Send sth</a></li>
-				<li><a href="/trips/new" class="">Take sth</a></li>
+                <li><a href="/trips/new" class="highlighted">
+                    خرید
+                </a></li>
+				<li><a href="/trips/new" class="">
+                    ارسال
+				</a></li>
+				<li><a href="/trips/new" class="">
+                    ثبت سفر
+				</a></li>
+                <li><a href="#"  data-toggle="modal" data-target="#signup_modal2">
+                    عضویت
+                </a> </li>
+                <li><a href="#" data-toggle="modal" data-target="#signin_modal2">
+                    ورود
+                </a> </li>
+				<!--<li class="dropdown">-->
+					<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Notifications<b class="caret"></b></a>-->
+					<!--<ul class="dropdown-menu navmenu-nav">-->
+						<!--<li><a href="/dashboard/profile">ali requested you to ship an item</a></li>-->
+						<!--<li class="divider"></li>-->
+                        <!--<li><a href="/dashboard/payment">ali accepted your request</a></li>-->
+						<!--<li class="divider"></li>-->
+						<!--<li><a href="/dashboard/account">ali requested you to buy an item</a></li>-->
+						<!--&lt;!&ndash;<li><a href="/dashboard/notifications">Notification Settings</a></li>&ndash;&gt;-->
+					<!--</ul>-->
+				<!--</li>-->
+                <!--<li class="divider"></li>-->
+				<!--<li class="dropdown">-->
+					<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard<b class="caret"></b></a>-->
+					<!--<ul class="dropdown-menu navmenu-nav">-->
+						<!--<li><a href="/dashboard/profile">My profile</a></li>-->
+						<!--<li class="divider"></li>-->
+                        <!--<li><a href="/dashboard/payment">My Wallet</a></li>-->
+						<!--<li class="divider"></li>-->
+						<!--<li><a href="/dashboard/account">Help</a></li>-->
+						<!--<li><a href="/dashboard/notifications">Settings</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li><a href="#">Logout</a> </li>-->
+					<!--</ul>-->
+				<!--</li>-->
+                <!--<li><a href="/notifications">Notifications</a></li>-->
+				<!--<li class="divider"></li>-->
+				<!--<li><a href="/about">About</a></li>-->
+				<!--<li><a href="/help">Help</a></li>-->
+				<!--<li><a href="/contact">Contact</a></li>-->
+				<!--<li class="divider"></li>-->
+				<!--<li><a href="/logout">Log Out</a></li>-->
 
-                <!--not signed up 1-->
-
-                <!--<li><a href="#"  data-toggle="modal" data-target="#signup_modal2">Join</a> </li>-->
-                <!--<li><a href="#" data-toggle="modal" data-target="#signin_modal2">Signin</a> </li>-->
-
-                <!--end not signed up 1-->
-
-                <!--signed in 1-->
-
-                <li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Notifications<b class="caret"></b></a>
-					<ul class="dropdown-menu navmenu-nav">
-						<li><a href="/dashboard/profile">ali requested you to ship an item</a></li>
-						<li class="divider"></li>
-                        <li><a href="/dashboard/payment">ali accepted your request</a></li>
-						<li class="divider"></li>
-						<li><a href="/dashboard/account">ali requested you to buy an item</a></li>
-					</ul>
-				</li>
-                <li class="divider"></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard<b class="caret"></b></a>
-					<ul class="dropdown-menu navmenu-nav">
-						<li><a href="/dashboard/profile">My profile</a></li>
-						<li class="divider"></li>
-                        <li><a href="/dashboard/payment">My Wallet</a></li>
-						<li class="divider"></li>
-						<li><a href="/dashboard/account">Help</a></li>
-						<li><a href="/dashboard/notifications">Settings</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Logout</a> </li>
-					</ul>
-				</li>
-
-                <!--end signed in 1-->
-            </ul>
+			</ul>
     	</div>
     <div class="navbar navbar-default mynavbar navbar-fixed-top">
         <div class="container" style="padding-top: 0px;">
@@ -87,7 +102,9 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav search-navbar">
                     <li id="search_button">
-                        <a class="page-scroll search-a" href="#"><i class="fa fa-lg fa-search search-i"></i>Search</a>
+                        <a class="page-scroll search-a" href="#"><i class="fa fa-lg fa-search search-i"></i>
+                        جست و جو
+                        </a>
                     </li>
                 </ul>
 
@@ -96,64 +113,39 @@
             </div>
 
             <div class="navbar-collapse collapse">
+                <!--<ul class="nav navbar-nav navbar-right">-->
+                    <!--&lt;!&ndash;<li><img src="img/most-new-navbar/profile-tn.png" class="img-circle" style="height:32px;margin-top:-5px">&ndash;&gt;-->
+                    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                    <!---->
+                <!--</ul>-->
                 <ul id="middle-navbar" class="nav navbar-nav navbar-right" >
                     <li class="middle-li">
-                        <a class="page-scroll order-sth-a" href="#"><i class="fa fa-lg fa-shopping-cart order-sth-i"></i>Order sth</a>
+                        <a class="page-scroll order-sth-a" href="#"><i class="fa fa-lg fa-shopping-cart order-sth-i"></i>
+                        خرید
+                        </a>
                     </li>
                     <li class="middle-li">
-                        <a class="page-scroll send-sth-a" href="#"><i class="fa fa-lg fa-gift send-sth-i"></i>Send sth</a>
+                        <a class="page-scroll send-sth-a" href="#"><i class="fa fa-lg fa-gift send-sth-i"></i>
+                        ارسال
+                        </a>
                     </li>
                     <li id="rightest-li" class="middle-li">
-                        <a class="page-scroll take-sth-a" href="#"><i class="fa fa-lg fa-plane take-sth-i"></i>Take sth</a>
-                    </li>
-
-                    <!--not signed up 2-->
-                    <!--<li id="sign-in">-->
-                        <!--<a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signin_modal2" >-->
-                            <!--Sign in-->
-                        <!--</a>-->
-                    <!--</li>-->
-                    <!--<li id="join">-->
-                        <!--<a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signup_modal2" >-->
-                            <!--join-->
-                        <!--</a>-->
-                    <!--</li>-->
-                    <!--end not signed up 2-->
-
-                    <!--signed in 2-->
-                    <li id="bell-li" class="dropdown" style="background: none;"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="padding: 0px;margin-right: 40px;">
-                        <img src="img/most-new-navbar/Bell-Icon.png" alt="note" class="img-circle" style="height:32px;margin-top:-5px;margin-left: 0px;">
+                        <a class="page-scroll take-sth-a" href="#"><i class="fa fa-lg fa-plane take-sth-i"></i>
+                        ثبت سفر
                         </a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="profile.html" style="">
-                                    ali requested you to ship an item
-                                </a></li>
-                                <li class="divider"></li>
-                                <li><a href="payment.html">
-                                    ali accepted your request
-                                </a></li>
-                                <li class="divider"></li>
-                                <li><a href="account.html">
-                                    ali requested you to buy an item
-                                </a></li>
-                            </ul>
                     </li>
-                    <li id="profile-li" class="dropdown" style="background: none;">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            <img src="img/most-new-navbar/profile-tn.png" class="img-circle" style="height:32px;margin-top:-5px;margin-left: 0px;">
+                    <li id="sign-in">
+                        <a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signin_modal2" >
+                            <!--style="padding: 0px;margin-right: 40px;"-->
+                            ورود
                         </a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="profile.html">My Profile</a></li>
-                            <li class="divider"></li>
-                            <li><a href="payment.html">My Wallet</a></li>
-                            <li class="divider"></li>
-                            <li><a href="account.html">Help</a></li>
-                            <li><a href="notifications.html">Settings</a></li>
-                            <li class="divider"></li>
-                            <li><a href="/logout">Log Out</a></li>
-                        </ul>
                     </li>
-                    <!--end signed in 2-->
+                    <li id="join">
+                        <a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signup_modal2" >
+                            <!--style="padding: 0px;margin-right: 40px;"-->
+                            عضویت
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -165,7 +157,9 @@
             <!--<div class="col-md-1"></div>-->
             <div class="col-md-12">
                 <div class="search-box-title">
-                    <h3>Refine search in</h3>
+                    <h3>
+                        جست و جو کن
+                    </h3>
                 </div>
                 <div class="search-box">
                     <ul class="nav nav-tabs nav-justified search-box-ul">
@@ -173,21 +167,27 @@
                             <a href="#travelers" data-toggle="tab" class="travelers-a">
                                 <img src="img/new-search/l.png" class="travelers-pic">
                                 <br>
-                                <label class="search-box-label">Travelers</label>
+                                <label class="search-box-label">
+                                    مسافران
+                                </label>
                             </a>
                         </li>
                         <li class="parcels-li search-box-li">
                             <a href="#parcels" data-toggle="tab" class="parcels-a">
                                 <img src="img/new-search/d2.png" class="parcels-pic">
                                 <br>
-                                <label class="search-box-label">Parcels</label>
+                                <label class="search-box-label">
+                                    مرسولات
+                                </label>
                             </a>
                         </li>
                         <li class="shopping-li search-box-li">
                             <a href="#shopping" data-toggle="tab" class="shopping-a">
                                 <img src="img/new-search/s2.png" class="shopping-pic">
                                 <br>
-                                <label class="search-box-label">Shopping</label>
+                                <label class="search-box-label">
+سفارشات
+                                </label>
                             </a>
                         </li>
                     </ul>
@@ -195,14 +195,14 @@
                         <div id="travelers" class="tab-pane fade in active">
                             <div class="how-much-div">
                                  <div class="content">
-                                     Weight Capacity
+محدودیت وزنی
                                  </div>
                             </div>
                             <br>
                             <div class="">
                                 <div class="inline-div up-to-div">
                                     <label class="up-to-label">
-                                        up to
+تا مرز
                                     </label>
                                 </div>
                                 <div class="input-range-div inline-div">
@@ -218,14 +218,14 @@
                             <br>
                             <div class="how-much-div">
                                  <div class="content">
-                                     Delivery Fee
+کارمزد جابه جایی
                                  </div>
                             </div>
                             <br>
                             <div class="">
                                 <div class="inline-div up-to-div">
                                     <label class="up-to-label">
-                                        up to
+تا
                                     </label>
                                 </div>
                                 <div class="input-range-div inline-div">
@@ -240,34 +240,34 @@
                             <br>
                             <div class="where-div">
                                  <div class="content">
-                                     Where?
+چه مکانی؟
                                  </div>
                             </div>
                             <div class="where-whole-div">
                                  <div class="inline-div current-location-div">
-                                     <input type="text" placeholder="origin" class="location-input" id="traveler-from-input">
+                                     <input type="text" placeholder="مبدا" class="location-input" id="traveler-from-input">
                                  </div>
                                  <div class="inline-div felesh-img-div">
                                      <img src="img/new-search/felesh.png">
                                  </div>
                                  <div class="inline-div to-location-div">
-                                     <input type="text" placeholder="destination" class="location-input" id="traveler-to-input">
+                                     <input type="text" placeholder="مقصد" class="location-input" id="traveler-to-input">
                                  </div>
                              </div>
                              <br>
                              <div class="when-div">
                                  <div class="content">
-                                     When?
+چه زمانی؟
                                  </div>
                              </div>
                              <div class="when-whole-div">
                                  <div class="inline-div from-date-div">
-                                     <input type="text" placeholder="From date" class="location-input" id="from-date">
+                                     <input type="text" placeholder="از تاریخ" class="location-input" id="from-date">
                                  </div>
                                  <div class="inline-div felesh-img-div">
                                  </div>
                                  <div class="inline-div to-date-div">
-                                     <input type="text" placeholder="To date" class="location-input" id="to-date">
+                                     <input type="text" placeholder="تا تاریخ" class="location-input" id="to-date">
                                  </div>
                              </div>
                              <br>
@@ -276,27 +276,27 @@
                                 <div class="button-div inline-div">
                                     <div class="btn btn-default find-passenger-btn">
                                         <span class="glyphicon glyphicon-search"></span>
-                                        Find Passengers!
+! یافتن مسافران
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div id="parcels" class="tab-pane fade in">
                             <div class="input-div">
-                                <input class="keyword-input" type="text" placeholder="Enter a keyword i.e document">
+                                <input class="keyword-input" type="text" dir="rtl" placeholder="عنوان مرسوله (ترجیحا به انگلیسی مثلا document)">
                             </div>
                             <br>
                             <br>
                             <div class="how-much-div">
                                  <div class="content">
-                                     How much?
+سقف قیمت
                                  </div>
                             </div>
                             <br>
                             <div class="">
                                 <div class="inline-div up-to-div">
                                     <label class="up-to-label">
-                                        up to
+تا سقف
                                     </label>
                                 </div>
                                 <div class="input-range-div inline-div">
@@ -312,34 +312,34 @@
                             <br>
                             <div class="where-div">
                                  <div class="content">
-                                     Where?
+چه مکانی؟
                                  </div>
                             </div>
                             <div class="where-whole-div">
                                  <div class="inline-div current-location-div">
-                                     <input type="text" placeholder="origin" class="location-input" id="from-input">
+                                     <input type="text" placeholder="مبدا" class="location-input" id="from-input">
                                  </div>
                                  <div class="inline-div felesh-img-div">
                                      <img src="img/new-search/felesh.png">
                                  </div>
                                  <div class="inline-div to-location-div">
-                                     <input type="text" placeholder="destination" class="location-input" id="to-input">
+                                     <input type="text" placeholder="مقصد" class="location-input" id="to-input">
                                  </div>
                              </div>
                              <br>
                              <div class="when-div">
                                  <div class="content">
-                                     When?
+چه زمانی؟
                                  </div>
                              </div>
                              <div class="when-whole-div">
                                  <div class="inline-div from-date-div">
-                                     <input type="text" placeholder="From date" class="location-input" id="from-date2">
+                                     <input type="text" placeholder="از تاریخ" class="location-input" id="from-date2">
                                  </div>
                                  <div class="inline-div felesh-img-div">
                                  </div>
                                  <div class="inline-div to-date-div">
-                                     <input type="text" placeholder="To date" class="location-input" id="to-date2">
+                                     <input type="text" placeholder="تا تاریخ" class="location-input" id="to-date2">
                                  </div>
                              </div>
                              <br>
@@ -348,27 +348,27 @@
                                 <div class="button-div inline-div">
                                     <div class="btn btn-default find-passenger-btn">
                                         <span class="glyphicon glyphicon-search"></span>
-                                        Find Passengers!
+!یافتن مسافران
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div id="shopping" class="tab-pane fade in">
                             <div class="input-div">
-                                <input class="keyword-input" type="text" placeholder="Enter a keyword i.e document">
+                                <input class="keyword-input" type="text" dir="rtl" placeholder="عنوان مرسوله (ترجیحا به انگلیسی مثلا document)">
                             </div>
                             <br>
                             <br>
                             <div class="how-much-div">
                                  <div class="content">
-                                     The item price
+قیمت جنس
                                  </div>
                             </div>
                             <br>
                             <div class="">
                                 <div class="inline-div up-to-div">
                                     <label class="up-to-label">
-                                        up to
+تا سقف
                                     </label>
                                 </div>
                                 <div class="input-range-div inline-div">
@@ -384,14 +384,14 @@
                             <br>
                             <div class="how-much-div">
                                  <div class="content">
-                                     Delivery fee
+کارمزد جا به جایی
                                  </div>
                             </div>
                             <br>
                             <div class="">
                                 <div class="inline-div up-to-div">
                                     <label class="up-to-label">
-                                        more than
+بیش از
                                     </label>
                                 </div>
                                 <div class="input-range-div inline-div">
@@ -407,29 +407,29 @@
                             <br>
                             <div class="where-div">
                                  <div class="content">
-                                     Where?
+چه مکانی؟
                                  </div>
                             </div>
                             <div class="where-whole-div">
                                  <div class="inline-div current-location-div">
-                                     <input type="text" placeholder="origin" class="location-input" id="shopping-from-input">
+                                     <input type="text" placeholder="مبدا" class="location-input" id="shopping-from-input">
                                  </div>
                                  <div class="inline-div felesh-img-div">
                                      <img src="img/new-search/felesh.png">
                                  </div>
                                  <div class="inline-div to-location-div">
-                                     <input type="text" placeholder="destination" class="location-input" id="shopping-to-input">
+                                     <input type="text" placeholder="مقصد" class="location-input" id="shopping-to-input">
                                  </div>
                              </div>
                              <br>
                              <div class="when-div">
                                  <div class="content">
-                                     Due in
+فرصت تهیه سفارش
                                  </div>
                              </div>
                              <div class="when-whole-div">
                                  <div class="inline-div from-date-div">
-                                     <input type="text" placeholder="Enter a date" class="location-input" id="shopping-due-in-date">
+                                     <input type="text" placeholder="وارد کردن تاریخ" class="location-input" id="shopping-due-in-date">
                                  </div>
                                  <div class="inline-div felesh-img-div">
                                  </div>
@@ -454,18 +454,18 @@
             <div class="travelers-result-div">
                 <div class="col-md-12 sort-div">
                     <div class="inline-div sort-1st-div sort-item">
-                        <label class="sort-by-label">Sort by</label>
+                        <label class="sort-by-label">مرتب سازی</label>
                     </div>
                     <div class="inline-div form-group sort-2nd-div sort-item">
                         <select class="item1 search-select traveler-select">
-                            <option>Price</option>
-                            <option>Weight</option>
-                            <option>Date</option>
-                            <option>Reputation</option>
+                            <option>قیمت</option>
+                            <option>وزن</option>
+                            <option>تاریخ</option>
+                            <option>سابقه</option>
                         </select>
                         <select class="item2 search-select traveler-second-select">
-                            <option>Low to high</option>
-                            <option>High to low</option>
+                            <option>کم به زیاد</option>
+                            <option>زیاد به کم</option>
 
                             <!--close to far-->
                             <!--far to close-->
@@ -478,9 +478,9 @@
                 <div class="col-md-12">
                     <div class="inline-div passengers-can-bring-div">
                         <label class="passengers-can-bring-label">
-                            There are
+                            تعداد
                             <span class="number-span">102</span>
-                            travelers to ship your item
+مسافر وجود دارند تا کالای شما را جابه جا کنند
                         </label>
                     </div>
                     <div class="inline-div pagination-div">
@@ -508,7 +508,9 @@
                                data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
                                data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
                             <!--<br>-->
-                                <label class="to-send"><a href='#'>5 reviews</a></label>
+                                <label class="to-send"><a href='#'>
+                                    5 نظر
+                                </a></label>
                             <br>
                             <div class="social-media-icons-div">
                                 <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
@@ -529,12 +531,12 @@
                                 <!--<br>-->
                                 <div class="product-weight-detail">
                                     <label class="product-weight">10KG</label>
-                                    <a href=".traveler-detail-modal" data-toggle="modal" data-target=".traveler-detail-modal" class="detail-anchor">Detail</a>
+                                    <a href=".traveler-detail-modal" data-toggle="modal" data-target=".traveler-detail-modal" class="detail-anchor">جزئیات</a>
                                 </div>
                                 <div class="traveler-from-div">
                                     <div class="inline-div from-div">
                                         <label>
-                                            From
+                                            مبدا:
                                         </label>
                                     </div>
                                     <div class="inline-div from-city-div">
@@ -545,7 +547,7 @@
                                     </div>
                                     <div class="inline-div to-div">
                                         <label>
-                                            To
+                                            مقصد:
                                         </label>
                                     </div>
                                     <div class="inline-div to-city-div">
@@ -555,7 +557,7 @@
                                 <div class="whole-due-div">
                                     <div class="inline-div date-div">
                                         <label>
-                                            Date of travel
+                                            تاریخ سفر:
                                         </label>
                                     </div>
                                     <div class="inline-div due-date">
@@ -569,7 +571,7 @@
                                 22$
                             </h1>
                             <br>
-                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal" >Request</div>
+                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal" >ارسال درخواست</div>
                         </div>
                     </div>
                     <div class="col-md-12 information-div">
@@ -584,7 +586,9 @@
                                data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
                                data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
                             <!--<br>-->
-                                <label class="to-send"><a href='#'>5 reviews</a></label>
+                                <label class="to-send"><a href='#'>
+                                    5 نظر
+                                </a></label>
                             <br>
                             <div class="social-media-icons-div">
                                 <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
@@ -605,12 +609,12 @@
                                 <!--<br>-->
                                 <div class="product-weight-detail">
                                     <label class="product-weight">10KG</label>
-                                    <a href=".traveler-detail-modal" data-toggle="modal" data-target=".traveler-detail-modal" class="detail-anchor">Detail</a>
+                                    <a href=".traveler-detail-modal" data-toggle="modal" data-target=".traveler-detail-modal" class="detail-anchor">جزئیات</a>
                                 </div>
                                 <div class="traveler-from-div">
                                     <div class="inline-div from-div">
                                         <label>
-                                            From
+                                            مبدا:
                                         </label>
                                     </div>
                                     <div class="inline-div from-city-div">
@@ -621,7 +625,7 @@
                                     </div>
                                     <div class="inline-div to-div">
                                         <label>
-                                            To
+                                            مقصد:
                                         </label>
                                     </div>
                                     <div class="inline-div to-city-div">
@@ -631,7 +635,7 @@
                                 <div class="whole-due-div">
                                     <div class="inline-div date-div">
                                         <label>
-                                            Date of travel
+                                            تاریخ سفر:
                                         </label>
                                     </div>
                                     <div class="inline-div due-date">
@@ -645,7 +649,7 @@
                                 22$
                             </h1>
                             <br>
-                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal" >Request</div>
+                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal" >ارسال درخواست</div>
                         </div>
                     </div>
                     <div class="col-md-12 information-div">
@@ -660,7 +664,9 @@
                                data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
                                data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
                             <!--<br>-->
-                                <label class="to-send"><a href='#'>5 reviews</a></label>
+                                <label class="to-send" ><a href='#'>
+                                    5نظر
+                                </a></label>
                             <br>
                             <div class="social-media-icons-div">
                                 <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
@@ -681,12 +687,12 @@
                                 <!--<br>-->
                                 <div class="product-weight-detail">
                                     <label class="product-weight">10KG</label>
-                                    <a href=".traveler-detail-modal" data-toggle="modal" data-target=".traveler-detail-modal" class="detail-anchor">Detail</a>
+                                    <a href=".traveler-detail-modal" data-toggle="modal" data-target=".traveler-detail-modal" class="detail-anchor">جزئیات</a>
                                 </div>
                                 <div class="traveler-from-div">
                                     <div class="inline-div from-div">
                                         <label>
-                                            From
+                                            مبدا:
                                         </label>
                                     </div>
                                     <div class="inline-div from-city-div">
@@ -697,7 +703,7 @@
                                     </div>
                                     <div class="inline-div to-div">
                                         <label>
-                                            To
+                                            مقصد:
                                         </label>
                                     </div>
                                     <div class="inline-div to-city-div">
@@ -707,7 +713,7 @@
                                 <div class="whole-due-div">
                                     <div class="inline-div date-div">
                                         <label>
-                                            Date of travel
+                                            تاریخ سفر:
                                         </label>
                                     </div>
                                     <div class="inline-div due-date">
@@ -721,7 +727,7 @@
                                 22$
                             </h1>
                             <br>
-                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal" >Request</div>
+                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal" >ارسال درخواست</div>
                         </div>
                     </div>
                     <div class="col-md-12 information-div">
@@ -736,7 +742,7 @@
                                data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
                                data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
                             <!--<br>-->
-                                <label class="to-send"><a href='#'>5 reviews</a></label>
+                                <label class="to-send"><a href='#'>5 نظر</a></label>
                             <br>
                             <div class="social-media-icons-div">
                                 <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
@@ -757,12 +763,12 @@
                                 <!--<br>-->
                                 <div class="product-weight-detail">
                                     <label class="product-weight">10KG</label>
-                                    <a href=".traveler-detail-modal" data-toggle="modal" data-target=".traveler-detail-modal" class="detail-anchor">Detail</a>
+                                    <a href=".traveler-detail-modal" data-toggle="modal" data-target=".traveler-detail-modal" class="detail-anchor">جزئیات</a>
                                 </div>
                                 <div class="traveler-from-div">
                                     <div class="inline-div from-div">
                                         <label>
-                                            From
+                                            مبدا:
                                         </label>
                                     </div>
                                     <div class="inline-div from-city-div">
@@ -773,7 +779,7 @@
                                     </div>
                                     <div class="inline-div to-div">
                                         <label>
-                                            To
+                                            مقصد:
                                         </label>
                                     </div>
                                     <div class="inline-div to-city-div">
@@ -783,7 +789,7 @@
                                 <div class="whole-due-div">
                                     <div class="inline-div date-div">
                                         <label>
-                                            Date of travel
+                                            تاریخ سفر
                                         </label>
                                     </div>
                                     <div class="inline-div due-date">
@@ -797,7 +803,7 @@
                                 22$
                             </h1>
                             <br>
-                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal" >Request</div>
+                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal" >ارسال درخواست</div>
                         </div>
                     </div>
                 </div>
@@ -805,25 +811,25 @@
             <div class="parcels-result-div">
                 <div class="col-md-12 sort-div">
                     <div class="inline-div sort-1st-div sort-item">
-                        <label class="sort-by-label">Sort by</label>
+                        <label class="sort-by-label">مرتب سازی</label>
                     </div>
                     <div class="inline-div form-group sort-2nd-div sort-item">
                         <select class="item1 search-select parcels-select">
-                            <option>Weight</option>
-                            <option>Delivery Fee</option>
+                            <option>وزن</option>
+                            <option>کارمزد جابه جایی</option>
                         </select>
                         <select class="item2 search-select parcels-second-select">
-                            <option>Heavy to Light</option>
-                            <option>Light to Heavy</option>
+                            <option>سنگین به سبک</option>
+                            <option>سبک به سنگین</option>
                         </select>
                     </div>
                 </div>
                 <div class="col-md-12">
                     <div class="inline-div passengers-can-bring-div">
                         <label class="passengers-can-bring-label">
-                            There are
+                            تعداد
                             <span class="number-span">102</span>
-                            parcels for U to ship
+                            مرسوله برای حمل وجود دارد
                         </label>
                     </div>
                     <div class="inline-div pagination-div">
@@ -854,7 +860,7 @@
                                data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
                                data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
                             <!--<br>-->
-                                <label class="to-send"><a href="#"><a href='#'>5 reviews</a></a></label>
+                                <label class="to-send"><a href="#"><a href='#'>5 نظر</a></a></label>
                             <br>
                             <div class="social-media-icons-div">
                                 <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
@@ -866,7 +872,7 @@
                                 <label>
                                     <a href="">Catherine</a>
                                     <!--<br>-->
-                                    wants to send
+                                    درخواست ارسال جنس از
                                 </label>
                             </div>
                             <div class="inline-div detail-div">
@@ -877,13 +883,13 @@
                                 <!--<br>-->
                                 <div class="product-weight-detail">
                                     <label class="product-weight">10KG</label>
-                                    <a href=".parcels-detail-modal" data-target=".parcels-detail-modal" data-toggle="modal" class="detail-anchor">Detail</a>
+                                    <a href=".parcels-detail-modal" data-target=".parcels-detail-modal" data-toggle="modal" class="detail-anchor">جزئیات</a>
                                 </div>
                                 <!--<br>-->
                                 <div>
                                     <div class="inline-div from-div">
                                         <label>
-                                            From
+                                            مبدا:
                                         </label>
                                     </div>
                                     <div class="inline-div from-city-div">
@@ -894,7 +900,7 @@
                                     </div>
                                     <div class="inline-div to-div">
                                         <label>
-                                            To
+                                            مقصد:
                                         </label>
                                     </div>
                                     <div class="inline-div to-city-div">
@@ -904,7 +910,7 @@
                                 <div class="whole-due-div">
                                     <div class="inline-div due-div">
                                         <label>
-                                            Due in
+                                            بازه ی ارسال
                                         </label>
                                     </div>
                                     <div class="inline-div due-date">
@@ -918,7 +924,7 @@
                                 22$
                             </h1>
                             <br>
-                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal" >Request</div>
+                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal" >ارسال درخواست</div>
                         </div>
                     </div>
                     <div class="col-md-12 information-div">
@@ -936,7 +942,9 @@
                                data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
                                data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
                             <!--<br>-->
-                                <label class="to-send"><a href='#'>5 reviews</a></label>
+                                <label class="to-send"><a href='#'>
+5 نظر
+                                </a></label>
                             <br>
                             <div class="social-media-icons-div">
                                 <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
@@ -948,7 +956,7 @@
                                 <label>
                                     <a href="">Catherine</a>
                                     <!--<br>-->
-                                    wants to send
+                                    درخواست ارسال جنس از
                                 </label>
                             </div>
                             <div class="inline-div detail-div">
@@ -957,14 +965,14 @@
                                 </h3>
                                 <div class="product-weight-detail">
                                     <label class="product-weight">10KG</label>
-                                    <a href=".parcels-detail-modal" data-target=".parcels-detail-modal" data-toggle="modal" class="detail-anchor">Detail</a>
+                                    <a href=".parcels-detail-modal" data-target=".parcels-detail-modal" data-toggle="modal" class="detail-anchor">جزئیات</a>
                                 </div>
                                 <!--<br>-->
                                 <!--<br>-->
                                 <div>
                                     <div class="inline-div from-div">
                                         <label>
-                                            From
+                                            مبدا:
                                         </label>
                                     </div>
                                     <div class="inline-div from-city-div">
@@ -975,7 +983,7 @@
                                     </div>
                                     <div class="inline-div to-div">
                                         <label>
-                                            To
+                                            مقصد:
                                         </label>
                                     </div>
                                     <div class="inline-div to-city-div">
@@ -985,7 +993,7 @@
                                 <div class="whole-due-div">
                                     <div class="inline-div due-div">
                                         <label>
-                                            Due in
+                                            بازه ی ارسال
                                         </label>
                                     </div>
                                     <div class="inline-div due-date">
@@ -999,7 +1007,7 @@
                                 22$
                             </h1>
                             <br>
-                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal">Request</div>
+                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal">ارسال درخواست</div>
                         </div>
                     </div>
 
@@ -1018,7 +1026,7 @@
                                data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
                                data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
                             <!--<br>-->
-                                <label class="to-send"><a href='#'>5 reviews</a></label>
+                                <label class="to-send"><a href='#'>5 نظر</a></label>
                             <br>
                             <div class="social-media-icons-div">
                                 <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
@@ -1030,7 +1038,7 @@
                                 <label>
                                     <a href="">Catherine</a>
                                     <!--<br>-->
-                                    wants to send
+                                    درخواست ارسال جنس از
                                 </label>
                             </div>
                             <div class="inline-div detail-div">
@@ -1039,14 +1047,14 @@
                                 </h3>
                                 <div class="product-weight-detail">
                                     <label class="product-weight">10KG</label>
-                                    <a href=".parcels-detail-modal" data-target=".parcels-detail-modal" data-toggle="modal" class="detail-anchor">Detail</a>
+                                    <a href=".parcels-detail-modal" data-target=".parcels-detail-modal" data-toggle="modal" class="detail-anchor">جزئیات</a>
                                 </div>
                                 <!--<br>-->
                                 <!--<br>-->
                                 <div>
                                     <div class="inline-div from-div">
                                         <label>
-                                            From
+                                            مبدا:
                                         </label>
                                     </div>
                                     <div class="inline-div from-city-div">
@@ -1057,7 +1065,7 @@
                                     </div>
                                     <div class="inline-div to-div">
                                         <label>
-                                            To
+                                            مقصد:
                                         </label>
                                     </div>
                                     <div class="inline-div to-city-div">
@@ -1067,7 +1075,7 @@
                                 <div class="whole-due-div">
                                     <div class="inline-div due-div">
                                         <label>
-                                            Due in
+                                            بازه ی ارسال
                                         </label>
                                     </div>
                                     <div class="inline-div due-date">
@@ -1081,7 +1089,7 @@
                                 22$
                             </h1>
                             <br>
-                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal">Request</div>
+                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal">ارسال درخواست</div>
                         </div>
                     </div>
                     <div class="col-md-12 information-div">
@@ -1099,7 +1107,7 @@
                                data-max="5" data-step="0.1" data-show-clear="false" data-size="xxs"
                                data-readonly="true" data-symbol="&#x2605" data-show-caption="false">
                             <!--<br>-->
-                                <label class="to-send"><a href='#'>5 reviews</a></label>
+                                <label class="to-send"><a href='#'>5 نظر</a></label>
                             <br>
                             <div class="social-media-icons-div">
                                 <a href="#"><img src="img/new-search/linkedin_icon.png" class="social-img"></a>
@@ -1109,9 +1117,9 @@
                         <div class="information-2nd-div inline-div">
                             <div class="to-send-div">
                                 <label>
-                                    Catherine
+                                   <a href="#">Catherine </a>
                                     <!--<br>-->
-                                    wants to send
+                                    درخواست ارسال جنس از
                                 </label>
                             </div>
                             <div class="inline-div detail-div">
@@ -1120,14 +1128,14 @@
                                 </h3>
                                 <div class="product-weight-detail">
                                     <label class="product-weight">10KG</label>
-                                    <a href=".parcels-detail-modal" data-target=".parcels-detail-modal" data-toggle="modal" class="detail-anchor">Detail</a>
+                                    <a href=".parcels-detail-modal" data-target=".parcels-detail-modal" data-toggle="modal" class="detail-anchor">جزئیات</a>
                                 </div>
                                 <!--<br>-->
                                 <!--<br>-->
                                 <div>
                                     <div class="inline-div from-div">
                                         <label>
-                                            From
+                                            مبدا:
                                         </label>
                                     </div>
                                     <div class="inline-div from-city-div">
@@ -1138,7 +1146,7 @@
                                     </div>
                                     <div class="inline-div to-div">
                                         <label>
-                                            To
+                                            مقصد:
                                         </label>
                                     </div>
                                     <div class="inline-div to-city-div">
@@ -1148,7 +1156,7 @@
                                 <div class="whole-due-div">
                                     <div class="inline-div due-div">
                                         <label>
-                                            Due in
+                                            بازه ی ارسال
                                         </label>
                                     </div>
                                     <div class="inline-div due-date">
@@ -1162,7 +1170,7 @@
                                 22$
                             </h1>
                             <br>
-                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal">Request</div>
+                            <div class="btn btn-default request-btn" data-toggle="modal" data-target=".application-fee-modal">ارسال درخواست</div>
                         </div>
                     </div>
                 </div>
@@ -1170,26 +1178,26 @@
             <div class="shopping-result-div">
                 <div class="col-md-12 sort-div">
                     <div class="inline-div sort-1st-div sort-item">
-                        <label class="sort-by-label">Sort by</label>
+                        <label class="sort-by-label">مرتب سازی</label>
                     </div>
                     <div class="inline-div form-group sort-2nd-div sort-item">
                         <select class="item1 search-select shopping-select">
-                            <option>Price</option>
-                            <option>Delivery Fee</option>
-                            <option>Weight</option>
+                            <option>قیمت</option>
+                            <option>کارمزد جابه جایی</option>
+                            <option>وزن</option>
                         </select>
                         <select class="item2 search-select shopping-second-select">
-                            <option>Low to high</option>
-                            <option>High to low</option>
+                            <option>کم به زیاد</option>
+                            <option>زیاد به کم</option>
                         </select>
                     </div>
                 </div>
                 <div class="col-md-12">
                     <div class="inline-div passengers-can-bring-div">
-                        <label class="passengers-can-bring-label">
+                        <label class="passengers-can-bring-label" dir="rtl">
                             <!--There are-->
                             <span class="number-span">102</span>
-                            items to bring
+                            کالا برای آوردن
                         </label>
                     </div>
                     <div class="inline-div pagination-div">
@@ -1213,7 +1221,7 @@
                                     <span class="shopping-item-delivery-price">22</span>
                                     <span class="shopping-item-delivery-price-currency">$</span>
                                     <br>
-                                    Delivery Fee
+                                    کارمزد جابه جایی
                                 </label>
                             </div>
                             <div class="shopping-result-item-second-div col-md-11 col-sm-11">
@@ -1225,14 +1233,14 @@
                                 </label>
                                 <br>
                                 <label class="shopping-result-question-label">
-                                    Item's price :
+                                    قیمت جنس:
                                 </label>
                                 <label class="shopping-result-item-price">
                                     86000 $
                                 </label>
                                 <br>
                                 <label class="shopping-result-question-label">
-                                    From:
+                                    مبدا:
                                 </label>
                                 <label class="shopping-result-item-from">
                                     US, Spain
@@ -1240,12 +1248,12 @@
                             </div>
                             <div class="shopping-result-item-forth-div col-md-12 col-sm-12">
                                 <div class="inline-div shopping-result-detail-div">
-                                    <a href=".shopping-detail-modal" data-toggle="modal" data-target=".shopping-detail-modal" class="detail-anchor-2">Detail</a>
+                                    <a href=".shopping-detail-modal" data-toggle="modal" data-target=".shopping-detail-modal" class="detail-anchor-2">جزئیات</a>
                                 </div>
                                 <br class="special-br">
                                 <div class="inline-div req-to-bring-div">
                                     <div class="btn req-to-bring-btn"  data-toggle="modal" data-target=".shopping-1st-modal">
-                                        Request to bring
+                                        آوردن سفارش
                                         <img src="img/new-search/vhovk.png" class="req-to-bring-img">
                                     </div>
                                 </div>
@@ -1262,7 +1270,7 @@
                                     <span class="shopping-item-delivery-price">22</span>
                                     <span class="shopping-item-delivery-price-currency">$</span>
                                     <br>
-                                    Delivery Fee
+                                    کارمزد جابه جایی
                                 </label>
                             </div>
                             <div class="shopping-result-item-second-div col-md-11 col-sm-11">
@@ -1274,14 +1282,14 @@
                                 </label>
                                 <br>
                                 <label class="shopping-result-question-label">
-                                    Item's price :
+                                    قیمت جنس:
                                 </label>
                                 <label class="shopping-result-item-price">
                                     86000 $
                                 </label>
                                 <br>
                                 <label class="shopping-result-question-label">
-                                    From:
+                                    مبدا:
                                 </label>
                                 <label class="shopping-result-item-from">
                                     US, Spain
@@ -1290,12 +1298,12 @@
                             </div>
                             <div class="shopping-result-item-forth-div col-md-12 col-sm-12">
                                 <div class="inline-div shopping-result-detail-div">
-                                    <a href=".shopping-detail-modal" data-toggle="modal" data-target=".shopping-detail-modal" class="detail-anchor-2">Detail</a>
+                                    <a href=".shopping-detail-modal" data-toggle="modal" data-target=".shopping-detail-modal" class="detail-anchor-2">جزئیات</a>
                                 </div>
                                 <br class="special-br">
                                 <div class="inline-div req-to-bring-div">
                                     <div class="btn req-to-bring-btn" data-toggle="modal" data-target=".shopping-2nd-modal">
-                                        Request to bring
+                                        آوردن سفارش
                                         <img src="img/new-search/vhovk.png" class="req-to-bring-img">
                                     </div>
                                 </div>
@@ -1312,7 +1320,7 @@
                                     <span class="shopping-item-delivery-price">22</span>
                                     <span class="shopping-item-delivery-price-currency">$</span>
                                     <br>
-                                    Delivery Fee
+                                    کارمزد جابه جایی
                                 </label>
                             </div>
                             <div class="shopping-result-item-second-div col-md-12 col-sm-12">
@@ -1324,14 +1332,14 @@
                                 </label>
                                 <br>
                                 <label class="shopping-result-question-label">
-                                    Item's price :
+                                    قیمت جنس:
                                 </label>
                                 <label class="shopping-result-item-price">
                                     86000 $
                                 </label>
                                 <br>
                                 <label class="shopping-result-question-label">
-                                    From:
+                                    مبدا:
                                 </label>
                                 <label class="shopping-result-item-from">
                                     US, Spain
@@ -1339,12 +1347,12 @@
                             </div>
                             <div class="shopping-result-item-forth-div col-md-12 col-sm-12">
                                 <div class="inline-div shopping-result-detail-div">
-                                    <a href=".shopping-detail-modal" data-toggle="modal" data-target=".shopping-detail-modal" class="detail-anchor-2">Detail</a>
+                                    <a href=".shopping-detail-modal" data-toggle="modal" data-target=".shopping-detail-modal" class="detail-anchor-2">جزئیات</a>
                                 </div>
                                 <br class="special-br">
                                 <div class="inline-div req-to-bring-div">
                                     <div class="btn req-to-bring-btn" data-toggle="modal" data-target=".shopping-3rd-modal">
-                                        Request to bring
+                                        آوردن سفارش
                                         <img src="img/new-search/vhovk.png" class="req-to-bring-img">
                                     </div>
                                 </div>
@@ -1360,7 +1368,7 @@
                                     <span class="shopping-item-delivery-price">22</span>
                                     <span class="shopping-item-delivery-price-currency">$</span>
                                     <br>
-                                    Delivery Fee
+                                    کارمزد جابه جایی
                                 </label>
                             </div>
                             <div class="shopping-result-item-second-div col-md-12 col-sm-12">
@@ -1372,14 +1380,14 @@
                                 </label>
                                 <br>
                                 <label class="shopping-result-question-label">
-                                    Item's price :
+                                    قیمت جنس:
                                 </label>
                                 <label class="shopping-result-item-price">
                                     86000 $
                                 </label>
                                 <br>
                                 <label class="shopping-result-question-label">
-                                    From:
+                                    مبدا:
                                 </label>
                                 <label class="shopping-result-item-from">
                                     US, Spain
@@ -1387,12 +1395,12 @@
                             </div>
                             <div class="shopping-result-item-forth-div col-md-12 col-sm-12">
                                 <div class="inline-div shopping-result-detail-div">
-                                    <a href=".shopping-detail-modal" data-toggle="modal" data-target=".shopping-detail-modal" class="detail-anchor-2">Detail</a>
+                                    <a href=".shopping-detail-modal" data-toggle="modal" data-target=".shopping-detail-modal" class="detail-anchor-2">جزئیات</a>
                                 </div>
                                 <br class="special-br">
                                 <div class="inline-div req-to-bring-div">
                                     <div class="btn req-to-bring-btn" data-toggle="modal" data-target=".shopping-3rd-modal">
-                                        Request to bring
+                                        آوردن سفارش
                                         <img src="img/new-search/vhovk.png" class="req-to-bring-img">
                                     </div>
                                 </div>
@@ -1408,7 +1416,7 @@
                                     <span class="shopping-item-delivery-price">22</span>
                                     <span class="shopping-item-delivery-price-currency">$</span>
                                     <br>
-                                    Delivery Fee
+                                    کارمزد جابه جایی
                                 </label>
                             </div>
                             <div class="shopping-result-item-second-div col-md-12 col-sm-12">
@@ -1420,14 +1428,14 @@
                                 </label>
                                 <br>
                                 <label class="shopping-result-question-label">
-                                    Item's price :
+                                    قیمت جنس:
                                 </label>
                                 <label class="shopping-result-item-price">
                                     86000 $
                                 </label>
                                 <br>
                                 <label class="shopping-result-question-label">
-                                    From:
+                                    مبدا:
                                 </label>
                                 <label class="shopping-result-item-from">
                                     US, Spain
@@ -1435,12 +1443,12 @@
                             </div>
                             <div class="shopping-result-item-forth-div col-md-12 col-sm-12">
                                 <div class="inline-div shopping-result-detail-div">
-                                    <a href=".shopping-detail-modal" data-toggle="modal" data-target=".shopping-detail-modal" class="detail-anchor-2">Detail</a>
+                                    <a href=".shopping-detail-modal" data-toggle="modal" data-target=".shopping-detail-modal" class="detail-anchor-2">جزئیات</a>
                                 </div>
                                 <br class="special-br">
                                 <div class="inline-div req-to-bring-div">
                                     <div class="btn req-to-bring-btn" data-toggle="modal" data-target=".shopping-3rd-modal">
-                                        Request to bring
+                                        آوردن سفارش
                                         <img src="img/new-search/vhovk.png" class="req-to-bring-img">
                                     </div>
                                 </div>
@@ -1459,7 +1467,7 @@
                 <button type="button" class="close" data-dismiss="modal">×</button>
             </div>
             <div class="text-center modal-row">
-                <h2 class="modal-detail-header">Details:</h2>
+                <h2 class="modal-detail-header">جزئیات:</h2>
             </div>
             <div class="modal-row item-information">
                 <div class="item-whole-div">
@@ -1471,7 +1479,7 @@
                         <br>
                         <br>
                         <label class="item-weight question-label">
-                            Weight: 4kg
+                            وزن 4kg
                         </label>
                     </div>
                     <div class="item-inf-second-row inline-div">
@@ -1495,7 +1503,7 @@
                 <button type="button" class="close" data-dismiss="modal">×</button>
             </div>
             <div class="text-center modal-row">
-                <h2 class="modal-detail-header">Details:</h2>
+                <h2 class="modal-detail-header">جزئیان:</h2>
             </div>
             <div class="modal-row item-information">
                 <div class="item-whole-div">
@@ -1507,7 +1515,7 @@
                         <br>
                         <br>
                         <label class="item-weight question-label">
-                            Weight: 4kg
+                            وزن 4kg
                         </label>
                     </div>
                     <div class="item-inf-second-row inline-div">
@@ -1531,7 +1539,7 @@
                 <button type="button" class="close" data-dismiss="modal">×</button>
             </div>
             <div class="text-center modal-row">
-                <h2 class="modal-detail-header">Details:</h2>
+                <h2 class="modal-detail-header">جزئیات:</h2>
             </div>
             <div class="modal-row item-information">
                 <div class="item-whole-div">
@@ -1543,7 +1551,7 @@
                         <br>
                         <br>
                         <label class="item-weight question-label">
-                            Weight: 4kg
+                            وزن 4kg
                         </label>
                         <br>
                         <label class="item-weight question-label">
@@ -1581,7 +1589,7 @@
                 <button type="button" class="close" data-dismiss="modal">×</button>
             </div>
             <div class="text-center modal-row">
-                <h4 class="you-are-requesting-header">You are requesting to ship :</h4>
+                <h4 class="you-are-requesting-header">شما درخواست ارسالی به این شرح می خواهید بدهید</h4>
             </div>
             <div class="modal-row item-information">
                 <div class="item-whole-div">
@@ -1593,7 +1601,7 @@
                         <br>
                         <br>
                         <label class="item-weight question-label">
-                            Weight: 4kg
+4kg : وزن
                         </label>
                     </div>
                     <div class="item-inf-second-row inline-div">
@@ -1604,19 +1612,19 @@
             <div class="modal-row">
                 <br>
                 <div class="inline-div modal-from-div">
-                    <label class="from-label question-label">From:</label>
+                    <label class="from-label question-label">مبدا:</label>
                     <label class="city-label ans-label">Nevada,Las Vegas</label>
                 </div>
                 <div class="inline-div modal-space-div"></div>
                 <div class="inline-div modal-to-div">
-                    <label class="to-label question-label">To:</label>
+                    <label class="to-label question-label">مقصد:</label>
                     <label class="city-label ans-label">javadiye,hash metri avval</label>
                 </div>
                 <br>
                 <br>
                 <div>
                     <label class="question-label">
-                        Due in:
+                        بازه ی ارسال:
                     </label>
                     <label class="ans-label due-date-label">
                         13 Jan 2016 - 23 Jan 2018
@@ -1625,7 +1633,7 @@
                 <br>
                 <div>
                     <label class="question-label">
-                        The requested price
+قیمت درخواستی:
                     </label>
                     <span class="request-price-amount-span">
                         <label class="requested-price-amount">
@@ -1641,7 +1649,7 @@
                 <div>
                     <div class="inline-div you-do-this-div">
                         <label class="question-label">
-                            You do this for
+                            هزینه ی درخواستی برای انجام
                         </label>
                     </div>
                     <div class="inline-div slider-div">
@@ -1664,7 +1672,9 @@
                 </div>
             </div>
             <div class="modal-row-2">
-                <div class="btn btn-default send-request-btn ">Send request</div>
+                <div class="btn btn-default send-request-btn ">
+                    ارسال درخواست
+                </div>
             </div>
             <!--<div-->
         </div>
@@ -1720,7 +1730,7 @@
                 <button type="button" class="close" data-dismiss="modal">×</button>
             </div>
             <div class="text-center modal-row">
-                <h4 class="you-are-requesting-header">You are requesting to ship :</h4>
+                <h4 class="you-are-requesting-header">شما درخواست ارسالی به این شرح می خواهید بدهید</h4>
             </div>
             <div class="modal-row item-information">
                 <div class="item-whole-div">
@@ -1739,7 +1749,7 @@
                         </label>
 
                         <label class="item-weight question-label">
-                            Weight:
+                            وزن
                         </label>
                         <label class="item-weight ans-label">
                             4kg
@@ -1753,12 +1763,12 @@
             <div class="modal-row">
                 <br>
                 <div class="inline-div modal-from-div">
-                    <label class="from-label question-label">From:</label>
+                    <label class="from-label question-label">مبدا:</label>
                     <label class="city-label ans-label">Nevada,Las Vegas</label>
                 </div>
                 <div class="inline-div modal-space-div"></div>
                 <div class="inline-div modal-to-div">
-                    <label class="to-label question-label">To:</label>
+                    <label class="to-label question-label">مقصد:</label>
                     <label class="city-label ans-label">javadiye,hash metri avval</label>
                 </div>
                 <br>
@@ -1774,7 +1784,7 @@
                 <br>
                 <div>
                     <label class="question-label">
-                        The requested price
+                        قیمت درخواستی:
                     </label>
                     <span class="request-price-amount-span">
                         <label class="requested-price-amount-2">
@@ -1790,7 +1800,7 @@
                 <div>
                     <div class="inline-div you-do-this-div">
                         <label class="question-label">
-                            You do this for
+                            هزینه ی درخواستی برای انجام
                         </label>
                     </div>
                     <div class="inline-div slider-div">
@@ -1826,7 +1836,9 @@
                 </div>
             </div>
             <div class="modal-row-2" style="padding-bottom: 10px !important;">
-                <div class="btn btn-default send-request-btn ">Send request</div>
+                <div class="btn btn-default send-request-btn ">
+                    ارسال درخواست
+                </div>
             </div>
             <!--<div-->
         </div>
@@ -1836,85 +1848,139 @@
           <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <img src="img/global/logo.png" id="logo-img"></br>
-                    <label id="footer-shoar">
+                    <img src="img/global/logo.png" id="logo-img" style="float: right;"></br>
+                    <label id="footer-shoar" dir="rtl">
                         <i>
-                            we are some people like you.</br>
-                            we just do not like wasting our money.</br>
-                            we also like getting whatever we wish, from anywhere we like :)
+ما افرادی مثل شما هستیم
+                            </br>
+ با این تفاوت که علاقه ای به هزینه کردن اضافه نداریم.
+                           </br>
+همچنین ، بدمان نمی آید که اجناس اصل را با قیمت کمتر از خارج کشور تهیه کنیم :)
                         </i>
                     </label>
                 </div>
                 <div class="col-md-2">
-                    <ul class="footer-list">
-                        <li class="title"><b>Company<br><br></b></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Policies</a></li>
-                        <li><a href="#">Terms & Privacy</a></li>
-                        <li><a href="#">Who didn't support us?!</a></li>
+                    <ul class="footer-list" dir="rtl">
+                        <li class="title"><b>
+                            شرکت
+                            <br><br></b></li>
+                        <li><a href="#">
+                            درباره ما
+                        </a></li>
+                        <li><a href="#">
+فرصت های شغلی
+                        </a></li>
+                        <li><a href="#">
+در رسانه ها
+                        </a></li>
+                        <li><a href="#">
+                            وبلاگ
+                        </a></li>
+                        <li><a href="#">
+راهنما
+                        </a></li>
+                        <li><a href="#">
+سیاست ها
+                        </a></li>
+                        <li><a href="#">
+قوانین و خط و مشی رازداری
+                        </a></li>
+                        <li><a href="#">
+                            چه کسانی ما را حمایت نکردند؟
+                        </a></li>
                     </ul>
                 </div>
                 <div class="col-md-2">
-                    <ul class="footer-list">
-                        <li class="title"><b>discover<br><br></b></li>
-                        <li><a href="#">Trust and safety</a></li>
-                        <li><a href="#">Invite friends</a></li>
-                        <li><a href="#">Tooshe picks</a></li>
-                        <li><a href="#">Mobile</a></li>
-                        <li><a href="#">Business Travel</a></li>
-                        <li><a href="#">Site Map</a></li>
-                        <li><a href="#">FAQ</a></li>
+                    <ul class="footer-list" dir="rtl">
+                        <li class="title"><b>
+                            جست و جو
+                            <br><br></b></li>
+                        <li><a href="#">
+                            امنیت
+                        </a></li>
+                        <li><a href="#">
+دوستانت را دعوت کن!
+                        </a></li>
+                        <li><a href="#">
+                            بارهای توشه
+                        </a></li>
+                        <li><a href="#">
+                            موبایل
+                        </a></li>
+                        <li><a href="#">
+                            سفر تجاری
+                        </a></li>
+                        <li><a href="#">
+                            نقشه سایت
+                        </a></li>
+                        <li><a href="#">
+                            سوالات متداول
+                        </a></li>
                     </ul>
                 </div>
                 <div class="col-md-2">
-                    <ul class="footer-list">
-                        <li class="title"><b>Picking<br><br></b></li>
-                        <li><a href="#">Why Pick</a></li>
-                        <li><a href="#">Hospitality</a></li>
-                        <li><a href="#">Delivery ways</a></li>
+                    <ul class="footer-list" dir="rtl">
+                        <li class="title"><b>
+                            توشه بری
+                            <br><br></b></li>
+                        <li><a href="#">
+                            چرا توشه بری؟
+                        </a></li>
+                        <li><a href="#">
+                            مهمان نوازی
+                        </a></li>
+                        <li><a href="#">
+                            راه های تحویل
+                        </a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 footer-list">
                     <div class="row dropdown-div" id="language-dropdown">
                         <div class="dropdown">
-                          <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Language
+                          <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">
+                              زبان
                           <span class="caret"></span></button>
-                          <ul class="dropdown-menu ">
-                            <li><a href="#">English</a></li>
-                            <li><a href="#">Persian</a></li>
-                            <li><a href="#">Arabic</a></li>
-                            <li><a href="#">Indian</a></li>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">
+                                انگلیسی
+                            </a></li>
+                            <li><a href="#">
+                                فارسی
+                            </a></li>
+                            <li><a href="#">
+                                عربی
+                            </a></li>
+                            <li><a href="#">
+                                هندی
+                            </a></li>
                           </ul>
                         </div>
                     </div>
                     <div class="row dropdown-div">
                         <div class="dropdown">
-                          <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Currency
+                          <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">
+                              واحد پول
                           <span class="caret"></span></button>
                           <ul class="dropdown-menu">
-                            <li><a href="#">USD</a></li>
-                            <li><a href="#">Irr</a></li>
-                            <li><a href="#">Eur</a></li>
-                            <li><a href="#">Lira</a></li>
-                            <li><a href="#">Dirham</a></li>
+                            <li><a href="#">
+                                دلار
+                            </a></li>
+                            <li><a href="#">
+                                ریال
+                            </a></li>
+                            <li><a href="#">
+                                یورو
+                            </a></li>
+                            <li><a href="#">
+                                لیره
+                            </a></li>
+                            <li><a href="#">
+                                درهم
+                            </a></li>
                           </ul>
                         </div>
                     </div>
                 </div>
-
-              <!--<div class="col-md-6">-->
-                <!--<ul class="legals">-->
-                  <!--<li><a href="#">Terms &amp; Conditions</a></li>-->
-                  <!--<li><a href="#">Legals</a></li>-->
-                <!--</ul>-->
-              <!--</div>-->
-              <!--<div class="col-md-6 credit">-->
-                <!--<p>Designed &amp; Developed by <a href="http://www.peterfinlan.com/">Peter Finlan</a> exclusively for <a href="http://tympanus.net/codrops/"><em>Codrops</em></a></p>-->
-              <!--</div>-->
             </div>
             <div class="row">
                <!--<h4 id="join-us">Join us on</h4>-->
@@ -1940,7 +2006,7 @@
     <script src="js/global/english-input.js"></script>
 
     <script src="js/new-search/new-search.js"></script>
-    <script src="js/new-search/sort-by.js"></script>
+    <script src="js/new-search/sort-by-fa.js"></script>
 
 
 

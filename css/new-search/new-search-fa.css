@@ -1,0 +1,33 @@
+.sort-1st-div{
+    width: 12%;
+}
+.to-div {
+    width: 10%;
+}
+.date-div {
+    width: 15%;
+}
+.shopping-result-detail-div{
+    width: 40%;
+}
+.req-to-bring-div{
+    width: 50%;
+}
+.to-send{
+    direction: rtl;
+}
+.due-div {
+    width: 17%;
+}
+.item-weight{
+    direction: rtl;
+}
+.you-do-this-div {
+    width: 46%;
+}
+.slider-div {
+    width: 35%;
+}
+.slider-amount-div{
+    width: 15%;
+}

@@ -20,7 +20,7 @@
     width: 17%;
 }
 .item-weight{
-    direction: rtl;
+    /*direction: rtl;*/
 }
 .you-do-this-div {
     width: 46%;
@@ -30,4 +30,16 @@
 }
 .slider-amount-div{
     width: 15%;
+}
+.shopping-1st-modal-1st-div{
+    direction: rtl;
+}
+.total-payment-to-u{
+    direction: rtl;
+}
+.for-div{
+    direction: rtl;
+}
+.for-img{
+    margin-left: 15px;
 }

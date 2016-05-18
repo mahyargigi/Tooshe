@@ -17,7 +17,7 @@
     direction: rtl;
 }
 .due-div {
-    width: 17%;
+    width: 18%;
 }
 .item-weight{
     /*direction: rtl;*/
@@ -42,4 +42,14 @@
 }
 .for-img{
     margin-left: 15px;
+}
+.warning-label , .warning-label-2{
+    direction: rtl;
+}
+.send-request-btn{
+    direction: rtl;
+}
+.due-date{
+    direction: rtl;
+    text-align: left;
 }

@@ -212,13 +212,29 @@ $(document).ready(function() {
         $('.warning-label-2').css('display', 'none');
     }
     $('#you-do-this-slider-1').on('change',function(){
-        $('.slider-amount-label').html($(this).val());
-        if($(this).val()>parseInt($('.requested-price-amount').html())){
-            $('.warning-label').css('display','block');
+        //console.log("val:")
+        //$(this).closest('.application-fee-modal').find('.slider-amount-label').css('display','none');
+        $(this).closest('.application-fee-modal').find('.slider-amount-label').html($(this).val());
+        //console.log("the log:")
+        //console.log();
+        //if($(this).val()>parseInt($('.requested-price-amount').html())){
+        //    $('.warning-label').css('display','block');
+        //    //console.log("here1");
+        //}
+        //else{
+        //    $('.warning-label').css('display','none');
+        //    //console.log("here2");
+        //}
+    });
+    $('#you-do-this-slider-3').on('change',function(){
+        //console.log("cal:"+$(this).closest('.application-fee-modal').children('.slider-amount-label'));
+        $(this).closest('.application-fee-modal2').find('.slider-amount-label').html($(this).val())
+        if($(this).val()>parseInt($(this).closest('.application-fee-modal2').find('.requested-price-amount').html())){
+            $(this).closest('.application-fee-modal2').find('.warning-label').css('display','block');
             //console.log("here1");
         }
         else{
-            $('.warning-label').css('display','none');
+            $(this).closest('.application-fee-modal2').find('.warning-label').css('display','none');
             //console.log("here2");
         }
     });

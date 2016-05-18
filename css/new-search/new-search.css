@@ -192,7 +192,7 @@ a img,a label {
 }
 .detail-anchor{
     text-decoration: underline;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
     color: rgb(255, 61, 113);
 }
 .detail-anchor-2{
@@ -347,6 +347,16 @@ input[type=text]{
 .application-fee-modal{
     background: whitesmoke;
     width: 500px;
+    height: 520px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    /*padding-right: 20px !important;*/
+    /*padding-left: 20px !important;*/
+}
+.application-fee-modal2{
+    background: whitesmoke;
+    width: 500px;
     height: 602px;
     margin-top: 50px;
     margin-left: auto;
@@ -458,11 +468,20 @@ input[type=text]{
 .you-do-this-div{
     width: 25%;
 }
+.your-offered-fee{
+    width: 40%;
+}
 .slider-div{
     width: 40%;
 }
 .slider-amount-div{
     width: 30%;
+    color: red;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.slider-amount-div2{
+    width: 15%;
     color: red;
     font-size: 20px;
     margin-left: 10px;
@@ -687,9 +706,12 @@ button.close{
     bottom: 10px;
 }
 /*, .shopping-detail-modal*/
-.application-fee-modal , .shopping-1st-modal , .shopping-2nd-modal , .shopping-3rd-modal , .traveler-detail-modal , .parcels-detail-modal{
+.application-fee-modal ,.application-fee-modal2, .shopping-1st-modal , .shopping-2nd-modal , .shopping-3rd-modal , .traveler-detail-modal , .parcels-detail-modal{
     overflow-x: hidden !important;
     /*overflow-y: hidden !important;*/
+}
+.weight-capacity{
+    color: #a3a49c;
 }
 
 .special-br{

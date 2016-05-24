@@ -53,3 +53,17 @@
     direction: rtl;
     text-align: left;
 }
+.application-fee-modal{
+    height: 535px;
+}
+.application-fee-modal2{
+    height: 620px;
+}
+@media(max-width: 911px){
+    .information-2nd-div{
+        width: 60%;
+    }
+    .information-3rd-div{
+        width: 23%;
+    }
+}

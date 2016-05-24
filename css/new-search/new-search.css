@@ -195,6 +195,11 @@ a img,a label {
     /*margin-left: 10px;*/
     color: rgb(255, 61, 113);
 }
+.detail-anchor-3{
+    text-decoration: underline;
+    margin-left: 10px;
+    color: rgb(255, 61, 113);
+}
 .detail-anchor-2{
     text-decoration: underline;
     color: rgb(255, 61, 113);
@@ -767,16 +772,24 @@ button.close{
         min-width: 700px !important;
         margin-left: 5% !important;
     }
+    .request-btn{
+        width: 120%;
+    }
 
 }
 @media (max-width: 1090px) and (min-width: 992px) {
-    .container-fluid{
+    .container-fluid , footer{
         min-width: 1090px;
     }
 }
 @media (max-width: 991px) {
     .result-div{
         margin-left: 0% !important;
+    }
+}
+@media (max-width: 732px) {
+    footer{
+        min-width: 732px;
     }
 }
 

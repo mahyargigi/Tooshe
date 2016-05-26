@@ -98,6 +98,7 @@ input:focus{
     background: url(../../img/flightSubmit/ssssssssssssssssss.png);
     /*background-size: 100%;*/
     background-repeat: round;
+    padding-bottom: 20px;
 }
 .form-input{
     width: 100% ;
@@ -141,9 +142,9 @@ input:focus{
     background-color: white;
     resize: none;
     width: 90%;
-    border-radius: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
+    border-radius: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-left: 35px;

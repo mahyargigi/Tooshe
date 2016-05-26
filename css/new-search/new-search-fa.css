@@ -23,13 +23,16 @@
     /*direction: rtl;*/
 }
 .you-do-this-div {
-    width: 46%;
+    width: 40%;
 }
 .slider-div {
     width: 35%;
 }
+.slider-div2{
+    width: 28%;
+}
 .slider-amount-div{
-    width: 15%;
+    width: 18%;
 }
 .shopping-1st-modal-1st-div{
     direction: rtl;
@@ -59,6 +62,17 @@
 .application-fee-modal2{
     height: 620px;
 }
+.radio-label{
+    position: relative;
+    top: -8px;
+    right: -7px;
+}
+.radio-label-description{
+    margin-right: 30px;
+}
+.shopping-1st-modal{
+    height: 240px;
+}
 @media(max-width: 911px){
     .information-2nd-div{
         width: 60%;
@@ -66,4 +80,10 @@
     .information-3rd-div{
         width: 23%;
     }
+}
+.price{
+    font-size: 30px;
+}
+.you-do-this-div2{
+    width: 48%;
 }

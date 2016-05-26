@@ -4,6 +4,8 @@
 }
 .search-box-title{
     text-align: center;
+    position: relative;
+    bottom: 10px;
 }
 .search-box-ul{
     text-align: center;
@@ -26,7 +28,7 @@
     margin-bottom: 10px;
 }
 .up-to-div{
-    width: 15%;
+    width: 17%;
     margin-left: 5px;
 }
 .up-to-number-div{
@@ -34,7 +36,7 @@
     text-align: center;
 }
 .input-range-div{
-    width: 65%;
+    width: 63%;
     /*margin-left: auto;*/
     /*margin-right: auto;*/
 }
@@ -307,6 +309,7 @@ a img,a label {
 .pagination-div{
     vertical-align: middle;
     float: right;
+    margin-right: -12px;
 }
 .passengers-can-bring-label{
     font-size: 17px;
@@ -459,6 +462,7 @@ input[type=text]{
 }
 .modal-from-div{
     width: 45%;
+    vertical-align: top;
 }
 .modal-space-div{
     width: 8%;
@@ -729,6 +733,11 @@ button.close{
     .req-to-bring-div{
         margin-left: -3px;
     }
+
+    /*.second-line-div{*/
+        /*position: relative;*/
+        /*bottom: -25px;*/
+    /*}*/
 }
 @media (max-width: 991px){
     .shopping-result-detail-div{

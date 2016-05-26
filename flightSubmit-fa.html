@@ -167,17 +167,17 @@
                             <label class="travel-label hidden-xs" style="margin-left: 40px;">
                                 شهر مبدا
                             </label>
-                            <input id="departure-city" class="input-lg travel-input">
+                            <input id="departure-city" placeholder="به انگلیسی" class="input-lg travel-input">
                         </div>
                         <div class="col-md-2"></div>
-                        <div class="col-md-5 col-sm-6 col-xs-12">
+                        <div class="col-md-5 col-sm-6 col-xs-12 dest-div">
                             <label class="travel-label col-xs-12 visible-xs">
                             شهر مقصد
                             </label>
                             <label class="travel-label hidden-xs">
                             شهر مقصد
                             </label>
-                            <input id="arrival-city" class="input-lg travel-input">
+                            <input id="arrival-city" placeholder="به انگلیسی"  class="input-lg travel-input">
                         </div>
                     </div>
                     <div class="row second-row">
@@ -214,79 +214,96 @@
                     </div>
                     <hr style="border-color: #c6c6c6;">
                     <div class="row form-horizontal">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-7 col-sm-9 col-xs-12">
-                            <div class="col-sm-1 col-xs-1 visible-xs visible-sm"></div>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
+                        <!--<div class="col-md-2"></div>-->
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="row textarea-row " style="margin-top: 0px ; margin-left: 0px;">
+                                <!--<label id="any-information" style="width: 80%;" dir="rtl" >-->
+                                   <!--آیا چیز دیگری هست که افراد باید در مورد مسافرت شما بدانند ؟-->
+                            <!--<br>-->
+                                    <!--(نظیر محدودیت ها و ...)-->
+                                <!--</label>-->
+                                <textarea class="" placeholder="آیا چیز دیگری هست که افراد باید در مورد مسافرت شما بدانند؟" dir="rtl" rows="6" id="textArea"></textarea>
+                            </div>
+                            <!--<div class="row">-->
+                            <br>
+                            <br>
+                            <!--</div>-->
+                        </div>
+                        <div class="col-md-6 col-sm-9 col-xs-12">
+                            <!--<div class="col-sm-1 col-xs-1 visible-xs visible-sm"></div>-->
+                            <div class="col-md-4 col-sm-6 col-xs-3" style="padding-left: 0px;">
                                 <label class="travel-label max-weight-label" dir="rtl">
-                                بیشترین وزنی که می توانم جا به جا کنم
+ظرفیت بار
                                 </label>
                             </div>
                             <div class="col-md-3 col-sm-3 col-xs-4">
                                 <input type="number" class="input-lg" min='1' max='40' id="max-weight-input">
                             </div>
                             <div class="col-md-1 col-sm-2">
-                                <label class="travel-label">
+                                <label class="travel-label" style="position: relative;top: 7px;">
                                     کیلوگرم
                                 </label>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-3 col-xs-3" id="warning-div">
-                            <!--<label>You cannot carry more than 40kg!</label>-->
-                        </div>
-                    </div>
-                    <hr style="border-color: #c6c6c6;">
-                    <div class="row" style="margin-top: 0px">
-                        <div class="col-md-7  col-sm-12 col-xs-12">
-                            <div>
-                                <!--<div class="col-md-1"></div>-->
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <div class="radio radio-primary col-md-12 col-sm-12 col-xs-12" id="first-radio">
-                                        <label style="" class="input-label radio-label">
-                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-                                                                                        به صورت رایگان تقاضاها را انجام می دهم
-                                        </label>
-                                        <span style="width: 10%;"><img style=""  src="img/farah-pahlavi.png" id="for-free-image"></span>
-                                        <span style="width: 21%;vertical-align: middle;" dir="rtl" id="for-free-description">                                        (این کار باعث می شود که شما پروفایل محبوب تری داشته باشید و در آینده تقاضاهای بیشتری دریافت کنید)</span>
-                                    </div>
-                                    <div class="radio radio-primary col-md-12 col-sm-12 col-xs-12" id="second-radio">
-                                        <!--<div class="col-md-6" style="display: inline">-->
-                                            <label class="input-label col-md-12 col-sm-12 col-xs-12 radio-label">
-                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" >
-                                               صرفا تقاضاهای بالای این قیمت را انجام می دهم
-                                            </label>
-                                        <!--</div>-->
-                                        <!--<div class="col-md-6" style="display: inline">-->
-                                            <span>
-                                                <div class="col-md-10 col-sm-10 col-xs-10">
-                                                    <input class="mdl-slider mdl-js-slider" disabled type="range" min="0" max="100" value="25" tabindex="0" id="slider"/>
-                                                </div>
-                                                <div class="col-md-2 col-sm-2 col-xs-2">
-                                                    <label id="money-input">25$</label>
-                                                </div>
-                                            </span>
-                                        <!--</div>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5 col-sm-12 col-xs-12">
-                            <div class="row" style="margin-top: 0px ;">
-                                <label id="any-information" style="width: 80%;" dir="rtl" >
-                                   آیا چیز دیگری هست که افراد باید در مورد مسافرت شما بدانند ؟
-                            <br>
-                                    (نظیر محدودیت ها و ...)
-                                </label>
-                                <textarea class="form-control" dir="rtl" rows="4" id="textArea" style="width: 80%"></textarea>
-                            </div>
-                            <!--<div class="row">-->
-                                <div class="btn btn-material-cyan btn-material-cyan-400" id='submit-button' data-toggle="modal" data-target="#signup_modal">
+                            <div class="btn btn-material-cyan btn-material-cyan-400" id='submit-button' data-toggle="modal" data-target="#signup_modal">
                                     سفر من را ثبت کن
                                 </div>
-                            <br>
-                            <br>
-                            <!--</div>-->
                         </div>
+                        <!--<div class="col-md-3 col-sm-3 col-xs-3" id="warning-div">-->
+                            <!--&lt;!&ndash;<label>You cannot carry more than 40kg!</label>&ndash;&gt;-->
+                        <!--</div>-->
+                    </div>
+                    <!--<hr style="border-color: #c6c6c6;">-->
+                    <div class="row" style="margin-top: 0px">
+                        <!--<div class="col-md-7  col-sm-12 col-xs-12">-->
+                            <!--<div>-->
+                                <!--&lt;!&ndash;<div class="col-md-1"></div>&ndash;&gt;-->
+                                <!--<div class="col-md-12 col-sm-12 col-xs-12">-->
+                                    <!--<div class="radio radio-primary col-md-12 col-sm-12 col-xs-12" id="first-radio">-->
+                                        <!--<label style="" class="input-label radio-label">-->
+                                            <!--<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">-->
+                                                                                        <!--به صورت رایگان تقاضاها را انجام می دهم-->
+                                        <!--</label>-->
+                                        <!--<span style="width: 10%;"><img style=""  src="img/farah-pahlavi.png" id="for-free-image"></span>-->
+                                        <!--<span style="width: 21%;vertical-align: middle;" dir="rtl" id="for-free-description">                                        (این کار باعث می شود که شما پروفایل محبوب تری داشته باشید و در آینده تقاضاهای بیشتری دریافت کنید)</span>-->
+                                    <!--</div>-->
+                                    <!--<div class="radio radio-primary col-md-12 col-sm-12 col-xs-12" id="second-radio">-->
+                                        <!--&lt;!&ndash;<div class="col-md-6" style="display: inline">&ndash;&gt;-->
+                                            <!--<label class="input-label col-md-12 col-sm-12 col-xs-12 radio-label">-->
+                                                <!--<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" >-->
+                                               <!--صرفا تقاضاهای بالای این قیمت را انجام می دهم-->
+                                            <!--</label>-->
+                                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<div class="col-md-6" style="display: inline">&ndash;&gt;-->
+                                            <!--<span>-->
+                                                <!--<div class="col-md-10 col-sm-10 col-xs-10">-->
+                                                    <!--<input class="mdl-slider mdl-js-slider" disabled type="range" min="0" max="100" value="25" tabindex="0" id="slider"/>-->
+                                                <!--</div>-->
+                                                <!--<div class="col-md-2 col-sm-2 col-xs-2">-->
+                                                    <!--<label id="money-input">25$</label>-->
+                                                <!--</div>-->
+                                            <!--</span>-->
+                                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-5 col-sm-12 col-xs-12">-->
+                            <!--<div class="row" style="margin-top: 0px ;">-->
+                                <!--<label id="any-information" style="width: 80%;" dir="rtl" >-->
+                                   <!--آیا چیز دیگری هست که افراد باید در مورد مسافرت شما بدانند ؟-->
+                            <!--<br>-->
+                                    <!--(نظیر محدودیت ها و ...)-->
+                                <!--</label>-->
+                                <!--<textarea class="form-control" dir="rtl" rows="4" id="textArea" style="width: 80%"></textarea>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+                                <!--<div class="btn btn-material-cyan btn-material-cyan-400" id='submit-button' data-toggle="modal" data-target="#signup_modal">-->
+                                    <!--سفر من را ثبت کن-->
+                                <!--</div>-->
+                            <!--<br>-->
+                            <!--<br>-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--</div>-->
                     </div>
                 </form>
             </div>

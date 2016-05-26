@@ -9,15 +9,27 @@ body{
     #any-information{
         margin-left: 20px;
     }
-    #textArea{
-        margin-left: 20px;
-    }
+    /*#textArea{*/
+        /*margin-left: 20px;*/
+    /*}*/
     #submit-button{
-        margin-right: 160px !important;
-        margin-left: 100px !important;
+        /*margin-right: 160px !important;*/
+        /*margin-left: 100px !important;*/
+    }
+    .max-weight-label{
+        float: left !important;
     }
     #money-input{
         margin-right: 30px;
+    }
+    .dest-div{
+        text-align: left !important;
+    }
+    .textarea-row{
+        margin-left: 0px !important;
+    }
+    #textArea{
+        margin-left: 0px !important;
     }
 }
 @media(max-width: 1552px) and (min-width: 992px){
@@ -26,19 +38,27 @@ body{
     }
 }
 @media (max-width: 991px) and (min-width: 768px) {
-    body{
+    body , .container-fluid{
         width: 991px !important;
     }
     #any-information{
-        margin-left: 50px;
-    }
-    #textArea{
         margin-left: 50px;
     }
         #submit-button{
         margin-right: 135px !important;
         margin-left: 100px !important;
     }
+}
+@media (max-width: 460px) {
+    body{
+        width: 460px;
+    }
+}
+.dest-div{
+    text-align: right;
+}
+#arrival-city{
+    margin-right: 22px;
 }
 .container-fluid{
     margin-top: 50px;
@@ -87,10 +107,16 @@ input:focus{
 }
 #max-weight-input{
     /*width: 100%;*/
-    width: 80px;
+    /*width: 80px;*/
     color: red;
     text-align: center;
     font-size: 20px;
+}
+.max-weight-label{
+    float: right;
+    position: relative;
+    top: 7px;
+    right: -15px;
 }
 .input-label{
     margin-right: 5px;
@@ -114,11 +140,23 @@ input:focus{
 #textArea{
     background-color: white;
     resize: none;
+    width: 90%;
+    border-radius: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 35px;
 }
 #submit-button{
-    float: right;
-    margin-right: 75px;
+    /*float: right;*/
+    /*margin-right: 90px;*/
     margin-bottom: 30px;
+    margin-top: 40px;
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
 }
 .travel-label{
     /*margin-right: 10px ;*/

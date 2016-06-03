@@ -208,6 +208,7 @@ form.send-something-form{
 }
 #slider-value{
     font-size: 30px;
+    margin-top: 15px;
 }
 #find-passengers-id{
     width: 100%;
@@ -245,11 +246,11 @@ input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     border: solid;
     border-color: rgba(172, 165, 170, 0.93);
-    height: 16px;
-    width: 16px;
+    height: 36px;
+    width: 36px;
     border-radius: 50%;
     background: white;
-    margin-top: -4px;
+    margin-top: -15px;
 }
 
 input[type=range]:focus {
@@ -288,11 +289,11 @@ input[type=range]::-moz-range-thumb {
     -webkit-appearance: none;
     border: solid;
     border-color: rgba(172, 165, 170, 0.93);
-    height: 16px;
-    width: 16px;
+    height: 36px;
+    width: 36px;
     border-radius: 50%;
     background: white;
-    margin-top: -4px;
+    margin-top: -15px;
 }
 
 /*hide the outline behind the border*/

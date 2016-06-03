@@ -3,6 +3,8 @@
     margin-left: 0 !important;
 }
 .note-text-div , .note-text-2-div , .note-text-3-div , .note-text-4-div{
+    padding-right: 20px !important;
+    padding-left: 5px !important;
     margin-left: 0 !important;
     margin-right: 10px !important;
 }
@@ -36,4 +38,9 @@
 }
 .goods-inf{
     font-size: 0.9em !important;
+}
+@media (max-width: 1404px ) and (min-width: 992px) {
+    .sticker-image{
+        /*top: 60px;*/
+    }
 }

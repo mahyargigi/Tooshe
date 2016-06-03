@@ -22,7 +22,7 @@
     font-family: iransans;
     src: url(../fonts/IRANSans_Light.ttf);
 }
-#middle-navbar> li> a, #search_button> a , label , footer , input , textarea , a , p ,footer b,footer i, button , span , div{
+#middle-navbar> li> a, #search_button> a , label , footer , input , textarea , a , p ,footer b,footer i, button , span , div , li{
     font-family: iransans,Arial !important;
 }
 .glyphicon{

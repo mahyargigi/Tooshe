@@ -238,6 +238,31 @@ div.radio{
     border-radius: 10px;
     border-color: green;
 }
+.col-md-12 div.order-btn{
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+    padding-bottom: 20px !important;
+    padding-top: 20px !important;
+    border-radius: 5px;
+}
+
+@media (max-width: 991px ) {
+    .radio-whole-div , .online-markets-div , .image-container , .percent-for-tooshe , .totally-pay-div , .accurate-to-be-div , .delivery-fee-div , .number-div{
+        direction: rtl;
+    }
+    .delivery-fee-label{
+        margin-top: 15px;
+    }
+    .image-container .top-image {
+        right: 15px;
+    }
+    /*.first-label{*/
+        /*display: inline-block;*/
+    /*}*/
+    /*.second-label{*/
+        /*display: none;*/
+    /*}*/
+}
 
 /*slider*/
 
@@ -298,7 +323,7 @@ input[type=range]::-moz-range-track {
 
 input[type=range]::-moz-range-thumb {
     -webkit-appearance: none;
-    border: solid;f
+    border: solid;
     border-color: rgba(172, 165, 170, 0.93);
     height: 36px; /* past 16px*/
     width: 36px; /* past 16px*/

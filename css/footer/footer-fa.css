@@ -14,10 +14,14 @@ h1,h2,h3,h4,h5,h6{
     /*font-size: 1.2em !important;*/
 }
 footer a { color: #a1a9b0; }
+footer .row{
+    margin-top: 0px !important;
+}
 footer {
     background-color: #242830;
     background: url("../../img/footer-background.jpg");
-    padding: 40px 0 30px;
+    padding: 0px !important;
+    /*padding: 40px 0 30px;*/
     margin-top: 50px;
 }
 footer p {

@@ -238,4 +238,18 @@ $(document).ready(function(){
         $('.you-pay').html($('#slider').val()+'$');
 //            console.log("amount-input:"+(parseInt($('.amount-input').val()))+" slider-amount:"+parseInt($('#slider').val())+" slider/10:"+(parseInt($('#slider').val())/10));
     });
+    $('#date1').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
+    $('.number').on('change',function(){
+      if(this.value < 1){
+          this.value = 1;
+      }
+    });
+    $('.weight').on('change',function(){
+      if(this.value > 40){
+          this.value = 40;
+      }
+      else if(this.value < 0){
+          this.value = 0;
+      }
+    });
 });

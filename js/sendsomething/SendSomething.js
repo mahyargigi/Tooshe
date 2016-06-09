@@ -2,8 +2,18 @@
  * Created by User on 8/25/15.
  */
 $(document).ready(function(){
-    $('#toDate').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
-    $('#fromDate').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
+    //$('#toDate').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
+    //$('#fromDate').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
+    new Pikaday({
+        isRTL : true ,
+        firstday : 6 ,
+        field: $('#toDate')[0] ,
+    });
+    new Pikaday({
+        isRTL : true ,
+        firstday : 6 ,
+        field: $('#fromDate')[0] ,
+    });
 //    var slider = document.getElementById('slider');
 //    noUiSlider.create(slider, {
 //        start: [20, 80],

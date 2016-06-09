@@ -43,9 +43,9 @@ $(document).ready(function(){
     input2.onkeypress = initialize(input2);
 
 
-    $('#date1').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
-    $('#date2').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
-    $('#date3').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
+    //$('#date1').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
+    //$('#date2').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
+    //$('#date3').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
     $('#first-radio').on('click',function(){
         if($('#optionsRadios1').is(':checked')) {
 //            alert("first is checked!");
@@ -63,12 +63,27 @@ $(document).ready(function(){
         }
 //        console.log("second radio clicked");
     });
+    new Pikaday({
+        isRTL : true ,
+        firstday : 6 ,
+        field: $('#date1')[0] ,
+    });
+    new Pikaday({
+        isRTL : true ,
+        firstday : 6 ,
+        field: $('#date2')[0] ,
+    });
+    new Pikaday({
+        isRTL : true ,
+        firstday : 6 ,
+        field: $('#date3')[0] ,
+    });
 //    console.log("is: "+$('#optionsRadios1').checked);
 
-
-    $('#date1').bootstrapMaterialDatePicker('setMinDate', moment());
-    $('#date2').bootstrapMaterialDatePicker('setMinDate', moment());
-    $('#date3').bootstrapMaterialDatePicker('setMinDate', moment());
+    //$('#date1').pDatepicker();
+    //$('#date1').bootstrapMaterialDatePicker('setMinDate', moment());
+    //$('#date2').bootstrapMaterialDatePicker('setMinDate', moment());
+    //$('#date3').bootstrapMaterialDatePicker('setMinDate', moment());
 });
 
 

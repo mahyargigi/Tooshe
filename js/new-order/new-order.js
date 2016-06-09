@@ -238,7 +238,12 @@ $(document).ready(function(){
         $('.you-pay').html($('#slider').val()+'$');
 //            console.log("amount-input:"+(parseInt($('.amount-input').val()))+" slider-amount:"+parseInt($('#slider').val())+" slider/10:"+(parseInt($('#slider').val())/10));
     });
-    $('#date1').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
+    //$('#date1').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
+    new Pikaday({
+        isRTL : true ,
+        firstday : 6 ,
+        field: $('#date1')[0] ,
+    });
     $('.number').on('change',function(){
       if(this.value < 1){
           this.value = 1;

@@ -276,11 +276,38 @@ $(document).ready(function() {
     }
 
 
-    $('#from-date').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
-    $('#from-date2').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
-    $('#to-date').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
-    $('#to-date2').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
-    $('#shopping-due-in-date').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
+    //$('#from-date').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
+    //$('#from-date2').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
+    //$('#to-date').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
+    //$('#to-date2').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
+    //$('#shopping-due-in-date').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
+
+    new Pikaday({
+        isRTL : true ,
+        firstday : 6 ,
+        field: $('#from-date')[0] ,
+    });
+    new Pikaday({
+        isRTL : true ,
+        firstday : 6 ,
+        field: $('#from-date2')[0] ,
+    });
+    new Pikaday({
+        isRTL : true ,
+        firstday : 6 ,
+        field: $('#to-date')[0] ,
+    });
+    new Pikaday({
+        isRTL : true ,
+        firstday : 6 ,
+        field: $('#to-date2')[0] ,
+    });
+    new Pikaday({
+        isRTL : true ,
+        firstday : 6 ,
+        field: $('#shopping-due-in-date')[0] ,
+    });
+
     $('.travelers-a').on('click',function(){
         $('.parcels-result-div').css('display','none');
         $('.shopping-result-div').css('display','none');

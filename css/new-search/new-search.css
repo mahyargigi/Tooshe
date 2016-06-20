@@ -372,7 +372,67 @@ input[type=text]{
     /*padding-right: 20px !important;*/
     /*padding-left: 20px !important;*/
 }
-.traveler-detail-modal , .parcels-detail-modal{
+.top-div {
+    width: 100%;
+    /*padding-left: 10px;*/
+    /*padding-right: 10px;*/
+    /*border-right: solid 1px #b8b9b1;*/
+    /*height: 500px;*/
+    margin-bottom: 10px;
+}
+.left-div{
+    width: 60%;
+}
+.right-div{
+    width: 30%;
+    position: relative;
+    right: -20px;
+    top: 12px;
+}
+.chat-textarea{
+    padding: 10px;
+    width: 90% !important;
+    margin-left: 30px;
+    /*margin-right: auto;*/
+}
+.msg-send{
+    background: #26c6da !important;
+    color: white !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    width: 90%;
+    margin-left: 6%;
+}
+.character-remained{
+    margin-left: 30px;
+    display: block;
+}
+.chat-left-img{
+    /*vertical-align: 1500%;*/
+    width: 75px;
+    height: 75px;
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+.name-label{
+    text-align: center;
+    /*margin-top: 20px;*/
+    vertical-align: -60%;
+}
+.chat-right-img{
+    width: 50px;
+    height: 50px;
+    margin-left: 30px !important;
+}
+.chat-img{
+}
+.bottom-div{
+    /*margin-top: 5%;*/
+}
+.traveler-detail-modal , .parcels-detail-modal , .chat-modal{
     background: whitesmoke;
     width: 500px;
     height: 500px;
@@ -715,7 +775,7 @@ button.close{
     bottom: 10px;
 }
 /*, .shopping-detail-modal*/
-.application-fee-modal ,.application-fee-modal2, .shopping-1st-modal , .shopping-2nd-modal , .shopping-3rd-modal , .traveler-detail-modal , .parcels-detail-modal{
+.application-fee-modal ,.application-fee-modal2, .shopping-1st-modal , .shopping-2nd-modal , .shopping-3rd-modal , .traveler-detail-modal , .parcels-detail-modal , .chat-modal{
     overflow-x: hidden !important;
     /*overflow-y: hidden !important;*/
 }

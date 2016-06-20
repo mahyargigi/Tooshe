@@ -323,6 +323,9 @@ $(document).ready(function() {
         $('.parcels-result-div').css('display','none');
         $('.shopping-result-div').css('display','block');
     });
+    $('.chat-textarea').on('change keyup paste',function(){
+       $('.character-remained').html(500 - parseInt($(this).val().length));
+    });
 
 
 //    $('#from-date').bootstrapMaterialDatePicker('setMinDate', moment());

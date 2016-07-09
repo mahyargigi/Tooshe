@@ -253,6 +253,7 @@ $(document).ready(function() {
     var input1 = document.getElementById('from-input');
     input1.onkeypress = function(){
         $('#from-input').geocomplete();
+        console.log("from!");
     }
     var input2 = document.getElementById('to-input');
     input2.onkeypress = function(){
@@ -282,30 +283,110 @@ $(document).ready(function() {
     //$('#to-date2').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
     //$('#shopping-due-in-date').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
 
-    new Pikaday({
+    var from_min_date = moment().toDate();
+    var from_max_date = new Date(2099 , 1 , 1 ,0,0,0,0 );
+
+    var from_2_min_date = moment().toDate();
+    var from_2_max_date = new Date(2099 , 1 , 1 ,0,0,0,0 );
+
+    var to_min_date =  moment().toDate();
+    var to_max_date =  new Date(2099 , 1 , 1 ,0,0,0,0 );
+
+    var to_2_min_date = moment().toDate();
+    var to_2_max_date = new Date(2099 , 1 , 1 ,0,0,0,0 );
+
+    $('#from-date').on('change',function(){
+        splitted = String($(this).val()).split('-');
+        //console.log('splitted1:'+parseInt(splitted[0]));
+        //console.log('splitted2:'+parseInt(splitted[1]));
+        //console.log('splitted3:'+parseInt(splitted[2]));
+
+        to_min_date = new Date(parseInt(splitted[0]), parseInt(splitted[1])-1, parseInt(splitted[2]), 0, 0 , 0, 0 );
+
+        to_date.setMinDate(to_min_date);
+        to_date.setMaxDate(to_max_date);
+        to_date.gotoDate(to_min_date);
+
+        console.log("from done!");
+    });
+    $('#from-date2').on('change',function(){
+       splitted = String($(this).val()).split('-');
+       to_2_min_date = new Date(parseInt(splitted[0]), parseInt(splitted[1])-1, parseInt(splitted[2]), 0, 0 , 0, 0 );
+
+       to_2_date.setMinDate(to_2_min_date);
+       to_2_date.setMaxDate(to_2_max_date);
+       to_2_date.gotoDate(to_2_min_date);
+
+       //min_date2 = $(this).val();
+        console.log("from2 done!");
+    });
+    $('#to-date').on('change',function(){
+        splitted = String($(this).val()).split('-');
+        from_max_date = new Date(parseInt(splitted[0]), parseInt(splitted[1])-1, parseInt(splitted[2]), 0, 0 , 0, 0 );
+
+        from_date.setMinDate(from_min_date);
+        from_date.setMaxDate(from_max_date);
+        //from_date.gotoDate(from_max_date);
+
+        console.log("to done!");
+    });
+    $('#to-date2').on('change',function(){
+        splitted = String($(this).val()).split('-');
+        from_2_max_date = new Date(parseInt(splitted[0]), parseInt(splitted[1])-1, parseInt(splitted[2]), 0, 0 , 0, 0 );
+
+        from_2_date.setMinDate(from_2_min_date);
+        from_2_date.setMaxDate(from_2_max_date);
+        //from_2_date.gotoDate(from_2_max_date);
+
+        //max_date2 = $(this).val();
+        console.log("to2 done!");
+    });
+
+    var from_date = new Pikaday({
         isRTL : true ,
         firstday : 6 ,
         field: $('#from-date')[0] ,
+        minDate: from_min_date,
+        maxDate: from_max_date,
     });
-    new Pikaday({
+    var from_2_date =  new Pikaday({
         isRTL : true ,
         firstday : 6 ,
         field: $('#from-date2')[0] ,
+        minDate: from_2_min_date,
+        maxDate: from_2_max_date,
     });
-    new Pikaday({
+    var to_date = new Pikaday({
         isRTL : true ,
         firstday : 6 ,
         field: $('#to-date')[0] ,
+        minDate: to_min_date,
+        maxDate: to_max_date,
     });
-    new Pikaday({
+    var to_2_date = new Pikaday({
         isRTL : true ,
         firstday : 6 ,
         field: $('#to-date2')[0] ,
+        minDate: to_2_min_date,
+        maxDate: to_2_max_date,
     });
+
     new Pikaday({
         isRTL : true ,
         firstday : 6 ,
         field: $('#shopping-due-in-date')[0] ,
+    });
+
+    $('.call-me-btn').on('click',function(){
+        //$(this).fadeOut('slow');
+        //$(this).parent().find('.no-passenger-header').fadeOut('slow');
+        //$(this).parent().parent().find('.no-result-img').fadeOut('slow');
+        $(this).parent().parent().parent().find('.no-result-div').fadeOut('slow');
+        $(this).parent().parent().parent().find('.second-line-div').fadeIn('slow');
+        $(this).parent().parent().parent().find('.result').fadeIn('slow');
+        $(this).parent().parent().parent().find('.sort-1st-div').css('visibility' , 'visible');
+        $(this).parent().parent().parent().find('.sort-2nd-div').css('visibility' , 'visible');
+
     });
 
     $('.travelers-a').on('click',function(){
@@ -325,6 +406,12 @@ $(document).ready(function() {
     });
     $('.chat-textarea').on('change keyup paste',function(){
        $('.character-remained').html(500 - parseInt($(this).val().length));
+    });
+    $('.parcels-li').on('click',function(){
+       $(this).find('sup').fadeOut('slow');
+    });
+    $('.shopping-li').on('click',function(){
+       $(this).find('sup').fadeOut('slow');
     });
 
 

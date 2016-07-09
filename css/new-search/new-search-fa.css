@@ -1,11 +1,11 @@
 .sort-1st-div{
-    width: 12%;
+    width: 15%;
 }
 .to-div {
     width: 10%;
 }
 .date-div {
-    width: 15%;
+    width: 21%;
 }
 .shopping-result-detail-div{
     width: 40%;
@@ -17,7 +17,7 @@
     direction: rtl;
 }
 .due-div {
-    width: 18%;
+    width: 21%;
 }
 .item-weight{
     /*direction: rtl;*/
@@ -35,6 +35,9 @@
     width: 18%;
 }
 .shopping-1st-modal-1st-div{
+    direction: rtl;
+}
+.passengers-can-bring-label{
     direction: rtl;
 }
 .total-payment-to-u{
@@ -55,6 +58,7 @@
 .due-date{
     direction: rtl;
     text-align: left;
+    vertical-align: top;
 }
 .application-fee-modal{
     height: 535px;

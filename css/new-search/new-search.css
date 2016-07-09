@@ -212,6 +212,7 @@ a img,a label {
 }
 .from-city-div , .to-city-div{
     width: 30%;
+    vertical-align: top !important;
 }
 .from-city-div , .to-city-div , .due-date{
     color: #a2a39f;
@@ -232,7 +233,7 @@ a img,a label {
     width: 20%;
 }
 .due-date{
-    width:70%;
+    width:67%;
 }
 .detail-div{
     width: 90%;
@@ -846,6 +847,19 @@ button.close{
     }
 
 }
+@media (max-width: 1440px) and (min-width: 992px){
+    .request-btn{
+        position: relative;
+        right: 5px;
+    }
+}
+@media (max-width: 991px) {
+    .request-btn{
+        position: relative;
+        right: 12px;
+    }
+
+}
 @media (max-width: 1090px) and (min-width: 992px) {
     .container-fluid , footer{
         min-width: 1090px;
@@ -861,7 +875,33 @@ button.close{
         min-width: 732px;
     }
 }
-
+.second-line-div {
+    padding-left: 0px !important;
+}
+.no-passenger-header{
+    text-align: right;
+    direction: rtl;
+    margin-top: 70px;
+    color: #949494
+}
+.no-result-div{
+    padding: 0px !important;
+    margin-top: 50px;
+}
+.call-me-btn{
+    float: right;
+    background-color: #26c6da !important;
+    color: white !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 5px;
+}
+.no-result-img{
+    width: 20em;
+    height: 20em;
+}
 
 /*sliders css*/
 

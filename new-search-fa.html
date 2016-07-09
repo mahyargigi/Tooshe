@@ -178,6 +178,7 @@
                                 <img src="img/new-search/d2.png" class="parcels-pic">
                                 <br>
                                 <label class="search-box-label">
+                                    <sup style="color: white;border-radius: 100%;background: red;padding: 3px;">22</sup>
                                     مرسولات
                                 </label>
                             </a>
@@ -187,6 +188,7 @@
                                 <img src="img/new-search/s2.png" class="shopping-pic">
                                 <br>
                                 <label class="search-box-label">
+                                    <sup style="color: white;border-radius: 100%;background: red;padding: 3px;">9</sup>
 سفارشات
                                 </label>
                             </a>
@@ -454,10 +456,10 @@
         <div class="col-md-7 col-sm-12 col-xs-12 result-div">
             <div class="travelers-result-div">
                 <div class="col-md-12 sort-div">
-                    <div class="inline-div sort-1st-div sort-item">
+                    <div class="inline-div sort-1st-div sort-item" style="visibility: hidden;">
                         <label class="sort-by-label">مرتب سازی</label>
                     </div>
-                    <div class="inline-div form-group sort-2nd-div sort-item">
+                    <div class="inline-div form-group sort-2nd-div sort-item" style="visibility: hidden;">
                         <select class="item1 search-select traveler-select">
                             <option>قیمت</option>
                             <option>وزن</option>
@@ -476,7 +478,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="col-md-12 second-line-div">
+                <div class="col-md-12 second-line-div" style="display: none;">
                     <div class="inline-div passengers-can-bring-div">
                         <label class="passengers-can-bring-label">
                             تعداد
@@ -495,8 +497,21 @@
                         </ul>
                     </div>
                 </div>
+                <div class="col-md-12 no-result-div">
+                    <div class="col-md-8 col-sm-8 col-xs-8">
+                        <h3 class="no-passenger-header">
+فعلا مسافری به مقصد مورد نظر شما وجود ندارد!
+                        </h3>
+                        <div class="btn btn-default call-me-btn" >
+اگر مسافری پیدا شد با ایمیل اطلاع بده
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <img src="img/new-search/no-result.png" class="no-result-img">
+                    </div>
+                </div>
                 <br>
-                <div class="result">
+                <div class="result" style="display: none;">
                     <div class="col-md-12 information-div">
                         <div class="information-1st-div inline-div">
                             <div class="img-container">
@@ -561,11 +576,11 @@
                                 <div class="whole-due-div">
                                     <div class="inline-div date-div">
                                         <label>
-                                            تاریخ سفر:
+                                            تاریخ پرواز:
                                         </label>
                                     </div>
                                     <div class="inline-div due-date">
-29 ژانویه - 31 ژانویه در تهران است
+2016-06-18
                                     </div>
                                 </div>
                             </div>
@@ -645,11 +660,11 @@
                                 <div class="whole-due-div">
                                     <div class="inline-div date-div">
                                         <label>
-                                            تاریخ سفر:
+                                            تاریخ پرواز:
                                         </label>
                                     </div>
                                     <div class="inline-div due-date">
-29 ژانویه - 31 ژانویه در تهران است
+2016-06-18
                                     </div>
                                 </div>
                             </div>
@@ -729,11 +744,11 @@
                                 <div class="whole-due-div">
                                     <div class="inline-div date-div">
                                         <label>
-                                            تاریخ سفر:
+                                            تاریخ پرواز:
                                         </label>
                                     </div>
                                     <div class="inline-div due-date">
-29 ژانویه - 31 ژانویه در تهران است
+2016-06-18
                                     </div>
                                 </div>
                             </div>
@@ -813,12 +828,12 @@
                                 <div class="whole-due-div">
                                     <div class="inline-div date-div">
                                         <label>
-                                            تاریخ سفر:
+                                            تاریخ پرواز:
                                         </label>
                                     </div>
                                     <div class="inline-div due-date">
-29 ژانویه - 31 ژانویه در تهران است
-                                    </div>
+2016-06-18
+                                     </div>
                                 </div>
                             </div>
                         </div>
@@ -834,13 +849,14 @@
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="parcels-result-div">
                 <div class="col-md-12 sort-div">
-                    <div class="inline-div sort-1st-div sort-item">
+                    <div class="inline-div sort-1st-div sort-item" style="visibility: hidden;">
                         <label class="sort-by-label">مرتب سازی</label>
                     </div>
-                    <div class="inline-div form-group sort-2nd-div sort-item">
+                    <div class="inline-div form-group sort-2nd-div sort-item" style="visibility: hidden;">
                         <select class="item1 search-select parcels-select">
                             <option>وزن</option>
                             <option>کارمزد جابه جایی</option>
@@ -851,7 +867,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="col-md-12 second-line-div">
+                <div class="col-md-12 second-line-div" style="display: none;">
                     <div class="inline-div passengers-can-bring-div">
                         <label class="passengers-can-bring-label">
                             تعداد
@@ -871,8 +887,21 @@
                     </div>
                     <div>.</div>
                 </div>
+                <div class="col-md-12 no-result-div">
+                    <div class="col-md-8 col-sm-8 col-xs-8">
+                        <h3 class="no-passenger-header">
+فعلا مرسوله ای برای بردن وجود ندارد!
+                        </h3>
+                        <div class="btn btn-default call-me-btn" >
+اگر کسی متقاضی حمل مرسوله ای به تل آویو بود به من اطلاع بده
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <img src="img/new-search/no-result.png" class="no-result-img">
+                    </div>
+                </div>
                 <br>
-                <div class="result">
+                <div class="result" style="display: none;">
                     <div class="col-md-12 information-div">
                         <div class="information-1st-div inline-div">
                             <div class="img-container">
@@ -2179,7 +2208,9 @@
     <!--site ends here-->
 
     <script src="js/global/jquery-1.11.2.js" ></script>
-    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+    <!--<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1DPkb8aQAoaAATOG4OicVT-hc3yipTsI&libraries=geometry,places"></script>
+    <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1DPkb8aQAoaAATOG4OicVT-hc3yipTsI"type="text/javascript"></script>-->
     <script src="js/most-new-navbar/tooshe.min.js"></script>
     <script src="js/global/jquery.geocomplete.js"></script>
     <script src="js/global/material.min.js"></script>

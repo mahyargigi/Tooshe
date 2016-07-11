@@ -211,7 +211,7 @@ $(document).ready(function() {
     else {
         $('.warning-label-2').css('display', 'none');
     }
-    $('#you-do-this-slider-1').on('change',function(){
+    $('.application-fee-modal input[type=range]').on('change',function(){
         //console.log("val:")
         //$(this).closest('.application-fee-modal').find('.slider-amount-label').css('display','none');
         $(this).closest('.application-fee-modal').find('.slider-amount-label').html($(this).val());
@@ -226,7 +226,19 @@ $(document).ready(function() {
         //    //console.log("here2");
         //}
     });
-    $('#you-do-this-slider-3').on('change',function(){
+    $('.btn').on('click',function(){
+       var target = $(this).attr('data-target');
+       if(String(target) == '.application-fee-modal2'){
+           if(parseInt($('.application-fee-modal2 input[type=range]').val()) > parseInt($('.application-fee-modal2 .requested-price-amount').html())){
+               $('.application-fee-modal2').find('.warning-label').css('display','block');
+           }
+           else {
+               $('.application-fee-modal2').find('.warning-label').css('display','none');
+           }
+           //console.log($('.application-fee-modal2 .requested-price-amount').html());
+       };
+    });
+    $('.application-fee-modal2 input[type=range]').on('change',function(){
         //console.log("cal:"+$(this).closest('.application-fee-modal').children('.slider-amount-label'));
         $(this).closest('.application-fee-modal2').find('.slider-amount-label').html($(this).val())
         if($(this).val()>parseInt($(this).closest('.application-fee-modal2').find('.requested-price-amount').html())){
@@ -238,14 +250,14 @@ $(document).ready(function() {
             //console.log("here2");
         }
     });
-    $('#you-do-this-slider-2').on('change',function(){
-        $('.slider-amount-label-2').html($(this).val());
-        if($(this).val()>parseInt($('.requested-price-amount-2').html())){
-            $('.warning-label-2').css('display','block');
+    $('.shopping-3rd-modal input[type=range]').on('change',function(){
+        $(this).closest('.shopping-3rd-modal').find('.slider-amount-label-2').html($(this).val());
+        if($(this).val()>parseInt($(this).closest('.shopping-3rd-modal').find('.requested-price-amount-2').html())){
+            $(this).closest('.shopping-3rd-modal').find('.warning-label-2').css('display','block');
             //console.log("here1");
         }
         else{
-            $('.warning-label-2').css('display','none');
+            $(this).closest('.shopping-3rd-modal').find('.warning-label-2').css('display','none');
             //console.log("here2");
         }
     });
@@ -386,7 +398,6 @@ $(document).ready(function() {
         $(this).parent().parent().parent().find('.result').fadeIn('slow');
         $(this).parent().parent().parent().find('.sort-1st-div').css('visibility' , 'visible');
         $(this).parent().parent().parent().find('.sort-2nd-div').css('visibility' , 'visible');
-
     });
 
     $('.travelers-a').on('click',function(){

@@ -36,6 +36,8 @@ $(document).ready(function(){
         });
     var input1 = document.getElementById('specific-region-input');
     $('#specific-region-input').geocomplete().bind("geocode:result", function(event, click){
+        console.log("place_id: "+click.place_id);
+        console.log("type: "+click.types);
         $('#specific-region-input').val('');
         var here = click.address_components[0].long_name;
         $('.regions').append('<div class="alert alert-dismissable alert-material-green-A100"><span><strong><input type="hidden" class="test">'+click.address_components[0].long_name+'</strong></span><span><button type="button" class="close" data-dismiss="alert">×</button></span></div>');

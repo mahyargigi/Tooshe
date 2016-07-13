@@ -262,30 +262,33 @@ $(document).ready(function() {
         }
     });
 
+    var acOptions = {
+        types: ['(regions)']
+    };
     var input1 = document.getElementById('from-input');
     input1.onkeypress = function(){
-        $('#from-input').geocomplete();
+        $('#from-input').geocomplete(acOptions);
         console.log("from!");
     }
     var input2 = document.getElementById('to-input');
     input2.onkeypress = function(){
-        $('#to-input').geocomplete();
+        $('#to-input').geocomplete(acOptions);
     }
     var input3 = document.getElementById('shopping-from-input');
     input3.onkeypress = function(){
-        $('#shopping-from-input').geocomplete();
+        $('#shopping-from-input').geocomplete(acOptions);
     }
     var input4 = document.getElementById('shopping-to-input');
     input4.onkeypress = function(){
-        $('#shopping-to-input').geocomplete();
+        $('#shopping-to-input').geocomplete(acOptions);
     }
     var input5 = document.getElementById('traveler-from-input');
     input5.onkeypress = function(){
-        $('#traveler-from-input').geocomplete();
+        $('#traveler-from-input').geocomplete(acOptions);
     }
     var input6 = document.getElementById('traveler-to-input');
     input6.onkeypress = function(){
-        $('#traveler-to-input').geocomplete();
+        $('#traveler-to-input').geocomplete(acOptions);
     }
 
 

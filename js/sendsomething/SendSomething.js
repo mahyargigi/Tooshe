@@ -45,13 +45,16 @@ $(document).ready(function(){
           this.value=0;
       }
    });
+    var acOptions = {
+        types: ['(cities)']
+    };
     var input1 = document.getElementById('dest-input');
     input1.onkeypress = function(){
-        $('#dest-input').geocomplete();
+        $('#dest-input').geocomplete(acOptions);
     }
     var input2 = document.getElementById('source-input');
     input2.onkeypress = function(){
-        $('#source-input').geocomplete();
+        $('#source-input').geocomplete(acOptions);
     }
     $('#slider-value').html($('#slider').val()+"$");
 

@@ -34,8 +34,11 @@ $(document).ready(function(){
               search_select(ui.item.value);
           }
         });
+    var acOptions = {
+        types: ['(cities)']
+    };
     var input1 = document.getElementById('specific-region-input');
-    $('#specific-region-input').geocomplete().bind("geocode:result", function(event, click){
+    $('#specific-region-input').geocomplete(acOptions).bind("geocode:result", function(event, click){
         console.log("place_id: "+click.place_id);
         console.log("type: "+click.types);
         $('#specific-region-input').val('');

@@ -16,8 +16,79 @@
 .to-send{
     direction: rtl;
 }
-.due-div {
-    width: 21%;
+@media (min-width: 1472px) {
+    .due-div {
+        width: 17%;
+    }
+    .date-div{
+        width: 16%;
+    }
+}
+@media (max-width: 1471px) and (min-width: 1399px)  {
+    .due-div{
+        width: 18%;
+    }
+    .date-div{
+        width: 17%;
+    }
+}
+@media (max-width: 1398px) and (min-width: 1147px) {
+    .due-div{
+        width: 19%;
+    }
+    .date-div{
+        width: 18%;
+    }
+}
+@media (max-width: 1146px) and (min-width: 992px) {
+    .due-div{
+        width: 21%;
+    }
+    .date-div{
+        width: 18%;
+    }
+}
+@media (max-width: 991px ) and (min-width: 926px) {
+    .due-div{
+        width: 16%;
+    }
+    .date-div{
+        width: 15%;
+    }
+}
+@media (max-width: 925px) and (min-width: 896px) {
+    .due-div{
+        width: 18%;
+    }
+    .date-div{
+        width: 16%;
+    }
+}
+@media (max-width: 895px) {
+    .due-div{
+        width: 22%;
+    }
+    .date-div{
+        width: 19%;
+    }
+}
+.product-weight{
+    font-size: 1.1em !important;
+}
+.shopping-result-item-name{
+    font-size: 1.1em !important;
+}
+.shopping-result-question-label{
+    font-size: 1em !important;
+}
+.shopping-result-item-from{
+    font-size: 1.1em !important;
+}
+/*.due-div {*/
+    /*width: 21%;*/
+/*}*/
+.from-div label , .to-div label , .due-div label , .date-div label{
+    font-size: 1.1em !important;
 }
 .item-weight{
     /*direction: rtl;*/
@@ -59,6 +130,9 @@
     direction: rtl;
     text-align: left;
     vertical-align: top;
+}
+.to-send-div label{
+    font-size: 1em !important;
 }
 .application-fee-modal{
     height: 535px;

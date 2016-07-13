@@ -124,7 +124,6 @@ $(document).ready(function() {
 
     $('#parcels-pagination li a').on('click', function () {
         if ($(this).parent().hasClass('disabled')) {
-
         }
         else {
             if ($(this).parent().hasClass('parcels-first')) {

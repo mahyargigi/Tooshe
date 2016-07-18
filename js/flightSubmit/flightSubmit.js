@@ -25,22 +25,107 @@ $(document).ready(function(){
 //    }
 
 
-    function initialize(input) {
+//    function initialize(input) {
+//
+//     var options = {
+//      types: ['(cities)']
+////      componentRestrictions: {country: "us"}
+//     };
+//
+////     var input = document.getElementById('arrival-city');
+//     var autocomplete = new google.maps.places.Autocomplete(input, options);
+//    }
 
-     var options = {
-      types: ['(cities)']
-//      componentRestrictions: {country: "us"}
-     };
+    //var input1 = document.getElementById('departure-city');
+    //input1.onkeypress = initialize(input1);
+    //
+    //var input2 = document.getElementById('arrival-city');
+    //input2.onkeypress = initialize(input2);
 
-//     var input = document.getElementById('arrival-city');
-     var autocomplete = new google.maps.places.Autocomplete(input, options);
-    }
 
-    var input1 = document.getElementById('departure-city');
-    input1.onkeypress = initialize(input1);
+    //start
 
-    var input2 = document.getElementById('arrival-city');
-    input2.onkeypress = initialize(input2);
+    var acOptions = {
+        types: ['(cities)']
+    };
+
+
+    $('#departure-city').geocomplete(acOptions).bind("geocode:result", function(event, click){
+        //console.log("place_id: "+click.place_id);
+        //console.log("type: "+click.types);
+        //console.log(jQuery.inArray("locality",click.address_components[0].types));
+        //if(jQuery.inArray("locality",click.address_components[0].types))
+        //console.log("City:"+click.address_components[0].long_name);
+        var city = click.address_components[0].long_name;
+        var country = "";
+        if(jQuery.inArray("country",click.address_components[2].types) === 0){
+            //console.log("Country:"+click.address_components[2].long_name);
+            country = click.address_components[2].long_name;
+        }
+        else if(jQuery.inArray("country",click.address_components[3].types) === 0){
+            //console.log("Country:"+click.address_components[3].long_name);
+            country = click.address_components[3].long_name;
+        }
+        else if(jQuery.inArray("country",click.address_components[4].types) === 0){
+            //console.log("Country:"+click.address_components[4].long_name);
+            country = click.address_components[4].long_name;
+        }
+        else{
+            console.log("Bugg happened!");
+        }
+        var lat = click.geometry.location.lat();
+        var lng = click.geometry.location.lng();
+        var place_id = click.place_id;
+        console.log("city: "+city+" country: "+country+" lat: "+lat+" lng:"+lng+" place_id: "+place_id);
+        var here = click.address_components[0].long_name;
+
+        $('#departure-city').closest('div').append('<span style="display: none;"><input type="hidden" name="startpoint_city">'+String(city)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="startpoint_country" style="display: none;">'+String(country)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="startpoint_lat" style="display: none;">'+String(lat)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="startpoint_lng" style="display: none;">'+String(lng)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="startpoint_placeID" style="display: none;">'+String(place_id)+'</span>');
+    });
+    $('#arrival-city').geocomplete(acOptions).bind("geocode:result", function(event, click){
+        //console.log("place_id: "+click.place_id);
+        //console.log("type: "+click.types);
+        //console.log(jQuery.inArray("locality",click.address_components[0].types));
+        //if(jQuery.inArray("locality",click.address_components[0].types))
+        //console.log("City:"+click.address_components[0].long_name);
+        var city = click.address_components[0].long_name;
+        var country = "";
+        if(jQuery.inArray("country",click.address_components[2].types) === 0){
+            //console.log("Country:"+click.address_components[2].long_name);
+            country = click.address_components[2].long_name;
+        }
+        else if(jQuery.inArray("country",click.address_components[3].types) === 0){
+            //console.log("Country:"+click.address_components[3].long_name);
+            country = click.address_components[3].long_name;
+        }
+        else if(jQuery.inArray("country",click.address_components[4].types) === 0){
+            //console.log("Country:"+click.address_components[4].long_name);
+            country = click.address_components[4].long_name;
+        }
+        else{
+            console.log("Bugg happened!");
+        }
+        var lat = click.geometry.location.lat();
+        var lng = click.geometry.location.lng();
+        var place_id = click.place_id;
+        console.log("city: "+city+" country: "+country+" lat: "+lat+" lng:"+lng+" place_id: "+place_id);
+        var here = click.address_components[0].long_name;
+
+        $('#arrival-city').closest('div').append('<span style="display: none;"><input type="hidden" name="startpoint_city">'+String(city)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="startpoint_country" style="display: none;">'+String(country)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="startpoint_lat" style="display: none;">'+String(lat)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="startpoint_lng" style="display: none;">'+String(lng)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="startpoint_placeID" style="display: none;">'+String(place_id)+'</span>');
+    });
+
+
+
+
+
+    //end
 
 
     //$('#date1').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );

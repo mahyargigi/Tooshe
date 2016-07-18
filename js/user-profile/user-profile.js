@@ -2,6 +2,7 @@
  * Created by User on 10/5/15.
  */
 $(document).ready((function(){
+    console.log("goh!");
     $('.close').on('click',function(){
         $(this).closest('.row-li').remove();
     });
@@ -14,7 +15,16 @@ $(document).ready((function(){
             element.remove();
             $('.modal').modal("hide");
         });
-
+    });
+    $('.live-request-btn.cancel-btn').on('click',function(){
+        console.log("here1");
+        var element = $(this).closest('.live-request-div');
+        $('.modal').modal("show");
+        console.log("here2");
+        $('.confirm-delete').on('click',function(){
+            element.remove();
+            $('.modal').modal("hide");
+        });
     });
     $('.hidden-element').hide();
     window.setTimeout(function() {

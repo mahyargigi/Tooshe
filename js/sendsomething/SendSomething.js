@@ -130,11 +130,11 @@ $(document).ready(function(){
         var here = click.address_components[0].long_name;
 
         $('#dest-input').closest('div').find('.location-span').remove();
-        $('#dest-input').closest('div').append('<span style="display: none;" class="location-span"><span style="display: none;"><input type="hidden" name="startpoint_city">'+String(city)+'</span>'+
-                '<span style="display: none;"><input type="hidden" name="startpoint_country" style="display: none;">'+String(country)+'</span>'+
-                '<span style="display: none;"><input type="hidden" name="startpoint_lat" style="display: none;">'+String(lat)+'</span>'+
-                '<span style="display: none;"><input type="hidden" name="startpoint_lng" style="display: none;">'+String(lng)+'</span>'+
-                '<span style="display: none;"><input type="hidden" name="startpoint_placeID" style="display: none;">'+String(place_id)+'</span></span>');
+        $('#dest-input').closest('div').append('<span style="display: none;" class="location-span"><span style="display: none;"><input type="hidden" name="destination_city">'+String(city)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="destination_country" style="display: none;">'+String(country)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="destination_lat" style="display: none;">'+String(lat)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="destination_lng" style="display: none;">'+String(lng)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="destination_placeID" style="display: none;">'+String(place_id)+'</span></span>');
     });
 
     $('#dest-input').focus(function(){
@@ -177,11 +177,11 @@ $(document).ready(function(){
         var here = click.address_components[0].long_name;
 
         $('#source-input').closest('div').find('.location-span').remove();
-        $('#source-input').closest('div').append('<span style="display: none;" class="location-span"><span style="display: none;"><input type="hidden" name="startpoint_city">'+String(city)+'</span>'+
-                '<span style="display: none;"><input type="hidden" name="startpoint_country" style="display: none;">'+String(country)+'</span>'+
-                '<span style="display: none;"><input type="hidden" name="startpoint_lat" style="display: none;">'+String(lat)+'</span>'+
-                '<span style="display: none;"><input type="hidden" name="startpoint_lng" style="display: none;">'+String(lng)+'</span>'+
-                '<span style="display: none;"><input type="hidden" name="startpoint_placeID" style="display: none;">'+String(place_id)+'</span></span>');
+        $('#source-input').closest('div').append('<span style="display: none;" class="location-span"><span style="display: none;"><input type="hidden" name="origin_city">'+String(city)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="origin_country" style="display: none;">'+String(country)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="origin_lat" style="display: none;">'+String(lat)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="origin_lng" style="display: none;">'+String(lng)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="origin_placeID" style="display: none;">'+String(place_id)+'</span></span>');
     });
 
     $('#source-input').focus(function(){

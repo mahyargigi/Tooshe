@@ -72,11 +72,11 @@ $(document).ready(function(){
         var here = click.address_components[0].long_name;
         $('.regions').append('<div class="alert alert-dismissable alert-material-green-A100">' +
             '<span><strong><input type="hidden" class="test">'+city+'</strong></span>' +
-                '<span style="display: none;"><input type="hidden" name="order_city[]">'+String(city)+'</span>'+
-                '<span style="display: none;"><input type="hidden" name="order_country[]" style="display: none;">'+String(country)+'</span>'+
-                '<span style="display: none;"><input type="hidden" name="order_lat[]" style="display: none;">'+String(lat)+'</span>'+
-                '<span style="display: none;"><input type="hidden" name="order_lng[]" style="display: none;">'+String(lng)+'</span>'+
-                '<span style="display: none;"><input type="hidden" name="order_placeID[]" style="display: none;">'+String(place_id)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="location_city[]">'+String(city)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="location_country[]" style="display: none;">'+String(country)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="location_lat[]" style="display: none;">'+String(lat)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="location_lng[]" style="display: none;">'+String(lng)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="location_placeID[]" style="display: none;">'+String(place_id)+'</span>'+
             '<span><button type="button" class="close" data-dismiss="alert">×</button></span></div>');
         $('.test').val(here);
         $('.test').removeClass('test');

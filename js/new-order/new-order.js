@@ -58,6 +58,9 @@ $(document).ready(function(){
             //console.log("Country:"+click.address_components[4].long_name);
             country = click.address_components[4].long_name;
         }
+        else if(jQuery.inArray("country",click.address_components[5].types) === 0){
+            country = click.address_components[5].long_name;
+        }
         else{
             console.log("Bugg happened!");
         }
@@ -96,6 +99,9 @@ $(document).ready(function(){
         else if(jQuery.inArray("country",click.address_components[4].types) === 0){
             country = click.address_components[4].long_name;
         }
+        else if(jQuery.inArray("country",click.address_components[5].types) === 0){
+            country = click.address_components[5].long_name;
+        }
         else{
             console.log("Bugg happened!");
         }
@@ -105,21 +111,24 @@ $(document).ready(function(){
         console.log("city: "+city+" country: "+country+" lat: "+lat+" lng:"+lng+" place_id: "+place_id);
         var here = click.address_components[0].long_name;
 
-        $('#delivered-where-input').closest('div').append('<span style="display: none;"><input type="hidden" name="destination_city">'+String(city)+'</span>'+
+        $('#delivered-where-input').closest('div').find('.location-span').remove();
+        $('#delivered-where-input').closest('div').append('<span style="display: none;" class="location-span"><span style="display: none;"><input type="hidden" name="destination_city">'+String(city)+'</span>'+
                 '<span style="display: none;"><input type="hidden" name="destination_country" style="display: none;">'+String(country)+'</span>'+
                 '<span style="display: none;"><input type="hidden" name="destination_lat" style="display: none;">'+String(lat)+'</span>'+
                 '<span style="display: none;"><input type="hidden" name="destination_lng" style="display: none;">'+String(lng)+'</span>'+
-                '<span style="display: none;"><input type="hidden" name="destination_placeID" style="display: none;">'+String(place_id)+'</span>');
+                '<span style="display: none;"><input type="hidden" name="destination_placeID" style="display: none;">'+String(place_id)+'</span></span>');
     });
 
 
     $('#delivered-where-input').focus(function(){
-       $('#delivered-where-input').on('keypress' , function(){
+       $('#delivered-where-input').on('keydown' , function(){
           delivered_input_geolocate = false;
+           console.log("keydown");
        });
     });
     $('#delivered-where-input').focusout(function(){
        if(!delivered_input_geolocate){
+           $('#delivered-where-input').closest('div').find('.location-span').remove();
            $('#delivered-where-input').val('');
        }
     });

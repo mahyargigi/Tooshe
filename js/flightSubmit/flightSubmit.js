@@ -64,6 +64,9 @@ $(document).ready(function(){
         else if(jQuery.inArray("country",click.address_components[4].types) === 0){
             country = click.address_components[4].long_name;
         }
+        else if(jQuery.inArray("country",click.address_components[5].types) === 0){
+            country = click.address_components[5].long_name;
+        }
         else{
             console.log("Bugg happened!");
         }
@@ -73,20 +76,23 @@ $(document).ready(function(){
         console.log("city: "+city+" country: "+country+" lat: "+lat+" lng:"+lng+" place_id: "+place_id);
         var here = click.address_components[0].long_name;
 
-        $('#departure-city').closest('div').append('<span style="display: none;"><input type="hidden" name="startpoint_city">'+String(city)+'</span>'+
+        $('#departure-city').closest('div').find('.location-span').remove();
+
+        $('#departure-city').closest('div').append('<span style="display: none;" class="location-span"><span style="display: none;"><input type="hidden" name="startpoint_city">'+String(city)+'</span>'+
                 '<span style="display: none;"><input type="hidden" name="startpoint_country" style="display: none;">'+String(country)+'</span>'+
                 '<span style="display: none;"><input type="hidden" name="startpoint_lat" style="display: none;">'+String(lat)+'</span>'+
                 '<span style="display: none;"><input type="hidden" name="startpoint_lng" style="display: none;">'+String(lng)+'</span>'+
-                '<span style="display: none;"><input type="hidden" name="startpoint_placeID" style="display: none;">'+String(place_id)+'</span>');
+                '<span style="display: none;"><input type="hidden" name="startpoint_placeID" style="display: none;">'+String(place_id)+'</span></span>');
     });
 
     $('#departure-city').focus(function(){
-       $('#departure-city').on('keypress' , function(){
+       $('#departure-city').on('keydown' , function(){
           departure_input_geolocate = false;
        });
     });
     $('#departure-city').focusout(function(){
        if(!departure_input_geolocate){
+           $('#departure-city').closest('div').find('.location-span').remove();
            $('#departure-city').val('');
        }
     });
@@ -106,6 +112,9 @@ $(document).ready(function(){
         else if(jQuery.inArray("country",click.address_components[4].types) === 0){
             country = click.address_components[4].long_name;
         }
+        else if(jQuery.inArray("country",click.address_components[5].types) === 0){
+            country = click.address_components[5].long_name;
+        }
         else{
             console.log("Bugg happened!");
         }
@@ -115,20 +124,22 @@ $(document).ready(function(){
         console.log("city: "+city+" country: "+country+" lat: "+lat+" lng:"+lng+" place_id: "+place_id);
         var here = click.address_components[0].long_name;
 
-        $('#arrival-city').closest('div').append('<span style="display: none;"><input type="hidden" name="startpoint_city">'+String(city)+'</span>'+
+        $('#arrival-city').closest('div').find('.location-span').remove();
+        $('#arrival-city').closest('div').append('<span style="display: none;" class="location-span"><span style="display: none;"><input type="hidden" name="startpoint_city">'+String(city)+'</span>'+
                 '<span style="display: none;"><input type="hidden" name="startpoint_country" style="display: none;">'+String(country)+'</span>'+
                 '<span style="display: none;"><input type="hidden" name="startpoint_lat" style="display: none;">'+String(lat)+'</span>'+
                 '<span style="display: none;"><input type="hidden" name="startpoint_lng" style="display: none;">'+String(lng)+'</span>'+
-                '<span style="display: none;"><input type="hidden" name="startpoint_placeID" style="display: none;">'+String(place_id)+'</span>');
+                '<span style="display: none;"><input type="hidden" name="startpoint_placeID" style="display: none;">'+String(place_id)+'</span></span>');
     });
 
     $('#arrival-city').focus(function(){
-       $('#arrival-city').on('keypress' , function(){
+       $('#arrival-city').on('keydown' , function(){
           arrival_input_geolocate = false;
        });
     });
     $('#arrival-city').focusout(function(){
        if(!arrival_input_geolocate){
+           $('#arrival-city').closest('div').find('.location-span').remove();
            $('#arrival-city').val('');
        }
     });

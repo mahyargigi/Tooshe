@@ -121,12 +121,7 @@ $(document).ready(function(){
                 '<span style="display: none;"><input type="hidden" name="startpoint_placeID" style="display: none;">'+String(place_id)+'</span>');
     });
 
-
-
-
-
     //end
-
 
     //$('#date1').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
     //$('#date2').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
@@ -148,20 +143,73 @@ $(document).ready(function(){
         }
 //        console.log("second radio clicked");
     });
-    new Pikaday({
+
+    var flight_min_date = moment().toDate();
+    var flight_max_date = new Date(2099 , 1 , 1 ,0,0,0,0 );
+
+    var flight_landing_min_date = moment().toDate();
+    var flight_landing_max_date = new Date(2099 , 1 , 1 ,0,0,0,0 );
+
+    var last_day_min_date =  moment().toDate();
+    var last_day_max_date =  new Date(2099 , 1 , 1 ,0,0,0,0 );
+
+    $('#date1').on('change',function(){
+        splitted = String($(this).val()).split('-');
+
+       flight_landing_min_date = new Date(parseInt(splitted[0]), parseInt(splitted[1])-1, parseInt(splitted[2]), 0, 0 , 0, 0 );
+       flight_landing_date.setMinDate(flight_landing_min_date);
+       flight_landing_date.gotoDate(flight_landing_min_date);
+
+       last_day_min_date = new Date(parseInt(splitted[0]), parseInt(splitted[1])-1, parseInt(splitted[2]), 0, 0 , 0, 0 );
+       last_day_date.setMinDate(last_day_min_date);
+       last_day_date.gotoDate(last_day_min_date);
+    });
+    $('#date2').on('change',function(){
+       splitted = String($(this).val()).split('-');
+
+       last_day_min_date = new Date(parseInt(splitted[0]), parseInt(splitted[1])-1, parseInt(splitted[2]), 0, 0 , 0, 0 );
+       last_day_date.setMinDate(last_day_min_date);
+       last_day_date.gotoDate(last_day_min_date);
+
+       flight_max_date =  new Date(parseInt(splitted[0]), parseInt(splitted[1])-1, parseInt(splitted[2]), 0, 0 , 0, 0 );
+       flight_date.setMaxDate(flight_max_date);
+       flight_date.gotoDate(flight_min_date);
+
+        console.log("from2 done!");
+    });
+    $('#date3').on('change',function(){
+        splitted = String($(this).val()).split('-');
+        flight_landing_max_date = new Date(parseInt(splitted[0]), parseInt(splitted[1])-1, parseInt(splitted[2]), 0, 0 , 0, 0 );
+        flight_landing_date.setMaxDate(flight_landing_max_date);
+
+        flight_max_date =  new Date(parseInt(splitted[0]), parseInt(splitted[1])-1, parseInt(splitted[2]), 0, 0 , 0, 0 );
+        flight_date.setMaxDate(flight_max_date);
+
+        //flight_landing_date.gotoDate(flight_landing_min_date);
+
+        console.log("to done!");
+    });
+
+    var flight_date = new Pikaday({
         isRTL : true ,
         firstday : 6 ,
         field: $('#date1')[0] ,
+        minDate: flight_min_date ,
+        maxDate: flight_max_date ,
     });
-    new Pikaday({
+    var flight_landing_date = new Pikaday({
         isRTL : true ,
         firstday : 6 ,
         field: $('#date2')[0] ,
+        minDate: flight_landing_min_date ,
+        maxDate: flight_landing_max_date ,
     });
-    new Pikaday({
+    var last_day_date = new Pikaday({
         isRTL : true ,
         firstday : 6 ,
         field: $('#date3')[0] ,
+        minDate: last_day_min_date ,
+        maxDate: last_day_max_date,
     });
 //    console.log("is: "+$('#optionsRadios1').checked);
 

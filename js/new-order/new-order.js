@@ -37,7 +37,7 @@ $(document).ready(function(){
     var acOptions = {
         types: ['(cities)']
     };
-    var input1 = document.getElementById('specific-region-input');
+    //var input1 = document.getElementById('specific-region-input');
     $('#specific-region-input').geocomplete(acOptions).bind("geocode:result", function(event, click){
         //console.log("place_id: "+click.place_id);
         //console.log("type: "+click.types);
@@ -79,6 +79,52 @@ $(document).ready(function(){
         $('.test').removeClass('test');
 //        console.log($('.test').val());
     });
+
+    var delivered_input_geolocate = false ;
+
+    $('#delivered-where-input').geocomplete(acOptions).bind("geocode:result", function(event, click){
+        delivered_input_geolocate = true;
+
+        var city = click.address_components[0].long_name;
+        var country = "";
+        if(jQuery.inArray("country",click.address_components[2].types) === 0){
+            country = click.address_components[2].long_name;
+        }
+        else if(jQuery.inArray("country",click.address_components[3].types) === 0){
+            country = click.address_components[3].long_name;
+        }
+        else if(jQuery.inArray("country",click.address_components[4].types) === 0){
+            country = click.address_components[4].long_name;
+        }
+        else{
+            console.log("Bugg happened!");
+        }
+        var lat = click.geometry.location.lat();
+        var lng = click.geometry.location.lng();
+        var place_id = click.place_id;
+        console.log("city: "+city+" country: "+country+" lat: "+lat+" lng:"+lng+" place_id: "+place_id);
+        var here = click.address_components[0].long_name;
+
+        $('#delivered-where-input').closest('div').append('<span style="display: none;"><input type="hidden" name="destination_city">'+String(city)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="destination_country" style="display: none;">'+String(country)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="destination_lat" style="display: none;">'+String(lat)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="destination_lng" style="display: none;">'+String(lng)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="destination_placeID" style="display: none;">'+String(place_id)+'</span>');
+    });
+
+
+    $('#delivered-where-input').focus(function(){
+       $('#delivered-where-input').on('keypress' , function(){
+          delivered_input_geolocate = false;
+       });
+    });
+    $('#delivered-where-input').focusout(function(){
+       if(!delivered_input_geolocate){
+           $('#delivered-where-input').val('');
+       }
+    });
+
+
     //              2nd way for passing the input value
     $('.search-image-btn').on('click',function(){
 //        console.log("test");
@@ -228,16 +274,16 @@ $(document).ready(function(){
        }
     });
 
-    function initialize(input) {
+    //function initialize(input) {
+    //
+    // var options = {
+    //  types: ['(cities)']
+    // };
+    // var autocomplete = new google.maps.places.Autocomplete(input, options);
+    //}
 
-     var options = {
-      types: ['(cities)']
-     };
-     var autocomplete = new google.maps.places.Autocomplete(input, options);
-    }
-
-    var input2 = document.getElementById('delivered-where-input');
-    input2.onkeypress = initialize(input2);
+    //var input2 = document.getElementById('delivered-where-input');
+    //input2.onkeypress = initialize(input2);
 
    $('.you-pay').html($('#slider').val()+'$');
 //    console.log("slider-amount:"+$('slider').val());

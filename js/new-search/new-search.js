@@ -291,12 +291,6 @@ $(document).ready(function() {
     }
 
 
-    //$('#from-date').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
-    //$('#from-date2').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
-    //$('#to-date').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
-    //$('#to-date2').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
-    //$('#shopping-due-in-date').bootstrapMaterialDatePicker({ weekStart : 0 ,time: false } );
-
     var from_min_date = moment().toDate();
     var from_max_date = new Date(2099 , 1 , 1 ,0,0,0,0 );
 

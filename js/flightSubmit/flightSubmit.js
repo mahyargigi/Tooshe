@@ -49,25 +49,19 @@ $(document).ready(function(){
         types: ['(cities)']
     };
 
+    var departure_input_geolocate = false;
 
     $('#departure-city').geocomplete(acOptions).bind("geocode:result", function(event, click){
-        //console.log("place_id: "+click.place_id);
-        //console.log("type: "+click.types);
-        //console.log(jQuery.inArray("locality",click.address_components[0].types));
-        //if(jQuery.inArray("locality",click.address_components[0].types))
-        //console.log("City:"+click.address_components[0].long_name);
+        departure_input_geolocate = true;
         var city = click.address_components[0].long_name;
         var country = "";
         if(jQuery.inArray("country",click.address_components[2].types) === 0){
-            //console.log("Country:"+click.address_components[2].long_name);
             country = click.address_components[2].long_name;
         }
         else if(jQuery.inArray("country",click.address_components[3].types) === 0){
-            //console.log("Country:"+click.address_components[3].long_name);
             country = click.address_components[3].long_name;
         }
         else if(jQuery.inArray("country",click.address_components[4].types) === 0){
-            //console.log("Country:"+click.address_components[4].long_name);
             country = click.address_components[4].long_name;
         }
         else{
@@ -85,24 +79,31 @@ $(document).ready(function(){
                 '<span style="display: none;"><input type="hidden" name="startpoint_lng" style="display: none;">'+String(lng)+'</span>'+
                 '<span style="display: none;"><input type="hidden" name="startpoint_placeID" style="display: none;">'+String(place_id)+'</span>');
     });
+
+    $('#departure-city').focus(function(){
+       $('#departure-city').on('keypress' , function(){
+          departure_input_geolocate = false;
+       });
+    });
+    $('#departure-city').focusout(function(){
+       if(!departure_input_geolocate){
+           $('#departure-city').val('');
+       }
+    });
+
+    var arrival_input_geolocate = false;
+
     $('#arrival-city').geocomplete(acOptions).bind("geocode:result", function(event, click){
-        //console.log("place_id: "+click.place_id);
-        //console.log("type: "+click.types);
-        //console.log(jQuery.inArray("locality",click.address_components[0].types));
-        //if(jQuery.inArray("locality",click.address_components[0].types))
-        //console.log("City:"+click.address_components[0].long_name);
+        arrival_input_geolocate = true;
         var city = click.address_components[0].long_name;
         var country = "";
         if(jQuery.inArray("country",click.address_components[2].types) === 0){
-            //console.log("Country:"+click.address_components[2].long_name);
             country = click.address_components[2].long_name;
         }
         else if(jQuery.inArray("country",click.address_components[3].types) === 0){
-            //console.log("Country:"+click.address_components[3].long_name);
             country = click.address_components[3].long_name;
         }
         else if(jQuery.inArray("country",click.address_components[4].types) === 0){
-            //console.log("Country:"+click.address_components[4].long_name);
             country = click.address_components[4].long_name;
         }
         else{
@@ -119,6 +120,17 @@ $(document).ready(function(){
                 '<span style="display: none;"><input type="hidden" name="startpoint_lat" style="display: none;">'+String(lat)+'</span>'+
                 '<span style="display: none;"><input type="hidden" name="startpoint_lng" style="display: none;">'+String(lng)+'</span>'+
                 '<span style="display: none;"><input type="hidden" name="startpoint_placeID" style="display: none;">'+String(place_id)+'</span>');
+    });
+
+    $('#arrival-city').focus(function(){
+       $('#arrival-city').on('keypress' , function(){
+          arrival_input_geolocate = false;
+       });
+    });
+    $('#arrival-city').focusout(function(){
+       if(!arrival_input_geolocate){
+           $('#arrival-city').val('');
+       }
     });
 
     //end

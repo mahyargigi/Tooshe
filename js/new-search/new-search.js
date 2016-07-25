@@ -261,34 +261,548 @@ $(document).ready(function() {
         }
     });
 
+    //var acOptions = {
+    //    types: ['(regions)']
+    //};
+    //var input1 = document.getElementById('from-input');
+    //input1.onkeypress = function(){
+    //    $('#from-input').geocomplete(acOptions);
+    //    console.log("from!");
+    //}
+    //var input2 = document.getElementById('to-input');
+    //input2.onkeypress = function(){
+    //    $('#to-input').geocomplete(acOptions);
+    //}
+    //var input3 = document.getElementById('shopping-from-input');
+    //input3.onkeypress = function(){
+    //    $('#shopping-from-input').geocomplete(acOptions);
+    //}
+    //var input4 = document.getElementById('shopping-to-input');
+    //input4.onkeypress = function(){
+    //    $('#shopping-to-input').geocomplete(acOptions);
+    //}
+    //var input5 = document.getElementById('traveler-from-input');
+    //input5.onkeypress = function(){
+    //    $('#traveler-from-input').geocomplete(acOptions);
+    //}
+    //var input6 = document.getElementById('traveler-to-input');
+    //input6.onkeypress = function(){
+    //    $('#traveler-to-input').geocomplete(acOptions);
+    //}
+
     var acOptions = {
         types: ['(regions)']
     };
-    var input1 = document.getElementById('from-input');
-    input1.onkeypress = function(){
-        $('#from-input').geocomplete(acOptions);
-        console.log("from!");
-    }
-    var input2 = document.getElementById('to-input');
-    input2.onkeypress = function(){
-        $('#to-input').geocomplete(acOptions);
-    }
-    var input3 = document.getElementById('shopping-from-input');
-    input3.onkeypress = function(){
-        $('#shopping-from-input').geocomplete(acOptions);
-    }
-    var input4 = document.getElementById('shopping-to-input');
-    input4.onkeypress = function(){
-        $('#shopping-to-input').geocomplete(acOptions);
-    }
-    var input5 = document.getElementById('traveler-from-input');
-    input5.onkeypress = function(){
-        $('#traveler-from-input').geocomplete(acOptions);
-    }
-    var input6 = document.getElementById('traveler-to-input');
-    input6.onkeypress = function(){
-        $('#traveler-to-input').geocomplete(acOptions);
-    }
+
+    var from_input_geolocate = false;
+
+    $('#from-input').geocomplete(acOptions).bind("geocode:result", function(event, click){
+        from_input_geolocate = true;
+        //console.log(click)
+        //console.log(click.types[0] , click.types[1])
+        var city = "";
+        var country = "";
+        var lat = "";
+        var lng = "";
+        var place_id = "";
+        if(click.types[0] === 'locality' ){
+            var city = click.address_components[0].long_name;
+            var country = "";
+            if(jQuery.inArray("country",click.address_components[2].types) === 0){
+                country = click.address_components[2].long_name;
+            }
+            else if(jQuery.inArray("country",click.address_components[3].types) === 0){
+                country = click.address_components[3].long_name;
+            }
+            else if(jQuery.inArray("country",click.address_components[4].types) === 0){
+                country = click.address_components[4].long_name;
+            }
+            else if(jQuery.inArray("country",click.address_components[5].types) === 0){
+                country = click.address_components[5].long_name;
+            }
+            else{
+                console.log("Bugg happened!");
+            }
+            var lat = click.geometry.location.lat();
+            var lng = click.geometry.location.lng();
+            var place_id = click.place_id;
+        }
+        else if(click.types[0] == 'country'){
+            country = click.address_components[0].long_name
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        else if(click.types[0] == 'administrative_area_level_2'){
+            city = click.address_components[1].long_name;
+            country = click.address_components[2].long_name;
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        else if(click.types[0] == 'administrative_area_level_1'){
+            city = click.address_components[0].long_name;
+            country = click.address_components[1].long_name;
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        else if (click.types[0] == 'sublocality_level_1'){
+            city = click.address_components[1].longe_name
+            country = click.address_components[4].longe_name
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        //console.log("component2: "+click.address_components[2])
+        console.log("city: "+city+" country: "+country+" lat: "+lat+" lng:"+lng+" place_id: "+place_id);
+        //var here = click.address_components[0].long_name;
+
+        $('#from-input').closest('div').find('.location-span').remove();
+        $('#from-input').closest('div').append('<span style="display: none;" class="location-span"><span style="display: none;"><input type="hidden" name="send_origin_city" value="'+String(city)+'">'+String(city)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="send_origin_country" style="display: none;" value="'+String(country)+'">'+String(country)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="send_origin_lat" style="display: none;" value="'+String(lat)+'">'+String(lat)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="send_origin_lng" style="display: none;" value="'+String(lng)+'">'+String(lng)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="send_origin_placeID" style="display: none;" value="'+String(place_id)+'">'+String(place_id)+'</span></span>');
+    });
+
+    $('#from-input').focus(function(){
+       $('#from-input').on('keydown' , function(){
+          from_input_geolocate = false;
+       });
+    });
+    $('#from-input').focusout(function(){
+       if(!from_input_geolocate){
+           $('#from-input').closest('div').find('.location-span').remove();
+           $('#from-input').val('');
+       }
+    });
+
+
+
+
+
+    var to_input_geolocate = false;
+
+    $('#to-input').geocomplete(acOptions).bind("geocode:result", function(event, click){
+        to_input_geolocate = true;
+        //console.log(click)
+        //console.log(click.types[0] , click.types[1])
+        var city = "";
+        var country = "";
+        var lat = "";
+        var lng = "";
+        var place_id = "";
+        if(click.types[0] === 'locality' ){
+            var city = click.address_components[0].long_name;
+            var country = "";
+            if(jQuery.inArray("country",click.address_components[2].types) === 0){
+                country = click.address_components[2].long_name;
+            }
+            else if(jQuery.inArray("country",click.address_components[3].types) === 0){
+                country = click.address_components[3].long_name;
+            }
+            else if(jQuery.inArray("country",click.address_components[4].types) === 0){
+                country = click.address_components[4].long_name;
+            }
+            else if(jQuery.inArray("country",click.address_components[5].types) === 0){
+                country = click.address_components[5].long_name;
+            }
+            else{
+                console.log("Bugg happened!");
+            }
+            var lat = click.geometry.location.lat();
+            var lng = click.geometry.location.lng();
+            var place_id = click.place_id;
+        }
+        else if(click.types[0] == 'country'){
+            country = click.address_components[0].long_name
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        else if(click.types[0] == 'administrative_area_level_2'){
+            city = click.address_components[1].long_name;
+            country = click.address_components[2].long_name;
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        else if(click.types[0] == 'administrative_area_level_1'){
+            city = click.address_components[0].long_name;
+            country = click.address_components[1].long_name;
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        else if (click.types[0] == 'sublocality_level_1'){
+            city = click.address_components[1].longe_name
+            country = click.address_components[4].longe_name
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        //console.log("component2: "+click.address_components[2])
+        console.log("city: "+city+" country: "+country+" lat: "+lat+" lng:"+lng+" place_id: "+place_id);
+        //var here = click.address_components[0].long_name;
+
+        $('#to-input').closest('div').find('.location-span').remove();
+        $('#to-input').closest('div').append('<span style="display: none;" class="location-span"><span style="display: none;"><input type="hidden" name="send_destination_city" value="'+String(city)+'">'+String(city)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="send_destination_country" style="display: none;" value="'+String(country)+'">'+String(country)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="send_destination_lat" style="display: none;" value="'+String(lat)+'">'+String(lat)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="send_destination_lng" style="display: none;" value="'+String(lng)+'">'+String(lng)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="send_destination_placeID" style="display: none;" value="'+String(place_id)+'">'+String(place_id)+'</span></span>');
+    });
+
+    $('#to-input').focus(function(){
+       $('#to-input').on('keydown' , function(){
+          to_input_geolocate = false;
+       });
+    });
+    $('#to-input').focusout(function(){
+       if(!to_input_geolocate){
+           $('#to-input').closest('div').find('.location-span').remove();
+           $('#to-input').val('');
+       }
+    });
+
+
+    var traveler_from_input_geolocate = false;
+
+    $('#traveler-from-input').geocomplete(acOptions).bind("geocode:result", function(event, click){
+        traveler_from_input_geolocate = true;
+        console.log(click)
+        //console.log(click.types[0] , click.types[1])
+        var city = "";
+        var country = "";
+        var lat = "";
+        var lng = "";
+        var place_id = "";
+        if(click.types[0] === 'locality' ){
+            var city = click.address_components[0].long_name;
+            var country = "";
+            if(jQuery.inArray("country",click.address_components[2].types) === 0){
+                country = click.address_components[2].long_name;
+            }
+            else if(jQuery.inArray("country",click.address_components[3].types) === 0){
+                country = click.address_components[3].long_name;
+            }
+            else if(jQuery.inArray("country",click.address_components[4].types) === 0){
+                country = click.address_components[4].long_name;
+            }
+            else if(jQuery.inArray("country",click.address_components[5].types) === 0){
+                country = click.address_components[5].long_name;
+            }
+            else{
+                console.log("Bugg happened!");
+            }
+            var lat = click.geometry.location.lat();
+            var lng = click.geometry.location.lng();
+            var place_id = click.place_id;
+        }
+        else if(click.types[0] == 'country'){
+            country = click.address_components[0].long_name
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        else if(click.types[0] == 'administrative_area_level_2'){
+            city = click.address_components[1].long_name;
+            country = click.address_components[2].long_name;
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        else if(click.types[0] == 'administrative_area_level_1'){
+            city = click.address_components[0].long_name;
+            country = click.address_components[1].long_name;
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        else if (click.types[0] == 'sublocality_level_1'){
+            city = click.address_components[1].long_name
+            country = click.address_components[4].long_name
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        //console.log("component2: "+click.address_components[2])
+        console.log("city: "+city+" country: "+country+" lat: "+lat+" lng:"+lng+" place_id: "+place_id);
+        //var here = click.address_components[0].long_name;
+
+        $('#traveler-from-input').closest('div').find('.location-span').remove();
+        $('#traveler-from-input').closest('div').append('<span style="display: none;" class="location-span"><span style="display: none;"><input type="hidden" name="flight-source_city" value="'+String(city)+'">'+String(city)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="flight-source_country" style="display: none;" value="'+String(country)+'">'+String(country)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="flight-source_lat" style="display: none;" value="'+String(lat)+'">'+String(lat)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="flight-source_lng" style="display: none;" value="'+String(lng)+'">'+String(lng)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="flight-source_placeID" style="display: none;" value="'+String(place_id)+'">'+String(place_id)+'</span></span>');
+    });
+
+    $('#traveler-from-input').focus(function(){
+       $('#traveler-from-input').on('keydown' , function(){
+          traveler_from_input_geolocate = false;
+       });
+    });
+    $('#traveler-from-input').focusout(function(){
+       if(!traveler_from_input_geolocate){
+           $('#traveler-from-input').closest('div').find('.location-span').remove();
+           $('#traveler-from-input').val('');
+       }
+    });
+
+    var traveler_to_input_geolocate = false;
+
+    $('#traveler-to-input').geocomplete(acOptions).bind("geocode:result", function(event, click){
+        traveler_to_input_geolocate = true;
+        //console.log(click)
+        //console.log(click.types[0] , click.types[1])
+        var city = "";
+        var country = "";
+        var lat = "";
+        var lng = "";
+        var place_id = "";
+        if(click.types[0] === 'locality' ){
+            var city = click.address_components[0].long_name;
+            var country = "";
+            if(jQuery.inArray("country",click.address_components[2].types) === 0){
+                country = click.address_components[2].long_name;
+            }
+            else if(jQuery.inArray("country",click.address_components[3].types) === 0){
+                country = click.address_components[3].long_name;
+            }
+            else if(jQuery.inArray("country",click.address_components[4].types) === 0){
+                country = click.address_components[4].long_name;
+            }
+            else if(jQuery.inArray("country",click.address_components[5].types) === 0){
+                country = click.address_components[5].long_name;
+            }
+            else{
+                console.log("Bugg happened!");
+            }
+            var lat = click.geometry.location.lat();
+            var lng = click.geometry.location.lng();
+            var place_id = click.place_id;
+        }
+        else if(click.types[0] == 'country'){
+            country = click.address_components[0].long_name
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        else if(click.types[0] == 'administrative_area_level_2'){
+            city = click.address_components[1].long_name;
+            country = click.address_components[2].long_name;
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        else if(click.types[0] == 'administrative_area_level_1'){
+            city = click.address_components[0].long_name;
+            country = click.address_components[1].long_name;
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        else if (click.types[0] == 'sublocality_level_1'){
+            city = click.address_components[1].long_name
+            country = click.address_components[4].long_name
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        //console.log("component2: "+click.address_components[2])
+        console.log("city: "+city+" country: "+country+" lat: "+lat+" lng:"+lng+" place_id: "+place_id);
+        //var here = click.address_components[0].long_name;
+
+        $('#traveler-to-input').closest('div').find('.location-span').remove();
+        $('#traveler-to-input').closest('div').append('<span style="display: none;" class="location-span"><span style="display: none;"><input type="hidden" name="flight-dest_city" value="'+String(city)+'">'+String(city)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="flight-dest_country" style="display: none;" value="'+String(country)+'">'+String(country)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="flight-dest_lat" style="display: none;" value="'+String(lat)+'">'+String(lat)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="flight-dest_lng" style="display: none;" value="'+String(lng)+'">'+String(lng)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="flight-dest_placeID" style="display: none;" value="'+String(place_id)+'">'+String(place_id)+'</span></span>');
+    });
+
+    $('#traveler-to-input').focus(function(){
+       $('#traveler-to-input').on('keydown' , function(){
+          traveler_to_input_geolocate = false;
+       });
+    });
+    $('#traveler-to-input').focusout(function(){
+       if(!traveler_to_input_geolocate){
+           $('#traveler-to-input').closest('div').find('.location-span').remove();
+           $('#traveler-to-input').val('');
+       }
+    });
+
+    var shopping_from_input_geolocate = false;
+
+    $('#shopping-from-input').geocomplete(acOptions).bind("geocode:result", function(event, click){
+        shopping_from_input_geolocate = true;
+        //console.log(click)
+        //console.log(click.types[0] , click.types[1])
+        var city = "";
+        var country = "";
+        var lat = "";
+        var lng = "";
+        var place_id = "";
+        if(click.types[0] === 'locality' ){
+            var city = click.address_components[0].long_name;
+            var country = "";
+            if(jQuery.inArray("country",click.address_components[2].types) === 0){
+                country = click.address_components[2].long_name;
+            }
+            else if(jQuery.inArray("country",click.address_components[3].types) === 0){
+                country = click.address_components[3].long_name;
+            }
+            else if(jQuery.inArray("country",click.address_components[4].types) === 0){
+                country = click.address_components[4].long_name;
+            }
+            else if(jQuery.inArray("country",click.address_components[5].types) === 0){
+                country = click.address_components[5].long_name;
+            }
+            else{
+                console.log("Bugg happened!");
+            }
+            var lat = click.geometry.location.lat();
+            var lng = click.geometry.location.lng();
+            var place_id = click.place_id;
+        }
+        else if(click.types[0] == 'country'){
+            country = click.address_components[0].long_name
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        else if(click.types[0] == 'administrative_area_level_2'){
+            city = click.address_components[1].long_name;
+            country = click.address_components[2].long_name;
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        else if(click.types[0] == 'administrative_area_level_1'){
+            city = click.address_components[0].long_name;
+            country = click.address_components[1].long_name;
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        else if (click.types[0] == 'sublocality_level_1'){
+            city = click.address_components[1].long_name
+            country = click.address_components[4].long_name
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        //console.log("component2: "+click.address_components[2])
+        console.log("city: "+city+" country: "+country+" lat: "+lat+" lng:"+lng+" place_id: "+place_id);
+        //var here = click.address_components[0].long_name;
+
+        $('#shopping-from-input').closest('div').find('.location-span').remove();
+        $('#shopping-from-input').closest('div').append('<span style="display: none;" class="location-span"><span style="display: none;"><input type="hidden" name="order_origin_city" value="'+String(city)+'">'+String(city)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="order_origin_country" style="display: none;" value="'+String(country)+'">'+String(country)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="order_origin_lat" style="display: none;" value="'+String(lat)+'">'+String(lat)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="order_origin_lng" style="display: none;" value="'+String(lng)+'">'+String(lng)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="order_origin_placeID" style="display: none;" value="'+String(place_id)+'">'+String(place_id)+'</span></span>');
+    });
+
+    $('#shopping-from-input').focus(function(){
+       $('#shopping-from-input').on('keydown' , function(){
+          shopping_from_input_geolocate = false;
+       });
+    });
+    $('#shopping-from-input').focusout(function(){
+       if(!shopping_from_input_geolocate){
+           $('#shopping-from-input').closest('div').find('.location-span').remove();
+           $('#shopping-from-input').val('');
+       }
+    });
+
+    var shopping_to_input_geolocate = false;
+
+    $('#shopping-to-input').geocomplete(acOptions).bind("geocode:result", function(event, click){
+        shopping_to_input_geolocate = true;
+        //console.log(click)
+        //console.log(click.types[0] , click.types[1])
+        var city = "";
+        var country = "";
+        var lat = "";
+        var lng = "";
+        var place_id = "";
+        if(click.types[0] === 'locality' ){
+            var city = click.address_components[0].long_name;
+            var country = "";
+            if(jQuery.inArray("country",click.address_components[2].types) === 0){
+                country = click.address_components[2].long_name;
+            }
+            else if(jQuery.inArray("country",click.address_components[3].types) === 0){
+                country = click.address_components[3].long_name;
+            }
+            else if(jQuery.inArray("country",click.address_components[4].types) === 0){
+                country = click.address_components[4].long_name;
+            }
+            else if(jQuery.inArray("country",click.address_components[5].types) === 0){
+                country = click.address_components[5].long_name;
+            }
+            else{
+                console.log("Bugg happened!");
+            }
+            var lat = click.geometry.location.lat();
+            var lng = click.geometry.location.lng();
+            var place_id = click.place_id;
+        }
+        else if(click.types[0] == 'country'){
+            country = click.address_components[0].long_name
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        else if(click.types[0] == 'administrative_area_level_2'){
+            city = click.address_components[1].long_name;
+            country = click.address_components[2].long_name;
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        else if(click.types[0] == 'administrative_area_level_1'){
+            city = click.address_components[0].long_name;
+            country = click.address_components[1].long_name;
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        else if (click.types[0] == 'sublocality_level_1'){
+            city = click.address_components[1].long_name
+            country = click.address_components[4].long_name
+            lat = click.geometry.location.lat();
+            lng = click.geometry.location.lng();
+            place_id = click.place_id;
+        }
+        //console.log("component2: "+click.address_components[2])
+        console.log("city: "+city+" country: "+country+" lat: "+lat+" lng:"+lng+" place_id: "+place_id);
+        //var here = click.address_components[0].long_name;
+
+        $('#shopping-to-input').closest('div').find('.location-span').remove();
+        $('#shopping-to-input').closest('div').append('<span style="display: none;" class="location-span"><span style="display: none;"><input type="hidden" name="order_origin_city" value="'+String(city)+'">'+String(city)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="order_origin_country" style="display: none;" value="'+String(country)+'">'+String(country)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="order_origin_lat" style="display: none;" value="'+String(lat)+'">'+String(lat)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="order_origin_lng" style="display: none;" value="'+String(lng)+'">'+String(lng)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="order_origin_placeID" style="display: none;" value="'+String(place_id)+'">'+String(place_id)+'</span></span>');
+    });
+
+    $('#shopping-to-input').focus(function(){
+       $('#shopping-to-input').on('keydown' , function(){
+          shopping_to_input_geolocate = false;
+       });
+    });
+    $('#shopping-to-input').focusout(function(){
+       if(!shopping_to_input_geolocate){
+           $('#shopping-to-input').closest('div').find('.location-span').remove();
+           $('#shopping-to-input').val('');
+       }
+    });
+
 
 
     var from_min_date = moment().toDate();
@@ -383,6 +897,7 @@ $(document).ready(function() {
         isRTL : true ,
         firstday : 6 ,
         field: $('#shopping-due-in-date')[0] ,
+        minDate: moment().toDate() ,
     });
 
     $('.call-me-btn').on('click',function(){

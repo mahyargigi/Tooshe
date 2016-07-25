@@ -334,6 +334,7 @@ $(document).ready(function(){
         isRTL : true ,
         firstday : 6 ,
         field: $('#date1')[0] ,
+        minDate: moment().toDate(),
     });
     $('.number').on('change',function(){
       if(this.value < 1){

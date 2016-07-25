@@ -129,8 +129,8 @@ $(document).ready(function(){
         console.log("city: "+city+" country: "+country+" lat: "+lat+" lng:"+lng+" place_id: "+place_id);
         var here = click.address_components[0].long_name;
 
-        $('#dest-input').closest('div').find('.location-span').remove();
-        $('#dest-input').closest('div').append('<span style="display: none;" class="location-span"><span style="display: none;"><input type="hidden" name="destination_city">'+String(city)+'</span>'+
+        $('#dest-input').closest('span').find('.location-span1').remove();
+        $('#dest-input').closest('span').append('<span style="display: none;" class="location-span1"><span style="display: none;"><input type="hidden" name="destination_city">'+String(city)+'</span>'+
                 '<span style="display: none;"><input type="hidden" name="destination_country" style="display: none;">'+String(country)+'</span>'+
                 '<span style="display: none;"><input type="hidden" name="destination_lat" style="display: none;">'+String(lat)+'</span>'+
                 '<span style="display: none;"><input type="hidden" name="destination_lng" style="display: none;">'+String(lng)+'</span>'+
@@ -176,8 +176,8 @@ $(document).ready(function(){
         console.log("city: "+city+" country: "+country+" lat: "+lat+" lng:"+lng+" place_id: "+place_id);
         var here = click.address_components[0].long_name;
 
-        $('#source-input').closest('div').find('.location-span').remove();
-        $('#source-input').closest('div').append('<span style="display: none;" class="location-span"><span style="display: none;"><input type="hidden" name="origin_city">'+String(city)+'</span>'+
+        $('#source-input').closest('span').find('.location-span2').remove();
+        $('#source-input').closest('span').append('<span style="display: none;" class="location-span2"><span style="display: none;"><input type="hidden" name="origin_city">'+String(city)+'</span>'+
                 '<span style="display: none;"><input type="hidden" name="origin_country" style="display: none;">'+String(country)+'</span>'+
                 '<span style="display: none;"><input type="hidden" name="origin_lat" style="display: none;">'+String(lat)+'</span>'+
                 '<span style="display: none;"><input type="hidden" name="origin_lng" style="display: none;">'+String(lng)+'</span>'+

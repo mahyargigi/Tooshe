@@ -784,11 +784,11 @@ $(document).ready(function() {
         //var here = click.address_components[0].long_name;
 
         $('#shopping-to-input').closest('div').find('.location-span').remove();
-        $('#shopping-to-input').closest('div').append('<span style="display: none;" class="location-span"><span style="display: none;"><input type="hidden" name="order_origin_city" value="'+String(city)+'">'+String(city)+'</span>'+
-                '<span style="display: none;"><input type="hidden" name="order_origin_country" style="display: none;" value="'+String(country)+'">'+String(country)+'</span>'+
-                '<span style="display: none;"><input type="hidden" name="order_origin_lat" style="display: none;" value="'+String(lat)+'">'+String(lat)+'</span>'+
-                '<span style="display: none;"><input type="hidden" name="order_origin_lng" style="display: none;" value="'+String(lng)+'">'+String(lng)+'</span>'+
-                '<span style="display: none;"><input type="hidden" name="order_origin_placeID" style="display: none;" value="'+String(place_id)+'">'+String(place_id)+'</span></span>');
+        $('#shopping-to-input').closest('div').append('<span style="display: none;" class="location-span"><span style="display: none;"><input type="hidden" name="order_destination_city" value="'+String(city)+'">'+String(city)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="order_destination_country" style="display: none;" value="'+String(country)+'">'+String(country)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="order_destination_lat" style="display: none;" value="'+String(lat)+'">'+String(lat)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="order_destination_lng" style="display: none;" value="'+String(lng)+'">'+String(lng)+'</span>'+
+                '<span style="display: none;"><input type="hidden" name="order_destination_placeID" style="display: none;" value="'+String(place_id)+'">'+String(place_id)+'</span></span>');
     });
 
     $('#shopping-to-input').focus(function(){

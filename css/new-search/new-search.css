@@ -875,7 +875,7 @@ button.close{
         /*min-width: 732px;*/
     /*}*/
 /*}*/
-@media (min-width:768px) {
+/*@media (min-width:768px) {*/
     .first{
         display: inline-block !important;
         float: left !important;
@@ -893,8 +893,15 @@ button.close{
         width: 100%;
         display: inline-block;
     }
-}
-@media (max-width: 1358px) and (min-width: 768px){
+    .nav-tabs.nav-justified>li {
+    display: table-cell;
+    width: 1%;
+    }
+    /*.nav-tabs li {*/
+        /*display: inline!important;*/
+    /*}*/
+/*}*/
+@media (max-width: 1358px){
     .container-fluid{
         width: 1358px !important;
     }

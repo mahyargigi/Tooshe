@@ -883,7 +883,7 @@ button.close{
         min-width: 26% !important;
     }
     .second{
-        margin-left: 3%;
+        margin-left: 2.5%;
         display: inline-block !important;
         float: left !important;
         width: 880px !important;
@@ -894,12 +894,12 @@ button.close{
         display: inline-block;
     }
 }
-@media (max-width: 1366px) and (min-width: 768px){
+@media (max-width: 1358px) and (min-width: 768px){
     .container-fluid{
-        width: 1366px !important;
+        width: 1358px !important;
     }
     footer{
-        width: 1366px !important;
+        width: 1358px !important;
     }
 }
 

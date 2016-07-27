@@ -5,55 +5,55 @@ body{
     font-family: broya;
     src: url(../../fonts/global/BROYA.TTF);
 }
-@media (max-width: 768px){
-    #any-information{
-        margin-left: 20px;
-    }
-    /*#textArea{*/
+/*@media (max-width: 768px){*/
+    /*#any-information{*/
         /*margin-left: 20px;*/
     /*}*/
-    #submit-button{
-        /*margin-right: 160px !important;*/
+    /*!*#textArea{*!*/
+        /*!*margin-left: 20px;*!*/
+    /*!*}*!*/
+    /*#submit-button{*/
+        /*!*margin-right: 160px !important;*!*/
+        /*!*margin-left: 100px !important;*!*/
+    /*}*/
+    /*.max-weight-label{*/
+        /*float: left !important;*/
+    /*}*/
+    /*#money-input{*/
+        /*margin-right: 30px;*/
+    /*}*/
+    /*.dest-div{*/
+        /*text-align: left !important;*/
+    /*}*/
+    /*.textarea-row{*/
+        /*margin-left: 0px !important;*/
+    /*}*/
+    /*#textArea{*/
+        /*margin-left: 0px !important;*/
+    /*}*/
+/*}*/
+/*@media(max-width: 1552px) and (min-width: 992px){*/
+    /*body{*/
+        /*width: 1552px !important;*/
+    /*}*/
+/*}*/
+/*@media (max-width: 991px) and (min-width: 768px) {*/
+    /*body , .container-fluid{*/
+        /*width: 991px !important;*/
+    /*}*/
+    /*#any-information{*/
+        /*margin-left: 50px;*/
+    /*}*/
+        /*#submit-button{*/
+        /*margin-right: 135px !important;*/
         /*margin-left: 100px !important;*/
-    }
-    .max-weight-label{
-        float: left !important;
-    }
-    #money-input{
-        margin-right: 30px;
-    }
-    .dest-div{
-        text-align: left !important;
-    }
-    .textarea-row{
-        margin-left: 0px !important;
-    }
-    #textArea{
-        margin-left: 0px !important;
-    }
-}
-@media(max-width: 1552px) and (min-width: 992px){
-    body{
-        width: 1552px !important;
-    }
-}
-@media (max-width: 991px) and (min-width: 768px) {
-    body , .container-fluid{
-        width: 991px !important;
-    }
-    #any-information{
-        margin-left: 50px;
-    }
-        #submit-button{
-        margin-right: 135px !important;
-        margin-left: 100px !important;
-    }
-}
-@media (max-width: 460px) {
-    body{
-        width: 460px;
-    }
-}
+    /*}*/
+/*}*/
+/*@media (max-width: 460px) {*/
+    /*body{*/
+        /*width: 460px;*/
+    /*}*/
+/*}*/
 .dest-div{
     text-align: right;
 }
@@ -92,6 +92,21 @@ input:focus{
     /*width: 40px;*/
 
 }
+.flight-div{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    min-width: 1100px;
+}
+@media (max-width: 1148px) {
+    .container-fluid{
+        width: 1148px;
+    }
+    footer{
+        width: 1148px;
+    }
+}
+
 #flight-form{
     /*background-color: lightgray;*/
     /*background: url(../../img/foozieh.png);*/

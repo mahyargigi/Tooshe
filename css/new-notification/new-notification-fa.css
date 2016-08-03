@@ -39,8 +39,22 @@
 .goods-inf{
     font-size: 0.9em !important;
 }
-@media (max-width: 1404px ) and (min-width: 992px) {
-    .sticker-image{
-        /*top: 60px;*/
+.notif-whole-div{
+    width: 1035px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1080px) {
+    .container-fluid{
+        width: 1080px;
+    }
+    footer{
+        width: 1080px;
     }
 }
+/*@media (max-width: 1404px ) and (min-width: 992px) {*/
+    /*.sticker-image{*/
+        /*!*top: 60px;*!*/
+    /*}*/
+/*}*/

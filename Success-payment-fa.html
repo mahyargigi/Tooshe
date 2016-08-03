@@ -369,11 +369,510 @@ sabzi ghorme yakh zade
           </div>
         </footer>
 
+    <!-- Modal -->
+        <div class="modal fade" id="signup_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <br>
+                <h4 class="modal-title" id="myModalLabel3" style="text-align:center;color: rgba(103, 177, 123, 0.82);">
+                                        برای تکمیل درخواست کافیست عضو شوید
+                </h4>
+                <span style="display:block;text-align:center">
+                    می توانید با
+                    <a class="fbcl" href="#">فیسبوک</a> یا <a class="glcl" href="#">گوگل</a>
+                هم عضو شوید
+                </span>
+                <!--<p class="or_container"><span>یا</span></p>-->
+              </div>
+              <div class="modal-body">
+              <form novalidate>
+                <div class="row">
+
+                    <div class="col-md-6 signupfield">
+                        <div class="form-group">
+                            <input type="text" class="" placeholder="نام خانوادگی" id="signup-laname" required data-validation-required-message="نام ضروری است" pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="فقط شامل حروف باشد">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 signupfield">
+                        <div class="form-group">
+                            <input type="text" class="" placeholder="نام" id="signup-faname" required data-validation-required-message="نام ضروری است" pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="فقط شامل حروف باشد">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <div class="form-group">
+                            <input type="email" class="" placeholder="ایمیل" id="signup-username" required data-validation-required-message="لطفا ایمیل خود را وارد کنید" data-validation-email-message="فرمت ایمیل صحیح نمی‌باشد.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <div class="form-group">
+                            <input type="password" class="" placeholder="رمز عبور" id="signup-password" minlength="6" required data-validation-required-message="لطفا رمز عبور خود وارد کنید" data-validation-minlength-message="حداقل 6 کاراکتر">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <span >جنسیت:</span>
+                        <div class="radio radio-primary" style="display:inline-block;margin-left: 20px;">
+                          <label>
+                            <input type="radio" name="gender" value="1" checked="checked"> مرد
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="0"> زن
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <span>تاریخ تولد:</span>
+                        <div class="birthday">
+                            <select class="form-control">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                              <option>7</option>
+                              <option>8</option>
+                              <option>9</option>
+                              <option>10</option>
+                              <option>11</option>
+                              <option>12</option>
+                              <option>13</option>
+                              <option>14</option>
+                              <option>15</option>
+                              <option>16</option>
+                              <option>17</option>
+                              <option>18</option>
+                              <option>19</option>
+                              <option>20</option>
+                              <option>21</option>
+                              <option>22</option>
+                              <option>23</option>
+                              <option>24</option>
+                              <option>25</option>
+                              <option>26</option>
+                              <option>27</option>
+                              <option>28</option>
+                              <option>29</option>
+                              <option>30</option>
+                              <option>31</option>
+                            </select>
+                            <select class="form-control">
+                              <option>Jan</option>
+                              <option>Feb</option>
+                              <option>Mar</option>
+                              <option>Apr</option>
+                              <option>May</option>
+                              <option>Jun</option>
+                              <option>Jul</option>
+                              <option>Aug</option>
+                              <option>Sep</option>
+                              <option>Oct</option>
+                              <option>Nov</option>
+                              <option>Dec</option>
+                            </select>
+                            <select class="form-control">
+                              <option>2005</option>
+                              <option>2004</option>
+                              <option>2003</option>
+                              <option>2002</option>
+                              <option>2001</option>
+                              <option>2000</option>
+                              <option>1999</option>
+                              <option>1998</option>
+                              <option>1997</option>
+                              <option>1996</option>
+                              <option>1995</option>
+                              <option>1994</option>
+                              <option>1993</option>
+                              <option>1992</option>
+                              <option>1991</option>
+                              <option>1990</option>
+                              <option>1989</option>
+                              <option>1988</option>
+                              <option>1987</option>
+                              <option>1986</option>
+                              <option>1985</option>
+                              <option>1984</option>
+                              <option>1983</option>
+                              <option>1982</option>
+                              <option>1981</option>
+                              <option>1980</option>
+                              <option>1979</option>
+                              <option>1978</option>
+                              <option>1977</option>
+                              <option>1976</option>
+                              <option>1975</option>
+                              <option>1974</option>
+                              <option>1973</option>
+                              <option>1972</option>
+                              <option>1971</option>
+                              <option>1970</option>
+                              <option>1969</option>
+                              <option>1968</option>
+                              <option>1967</option>
+                              <option>1966</option>
+                              <option>1965</option>
+                              <option>1964</option>
+                              <option>1963</option>
+                              <option>1962</option>
+                              <option>1961</option>
+                              <option>1960</option>
+                              <option>1959</option>
+                              <option>1958</option>
+                              <option>1957</option>
+                              <option>1956</option>
+                              <option>1955</option>
+                              <option>1954</option>
+                              <option>1953</option>
+                              <option>1952</option>
+                              <option>1951</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 text-muted" style="text-align: center;margin-top: 10px;">
+                        عضویت شما به منزله‌ی پذیرفتن <a href="#">شرایط و مقررات</a> توشه می‌باشد
+                    </div>
+
+                </div>
+            </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">انصراف</button>
+                <button type="submit" class="btn btn-primary">عضویت</button>
+                <p>آیا قبلا عضو شده‌اید ؟ <a href="#" data-toggle="modal" data-target="#signin_modal" data-dismiss="modal">وارد شوید</a></p>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+    <!-- Modal -->
+        <div class="modal fade" id="signup_modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <br>
+                <h4 class="modal-title" id="myModalLabel2" style="text-align:center;color: rgba(103, 177, 123, 0.82);">
+رایگان عضو شوید
+                </h4>
+                <span style="display:block;text-align:center">
+                    می توانید با
+                    <a class="fbcl" href="#">فیسبوک</a> یا <a class="glcl" href="#">گوگل</a>
+                هم عضو شوید
+                </span>
+                <!--<p class="or_container"><span>یا</span></p>-->
+              </div>
+              <div class="modal-body">
+              <form novalidate>
+                <div class="row">
+
+                    <div class="col-md-6 signupfield">
+                        <div class="form-group">
+                            <input type="text" class="" placeholder="نام خانوادگی" id="signup-laname2" required data-validation-required-message="نام ضروری است" pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="فقط شامل حروف باشد">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 signupfield">
+                        <div class="form-group">
+                            <input type="text" class="" placeholder="نام" id="signup-faname2" required data-validation-required-message="نام ضروری است" pattern="^[a-zA-Z ]{2,15}$" data-validation-pattern-message="فقط شامل حروف باشد">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <div class="form-group">
+                            <input type="email" class="" placeholder="ایمیل" id="signup-username2" required data-validation-required-message="لطفا ایمیل خود را وارد کنید" data-validation-email-message="فرمت ایمیل صحیح نمی‌باشد.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <div class="form-group">
+                            <input type="password" class="" placeholder="رمز عبور" id="signup-password2" minlength="6" required data-validation-required-message="لطفا رمز عبور خود وارد کنید" data-validation-minlength-message="حداقل 6 کاراکتر">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <span >جنسیت:</span>
+                        <div class="radio radio-primary" style="display:inline-block;margin-left: 20px;">
+                          <label>
+                            <input type="radio" name="gender" value="1" checked="checked"> مرد
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="0"> زن
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 signupfield">
+                        <span>تاریخ تولد:</span>
+                        <div class="birthday">
+                            <select class="form-control">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                              <option>7</option>
+                              <option>8</option>
+                              <option>9</option>
+                              <option>10</option>
+                              <option>11</option>
+                              <option>12</option>
+                              <option>13</option>
+                              <option>14</option>
+                              <option>15</option>
+                              <option>16</option>
+                              <option>17</option>
+                              <option>18</option>
+                              <option>19</option>
+                              <option>20</option>
+                              <option>21</option>
+                              <option>22</option>
+                              <option>23</option>
+                              <option>24</option>
+                              <option>25</option>
+                              <option>26</option>
+                              <option>27</option>
+                              <option>28</option>
+                              <option>29</option>
+                              <option>30</option>
+                              <option>31</option>
+                            </select>
+                            <select class="form-control">
+                              <option>Jan</option>
+                              <option>Feb</option>
+                              <option>Mar</option>
+                              <option>Apr</option>
+                              <option>May</option>
+                              <option>Jun</option>
+                              <option>Jul</option>
+                              <option>Aug</option>
+                              <option>Sep</option>
+                              <option>Oct</option>
+                              <option>Nov</option>
+                              <option>Dec</option>
+                            </select>
+                            <select class="form-control">
+                              <option>2005</option>
+                              <option>2004</option>
+                              <option>2003</option>
+                              <option>2002</option>
+                              <option>2001</option>
+                              <option>2000</option>
+                              <option>1999</option>
+                              <option>1998</option>
+                              <option>1997</option>
+                              <option>1996</option>
+                              <option>1995</option>
+                              <option>1994</option>
+                              <option>1993</option>
+                              <option>1992</option>
+                              <option>1991</option>
+                              <option>1990</option>
+                              <option>1989</option>
+                              <option>1988</option>
+                              <option>1987</option>
+                              <option>1986</option>
+                              <option>1985</option>
+                              <option>1984</option>
+                              <option>1983</option>
+                              <option>1982</option>
+                              <option>1981</option>
+                              <option>1980</option>
+                              <option>1979</option>
+                              <option>1978</option>
+                              <option>1977</option>
+                              <option>1976</option>
+                              <option>1975</option>
+                              <option>1974</option>
+                              <option>1973</option>
+                              <option>1972</option>
+                              <option>1971</option>
+                              <option>1970</option>
+                              <option>1969</option>
+                              <option>1968</option>
+                              <option>1967</option>
+                              <option>1966</option>
+                              <option>1965</option>
+                              <option>1964</option>
+                              <option>1963</option>
+                              <option>1962</option>
+                              <option>1961</option>
+                              <option>1960</option>
+                              <option>1959</option>
+                              <option>1958</option>
+                              <option>1957</option>
+                              <option>1956</option>
+                              <option>1955</option>
+                              <option>1954</option>
+                              <option>1953</option>
+                              <option>1952</option>
+                              <option>1951</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 text-muted" style="text-align: center;margin-top: 10px;">
+                        عضویت شما به منزله‌ی پذیرفتن <a href="#">شرایط و مقررات</a> توشه می‌باشد
+                    </div>
+
+                </div>
+            </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">انصراف</button>
+                <button type="submit" class="btn btn-primary">عضویت</button>
+                <p>آیا قبلا عضو شده‌اید ؟ <a href="#" data-toggle="modal" data-target="#signin_modal2" data-dismiss="modal">وارد شوید</a></p>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+    <!-- Modal -->
+        <div class="modal fade" id="signin_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <br>
+                <h4 class="modal-title" id="myModalLabel" style="text-align:center">ورود به حساب کاربری</h4>
+                <span style="display:block;text-align:center">با <a class="fbcl" href="#">فیسبوک</a> یا <a class="glcl" href="#">گوگل</a></span>
+                <p class="or_container"><span>یا</span></p>
+              </div>
+              <div class="modal-body">
+              <form novalidate>
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+                        <div class="form-group mgb">
+                            <input type="email" class="" placeholder="ایمیل" id="signin-username" required data-validation-required-message="لطفا ایمیل خود را وارد کنید" data-validation-email-message="فرمت ایمیل صحیح نمی‌باشد.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+                        <div class="form-group mgb">
+                            <input type="password" class="" placeholder="رمز عبور" id="signin-password" required data-validation-required-message="لطفا رمز عبور خود را وارد کنید">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+
+                        <div class="checkbox" >
+                          <label style="float: right;">
+مرا به خاطر بسپار
+                            <input type="checkbox">
+                          </label>
+                        <span style="float:left;"><a href="#">رمزعبور را فراموش کرده‌ام</a></span>
+                        </div>
+
+                    </div>
+
+                </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">انصراف</button>
+                <button type="submit" class="btn btn-primary">ورود</button>
+                <p>عضو توشه نشده‌اید؟ <a href="#" data-toggle="modal" data-target="#signup_modal" data-dismiss="modal">عضویت</a> رایگان</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+    <!-- Modal -->
+        <div class="modal fade" id="signin_modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2_1">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <br>
+                <h4 class="modal-title" id="myModalLabel2_1" style="text-align:center">ورود به حساب کاربری</h4>
+                <span style="display:block;text-align:center">با <a class="fbcl" href="#">فیسبوک</a> یا <a class="glcl" href="#">گوگل</a></span>
+                <p class="or_container"><span>یا</span></p>
+              </div>
+              <div class="modal-body">
+              <form novalidate>
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+                        <div class="form-group mgb">
+                            <input type="email" class="" placeholder="ایمیل" id="signin-username2" required data-validation-required-message="لطفا ایمیل خود را وارد کنید" data-validation-email-message="فرمت ایمیل صحیح نمی‌باشد.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+                        <div class="form-group mgb">
+                            <input type="password" class="" placeholder="رمز عبور" id="signin-password2" required data-validation-required-message="لطفا رمز عبور خود را وارد کنید">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 signinfield">
+
+                        <div class="checkbox" >
+                          <label style="float: right;">
+مرا به خاطر بسپار
+                            <input type="checkbox">
+                          </label>
+                        <span style="float:left;"><a href="#">رمزعبور را فراموش کرده‌ام</a></span>
+                        </div>
+
+                    </div>
+
+                </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">انصراف</button>
+                <button type="submit" class="btn btn-primary">ورود</button>
+                <p>عضو توشه نشده‌اید؟ <a href="#" data-toggle="modal" data-target="#signup_modal2" data-dismiss="modal">عضویت</a> رایگان</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+    <!--site edns here-->
+
     <script src="js/global/jquery-1.11.2.js" ></script>
-    <script src="js/global/bootstrap.min.js" ></script>
     <!--<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>-->
+    <!--<script src="js/global/jquery.geocomplete.js"></script>-->
+    <script src="js/most-new-navbar/tooshe.min.js"></script>
     <script src="js/global/material.min.js"></script>
-    <!--<script src="js/global/moment.min.js"></script>-->
+    <script src="js/global/moment.min.js"></script>
+
+    <!--<script src="js/global/bootstrap.min.js" ></script>-->
     <!--<script src="js/global/ripples.min.js"></script>-->
     <!--<script src="js/global/jquery.dropdown.js"></script>-->
     <!--<script src="js/global/jquery-ui.js"></script>-->

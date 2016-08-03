@@ -55,11 +55,39 @@
     top: -70px;
 }
 .sum-div{
+    /*position: absolute;*/
+    /*left: 12%;*/
+    /*right: 5%;*/
+    /*width: 40%;*/
     position: absolute;
-    left: 12%;
-    right: 5%;
-    width: 40%;
-
+    right: 53%;
+}
+.finalize-div{
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (max-width: 800px) {
+    .container-fluid{
+        width: 800px;
+    }
+    footer{
+        width: 800px;
+    }
+    .sum-div{
+        left: 12%;
+        right: inherit;
+    }
+}
+input{
+    border-radius: 5px;
+    border: solid;
+    border-width: 1px;
+    border-color: #d4d5d1;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 8px;
+    padding-top: 8px;
 }
 .sum-div-h{
     position: relative;
@@ -86,6 +114,7 @@
 }
 .container-fluid{
     font-family: broya,Arial;
+    margin-top: 100px;
 }
 
 h1,h2,h3,h4,h5,h6{

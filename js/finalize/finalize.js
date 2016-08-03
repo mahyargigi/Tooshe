@@ -6,13 +6,20 @@ $(document).ready(function(){
        $(this).css('display','none');
        $('#input-phone-number').css('display','inline-block');
        $('.done').css('display','inline-block');
+       $('.mobile-span').html('تلفن همراه: ')
    });
     $('.done').on('click',function(){
        var number = $('#input-phone-number').val();
        $('#input-phone-number').css('display','none');
        $('.done').css('display','none');
-       $('.phone-number-span').css('display','inline-block');
-       $('.number-span').html(number);
+        if(number !== ''){
+            $('.phone-number-span').css('display','inline-block');
+            $('.number-span').html(number);
+        }
+        else{
+            $('.phone-number').css('display' , '')
+            $('.mobile-span').html(':تلفن همراه')
+        }
     });
     $('.edit').on('click',function(){
         var number = $('#input-phone-number').val();
@@ -21,8 +28,18 @@ $(document).ready(function(){
         $('.done').css('display','inline-block');
         $('.phone-number-span').css('display','none');
     });
+    //$('#input-phone-number').numeric();
+    $('#input-phone-number').on('keypress',function(e){
+        if((e.which>57 || e.which<48)){
+            return false;
+        }
+    });
+    $('#input-phone-number').bind("paste" , function(e){
+        e.preventDefault();
+    });
     var dollar = parseInt($('.dollar').html());
     $('.toman').html(dollar*3500);
+
 });
 
 

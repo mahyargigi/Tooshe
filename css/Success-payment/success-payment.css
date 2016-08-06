@@ -1,3 +1,8 @@
+@media (max-width: 731px){
+    footer{
+        width: 731px;
+    }
+}
 .whole-div{
     width: 700px !important;
     margin-left: auto;

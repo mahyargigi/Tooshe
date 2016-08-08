@@ -19,6 +19,11 @@ $("input").on("paste", function(event) {
 ////        return false;
 ////    }
 //    var element = this ;
-    return false;
+    if($(this).hasClass('url')){
+        return true;
+    }
+    else{
+        return false;
+    }
 
 });

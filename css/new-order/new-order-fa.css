@@ -143,6 +143,7 @@ div.radio{
 }
 .form-label{
     color: rgba(88, 146, 159, 0.90);
+    margin-top: 7px;
 }
 .or-header{
     color: rgba(94, 89, 91, 0.90);
@@ -176,7 +177,7 @@ div.radio{
 .image-container .top-image {
     position: absolute;
     top: 0;
-    left: 15px;
+    right: 10px;
     z-index: 1;
     opacity: 0.7;
 }
@@ -227,6 +228,13 @@ div.radio{
     color: green;
     font-size: 20px;
 }
+.accurate-to-be-div{
+    margin-top: 15px;
+}
+.second-label{
+    bottom: 5px;
+    right: -5px;
+}
 .fee-amount{
     /*color: darkred;*/
     margin-left: 15px;
@@ -238,7 +246,7 @@ div.radio{
     border-radius: 10px;
     border-color: green;
 }
-.col-md-12 div.order-btn{
+.col-md-sabegh div.order-btn{
     padding-left: 35px !important;
     padding-right: 35px !important;
     padding-bottom: 20px !important;
@@ -246,21 +254,18 @@ div.radio{
     border-radius: 5px;
 }
 
-@media (max-width: 991px ) {
-    .radio-whole-div , .online-markets-div , .image-container , .percent-for-tooshe , .totally-pay-div , .accurate-to-be-div , .delivery-fee-div , .number-div{
-        direction: rtl;
-    }
-    .delivery-fee-label{
-        margin-top: 15px;
-    }
-    .image-container .top-image {
-        right: 15px;
-    }
-    /*.first-label{*/
-        /*display: inline-block;*/
-    /*}*/
-    /*.second-label{*/
-        /*display: none;*/
+input[type=text] ,input[type=number], textarea{
+    padding: 15px;
+    direction: rtl;
+}
+
+.warning-label{
+    color: red;
+    margin-top: 10px;
+}
+@media (max-width: 1030px) {
+    /*.container-fluid{*/
+        /*width: 1030px;*/
     /*}*/
 }
 
@@ -344,6 +349,8 @@ input[type=range]:focus::-moz-range-track {
     /*border-radius: 3px;*/
     border: none;
 }
+
+
 /*end of slider css*/
 
 .container-fluid{

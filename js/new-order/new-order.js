@@ -158,7 +158,8 @@ $(document).ready(function(){
        //    console.log("unchecked!");
        //}
     });
-    $('.url').on('keydown' , function(){
+    $('.url').on('keyup' , function(){
+        console.log($(this).val());
         if(isUrlValid($(this).val())){
             $('.warning-label').css('display','none');
         }

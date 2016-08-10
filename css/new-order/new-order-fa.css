@@ -252,6 +252,8 @@ div.radio{
     padding-bottom: 20px !important;
     padding-top: 20px !important;
     border-radius: 5px;
+    background: #26c6da !important;
+    color: white !important;
 }
 
 input[type=text] ,input[type=number], textarea{
@@ -293,6 +295,15 @@ input[type=text] ,input[type=number], textarea{
     .whole-div{
         margin-right: 0% !important;
     }
+}
+@media (max-width: 1250px) {
+    .container-fluid{
+        width: 1250px !important;
+    }
+    footer{
+        width: 1250px;
+    }
+
 }
 /*@media (max-width: 1310px) {*/
     /*.container-fluid{*/

@@ -41,6 +41,9 @@ p.text-muted.old-price
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 1em;
 }
+.modal .text-danger [role="alert"] li{
+    text-align: right;
+}
 @media(max-width:767px) {
     #sign-up-button{
         text-align: center;

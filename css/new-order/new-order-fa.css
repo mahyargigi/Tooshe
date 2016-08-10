@@ -263,12 +263,15 @@ input[type=text] ,input[type=number], textarea{
     color: red;
     margin-top: 10px;
 }
-@media (max-width: 1030px) {
-    /*.container-fluid{*/
-        /*width: 1030px;*/
-    /*}*/
-}
 
+@media (max-width: 1310px) {
+    .container-fluid{
+        width: 1310px;
+    }
+    footer{
+        width: 1310px;
+    }
+}
 /*slider*/
 
 

@@ -266,32 +266,32 @@ input[type=text] ,input[type=number], textarea{
 
 @media (max-width: 1550px) {
     .whole-div{
-        margin-right: 7% !important;
+        margin-right: 6% !important;
     }
 }
 @media (max-width: 1500px) {
     .whole-div{
-        margin-right: 6% !important;
+        margin-right: 5% !important;
     }
 }
 @media (max-width: 1450px) {
     .whole-div{
-        margin-right: 5% !important;
+        margin-right: 4% !important;
     }
 }
 @media (max-width: 1400px) {
     .whole-div{
-        margin-right: 4% !important;
+        margin-right: 3% !important;
     }
 }
 @media (max-width: 1350px) {
     .whole-div{
-        margin-right: 3% !important;
+        margin-right: 2% !important;
     }
 }
 @media (max-width: 1300px) {
     .whole-div{
-        margin-right: 1% !important;
+        margin-right: 0% !important;
     }
 }
 /*@media (max-width: 1310px) {*/

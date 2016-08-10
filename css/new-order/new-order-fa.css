@@ -255,7 +255,7 @@ div.radio{
 }
 
 input[type=text] ,input[type=number], textarea{
-    padding: 15px;
+    padding: 10px;
     direction: rtl;
 }
 

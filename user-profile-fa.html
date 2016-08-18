@@ -23,7 +23,7 @@
     <link href="css/global/farsi-font.css" rel="stylesheet">
 
 </head>
-<body>
+<div>
 
     <div class="ajax-loader"></div>
 
@@ -151,126 +151,117 @@
 
     <div class="container-fluid">
         <div class="row first-row">
-            <div class="col-md-3 col-sm-3 col-xs-4">
-                <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-9 col-sm-12 col-xs-12">
-                        <img class="img-circle user-image" src="img/global/ensan-avalie.jpg" alt="">
-                    </div>
-                    <!--<div class="col-md-1"></div>-->
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-3 col-xs-3">
-                <div class="row user-specification-row user-name-row">
-                    <h2 class="user-name inline" id="name" contenteditable="false">Seyed abas araghchi</h2>
-                     <h4 class="edit inline"><a href="#" class="edit-name"> ویرایش</a></h4>
-                </div>
-                <div class="row user-specification-row">
-                    <h5 class="inline address">
-                        <input alt="a" type="text" id="input-address" style="display: none">
-                        <span id="address">
-							Tehran , Iran
-						</span>
-                    </h5>
-                    <h4 class="inline edit" id="test"><a href="#" id="test2" class="edit-address"> ویرایش</a></h4>
-                </div>
-                <div class="row user-specification-row">
-                    <h5>عضو سایت از جولای 2015</h5>
-                </div>
-                <div class="row user-specification-row">
-                    <h5 class="average-response-time" dir="rtl">
-5 ساعت : متوسط زمان پاسخ دهی
-                    </h5>
-                </div>
-            </div>
-            <div class="visible-sm visible-xs col-sm-2 col-xs-1"></div>
-            <div class="col-md-3 col-sm-4 col-xs-4">
-                <div class="row" style="width: 100%">
+            <div class="left-div">
+                <div class="row verification-div">
                     <ul id="verifications-ul">
-                        <li><h5 id="verifications">تاییدیه</h5></li>
+                        <li class="verification-header"><h5 id="verifications">تاییدیه</h5></li>
                         <li>
                             <div class="row">
-                                <div class="col-md-2 col-sm-2 col-xs-2">
-                                    <img src="img/application-fee/iphone6_gold_portrait.png" class="logo" alt="">
+                                <div class="left-col">
+                                    <img src="img/user-profile/tick.png" alt="">
                                 </div>
-                                <div class="col-md-7 col-sm-7 col-xs-7">
+                                <div class="mid-col">
                                     <span class="description">شماره تلفن تایید شده است</span>
                                 </div>
-                                <div class="col-md-2 col-sm-2 col-xs-2">
-                                    <img src="img/user-profile/tick.png" alt="">
+                                <div class="right-col">
+                                    <img src="img/application-fee/iphone6_gold_portrait.png" class="logo" alt="">
                                 </div>
-                                <div class="col-md-1 col-sm-1 col-xs-1"></div>
                             </div>
                         </li>
                         <li>
                             <div class="row">
-                                <div class="col-md-2 col-sm-2 col-xs-2">
-                                    <img src="img/application-fee/cart.png" class="logo" alt="">
+
+                                <!--<div class="col-md-1 col-sm-1 col-xs-1"></div>-->
+                                <div class="left-col">
+                                    <a href="#" class="verification-add">اضافه</a>
                                 </div>
-                                <div class="col-md-7 col-sm-7 col-xs-7">
+                                <div class="mid-col">
                                     <span class="description">کارت اعتباری</span>
                                 </div>
-                                <div class="col-md-2 col-sm-2 col-xs-2">
-                                    <a href="#" class="verification-add">اضافه</a>
+                                <div class="right-col">
+                                    <img src="img/application-fee/cart.png" class="logo" alt="">
                                 </div>
-                                <div class="col-md-1 col-sm-1 col-xs-1"></div>
                             </div>
                         </li>
                         <li>
                             <div class="row">
-                                <div class="col-md-2 col-sm-2 col-xs-2">
-                                    <img src="img/application-fee/Untitled-3.png" class="logo" alt="">
-                                </div>
-                                <div class="col-md-7 col-sm-7 col-xs-7">
-                                    <span class="description">ایمیل تایید شده</span>
-                                </div>
-                                <div class="col-md-2 col-sm-2 col-xs-2">
+
+                                <div class="left-col">
                                     <img src="img/user-profile/tick.png" alt="">
                                 </div>
-                                <div class="col-md-1 col-sm-1 col-xs-1"></div>
+                                <div class="mid-col">
+                                    <span class="description">ایمیل تایید شده</span>
+                                </div>
+                                <div class="right-col">
+                                    <img src="img/application-fee/Untitled-3.png" class="logo" alt="">
+                                </div>
                             </div>
                         </li>
                         <li>
                             <div class="row">
-                                <div class="col-md-2 col-sm-2 col-xs-2">
-                                    <img src="img/application-fee/facebook-icon.png" class="logo" id="facebook-logo" alt="">
-                                </div>
-                                <div class="col-md-7 col-sm-7 col-xs-7">
-                                    <span class="description">فیسبوک وصل نشده</span>
-                                </div>
-                                <div class="col-md-2 col-sm-2 col-xs-2">
+
+                                <div class="left-col">
                                     <a href="#" class="verification-add">اضافه</a>
                                 </div>
-                                <div class="col-md-1 col-sm-1 col-xs-1"></div>
+                                <div class="mid-col">
+                                    <span class="description">فیسبوک وصل نشده</span>
+                                </div>
+                                <div class="right-col">
+                                    <img src="img/application-fee/facebook-icon.png" class="logo" id="facebook-logo" alt="">
+                                </div>
                             </div>
                         </li>
                         <li>
                             <div class="row">
-                                <div class="col-md-2 col-sm-2 col-xs-2">
-                                    <img src="img/application-fee/linkedin_icon.png" class="logo" id="linkedin-logo" alt="">
+                                <div class="left-col">
+                                    <img src="img/user-profile/tick.png" alt="">
                                 </div>
-                                <div class="col-md-7 col-sm-7 col-xs-7">
+                                <div class="mid-col">
                                     <span class="description">
 									لینکدین متصل شده
 									</span>
                                 </div>
-                                <div class="col-md-2 col-sm-2 col-xs-2">
-                                    <img src="img/user-profile/tick.png" alt="">
+                                <div class="right-col">
+                                    <img src="img/application-fee/linkedin_icon.png" class="logo" id="linkedin-logo" alt="">
                                 </div>
-                                <div class="col-md-1 col-sm-1 col-xs-1"></div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
+            <div class="mid-div">
+                <div class="mid-div-inf">
+                    <div class="row user-specification-row user-name-row">
+                        <h2 class="user-name inline" id="name" contenteditable="false">Seyed abas araghchi</h2>
+                    </div>
+                    <div class="row user-specification-row">
+                        <h5 class="inline address">
+                            <span id="address">
+                                Tehran , Iran
+                            </span>
+                        </h5>
+                    </div>
+                    <div class="row user-specification-row">
+                        <h5>عضو سایت از جولای 2015</h5>
+                    </div>
+                </div>
+                <div class="mid-div-pic">
+                    <img class="img-circle user-image" src="img/global/ensan-avalie.jpg" alt="">
+                </div>
+            </div>
+            <!--<div class="visible-sm visible-xs col-sm-2 col-xs-1"></div>-->
+            <div class="right-div">
+            </div>
         </div>
         <div class="row">
-            <div class="col-md-3 col-sm-1 col-xs-1"></div>
-            <div class="col-md-6 col-sm-11 col-xs-11">
+            <div class="left-div">
+                .
+            </div>
+            <div class="mid-div">
                 <ul class="nav nav-tabs nav-justified user-tabs">
-                    <li class="active first-li"><a href="#live-requests" data-toggle="tab">تقاضاهای فعلی من</a></li>
+                    <li class="active first-li"><a href="#live-requests" data-toggle="tab" >تقاضاهای فعلی من</a></li>
                     <li><a href="#my-travels" data-toggle="tab">مسافرت های من</a></li>
-                    <li><a href="#wishlist" data-toggle="tab">لیست خواستنی های من</a></li>
+                    <!--<li><a href="#wishlist" data-toggle="tab">لیست خواستنی های من</a></li>-->
                     <!--<li dir="rtl"><a href="#reviews" data-toggle="tab">نظرات(<span class="minus-review">-3</span>,<span class="positive-review">+5</span>)</a></li>-->
                 </ul>
                 <div class="tab-content">
@@ -306,59 +297,273 @@
 
                     <div class="tab-pane fade in active" id="live-requests">
                         <div class="row live-request-div">
-                            <div class="col-md-1 col-sm-1 col-xs-1 grid-row-1">
-                                <img src="img/user-profile/Gooshe-send.png" class="gooshe" alt="">
+                            <div style="width: 32%;display: inline-block;vertical-align: top;" class="grid-row-2">
+                                <div class="row live-request-row">
+                                    <label class="title status-title">
+									وضعیت:
+									</label>
+                                    <div>
+                                        <img class="request-color" src="img/user-profile/request-sent.png" alt="">
+                                        <label class="answer bold-answer">
+                                            درخواست برای 6نفر ارسال شده
+                                            درخواست برای 6نفر ارسال شده
+                                        </label>
+                                        <br>
+                                        <br>
+                                        <img class="request-color" src="img/user-profile/request-sent.png" alt="">
+                                        <label class="answer bold-answer" >
+                                            درخواست برای 6نفر ارسال شده
+                                                                                        درخواست برای 6نفر ارسال شده
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row live-request-row">
+                                    <label class="title">
+روزهای باقی مانده برای ارسال:
+                                    </label>
+                                    <label class="answer">-</label>
+                                </div>
+                                <div class="row live-request-row ">
+                                    <!--<div class="col-md-2"></div>-->
+                                    <!--<div class="col-md-6">-->
+                                        <div style="width: 150px;" class="btn btn-circle  live-request-btn search-btn"><label class=" btn-label search-btn-inner-label">دوباره جست و جو کن</label></div>
+                                    <!--</div>-->
+                                    <div class="clearfix visible-md-block">
+
+                                    </div>
+
+                                    <!--<div class="col-md-6">-->
+                                        <div style="width: 150px;position: relative;right: 10px;" class="btn btn-circle btn-sm live-request-btn cancel-btn btn-lg btn-white"><label class=" btn-label cancel-btn-inner-label">لغو کن</label></div>
+                                    <!--</div>-->
+                                    <br>
+                                </div>
                             </div>
-                            <div class="col-md-3 col-sm-3 col-xs-3 grid-row-2">
+                            <div style="width: 32%;display: inline-block;vertical-align: top;" class="grid-row-3">
+                                <div class="row live-request-row" dir="rtl" style="margin-top: 30px;">
+                                    <label class="title">
+									جنس:
+									</label>
+                                    <br>
+                                    <label class="answer bold-answer" dir="rtl">
+                                        iphone 6s grey unlocked
+									</label>
+                                </div>
+                                <div class="row" dir="rtl">
+                                    <label class="title">
+									از:
+									</label>
+                                    <br>
+                                    <label class="answer bold-answer" dir="rtl">
+									Asia , Europe , South America
+									</label>
+                                </div>
+                                <div class="row traveler-row" dir="rtl">
+                                    <label class="title">
+									مسافر:
+									</label>
+                                    <br>
+                                    <label class="answer">
+									کسی هنوز به عهده نگرفته
+									</label>
+                                </div>
+                            </div>
+                            <div style="width: 25%;display: inline-block;vertical-align: top;" class="grid-row-4 ">
                                 <div class="row">
                                     <div class="col-md-2 col-sm-2 col-xs-2"></div>
                                     <div class="col-md-10 col-sm-10 col-xs-10">
                                         <img src="img/user-profile/iphone6.jpg" class="img-circle live-requests-img" alt=""/>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-md-4 grid-row-3 col-sm-4 col-xs-4">
+                            <div style="width: 8.3%;display: inline-block;vertical-align: top;" class="grid-row-1">
+                                <img src="img/user-profile/Gooshe-send.png" class="gooshe" alt="">
+                            </div>
+                        </div>
+                        <div class="row live-request-div">
+                            <div class="col-md-4 grid-row-2 col-sm-4 col-xs-4">
                                 <div class="row live-request-row">
-                                    <h4>
-                                        iphone 6s grey unlocked
-                                    </h4>
+                                    <label class="title status-title">
+									وضعیت:
+									</label>
+                                    <div>
+                                        <img class="request-color" src="img/user-profile/request-finalizedd.png" alt="">
+                                        <label class="answer bold-answer">
+درخواست نهایی شده در انتظار تحویل
+درخواست نهایی شده در انتظار تحویل
+                                        </label>
+                                        <br>
+                                        <br>
+                                        <img class="request-color" src="img/user-profile/request-finalizedd.png" alt="">
+                                        <label class="answer bold-answer" >
+درخواست نهایی شده در انتظار تحویل
+درخواست نهایی شده در انتظار تحویل
+                                        </label>
+                                    </div>
                                 </div>
                                 <div class="row live-request-row">
+                                    <label class="title">
+روزهای باقی مانده برای ارسال:
+                                    </label>
+                                    <label class="answer red"><b>8 روز</b></label>
+                                </div>
+                                <div class="row live-request-row ">
+                                    <div class="btn btn-circle btn-sm live-request-btn send-message-btn btn-lg btn-white">
+                                        <label class="btn-label send-message-btn-inner-label">پیغام بفرست</label>
+                                    </div>
+                                    <div class="clearfix visible-md-block">
+
+                                    </div>
+                                    <div style="position: relative;right: 10px;" class="btn btn-circle btn-sm live-request-btn finish-review-btn btn-lg btn-material-cyan-800">
+                                        <label class="btn-label finish-review-btn-inner-label">اتمام و بازبینی</label>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="col-md-4 grid-row-3 col-sm-4 col-xs-4">
+                                <div class="row live-request-row" dir="rtl" style="margin-top: 30px;">
+                                    <label class="title">
+									جنس:
+									</label>
+                                    <br>
+                                    <label class="answer bold-answer" dir="rtl">
+                                        iphone 6s grey unlocked
+									</label>
+                                </div>
+                                <div class="row" dir="rtl">
                                     <label class="title">
 									از:
 									</label>
-                                    <label class="answer bold-answer">
+                                    <br>
+                                    <label class="answer bold-answer" dir="rtl">
 									Asia , Europe , South America
 									</label>
                                 </div>
-                                <div class="row traveler-row">
+                                <div class="row traveler-row" dir="rtl">
                                     <label class="title">
 									مسافر:
 									</label>
+                                    <br>
                                     <label class="answer">
 									کسی هنوز به عهده نگرفته
 									</label>
                                 </div>
                             </div>
-                            <div class="col-md-4 grid-row-4 col-sm-4 col-xs-4">
+                            <div class="col-md-3 grid-row-4 col-sm-3 col-xs-3">
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-2 col-xs-2"></div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <img src="img/user-profile/shirt.png" class="img-circle live-requests-img" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1 grid-row-1 col-sm-1 col-xs-1">
+                                <img src="img/user-profile/Gooshe-order.png" class="gooshe" alt="">
+                            </div>
+                        </div>
+
+                        <div class="row live-request-div">
+                            <div class="col-md-4 grid-row-2 col-sm-4 col-xs-4">
                                 <div class="row live-request-row">
                                     <label class="title status-title">
-									وضعیت
+									وضعیت:
 									</label>
-                                    <div style="display: inline-block">
-                                        <img class="request-color" src="img/user-profile/request-sent.png" alt="">
-                                        <label class="answer bold-answer">درخواست برای 6 <a href="#">نفر</a>ارسال شده</label>
-
+                                    <div>
+                                        <img class="request-color" src="img/user-profile/request-finalized.png" alt="">
+                                        <label class="answer bold-answer">
+درخواست قبول شده در انتظار نهایی شدن
+درخواست قبول شده در انتظار نهایی شدن
+                                        </label>
+                                        <br>
+                                        <br>
+                                        <img class="request-color" src="img/user-profile/request-finalized.png" alt="">
+                                        <label class="answer bold-answer" >
+درخواست قبول شده در انتظار نهایی شدن
+درخواست قبول شده در انتظار نهایی شدن
+                                        </label>
                                     </div>
                                 </div>
                                 <div class="row live-request-row">
                                     <label class="title">
-									روزهای باقیمانده
-									<br>
-                                    برای ارسال
+روزهای باقی مانده برای ارسال:
                                     </label>
-                                    <label class="answer">-</label>
+                                    <label class="answer red"><b>8 روز</b></label>
+                                </div>
+                                <div class="row live-request-row ">
+                                    <div style="width: 150px" class="btn btn-circle btn-sm live-request-btn finalize-btn btn-lg btn-material-red-400"><label class="finalize-btn-inner-label">نهایی کن</label></div>
+                                    <div class="clearfix visible-md-block">
+
+                                    </div>
+                                        <div style="width: 150px;position: relative;right: 10px;" class="btn btn-circle btn-sm live-request-btn cancel-btn btn-lg btn-white"><label class="cancel-btn-inner-label">لغو کن</label></div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="col-md-4 grid-row-3 col-sm-4 col-xs-4">
+                                <div class="row live-request-row" dir="rtl" style="margin-top: 30px;">
+                                    <label class="title">
+									جنس:
+									</label>
+                                    <br>
+                                    <label class="answer bold-answer" dir="rtl">
+                                        iphone 6s grey unlocked
+									</label>
+                                </div>
+                                <div class="row" dir="rtl">
+                                    <label class="title">
+									از:
+									</label>
+                                    <br>
+                                    <label class="answer bold-answer" dir="rtl">
+									Asia , Europe , South America
+									</label>
+                                </div>
+                                <div class="row traveler-row" dir="rtl">
+                                    <label class="title">
+									مسافر:
+									</label>
+                                    <br>
+                                    <label class="answer">
+									کسی هنوز به عهده نگرفته
+									</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 grid-row-4 col-sm-3 col-xs-3">
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-2 col-xs-2"></div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <img src="img/user-profile/shirt.png" class="img-circle live-requests-img" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1 grid-row-1 col-sm-1 col-xs-1">
+                                <img src="img/user-profile/Gooshe-delivery.png" class="gooshe" alt="">
+                            </div>
+                        </div>
+                        <div class="row live-request-div">
+                            <div class="col-md-4 grid-row-2 col-sm-4 col-xs-4">
+                                <div class="row live-request-row">
+                                    <label class="title status-title">
+									وضعیت:
+									</label>
+                                    <div>
+                                        <img class="request-color" src="img/user-profile/no-offers.png" alt="">
+                                        <label class="answer bold-answer">
+هنوز درخواستی نرسیده است
+هنوز درخواستی نرسیده است
+                                        </label>
+                                        <br>
+                                        <br>
+                                        <img class="request-color" src="img/user-profile/no-offers.png" alt="">
+                                        <label class="answer bold-answer" >
+هنوز درخواستی نرسیده است
+هنوز درخواستی نرسیده است
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row live-request-row">
+                                    <label class="title">
+روزهای باقی مانده برای ارسال:
+                                    </label>
+                                    <label class="answer red"><b>8 روز</b></label>
                                 </div>
                                 <div class="row live-request-row ">
                                     <!--<div class="col-md-2"></div>-->
@@ -370,83 +575,41 @@
                                     </div>
 
                                     <!--<div class="col-md-6">-->
-                                        <div style="width: 150px;" class="btn btn-circle btn-sm live-request-btn cancel-btn btn-lg btn-white"><label class=" btn-label cancel-btn-inner-label">لغو کن</label></div>
+                                        <div style="width: 150px;position: relative;right: 10px;" class="btn btn-circle btn-sm live-request-btn cancel-btn btn-lg btn-white"><label class=" btn-label cancel-btn-inner-label">لغو کن</label></div>
                                     <!--</div>-->
                                     <br>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row live-request-div">
-                            <div class="col-md-1 grid-row-1 col-sm-1 col-xs-1">
-                                <img src="img/user-profile/Gooshe-order.png" class="gooshe" alt="">
-                            </div>
-                            <div class="col-md-3 grid-row-2 col-sm-3 col-xs-3">
-                                <div class="row">
-                                    <div class="col-md-2 col-sm-2 col-xs-2"></div>
-                                    <div class="col-md-10 col-sm-10 col-xs-10">
-                                        <img src="img/user-profile/shirt.png" class="img-circle live-requests-img" alt=""/>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="col-md-4 grid-row-3 col-sm-4 col-xs-4">
-                                <div class="row live-request-row">
-                                    <h4>
-                                                                                iphone 6s grey unlocked
-                                    </h4>
+                                <div class="row live-request-row" dir="rtl" style="margin-top: 30px;">
+                                    <label class="title">
+									جنس:
+									</label>
+                                    <br>
+                                    <label class="answer bold-answer" dir="rtl">
+                                        iphone 6s grey unlocked
+									</label>
                                 </div>
-                                <div class="row live-request-row">
-                                    <label class="title">از:</label>
-                                    <label class="answer bold-answer">
+                                <div class="row" dir="rtl">
+                                    <label class="title">
+									از:
+									</label>
+                                    <br>
+                                    <label class="answer bold-answer" dir="rtl">
 									Asia , Europe , South America
 									</label>
                                 </div>
-                                <div class="row traveler-row">
-                                    <label class="title">مسافر:</label>
+                                <div class="row traveler-row" dir="rtl">
+                                    <label class="title">
+									مسافر:
+									</label>
+                                    <br>
                                     <label class="answer">
 									کسی هنوز به عهده نگرفته
 									</label>
                                 </div>
                             </div>
-                            <div class="col-md-4 grid-row-4 col-sm-4 col-xs-4">
-                                <div class="row live-request-row">
-                                    <label class="title status-title">وضعیت:</label>
-                                    <div style="display: inline-block">
-                                        <img class="request-color" src="img/user-profile/request-finalizedd.png" alt="">
-                                        <label class="answer multi-line-status bold-answer">درخواست نهایی شده،<br>
-                                            در انتظار تحویل
-                                            <!--<a href="#">pickers</a>-->
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="row live-request-row">
-                                    <label class="title">روزهای باقیمانده <br>
-                                    برای تحویل
-                                    </label>
-                                    <label class="answer red"><b>8 روز</b></label>
-                                </div>
-                                <div class="row live-request-row">
-                                    <!--<div class="col-md-2"></div>-->
-                                    <div class="btn btn-circle btn-sm live-request-btn send-message-btn btn-lg btn-white">
-                                        <label class="btn-label send-message-btn-inner-label">پیغام بفرست</label>
-                                    </div>
-                                    <!--<div class="col-md-1"></div>-->
-                                    <div class="clearfix visible-md-block">
-
-                                    </div>
-                                    <div class="btn btn-circle btn-sm live-request-btn finish-review-btn btn-lg btn-material-cyan-800">
-                                        <label class="btn-label finish-review-btn-inner-label">اتمام و بازبینی</label>
-                                    </div>
-                                    <!--<div class="col-md-1"></div>-->
-                                    <br>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row live-request-div">
-                            <div class="col-md-1 grid-row-1 col-sm-1 col-xs-1">
-                                <img src="img/user-profile/Gooshe-delivery.png" class="gooshe" alt="">
-                            </div>
-                            <div class="col-md-3 grid-row-2 col-sm-3 col-xs-3">
+                            <div class="col-md-3 grid-row-4 col-sm-3 col-xs-3">
                                 <div class="row">
                                     <div class="col-md-2 col-sm-2 col-xs-2"></div>
                                     <div class="col-md-10 col-sm-10 col-xs-10">
@@ -454,127 +617,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 grid-row-3 col-sm-4 col-xs-4">
-                                <div class="row live-request-row">
-                                    <h4>
-iphone 6s grey unlocked
-                                    </h4>
-                                </div>
-                                <div class="row live-request-row">
-                                    <label class="title">از:</label>
-                                    <label class="answer bold-answer">
-									آسیا ، اروپا ، آمریکای جنوبی
-									</label>
-                                </div>
-                                <div class="row traveler-row">
-                                    <label class="title">مسافر:</label>
-                                    <label class="answer">کسی هنوز به عهده نگرفته</label>
-                                </div>
-                            </div>
-                            <div class="col-md-4 grid-row-4 col-sm-4 col-xs-4">
-                                <div class="row live-request-row">
-                                    <label class="title status-title">وضعیت</label>
-                                    <div style="display: inline-block">
-                                        <img class="request-color" src="img/user-profile/request-finalized.png" alt="">
-                                        <label class="answer multi-line-status bold-answer">درخواست قبول شده،<br>
-                                            در انتظار نهایی شدن
-                                            <!--<a href="#">pickers</a>-->
-                                        </label>
-                                    </div>
-
-                                </div>
-                                <div class="row live-request-row">
-                                    <label class="title">روزهای باقیمانده<br>
-                                    برای تحویل
-                                    </label>
-                                    <label class="answer red"><b>8 روز</b></label>
-                                </div>
-                                <div class="row live-request-row">
-                                    <!--<div class="col-md-2"></div>-->
-                                    <!--<div class="col-md-6">-->
-                                        <div style="width: 150px" class="btn btn-circle btn-sm live-request-btn finalize-btn btn-lg btn-material-red-400"><label class="finalize-btn-inner-label">نهایی کن</label></div>
-                                    <!--</div>-->
-                                    <div class="clearfix visible-md-block">
-
-                                    </div>
-                                    <!--<div class="col-md-6">-->
-                                        <div style="width: 150px" class="btn btn-circle btn-sm live-request-btn cancel-btn btn-lg btn-white"><label class="cancel-btn-inner-label">لغو کن</label></div>
-                                    <!--</div>-->
-                                    <br>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row live-request-div">
                             <div class="col-md-1 grid-row-1 col-sm-1 col-xs-1">
                                 <img src="img/user-profile/Gooshe-delivery.png" class="gooshe" alt="">
-                            </div>
-                            <div class="col-md-3 grid-row-2 col-sm-3 col-xs-3">
-                                <div class="row">
-                                    <div class="col-md-2 col-sm-2 col-xs-2"></div>
-                                    <div class="col-md-10 col-sm-10 col-xs-10">
-                                        <img src="img/user-profile/shirt.png" class="img-circle live-requests-img" alt=""/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 grid-row-3 col-sm-4 col-xs-4">
-                                <div class="row live-request-row">
-                                    <h4>
-                                        iphone 6s grey unlocked
-                                    </h4>
-                                </div>
-                                <div class="row live-request-row">
-                                    <label class="title">از:</label>
-                                    <label class="answer bold-answer">آسیا ، اروپا ، آمریکا</label>
-                                </div>
-                                <div class="row traveler-row">
-                                    <label class="title">مسافر:</label>
-                                    <label class="answer">کسی هنوز به عهده نگرفته</label>
-                                </div>
-                            </div>
-                            <div class="col-md-4 grid-row-4 col-sm-4 col-xs-4">
-                                <div class="row live-request-row">
-                                    <label class="title status-title">وضعیت</label>
-                                    <div style="display: inline-block">
-                                        <img class="request-color" src="img/user-profile/no-offers.png" alt="">
-                                        <label class="answer bold-answer">
-                                            هنوز درخواستی نرسیده است
-                                            <!--<a href="#">pickers</a>-->
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="row live-request-row">
-                                    <label class="title">روزهای باقیمانده <br>
-                                    برای تحویل
-                                    </label>
-                                    <label class="answer red"><b>8 روز</b></label>
-                                </div>
-                                <div class="row live-request-row">
-                                    <!--<div class="col-md-2"></div>-->
-                                    <!--<div class="col-md-6">-->
-                                        <div style="width: 150px;"  class="btn btn-circle btn-sm live-request-btn search-btn btn-lg btn-white"><label class="search-btn-inner-label">دوباره جست و جو کن</label></div>
-                                    <!--</div>-->
-                                        <div class="clearfix visible-md-block">
-
-                                        </div>
-                                    <!--<div class="col-md-6">-->
-                                        <div style="width: 150px;" class="btn btn-circle btn-sm live-request-btn cancel-btn btn-lg btn-white"><label class="cancel-btn-inner-label">لغو کن</label></div>
-                                    <!--</div>-->
-                                    <br>
-                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="my-travels">
                         <div class="row travel-info">
-                            <div class="col-md-1 date-div col-sm-1 col-xs-1">
-                                <div class="row date">
-                                    <span class="month">آگوست</span>
-                                    <br>
-                                    <span class="day">26</span>
-                                    <br>
-                                    <span class="year">2015</span>
-                                </div>
-                            </div>
                             <div class="col-md-11 content-div col-sm-11 col-xs-11">
                                 <div class="row">
                                     <!--rowye ezafie gozashte shode baraye align kardan ba buttone suitcase status mibashad-->
@@ -645,18 +694,19 @@ iphone 6s grey unlocked
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <hr class="my-travels-hr">
-                        <div class="row travel-info">
                             <div class="col-md-1 date-div col-sm-1 col-xs-1">
                                 <div class="row date">
                                     <span class="month">آگوست</span>
                                     <br>
-                                    <span class="day">25</span>
+                                    <span class="day">26</span>
                                     <br>
                                     <span class="year">2015</span>
                                 </div>
                             </div>
+                        </div>
+                        <hr class="my-travels-hr">
+                        <div class="row travel-info">
+
                             <div class="col-md-11 content-div col-sm-11 col-xs-11">
                                 <div class="row">
                                     <!--rowye ezafie gozashte shode baraye align kardan ba buttone suitcase status mibashad-->
@@ -722,6 +772,15 @@ iphone 6s grey unlocked
                                             </ul>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1 date-div col-sm-1 col-xs-1">
+                                <div class="row date">
+                                    <span class="month">آگوست</span>
+                                    <br>
+                                    <span class="day">25</span>
+                                    <br>
+                                    <span class="year">2015</span>
                                 </div>
                             </div>
                         </div>
@@ -1082,7 +1141,7 @@ iphone 6s grey unlocked
 
             </div>
             </div>
-            <div class="col-md-3 visible-md visible-lg"></div>
+            <div class="right-div"></div>
         </div>
     </div>
     <footer>

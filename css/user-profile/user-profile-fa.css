@@ -7,16 +7,44 @@
     .first-row{
         margin-top: 20px;
     }
+    .left-div{
+        width: 420px;
+        float: left;
+        display: inline-block;
+    }
+    .verification-div{
+        width: 390px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .mid-div{
+        width: 800px;
+        float: left;
+        display: inline-block;
+        margin-left: 15px;
+    }
+    .mid-div-inf{
+        width: 590px;
+        display: inline-block;
+        direction: rtl;
+    }
+    .mid-div-pic{
+        width: 200px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: right;
+    }
+    .right-div{
+        width: 100%;
+        display: inline-block;
+    }
 /*end of first row*/
 
 /*left side*/
 
 .user-image{
-    height: 10%;
-        /*200px;*/
-    width: 75%;
-        /*200px;*/
-
+    height: 175px;
+    width: 175px;
     margin-top: 20px;
     border: solid;
     border-width: 1px;
@@ -53,17 +81,22 @@
     .user-tabs{
         margin-top: -50px;
     }
-    @media (max-width: 992px){
-        .user-tabs{
-            margin-top: 0px;
+    @media (max-width: 1350px) {
+        .container-fluid{
+            width: 1350px;
         }
     }
-    @media (max-width: 768px) {
-        .nav-tabs.nav-justified>li {
-            display: table-cell;
-            width: 1%;
-        }
-    }
+    /*@media (max-width: 992px){*/
+        /*.user-tabs{*/
+            /*margin-top: 0px;*/
+        /*}*/
+    /*}*/
+    /*@media (max-width: 768px) {*/
+        /*.nav-tabs.nav-justified>li {*/
+            /*display: table-cell;*/
+            /*width: 1%;*/
+        /*}*/
+    /*}*/
     .nav-tabs{
         background-color: transparent !important;
         padding-bottom: 10px !important;
@@ -130,12 +163,13 @@
 
         .date-div{
             position: relative ;
-            left: -50px;
+            left: 55px;
             top: 20px;
+            text-align: center;
         }
         .content-div{
             position: relative ;
-            left: -30px;
+            left: 30px;
             /*top: 30px;*/
         }
         .origin , .destination{
@@ -339,6 +373,8 @@
             border: solid;
             border-color: rgba(228, 229, 217, 0.73);
             margin-top: 30px;
+            left: 20%;
+            position: relative;
         }
         .live-request-row{
             margin-top: 15px;
@@ -348,6 +384,7 @@
         }
         .answer{
             margin-left: 5px;
+            display: inline;
         }
         .live-request-div{
             background-color: white;
@@ -356,31 +393,27 @@
             border: solid;
             border-color: rgba(199, 200, 190, 0.73);
             border-width: 1px;
-            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
         }
         .grid-row-1 {
             position: relative;
-            left: -75px;
+            left: 79px;
         }
         .grid-row-2{
+            direction: rtl;
             position: relative;
-            left: -9.5%;
-            /*float: left;*/
+            left: 5%;
         }
         .grid-row-3{
+            text-align: right;
             position: relative;
-            /*left: -85px;*/
-            left: -10%;
-            /*width: 100%;*/
+            left: 5%;
         }
         .grid-row-4{
             position: relative;
-            /*left: -20px;*/
-            left: -4%;
-            /*float: right;*/
-            /*width: 350px;*/
+            left: 5%;
         }
         .title{
             color: rgba(160, 151, 151, 0.66);
@@ -397,9 +430,15 @@
         .gooshe{
             position: relative;
             top: -2px;
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            filter: FlipH;
+            -ms-filter: "FlipH";
         }
         .request-color{
-            margin-left: 40px;
+            /*margin-left: 40px;*/
         }
         .multi-line-status{
             position: relative;
@@ -574,6 +613,25 @@
     }
     .verification-add{
         color: red;
+    }
+    .verification-header{
+        text-align: right;
+        margin-right: 11px;
+    }
+    .left-col{
+        width: 18%;
+        display: inline-block;
+        text-align: center;
+    }
+    .mid-col{
+        width: 60%;
+        display: inline-block;
+        text-align: right;
+    }
+    .right-col{
+        width: 18%;
+        display: inline-block;
+        text-align: center;
     }
     .logo{
         margin-left: 5px;

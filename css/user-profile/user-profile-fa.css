@@ -90,10 +90,15 @@
         }
     }
     @media (max-width: 1450px) {
-        .container-fluid{
-            -moz-transform: scale(0.9,0.9); /* Moz-browsers */
+        .container-fluid {
+            -moz-transform: scale(0.9, 0.9); /* Moz-browsers */
             zoom: 0.9; /* Other non-webkit browsers */
             zoom: 90%; /* Webkit browsers */
+        }
+        @-moz-document url-prefix() {
+            .container-fluid {
+                margin-top: 30px !important;
+            }
         }
     }
         /*@viewport {*/

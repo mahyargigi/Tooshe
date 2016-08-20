@@ -89,6 +89,13 @@
             width: 1350px;
         }
     }
+    @media (max-width: 1450px) {
+        body{
+            -moz-transform: scale(1, 1); /* Moz-browsers */
+            zoom: 0.9; /* Other non-webkit browsers */
+            zoom: 90%; /* Webkit browsers */
+        }
+    }
         /*@viewport {*/
             /*max-width: 1400px;*/
             /*zoom: 0.1;*/

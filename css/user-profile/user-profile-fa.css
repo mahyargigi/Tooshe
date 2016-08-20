@@ -81,17 +81,18 @@
     .user-tabs{
         margin-top: -50px;
     }
-    /*@media (max-width: 1350px) {*/
-        /*.container-fluid{*/
-            /*width: 1350px;*/
-        /*}*/
-        /*footer{*/
-            /*width: 1350px;*/
-        /*}*/
-    /*}*/
-    @media all {
-        @viewport { width: 1500px; }
+    @media (max-width: 1350px) {
+        .container-fluid{
+            width: 1350px;
+        }
+        footer{
+            width: 1350px;
+        }
     }
+        /*@viewport {*/
+            /*max-width: 1400px;*/
+            /*zoom: 0.1;*/
+        /*}*/
 
     /*@media (max-width: 1450px) {*/
         /*@viewport { width: 1450px; }*/

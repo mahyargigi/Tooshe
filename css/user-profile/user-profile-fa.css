@@ -85,6 +85,9 @@
         .container-fluid{
             width: 1350px;
         }
+        footer{
+            width: 1350px;
+        }
     }
     /*@media (max-width: 992px){*/
         /*.user-tabs{*/
@@ -400,20 +403,32 @@
         .grid-row-1 {
             position: relative;
             left: 79px;
+            width: 8.3%;
+            display: inline-block;
+            vertical-align: top;
         }
         .grid-row-2{
             direction: rtl;
             position: relative;
             left: 5%;
+            width: 32%;
+            display: inline-block;
+            vertical-align: top;
         }
         .grid-row-3{
             text-align: right;
             position: relative;
             left: 5%;
+            width: 32%;
+            display: inline-block;
+            vertical-align: top;
         }
         .grid-row-4{
             position: relative;
             left: 5%;
+            width: 25%;
+            display: inline-block;
+            vertical-align: top;
         }
         .title{
             color: rgba(160, 151, 151, 0.66);

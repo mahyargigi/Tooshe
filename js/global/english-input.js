@@ -7,7 +7,7 @@ $("input").on("keypress", function(event) {
     }
     else{
         if (englishAlphabetAndWhiteSpace.test(key) || key.match(/^\d+$/) || (key==='@') ||(key==='.') || (key==='_')) {
-        return true;
+            return true;
         }
         else{
             return false;

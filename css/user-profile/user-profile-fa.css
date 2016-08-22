@@ -81,12 +81,12 @@
     .user-tabs{
         margin-top: -50px;
     }
-    @media (max-width: 1350px) {
+    @media (max-width: 1250px) {
         .container-fluid{
-            width: 1350px;
+            width: 1250px;
         }
         footer{
-            width: 1350px;
+            width: 1250px;
         }
     }
     @media (max-width: 1450px) {
@@ -249,7 +249,7 @@
         .buttons-div{
             /*position: relative;*/
             /*right: -30px;*/
-            float: right;
+            float: left;
         }
         .suitcase-status-btn{
             float: right;

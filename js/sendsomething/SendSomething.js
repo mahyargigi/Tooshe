@@ -135,16 +135,19 @@ $(document).ready(function(){
                 '<span style="display: none;"><input type="hidden" name="destination_lat" style="display: none;" value="'+String(lat)+'"></span>'+
                 '<span style="display: none;"><input type="hidden" name="destination_lng" style="display: none;" value="'+String(lng)+'"></span>'+
                 '<span style="display: none;"><input type="hidden" name="destination_placeID" style="display: none;" value="'+String(place_id)+'"></span></span>');
-//>>>>>>> 1c8bc9053119fc355c5584bd54382577a0421a6e
     });
 
     $('#dest-input').focus(function(){
+        console.log("here1");
        $('#dest-input').on('keydown' , function(){
-          dest_input_geolocate = false;
+          console.log("here2");
+           dest_input_geolocate = false;
        });
     });
     $('#dest-input').focusout(function(){
+        console.log("here3");
        if(!dest_input_geolocate){
+           console.log("here4");
            $('#dest-input').closest('div').find('.location-span').remove();
            $('#dest-input').val('');
        }
@@ -183,7 +186,6 @@ $(document).ready(function(){
                 '<span style="display: none;"><input type="hidden" name="origin_lat" style="display: none;" value="'+String(lat)+'"></span>'+
                 '<span style="display: none;"><input type="hidden" name="origin_lng" style="display: none;" value="'+String(lng)+'"></span>'+
                 '<span style="display: none;"><input type="hidden" name="origin_placeID" style="display: none;" value="'+String(place_id)+'"></span></span>');
-//>>>>>>> 1c8bc9053119fc355c5584bd54382577a0421a6e
     });
 
     $('#source-input').focus(function(){

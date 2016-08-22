@@ -2,7 +2,7 @@
  * Created by User on 10/5/15.
  */
 $(document).ready((function(){
-    console.log("goh!");
+    //console.log("goh!");
     $('.close').on('click',function(){
         $(this).closest('.row-li').remove();
     });
@@ -43,10 +43,10 @@ $(document).ready((function(){
         $('.fade-in-5').fadeIn(500);
     }, 3000);
 
-    var input1 = document.getElementById('input-address');
-    input1.onkeypress = function(){
-        $('#input-address').geocomplete();
-    }
+    //var input1 = document.getElementById('input-address');
+    //input1.onkeypress = function(){
+    //    $('#input-address').geocomplete();
+    //}
 //    $('.done-name').on('click',function(){
 //       $(this).html("edit");
 //       $(this).addClass('edit-name');
@@ -96,6 +96,17 @@ $(document).ready((function(){
             $('#address').css('display','none');
 
         }
+    });
+    $('.suitcase-status-btn').on('click',function(){
+        console.log($(this).attr('aria-expanded'));
+        if($(this).attr('aria-expanded') == 'true'){
+           console.log("+1");
+           $(this).find('img').css('transform','scaleY(1)');
+       }
+        else{
+           console.log("-1");
+           $(this).find('img').css('transform','scaleY(-1)');
+       }
     });
 
     $('.thumbs-down').on('click',function(){

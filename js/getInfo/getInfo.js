@@ -48,13 +48,19 @@ $(document).ready(function(){
     };
     var geolocated = false;
     $('#city-input').geocomplete(acOptions).bind("geocode:result", function(event, click){
+        geolocated = true;
         $('.forget-it3').html('مرحله بعد');
     });
 
     $('#city-input').focus(function(){
          $('#city-input').on('keydown' , function(){
             $('.forget-it3').html('بی خیال!');
-            $('#city-input').val('');
+            geolocated = false;
          });
+    });
+    $('#city-input').focusout(function(){
+       if (geolocated === false){
+           $('#city-input').val('');
+       }
     });
 });

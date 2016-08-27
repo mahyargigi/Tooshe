@@ -43,13 +43,6 @@ $(document).ready(function(){
            $('.forget-it2').html('بی خیال!');
        }
     });
-    $('.city-input').on('keyup' , function(){
-       if($(this).val() !== ''){
-           $('.forget-it3').html('مرحله بعد');
-       }else{
-           $('.forget-it3').html('بی خیال!');
-       }
-    });
     var acOptions = {
     types: ['(cities)']
     };
@@ -59,8 +52,9 @@ $(document).ready(function(){
     });
 
     $('#city-input').focus(function(){
-       $('#city-input').on('keydown' , function(){
-         $('.forget-it3').html('بی خیال!');
-       });
+         $('#city-input').on('keydown' , function(){
+            $('.forget-it3').html('بی خیال!');
+            $('#city-input').val('');
+         });
     });
 });

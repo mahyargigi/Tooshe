@@ -287,7 +287,7 @@ input[type=range]{
 }
 
 input[type=range]::-moz-range-track {
-    width: 300px;
+    width: 485px;
     height: 5px;
     background: rgba(255, 146, 146, 0.84);
     border: none;
@@ -311,7 +311,7 @@ input[type=range]:-moz-focusring{
 }
 
 input[type=range]:focus::-moz-range-track {
-    width: 300px;
+    width: 485px;
     height: 5px;
     background: rgba(255, 146, 146, 0.84);
     border: none;

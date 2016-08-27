@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/global/bootstrap.min.css" rel="stylesheet">
+    <link href="css/global/material.min.css" rel="stylesheet">
+    <link href="css/global/material-fullpalette.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+
+    <!--navbar css-->
+    <link href="css/most-new-navbar/style.css" rel="stylesheet">
+    <link href="css/most-new-navbar/navbar.css" rel="stylesheet">
+    <link href="css/most-new-navbar/most-new-navbar.css" rel="stylesheet">
+
+
+    <link href="css/getInfo/getInfo.css" rel="stylesheet">
+    <link href="css/footer/footer-fa.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/global/farsi-font.css" rel="stylesheet">
+
+    <title>
+        مشخصات
+    </title>
+
+</head>
+<body>
+
+    <div class="ajax-loader"></div>
+
+		<div class="navmenu navmenu-inverse navmenu-fixed-right offcanvas">
+      		<ul class="nav navmenu-nav">
+
+				<li><a href="/">
+                    خانه
+				</a></li>
+				<li class="divider"></li>
+                <li><a href="/requests/new" class="">
+                    جست و جو
+                </a></li>
+                <li class="divider"></li>
+                <li><a href="/trips/new" class="highlighted">
+                    خرید
+                </a></li>
+				<li><a href="/trips/new" class="">
+                    ارسال
+				</a></li>
+				<li><a href="/trips/new" class="">
+                    ثبت سفر
+				</a></li>
+                <li><a href="#"  data-toggle="modal" data-target="#signup_modal2">
+                    عضویت
+                </a> </li>
+                <li><a href="#" data-toggle="modal" data-target="#signin_modal2">
+                    ورود
+                </a> </li>
+				<!--<li class="dropdown">-->
+					<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Notifications<b class="caret"></b></a>-->
+					<!--<ul class="dropdown-menu navmenu-nav">-->
+						<!--<li><a href="/dashboard/profile">ali requested you to ship an item</a></li>-->
+						<!--<li class="divider"></li>-->
+                        <!--<li><a href="/dashboard/payment">ali accepted your request</a></li>-->
+						<!--<li class="divider"></li>-->
+						<!--<li><a href="/dashboard/account">ali requested you to buy an item</a></li>-->
+						<!--&lt;!&ndash;<li><a href="/dashboard/notifications">Notification Settings</a></li>&ndash;&gt;-->
+					<!--</ul>-->
+				<!--</li>-->
+                <!--<li class="divider"></li>-->
+				<!--<li class="dropdown">-->
+					<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard<b class="caret"></b></a>-->
+					<!--<ul class="dropdown-menu navmenu-nav">-->
+						<!--<li><a href="/dashboard/profile">My profile</a></li>-->
+						<!--<li class="divider"></li>-->
+                        <!--<li><a href="/dashboard/payment">My Wallet</a></li>-->
+						<!--<li class="divider"></li>-->
+						<!--<li><a href="/dashboard/account">Help</a></li>-->
+						<!--<li><a href="/dashboard/notifications">Settings</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li><a href="#">Logout</a> </li>-->
+					<!--</ul>-->
+				<!--</li>-->
+                <!--<li><a href="/notifications">Notifications</a></li>-->
+				<!--<li class="divider"></li>-->
+				<!--<li><a href="/about">About</a></li>-->
+				<!--<li><a href="/help">Help</a></li>-->
+				<!--<li><a href="/contact">Contact</a></li>-->
+				<!--<li class="divider"></li>-->
+				<!--<li><a href="/logout">Log Out</a></li>-->
+
+			</ul>
+    	</div>
+    <div class="navbar navbar-default mynavbar navbar-fixed-top">
+        <div class="container" style="padding-top: 0px;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img src="img/most-new-navbar/Tooshe_logo.png" alt="Tooshe" style="position: fixed;top: 25px;;left: 0;margin-left: 20px;margin-bottom: 10px;height: 45px;width: 110px;"></a>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav search-navbar">
+                    <li id="search_button">
+                        <a class="page-scroll search-a" href="#"><i class="fa fa-lg fa-search search-i"></i>
+                        جست و جو
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <!--<ul class="nav navbar-nav navbar-right">-->
+                    <!--&lt;!&ndash;<li><img src="img/most-new-navbar/profile-tn.png" class="img-circle" style="height:32px;margin-top:-5px">&ndash;&gt;-->
+                    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                    <!---->
+                <!--</ul>-->
+                <ul id="middle-navbar" class="nav navbar-nav navbar-right" >
+                    <li class="middle-li">
+                        <a class="page-scroll order-sth-a" href="#"><i class="fa fa-lg fa-shopping-cart order-sth-i"></i>
+                        خرید
+                        </a>
+                    </li>
+                    <li class="middle-li">
+                        <a class="page-scroll send-sth-a" href="#"><i class="fa fa-lg fa-gift send-sth-i"></i>
+                        ارسال
+                        </a>
+                    </li>
+                    <li id="rightest-li" class="middle-li">
+                        <a class="page-scroll take-sth-a" href="#"><i class="fa fa-lg fa-plane take-sth-i"></i>
+                        ثبت سفر
+                        </a>
+                    </li>
+                    <li id="sign-in">
+                        <a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signin_modal2" >
+                            <!--style="padding: 0px;margin-right: 40px;"-->
+                            ورود
+                        </a>
+                    </li>
+                    <li id="join">
+                        <a href="#" class="dropdown-toggle" role="button" aria-expanded="false" data-toggle="modal" data-target="#signup_modal2" >
+                            <!--style="padding: 0px;margin-right: 40px;"-->
+                            عضویت
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="main-div">
+            <div class="prof-pic-div">
+                <h2 class="header-tag">
+                    Mahyar Ghoraian عکس پروفایل آپلود کن
+                </h2>
+                <br>
+                <input type="file" onchange="readURL(this);"   accept="image/*" id="fileInput" name="fileInput" style="display: none;" />
+                <a class="upload-image-link" href="#">
+                    <img class="prof-pic" id="prof-pic" uploaded="false" src="img/getInfo/dotted1.png">
+                    <img src="img/new-order/close_button_1-512.png" alt="" class="top-image"/>
+                </a>
+                <br>
+                <br>
+                <div class="forget-div">
+                    <a class="forget-it" href="#">
+    !بی خیال
+                    </a>
+                </div>
+            </div>
+            <div class="job-div" style="display: none;">
+                <h2 class="header-tag">
+Mahyar Ghoraian شغلت را بنویس
+                </h2>
+                <br>
+                <br>
+                <div class="input-div">
+                    <input class="job-input" type="text" placeholder="(به انگلیسی)">
+                </div>
+                <br>
+                <br>
+                <div class="forget-div">
+                    <a class="forget-it2" href="#">
+بی خیال!
+                    </a>
+
+                    <a class="prev-phase" href="#">
+مرحله ی قبل
+                    </a>
+                </div>
+            </div>
+            <div class="city-div" style="display: none;">
+                <h2 class="header-tag">
+Mahyar Ghoraian شهر محل سکونتت را وارد کن
+                </h2>
+                <br>
+                <br>
+                <div class="input-div">
+                    <input class="city-input" id="city-input" type="text" placeholder="(به انگلیسی)">
+                </div>
+                <br>
+                <br>
+                <div class="forget-div">
+                    <a class="forget-it3" href="#">
+بی خیال!
+                    </a>
+
+                    <a class="prev-phase2" href="#">
+مرحله ی قبل
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <footer>
+          <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="img/global/logo.png" id="logo-img" style="float: right;"></br>
+                    <label id="footer-shoar" dir="rtl">
+                        <i>
+ما افرادی مثل شما هستیم
+                            </br>
+ با این تفاوت که علاقه ای به هزینه کردن اضافه نداریم.
+                           </br>
+همچنین ، بدمان نمی آید که اجناس اصل را با قیمت کمتر از خارج کشور تهیه کنیم :)
+                        </i>
+                    </label>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list" dir="rtl">
+                        <li class="title"><b>
+                            شرکت
+                            <br><br></b></li>
+                        <li><a href="#">
+                            درباره ما
+                        </a></li>
+                        <li><a href="#">
+فرصت های شغلی
+                        </a></li>
+                        <li><a href="#">
+در رسانه ها
+                        </a></li>
+                        <li><a href="#">
+                            وبلاگ
+                        </a></li>
+                        <li><a href="#">
+راهنما
+                        </a></li>
+                        <li><a href="#">
+سیاست ها
+                        </a></li>
+                        <li><a href="#">
+قوانین و خط و مشی رازداری
+                        </a></li>
+                        <li><a href="#">
+                            چه کسانی ما را حمایت نکردند؟
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list" dir="rtl">
+                        <li class="title"><b>
+                            جست و جو
+                            <br><br></b></li>
+                        <li><a href="#">
+                            امنیت
+                        </a></li>
+                        <li><a href="#">
+دوستانت را دعوت کن!
+                        </a></li>
+                        <li><a href="#">
+                            بارهای توشه
+                        </a></li>
+                        <li><a href="#">
+                            موبایل
+                        </a></li>
+                        <li><a href="#">
+                            سفر تجاری
+                        </a></li>
+                        <li><a href="#">
+                            نقشه سایت
+                        </a></li>
+                        <li><a href="#">
+                            سوالات متداول
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list" dir="rtl">
+                        <li class="title"><b>
+                            توشه بری
+                            <br><br></b></li>
+                        <li><a href="#">
+                            چرا توشه بری؟
+                        </a></li>
+                        <li><a href="#">
+                            مهمان نوازی
+                        </a></li>
+                        <li><a href="#">
+                            راه های تحویل
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-list">
+                    <div class="row dropdown-div" id="language-dropdown">
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">
+                              زبان
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">
+                                انگلیسی
+                            </a></li>
+                            <li><a href="#">
+                                فارسی
+                            </a></li>
+                            <li><a href="#">
+                                عربی
+                            </a></li>
+                            <li><a href="#">
+                                هندی
+                            </a></li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="row dropdown-div">
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">
+                              واحد پول
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">
+                                دلار
+                            </a></li>
+                            <li><a href="#">
+                                ریال
+                            </a></li>
+                            <li><a href="#">
+                                یورو
+                            </a></li>
+                            <li><a href="#">
+                                لیره
+                            </a></li>
+                            <li><a href="#">
+                                درهم
+                            </a></li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </footer>
+
+    <script src="js/global/jquery-1.11.2.js" ></script>
+    <script>
+        function initMap() {
+            console.log("is ok!!");
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhrfeBEK01DnFCxkx-WV6VlCX8q0HXnSE&callback=initMap" type="text/javascript"></script>
+    <!--<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>-->
+    <!--<script src="js/global/jquery.geocomplete.js"></script>-->
+
+    <script src="js/ripples.min.js"></script>
+    <script src="js/most-new-navbar/tooshe.min.js"></script>
+	<script src="js/global/material.min.js"></script>
+	<script src="js/global/moment.min.js"></script>
+    <script src="js/getInfo/getInfo.js"></script>
+	<script src="js/global/english-input.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.material.init();
+        });
+    </script>
+    <script>
+        function readURL(input){
+            if($('#prof-pic').attr('uploaded')==='false'){
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                      $('#prof-pic')
+                        .attr('src', e.target.result);
+                      $('#prof-pic')
+                        .attr('uploaded', 'true');
+                    };
+                    reader.readAsDataURL(input.files[0]);
+                    $('#prof-pic').attr('uploaded','true');
+                    $('.forget-it').html('!مرحله ی بعد');
+                }
+            }
+        };
+    </script>
+</body>
+</html>

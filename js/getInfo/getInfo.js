@@ -50,18 +50,17 @@ $(document).ready(function(){
            $('.forget-it3').html('بی خیال!');
        }
     });
-            console.log("is ok!!");
-            var acOptions = {
-            types: ['(cities)']
-            };
-            $('#city-input').geocomplete(acOptions).bind("geocode:result", function(event, click){
-                var city = click.address_components[0].long_name;
-                console.log("geo completeing!");
-            });
-            $('#city-input').change(function(){
-               console.log("yoohooo");
-            });
-            $('#city-input').on('keyup',function(){
-               console.log("a simple log");
-            });
+    var acOptions = {
+    types: ['(cities)']
+    };
+    var geolocated = false;
+    $('#city-input').geocomplete(acOptions).bind("geocode:result", function(event, click){
+        $('.forget-it3').html('مرحله بعد');
+    });
+
+    $('#city-input').focus(function(){
+       $('#city-input').on('keydown' , function(){
+         $('.forget-it3').html('بی خیال!');
+       });
+    });
 });

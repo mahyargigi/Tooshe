@@ -1,3 +1,7 @@
+body{
+    background: url("../../img/getInfo/pattern1.png");
+    background-repeat: repeat;
+}
 .container-fluid{
     margin-top: 100px;
 }
@@ -8,6 +12,13 @@
 }
 .header-tag{
     direction: rtl;
+    text-align: center;
+}
+.pic-div{
+    margin-left: auto;
+    margin-right: auto;
+}
+.job-div , .city-div , .number-div{
     text-align: center;
 }
 .prof-pic , .top-image{
@@ -30,28 +41,70 @@
 .forget-div{
     text-align: center;
 }
-.forget-it ,.forget-it2,.forget-it3, .prev-phase,.prev-phase2{
-
+.forget-it ,.forget-it2,.forget-it3,.forget-it4, .prev-phase,.prev-phase2 , .prev-phase3{
     color: red;
     font-size: 20px;
     border-bottom: 1px solid;
 }
-.forget-it:hover ,.forget-it2:hover,.forget-it3:hover, .prev-phase:hover ,.prev-phase2:hover{
-    text-decoration: none;
+.forget-it:hover ,.forget-it2:hover,.forget-it3:hover ,.forget-it4:hover, .prev-phase:hover ,.prev-phase2:hover, .prev-phase3:hover{
+    text-decoration: none !important;
 }
-.prev-phase ,.prev-phase2{
-    margin-right: 70px;
+.right-btn{
+    border-radius: 5px !important;
+    border: solid 2px !important;
+    border-color: #26c6da !important;
+    background: #26c6da !important;
+    color: white !important;
 }
-input[type=text]{
-    width: 40%;
+.left-btn{
+    border-radius: 5px !important;
+    border: solid 2px !important;
+    border-color: #ed7172 !important;
+    background: #ed7172 !important;
+    color: white !important;
+}
+/*.left-btn:hover{*/
+    /**/
+/*}*/
+.prev-phase ,.prev-phase2 , .prev-phase3{
+    margin-right: 70px !important;
+}
+input[type=text] , input[type=number]{
+    width: 100%;
     border-radius: 5px;
-    border: none;
+    /*border: none;*/
     padding: 10px;
     /*resize: none;*/
     border: solid;
     border-width: 1px;
     border-color: rgba(202, 198, 203, 0.90);
 }
-.input-div{
-    text-align: center;
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+/*.input-div{*/
+    /*text-align: center;*/
+/*}*/
+
+.question-div{
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+    margin-left: 5px;
+}
+.answer-div{
+    width: 35%;
+    display: inline-block;
+}
+.empty-div{
+    width: 30%;
+    display: inline-block;
+}
+.nav-logo{
+    margin-left: 50px;
+    margin-top: 10px;
+    /*width: 100px;*/
 }

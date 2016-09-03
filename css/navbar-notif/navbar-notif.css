@@ -1,0 +1,13 @@
+.navbar-notif{
+    width: 100%;
+    background: #ed7887;
+    text-align: center;
+    margin-top: 80px;
+    padding: 10px;
+    color: white !important;
+    direction: rtl;
+}
+.navbar-notif:hover{
+    background: #ed94a0;
+    cursor: pointer !important;
+}

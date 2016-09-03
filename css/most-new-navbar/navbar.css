@@ -55,7 +55,7 @@
     border-radius: 0 5px 5px 0;
     /*border-left-width: 0;*/
     border-left: none !important;
-    padding: 10px;
+    padding: 5px 10px;
 }
 #join a:hover{
     background-color: rgba(123, 177, 122, 0.82);
@@ -67,7 +67,7 @@
     border:2px solid #00FD04 !important;
     color: #00FD04;
     border-radius: 5px 0px 0px 5px;
-    padding: 10px;
+    padding: 5px 10px;
     /*border-left-width: 0;*/
 }
 

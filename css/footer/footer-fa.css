@@ -20,7 +20,7 @@ footer .row{
 footer {
     background-color: #242830;
     background: url("../../img/footer-background.jpg");
-    padding: 0px !important;
+    padding: 0px 0px 10px 0px  !important;
     /*padding: 40px 0 30px;*/
     margin-top: 50px;
 }
@@ -80,4 +80,7 @@ footer label , footer ul , footer div{
 #footer-shoar{
     color: rgba(179, 178, 178, 0.80);
     font-size: 20px;
+}
+footer a:hover{
+    text-decoration: none;
 }

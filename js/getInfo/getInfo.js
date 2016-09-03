@@ -49,12 +49,13 @@ $(document).ready(function(){
        $('.number-div').fadeOut(500);
        $('.city-div').delay(500).fadeIn(100);
     });
-    $('.job-input').on('keyup' , function(){
+    $('.job-input').on('keyup' , function(e){
        if($(this).val() !== ''){
            $('.forget-it2').html('مرحله بعد');
        }else{
            $('.forget-it2').html('! بی خیال');
        }
+       console.log(e);
     });
     $('.number-input').on('keyup' , function(){
        if($(this).val().length >10){

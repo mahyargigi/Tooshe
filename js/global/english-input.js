@@ -1,5 +1,4 @@
 $("input").on("keypress", function(event) {
-    //console.log("typing");
     var englishAlphabetAndWhiteSpace = /[A-Za-z ]/g;
     var key = String.fromCharCode(event.which);
     if($(this).hasClass('url')){
@@ -15,15 +14,6 @@ $("input").on("keypress", function(event) {
     }
 });
 $("input").on("paste", function(event) {
-//    var englishAlphabetAndWhiteSpace = /[A-Za-z ]/g;
-//    var key = String.fromCharCode(event.which);
-////    if (englishAlphabetAndWhiteSpace.test(key)) {
-////        return true;
-////    }
-////    else{
-////        return false;
-////    }
-//    var element = this ;
     if($(this).hasClass('url')){
         return true;
     }
@@ -31,4 +21,29 @@ $("input").on("paste", function(event) {
         return false;
     }
 
+});
+
+$("input").on("keypress", function(event) {
+    var englishAlphabetAndWhiteSpace = /[A-Za-z ]/g;
+    var key = String.fromCharCode(event.which);
+    if (englishAlphabetAndWhiteSpace.test(key)) {
+        $(this).popover('hide');
+        return true;
+    }
+    else{
+        $(this).popover({
+            title: 'Warning',
+            content: 'Value can not be empty',
+            placement: 'bottom'
+        }).popover('show');
+        return false;
+    }
+});
+$("input").on("paste", function(event) {
+    $(this).popover({
+            title: 'Warning',
+            content: 'Value can not be empty',
+            placement: 'bottom'
+    }).popover('show');
+    return false;
 });

@@ -22,28 +22,3 @@ $("input").on("paste", function(event) {
     }
 
 });
-
-$("input").on("keypress", function(event) {
-    var englishAlphabetAndWhiteSpace = /[A-Za-z ]/g;
-    var key = String.fromCharCode(event.which);
-    if (englishAlphabetAndWhiteSpace.test(key)) {
-        $(this).popover('hide');
-        return true;
-    }
-    else{
-        $(this).popover({
-            title: 'Warning',
-            content: 'Value can not be empty',
-            placement: 'bottom'
-        }).popover('show');
-        return false;
-    }
-});
-$("input").on("paste", function(event) {
-    $(this).popover({
-            title: 'Warning',
-            content: 'Value can not be empty',
-            placement: 'bottom'
-    }).popover('show');
-    return false;
-});

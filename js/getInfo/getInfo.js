@@ -27,19 +27,20 @@ $(document).ready(function(){
     });
     $('.forget-it').on('click',function(){
        $('.prof-pic-div').fadeOut(500);
-       $('.job-div').delay(500).fadeIn(100);
-    });
-    $('.prev-phase').on('click',function(){
-       $('.job-div').fadeOut(500);
-       $('.prof-pic-div').delay(500).fadeIn(100);
-    });
-    $('.forget-it2').on('click',function(){
-       $('.job-div').fadeOut(500);
+       //$('.job-div').delay(500).fadeIn(100);
        $('.city-div').delay(500).fadeIn(100);
     });
+    //$('.prev-phase').on('click',function(){
+    //   $('.job-div').fadeOut(500);
+    //   $('.prof-pic-div').delay(500).fadeIn(100);
+    //});
+    //$('.forget-it2').on('click',function(){
+    //   $('.job-div').fadeOut(500);
+    //   $('.city-div').delay(500).fadeIn(100);
+    //});
     $('.prev-phase2').on('click',function(){
        $('.city-div').fadeOut(500);
-       $('.job-div').delay(500).fadeIn(100);
+       $('.prof-pic-div').delay(500).fadeIn(100);
     });
     $('.forget-it3').on('click',function(){
        $('.city-div').fadeOut(500);
@@ -61,7 +62,7 @@ $(document).ready(function(){
        if($(this).val().length >10){
            $('.forget-it4').html('!اتمام');
        }else{
-           $('.forget-it4').html('! بی خیال');
+           $('.forget-it4').html('!بی خیال');
        }
     });
     $('.number-input').focusout(function(){
@@ -74,6 +75,23 @@ $(document).ready(function(){
     };
     var geolocated = false;
     $('#city-input').geocomplete(acOptions).bind("geocode:result", function(event, click){
+        var the_city = jQuery.parseHTML(click.adr_address).filter(function(index){
+            if (typeof index.classList === "object"){
+                if (index.classList[0] === "locality"){
+                    return index;
+                }
+            }
+        })[0].innerHTML;
+        var the_country = jQuery.parseHTML(click.adr_address).filter(function(index){
+            if (typeof index.classList === "object"){
+                if (index.classList[0] === "country-name"){
+                    return index;
+                }
+            }
+        })[0].innerHTML;
+        //console.log(the_city);
+        //console.log(the_country);
+        $(this).val(the_city+","+the_country)
         geolocated = true;
         $('.forget-it3').html('مرحله بعد');
     });

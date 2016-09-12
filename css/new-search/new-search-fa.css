@@ -77,6 +77,7 @@
 }
 .shopping-result-item-name{
     font-size: 1.1em !important;
+    line-height: 22px !important;
 }
 .shopping-result-question-label{
     font-size: 1em !important;

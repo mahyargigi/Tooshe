@@ -442,11 +442,12 @@ input[type=text]{
     margin-right: auto;
 }
 .shopping-detail-modal{
+    opacity: 0;
     background: whitesmoke;
     width: 500px;
     overflow-y: visible !important;
-    max-height: 580px;
-    margin-top: 50px;
+    height: auto;
+    /*max-height: 500px !important;*/
     margin-left: auto;
     margin-right: auto;
 }
@@ -778,6 +779,7 @@ button.close{
 /*, .shopping-detail-modal*/
 .application-fee-modal ,.application-fee-modal2, .shopping-1st-modal , .shopping-2nd-modal , .shopping-3rd-modal , .traveler-detail-modal , .parcels-detail-modal , .chat-modal{
     overflow-x: hidden !important;
+
     /*overflow-y: hidden !important;*/
 }
 .weight-capacity{

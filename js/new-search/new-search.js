@@ -48,50 +48,6 @@ $(document).ready(function() {
     $('#user-rate4').rating('update', 2.5);
 
 
-//    $('.picks-pagination li a').on('click',function(){
-//        if($(this).parent().hasClass('disabled')){
-//
-//        }
-//        else{
-//            if($(this).html()==='«'){
-//                var current = $('#picks-pagination li.active:first').prev();
-//                var page = $('a',current).html();
-//                $('#picks-ul > li.'+page).show();
-//                $('#picks-ul >li:not(.'+page+')').hide();
-//                current.parent().children().removeClass('active');
-//                current.addClass('active');
-//            }
-//            else if($(this).html()==='»'){
-//                var current = $('#picks-pagination li.active:first').next();
-//                var page = $('a',current).html();
-//                console.log("current is="+current);
-//                console.log("page is="+page);
-//                $('#picks-ul > li.'+page).show();
-//                $('#picks-ul >li:not(.'+page+')').hide();
-//                current.parent().children().removeClass('active');
-//                current.addClass('active');
-//            }
-//            else{
-//                $('#picks-ul > li.'+$(this).html()).show();
-//                $('#picks-ul >li:not(.'+$(this).html()+')').hide();
-//                $(this).parent().parent().children().removeClass('active');
-//                $(this).parent().addClass('active');
-//            }
-//            if($('#paiks-pagination li.first-page').hasClass('active')){
-//                $('#picks-previous').addClass('disabled');
-//                $('#picks-next').removeClass('disabled');
-//            }
-//            if($('#picks-pagination li.last-page').hasClass('active')){
-//                $('#picks-previous').removeClass('disabled');
-//                $('#picks-next').addClass('disabled');
-//            }
-//            if($('#picks-pagination li.last-page.first-page').hasClass('active')){
-//                $('#picks-previous').removeClass('disabled');
-//                $('#picks-next').removeClass('disabled');
-//            }
-//        }
-//    });
-
     $('#travelers-pagination li a').on('click', function () {
         if ($(this).parent().hasClass('disabled')) {
 
@@ -234,7 +190,6 @@ $(document).ready(function() {
            else {
                $('.application-fee-modal2').find('.warning-label').css('display','none');
            }
-           //console.log($('.application-fee-modal2 .requested-price-amount').html());
        };
     });
     $('.application-fee-modal2 input[type=range]').on('change',function(){
@@ -260,35 +215,11 @@ $(document).ready(function() {
             //console.log("here2");
         }
     });
-
-    //var acOptions = {
-    //    types: ['(regions)']
-    //};
-    //var input1 = document.getElementById('from-input');
-    //input1.onkeypress = function(){
-    //    $('#from-input').geocomplete(acOptions);
-    //    console.log("from!");
-    //}
-    //var input2 = document.getElementById('to-input');
-    //input2.onkeypress = function(){
-    //    $('#to-input').geocomplete(acOptions);
-    //}
-    //var input3 = document.getElementById('shopping-from-input');
-    //input3.onkeypress = function(){
-    //    $('#shopping-from-input').geocomplete(acOptions);
-    //}
-    //var input4 = document.getElementById('shopping-to-input');
-    //input4.onkeypress = function(){
-    //    $('#shopping-to-input').geocomplete(acOptions);
-    //}
-    //var input5 = document.getElementById('traveler-from-input');
-    //input5.onkeypress = function(){
-    //    $('#traveler-from-input').geocomplete(acOptions);
-    //}
-    //var input6 = document.getElementById('traveler-to-input');
-    //input6.onkeypress = function(){
-    //    $('#traveler-to-input').geocomplete(acOptions);
-    //}
+    $('a').on('click',function(){
+       if($(this).attr('data-target') == '.shopping-detail-modal'){
+           $('.shopping-detail-modal').css('display','table');
+       }
+    });
 
     var acOptions = {
         types: ['(regions)']
@@ -298,8 +229,6 @@ $(document).ready(function() {
 
     $('#from-input').geocomplete(acOptions).bind("geocode:result", function(event, click){
         from_input_geolocate = true;
-        //console.log(click)
-        //console.log(click.types[0] , click.types[1])
         var city = "";
         var country = "";
         var lat = "";
@@ -354,9 +283,7 @@ $(document).ready(function() {
             lng = click.geometry.location.lng();
             place_id = click.place_id;
         }
-        //console.log("component2: "+click.address_components[2])
         console.log("city: "+city+" country: "+country+" lat: "+lat+" lng:"+lng+" place_id: "+place_id);
-        //var here = click.address_components[0].long_name;
 
         $('#from-input').closest('div').find('.location-span').remove();
         $('#from-input').closest('div').append('<span style="display: none;" class="location-span"><span style="display: none;"><input type="hidden" name="send_origin_city" value="'+String(city)+'">'+String(city)+'</span>'+
@@ -386,8 +313,6 @@ $(document).ready(function() {
 
     $('#to-input').geocomplete(acOptions).bind("geocode:result", function(event, click){
         to_input_geolocate = true;
-        //console.log(click)
-        //console.log(click.types[0] , click.types[1])
         var city = "";
         var country = "";
         var lat = "";
@@ -925,6 +850,22 @@ $(document).ready(function() {
         $('.travelers-result-div').css('display','none');
         $('.parcels-result-div').css('display','none');
         $('.shopping-result-div').css('display','block');
+        $('.shopping-result-item-name').each(function(){
+            var height = parseInt($(this).css('height'));
+            var line_height = parseInt($(this).css('line-height'));
+            var line_numbers = parseInt(height)/parseInt(line_height);
+            var content = String($.trim($(this).text()));
+            if(line_numbers>1){
+                $(this).html(content.substring(0,22)+"...");
+            }
+        });
+        $('.shopping-result-item-from').each(function(){
+            var content = String($.trim($(this).text()));
+            var length = String($.trim($(this).text())).length;
+            if(length>22){
+                $(this).html(content.substring(0,22)+"...");
+            }
+        });
     });
     $('.chat-textarea').on('change keyup paste',function(){
        $('.character-remained').html(500 - parseInt($(this).val().length));
@@ -935,8 +876,16 @@ $(document).ready(function() {
     $('.shopping-li').on('click',function(){
        $(this).find('sup').fadeOut('slow');
     });
-
-
-//    $('#from-date').bootstrapMaterialDatePicker('setMinDate', moment());
-//    $('#to-date').bootstrapMaterialDatePicker('setMinDate', moment());
+    $('.shopping-result-item-name').on('click',function(){
+        var height = parseInt($(this).css('height'));
+        var line_height = parseInt($(this).css('line-height'));
+        var line_numbers = height/line_height;
+        console.log("height:"+height);
+        console.log("line-height:"+line_height);
+        console.log("line-numbers:"+line_numbers);
+        var content = String($.trim($(this).text()));
+        if(line_numbers>1){
+            $(this).html(content.substring(0,22)+"...");
+        }
+    });
 });

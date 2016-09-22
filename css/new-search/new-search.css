@@ -881,15 +881,15 @@ button.close{
     .first{
         display: inline-block !important;
         float: left !important;
-        width: 398px !important;
+        width: 390px !important;
         min-width: 26% !important;
     }
     .second{
-        margin-left: 2.5%;
+        margin-left: 20px;
         display: inline-block !important;
         float: left !important;
-        width: 880px !important;
-        min-width: 64% !important;
+        width: 770px !important;
+        min-width: 63% !important;
     }
     .last-container-div{
         width: 100%;
@@ -903,12 +903,21 @@ button.close{
         /*display: inline!important;*/
     /*}*/
 /*}*/
-@media (max-width: 1358px){
+/*@media (max-width: 1358px){*/
+    /*.container-fluid{*/
+        /*width: 1358px !important;*/
+    /*}*/
+    /*footer{*/
+        /*width: 1358px !important;*/
+    /*}*/
+/*}*/
+
+@media (max-width: 1230px){
     .container-fluid{
-        width: 1358px !important;
+        width: 1230px !important;
     }
     footer{
-        width: 1358px !important;
+        width: 1230px !important;
     }
 }
 

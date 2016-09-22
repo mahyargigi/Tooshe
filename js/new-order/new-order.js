@@ -35,10 +35,12 @@ $(document).ready(function(){
           }
         });
     var acOptions = {
-        types: ['(cities)']
+        //types: ['(countries)' ] ,
+        //componentRestrictions: {country:["ro"]}
     };
     //var input1 = document.getElementById('specific-region-input');
     $('#specific-region-input').geocomplete(acOptions).bind("geocode:result", function(event, click){
+        console.log(click);
         //console.log("place_id: "+click.place_id);
         //console.log("type: "+click.types);
         //console.log(jQuery.inArray("locality",click.address_components[0].types));
@@ -338,7 +340,7 @@ $(document).ready(function(){
 
 
 //    console.log("amount-input:"+(parseInt($('.amount-input').val()))+" slider-amount:"+parseInt($('#slider').val())+" slider/10:"+(parseInt($('#slider').val())/10));
-    $('#slider').on('change',function(){
+    $('#slider').on('input',function(){
 /*        10% - 0%
        $('.fee-amount').html((parseInt($(this).val()) + parseInt($('.amount-input').val())+(parseInt($('#slider').val())/10))+'$');
        */

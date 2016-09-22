@@ -47,6 +47,12 @@
         margin-top: -60px !important;
     }
 }
+@media (min-width: 1200px) and (max-width: 1350px) {
+    .search-navbar{
+        position: relative;
+        left: 80px;
+    }
+}
 
 /*anonymous css*/
 #join a{

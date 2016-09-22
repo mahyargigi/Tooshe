@@ -74,7 +74,7 @@ $(document).ready(function(){
 //          'max': 100
 //        }
 //    });
-    $('#slider').on('change',function(){
+    $('#slider').on('input',function(){
         console.log((this).value);
         $('#slider-value').html((this).value+"$");
     });

@@ -35,7 +35,7 @@ $(document).ready(function(){
           }
         });
     var acOptions = {
-        //types: ['(countries)' ] ,
+        types: ['(countries)' ]
         //componentRestrictions: {country:["ro"]}
     };
     //var input1 = document.getElementById('specific-region-input');
@@ -48,7 +48,10 @@ $(document).ready(function(){
         //console.log("City:"+click.address_components[0].long_name);
         var city = click.address_components[0].long_name;
         var country = "";
-        if(jQuery.inArray("country",click.address_components[2].types) === 0){
+		if(jQuery.inArray("country",click.address_components[1].types) === 0){
+            country = click.address_components[1].long_name;
+        }
+        else if(jQuery.inArray("country",click.address_components[2].types) === 0){
             //console.log("Country:"+click.address_components[2].long_name);
             country = click.address_components[2].long_name;
         }
@@ -92,7 +95,10 @@ $(document).ready(function(){
 
         var city = click.address_components[0].long_name;
         var country = "";
-        if(jQuery.inArray("country",click.address_components[2].types) === 0){
+        if(jQuery.inArray("country",click.address_components[1].types) === 0){
+            country = click.address_components[1].long_name;
+        }
+		else if(jQuery.inArray("country",click.address_components[2].types) === 0){
             country = click.address_components[2].long_name;
         }
         else if(jQuery.inArray("country",click.address_components[3].types) === 0){

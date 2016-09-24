@@ -108,7 +108,11 @@ $(document).ready(function(){
         dest_input_geolocate = true;
         var city = click.address_components[0].long_name;
         var country = "";
-        if(jQuery.inArray("country",click.address_components[2].types) === 0){
+        if(jQuery.inArray("country",click.address_components[1].types) === 0){
+            country = click.address_components[1].long_name;
+        }
+        else if(jQuery.inArray("country",click.address_components[2].types) === 0){
+            //console.log("Country:"+click.address_components[2].long_name);
             country = click.address_components[2].long_name;
         }
         else if(jQuery.inArray("country",click.address_components[3].types) === 0){
@@ -159,7 +163,11 @@ $(document).ready(function(){
         source_input_geolocate = true;
         var city = click.address_components[0].long_name;
         var country = "";
-        if(jQuery.inArray("country",click.address_components[2].types) === 0){
+        if(jQuery.inArray("country",click.address_components[1].types) === 0){
+            country = click.address_components[1].long_name;
+        }
+        else if(jQuery.inArray("country",click.address_components[2].types) === 0){
+            //console.log("Country:"+click.address_components[2].long_name);
             country = click.address_components[2].long_name;
         }
         else if(jQuery.inArray("country",click.address_components[3].types) === 0){
